@@ -1,9 +1,9 @@
-\contentsline {chapter}{The Design of Tufte's Books}{13}{chapter*.5}
+\contentsline {chapter}{Le Web, sa vie, son œuvre}{13}{chapter*.5}
 \contentsline {section}{Typefaces}{17}{section*.6}
 \contentsline {section}{Headings}{17}{section*.7}
 \contentsline {paragraph}{Paragraph}{17}{paragraph*.8}
 \contentsline {section}{Environments}{17}{section*.9}
-\contentsline {chapter}{On the Use of the tufte-book Document Class}{19}{chapter*.10}
+\contentsline {chapter}{20 d'archivage du web}{19}{chapter*.10}
 \contentsline {section}{Page Layout}{19}{section*.11}
 \contentsline {subsection}{Headings}{19}{subsection*.12}
 \contentsline {section}{Sidenotes}{19}{section*.13}
@@ -17,15 +17,15 @@
 \contentsline {subsection}{Typefaces}{24}{subsection*.21}
 \contentsline {subsection}{Letterspacing}{24}{subsection*.22}
 \contentsline {section}{Document Class Options}{25}{section*.23}
-\contentsline {chapter}{Customizing Tufte-LaTeX}{27}{chapter*.24}
+\contentsline {chapter}{Fragmenter les archives}{27}{chapter*.24}
 \contentsline {section}{File Hooks}{27}{section*.25}
 \contentsline {section}{Numbered Section Headings}{27}{section*.26}
 \contentsline {section}{Changing the Paper Size}{28}{section*.27}
 \contentsline {section}{Customizing Marginal Material}{28}{section*.28}
-\contentsline {chapter}{Compatibility Issues}{31}{chapter*.29}
+\contentsline {chapter}{Trouver une épingle dans une meule de paille}{31}{chapter*.29}
 \contentsline {section}{Converting from \texttt {article} to \texttt {tufte-handout}}{31}{section*.30}
 \contentsline {section}{Converting from \texttt {book} to \texttt {tufte-book}}{31}{section*.31}
-\contentsline {chapter}{Troubleshooting and Support}{33}{chapter*.32}
+\contentsline {chapter}{Where the dead blogs are}{33}{chapter*.32}
 \contentsline {section}{Tufte-\LaTeX \xspace Website}{33}{section*.33}
 \contentsline {section}{Tufte-\LaTeX \xspace Mailing Lists}{33}{section*.34}
 \contentsline {paragraph}{Discussion list}{33}{paragraph*.35}
@@ -33,5 +33,8 @@
 \contentsline {section}{Getting Help}{33}{section*.37}
 \contentsline {section}{Errors, Warnings, and Informational Messages}{34}{section*.38}
 \contentsline {section}{Package Dependencies}{34}{section*.39}
-\contentsline {chapter}{Bibliography}{37}{chapter*.40}
+\contentsline {chapter}{Ajouter des êtres vivants}{37}{chapter*.40}
+\contentsline {chapter}{Les archives du web profond}{39}{chapter*.41}
+\contentsline {chapter}{Conclusion}{41}{chapter*.42}
+\contentsline {chapter}{Bibliography}{43}{chapter*.43}
 \contentsfinish 

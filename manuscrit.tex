@@ -147,25 +147,29 @@
 % r.3 full title page
 \newpage
 \author{Quentin Lobb\'e}
-\title{\nohyphenation{Explorer les archives web pour suivre les traces num\'{e}riques des migrations}}
+\title{\nohyphenation{De l'archive au Fragment Web}}
 \cleardoublepage
   {  
   \begin{fullwidth}%
-  \thispagestyle{empty}
-  \par\noindent \allcaps{\textbf{Universit\'{e} Paris-Saclay}} 
-  \par\noindent \'{E}cole doctorale des sciences et technologies de l'information et de la communication 
-  \par\noindent Th\`{e}se pour l'obtention du doctorat de T\'{e}l\'{e}com ParisTech et de l'Universit\'{e} Paris-Saclay
-  \setlength{\parskip}{\baselineskip}  
-  \par\noindent Pr\'{e}sent\'{e}e par : \fontsize{10}{20}{\allcaps{\textbf{\thanklessauthor}}}%
-  \vspace{11.5pc}%
+  \thispagestyle{empty} 
+  \par\noindent\nohyphenation Universit\'{e} Paris-Saclay, \'{E}cole doctorale des sciences et technologies de l'information et de la communication.  Th\`{e}se pour l'obtention du doctorat de T\'{e}l\'{e}com ParisTech et de l'Universit\'{e} Paris-Saclay.
+
+  %\par\noindent Pr\'{e}sent\'{e}e par : \fontsize{10}{20}{\allcaps{\textbf{\thanklessauthor}}}%
+  \setlength{\parskip}{\baselineskip}   
+  \vfill%
   \begingroup
-  \fontsize{20}{60}\par\noindent\allcaps{\textbf{\thanklesstitle}}%
+  \center
+  \par\noindent\fontsize{20}{100}\allcaps{\textbf{\thanklesstitle}}%
+  \par\noindent\fontsize{10}{20}{\allcaps{D\'{e}sagr\'{e}ger les archives web pour une exploration temporelle \newline des traces num\'{e}riques des migrations}}
+  
   \endgroup
   \vfill%
+  \par\noindent\smallcaps{Th\`{e}se pr\'{e}sent\'{e}e par} :\\
+  \thanklessauthor
   \par\noindent\smallcaps{Th\`{e}se dirig\'{e}e par} :\\
   Pierre Senellart, professeur \`{a} l'\'{E}cole Normale Sup\'{e}rieure \\
   Dana Diminescu, professeure \`{a} T\'{e}l\'{e}com ParisTech
-  \par\noindent\smallcaps{Th\`{e}se pr\'{e}sent\'{e}e et soutenue} publiquement \`{a} Paris le ??? novembre 2018, devant un jury compos\'{e} de :\\
+  \par\noindent\smallcaps{Th\`{e}se soutenue} publiquement \`{a} Paris le ??? novembre 2018, devant un jury compos\'{e} de :\\
   Bruno Bachimont (Rapporteur), enseignant-chercheur \`{a} l'Universit\'{e} Technologique de Compi\`{e}gne\\
   Marc Spaniol (Rapporteur), professeur \`{a} l'Universit\'{e} de Caen Basse-Normandie\\
   Bruno Defude, directeur adjoint de la recherche et des formations doctorales \`{a} T\'{e}l\'{e}com SudParis\\
@@ -204,7 +208,7 @@
 
 % r.9 introduction
 \cleardoublepage
-\chapter*{Introduction}
+\chapter*{Introduction Générale}
 
 This sample book discusses the design of Edward Tufte's
 books\cite{Tufte2001,Tufte1990,Tufte1997,Tufte2006}
@@ -216,8 +220,8 @@ and the use of the \doccls{tufte-book} and \doccls{tufte-handout} document class
 \mainmatter
 
 
-\chapter{The Design of Tufte's Books}
-\label{ch:tufte-design}
+\chapter{Le Web, sa vie, son œuvre}
+\label{ch:web-intro}
 
 
 \newthought{The pages} of a book are usually divided into three major
@@ -442,7 +446,7 @@ The following characteristics define the various environments:
 \end{table}
 
 
-\chapter[On the Use of the tufte-book Document Class]{On the Use of the \texttt{tufte-book} Document Class}
+\chapter{20 d'archivage du web}
 \label{ch:tufte-book}
 
 The \TL document classes define a style similar to the
@@ -853,7 +857,7 @@ being loaded.  The default is to load the \docpkg{hyperref} package and use the
 
 
 
-\chapter[Customizing Tufte-LaTeX]{Customizing \TL}
+\chapter{Fragmenter les archives}
 \label{ch:customizing}
 
 The \TL document classes are designed to closely emulate Tufte's book
@@ -1003,7 +1007,7 @@ If, for example, you wanted the captions to be set in italic sans serif, you cou
   \doccmd{setcaptionfont}\{\doccmdnoindex{itshape}\doccmdnoindex{sffamily}\}
 \end{docspec}
 
-\chapter{Compatibility Issues}
+\chapter{Trouver une épingle dans une meule de paille}
 \label{ch:compatibility}
 
 When switching an existing document from one document class to a \TL document class, a few changes to the document may have to be made.
@@ -1022,7 +1026,7 @@ The following headings are not supported: \doccmd{subsubsection} and \doccmd{sub
 
 
 
-\chapter{Troubleshooting and Support}
+\chapter{Where the dead blogs are}
 \label{ch:troubleshooting}
 
 \section{\TL Website}\label{sec:website}
@@ -1128,6 +1132,11 @@ classes rely upon.  Packages marked with an asterisk are optional.
 \end{multicols}
 
 
+\chapter{Ajouter des êtres vivants}
+
+\chapter{Les archives du web profond}
+
+\chapter{Conclusion}
 
 
 %%

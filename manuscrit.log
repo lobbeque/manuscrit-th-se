@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.1.2)  6 MAR 2018 14:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.1.2)  26 MAR 2018 11:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -719,15 +719,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\langwohyphens' on input line 150.
 
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 155.
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <20> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 162.
 
-Overfull \hbox (5.67606pt too wide) in paragraph at lines 162--164
-[]\T1/pplj/bx/n/20/200ls EXPLORER LES ARCHIVES WEB POUR 
+Overfull \hbox (5.62975pt too wide) in paragraph at lines 155--156
+[][]\T1/pplj/m/n/10 Université Paris-Saclay, École doctorale des sciences et te
+chnologies de l'information et de la communication. 
  []
 
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <20> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 162.
 [1
 
 
@@ -736,7 +735,7 @@ Overfull \hbox (5.67606pt too wide) in paragraph at lines 162--164
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 187--196
+Underfull \hbox (badness 10000) in paragraph at lines 191--200
 
  []
 
@@ -803,75 +802,75 @@ LaTeX Warning: Marginpar on page 11 moved.
 ] [12
 
 ]
-Overfull \hbox (12.0pt too wide) in paragraph at lines 236--263
+Overfull \hbox (12.0pt too wide) in paragraph at lines 240--267
 []$[]$
  []
 
 [13
 
 ]
-Overfull \hbox (9.84914pt too wide) in paragraph at lines 280--283
+Overfull \hbox (9.84914pt too wide) in paragraph at lines 284--287
 []\T1/pplj/m/n/10 The dedication appears on page 6 in \T1/pplj/m/it/10 VDQI \T1
 /pplj/m/n/10 (opposite the introduction),
  []
 
-<graphics/vdqi-title.pdf, id=215, 614.295pt x 758.835pt>
+<graphics/vdqi-title.pdf, id=233, 614.295pt x 758.835pt>
 File: graphics/vdqi-title.pdf Graphic file (type pdf)
 
 <use graphics/vdqi-title.pdf>
-Package pdftex.def Info: graphics/vdqi-title.pdf used on input line 329.
+Package pdftex.def Info: graphics/vdqi-title.pdf used on input line 333.
 (pdftex.def)             Requested size: 216.00005pt x 266.8236pt.
 
-<graphics/ei-title.pdf, id=216, 614.295pt x 758.835pt>
+<graphics/ei-title.pdf, id=234, 614.295pt x 758.835pt>
 File: graphics/ei-title.pdf Graphic file (type pdf)
 
 <use graphics/ei-title.pdf>
-Package pdftex.def Info: graphics/ei-title.pdf used on input line 331.
+Package pdftex.def Info: graphics/ei-title.pdf used on input line 335.
 (pdftex.def)             Requested size: 216.00005pt x 266.8236pt.
 
-<graphics/ve-title.pdf, id=217, 614.295pt x 758.835pt>
+<graphics/ve-title.pdf, id=235, 614.295pt x 758.835pt>
 File: graphics/ve-title.pdf Graphic file (type pdf)
 
 <use graphics/ve-title.pdf>
-Package pdftex.def Info: graphics/ve-title.pdf used on input line 333.
+Package pdftex.def Info: graphics/ve-title.pdf used on input line 337.
 (pdftex.def)             Requested size: 216.00005pt x 266.8236pt.
 
-<graphics/be-title.pdf, id=218, 614.295pt x 758.835pt>
+<graphics/be-title.pdf, id=236, 614.295pt x 758.835pt>
 File: graphics/be-title.pdf Graphic file (type pdf)
 
 <use graphics/be-title.pdf>
-Package pdftex.def Info: graphics/be-title.pdf used on input line 335.
+Package pdftex.def Info: graphics/be-title.pdf used on input line 339.
 (pdftex.def)             Requested size: 216.00005pt x 266.8236pt.
 
-<graphics/vdqi-contents.pdf, id=219, 614.295pt x 758.835pt>
+<graphics/vdqi-contents.pdf, id=237, 614.295pt x 758.835pt>
 File: graphics/vdqi-contents.pdf Graphic file (type pdf)
 
 <use graphics/vdqi-contents.pdf>
-Package pdftex.def Info: graphics/vdqi-contents.pdf used on input line 344.
+Package pdftex.def Info: graphics/vdqi-contents.pdf used on input line 348.
 (pdftex.def)             Requested size: 216.00005pt x 266.8236pt.
 
-<graphics/ei-contents.pdf, id=220, 614.295pt x 758.835pt>
+<graphics/ei-contents.pdf, id=238, 614.295pt x 758.835pt>
 File: graphics/ei-contents.pdf Graphic file (type pdf)
 
 <use graphics/ei-contents.pdf>
-Package pdftex.def Info: graphics/ei-contents.pdf used on input line 346.
+Package pdftex.def Info: graphics/ei-contents.pdf used on input line 350.
 (pdftex.def)             Requested size: 216.00005pt x 266.8236pt.
 
-<graphics/ve-contents.pdf, id=221, 614.295pt x 758.835pt>
+<graphics/ve-contents.pdf, id=239, 614.295pt x 758.835pt>
 File: graphics/ve-contents.pdf Graphic file (type pdf)
 
 <use graphics/ve-contents.pdf>
-Package pdftex.def Info: graphics/ve-contents.pdf used on input line 348.
+Package pdftex.def Info: graphics/ve-contents.pdf used on input line 352.
 (pdftex.def)             Requested size: 216.00005pt x 266.8236pt.
 
-<graphics/be-contents.pdf, id=222, 614.295pt x 758.835pt>
+<graphics/be-contents.pdf, id=240, 614.295pt x 758.835pt>
 File: graphics/be-contents.pdf Graphic file (type pdf)
 
 <use graphics/be-contents.pdf>
-Package pdftex.def Info: graphics/be-contents.pdf used on input line 350.
+Package pdftex.def Info: graphics/be-contents.pdf used on input line 354.
 (pdftex.def)             Requested size: 216.00005pt x 266.8236pt.
 
-Overfull \hbox (3.4365pt too wide) in paragraph at lines 357--360
+Overfull \hbox (3.4365pt too wide) in paragraph at lines 361--364
 \T1/pplj/m/n/10 Tufte's books primarily use two typefaces: Bembo and Gill Sans.
  Bembo
  []
@@ -880,18 +879,18 @@ Overfull \hbox (3.4365pt too wide) in paragraph at lines 357--360
 itle.pdf> <./graphics/be-title.pdf>] [16 <./graphics/vdqi-contents.pdf> <./grap
 hics/ei-contents.pdf> <./graphics/ve-contents.pdf> <./graphics/be-contents.pdf>
 ]
-Overfull \hbox (0.5256pt too wide) in paragraph at lines 361--365
+Overfull \hbox (0.5256pt too wide) in paragraph at lines 365--369
 \T1/pplj/m/n/10 installations, the Tufte-L[]T[]X document classes default to us
 ing Palatino
  []
 
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 6.80005pt on input line 375.
+(Font)              scaled to size 6.80005pt on input line 379.
 
 LaTeX Warning: Marginpar on page 17 moved.
 
 
-Overfull \hbox (8.62123pt too wide) in paragraph at lines 429--439
+Overfull \hbox (8.62123pt too wide) in paragraph at lines 433--443
  [] 
  []
 
@@ -899,18 +898,13 @@ Overfull \hbox (8.62123pt too wide) in paragraph at lines 429--439
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [17] [18]
-LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <20.74> not available
-(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 445.
-LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
-(Font)              scaled to size 17.62912pt on input line 445.
-
-Overfull \hbox (0.82358pt too wide) in paragraph at lines 457--459
+Overfull \hbox (0.82358pt too wide) in paragraph at lines 461--463
 \T1/pplj/m/n/10 This style provides \T1/pplj/m/sc/10/50ls a\T1/pplj/m/n/10 - an
 d \T1/pplj/m/sc/10/50ls b\T1/pplj/m/n/10 -heads (that is, [] and []),
  []
 
 
-Overfull \hbox (9.55984pt too wide) in paragraph at lines 460--465
+Overfull \hbox (9.55984pt too wide) in paragraph at lines 464--469
 \T1/pplj/m/it/10 Elements of Typographic Style\T1/pplj/m/n/10 ,[] you should ``
 use as many levels of headings
  []
@@ -919,7 +913,7 @@ use as many levels of headings
 LaTeX Warning: Marginpar on page 19 moved.
 
 
-Underfull \hbox (badness 1122) in paragraph at lines 466--468
+Underfull \hbox (badness 1122) in paragraph at lines 470--472
 []\T1/pplj/m/n/10 The Tufte-L[]T[]X classes will emit an error if you try to us
 e
  []
@@ -928,15 +922,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.Tufte200
 6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.470 ...ught{In his later books},\cite{Tufte2006}
+l.474 ...ught{In his later books},\cite{Tufte2006}
                                                    Tufte
 
 LaTeX Warning: Marginpar on page 19 moved.
 
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 7.65005pt on input line 474.
+(Font)              scaled to size 7.65005pt on input line 478.
 
-Overfull \hbox (2.34654pt too wide) in paragraph at lines 480--489
+Overfull \hbox (2.34654pt too wide) in paragraph at lines 484--493
 \T1/pplj/m/n/10 automatically be converted to sidenotes.[] If you'd like to pla
 ce ancillary
  []
@@ -951,14 +945,14 @@ LaTeX Warning: Marginpar on page 19 moved.
 LaTeX Warning: Marginpar on page 20 moved.
 
 
-Overfull \hbox (2.61647pt too wide) in paragraph at lines 495--499
+Overfull \hbox (2.61647pt too wide) in paragraph at lines 499--503
 []\T1/pplj/m/n/10 Both the $\OMS/zplm/m/n/10 h$\T1/pplj/m/it/10 number$\OMS/zpl
 m/m/n/10 i$ \T1/pplj/m/n/10 and $\OMS/zplm/m/n/10 h$\T1/pplj/m/it/10 offset$\OM
 S/zplm/m/n/10 i$ \T1/pplj/m/n/10 arguments are optional. If you provide
  []
 
 
-Overfull \hbox (1.86649pt too wide) in paragraph at lines 500--504
+Overfull \hbox (1.86649pt too wide) in paragraph at lines 504--508
 \T1/pplj/m/n/10 in the margin space. If this happens, you can adjust the vertic
 al position
  []
@@ -970,117 +964,117 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.Tufte200
 6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.540 ...ite[-3\baselineskip]{Tufte2006,Tufte1990}
+l.544 ...ite[-3\baselineskip]{Tufte2006,Tufte1990}
                                                    you canpdfTeX warning (ext4)
 : destination with the same identifier (name{cite.Tufte1990}) has been already 
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.540 ...ite[-3\baselineskip]{Tufte2006,Tufte1990}
+l.544 ...ite[-3\baselineskip]{Tufte2006,Tufte1990}
                                                    you can
 
 LaTeX Warning: Marginpar on page 20 moved.
 
-[20] <graphics/helix.pdf, id=374, 221.8689pt x 201.71361pt>
+[20] <graphics/helix.pdf, id=391, 221.8689pt x 201.71361pt>
 File: graphics/helix.pdf Graphic file (type pdf)
 
 <use graphics/helix.pdf>
-Package pdftex.def Info: graphics/helix.pdf used on input line 559.
+Package pdftex.def Info: graphics/helix.pdf used on input line 563.
 (pdftex.def)             Requested size: 144.00317pt x 130.92145pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 566--572
+Underfull \hbox (badness 10000) in paragraph at lines 570--576
 
  []
 
 
-Overfull \hbox (3.67169pt too wide) in paragraph at lines 574--575
+Overfull \hbox (3.67169pt too wide) in paragraph at lines 578--579
 []\T1/pplj/m/n/10 The \T1/fvm/m/n/10 marginfigure[][] \T1/pplj/m/n/10 and \T1/f
 vm/m/n/10 margintable[][] \T1/pplj/m/n/10 environments accept an optional
  []
 
 
-Overfull \hbox (5.7331pt too wide) in paragraph at lines 574--575
+Overfull \hbox (5.7331pt too wide) in paragraph at lines 578--579
 \T1/pplj/m/n/10 table. See the ``[]Sidenotes[]'' section above for examples. Th
 e specifications
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 575--583
+Underfull \hbox (badness 10000) in paragraph at lines 579--587
 
  []
 
-<graphics/sine.pdf, id=379, 505.89pt x 51.04068pt>
+<graphics/sine.pdf, id=396, 505.89pt x 51.04068pt>
 File: graphics/sine.pdf Graphic file (type pdf)
  <use graphics/sine.pdf>
-Package pdftex.def Info: graphics/sine.pdf used on input line 590.
+Package pdftex.def Info: graphics/sine.pdf used on input line 594.
 (pdftex.def)             Requested size: 480.0061pt x 48.42917pt.
 
-<graphics/hilbertcurves.pdf, id=380, 308.47346pt x 76.72565pt>
+<graphics/hilbertcurves.pdf, id=397, 308.47346pt x 76.72565pt>
 File: graphics/hilbertcurves.pdf Graphic file (type pdf)
 
 <use graphics/hilbertcurves.pdf>
-Package pdftex.def Info: graphics/hilbertcurves.pdf used on input line 597.
+Package pdftex.def Info: graphics/hilbertcurves.pdf used on input line 601.
 (pdftex.def)             Requested size: 312.0029pt x 77.6035pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 597--602
+Underfull \hbox (badness 10000) in paragraph at lines 601--606
 
  []
 
 
-Overfull \hbox (5.11981pt too wide) in paragraph at lines 604--608
+Overfull \hbox (5.11981pt too wide) in paragraph at lines 608--612
 []\T1/pplj/m/n/10 As with sidenotes and marginnotes, a caption may sometimes re
 quire
  []
 
 
-Overfull \hbox (10.7828pt too wide) in paragraph at lines 604--608
+Overfull \hbox (10.7828pt too wide) in paragraph at lines 608--612
 \T1/pplj/m/n/10 vertical adjustment. The []\T1/fvm/m/n/10 \caption[][][] \T1/pp
 lj/m/n/10 command now takes a second optional
  []
 
 [21 <./graphics/helix.pdf> <./graphics/sine.pdf> <./graphics/hilbertcurves.pdf>
 ]
-Overfull \hbox (15.37979pt too wide) in paragraph at lines 615--623
+Overfull \hbox (15.37979pt too wide) in paragraph at lines 619--627
 \T1/pplj/m/n/10 caption, if provided, is what appears in the list of figures/ta
 bles, otherwise
  []
 
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 633.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 637.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-Overfull \hbox (0.98305pt too wide) in paragraph at lines 660--663
+Overfull \hbox (0.98305pt too wide) in paragraph at lines 664--667
 \T1/pplj/m/n/10 this limitation, the Tufte-L[]T[]X document classes provide a [
 ]\T1/fvm/m/n/10 \morefloats[][][]
  []
 
 [22]
-Overfull \hbox (0.17137pt too wide) in paragraph at lines 676--680
+Overfull \hbox (0.17137pt too wide) in paragraph at lines 680--684
 []\T1/pplj/m/n/10 The []\T1/fvm/m/n/10 \FloatBarrier[][][] \T1/pplj/m/n/10 comm
 and will immediately process all the floats
  []
 
 
-Overfull \hbox (16.25018pt too wide) in paragraph at lines 681--683
+Overfull \hbox (16.25018pt too wide) in paragraph at lines 685--687
 []\T1/pplj/m/n/10 The []\T1/fvm/m/n/10 \clearpage[][][] \T1/pplj/m/n/10 command
  will also process the floats before continuing,
  []
 
 
-Overfull \hbox (50.7065pt too wide) in paragraph at lines 697--700
+Overfull \hbox (50.7065pt too wide) in paragraph at lines 701--704
 [] []\T1/pplj/m/it/10 Vertical alignment[] \T1/pplj/m/n/10 To override the vert
 ical alignment, use the \T1/fvm/m/n/10 \setfloatalignment[]
  []
 
 [23]
-LaTeX Font Info:    Try loading font information for T1+phv on input line 763.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 767.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 763.
+(Font)              scaled to size 8.99994pt on input line 767.
 
-Overfull \hbox (18.03978pt too wide) in paragraph at lines 768--770
+Overfull \hbox (18.03978pt too wide) in paragraph at lines 772--774
 \T1/pplj/m/n/10 This document class includes two new commands and some improvem
 ents
  []
@@ -1089,37 +1083,37 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.Bringhur
 st2005}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.773 increased slightly.\cite{Bringhurst2005}
+l.777 increased slightly.\cite{Bringhurst2005}
                                                 The \doccmddef{allcaps} comm...
 
 LaTeX Warning: Marginpar on page 24 moved.
 
 
-Overfull \hbox (14.06909pt too wide) in paragraph at lines 779--783
+Overfull \hbox (14.06909pt too wide) in paragraph at lines 783--787
 []\T1/pplj/m/n/10 The []\T1/fvm/m/n/10 \textsc[][][] \T1/pplj/m/n/10 command ha
 s also been redefined to include letterspacing.
  []
 
 
-Overfull \hbox (17.05084pt too wide) in paragraph at lines 789--793
+Overfull \hbox (17.05084pt too wide) in paragraph at lines 793--797
 \T1/pplj/m/n/10 The \T1/fvm/m/n/10 tufte-book \T1/pplj/m/n/10 class is based on
  the L[]T[]X \T1/fvm/m/n/10 book \T1/pplj/m/n/10 document class. Therefore,
  []
 
 [24]
-Overfull \hbox (11.74486pt too wide) in paragraph at lines 824--829
+Overfull \hbox (11.74486pt too wide) in paragraph at lines 828--833
 []\T1/pplj/m/n/10 The []\T1/fvm/m/n/10 nofonts[][][][] \T1/pplj/m/n/10 option p
 revents the Tufte-L[]T[]X classes from automatically
  []
 
 
-Overfull \hbox (5.6128pt too wide) in paragraph at lines 830--835
+Overfull \hbox (5.6128pt too wide) in paragraph at lines 834--839
 \T1/pplj/m/n/10 classes try to load the appropriate letterspacing package (eith
 er pdfT[]X's
  []
 
 
-Overfull \hbox (0.84647pt too wide) in paragraph at lines 842--846
+Overfull \hbox (0.84647pt too wide) in paragraph at lines 846--850
 \T1/pplj/m/n/10 (\T1/pplj/m/sc/10/50ls toc\T1/pplj/m/n/10 ) design. The current
  \T1/pplj/m/sc/10/50ls toc \T1/pplj/m/n/10 design only shows unnumbered chapter
 
@@ -1129,22 +1123,22 @@ Overfull \hbox (0.84647pt too wide) in paragraph at lines 842--846
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
-Overfull \hbox (9.42538pt too wide) in paragraph at lines 847--851
+Overfull \hbox (9.42538pt too wide) in paragraph at lines 851--855
 []\T1/pplj/m/n/10 The []\T1/fvm/m/n/10 nohyper[][][][] \T1/pplj/m/n/10 option p
 revents the \T1/fvm/m/n/10 hyperref[][] \T1/pplj/m/n/10 package from being load
 ed.
  []
 
 [26]
-Overfull \hbox (6.43558pt too wide) in paragraph at lines 859--864
+Overfull \hbox (6.43558pt too wide) in paragraph at lines 863--868
 \T1/pplj/m/n/10 The Tufte-L[]T[]X document classes are designed to closely emul
 ate Tufte's
  []
 
 LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10> not available
-(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 876.
+(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 880.
 LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
-(Font)              scaled to size 8.50006pt on input line 876.
+(Font)              scaled to size 8.50006pt on input line 880.
 [27
 
 ]
@@ -1152,7 +1146,7 @@ LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
 LaTeX Warning: Marginpar on page 28 moved.
 
 [28]
-Overfull \hbox (29.76787pt too wide) in paragraph at lines 977--979
+Overfull \hbox (29.76787pt too wide) in paragraph at lines 981--983
 []\T1/fvm/m/n/9 \documentclass[symmetric,justified,marginals=raggedouter]{tufte
 -book} 
  []
@@ -1161,27 +1155,33 @@ Overfull \hbox (29.76787pt too wide) in paragraph at lines 977--979
 
 ]
 LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <12> not available
-(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 1011.
+(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 1015.
 LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
-(Font)              scaled to size 10.20007pt on input line 1011.
+(Font)              scaled to size 10.20007pt on input line 1015.
  [31] [32
 
 ] [33]
-Underfull \hbox (badness 1442) in paragraph at lines 1069--1070
+Underfull \hbox (badness 1442) in paragraph at lines 1073--1074
 \T1/pplj/m/n/10 The \T1/fvm/m/n/10 \subparagraph[] \T1/pplj/m/n/10 command is n
 ot defined in the Tufte-L[]T[]X
  []
 
 [34]
 LaTeX Font Info:    Try loading font information for TS1+pplj on input line 110
-3.
+7.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pplj.fd
 File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 ) [35] [36
 
 ]
-(./manuscrit.bblpdfTeX warning (ext4): destination with the same identifier (na
-me{cite.Bringhurst2005}) has been already used, duplicate ignored
+[37] [38
+
+] [39] [40
+
+] [41] [42
+
+] (./manuscrit.bblpdfTeX warning (ext4): destination with the same identifier (
+name{cite.Bringhurst2005}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.8 \bibitem[Bringhurst(2005)]{Bringhurst2005}
@@ -1223,25 +1223,25 @@ kage.  []$\T1/fvm/m/n/10 http : / / ctan . org / pkg /
 
 )
 No file manuscrit.ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1150.
-[37
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1159.
+[43
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1150.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1159.
  (./manuscrit.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1150.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1150.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1159.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1159.
 
 Package rerunfilecheck Info: File `manuscrit.out' has not changed.
-(rerunfilecheck)             Checksum: 3C7EE148AB4A0A829DDD8ABC3CD1B14E;4515.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1150.
+(rerunfilecheck)             Checksum: 416FF5D44FE633CBAEBD44F1066B06A4;5002.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1159.
  ) 
 Here is how much of TeX's memory you used:
- 13580 strings out of 493304
- 192415 string characters out of 6139872
- 381848 words of memory out of 5000000
- 16623 multiletter control sequences out of 15000+600000
- 112694 words of font info for 167 fonts, out of 8000000 for 9000
+ 13571 strings out of 493304
+ 192208 string characters out of 6139872
+ 381847 words of memory out of 5000000
+ 16610 multiletter control sequences out of 15000+600000
+ 103625 words of font info for 150 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  46i,14n,45p,458b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1255,10 +1255,10 @@ e1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl
 mf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 palatino/uplri8a.pfb>
-Output written on manuscrit.pdf (37 pages, 290230 bytes).
+Output written on manuscrit.pdf (43 pages, 291204 bytes).
 PDF statistics:
- 563 PDF objects out of 1000 (max. 8388607)
- 467 compressed objects within 5 object streams
- 84 named destinations out of 1000 (max. 500000)
- 4376 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 609 PDF objects out of 1000 (max. 8388607)
+ 503 compressed objects within 6 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 3888 words of extra memory for PDF output out of 10000 (max. 10000000)
 

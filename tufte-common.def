@@ -1612,15 +1612,15 @@
 \titleformat{\chapter}%
   [display]% shape
   {\relax\ifthenelse{\NOT\boolean{@tufte@symmetric}}{\begin{fullwidth}}{}}% format applied to label+text
-  {\itshape\huge\thechapter}% label
-  {0pt}% horizontal separation between label and title body
-  {\huge\rmfamily\itshape}% before the title body
+  {\large Chapitre \thechapter}% label
+  {2pt}% horizontal separation between label and title body
+  {\huge\rmfamily $\vert$ }% before the title body
   [\ifthenelse{\NOT\boolean{@tufte@symmetric}}{\end{fullwidth}}{}]% after the title body
 
 \titleformat{\section}%
   [hang]% shape
-  {\normalfont\Large\itshape}% format applied to label+text
-  {\thesection}% label
+  {\normalfont\Large\bfseries}% format applied to label+text
+  {\large \thesection}% label
   {1em}% horizontal separation between label and title body
   {}% before the title body
   []% after the title body

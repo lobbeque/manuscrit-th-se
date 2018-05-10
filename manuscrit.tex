@@ -11,10 +11,6 @@
 %\usepackage{microtype}
 
 %%
-% Just some sample text
-\usepackage{lipsum}
-
-%%
 % For nicely typeset tabular material
 \usepackage{booktabs}
 
@@ -139,397 +135,385 @@
 \usepackage{makeidx}
 \makeindex
 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Customization %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{0}
+
+\renewcommand\contentsname{\normalfont \huge Table des matières}
+
+\titlecontents{chapter}%
+    [0em]% distance from left margin
+    {\vspace{1\baselineskip}\begin{fullwidth}Chapitre }% above (global formatting of entry)
+    {\contentslabel{0em} \hspace{1em} \huge $\vert$ \Large}% before w/ label (label = ``Chapter 1'')
+    {\hspace{1em}}% before w/o label
+    {\hfill\qquad\thecontentspage}% filler and page (leaders and page num)
+    [\end{fullwidth}]% after
+\titlecontents{section}% FIXME
+    [0em] % distance from left margin
+    {\vspace{0\baselineskip}\begin{fullwidth} \rmfamily\itshape} % above (global formatting of entry)
+    {\hspace*{6em}\contentslabel{2em}} % before w/label (label = ``2.6'')
+    {\hspace*{7em}} % before w/o label
+    {\normalfont\hfill\qquad\thecontentspage} % filler + page (leaders and page num)
+    [\end{fullwidth}] % after
+
+
 \begin{document}
 
 % Front matter
 \frontmatter
 
-% r.3 full title page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Titre %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \newpage
-\author{Quentin Lobb\'e}
-\title{\nohyphenation{De l'archive au Fragment Web}}
+\author{Quentin Lobbé}
+\title{\nohyphenation{Archives et Fragments Web}}
 \cleardoublepage
-  {  
+{  
   \begin{fullwidth}%
   \thispagestyle{empty} 
-  \par\noindent\nohyphenation Universit\'{e} Paris-Saclay, \'{E}cole doctorale des sciences et technologies de l'information et de la communication.  Th\`{e}se pour l'obtention du doctorat de T\'{e}l\'{e}com ParisTech et de l'Universit\'{e} Paris-Saclay.
-
-  %\par\noindent Pr\'{e}sent\'{e}e par : \fontsize{10}{20}{\allcaps{\textbf{\thanklessauthor}}}%
-  \setlength{\parskip}{\baselineskip}   
-  \vfill%
+  \setlength{\parskip}{\baselineskip}
   \begingroup
-  \center
-  \par\noindent\fontsize{20}{100}\allcaps{\textbf{\thanklesstitle}}%
-  \par\noindent\fontsize{10}{20}{\allcaps{D\'{e}sagr\'{e}ger les archives web pour une exploration temporelle \newline des traces num\'{e}riques des migrations}}
-  
+  \vspace*{10em}
+  \par\noindent\Large{Quentin Lobbé}
+  \vspace*{-1em}
+  \par\noindent\Huge\textbf{Archives et Fragments Web}
+  \par\noindent\nohyphenation\Large{Désagréger les archives Web pour mener une exploration temporelle de traces numériques des migrations}
   \endgroup
-  \vfill%
-  \par\noindent\smallcaps{Th\`{e}se pr\'{e}sent\'{e}e par} :\\
-  \thanklessauthor
-  \par\noindent\smallcaps{Th\`{e}se dirig\'{e}e par} :\\
-  Pierre Senellart, professeur \`{a} l'\'{E}cole Normale Sup\'{e}rieure \\
-  Dana Diminescu, professeure \`{a} T\'{e}l\'{e}com ParisTech
-  \par\noindent\smallcaps{Th\`{e}se soutenue} publiquement \`{a} Paris le ??? novembre 2018, devant un jury compos\'{e} de :\\
-  Bruno Bachimont (Rapporteur), enseignant-chercheur \`{a} l'Universit\'{e} Technologique de Compi\`{e}gne\\
-  Marc Spaniol (Rapporteur), professeur \`{a} l'Universit\'{e} de Caen Basse-Normandie\\
-  Bruno Defude, directeur adjoint de la recherche et des formations doctorales \`{a} T\'{e}l\'{e}com SudParis\\
-  Anat Ben-David, professeure \`{a} l'Open University of Israel\\
-  Dominique Cardon, professeur associ\'{e} \`{a} Sciences Po
-  \par\noindent\textit{Version de, \monthyear}\\
+  \vfill  
+  \par\noindent\nohyphenation Université Paris-Saclay, École doctorale des sciences et technologies de l'information et de la communication.  Thèse pour l'obtention du doctorat de Télécom ParisTech et de l'Université Paris-Saclay.    
   \end{fullwidth}%
-  }
+}
+
+\blankpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Info Thèse %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+\newpage
+\begin{fullwidth}
+~\vfill
+\thispagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}
+
+\par\noindent Thèse présentée par \textbf{\thanklessauthor}\\
+LTCI, Télécom ParisTech, Université Paris Saclay \& Inria. Paris, France.\\
+quentin.lobbe@telecom-paristech.fr
+
+\par\noindent Sous la direction de :\\
+\textbf{Pierre Senellart}, professeur à l'École Normale Supérieure\\
+\textbf{Dana Diminescu}, professeure à Télécom ParisTech
+
+\par\noindent Soutenue publiquement à Paris le 9 novembre 2018, devant un jury composé de :\\
+\textbf{Bruno Bachimont} (Rapporteur), enseignant-chercheur à l'Université Technologique de Compiègne\\
+\textbf{Marc Spaniol} (Rapporteur), professeur à l'Université de Caen Basse-Normandie\\
+\textbf{Anat Ben-David}, professeure à l'Open University of Israel\\
+\textbf{Dominique Cardon}, professeur associé à Sciences Po Paris\\
+\textbf{Bruno Defude}, directeur adjoint de la recherche et des formations doctorales à Télécom SudParis
+
+\par\textit{last modified \monthyear}
+\end{fullwidth}
+  
 \thispagestyle{empty}%
 \clearpage%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Remerciements %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \newpage
 
-% r.7 dedication
-\cleardoublepage
 ~\vfill
 \nohyphenation\noindent
 \justify
-\par\noindent Il me demanda de chercher la premi\`{e}re page.\\
-\noindent Je posais ma main gauche sur la couverture et ouvris le volume de mon pouce serr\'{e} contre l'index. Je m'effor\c{c}ais en vain : il restait toujours des feuilles entre la couverture et mon pouce. Elles semblaient sourdre du livre.\\
-- Maintenant cherchez la derni\`{e}re.\\
-\noindent Mes tentatives \'{e}chou\`{e}rent de m\^{e}me; \`{a} peine pus-je balbutier d'une voix qui n'\'{e}tait plus ma voix :\\
+\par\noindent Il me demanda de chercher la première page.\\
+\noindent Je posais ma main gauche sur la couverture et ouvris le volume de mon pouce serré contre l'index. Je m'efforçais en vain : il restait toujours des feuilles entre la couverture et mon pouce. Elles semblaient sourdre du livre.\\
+- Maintenant cherchez la dernière.\\
+\noindent Mes tentatives échouèrent de même; à peine pus-je balbutier d'une voix qui n'était plus ma voix :\\
 - Cela n'est pas possible.\\
-\noindent Toujours \`{a} voix basse le vendeur me dit : \\
-- Cela n'est pas possible et pourtant cela \textit{est}. Le nombre de pages de ce livre est exactement infini. Aucune n'est la premi\`{e}re, aucune n'est la derni\`{e}re.
+\noindent Toujours à voix basse le vendeur me dit : \\
+- Cela n'est pas possible et pourtant cela \textit{est}. Le nombre de pages de ce livre est exactement infini. Aucune n'est la première, aucune n'est la dernière.
 \\~\\
 \noindent\textit{Jorge Luis Borges - Le livre de sable} 
 \vfill
 
-% r.5 contents
+\newpage
+\setlength{\parindent}{0pt}
+\begingroup
+\vspace*{8em}
+\huge $\vert$ \huge Remerciements
+\vspace*{4em}
+\par\normalsize Ici je remercie plein de gens
+
+\par Beaucoup de gens
+
+\par Mais vraiment
+\endgroup
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Tables %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \tableofcontents
 
 \listoffigures
 
 \listoftables
 
-% r.9 introduction
-\cleardoublepage
-\chapter*{Introduction Générale}
-
-This sample book discusses the design of Edward Tufte's
-books\cite{Tufte2001,Tufte1990,Tufte1997,Tufte2006}
-and the use of the \doccls{tufte-book} and \doccls{tufte-handout} document classes.
-
-
-%%
-% Start the main matter (normal chapters)
 \mainmatter
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapitre 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Le Web, sa vie, son œuvre}
-\label{ch:web-intro}
+\chapter{Introduction}
 
+\section{Introduction générale}
 
-\newthought{The pages} of a book are usually divided into three major
-sections: the front matter (also called preliminary matter or prelim), the
-main matter (the core text of the book), and the back matter (or end
-matter).
+Ici l'intro de la thèse.
 
-\newthought{The front matter} of a book refers to all of the material that
-comes before the main text.  The following table from shows a list of
-material that appears in the front matter of \VDQI, \EI, \VE, and \BE
-along with its page number.  Page numbers that appear in parentheses refer
-to folios that do not have a printed page number (but they are still
-counted in the page number sequence).
+\section{Mise en garde}
 
-\bigskip
-\begin{minipage}{\textwidth}
-\begin{center}
-\begin{tabular}{lcccc}
-\toprule
- & \multicolumn{4}{c}{Books} \\
-\cmidrule(l){2-5} 
-Page content & \vdqi & \ei & \ve & \be \\
-\midrule
-Blank half title page & \hangp{1} & \hangp{1} & \hangp{1} & \hangp{1} \\
-Frontispiece\footnotemark{}
-  & \hangp{2} & \hangp{2} & \hangp{2} & \hangp{2} \\
-Full title page & \hangp{3} & \hangp{3} & \hangp{3} & \hangp{3} \\
-Copyright page & \hangp{4} & \hangp{4} & \hangp{4} & \hangp{4} \\
-Contents & \hangp{5} & \hangp{5} & \hangp{5} & \hangp{5} \\
-%Blank & -- & \hangp{6} & \hangp{6} & \hangp{6} \\
-Dedication & \hangp{6} & \hangp{7} & \hangp{7} & 7 \\
-%Blank & -- & \hangp{8} & -- & \hangp{8} \\
-Epigraph & -- & -- & \hangp{8} & -- \\
-Introduction & \hangp{7} & \hangp{9} & \hangp{9} & 9 \\
-\bottomrule
-\end{tabular}
-\end{center}
-\end{minipage}
-\vspace{-7\baselineskip}\footnotetext{The contents of this page vary from book to book.  In
-  \vdqi this page is blank; in \ei and \ve this page holds a frontispiece;
-  and in \be this page contains three epigraphs.}
-\vspace{7\baselineskip}
+\subsection{Penser le passé depuis le présent}
 
-\bigskip
-The design of the front matter in Tufte's books varies slightly from the
-traditional design of front matter.  First, the pages in front matter are
-traditionally numbered with lowercase roman numerals (\eg, i, ii, iii,
-iv,~\ldots).  Second, the front matter page numbering sequence is usually
-separate from the main matter page numbering.  That is, the page numbers
-restart at 1 when the main matter begins.  In contrast, Tufte has
-enumerated his pages with arabic numerals that share the same page counting
-sequence as the main matter.  
+Ici on fait un rapide détour par l'historiographie et les difficultés à parler du passé depuis le présent.
 
-There are also some variations in design across Tufte's four books.  The
-page opposite the full title page (labeled ``frontispiece'' in the above
-table) has different content in each of the books.  In \VDQI, this page is
-blank; in \EI and \VE, this page holds a frontispiece; and in \BE, this
-page contains three epigraphs.
+\subsection{Conservation différentielle et nature des archives Web}
 
-The dedication appears on page~6 in \vdqi (opposite the introduction), and
-is placed on its own spread in the other books.  In \ve, an epigraph shares
-the spread with the opening page of the introduction.
+Ici on parle de la raréfaction de la matière Web à mesure que l'on remonte le temps et également à mesure que le web fournit du contenu.
 
-None of the page numbers (folios) of the front matter are expressed except in
-\be, where the folios start to appear on the dedication page.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapitre 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newthought{The full title page} of each of the books varies slightly in
-design.  In all the books, the author's name appears at the top of the
-page, the title it set just above the center line, and the publisher is
-printed along the bottom margin.  Some of the differences are outlined in
-the following table.
+\chapter{Du Web aux Représentations en Ligne des Diasporas}
 
-\bigskip
-\begin{center}
-\footnotesize
-\begin{tabular}{lllll}
-\toprule
-Feature & \vdqi & \ei & \ve & \be \\
-\midrule
-Author & & & & \\
-\quad Typeface & serif   & serif   & serif   & sans serif \\
-\quad Style    & italics & italics & italics & upright, caps \\
-\quad Size     & 24 pt   & 20 pt   & 20 pt   & 20 pt \\
-\addlinespace
-Title & & & & \\
-\quad Typeface & serif   & serif   & serif   & sans serif \\
-\quad Style    & upright & italics & upright & upright, caps \\
-\quad Size     & 36 pt   & 48 pt   & 48 pt   & 36 pt \\
-\addlinespace
-Subtitle & & & & \\
-\quad Typeface & \na     & \na     & serif   & \na \\
-\quad Style    & \na     & \na     & upright & \na \\
-\quad Size     & \na     & \na     & 20 pt   & \na \\
-\addlinespace
-Edition & & & & \\
-\quad Typeface & sans serif    & \na  & \na  & \na \\
-\quad Style    & upright, caps & \na  & \na  & \na \\
-\quad Size     & 14 pt         & \na  & \na  & \na \\
-\addlinespace
-Publisher & & & & \\
-\quad Typeface & serif   & serif   & serif   & sans serif \\
-\quad Style    & italics & italics & italics & upright, caps \\
-\quad Size     & 14 pt   & 14 pt   & 14 pt   & 14 pt \\
-\bottomrule
-\end{tabular}
-\end{center}
+\section{Retour aux origines du Web}
 
-\begin{figure*}[p]
-\fbox{\includegraphics[width=0.45\linewidth]{graphics/vdqi-title.pdf}}
-\hfill
-\fbox{\includegraphics[width=0.45\linewidth]{graphics/ei-title.pdf}}
-\\\vspace{\baselineskip}
-\fbox{\includegraphics[width=0.45\linewidth]{graphics/ve-title.pdf}}
-\hfill
-\fbox{\includegraphics[width=0.45\linewidth]{graphics/be-title.pdf}}
-\end{figure*}
+\section{Le migrant connecté}
 
-\newthought{The tables of contents} in Tufte's books give us our first
-glimpse of the structure of the main matter.  \VDQI is split into two
-parts, each containing some number of chapters.  His other three books only
-contain chapters---they're not broken into parts.
+\section{Le Web, espace de communication et d'organisation}
 
-\begin{figure*}[p]\index{table of contents}
-\fbox{\includegraphics[width=0.45\linewidth]{graphics/vdqi-contents.pdf}}
-\hfill
-\fbox{\includegraphics[width=0.45\linewidth]{graphics/ei-contents.pdf}}
-\\\vspace{\baselineskip}
-\fbox{\includegraphics[width=0.45\linewidth]{graphics/ve-contents.pdf}}
-\hfill
-\fbox{\includegraphics[width=0.45\linewidth]{graphics/be-contents.pdf}}
-\end{figure*}
+\section{L'Atlas e-Diasporas}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapitre 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Typefaces}\label{sec:typefaces1}\index{typefaces}
-\index{fonts|see{typefaces}}
+\chapter{20 ans d'archivage du Web}
 
-Tufte's books primarily use two typefaces: Bembo and Gill Sans.  Bembo is used
-for the headings and body text, while Gill Sans is used for the title page and
-opening epigraphs in \BE.
+\section{Les pionniers}
 
-Since neither Bembo nor Gill Sans are available in default \LaTeX{}
-installations, the \TL document classes default to using Palatino and
-Helvetica, respectively.  In addition, the Bera Mono typeface is used for
-\texttt{monospaced} type.
+Internet Archive et le pre-Unesco
 
-The following font sizes are defined by the \TL classes:
+\section{Préserver notre héritage numérique}
 
-\begin{table}[h]\index{typefaces!sizes}
-  \footnotesize%
-  \begin{center}
-    \begin{tabular}{lccl}
-      \toprule
-      \LaTeX{} size & Font size & Leading & Used for \\
-      \midrule
-      \verb+\tiny+         &  5 &  6 & sidenote numbers \\
-      \verb+\scriptsize+   &  7 &  8 & \na \\
-      \verb+\footnotesize+ &  8 & 10 & sidenotes, captions \\
-      \verb+\small+        &  9 & 12 & quote, quotation, and verse environments \\
-      \verb+\normalsize+   & 10 & 14 & body text \\
-      \verb+\large+        & 11 & 15 & \textsc{b}-heads \\
-      \verb+\Large+        & 12 & 16 & \textsc{a}-heads, \textsc{toc} entries, author, date \\
-      \verb+\LARGE+        & 14 & 18 & handout title \\
-      \verb+\huge+         & 20 & 30 & chapter heads \\
-      \verb+\Huge+         & 24 & 36 & part titles \\
-      \bottomrule
-    \end{tabular}
-  \end{center}
-  \caption{A list of \LaTeX{} font sizes as defined by the \TL document classes.}
-  \label{tab:font-sizes}
-\end{table}
+L'unesco et faire des archives un commun
+Un tour du monde des initiatives 
+La constitution juridique des corpus en france 
+Et l'état de l'archivage aujourd'hui (fin de Internet mémory et les rogues archivistes)
 
-\section{Headings}\label{sec:headings1}\index{headings}
+\section{Constituer des corpus d'archives}
 
-Tufte's books include the following heading levels: parts,
-chapters,\sidenote{Parts and chapters are defined for the \texttt{tufte-book}
-class only.}  sections, subsections, and paragraphs.  Not defined by default
-are: sub-subsections and subparagraphs.
+\subsection{Méthodologie d'acquisition}
 
-\begin{table}[h]
-  \begin{center}
-    \footnotesize%
-    \begin{tabular}{lcr}
-      \toprule
-      Heading & Style & Size \\
-      \midrule
-      Part & roman & \measure{24}{36}{40} \\
-      Chapter & italic & \measure{20}{30}{40} \\
-      Section & italic & \measure{12}{16}{26} \\
-      Subsection & italic & \measure{11}{15}{26} \\
-      Paragraph & italic & 10/14 \\
-      \bottomrule
-    \end{tabular}
-  \end{center}
-  \caption{Heading styles used in \BE.}
-  \label{tab:heading-styles}
-\end{table}
+Où l'on fait le tour de l'état de l'art en matière de création d'archives Web, de crawl, etc ...
 
-\paragraph{Paragraph} Paragraph headings (as shown here) are introduced by
-italicized text and separated from the main paragraph by a bit of space.
+\subsection{Un format unique ?}
 
-\section{Environments}
+Où l'on parle du WARC (et de ces prédécesseurs) vs le DAFF
 
-The following characteristics define the various environments:
+\section{Les archives Web de l'Atlas e-Diasporas}
 
+Présentation rapide de l'ensemble des corpus et focus sur les Marocains (expliquation ...)
 
-\begin{table}[h]
-  \begin{center}
-    \footnotesize%
-    \begin{tabular}{lcl}
-      \toprule
-      Environment & Font size & Notes \\
-      \midrule
-      Body text & \measure{10}{14}{26} & \\
-      Block quote & \measure{9}{12}{24} & Block indent (left and right) by \unit[1]{pc} \\
-      Sidenotes & \measure{8}{10}{12} & Sidenote number is set inline, followed by word space \\
-      Captions & \measure{8}{10}{12} &  \\
-      \bottomrule
-    \end{tabular}
-  \end{center}
-  \caption{Environment styles used in \BE.}
-  \label{tab:environment-styles}
-\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapitre 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\chapter{Traces Discrétisées et Temporalité Figée}
 
-\chapter{20 d'archivage du web}
-\label{ch:tufte-book}
+\section{Détruire pour mieux archiver}
 
-The \TL document classes define a style similar to the
-style Edward Tufte uses in his books and handouts.  Tufte's style is known
-for its extensive use of sidenotes, tight integration of graphics with
-text, and well-set typography.  This document aims to be at once a
-demonstration of the features of the \TL document classes
-and a style guide to their use.
+De Derrida aux traces discrétisées, de la sélection effectuée par le crawler et l'archiviste, les archives sont des traces discrètes du Web, comme Funes on ne peut tout garder 
 
-\section{Page Layout}\label{sec:page-layout}
-\subsection{Headings}\label{sec:headings}\index{headings}
-This style provides \textsc{a}- and \textsc{b}-heads (that is,
-\Verb|\section| and \Verb|\subsection|), demonstrated above.
+\section{Un temps sans extension}
 
-If you need more than two levels of section headings, you'll have to define
-them yourself at the moment; there are no pre-defined styles for anything below
-a \Verb|\subsection|.  As Bringhurst points out in \textit{The Elements of
-Typographic Style},\cite{Bringhurst2005} you should ``use as many levels of
-headings as you need: no more, and no fewer.''
+Ici on part de Saint Augustin et de sa définition d'un présent sans extension qui a influencer le rapport des occidentaux au temps. Ce rapport au temps se retrouve lorsque l'on étudie en détail les modèles d'exploration des archives web qui s'appuient sur la date de capture d'un contenu. S'en suit plusieurs remarques qu'il faut conserver en tete avant de se plonger dans toute exploration
 
-The \TL classes will emit an error if you try to use
-\linebreak\Verb|\subsubsection| and smaller headings.
+\subsection{Crawl blindness}
 
-% let's start a new thought -- a new section
-\newthought{In his later books},\cite{Tufte2006} Tufte
-starts each section with a bit of vertical space, a non-indented paragraph,
-and sets the first few words of the sentence in \textsc{small caps}.  To
-accomplish this using this style, use the \doccmddef{newthought} command:
-\begin{docspec}
-  \doccmd{newthought}\{In his later books\}, Tufte starts\ldots
-\end{docspec}
+\subsection{Cohérence}
 
+\subsection{Duplicata}
 
-\section{Sidenotes}\label{sec:sidenotes}
-One of the most prominent and distinctive features of this style is the
-extensive use of sidenotes.  There is a wide margin to provide ample room
-for sidenotes and small figures.  Any \doccmd{footnote}s will automatically
-be converted to sidenotes.\footnote{This is a sidenote that was entered
-using the \texttt{\textbackslash footnote} command.}  If you'd like to place ancillary
-information in the margin without the sidenote mark (the superscript
-number), you can use the \doccmd{marginnote} command.\marginnote{This is a
-margin note.  Notice that there isn't a number preceding the note, and
-there is no number in the main text where this note was written.}
+\section{Construire un moteur d'exploration d'archive}
 
-The specification of the \doccmddef{sidenote} command is:
-\begin{docspec}
-  \doccmd{sidenote}[\docopt{number}][\docopt{offset}]\{\docarg{Sidenote text.}\}
-\end{docspec}
+\subsection{Extraction et enrichissement}
 
-Both the \docopt{number} and \docopt{offset} arguments are optional.  If you
-provide a \docopt{number} argument, then that number will be used as the
-sidenote number.  It will change of the number of the current sidenote only and
-will not affect the numbering sequence of subsequent sidenotes.
+\subsection{Définition du schéma d'indexation}
 
-Sometimes a sidenote may run over the top of other text or graphics in the
-margin space.  If this happens, you can adjust the vertical position of the
-sidenote by providing a dimension in the \docopt{offset} argument.  Some
-examples of valid dimensions are:
-\begin{docspec}
-  \ttfamily 1.0in \qquad 2.54cm \qquad 254mm \qquad 6\Verb|\baselineskip|
-\end{docspec}
-If the dimension is positive it will push the sidenote down the page; if the
-dimension is negative, it will move the sidenote up the page.
+\subsection{Détection d'événements}
 
-While both the \docopt{number} and \docopt{offset} arguments are optional, they
-must be provided in order.  To adjust the vertical position of the sidenote
-while leaving the sidenote number alone, use the following syntax:
-\begin{docspec}
-  \doccmd{sidenote}[][\docopt{offset}]\{\docarg{Sidenote text.}\}
-\end{docspec}
-The empty brackets tell the \Verb|\sidenote| command to use the default
-sidenote number.
+\section{Les archives sont des traces indirectes du Web}
 
-If you \emph{only} want to change the sidenote number, however, you may
-completely omit the \docopt{offset} argument:
-\begin{docspec}
-  \doccmd{sidenote}[\docopt{number}]\{\docarg{Sidenote text.}\}
-\end{docspec}
+Les archives sont les traces directes du crawler et non du web (Cf mises en gardes précédentes) + exemple sur yabiladi.com donc il faut descendre au niveau de la page et y extraire d'autres temporalités, d'autres forme d'exploration qui ne dépendent pas non plus de la linéarité proposé par les moteurs d'exploration classique.
+La désagragation se fait dans le modèle de données mais également dans la façon de conduire sont exploration. 
 
-The \doccmddef{marginnote} command has a similar \docarg{offset} argument:
-\begin{docspec}
-  \doccmd{marginnote}[\docopt{offset}]\{\docarg{Margin note text.}\}
-\end{docspec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapitre 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Fragmenter les Archives Web}
+
+Où l'on parle des différentes strates du Web, de l'intuition de descendre sous le niveau de la page, de la définition du fragment Web, de la méthodologie d'extraction et de la redéfinition d'un modèle d'analyse désagrégé des archives Web 
+
+\section{Vers une nouvelle unité d'exploration}
+
+\subsection{Les strates d'analyse du Web}
+
+Les strate du web ou la nécessité de descendre sous le niveau de la page Web
+
+\subsection{La question de la datation d'une page archiver}
+
+Ici on introduit une échelle de datation et on se questionne sur la meilleur façon de dater une archive web
+
+\subsection{Désagréger pour changer de temporalité}
+
+Là on fait l'expérience edition date vs crawler date et l'on découvre que le fragment web peut nous permettre d'échapper à la tyrannie du crawl et à structure temporelle linéaire.
+
+\section{Le fragment Web}
+
+Là c'est la définition
+
+\section{Scraping et méthodologie d'extraction}
+
+\subsection{Extraire de l'information issue d'une page Web}
+
+Là on parle de scraping et on fait une revue de l'état de l'art et l'on parle de readability ...
+
+\subsection{Implémentation technique}
+
+Là on parle de rivelaine et de la fonction distance ...
+
+\subsection{Exemples et discussions}
+
+Là on parle de l'automatique vs le fait à la main avec le truc firefox
+
+\section{Penser une exploration désagrégée}
+
+\subsection{Atténuer les "crawl blindness"}
+
+\subsection{Cohérence relative entre archives}
+
+\subsection{Dédupliquer les corpus}
+
+\section{Intégration à un moteur d'exploration}
+
+\subsection{D'un schéma à un autre}
+
+\subsection{Retour à la détection d'événements}
+
+\subsection{S'éloigner des moteurs d'exploration}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapitre 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Explorations de Collectifs Migrants Éteints}
+
+Où l'on parle d'exploration de blogs, de forum et de moments
+
+%%%%%%%%
+\section{À la recherche de l'étonnement : l'analyse exploratoire de données}
+
+\subsection{De Tuckey à Fry}
+
+Où l'on explique l'EDA de où ça vient 
+
+\subsection{Abduction, déduction, induction}
+
+Où l'on introduit la philosophie générale de l'EDA et on peut faire un lien avec Ginsburg
+
+\subsection{Méthodologie technique d'exploration}
+
+Où l'on explique comment techniquement nous allons procéder en suivant plutôt Fry
+
+%%%%%%%%
+\section{Les traces d'une mutation numérique}
+
+\subsection{D'une communauté vibrante de blogs ...}
+
+Là on raconte l'état des blogs en 2008
+
+\subsection{... à un collectif éteint}
+
+Là on raconte l'état des blogs en 2018
+
+\subsection{Définir l'espace d'exploration}
+
+Là on explique la forme des fragments que l'on va chercher à retrouver
+
+\subsection{Migration d'un territoire Web à un autre}
+
+Là comprend que les blogs se sont déplacé vers Fb et Twitter
+
+\subsection{Conserver son identité numérique}
+
+Là on parle de la communauté des blogs
+
+\subsection{Le Printemps Arabe vu comme un moment-clé}
+
+Là on introduit le Printemps arabe marocain 
+
+%%%%%%%%
+\section{Un soulèvement en ligne éphémère}
+
+\subsection{Yabiladi.com : porte d'entrée sur la diaspora}
+
+Là on explique ce qu'est Yabiladi
+
+\subsection{La manifestation du 20 Février 2011}
+
+Là on rappelle ce qu'est cet événement
+
+\subsection{Définir l'espace d'exploration}
+
+Là on explique la forme des fragments que l'on va chercher à étudier
+
+\subsection{Voir un site évoluer}
+
+Là on explique comment on va visualiser ces fragments
+
+\subsection{Agréger les contributeurs}
+
+Là on s'intéresse au graph des contributeurs
+
+\subsection{De l'embrasement à l'évasion}
+
+Là on regarde les clusters de Threads
+
+\section{Les Moments Pivot du Web}
+
+\subsection{Les limites de l'archivage du Web}
+
+Les archives ne capturent pas le Web comme un environnement
+
+\subsection{Les moments pivots du Web}
+
+Un moment pivot c'est quoi ? Les geste et compagnie ainsi que la micro-histoire
+
+\subsection{Temporalités d'analyse}
+
+Là on se dit que l'exploration désagrégée c'est quand meme pas mal et que l'on peut étudier les archives autour de moments singuliers
+
+\subsection{Repenser nos archives vis à vis des moments pivots}
+
+Là on commence à parler de la suite, du web que l'on souhaite, de la neutralité et des défis à venir de l'archivage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapitre 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Au Delà Des Archives Web}
+
+\section{Remettre l'humain au cœur des archives}
+
+\section{Fouiller les archives du Web profond}
+
+\section{Les traces nativement numérique}
+
+\section{Vers une sociologie numérique des migrations}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapitre Blabla %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Ressources}
 
 \section{References}
 References are placed alongside their citations as sidenotes,
@@ -604,537 +588,6 @@ environment and figure~\ref{fig:textfig} is an example of the normal
   \label{fig:textfig}
   %\zsavepos{pos:textfig}
 \end{figure}
-
-As with sidenotes and marginnotes, a caption may sometimes require vertical
-adjustment. The \doccmddef{caption} command now takes a second optional
-argument that enables you to do this by providing a dimension \docopt{offset}.
-You may specify the caption in any one of the following forms:
-\begin{docspec}
-  \doccmd{caption}\{\docarg{long caption}\}\\
-  \doccmd{caption}[\docarg{short caption}]\{\docarg{long caption}\}\\
-  \doccmd{caption}[][\docopt{offset}]\{\docarg{long caption}\}\\
-  \doccmd{caption}[\docarg{short caption}][\docopt{offset}]%
-                  \{\docarg{long caption}\}
-\end{docspec}
-A positive \docopt{offset} will push the caption down the page. The short
-caption, if provided, is what appears in the list of figures/tables, otherwise
-the ``long'' caption appears there. Note that although the arguments
-\docopt{short caption} and \docopt{offset} are both optional, they must be
-provided in order. Thus, to specify an \docopt{offset} without specifying a
-\docopt{short caption}, you must include the first set of empty brackets
-\Verb|[]|, which tell \doccmd{caption} to use the default ``long'' caption. As
-an example, the caption to figure~\ref{fig:textfig} above was given in the form
-\begin{docspec}
-  \doccmd{caption}[Hilbert curves...][6pt]\{Hilbert curves...\}
-\end{docspec}
-
-Table~\ref{tab:normaltab} shows table created with the \docpkg{booktabs}
-package.  Notice the lack of vertical rules---they serve only to clutter
-the table's data.
-
-\begin{table}[ht]
-  \centering
-  \fontfamily{ppl}\selectfont
-  \begin{tabular}{ll}
-    \toprule
-    Margin & Length \\
-    \midrule
-    Paper width & \unit[8\nicefrac{1}{2}]{inches} \\
-    Paper height & \unit[11]{inches} \\
-    Textblock width & \unit[6\nicefrac{1}{2}]{inches} \\
-    Textblock/sidenote gutter & \unit[\nicefrac{3}{8}]{inches} \\
-    Sidenote width & \unit[2]{inches} \\
-    \bottomrule
-  \end{tabular}
-  \caption{Here are the dimensions of the various margins used in the Tufte-handout class.}
-  \label{tab:normaltab}
-  %\zsavepos{pos:normaltab}
-\end{table}
-
-\newthought{Occasionally} \LaTeX{} will generate an error message:\label{err:too-many-floats}
-\begin{docspec}
-  Error: Too many unprocessed floats
-\end{docspec}
-\LaTeX{} tries to place floats in the best position on the page.  Until it's
-finished composing the page, however, it won't know where those positions are.
-If you have a lot of floats on a page (including sidenotes, margin notes,
-figures, tables, etc.), \LaTeX{} may run out of ``slots'' to keep track of them
-and will generate the above error.
-
-\LaTeX{} initially allocates 18 slots for storing floats.  To work around this
-limitation, the \TL document classes provide a \doccmddef{morefloats} command
-that will reserve more slots.
-
-The first time \doccmd{morefloats} is called, it allocates an additional 34
-slots.  The second time \doccmd{morefloats} is called, it allocates another 26
-slots.
-
-The \doccmd{morefloats} command may only be used two times.  Calling it a
-third time will generate an error message.  (This is because we can't safely
-allocate many more floats or \LaTeX{} will run out of memory.)
-
-If, after using the \doccmd{morefloats} command twice, you continue to get the
-\texttt{Too many unprocessed floats} error, there are a couple things you can
-do.
-
-The \doccmddef{FloatBarrier} command will immediately process all the floats
-before typesetting more material.  Since \doccmd{FloatBarrier} will start a new
-paragraph, you should place this command at the beginning or end of a
-paragraph.
-
-The \doccmddef{clearpage} command will also process the floats before
-continuing, but instead of starting a new paragraph, it will start a new page.
-
-You can also try moving your floats around a bit: move a figure or table to the
-next page or reduce the number of sidenotes.  (Each sidenote actually uses
-\emph{two} slots.)
-
-After the floats have placed, \LaTeX{} will mark those slots as unused so they
-are available for the next page to be composed.
-
-\section{Captions}
-You may notice that the captions are sometimes misaligned.
-Due to the way \LaTeX's float mechanism works, we can't know for sure where it
-decided to put a float. Therefore, the \TL document classes provide commands to
-override the caption position.
-
-\paragraph{Vertical alignment} To override the vertical alignment, use the
-\doccmd{setfloatalignment} command inside the float environment.  For
-example:
-
-\begin{fullwidth}
-\begin{docspec}
-  \textbackslash begin\{figure\}[btp]\\
-  \qquad \textbackslash includegraphics\{sinewave\}\\
-  \qquad \textbackslash caption\{This is an example of a sine wave.\}\\
-  \qquad \textbackslash label\{fig:sinewave\}\\
-  \qquad \hlred{\textbackslash setfloatalignment\{b\}\% forces caption to be bottom-aligned}\\
-  \textbackslash end\{figure\}
-\end{docspec}
-\end{fullwidth}
-
-\noindent The syntax of the \doccmddef{setfloatalignment} command is:
-
-\begin{docspec}
-  \doccmd{setfloatalignment}\{\docopt{pos}\}
-\end{docspec}
-
-\noindent where \docopt{pos} can be either \texttt{b} for bottom-aligned
-captions, or \texttt{t} for top-aligned captions.
-
-\paragraph{Horizontal alignment}\label{par:overriding-horizontal}
-To override the horizontal alignment, use either the \doccmd{forceversofloat}
-or the \doccmd{forcerectofloat} command inside of the float environment.  For
-example:
-
-\begin{fullwidth}
-\begin{docspec}
-  \textbackslash begin\{figure\}[btp]\\
-  \qquad \textbackslash includegraphics\{sinewave\}\\
-  \qquad \textbackslash caption\{This is an example of a sine wave.\}\\
-  \qquad \textbackslash label\{fig:sinewave\}\\
-  \qquad \hlred{\textbackslash forceversofloat\% forces caption to be set to the left of the float}\\
-  \textbackslash end\{figure\}
-\end{docspec}
-\end{fullwidth}
-
-The \doccmddef{forceversofloat} command causes the algorithm to assume the
-float has been placed on a verso page---that is, a page on the left side of a
-two-page spread.  Conversely, the \doccmddef{forcerectofloat} command causes
-the algorithm to assume the float has been placed on a recto page---that is, a
-page on the right side of a two-page spread.
-
-
-\section{Full-width text blocks}
-
-In addition to the new float types, there is a \docenvdef{fullwidth}
-environment that stretches across the main text block and the sidenotes
-area.
-
-\begin{Verbatim}
-\begin{fullwidth}
-Lorem ipsum dolor sit amet...
-\end{fullwidth}
-\end{Verbatim}
-
-\begin{fullwidth}
-\small\itshape\lipsum[1]
-\end{fullwidth}
-
-\section{Typography}\label{sec:typography}
-
-\subsection{Typefaces}\label{sec:typefaces}\index{typefaces}
-If the Palatino, \textsf{Helvetica}, and \texttt{Bera Mono} typefaces are installed, this style
-will use them automatically.  Otherwise, we'll fall back on the Computer Modern
-typefaces.
-
-\subsection{Letterspacing}\label{sec:letterspacing}
-This document class includes two new commands and some improvements on
-existing commands for letterspacing.
-
-When setting strings of \allcaps{ALL CAPS} or \smallcaps{small caps}, the
-letter\-spacing---that is, the spacing between the letters---should be
-increased slightly.\cite{Bringhurst2005}  The \doccmddef{allcaps} command has proper letterspacing for
-strings of \allcaps{FULL CAPITAL LETTERS}, and the \doccmddef{smallcaps} command
-has letterspacing for \smallcaps{small capital letters}.  These commands
-will also automatically convert the case of the text to upper- or
-lowercase, respectively.
-
-The \doccmddef{textsc} command has also been redefined to include
-letterspacing.  The case of the \doccmd{textsc} argument is left as is,
-however.  This allows one to use both uppercase and lowercase letters:
-\textsc{The Initial Letters Of The Words In This Sentence Are Capitalized.}
-
-
-
-\section{Document Class Options}\label{sec:options}
-
-\index{class options|(}
-The \doccls{tufte-book} class is based on the \LaTeX\ \doccls{book}
-document class.  Therefore, you can pass any of the typical book
-options.  There are a few options that are specific to the
-\doccls{tufte-book} document class, however.
-
-The \docclsoptdef{a4paper} option will set the paper size to \smallcaps{A4} instead of
-the default \smallcaps{US} letter size.
-
-The \docclsoptdef{sfsidenotes} option will set the sidenotes and title block in a 
-\textsf{sans serif} typeface instead of the default roman.
-
-The \docclsoptdef{twoside} option will modify the running heads so that the page
-number is printed on the outside edge (as opposed to always printing the page
-number on the right-side edge in \docclsoptdef{oneside} mode).  
-
-The \docclsoptdef{symmetric} option typesets the sidenotes on the outside edge of
-the page.  This is how books are traditionally printed, but is contrary to
-Tufte's book design which sets the sidenotes on the right side of the page.
-This option implicitly sets the \docclsopt{twoside} option.
-
-The \docclsoptdef{justified} option sets all the text fully justified (flush left
-and right).  The default is to set the text ragged right.  
-The body text of Tufte's books are set ragged right.  This prevents
-needless hyphenation and makes it easier to read the text in the slightly
-narrower column.
-
-The \docclsoptdef{bidi} option loads the \docpkg{bidi} package which is used with
-\tXeLaTeX\ to typeset bi-directional text.  Since the \docpkg{bidi}
-package needs to be loaded before the sidenotes and cite commands are defined,
-it can't be loaded in the document preamble.
-
-The \docclsoptdef{debug} option causes the \TL classes to output debug
-information to the log file which is useful in troubleshooting bugs.  It will
-also cause the graphics to be replaced by outlines.
-
-The \docclsoptdef{nofonts} option prevents the \TL classes from
-automatically loading the Palatino and Helvetica typefaces.  You should use
-this option if you wish to load your own fonts.  If you're using \tXeLaTeX, this
-option is implied (\ie, the Palatino and Helvetica fonts aren't loaded if you
-use \tXeLaTeX).  
-
-The \docclsoptdef{nols} option inhibits the letterspacing code.  The \TL\
-classes try to load the appropriate letterspacing package (either pdf\TeX's
-\docpkg{letterspace} package or the \docpkg{soul} package).  If you're using
-\tXeLaTeX\ with \docpkg{fontenc}, however, you should configure your own
-letterspacing.  
-
-The \docclsoptdef{notitlepage} option causes \doccmd{maketitle} to generate a title
-block instead of a title page.  The \doccls{book} class defaults to a title
-page and the \doccls{handout} class defaults to the title block.  There is an
-analogous \docclsoptdef{titlepage} option that forces \doccmd{maketitle} to
-generate a full title page instead of the title block.
-
-The \docclsoptdef{notoc} option suppresses \TL's custom table of contents
-(\textsc{toc}) design.  The current \textsc{toc} design only shows unnumbered
-chapter titles; it doesn't show sections or subsections.  The \docclsopt{notoc}
-option will revert to \LaTeX's \textsc{toc} design.
-
-The \docclsoptdef{nohyper} option prevents the \docpkg{hyperref} package from
-being loaded.  The default is to load the \docpkg{hyperref} package and use the
-\doccmd{title} and \doccmd{author} contents as metadata for the generated
-\textsc{pdf}.
-
-\index{class options|)}
-
-
-
-\chapter{Fragmenter les archives}
-\label{ch:customizing}
-
-The \TL document classes are designed to closely emulate Tufte's book
-design by default.  However, each document is different and you may encounter
-situations where the default settings are insufficient.  This chapter explores
-many of the ways you can adjust the \TL document classes to better fit
-your needs.
-
-\section{File Hooks}
-\label{sec:filehooks}
-
-\index{file hooks|(}
-If you create many documents using the \TL classes, it's easier to
-store your customizations in a separate file instead of copying them into the
-preamble of each document.  The \TL classes provide three file hooks:
-\docfilehook{tufte-common-local.tex}{common}, \docfilehook{tufte-book-local.tex}{book}, and
-\docfilehook{tufte-handout-local.tex}{handout}.\sloppy
-
-\begin{description}
-  \item[\docfilehook{tufte-common-local.tex}{common}]
-    If this file exists, it will be loaded by all of the \TL document
-    classes just prior to any document-class-specific code.  If your
-    customizations or code should be included in both the book and handout
-    classes, use this file hook.
-  \item[\docfilehook{tufte-book-local.tex}{book}] 
-    If this file exists, it will be loaded after all of the common and
-    book-specific code has been read.  If your customizations apply only to the
-    book class, use this file hook.
-  \item[\docfilehook{tufte-common-handout.tex}{handout}] 
-    If this file exists, it will be loaded after all of the common and
-    handout-specific code has been read.  If your customizations apply only to
-    the handout class, use this file hook.
-\end{description}
-
-\index{file hooks|)}
-
-\section{Numbered Section Headings}
-\label{sec:numbered-sections}
-\index{headings!numbered}
-
-While Tufte dispenses with numbered headings in his books, if you require them,
-they can be anabled by changing the value of the \doccounter{secnumdepth}
-counter.  From the table below, select the heading level at which numbering
-should stop and set the \doccounter{secnumdepth} counter to that value.  For
-example, if you want parts and chapters numbered, but don't want numbering for
-sections or subsections, use the command:
-\begin{docspec}
-  \doccmd{setcounter}\{secnumdepth\}\{0\}
-\end{docspec}
-
-The default \doccounter{secnumdepth} for the \TL document classes is $-1$.
-
-\begin{table}
-  \footnotesize
-  \begin{center}
-    \begin{tabular}{lr}
-      \toprule
-      Heading level & Value \\
-      \midrule
-      Part (in \doccls{tufte-book}) & $-1$ \\
-      Part (in \doccls{tufte-handout}) & $0$ \\
-      Chapter (only in \doccls{tufte-book}) & $0$ \\
-      Section & $1$ \\
-      Subsection & $2$ \\
-      Subsubsection & $3$ \\
-      Paragraph & $4$ \\
-      Subparagraph & $5$ \\
-      \bottomrule
-    \end{tabular}
-  \end{center}
-  \caption{Heading levels used with the \texttt{secnumdepth} counter.}
-\end{table}
-
-\section{Changing the Paper Size}
-\label{sec:paper-size}
-
-The \TL classes currently only provide three paper sizes: \textsc{a4},
-\textsc{b5}, and \textsc{us} letter.  To specify a different paper size (and/or
-margins), use the \doccmd[geometry]{geometry} command in the preamble of your
-document (or one of the file hooks).  The full documentation of the
-\doccmd{geometry} command may be found in the \docpkg{geometry} package
-documentation.\cite{pkg-geometry}
-
-
-\section{Customizing Marginal Material}
-\label{sec:marginal-material}
-
-Marginal material includes sidenotes, citations, margin notes, and captions.
-Normally, the justification of the marginal material follows the justification
-of the body text.  If you specify the \docclsopt{justified} document class
-option, all of the margin material will be fully justified as well.  If you
-don't specify the \docclsopt{justified} option, then the marginal material will
-be set ragged right.
-
-You can set the justification of the marginal material separately from the body
-text using the following document class options: \docclsopt{sidenote},
-\docclsopt{marginnote}, \docclsopt{caption}, \docclsopt{citation}, and
-\docclsopt{marginals}.  Each option refers to its obviously corresponding
-marginal material type.  The \docclsopt{marginals} option simultaneously sets
-the justification on all four marginal material types.
-
-Each of the document class options takes one of five justification types:
-\begin{description}
-  \item[\docclsopt{justified}] Fully justifies the text (sets it flush left and
-    right).
-  \item[\docclsopt{raggedleft}] Sets the text ragged left, regardless of which
-    page it falls on.
-  \item[\docclsopt{raggedright}] Sets the text ragged right, regardless of
-    which page it falls on.
-  \item[\doccls{raggedouter}] Sets the text ragged left if it falls on the
-    left-hand (verso) page of the spread and otherwise sets it ragged right.
-    This is useful in conjunction with the \docclsopt{symmetric} document class
-    option.
-  \item[\docclsopt{auto}] If the \docclsopt{justified} document class option
-    was specified, then set the text fully justified; otherwise the text is set
-    ragged right.  This is the default justification option if one is not
-    explicitly specified.
-\end{description}
-
-\noindent For example, 
-\begin{docspec}
-  \doccmdnoindex{documentclass}[symmetric,justified,marginals=raggedouter]\{tufte-book\}
-\end{docspec}
-will set the body text of the document to be fully justified and all of the
-margin material (sidenotes, margin notes, captions, and citations) to be flush
-against the body text with ragged outer edges.
-
-\newthought{The font and style} of the marginal material may also be modified using the following commands:
-
-\begin{docspec}
-  \doccmd{setsidenotefont}\{\docopt{font commands}\}\\
-  \doccmd{setcaptionfont}\{\docopt{font commands}\}\\
-  \doccmd{setmarginnotefont}\{\docopt{font commands}\}\\
-  \doccmd{setcitationfont}\{\docopt{font commands}\}
-\end{docspec}
-
-The \doccmddef{setsidenotefont} sets the font and style for sidenotes, the
-\doccmddef{setcaptionfont} for captions, the \doccmddef{setmarginnotefont} for
-margin notes, and the \doccmddef{setcitationfont} for citations.  The
-\docopt{font commands} can contain font size changes (e.g.,
-\doccmdnoindex{footnotesize}, \doccmdnoindex{Huge}, etc.), font style changes (e.g.,
-\doccmdnoindex{sffamily}, \doccmdnoindex{ttfamily}, \doccmdnoindex{itshape}, etc.), color changes (e.g.,
-\doccmdnoindex{color}\texttt{\{blue\}}), and many other adjustments.
-
-If, for example, you wanted the captions to be set in italic sans serif, you could use:
-\begin{docspec}
-  \doccmd{setcaptionfont}\{\doccmdnoindex{itshape}\doccmdnoindex{sffamily}\}
-\end{docspec}
-
-\chapter{Trouver une épingle dans une meule de paille}
-\label{ch:compatibility}
-
-When switching an existing document from one document class to a \TL document class, a few changes to the document may have to be made.
-
-\section{Converting from \doccls{article} to \doccls{tufte-handout}}
-
-The following \doccls{article} class options are unsupported: \docclsopt{10pt}, \docclsopt{11pt}, \docclsopt{12pt}, \docclsopt{a5paper}, \docclsopt{b5paper}, \docclsopt{executivepaper}, \docclsopt{legalpaper}, \docclsopt{landscape}, \docclsopt{onecolumn}, and \doccls{twocolumn}.
-
-The following headings are not supported: \doccmd{subsubsection} and \doccmd{subparagraph}.
-
-\section{Converting from \doccls{book} to \doccls{tufte-book}}
-
-The following \doccls{report} class options are unsupported: \docclsopt{10pt}, \docclsopt{11pt}, \docclsopt{12pt}, \docclsopt{a5paper}, \docclsopt{b5paper}, \docclsopt{executivepaper}, \docclsopt{legalpaper}, \docclsopt{landscape}, \docclsopt{onecolumn}, and \doccls{twocolumn}.
-
-The following headings are not supported: \doccmd{subsubsection} and \doccmd{subparagraph}.
-
-
-
-\chapter{Where the dead blogs are}
-\label{ch:troubleshooting}
-
-\section{\TL Website}\label{sec:website}
-The website for the \TL packages is located at
-\url{http://code.google.com/p/tufte-latex/}.  On our website, you'll find
-links to our \smallcaps{svn} repository, mailing lists, bug tracker, and documentation.
-
-\section{\TL Mailing Lists}\label{sec:mailing-lists}
-There are two mailing lists for the \TL project:
-
-\paragraph{Discussion list}
-The \texttt{tufte-latex} discussion list is for asking questions, getting
-assistance with problems, and help with troubleshooting.  Release announcements
-are also posted to this list.  You can subscribe to the \texttt{tufte-latex}
-discussion list at \url{http://groups.google.com/group/tufte-latex}.
-
-\paragraph{Commits list}
-The \texttt{tufte-latex-commits} list is a read-only mailing list.  A message
-is sent to the list any time the \TL code has been updated.  If you'd like to
-keep up with the latest code developments, you may subscribe to this list.  You
-can subscribe to the \texttt{tufte-latex-commits} mailing list at
-\url{http://groups.google.com/group/tufte-latex-commits}.
-
-\section{Getting Help}\label{sec:getting-help}
-If you've encountered a problem with one of the \TL document classes, have a
-question, or would like to report a bug, please send an email to our
-mailing list or visit our website.
-
-To help us troubleshoot the problem more quickly, please try to compile your
-document using the \docclsopt{debug} class option and send the generated
-\texttt{.log} file to the mailing list with a brief description of the problem.
-
-
-
-\section{Errors, Warnings, and Informational Messages}\label{sec:tl-messages}
-The following is a list of all of the errors, warnings, and other messages generated by the \TL classes and a brief description of their meanings.
-\index{error messages}\index{warning messages}\index{debug messages}
-
-% Errors
-\docmsg{Error: \doccmd{subparagraph} is undefined by this class.}{%
-The \doccmd{subparagraph} command is not defined in the \TL document classes.
-If you'd like to use the \doccmd{subparagraph} command, you'll need to redefine
-it yourself.  See the ``Headings'' section on page~\pageref{sec:headings} for a
-description of the heading styles available in the \TL document classes.}
-
-\docmsg{Error: \doccmd{subsubsection} is undefined by this class.}{%
-The \doccmd{subsubsection} command is not defined in the \TL document classes.
-If you'd like to use the \doccmd{subsubsection} command, you'll need to
-redefine it yourself.  See the ``Headings'' section on
-page~\pageref{sec:headings} for a description of the heading styles available
-in the \TL document classes.}
-
-\docmsg{Error: You may only call \doccmd{morefloats} twice. See the\par\noindent\ \ \ \ \ \ \ \ Tufte-LaTeX documentation for other workarounds.}{%
-\LaTeX{} allocates 18 slots for storing floats.  The first time
-\doccmd{morefloats} is called, it allocates an additional 34 slots.  The second
-time \doccmd{morefloats} is called, it allocates another 26 slots.
-
-The \doccmd{morefloats} command may only be called two times.  Calling it a
-third time will generate this error message.  See
-page~\pageref{err:too-many-floats} for more information.}
-
-% Warnings
-\docmsg{Warning: Option `\docopt{class option}' is not supported -{}- ignoring option.}{%
-This warning appears when you've tried to use \docopt{class option} with a \TL
-document class, but \docopt{class option} isn't supported by the \TL document
-class.  In this situation, \docopt{class option} is ignored.}
-
-% Info / Debug messages
-\docmsg{Info: The `\docclsopt{symmetric}' option implies `\docclsopt{twoside}'}{%
-You specified the \docclsopt{symmetric} document class option.  This option automatically forces the \docclsopt{twoside} option as well.  See page~\pageref{clsopt:symmetric} for more information on the \docclsopt{symmetric} class option.}
-
-
-\section{Package Dependencies}\label{sec:dependencies}
-The following is a list of packages that the \TL document
-classes rely upon.  Packages marked with an asterisk are optional.
-\begin{multicols}{2}
-\begin{itemize}
-  \item xifthen
-  \item ifpdf*
-  \item ifxetex*
-  \item hyperref
-  \item geometry
-  \item ragged2e
-  \item chngpage \emph{or} changepage
-  \item paralist
-  \item textcase
-  \item soul*
-  \item letterspace*
-  \item setspace
-  \item natbib \emph{and} bibentry
-  \item optparams
-  \item placeins
-  \item mathpazo*
-  \item helvet*
-  \item fontenc
-  \item beramono*
-  \item fancyhdr
-  \item xcolor
-  \item textcomp
-  \item titlesec
-  \item titletoc
-\end{itemize}
-\end{multicols}
-
-
-\chapter{Ajouter des êtres vivants}
-
-\chapter{Les archives du web profond}
 
 \chapter{Conclusion}
 

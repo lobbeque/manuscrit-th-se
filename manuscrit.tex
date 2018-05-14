@@ -135,6 +135,9 @@
 \usepackage{makeidx}
 \makeindex
 
+
+\usepackage{indentfirst}
+
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
@@ -196,7 +199,6 @@
 \begin{fullwidth}
 ~\vfill
 \thispagestyle{empty}
-\setlength{\parindent}{0pt}
 \setlength{\parskip}{\baselineskip}
 
 \par\noindent Thèse présentée par \textbf{\thanklessauthor}\\
@@ -225,7 +227,7 @@ quentin.lobbe@telecom-paristech.fr
 \newpage
 
 ~\vfill
-\nohyphenation\noindent
+\noindent
 \justify
 \par\noindent Il me demanda de chercher la première page.\\
 \noindent Je posais ma main gauche sur la couverture et ouvris le volume de mon pouce serré contre l'index. Je m'efforçais en vain : il restait toujours des feuilles entre la couverture et mon pouce. Elles semblaient sourdre du livre.\\
@@ -237,9 +239,8 @@ quentin.lobbe@telecom-paristech.fr
 \\~\\
 \noindent\textit{Jorge Luis Borges - Le livre de sable} 
 \vfill
-
+\indent
 \newpage
-\setlength{\parindent}{0pt}
 \begingroup
 \vspace*{8em}
 \huge $\vert$ \huge Remerciements
@@ -356,9 +357,25 @@ La désagragation se fait dans le modèle de données mais également dans la fa
 
 \chapter{Fragmenter les Archives Web}
 
-Où l'on parle des différentes strates du Web, de l'intuition de descendre sous le niveau de la page, de la définition du fragment Web, de la méthodologie d'extraction et de la redéfinition d'un modèle d'analyse désagrégé des archives Web 
+\par\noindent Les effets de \textit{crawl legacy} sont indissociables des archives Web telles que nous les connaissons. Liés organiquement à la structure même des divers formats d'archivage, ils en sont les artéfacts directs et demeurent des obstacles majeurs pour qui souhaite mener à bien une exploration du Web archivé. S'il est tout à fait possible, depuis la WayBack Machine par exemple, de différencier \textit{à la main} la date d'archivage d'une page Web visitée de la date supposée de sa création ou de la date de publication réelle de tel ou tel contenu, cette tâche deviendra rapidement fastidieuse voire titanesque à mesure que grandira notre périmètre d'exploration. En associant les contenus archivés à la temporalité seule du crawler (voir \textbf{Figure X}), les archives Web se détachent de réalité historique des sites et des pages Web dont elles sont censées être le reflet fidèle. Ainsi, un site Web pourra être sur-représenté (ou inversement sous-représenté : voir \textbf{Figure X}) au sein d'un corpus d'archives au cours d'une période potentiellement plus liée à la programmation du crawler qu'à l'activité effective du site et des ses pages.   
 
-\section{Vers une nouvelle unité d'exploration}
+L'exploration fine et complète de notre corpus d'archives sous-tend à toute compréhension de l'évolution de l'e-Diasporas marocaine telle que nous la formulions en Introduction. Tout l'enjeu de ce chapitre sera de déterminer un moyen d'affranchir les archives Web du lien qui les unissent aux crawlers. Il s'agira ici de retrouver, dans le code HTML des corpus archivés, les indices de la création d'une page ou de la publication d'un contenu et d'articuler notre analyse autour de ces nouvelles données : descendre au delà du niveau des Web. 
+
+L'essentiel de ce chapitre sera donc consacré à ce déplacement, à ce changement d'échelle analytique (ou de strate au sens de N. Brügger \citep{brugger_website_2009}) et à ces conséquences. Au geste du crawler, nous substituerons le geste de l'auteur et du lecteur dont le passage sur les pages Web archivés aura laissé des traces qu'il nous faudra exploiter. Sur ce point, nous proposerons l'introduction d'une nouvelle unité d'exploration des archives Web : le \textit{fragment Web}. Nous présenterons, dans un premier temps, la genèse et les inspirations qui sous-tendent et motivent la définition du \textit{fragement Web}. Puis, nous reviendrons en miroir sur les modalités techniques et théoriques d'un moteur d'exploration d'archives Web telles que présentées dans le Chapitre 4, mais cette fois-ci, revisitées à l'aune du \textit{fragment Web}. Cette mise à niveau servira de base aux explorations présentées plus avant dans le Chapitre 6.
+
+\section{5.1 Vers une nouvelle unité d'exploration}
+
+\par\noindent Au delà de la simple volonté de s'affranchir des limitations du format actuel des archives Web, notre proposition de fragmenter les corpus d'archives est portée par l'idée selon laquelle toute archive est une matière destinée à être déconstruire, désagréger ou ré-arrangée en vue de la questionner et d'inventer l'histoire. Une archive ne parle pas seule \citep{ketelaar_de_2006}, elle n'est jamais fermée, jamais complète, mais se tient toujours prête à être réinterprétée par une nouvelle génération. Mais gardons néanmoins à l'esprit, comme le rappel J. Derrida\footnote{\textit{"je peux interroger, contredire, attaquer ou simplement déconstruire une logique du texte venu avant moi, devant moi, mais je ne peux ni ne dois le changer"} \cite{derrida_mal_1995}}, que le document d'origine (dans notre cas la page Web archivée) ne doit en aucun cas être altéré ou modifié. Et ce, pour justement permettre à d'autres, après nous, d'à nouveau s'y référer, le faire parler. 
+
+Le \textit{fragment Web}, tel que nous le présenterons dans la suite de ce chapitre, ne sera donc pas une version modifiée d'une page Web archivée, mais bien une nouvelle entité issue de la page Web déconstruite et utilisable en parallèle des modèles d'exploration d'archives déjà existants.    
+
+\subsection{Découper, déplacer, monter}
+
+\par\noindent Nous évoquions déjà, dans le chapitre précédent, le personnage de Funes imaginé par J. L. Borges qui, dans la fable, est condamné à ne plus jamais rien oublier au détriment de ses propres capacités à penser. Funes se redécouvre ainsi sans cesse, n'arrivant pas à se créer des souvenirs, à se raconter de mémoire sa propre histoire\footnote{"\textit{ Ils nous laissent entrevoir ou déduire le monde vertigineux de Funes. Celui-ci, ne l’oublions pas, était presque incapable d’idées générales, platoniques. [...] Son propre visage dans la glace, ses propres mains,  le surprenaient chaque fois.}" \cite{borges_fictions_1974}}. Pour mémoriser il faut oublier, ré-arranger et faire du montage. Nos souvenirs sont des sélections qui mises bout à bout, collées, accélérées ou ralenties forment le film de nos histoires telles que nous nous en rappelons. En cela, la posture de l'historien face à un document archivé doit pouvoir se rapprocher de celle du monter de cinéma face à une matière filmée. Leurs outils sont semblables. Lorsqu'il invente l'histoire, l'historien déconstruit, isole ou rapproche les archives entre elles. Dans son court métrage de 1993 \textit{"Je Vous Salue, Sarajevo"}\footnote{Voir \url{https://youtu.be/WKbfu8rRrho}}, J. L. Godard fragmente, isole et fait se confronter des inserts éclatés d'une photographie du reporteur de guerre R. Haviv à la manière d'un collage-poème ou d'un cinétract\footnote{Voir \url{https://fr.wikipedia.org/wiki/Cin\%C3\%A9tract}}. Par le collage, les fondus et les découpes Godard rompt la continuité de l'archive qu'il utilise comme source première afin de rendre compte image après image de la cruauté qui frappe Sarajevo, une ville de son temps. Le film finit par dévoiler entière, l'image dans toute son horreur. Décomposer pour mieux recomposer.
+
+De la même manière, dans ses derniers travaux historiographiques \citep{baschet_defaire_2018}, l'historien médiéviste J. Baschet à recourt à W. Benjamine pour réaffirmer la nécessité de rompre avec une vision unilinéaire de l'histoire. Il faut, selon lui, faire éclater la continuité de l'histoire pour en isoler des constellations afin de mieux saisir l'ensemble d'un mouvement historique. 
+
+Ceux sont ces outils de montage que nous souhaitons, par l'intermédiaire du \textit{fragment Web} donner aux explorateurs d'archives Web. Avoir en main des éléments fragmentés de pages Web éloignés, que nous pourrions rapprocher à souhait afin de traiter plus largement d'un moment particulier de l'histoire du Web. 
 
 \subsection{Les strates d'analyse du Web}
 
@@ -370,11 +387,11 @@ Ici on introduit une échelle de datation et on se questionne sur la meilleur fa
 
 \subsection{Désagréger pour changer de temporalité}
 
-Là on fait l'expérience edition date vs crawler date et l'on découvre que le fragment web peut nous permettre d'échapper à la tyrannie du crawl et à structure temporelle linéaire.
+Là on fait l'expérience edition date vs crawler date et l'on découvre que le fragment web peut nous permettre d'échapper à la tyrannie du crawl et à structure temporelle linéaire. Et Godard et 
 
-\section{Le fragment Web}
+\section{Le fragment Web : définition}
 
-Là c'est la définition
+Considérant la page Web comme unité de consultation de base du Web, bâtit sur des modalités d'écriture propre au support numérique et constatant que du point de vue de la perception humaine une page web est le résultat de l'agencement logique de fragments sémantiques distincts, alors :
 
 \section{Scraping et méthodologie d'extraction}
 
@@ -603,7 +620,7 @@ environment and figure~\ref{fig:textfig} is an example of the normal
 
 \backmatter
 
-\bibliography{sample-handout}
+\bibliography{biblio}
 \bibliographystyle{plainnat}
 
 

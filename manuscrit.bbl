@@ -1,20 +1,37 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Tufte(1990)]{Tufte1990}
-Edward~R. Tufte.
-\newblock \emph{Envisioning Information}.
-\newblock Graphics Press, Cheshire, Connecticut, 1990.
-\newblock ISBN 0-9613921-1-8.
+\bibitem[Baschet(2018)]{baschet_defaire_2018}
+J.~Baschet.
+\newblock \emph{Défaire la tyrannie du présent: {Temporalités} émergentes
+  et futurs inédits}.
+\newblock L'horizon des possibles. Editions La Découverte, 2018.
+\newblock ISBN 978-2-7071-9734-4.
 
-\bibitem[Tufte(2006)]{Tufte2006}
-Edward~R. Tufte.
-\newblock \emph{Beautiful Evidence}.
-\newblock Graphics Press, {LLC}, first edition, May 2006.
-\newblock ISBN 0-9613921-7-7.
+\bibitem[Borges(1974)]{borges_fictions_1974}
+J.L. Borges.
+\newblock \emph{Fictions}.
+\newblock Collection {Folio}. Editions Gallimard, 1974.
+
+\bibitem[Brügger(2009)]{brugger_website_2009}
+Niels Brügger.
+\newblock Website history and the website as an object of study.
+\newblock \emph{New Media \& Society}, 11\penalty0 (1-2):\penalty0 115--132,
+  2009.
+
+\bibitem[Derrida(1995)]{derrida_mal_1995}
+Jacques Derrida.
+\newblock Mal d'archive.
+\newblock \emph{Paris, Galilee}, page 371, 1995.
+
+\bibitem[Ketelaar(2006)]{ketelaar_de_2006}
+Eric Ketelaar.
+\newblock ({Dé}) {Construire} l'archive.
+\newblock \emph{Matériaux pour l’histoire de notre temps}, \penalty0
+  (2):\penalty0 65--70, 2006.
 
 \end{thebibliography}

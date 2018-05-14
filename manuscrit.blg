@@ -2,45 +2,49 @@ This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscrit.aux
 The style file: plainnat.bst
-Database file #1: sample-handout.bib
-You've used 2 entries,
+Database file #1: biblio.bib
+Warning--I didn't find a database entry for "Tufte2006"
+Warning--I didn't find a database entry for "Tufte1990"
+Warning--there's a number but no volume in ketelaar_de_2006
+You've used 5 entries,
             2773 wiz_defined-function locations,
-            607 strings with 5031 characters,
-and the built_in function-call counts, 657 in all, are:
-= -- 53
-> -- 20
-< -- 2
-+ -- 8
-- -- 6
-* -- 39
-:= -- 114
-add.period$ -- 8
-call.type$ -- 2
-change.case$ -- 7
-chr.to.int$ -- 2
-cite$ -- 4
-duplicate$ -- 40
-empty$ -- 65
-format.name$ -- 8
-if$ -- 132
+            629 strings with 5434 characters,
+and the built_in function-call counts, 1803 in all, are:
+= -- 165
+> -- 50
+< -- 6
++ -- 20
+- -- 15
+* -- 110
+:= -- 286
+add.period$ -- 18
+call.type$ -- 5
+change.case$ -- 18
+chr.to.int$ -- 5
+cite$ -- 11
+duplicate$ -- 107
+empty$ -- 179
+format.name$ -- 20
+if$ -- 382
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 4
-newline$ -- 20
-num.names$ -- 8
-pop$ -- 20
+missing$ -- 7
+newline$ -- 34
+num.names$ -- 20
+pop$ -- 44
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 15
 quote$ -- 0
-skip$ -- 24
+skip$ -- 70
 stack$ -- 0
-substring$ -- 4
-swap$ -- 3
-text.length$ -- 0
+substring$ -- 60
+swap$ -- 12
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
-warning$ -- 0
-while$ -- 6
+type$ -- 45
+warning$ -- 1
+while$ -- 20
 width$ -- 0
-write$ -- 37
+write$ -- 74
+(There were 3 warnings)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -17,6 +17,11 @@ J.L. Borges.
 \newblock \emph{Fictions}.
 \newblock Collection {Folio}. Editions Gallimard, 1974.
 
+\bibitem[Brügger(2002)]{brugger_does_2002}
+Niels Brügger.
+\newblock Does the materiality of the {Internet} matter.
+\newblock \emph{The Internet and society}, pages 13--22, 2002.
+
 \bibitem[Brügger(2009)]{brugger_website_2009}
 Niels Brügger.
 \newblock Website history and the website as an object of study.
@@ -27,6 +32,11 @@ Niels Brügger.
 Jacques Derrida.
 \newblock Mal d'archive.
 \newblock \emph{Paris, Galilee}, page 371, 1995.
+
+\bibitem[Foot and Schneider(2006)]{foot_web_2006}
+Kirsten Foot and Steven~M Schneider.
+\newblock \emph{Web campaigning (acting with technology)}.
+\newblock The MIT Press, 2006.
 
 \bibitem[Ketelaar(2006)]{ketelaar_de_2006}
 Eric Ketelaar.

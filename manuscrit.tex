@@ -163,6 +163,8 @@
     {\normalfont\hfill\qquad\thecontentspage} % filler + page (leaders and page num)
     [\end{fullwidth}] % after
 
+\usepackage{enumitem}
+\setlist{leftmargin=10mm}
 
 \begin{document}
 
@@ -314,6 +316,8 @@ Et l'état de l'archivage aujourd'hui (fin de Internet mémory et les rogues arc
 
 Où l'on fait le tour de l'état de l'art en matière de création d'archives Web, de crawl, etc ...
 
+le web n'est plus le web ( brugger ) le web s'archive lui même et l'archive ne capture que le front end
+
 \subsection{Un format unique ?}
 
 Où l'on parle du WARC (et de ces prédécesseurs) vs le DAFF
@@ -373,21 +377,55 @@ Le \textit{fragment Web}, tel que nous le présenterons dans la suite de ce chap
 
 \par\noindent Nous évoquions déjà, dans le chapitre précédent, le personnage de Funes imaginé par J. L. Borges qui, dans la fable, est condamné à ne plus jamais rien oublier au détriment de ses propres capacités à penser. Funes se redécouvre ainsi sans cesse, n'arrivant pas à se créer des souvenirs, à se raconter de mémoire sa propre histoire\footnote{"\textit{ Ils nous laissent entrevoir ou déduire le monde vertigineux de Funes. Celui-ci, ne l’oublions pas, était presque incapable d’idées générales, platoniques. [...] Son propre visage dans la glace, ses propres mains,  le surprenaient chaque fois.}" \cite{borges_fictions_1974}}. Pour mémoriser il faut oublier, ré-arranger et faire du montage. Nos souvenirs sont des sélections qui mises bout à bout, collées, accélérées ou ralenties forment le film de nos histoires telles que nous nous en rappelons. En cela, la posture de l'historien face à un document archivé doit pouvoir se rapprocher de celle du monter de cinéma face à une matière filmée. Leurs outils sont semblables. Lorsqu'il invente l'histoire, l'historien déconstruit, isole ou rapproche les archives entre elles. Dans son court métrage de 1993 \textit{"Je Vous Salue, Sarajevo"}\footnote{Voir \url{https://youtu.be/WKbfu8rRrho}}, J. L. Godard fragmente, isole et fait se confronter des inserts éclatés d'une photographie du reporteur de guerre R. Haviv à la manière d'un collage-poème ou d'un cinétract\footnote{Voir \url{https://fr.wikipedia.org/wiki/Cin\%C3\%A9tract}}. Par le collage, les fondus et les découpes Godard rompt la continuité de l'archive qu'il utilise comme source première afin de rendre compte image après image de la cruauté qui frappe Sarajevo, une ville de son temps. Le film finit par dévoiler entière, l'image dans toute son horreur. Décomposer pour mieux recomposer.
 
-De la même manière, dans ses derniers travaux historiographiques \citep{baschet_defaire_2018}, l'historien médiéviste J. Baschet à recourt à W. Benjamine pour réaffirmer la nécessité de rompre avec une vision unilinéaire de l'histoire. Il faut, selon lui, faire éclater la continuité de l'histoire pour en isoler des constellations afin de mieux saisir l'ensemble d'un mouvement historique. 
-
 Ceux sont ces outils de montage que nous souhaitons, par l'intermédiaire du \textit{fragment Web} donner aux explorateurs d'archives Web. Avoir en main des éléments fragmentés de pages Web éloignés, que nous pourrions rapprocher à souhait afin de traiter plus largement d'un moment particulier de l'histoire du Web. 
 
-\subsection{Les strates d'analyse du Web}
+\subsection{Les 5 strates d'analyse du Web}
 
-Les strate du web ou la nécessité de descendre sous le niveau de la page Web
+\par\noindent Le glissement d'un niveau d'analyse à un autre, vers un en-dessous de la page archivée, a été une première fois formulée par l'historien du Web N. Brügger \citep{brugger_website_2009} sous la notion de \textit{strates analytiques du Web}\footnote{\textit{analytical Web strata} en anglais.}. Questionnant la nature même d'un site Web comme potentiel objet de recherches historiques, N. Brügger suggère la possibilité de construire un système dynamique pour réajuster, à souhait, la portée de l'étude d'un site Web à chacun de ses sous éléments constitutifs\footnote{"\textit{One can distinguish the following five analytical strata: the web as a whole; the web sphere; the individual website; the individual webpage; and an individual textual web element on a webpage, such as an image}", \citep{brugger_website_2009}, p.19}. Cette approche, notons le, n'est pas confinée au Web archivé, elle peut très bien s'adapter au Web vivant. Il introduit ainsi 5 niveaux d'analyses (présentés ci-dessous du plus englobant au plus précis):
+
+\begin{enumerate}
+\setlength\itemsep{0em}
+\item le Web dans son entièreté 
+\item une sphère Web
+\item un site Web
+\item une page Web
+\item un élément Web
+\end{enumerate} 
+
+\par\noindent Le premier niveau englobe l'entièreté des sites du Web vivant, leurs dépendances en back-end (bases de données, code, feuilles de style, etc) ainsi que l'ensemble de l'infrastructure physique du Web (serveurs, câbles réseaux, supports numériques, etc). Les sphères Web, inspirées des travaux de S. Foot sur le volet numérique des campagnes électorales états-uniennes du début des années 2000 \citep{foot_web_2006}, désignent des ensembles de sites Web sélectionnés par un chercheur. C'est une construction ad hoc motivée par une question de recherche donnée, une thématique précise. Les acteurs Web regroupés au sein de ces sélections n'ont pas forcément conscience d'appartenir à un tel groupe. À tire d'exemple, les réseaux e-Diasporas (voir Chapitre 2) peuvent être considérés comme des sphères Web. En revanche, une blogosphère dont les acteurs sont parfois à l'origine même de sa construction et de sa promotion\footnote{De 2007 à 2011 la blogosphère marocaine a organisé ses propres \textit{blog awards} pour récompenser, promouvoir et connecter ses acteurs. Voir \url{https://fr.wikipedia.org/wiki/Maroc_Web_Awards}} n'est pas strictement équivalente à une sphère Web. Sites et pages Web sont ensuite définis de manière égale à ce que nous proposions au Chapitre 4.
+
+La notion d'élément Web, quant à elle, concrétise l'intuition selon laquelle une analyse du Web devrait également descendre en deçà des pages. L'élément Web est ainsi défini comme l'élément textuel minimal d'une page Web\footnote{"\textit{The Web element is the minimal textual element on a webpage}", \citep{brugger_website_2009}, p.20.}. Ce peut être un ensemble de caractères écrits, des images fixes ou mobiles, ainsi que des sons. Pour Brügger, un élément Web textuel doit doit être considéré suivant le rapport médium/texte\footnote{"\textit{the intermediate textual level that the codes of 0/1 and their syntax constitute — a level that is in itself a text, insofar as it is composed of letters and a syntax}", \citep{brugger_website_2009}, p.9.} qu'il définit comme composante essentielle de tout artéfact Web. Ce rapport est explicité dans un texte antérieur \citep{brugger_does_2002} comme l'alliance d'une matérialité matérielle du Web (les ordinateurs constitués de pièces de plastique, de métal ou de verre) et d'une matérialité immatérielle du Web (le code informatique\footnote{"\textit{the energy-based binary alphabet}", \citep{brugger_does_2002}, p.21.}).
+
+Notre \textit{fragment Web} pourra assez naturellement s'inscrire dans la continuité des strates analytiques du Web, se situant quelque part entre l'élément Web et la page Web. Mais s'il ne nous semble pas nécessaire de descendre à un tel niveau de différentiation entre matérialité et immatérialité du Web\footnote{Rappelons que le Web archivé n'est déjà plus le Web, qu'il n'est que l'enregistrement sur fichier de son front-end. Le back-end n'étant pas archivé.} nous tenons tout de même à conserver la séparation entre le back-end du front-end et plus particulièrement la différence entre un élément  tel qu'affiché à l'écran depuis le navigateur et la portion de code informatique dont il est l'expression. Le \textit{fragment Web} traduira tout autant une portion de code (HTML, CSS ou JS) et son interprétation à l'écran.
 
 \subsection{La question de la datation d'une page archiver}
 
-Ici on introduit une échelle de datation et on se questionne sur la meilleur façon de dater une archive web
+Il nous semble essentiel de séparer les archives Web des liens qui les unissent au crawler afin de redonner à ces dernières leur réalité historique facilement intérrogeable à grande échelle. Pour y arriver, il faut tout d'abord résoudre le problème de la datation d'une page archivée. 
+
+Comme nous l'avons présenté dans le chapitre 3, les différents formats de fichier d'archives Web sont tous construis à partir des pages Web. Ce sont schématiquement des collections de pages HTML enregistrées sur fichier et associées à une date d'archivage ou aussi appelé date de téléchargement. Dans les moteurs d'explorations d'archive existants, lorsque l'on procède à une recherche, les résultats sont répartis par date de téléchargement même si le contenu archivé a en réalité été créé des années auparavant (Chapitre 4).    
+
+Dérrière la question de la datation se cachent l'idée de retrouver les gestes des acteurs qui ont, parle leurs actions, contribués à allimenter et faire vivre un site web. 
+
+Vue depuis le navigateur, les actions des acteurs sont traduits par des changements sur les pages Web. Or s'il est compliqué pour le moment de définir une date de suppresssion ou une date de modification d'un contenu donné, la date de création de ces derniers peut être une bonne cible car elle laisse souvent des traces derrière elle ( date de commentaire, ou de cration d'un post sur un forum ... )
+
+La date de création d'un contenu a aussi l'avantage, ramené à l'échelle d'une page Web, de nous donner une approximation de la date de création effective d'une page, comme étant la plus ancienne (ou première) date d'édition détecté.
+
+Nous voulons maintenant définir une échelle de datation des pages web archivée regroupant l'ensemble des dates qu'il nous sera possible de manipuler. 
+
+\begin{enumerate}
+\setlength\itemsep{0em}
+\item date de téléchargement
+\item dernière date de modification
+\item première date d'édition
+\end{enumerate} 
+
+Certain \textit{fragment Web} auront une date d'edition d'autre seront la dernière date de modification ou à la date de téléchargement.  
 
 \subsection{Désagréger pour changer de temporalité}
 
-Là on fait l'expérience edition date vs crawler date et l'on découvre que le fragment web peut nous permettre d'échapper à la tyrannie du crawl et à structure temporelle linéaire. Et Godard et 
+Là on fait l'expérience edition date vs crawler date et l'on découvre que le fragment web peut nous permettre d'échapper à la tyrannie du crawl et à structure temporelle linéaire.
+
+De la même manière, dans ses derniers travaux historiographiques \citep{baschet_defaire_2018}, l'historien médiéviste J. Baschet à recourt à W. Benjamine pour réaffirmer la nécessité de rompre avec une vision unilinéaire de l'histoire. Il faut, selon lui, faire éclater la continuité de l'histoire pour en isoler des constellations afin de mieux saisir l'ensemble d'un mouvement historique. 
 
 \section{Le fragment Web : définition}
 

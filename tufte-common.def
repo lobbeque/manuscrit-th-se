@@ -1642,7 +1642,7 @@
   []% after the title body
 
 \titlespacing*{\chapter}{0pt}{50pt}{40pt}
-\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+\titlespacing*{\section}{0pt}{30pt}{10pt}
 \titlespacing*{\subsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus.2ex}
 
 % Subsubsection and following section headings shouldn't be used.
@@ -1771,7 +1771,7 @@
     \renewcommand\bibsection{\section*{\refname}}%
   }{%
     \@ifundefined{NAT@sectionbib}{%
-      \renewcommand\bibsection{\chapter{\bibname}}%
+      \renewcommand\bibsection{\chapter{Bibliographie}}%
     }{%
       \renewcommand\bibsection{\section*{\bibname}}%
     }%

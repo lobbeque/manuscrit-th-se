@@ -164,7 +164,13 @@
     [\end{fullwidth}] % after
 
 \usepackage{enumitem}
-\setlist{leftmargin=10mm}
+\setlist{leftmargin=20mm}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\newcommand\tikzmark[1]{%
+  \tikz[overlay,remember picture] \coordinate (#1);}
 
 \begin{document}
 
@@ -285,6 +291,7 @@ Ici on parle de la raréfaction de la matière Web à mesure que l'on remonte le
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapitre 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Du Web aux Représentations en Ligne des Diasporas}
+\label{chap:2}
 
 \section{Retour aux origines du Web}
 
@@ -293,6 +300,7 @@ Ici on parle de la raréfaction de la matière Web à mesure que l'on remonte le
 \section{Le Web, espace de communication et d'organisation}
 
 \section{L'Atlas e-Diasporas}
+\label{sec:2_atlas}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapitre 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -310,8 +318,11 @@ La constitution juridique des corpus en france
 Et l'état de l'archivage aujourd'hui (fin de Internet mémory et les rogues archivistes)
 
 \section{Constituer des corpus d'archives}
+\label{sec:3_constituer}
 
 \subsection{Méthodologie d'acquisition}
+
+là on parle des changements dans les pages
 
 Où l'on fait le tour de l'état de l'art en matière de création d'archives Web, de crawl, etc ...
 
@@ -339,6 +350,23 @@ De Derrida aux traces discrétisées, de la sélection effectuée par le crawler
 \label{sec:4_temporalite}
 
 Ici on part de Saint Augustin et de sa définition d'un présent sans extension qui a influencer le rapport des occidentaux au temps. Ce rapport au temps se retrouve lorsque l'on étudie en détail les modèles d'exploration des archives web qui s'appuient sur la date de capture d'un contenu. S'en suit plusieurs remarques qu'il faut conserver en tete avant de se plonger dans toute exploration
+
+proposer ici une échelle de datation (date de téléchargement et date de last modified)
+
+\begin{table}
+  \label{tab:datation_1}
+  \begin{tabular}{l}
+    \toprule
+    Datation (précision décroissante)\\
+    \midrule
+    date de téléchargement\\
+    date de dernière modification\\ 
+  \bottomrule
+\end{tabular}
+  \bigskip
+  \caption{Échelle de datation d'une page Web archivée}
+  \vspace*{-8mm}
+\end{table} 
 
 \begin{figure}
   \caption{Warc vs Daff}
@@ -381,13 +409,13 @@ Tout au long de ce chapitre, nous appuierons nos réflexions sur les travaux de 
 
 \section{Vers une nouvelle unité d'exploration}
 
-\par\noindent Toute archive est une matière destinée à être désagrégée ou ré-arrangée en vue de la questionner et d'écrire l'histoire. Ainsi le profésseur d'archivistique E. Ketelaar dit d'une archive qu'elle ne parle pas seule \citep{ketelaar_de_2006}, qu'elle n'est jamais fermée ou complète. Une archive se tient toujours prête à être réinterprétée par une nouvelle génération d'explorateur ou de chercheur. Mais s'il est clair que la direction prise avec l'introduction du fragment Web est celle d'une déconstruction des corpus d'archives Web existants, gardons à l'esprit comme le rappel Derrida\footnote{"\textit{je peux interroger, contredire, attaquer ou simplement déconstruire une logique du texte venu avant moi, devant moi, mais je ne peux ni ne dois le changer}", p.374.,\citep{derrida_mal_1995}}, que le document d'origine ne doit en aucun cas être altéré ou modifié. Et ce, pour justement permettre à d'autres, après nous, d'à nouveau s'y référer, le faire parler. 
+\par\noindent Toute archive est une matière destinée à être désagrégée ou ré-arrangée en vue de la questionner et d'écrire l'histoire. Ainsi le profésseur d'archivistique E. Ketelaar dit d'une archive qu'elle ne parle pas seule \citep{ketelaar_de_2006}, qu'elle n'est jamais fermée ou complète. Une archive se tient toujours prête à être réinterprétée par une nouvelle génération d'explorateur ou de chercheur. Mais s'il est clair que la direction prise avec l'introduction du fragment Web est celle d'une déconstruction des corpus d'archives Web existants, gardons à l'esprit comme le rappel Derrida\footnote{"\textit{je peux interroger, contredire, attaquer ou simplement déconstruire une logique du texte venu avant moi, devant moi, mais je ne peux ni ne dois le changer}", \citep{derrida_mal_1995}, p.374.}, que le document d'origine ne doit en aucun cas être altéré ou modifié. Et ce, pour justement permettre à d'autres, après nous, d'à nouveau s'y référer, le faire parler. 
 
 Précisons donc avant toute chose, que le fragment Web, ne sera pas une version modifiée d'une page Web archivée et de ses fichiers sources, mais bien une entité autre, issue du fractionnement de cette page et utilisable en parallèles des modèles d'exploration d'archives déjà existants.    
 
 \subsection{Découper, déplacer, monter}
 
-\par\noindent Nous évoquions déjà dans la section \ref{sec:4_derrida} le personnage de Funes imaginé par Borges qui, dans la fable, à force de ne plus jamais rien oublier, voyait décroitre ses capacités à penser et à raisonner. Funes vit dans l'indexation d'un perpétuel présent. Il se redécouvre sans cesse et n'arrive plus à se recréer des souvenirs, à se raconter de mémoire sa propre histoire\footnote{"\textit{[Funes], ne l’oublions pas, était presque incapable d’idées générales, platoniques. Son propre visage dans la glace, ses propres mains, le surprenaient chaque fois.}", p.??., \citep{borges_fictions_1974}}. 
+\par\noindent Nous évoquions déjà dans la section \ref{sec:4_derrida} le personnage de Funes imaginé par Borges qui, dans la fable, à force de ne plus jamais rien oublier, voyait décroitre ses capacités à penser et à raisonner. Funes vit dans l'indexation d'un perpétuel présent. Il se redécouvre sans cesse et n'arrive plus à se recréer des souvenirs, à se raconter de mémoire sa propre histoire\footnote{"\textit{[Funes], ne l’oublions pas, était presque incapable d’idées générales, platoniques. Son propre visage dans la glace, ses propres mains, le surprenaient chaque fois.}", \citep{borges_fictions_1974}, p.??.}. 
 
 Pour mémoriser ou archiver il faut oublier. Ré-arranger et faire du montage. Nos souvenirs sont des sélections qui, mises bout à bout, collées, accélérées ou ralenties forment le fil de nos histoires. Le cinéaste C. Marker donne corps à cette idée dans son film d'archives "\textit{Le Fond de l'Air est Rouge}"\footnote{Film réalisé en 1977. C. Marker superpose par exemple aux souvenirs de S. Signoret des extraits remontés et recolorisés du "\textit{Cuirassé Potemkine}" d'Eisenstein (\url{https://youtu.be/dO1E4GYjF1s})} où la posture de l'historien face à un document archivé se rapproche de celle du monteur de cinéma face à une matière filmée. Leurs outils sont semblables. Lorsqu'il invente l'histoire, l'historien découpe, isole et rapproche des sources archivées potentiellement très éloignées. 
 
@@ -403,49 +431,82 @@ Il y a dans les travaux de Godard et de Marker une souplesse d'action vis à des
 
 \subsection{Les strates analytiques du Web}
 
-\par\noindent Le glissement d'un niveau d'analyse à un autre, vers un en-dessous de la page archivée, a été une première fois formulée par l'historien du Web N. Brügger \citep{brugger_website_2009} sous la notion de \textit{strates analytiques du Web}\footnote{En anglais : \textit{analytical Web strata}.}. Questionnant la nature même d'un site Web comme potentiel objet de recherches historiques, N. Brügger suggère la possibilité de construire un système dynamique pour réajuster, à souhait, la portée de l'étude d'un site Web à chacun de ses sous éléments constitutifs\footnote{"\textit{One can distinguish the following five analytical strata: the web as a whole; the web sphere; the individual website; the individual webpage; and an individual textual web element on a webpage, such as an image}", \citep{brugger_website_2009}, p.19}. Cette approche, notons le, n'est pas confinée au Web archivé, elle peut très bien s'adapter au Web vivant. Brügger introduit ainsi 5 niveaux d'analyses (présentés ci-dessous du plus englobant au plus précis):
+\par\noindent Le glissement d'un niveau d'analyse à un autre, vers un en-dessous de la page archivée, est formulé pour la première fois par l'historien du Web N. Brügger lorsque, cherchant à définir le site Web comme objet potentiel de recherches historiques \citep{brugger_website_2009}, ce dernier en vient à introduire la notion de \textbf{strates analytiques du Web}\footnote{En anglais : \textit{analytical Web strata}.}.
+
+Brügger suggère de construire un système d'analyse dynamique pour réajuster, à souhait, le périmètre d'une recherche portant sur le Web. L'observateur doit ainsi pouvoir passer d'un ensemble de sites, à une page unique, voire descendre jusqu'aux éléments constitutifs de cette dernière (un texte, une image, etc)\footnote{"\textit{One can distinguish the following five analytical strata: the web as a whole; the web sphere; the individual website; the individual webpage; and an individual textual web element on a webpage, such as an image}", \citep{brugger_website_2009}, p.19}. 
+Cette approche, notons le, n'est pas confinée au Web archivé, elle peut très bien s'adapter au Web vivant. Brügger définit 5 niveaux d'analyses (présentés ci-dessous du plus englobant au plus précis):
 
 \begin{enumerate}
 \setlength\itemsep{0em}
 \item le Web dans son entièreté 
-\item une sphère Web
-\item un site Web
-\item une page Web
-\item un élément Web
+\item la sphère Web
+\item le site Web
+\item la page Web
+\item l'élément Web
 \end{enumerate} 
 
-\par\noindent Le premier niveau (Figure \ref{fig:web_strata}) englobe l'entièreté des sites du Web vivant, leurs dépendances en back-end (bases de données, code, feuilles de style, etc) ainsi que l'ensemble de l'infrastructure physique du Web (serveurs, câbles réseaux, supports numériques, etc). Les sphères Web, inspirées des travaux de S. Foot sur le volet numérique des campagnes électorales états-uniennes du début des années 2000 \citep{foot_web_2006}, désignent des ensembles de sites Web sélectionnés par un chercheur. C'est une construction ad hoc motivée par une question de recherche donnée, une thématique précise. Les acteurs Web regroupés au sein de ces sélections n'ont pas forcément conscience d'appartenir à un tel groupe. À tire d'exemple, les réseaux e-Diasporas (voir Chapitre 2) peuvent être considérés comme des sphères Web. En revanche, une blogosphère dont les acteurs sont parfois à l'origine même de sa construction et de sa promotion\footnote{De 2007 à 2011 la blogosphère marocaine a organisé ses propres \textit{blog awards} pour récompenser, promouvoir et connecter ses acteurs. Voir \url{https://fr.wikipedia.org/wiki/Maroc_Web_Awards}} n'est pas strictement équivalente à une sphère Web. Sites et pages Web sont ensuite définis de manière égale à ce que nous proposions au Chapitre 4.
+\par\noindent La Figure \ref{fig:web_strata} donne à voir une illustration de l'agencement de ces strates. Le premier niveau englobe l'entièreté des sites du Web vivant. Il inclut également les éléments de back-end (base de données, code côté serveur, etc) et plus généralement l'ensemble de l'infrastructure physique du Web (serveurs, câbles réseax, supports numériques, etc).
 
-La notion d'élément Web, quant à elle, concrétise l'intuition selon laquelle une analyse du Web devrait également descendre en deçà des pages. L'élément Web est ainsi défini comme l'élément textuel minimal d'une page Web\footnote{"\textit{The Web element is the minimal textual element on a webpage}", \citep{brugger_website_2009}, p.20.}. Ce peut être un ensemble de caractères écrits, des images fixes ou mobiles, ainsi que des sons. Pour Brügger, un élément Web textuel doit doit être considéré suivant le rapport médium/texte\footnote{"\textit{the intermediate textual level that the codes of 0/1 and their syntax constitute — a level that is in itself a text, insofar as it is composed of letters and a syntax}", \citep{brugger_website_2009}, p.9.} qu'il définit comme composante essentielle de tout artéfact Web. Ce rapport est explicité dans un texte antérieur \citep{brugger_does_2002} comme l'alliance d'une matérialité matérielle du Web (les ordinateurs constitués de pièces de plastique, de métal ou de verre) et d'une matérialité immatérielle du Web (le code informatique\footnote{"\textit{the energy-based binary alphabet}", \citep{brugger_does_2002}, p.21.}).
+La sphère Web, inspirée des travaux de Foot et al. sur le volet numérique des campagnes électorales états-uniennes du début des années 2000 \citep{foot_web_2006}, désigne un ensemble de sites Web sélectionnés par un chercheur. C'est une construction ad hoc motivée par une question de recherche donnée, une thématique précise. Les acteurs Web regroupés au sein de ces sélections n'ont pas forcément conscience d'appartenir à un tel groupe. Par exemple, les réseaux de sites e-Diasporas (Section \ref{sec:2_atlas}) peuvent être considérés comme des sphères Web. Sites et pages Web sont ensuite définis de manière égale à ce que nous proposions au Chapitre \ref{chap:4}.
+
+L'élément Web est, quant à lui, défini comme l'élément textuel minimal d'une page Web\footnote{"\textit{The Web element is the minimal textual element on a webpage}", \citep{brugger_website_2009}, p.20.}. Ce peut être un ensemble de caractères écrits sur une page, des images fixes ou mobiles, ainsi que des sons. Brügger en revanche écarte de cette liste les menus, barres d'informations et autres éléments de navigations. 
+
+L'historien propose ensuite trois pistes d'analyse pour chaque éléments Web : 1) considérer le médium (l'écran, l'ordinateur, le support de lecture, etc) 2) considérer l'élément textuel seul 3) considérer un état hybride médium/texte où le code informatique derrière la page Web serait à la fois object et support du message\footnote{"\textit{the intermediate textual level that the codes of 0/1 and their syntax constitute, a level that is in itself a text, insofar as it is composed of letters and a syntax}", \citep{brugger_website_2009}, p.9.}. Cet état, propre au numérique \citep{finnemann_modernity_1997}, est explicité dans un texte antérieur \citep{brugger_does_2002} comme la rencontre d'une matérialité matérielle (les ordinateurs constitués de pièces de plastique, de métal ou de verre) et d'une matérialité immatérielle (le code informatique\footnote{"\textit{the energy-based binary alphabet}", \citep{brugger_does_2002}, p.21.}).
 
 \begin{figure}
-  \includegraphics[width=\linewidth]{graphics/web_strata}
+  \centering
+  \includegraphics[width=0.8\linewidth]{graphics/web_strata}
   \caption{Les 5 strates analytiques du Web, d'après \citep{brugger_website_2009}}
   \label{fig:web_strata}
 \end{figure}
 
-Notre \textit{fragment Web} pourra assez naturellement s'inscrire dans la continuité des strates analytiques du Web, se situant quelque part entre l'élément Web et la page Web. Mais s'il ne nous semble pas nécessaire de descendre à un tel niveau de différentiation entre matérialité et immatérialité du Web\footnote{Rappelons que le Web archivé n'est déjà plus le Web, qu'il n'est que l'enregistrement sur fichier de son front-end. Le back-end n'étant pas archivé.} nous tenons tout de même à conserver la séparation entre le back-end du front-end et plus particulièrement la différence entre un élément  tel qu'affiché à l'écran depuis le navigateur et la portion de code informatique dont il est l'expression. Le \textit{fragment Web} traduira tout autant une portion de code (HTML, CSS ou JS) et son interprétation à l'écran.
+Le fragment Web pourra assez naturellement s'inscrire dans la continuité des strates analytiques du Web, se situant quelque part entre l'élément Web et la page Web. Mais s'il ne nous semble pas nécessaire de descendre à un tel niveau de différentiation entre matérialité et immatérialité du Web\footnote{Rappelons que le Web archivé n'est déjà plus le Web, qu'il n'est que l'enregistrement sur fichier de ses éléments de front-end (fichiers HTML et CSS). Back-end et supports physiques ne faisant pas l'objet d'un archivage.}, nous tenons tout de même à conserver la différence entre un élément tel qu'affiché à l'écran depuis le navigateur et la portion de code informatique dont il est l'expression. Nous voulons par exemple pouvoir demander à un moteur d'exploration d'archive de retourner l'ensemble des pages contenant une balise HTML donnée tout autant qu'un mot clé dans un paragraphe. Le fragment Web traduira ainsi une portion de code informatique et son interprétation à l'écran.
 
-\subsection{La question de la datation d'une page archiver}
+\subsection{Dater une page archivée}
 
-Il nous semble essentiel de séparer les archives Web des liens qui les unissent au crawler afin de redonner à ces dernières leur réalité historique facilement intérrogeable à grande échelle. Pour y arriver, il faut tout d'abord résoudre le problème de la datation d'une page archivée. 
+\begin{marginfigure}%
+  \includegraphics[width=\linewidth]{graphics/yabiladi-wayback}
+  \caption{Répartition des archives de \textit{yabiladi.com} dans la WayBack Machine (\url{https://web.archive.org/web/*/www.yabiladi.com})}
+  \label{fig:yabiladi-wayback}
+\end{marginfigure}
 
-Comme nous l'avons présenté dans le chapitre 3, les différents formats de fichier d'archives Web sont tous construis à partir des pages Web. Ce sont schématiquement des collections de pages HTML enregistrées sur fichier et associées à une date d'archivage ou aussi appelé date de téléchargement. Dans les moteurs d'explorations d'archive existants, lorsque l'on procède à une recherche, les résultats sont répartis par date de téléchargement même si le contenu archivé a en réalité été créé des années auparavant (Chapitre 4).    
+\par\noindent Les archives Web sont les traces directes des crawlers à l'origine des collectages (Section \ref{sec:4_derrida}). En base de données, une page archivée sera indexée par rapport à sa seule date d'archivage (ou date de téléchargement). Lorsque nous proposons de construire une unité d'exploration définie en deçà du niveau des pages Web, il ne s'agit pas uniquement d'une réflexion d'ordre structurelle. Nous voulons également penser le fragment Web du point de vue de sa datation. Comment bien dater une page Web et le contenu dont elle est le support ?
 
-Dérrière la question de la datation se cachent l'idée de retrouver les gestes des acteurs qui ont, parle leurs actions, contribués à allimenter et faire vivre un site web. 
+Dans les moteurs d'exploration d'archives existants (par exemple la WayBack Machine, Figure \ref{fig:yabiladi-wayback}), lorsque l'on lance une recherche, les résultats seront par construction répartis suivant la date de téléchargement. Le fragment Web doit viser une meilleur précision historique et ne pas se satisfaire des seules dates d'archivage. Pour se faire, une piste serait de chercher à identifier la date d'édition de tel ou tel fragment individuel. 
 
-Vue depuis le navigateur, les actions des acteurs sont traduits par des changements sur les pages Web. Or s'il est compliqué pour le moment de définir une date de suppresssion ou une date de modification d'un contenu donné, la date de création de ces derniers peut être une bonne cible car elle laisse souvent des traces derrière elle ( date de commentaire, ou de cration d'un post sur un forum ... )
+\begin{marginfigure}%
+  \includegraphics[width=\linewidth]{graphics/yabi-date-com}
+  \caption{Date de création (rouge) d'un post de forum sur \textit{yabiladi.com}}
+  \label{fig:yabi-date-com}
+\end{marginfigure} 
 
-La date de création d'un contenu a aussi l'avantage, ramené à l'échelle d'une page Web, de nous donner une approximation de la date de création effective d'une page, comme étant la plus ancienne (ou première) date d'édition détecté.
+Une page Web évolue (Section \ref{sec:3_constituer}) dès que son contenu est édité par un tiers : humain ou robot. Par \textit{édition} nous entendons la création, la modification ou la suppression d'un élément d'une page. Les actes de modification et de suppression demandent pour être datés (même approximativement) de comparer deux versions archivées d'une page \citep{rocco_page_2003, nunes_using_2007}. Leur détection semble de prime abord compliquée à intégrer à notre moteur d'exploration d'archives, ce dernier travaillant sur des pages uniques et non des séquences de versions successives. 
 
-Nous voulons maintenant définir une échelle de datation des pages web archivée regroupant l'ensemble des dates qu'il nous sera possible de manipuler. 
+La création d'un message ou d'un commentaire peut en revanche être plus facilement datée. Des indices sont souvent dispersés à même la page (la date a laquelle un message a été posté sur un forum, Figure \ref{fig:yabi-date-com}). Il est possible de comparer les dates de téléchargement de certaines URIs d'images par exemple en utilisant le TimeMaps de Memento\footnote{Memento propose de voir une page archivée comme la concaténation de toutes les URIs qu'elle agrège. Cette vue est appelée TimeMaps \citep{van_de_sompel_http_2013}} \citep{aturban_difficulties_2017}. À défaut, la création d'un contenu donné peut être rapporté à sa première apparition dans les archives en choisissant la plus précise des dates de téléchargement \citep{jatowt_detecting_2007}.
 
-\begin{enumerate}
-\setlength\itemsep{0em}
-\item date de téléchargement
-\item dernière date de modification
-\item première date d'édition
-\end{enumerate} 
+À partir de ce point, nous assumerons qu'au niveau du fragment Web une date d'édition équivaut implicitement à une date de création. Il est alors possible de dire de la date de création d'une page Web qu'elle est au mieux la plus ancienne date d'édition de l'ensemble de ses fragments. De là, nous pouvons proposer une mise à jour de l'échelle de datation introduite en section \ref{sec:4_temporalite} :
+
+\begin{table}
+\hspace{2em}%
+  \label{tab:datation_2}
+  \begin{tabular}{lll}
+    \toprule
+    Niveau & Date &\\
+    \midrule
+    page&téléchargement & \tikzmark{start}\\
+    page&dernière modification &\\
+    page&création & \\
+    fragment&édition & \tikzmark{end}\\     
+  \bottomrule
+\end{tabular}
+  \bigskip
+  \caption{Échelle (actualisée) de datation d'une page Web archivée}
+\end{table} 
+
+\begin{tikzpicture}[overlay,remember picture]
+\draw[->] let \p1=(start), \p2=(end) in ($(\x1,\y1)+(0.8,0.2)$) -- node[label=right:Validité historique] {} ($(\x1,\y2)+(0.8,0)$);
+\end{tikzpicture}
+
 
 Certain \textit{fragment Web} auront une date d'edition d'autre seront la dernière date de modification ou à la date de téléchargement.  
 
@@ -477,15 +538,26 @@ le fragment est un sous ensemble cohérent ...
 
 \subsection{Extraire de l'information issue d'une page Web}
 
-Là on parle de scraping et on fait une revue de l'état de l'art et l'on parle de readability ...
+Le scrapping c'est quoi ?
+Les méthode classique ( visuel vs le reste )
+Néttoyer ou tout conserver ?
+Pourquoi scrapper ? ( orienter business ? )
+l'on parle de readability et de fathom...
 
 \subsection{Implémentation technique}
 
 Là on parle de rivelaine et de la fonction distance ...
+L'algo 
+les différents filtres
+on dit qu'il y a plusieures implémentations
 
 \subsection{Exemples et discussions}
 
+là on donne qq exemples 
+et on dit que en tant qu'ingé on avait cherché un truc qui fonctionnait tout le temps
+mais c'est pas possible et un historien a besoin de vouloir resizer à volonter 
 Là on parle de l'automatique vs le fait à la main avec le truc firefox
+Du coup dans la suite, le treshold de la fonction distance sera toujours testées avec le truc firefox
 
 \section{Penser une exploration désagrégée}
 
@@ -531,6 +603,8 @@ Où l'on explique comment techniquement nous allons procéder en suivant plutôt
 \subsection{D'une communauté vibrante de blogs ...}
 
 Là on raconte l'état des blogs en 2008
+
+En revanche, une blogosphère dont les acteurs sont parfois à l'origine même de sa construction et de sa promotion\footnote{De 2007 à 2011 la blogosphère marocaine a organisé ses propres \textit{blog awards} pour récompenser, promouvoir et connecter ses acteurs. Voir \url{https://fr.wikipedia.org/wiki/Maroc_Web_Awards}} n'est pas strictement équivalente à une sphère Web. \citep{keren_blogosphere:_2006}
 
 \subsection{... à un collectif éteint}
 

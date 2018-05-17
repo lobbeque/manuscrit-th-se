@@ -6,12 +6,14 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Extraits de "\textit {Je Vous Salue, Sarajevo}", J.L. Godard (1993) \IeC {\`a} partir d'une photographie de R. Haviv (1992)}}{23}{subsection*.14}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Les 5 strates analytiques du Web, d'apr\IeC {\`e}s \citep {brugger_website_2009}}}{25}{Item.5}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces R\IeC {\'e}partition des archives de \textit {yabiladi.com} dans la WayBack Machine (\url {https://web.archive.org/web/*/www.yabiladi.com})}}{26}{subsection*.16}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Date de cr\IeC {\'e}ation (rouge) d'un post de forum sur \textit {yabiladi.com}}}{26}{subsection*.16}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces This is a margin figure. The helix is defined by $x = \mathop {\mathgroup \symoperators cos}\nolimits (2\pi z)$, $y = \mathop {\mathgroup \symoperators sin}\nolimits (2\pi z)$, and $z = [0, 2.7]$. The figure was drawn using Asymptote (\url {http://asymptote.sf.net/}).}}{35}{section.8.2}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces This graph shows $y = \mathop {\mathgroup \symoperators sin}\nolimits x$ from about $x = [-10, 10]$. \emph {Notice that this figure takes up the full page width.}}}{36}{section.8.2}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Hilbert curves of various degrees $n$.}}{36}{section.8.2}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces This is a margin figure. The helix is defined by $x = \mathop {\mathgroup \symoperators cos}\nolimits (2\pi z)$, $y = \mathop {\mathgroup \symoperators sin}\nolimits (2\pi z)$, and $z = [0, 2.7]$. The figure was drawn using Asymptote (\url {http://asymptote.sf.net/}).}}{37}{section.8.2}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces This graph shows $y = \mathop {\mathgroup \symoperators sin}\nolimits x$ from about $x = [-10, 10]$. \emph {Notice that this figure takes up the full page width.}}}{38}{section.8.2}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Hilbert curves of various degrees $n$.}}{38}{section.8.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 

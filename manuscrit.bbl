@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[Aturban et~al., 2017]{aturban_difficulties_2017}
+Aturban, M., Nelson, M.~L., and Weigle, M.~C. (2017).
+\newblock Difficulties of {Timestamping} {Archived} {Web} {Pages}.
+\newblock {\em arXiv preprint arXiv:1712.03140}.
+
 \bibitem[Baschet, 2018]{baschet_defaire_2018}
 Baschet, J. (2018).
 \newblock {\em Défaire la tyrannie du présent: {Temporalités} émergentes et
@@ -26,14 +31,47 @@ Derrida, J. (1995).
 \newblock Mal d'archive.
 \newblock {\em Paris, Galilee}, page 371.
 
+\bibitem[Finnemann, 1997]{finnemann_modernity_1997}
+Finnemann, N.~O. (1997).
+\newblock Modernity modernised: {The} cultural impact of computerisation.
+
 \bibitem[Foot and Schneider, 2006]{foot_web_2006}
 Foot, K. and Schneider, S.~M. (2006).
 \newblock {\em Web campaigning (acting with technology)}.
 \newblock The MIT Press.
 
+\bibitem[Jatowt et~al., 2007]{jatowt_detecting_2007}
+Jatowt, A., Kawai, Y., and Tanaka, K. (2007).
+\newblock Detecting age of page content.
+\newblock In {\em Proceedings of the 9th annual {ACM} international workshop on
+  {Web} information and data management}, pages 137--144. ACM.
+
+\bibitem[Keren, 2006]{keren_blogosphere:_2006}
+Keren, M. (2006).
+\newblock {\em Blogosphere: {The} new political arena}.
+\newblock Lexington Books.
+
 \bibitem[Ketelaar, 2006]{ketelaar_de_2006}
 Ketelaar, E. (2006).
 \newblock ({Dé}) {Construire} l'archive.
 \newblock {\em Matériaux pour l’histoire de notre temps}, (2):65--70.
+
+\bibitem[Nunes et~al., 2007]{nunes_using_2007}
+Nunes, S., Ribeiro, C., and David, G. (2007).
+\newblock Using neighbors to date web documents.
+\newblock In {\em Proceedings of the 9th annual {ACM} international workshop on
+  {Web} information and data management}, pages 129--136. ACM.
+
+\bibitem[Rocco et~al., 2003]{rocco_page_2003}
+Rocco, D., Buttler, D., and Liu, L. (2003).
+\newblock Page digest for large-scale web services.
+\newblock In {\em E-{Commerce}, 2003. {CEC} 2003. {IEEE} {International}
+  {Conference} on}, pages 381--390. IEEE.
+
+\bibitem[Van~de Sompel et~al., 2013]{van_de_sompel_http_2013}
+Van~de Sompel, H., Nelson, M., and Sanderson, R. (2013).
+\newblock {HTTP} framework for time-based access to resource
+  states–{Memento}.
+\newblock Technical report.
 
 \end{thebibliography}

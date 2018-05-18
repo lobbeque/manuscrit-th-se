@@ -1,5 +1,11 @@
 \begin{thebibliography}{}
 
+\bibitem[Amitay et~al., 2004]{amitay_trend_2004}
+Amitay, E., Carmel, D., Herscovici, M., Lempel, R., and Soffer, A. (2004).
+\newblock Trend detection through temporal link analysis.
+\newblock {\em Journal of the Association for Information Science and
+  Technology}, 55(14):1270--1281.
+
 \bibitem[Aturban et~al., 2017]{aturban_difficulties_2017}
 Aturban, M., Nelson, M.~L., and Weigle, M.~C. (2017).
 \newblock Difficulties of {Timestamping} {Archived} {Web} {Pages}.
@@ -26,6 +32,13 @@ Brügger, N. (2009).
 \newblock Website history and the website as an object of study.
 \newblock {\em New Media \& Society}, 11(1-2):115--132.
 
+\bibitem[De~Jong et~al., 2005]{de_jong_temporal_2005}
+De~Jong, F., Rode, H., and Hiemstra, D. (2005).
+\newblock Temporal language models for the disclosure of historical text.
+\newblock In {\em Humanities, computers and cultural heritage: {Proceedings} of
+  the {XVIth} {International} {Conference} of the {Association} for {History}
+  and {Computing} ({AHC} 2005)}, pages 161--168.
+
 \bibitem[Derrida, 1995]{derrida_mal_1995}
 Derrida, J. (1995).
 \newblock Mal d'archive.
@@ -34,6 +47,11 @@ Derrida, J. (1995).
 \bibitem[Finnemann, 1997]{finnemann_modernity_1997}
 Finnemann, N.~O. (1997).
 \newblock Modernity modernised: {The} cultural impact of computerisation.
+
+\bibitem[Flusser, 2014]{flusser_les_2014}
+Flusser, V. (2014).
+\newblock {\em Les gestes}.
+\newblock Cahiers {Du} {Midi}. Al Dante Eds.
 
 \bibitem[Foot and Schneider, 2006]{foot_web_2006}
 Foot, K. and Schneider, S.~M. (2006).
@@ -46,6 +64,12 @@ Jatowt, A., Kawai, Y., and Tanaka, K. (2007).
 \newblock In {\em Proceedings of the 9th annual {ACM} international workshop on
   {Web} information and data management}, pages 137--144. ACM.
 
+\bibitem[Kanhabua and Nørv{\textbackslash}a~ag, 2009]{kanhabua_using_2009}
+Kanhabua, N. and Nørv{\textbackslash}a~ag, K. (2009).
+\newblock Using temporal language models for document dating.
+\newblock In {\em Joint {European} {Conference} on {Machine} {Learning} and
+  {Knowledge} {Discovery} in {Databases}}, pages 738--741. Springer.
+
 \bibitem[Keren, 2006]{keren_blogosphere:_2006}
 Keren, M. (2006).
 \newblock {\em Blogosphere: {The} new political arena}.
@@ -55,6 +79,12 @@ Keren, M. (2006).
 Ketelaar, E. (2006).
 \newblock ({Dé}) {Construire} l'archive.
 \newblock {\em Matériaux pour l’histoire de notre temps}, (2):65--70.
+
+\bibitem[Morsel, 2016]{morsel_traces?_2016}
+Morsel, J. (2016).
+\newblock Traces? {Quelles} traces? {Réflexions} pour une histoire non
+  passéiste.
+\newblock {\em Revue historique}, (4):813--868.
 
 \bibitem[Nunes et~al., 2007]{nunes_using_2007}
 Nunes, S., Ribeiro, C., and David, G. (2007).
@@ -67,6 +97,21 @@ Rocco, D., Buttler, D., and Liu, L. (2003).
 \newblock Page digest for large-scale web services.
 \newblock In {\em E-{Commerce}, 2003. {CEC} 2003. {IEEE} {International}
   {Conference} on}, pages 381--390. IEEE.
+
+\bibitem[Spitz et~al., 2018]{spitz_predicting_2018}
+Spitz, A., Strötgen, J., and Gertz, M. (2018).
+\newblock Predicting {Document} {Creation} {Times} in {News} {Citation}
+  {Networks}.
+\newblock In {\em Companion of the {The} {Web} {Conference} 2018 on {The} {Web}
+  {Conference} 2018}, pages 1731--1736. International World Wide Web
+  Conferences Steering Committee.
+
+\bibitem[Toyoda and Kitsuregawa, 2006]{toyoda_whats_2006}
+Toyoda, M. and Kitsuregawa, M. (2006).
+\newblock What's really new on the web?: identifying new pages from a series of
+  unstable web snapshots.
+\newblock In {\em Proceedings of the 15th international conference on {World}
+  {Wide} {Web}}, pages 233--241. ACM.
 
 \bibitem[Van~de Sompel et~al., 2013]{van_de_sompel_http_2013}
 Van~de Sompel, H., Nelson, M., and Sanderson, R. (2013).

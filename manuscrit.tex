@@ -346,6 +346,14 @@ Présentation rapide de l'ensemble des corpus et focus sur les Marocains (expliq
 
 De Derrida aux traces discrétisées, de la sélection effectuée par le crawler et l'archiviste, les archives sont des traces discrètes du Web, comme Funes on ne peut tout garder 
 
+\begin{figure*}
+  \centering
+  \includegraphics[width=\linewidth]{graphics/boulevard}
+  \caption{"Boulevard du Temple", Louis Daguerre, 1838}
+  \label{fig:boulevard}
+\end{figure*}
+
+
 \section{Un temps sans extension}
 \label{sec:4_temporalite}
 
@@ -354,19 +362,23 @@ Ici on part de Saint Augustin et de sa définition d'un présent sans extension 
 proposer ici une échelle de datation (date de téléchargement et date de last modified)
 
 \begin{table}
+\hspace{2em}%
   \label{tab:datation_1}
-  \begin{tabular}{l}
+  \begin{tabular}{lll}
     \toprule
-    Datation (précision décroissante)\\
+    Niveau & Nature de la date &\\
     \midrule
-    date de téléchargement\\
-    date de dernière modification\\ 
+    page&téléchargement & \tikzmark{start}\\
+    page&dernière modification & \tikzmark{end}\\         
   \bottomrule
 \end{tabular}
   \bigskip
   \caption{Échelle de datation d'une page Web archivée}
-  \vspace*{-8mm}
 \end{table} 
+
+\begin{tikzpicture}[overlay,remember picture]
+\draw[->] let \p1=(start), \p2=(end) in ($(\x1,\y1)+(0.8,0.2)$) -- node[label=right:Validité historique] {} ($(\x1,\y2)+(0.8,0)$);
+\end{tikzpicture}
 
 \begin{figure}
   \caption{Warc vs Daff}
@@ -464,15 +476,17 @@ Le fragment Web pourra assez naturellement s'inscrire dans la continuité des st
 
 \subsection{Dater une page archivée}
 
+\par\noindent Notre réflexion sur les différents niveaux d'analyse ne doit pas être menée que d'un point de vue purement structurel. Il serait également intéressant de discuter de la datation d'une page Web archivée pour tendre vers une plus grande précision historique. Comment bien dater une page Web et le contenu dont elle est le support ? Comment approcher le plus précisément possible de la date de création réelle d'un message posté sur un forum ?\\
+
 \begin{marginfigure}%
   \includegraphics[width=\linewidth]{graphics/yabiladi-wayback}
   \caption{Répartition des archives de \textit{yabiladi.com} dans la WayBack Machine (\url{https://web.archive.org/web/*/www.yabiladi.com})}
   \label{fig:yabiladi-wayback}
 \end{marginfigure}
 
-\par\noindent Les archives Web sont les traces directes des crawlers à l'origine des collectages (Section \ref{sec:4_derrida}). En base de données, une page archivée sera indexée par rapport à sa seule date d'archivage (ou date de téléchargement). Lorsque nous proposons de construire une unité d'exploration définie en deçà du niveau des pages Web, il ne s'agit pas uniquement d'une réflexion d'ordre structurelle. Nous voulons également penser le fragment Web du point de vue de sa datation. Comment bien dater une page Web et le contenu dont elle est le support ?
+\noindent Les archives Web sont les traces directes des crawlers en charge des collectages (Section \ref{sec:4_derrida}). En base de données, rappelons-le, une page archivée est indexée par sa seule date de téléchargement (aussi appelée date d'archivage) sur laquelle s'appuient les moteurs d'exploration existants pour retourner les résultats d'une recherche (par exemple la WayBack Machine, Figure \ref{fig:yabiladi-wayback}). En comparant deux versions d'une même page archivée, il possible de déterminer une date de dernière modification (Section \ref{sec:4_temporalite}) et de l'intégrer à une échelle de datation (Table \ref{tab:datation_1}). 
 
-Dans les moteurs d'exploration d'archives existants (par exemple la WayBack Machine, Figure \ref{fig:yabiladi-wayback}), lorsque l'on lance une recherche, les résultats seront par construction répartis suivant la date de téléchargement. Le fragment Web doit viser une meilleur précision historique et ne pas se satisfaire des seules dates d'archivage. Pour se faire, une piste serait de chercher à identifier la date d'édition de tel ou tel fragment individuel. 
+En introduisant le fragment Web, nous souhaitons améliorer la précision historique des contenus archivés. Ne pas se satisfaire des seules date de téléchargement et de dernière modification. Pour se faire, nous nous donnons comme objectif de chercher à identifier la date d'édition de chaque fragment Web et de répercuter cette donnée sur la datation des pages Web associées. 
 
 \begin{marginfigure}%
   \includegraphics[width=\linewidth]{graphics/yabi-date-com}
@@ -480,18 +494,18 @@ Dans les moteurs d'exploration d'archives existants (par exemple la WayBack Mach
   \label{fig:yabi-date-com}
 \end{marginfigure} 
 
-Une page Web évolue (Section \ref{sec:3_constituer}) dès que son contenu est édité par un tiers : humain ou robot. Par \textit{édition} nous entendons la création, la modification ou la suppression d'un élément d'une page. Les actes de modification et de suppression demandent pour être datés (même approximativement) de comparer deux versions archivées d'une page \citep{rocco_page_2003, nunes_using_2007}. Leur détection semble de prime abord compliquée à intégrer à notre moteur d'exploration d'archives, ce dernier travaillant sur des pages uniques et non des séquences de versions successives. 
+Une page Web évolue (Section \ref{sec:3_constituer}) dès que son contenu est édité par un tiers : humain ou robot. Par \textit{édition}, nous entendons la création, la modification ou la suppression d'un élément d'une page. Comme les actes de modification et de suppression demandent, pour être datés (même approximativement), de comparer deux versions archivées d'une même page \citep{rocco_page_2003, nunes_using_2007}, leur détection semble de prime abord compliquée à intégrer à notre moteur d'exploration d'archives, ce dernier travaillant sur des pages uniques et non des séquences de versions successives. 
 
-La création d'un message ou d'un commentaire peut en revanche être plus facilement datée. Des indices sont souvent dispersés à même la page (la date a laquelle un message a été posté sur un forum, Figure \ref{fig:yabi-date-com}). Il est possible de comparer les dates de téléchargement de certaines URIs d'images par exemple en utilisant le TimeMaps de Memento\footnote{Memento propose de voir une page archivée comme la concaténation de toutes les URIs qu'elle agrège. Cette vue est appelée TimeMaps \citep{van_de_sompel_http_2013}} \citep{aturban_difficulties_2017}. À défaut, la création d'un contenu donné peut être rapporté à sa première apparition dans les archives en choisissant la plus précise des dates de téléchargement \citep{jatowt_detecting_2007}.
+La création d'un message ou d'un commentaire peut en revanche être plus facilement datée. Des indices sont souvent dispersés à même la page (Figure \ref{fig:yabi-date-com}), reste alors à les interpréter et à les formater avant indexation \citep{de_jong_temporal_2005,kanhabua_using_2009}. Si l'en-tête HTTP d'une page Web a été archivé, celui-ci peut nous renseigner sur une date de dernière modification qui ne dépende pas directement du crawler  \citep{amitay_trend_2004}. À défaut, la création d'un contenu donné sera rapportée à sa première apparition sur l'ensemble des versions archivées d'une même page \citep{jatowt_detecting_2007}, cette comparaison peut être affinée si des URIs ont été par ailleurs collectées\footnote{Le système Memento propose de voir une page archivée comme la concaténation de toutes les URIs qu'elle agrège. Cette vue est appelée TimeMaps  \citep{van_de_sompel_http_2013} et peut être exploitée pour comparer les dates de certaines URIs d'images par exemple.} \citep{aturban_difficulties_2017}. Notons enfin qu'il existe des stratégies de datation adaptées à la nature interdépendante de certains contenus archivés, comme un réseau de citation d'articles de blogs par exemple \citep{toyoda_whats_2006,spitz_predicting_2018}. \\ 
 
-À partir de ce point, nous assumerons qu'au niveau du fragment Web une date d'édition équivaut implicitement à une date de création. Il est alors possible de dire de la date de création d'une page Web qu'elle est au mieux la plus ancienne date d'édition de l'ensemble de ses fragments. De là, nous pouvons proposer une mise à jour de l'échelle de datation introduite en section \ref{sec:4_temporalite} :
+\par\noindent À partir de ce point, nous assumerons, pour simplifier, que la date d'édition d'un fragment Web équivaut à sa date de création. Par extension, il est alors possible de dire que la date de création de toute page Web est, au mieux, la plus ancienne date d'édition de l'ensemble de ses fragments. De là, nous pouvons proposer une mise à jour de l'échelle de datation introduite par la Table \ref{tab:datation_1}, telle que :   
 
 \begin{table}
 \hspace{2em}%
   \label{tab:datation_2}
   \begin{tabular}{lll}
     \toprule
-    Niveau & Date &\\
+    Niveau & Nature de la date &\\
     \midrule
     page&téléchargement & \tikzmark{start}\\
     page&dernière modification &\\
@@ -507,8 +521,23 @@ La création d'un message ou d'un commentaire peut en revanche être plus facile
 \draw[->] let \p1=(start), \p2=(end) in ($(\x1,\y1)+(0.8,0.2)$) -- node[label=right:Validité historique] {} ($(\x1,\y2)+(0.8,0)$);
 \end{tikzpicture}
 
+\noindent Tout fragment Web devra donc, dans le mesure du possible, être associé à une date d'édition. Dans le cas contraire, sa date sera rapportée à celle de la page à laquelle il est associé.
 
-Certain \textit{fragment Web} auront une date d'edition d'autre seront la dernière date de modification ou à la date de téléchargement.  
+\subsection{Du geste du crawler au geste de l'acteur}
+
+\noindent Bien dater une page archivée participe de son émancipation vis à vis du crawler et donne, par la même occasion, corps aux acteurs qui l'ont fait vivre. 
+
+Un article de blog ne s'écrit pas de lui même, il est le fruit du geste d'un auteur (unique ou collectif, humain ou robot) qui l'a publié en ligne. Derrière les dates d'édition des fragments Web, peuvent transparaitre les gestes de divers acteurs : auteurs, lecteurs ou visiteurs des pages et sites archivés. Pour le philosophe V. Flusser, un geste est une série de mouvements significatifs dont le but est déchiffrable\footnote{Le geste par le déchiffrement de sa signification devient ainsi objet d'études : "\textit{les gestes montrent la façon dont nous sommes au monde}", \citep{flusser_les_2014}, p.319.} \citep{flusser_les_2014}. Comme pour la date d'édition, un auteur laisse des indices de sa présence sur une page Web, signant certains messages sous pseudonymes. Le geste de l'acteur devient ainsi objet d'études et une dimension à par entière de l'exploration des archives Web. Ou, comme le suggère J. Morsel, la possibilité d'écrire une histoire \textit{symptomale} \citep{morsel_traces?_2016}. Alors que la trace implique l'absence de l'acteur qui l'a produite, le symptome suppose la présence l'attente de l'acteur (coprésent à ce dont il est le signe). L'archive renferme "\textit{présence symptomal fossilisée}" de l'acteur.
+
+
+Certains fragments Web auront pour l'historien ou l'explorateur d'archives une valeur particulière si tant est qu'il témoigne directement de l'acte d'un acteur donné. Cette nouvelle perspective pourra nous mener à considérer, depuis les archives Web, le devenir de communautés d'utilisateurs ou de collectifs d'auteurs tel que nous l'illustrerons dans le Chapitre \ref{chap:6}. Une nouvelle dimension d'analyse des archives s'offre donc à nous : l'exploration par acteur (auteur, contributeur, commentateur, etc).
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{graphics/dimension-acteur}
+  \caption{Dimensions d'exploration des archives Web (ajout de l'acteur)}
+  \label{fig:dimension-acteur}
+\end{figure}
 
 \subsection{Désagréger pour changer de temporalité}
 

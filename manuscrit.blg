@@ -11,45 +11,45 @@ Warning--there's a number but no volume in morsel_traces?_2016
 Warning--empty publisher in stiegler_les_1990
 Warning--empty publisher in stiegler_etat_1991
 Warning--empty institution in van_de_sompel_http_2013
-You've used 24 entries,
+You've used 25 entries,
             1935 wiz_defined-function locations,
-            606 strings with 7280 characters,
-and the built_in function-call counts, 9623 in all, are:
-= -- 983
-> -- 284
-< -- 28
-+ -- 90
-- -- 90
-* -- 703
-:= -- 1587
-add.period$ -- 79
-call.type$ -- 24
-change.case$ -- 159
-chr.to.int$ -- 24
-cite$ -- 30
-duplicate$ -- 447
-empty$ -- 734
-format.name$ -- 120
-if$ -- 1999
+            612 strings with 7414 characters,
+and the built_in function-call counts, 9910 in all, are:
+= -- 1012
+> -- 291
+< -- 29
++ -- 92
+- -- 92
+* -- 721
+:= -- 1641
+add.period$ -- 83
+call.type$ -- 25
+change.case$ -- 164
+chr.to.int$ -- 25
+cite$ -- 31
+duplicate$ -- 461
+empty$ -- 757
+format.name$ -- 123
+if$ -- 2057
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 30
-newline$ -- 120
-num.names$ -- 72
-pop$ -- 186
+missing$ -- 32
+newline$ -- 125
+num.names$ -- 75
+pop$ -- 192
 preamble$ -- 1
-purify$ -- 165
+purify$ -- 171
 quote$ -- 0
-skip$ -- 348
+skip$ -- 358
 stack$ -- 0
-substring$ -- 669
-swap$ -- 108
+substring$ -- 681
+swap$ -- 109
 text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 130
+type$ -- 134
 warning$ -- 6
-while$ -- 84
+while$ -- 86
 width$ -- 0
-write$ -- 310
+write$ -- 323
 (There were 8 warnings)

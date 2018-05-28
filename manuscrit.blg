@@ -5,51 +5,54 @@ The style file: apalike.bst
 Database file #1: biblio.bib
 Warning--I didn't find a database entry for "Tufte2006"
 Warning--I didn't find a database entry for "Tufte1990"
+Warning--empty journal in arvidson_kulturarw3_2000
+Warning--empty journal in dougnac_depot_1960
 Warning--empty journal in finnemann_modernity_1997
 Warning--there's a number but no volume in ketelaar_de_2006
 Warning--there's a number but no volume in morsel_traces?_2016
-Warning--empty publisher in stiegler_les_1990
 Warning--empty publisher in stiegler_etat_1991
+Warning--there's a number but no volume in stiegler_leroi-gourhan:_1998
+Warning--empty note in unesco_charter_2003
 Warning--empty institution in van_de_sompel_http_2013
-You've used 25 entries,
+You've used 37 entries,
             1935 wiz_defined-function locations,
-            612 strings with 7414 characters,
-and the built_in function-call counts, 9910 in all, are:
-= -- 1012
-> -- 291
-< -- 29
-+ -- 92
-- -- 92
-* -- 721
-:= -- 1641
-add.period$ -- 83
-call.type$ -- 25
-change.case$ -- 164
-chr.to.int$ -- 25
-cite$ -- 31
-duplicate$ -- 461
-empty$ -- 757
-format.name$ -- 123
-if$ -- 2057
+            671 strings with 9351 characters,
+and the built_in function-call counts, 14364 in all, are:
+= -- 1454
+> -- 452
+< -- 38
++ -- 150
+- -- 144
+* -- 1067
+:= -- 2414
+add.period$ -- 119
+call.type$ -- 37
+change.case$ -- 249
+chr.to.int$ -- 37
+cite$ -- 46
+duplicate$ -- 649
+empty$ -- 1079
+format.name$ -- 193
+if$ -- 2935
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 32
-newline$ -- 125
-num.names$ -- 75
-pop$ -- 192
+missing$ -- 44
+newline$ -- 183
+num.names$ -- 111
+pop$ -- 279
 preamble$ -- 1
-purify$ -- 171
+purify$ -- 257
 quote$ -- 0
-skip$ -- 358
+skip$ -- 497
 stack$ -- 0
-substring$ -- 681
-swap$ -- 109
-text.length$ -- 12
+substring$ -- 975
+swap$ -- 133
+text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 134
-warning$ -- 6
-while$ -- 86
+type$ -- 204
+warning$ -- 9
+while$ -- 124
 width$ -- 0
-write$ -- 323
-(There were 8 warnings)
+write$ -- 470
+(There were 11 warnings)

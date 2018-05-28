@@ -171,6 +171,8 @@
 
 \newcommand\tikzmark[1]{%
   \tikz[overlay,remember picture] \coordinate (#1);}
+  
+ \renewcommand\labelitemi{--}
 
 \begin{document}
 
@@ -294,6 +296,7 @@ Ici on parle de la raréfaction de la matière Web à mesure que l'on remonte le
 \label{chap:2}
 
 \section{Retour aux origines du Web}
+\label{sec:2_web}
 
 \section{Le migrant connecté}
 
@@ -320,7 +323,7 @@ the interconnectedness of content is a major quality of the Web that raises issu
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapitre 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Préserver l'héritage numérique}
+\chapter{Archiver le Web}
 
 \noindent Face à la disparition totale ou partielle des sites Web recensés par l'atlas e-Diasporas (Chapitre \ref{chap:2}), il a été décidé de lancer une campagne d'archivage afin de préserver cet héritage numérique et d'anticiper, par là même, la tenue de futures recherches. Sans cette initiative, mes travaux de thèse n'auraient pas pu exploiter et questionner les traces d'un Web aujourd'hui passé. 
 
@@ -330,64 +333,66 @@ De part la nature même du médium, le Web demande de penser et de mettre en pla
 
 \section{Vingt ans d'archivage du Web}
 
-\noindent En Octobre 2016, se tenait à la Bibliothèque Nationale de France (BNF) une grande conférence anniversaire réunissant, pour les 20 ans de l'archivage du Web\footnote{\url{http://www.bnf.fr/fr/professionnels/anx_journees_pro_2016/a.jp_161122_23_archivage_web.html}}, les acteurs français de la pratique. Alors qu'était évoqués les conditions du partage du dépôt légal du Web national entre la BNF et l'INA, il a été rappelé qu'à l'origine chacune des deux institutions souhaitait se voir attribuer la pleine gestion de ce dépôt. L'INA mettait en avant ses compétences technique quant à l'archivage d'objets nouvellement introduits dans la paysage culturel (les flux audiovisuels). La BNF, pour sa part, s'appuyait sur son expérience pluricentenaire de préservation du patrimoine\footnote{\url{http://multimedia.bnf.fr/video/prof/161123_10_dl_web.mp4}}. 
+\noindent En Octobre 2016, se tenait à la Bibliothèque Nationale de France (BNF) une grande conférence anniversaire réunissant, pour les 20 ans de l'archivage du Web\footnote{\url{http://www.bnf.fr/fr/professionnels/anx_journees_pro_2016/a.jp_161122_23_archivage_web.html}}, les acteurs français de la pratique. Alors qu'était évoqués les conditions du partage du dépôt légal du Web national entre la BNF et l'INA, il a été rappelé qu'à l'origine chacune des deux institutions souhaitait se voir attribuer la pleine gestion de ce dépôt. L'INA mettait en avant ses compétences techniques acquises en archivant les flux audiovisuels nouvellement introduits dans le paysage culturel. La BNF, pour sa part, s'appuyait sur son expérience pluricentenaire de préservation du patrimoine\footnote{\url{http://multimedia.bnf.fr/video/prof/161123_10_dl_web.mp4}}. 
 
-Cette querelle initiale et son dénouement (la cotutelle du dépôt légale) sont à l'image de l'histoire même de l'archivage du Web: à savoir la conjugaison d'une tradition longue de sauvegarde des savoirs et d'un ensemble de techniques de collecte nouvellement pensées pour cet objet complexe qu'est le Web, le tout porté par une poignée de pionniers.
+Cette querelle initiale et son dénouement (la cotutelle du dépôt légale) sont à l'image de l'histoire même de l'archivage du Web: la conjugaison d'une tradition longue de sauvegarde des savoirs et d'un ensemble de techniques de collecte nouvellement pensées pour cet objet complexe qu'est le Web, le tout porté par une poignée de pionniers.
 
-\subsection{L'organisation de la mémoire collective}
+\subsection{Préserver la mémoire collective}
 
-L'archivage du Web s'inscrit dans la tradition longue des techniques d'élaboration et de conservation (volontaire et systématique) de la mémoire collective. 
+\noindent L'archivage du Web s'inscrit dans la tradition longue des techniques d'élaboration et de conservation de la mémoire collective. Tradition qui remonte aux origines même de l'humanité où technique et mémoire se trouvaient étroitement liées. 
 
-S'appuyant sur une analyse statistique de série d'objets techniques préhistoriques (des pierres taillée, des peintures), Leroi-Gourhan trace une première ligne de rencontre entre technique et mémoire. La technique peut, d'un côté, former un système soumis aux lois générales de l'évolution technique\footnote{Ce que LG nomme la technologie}. Un silex taillé, par exemple, sera involontairement porteur d'une mémoire : celle de la technique employée et celle de l'homme qui l'a élaboré. D'un autre coté la technique peut en elle même être concue comme technologie de mémoire, mmnémo comme l'écriture (la tablette). Simondon établit ensuite un lien inflexible entre homme et technologie, l'homme évoluant et avec lui ses techniques. Ainsi depuis le néolitique l'homme a inscrit sur des support de mémoire ses expériences et ses pensées individuelles, faisant évoluer les technique d'enregistrement de la mémoire (écriture, imprimerie ...)  
+A. Leroi-Gourhan fait émerger, de l'étude de séries d'objets (silex taillés, percuteurs, harpons, etc) et de figures préhistoriques (gravures et peintures des grottes ornées), une ligne de rencontre entre technique et mémoire \citep{leroi-gourhan_geste_1964}. Le préhistorien décrit la technique comme un système évolutif, soumis aux lois générales de la technologie et apparaissant comme transversal à des cultures parfois diverses et éloignées\footnote{
+Leroi-Gourhan associe les formes animales des grottes ornées à des signes, réalisant des couplages basés sur l'observation (comptages et statistiques) de dizaines de cavités. Il cherche à établir une échelle évolutive des styles pariétaux, transversale aux premiers âges de l'Europe de l'Ouest \citep{leroi-gourham_art_1984}}. La technique est chargée, en elle même, de l'histoire passée des continuités, ruptures et transformations technologiques dont elle est l'aboutissement à un instant t.   
 
-https://www.cairn.info/revue-les-cahiers-de-mediologie-1998-2-page-187.htm
+Avec Leroi-Gourhan, la technique devient mémoire. Elle peut en être chargée et/ou être conçue à dessein de la conserver. Involontairement, le silex taillé porte en lui la trace de l'homme qui l'a élaboré. Lorsque le tailleur finit par mourir, son geste continue à s'extérioriser à travers l'outil qui demeure. Précieux indice pour celui qui vient à sa suite ou pour l'archéologue qui, des millénaires après, saura grâce à cet objet assembler les traces fragmentées d'une pratique passée. Mais l'homme aurait aussi très bien pu choisir, en conscience, d'inscrire son expérience individuelle sur des supports de mémoire dédiés. L'écriture est ainsi l'une des premières techniques de la mémoire, utilisée par l'humanité depuis le néolithique. L'écriture est en cela une \textit{mnémotechnologie} \citep{stiegler_leroi-gourhan:_1998}. 
 
-Il  existe ainsi une première ligne de rencontre tracée par Leroi-Gourhan entre technique et mémoire. Dans "\textit{L'homme et la matière}" \citep{leroi-gourhan_homme_2012}, le préhistorien décrit la technique comme un système pris dans une évolution de la \textit{technologie}\footnote{Technologie au sens de théorie générale de l'évolution technique.} et fait ainsi de la technique une mémoire. La technique peut dès lors être porteuse d'une mémoire dont elle conserve la trace (involontairement) ou être en elle même une technologie concue pour garder de la mémoire. L'écriture est en cela une technologie de la mémoire, une mnémotechnologie. Depuis le néolitique, l'humanité inscrit son expérience sur des supports de mémoire et d'évellope des technologie de transmission des savoir. Apparaissent ensuite des lieux de sanctuarisation de cette mémoire, qui en la selectionnant, en la cumullant, en la triant, en l'organisant font de cette somme d'expériences individuelles un héritage collectif rendu accessible.  
+Poursuivant son évolution, l'humanité développe plus avant les techniques de transmission des savoirs pour sélectionner et agréger ses expériences individuelles en une mémoire collective. Des espaces et des structures voient le jour, appuyés par divers pouvoirs politiques ou religieux, avec le double objectif de préserver et d'administrer l'héritage collectif. J. Derrida décrit ainsi le geste d'archiver comme un "\textit{geste de pouvoir}" \citep{derrida_trace_2014}. Choisir ce que l'on garde ou non dans les archives ne peut être que le fruit d'une hégémonie, d'une hiérarchie et "\textit{d'un certain nombre d'opérations de pouvoir}" rendues légitimes par une institution. L'État est ainsi caractérisé par \textit{sa capacité d'accumuler, contrôler et exploiter la mémoire collective} \citep{stiegler_etat_1991}, capacité dont on retrouve divers incarnations au court de l'histoire :
+
+\begin{itemize}[leftmargin=*]  
+\item Au IVe millénaire av. J.C, les tablettes d'argiles étaient accumulées par les mésopotamiens pour constituer les premières bibliothèques
+\item Entre 535 et 555, Cassiodore pense le Monastère de Vivarium comme un lieu de transmission où, pour la première fois, seraient associés culture savante et christianisme
+\item François Ier crée le dépôt légal\footnote{"\textit{Nous avons délibéré de faire retirer, mettre et assembler en notre librairie toutes les livres dignes d'être vues qui ont été ou qui seront faites, compilées, amplifiées, corrigées et amendées de notre tems}", extrait de l'ordonnance royale \citep{dougnac_depot_1960}} en France, par l'ordonnance royale du 28 décembre 1537, à des fins de préservation culturelle mais également de contrôle politique
+\end{itemize}
+
+\noindent Les siècle passent et les archives s'adaptent à la transformation des supports de mémoire et à l'émergence de formes nouvelles d'enre\-gistrement. Avec l'arrivée des technologies analogiques\footnote{Cinématographie, photographie, radiodiffusion, etc}, il faut désormais capter et archiver des flux d'images et de sons, ce qui conduira en France à la création de l'Institut National de l'Audiovisuel (INA) en 1974. L'apparition du numérique\footnote{Bases de données, logiciels, interfaces, etc} marque la dernière étape de ce cheminement en ouvrant la voie à un renouveau des formes de lecture et d'étude des archives. L'accès à distance de documents numérisés facilite leur consultation, mais il devient également possible de les qualifier, de les annoter ou de les mettre en relation, et ce, de manière large voire exhaustive \citep{borgman_digital_2000} :
+
+\begin{itemize}[leftmargin=*]  
+\item En 1971, le projet Gutenberg commence à collecter des copies numéri\-ques (recopiées et tapées \textit{à la main}) d'ouvrages du domaine public
+\item Le Thesaurus Linguae Graecae cherche, depuis 1972, à numériser la plupart des textes littéraires rédigés en grecs ancien et toujours subsistants
+\end{itemize}
+
+\noindent Mais si le numérique permet aujourd'hui de revisiter des ressources anciennement archivées, il est aussi créateur d'objets nativement numé\-riques tout autant porteurs d'un héritage à préserver. Le web en est la parfaite illustration.
+
+\subsection{Un héritage numérique}
+
+\noindent L'archivage du Web débute à la fin des années 90, lorsqu'en 1996 se développent les premières initiatives de préservation du Web, soit 4 années à peine après la publication de la première page sur la toile~(Section \ref{sec:2_web}). La National Library of Australia est ainsi à l'initiative du projet Pandora\footnote{\url{http://pandora.nla.gov.au/}} qui vise à archiver les publications en ligne australiennes sur la base d'une collecte sélective et continue de sites Web. La Swedish Royal Library, quant à elle, lance le projet Kulturarw3\footnote{\url{https://web.archive.org/web/20040206225053/https://www.kb.se/kw3}} qui s'essaye à une collecte "\textit{intégrale}" mais dispersée dans le temps des sites du Web suédois \citep{arvidson_kulturarw3_2000}.
+
+Mais c'est avec la création d'Internet Archive par B. Kahle la même année \citep{kahle_preserving_1997}, que s'écrit véritablement la première page de l'histoire des archives du Web. Ingénieur et activiste, Kahle s'inspire de la Bibliothèque d'Alexandrie pour motiver la création de son organisation à but non lucratif et rendre accessible au plus grand nombre le passé du Web\footnote{\url{https://archive.org/}}. Utilisant un crawler développé pour le compte de son autre société Alexa Internet, Kahle revendiquait, dans les premières années de la collecte, être capable d'archiver au moins une fois tous les deux mois chacun des sites de l'ensemble du Web \citep{mohr_introduction_2004}. La revente d'Alexa au groupe Amazon en 1999 va lui permettre de pérenniser financièrement Internet Archive, qui depuis ce temps n'a eu de cesse d'archiver le Web.
+
+%\begin{marginfigure}%
+%  \includegraphics[width=\linewidth]{tr}
+%  \caption{Distribution par année des initiatives d'archivage du Web (source \citep{gomes_survey_2011})}
+%  \label{fig:charte-unseco}
+%\end{marginfigure} 
+
+Ces pionniers de l'archivage sont rapidement suivis par la Finlande en 1997, le Danemark en 1998 et d'autres pays nordiques rassemblés autour du projet NWA\footnote{Nordic Web Archive} \citep{hallgrinsson_nordic_2003}. En 2003, la publication par l'UNESCO de la \textit{Charter on the Preservation of the Digital Heritage} \citep{unesco_charter_2003} marque un nouveau tournant pour l'archivage du Web en reconnaissant la valeur universelle d'une telle démarche. La charte fait l'effet d'un l'accélérateur (Figure ) pour de nombreuses bibliothèques nationales qui se mettent alors à archiver leur Web national respectif \citep{gomes_survey_2011}.  
 
 
-La technique est  qui fait de la technique une technologie de la mémoire 
-
-Une expérience individuelle sommée devient un héritage 
 
 
-L'écriture est une technologie conçue pour garder consciemment de la mémoire, c'est une "mnémotechniques"  
+Ces différents acteurs peuvent être classés suivant la terminologie introduite par J. Masanes \citep{masanes_web_2006}, entre initiatives publiques ou privées, poursuivant un but lucratif ou non. L'accès aux corpus archivés peut être entièrement public ou restreint, en ligne ou physique. Par exemple, Internet Archive est une initiative à but non commerciale, avec un accès public à l'ensemble de ses corpus, en ligne depuis 2001 et physique depuis 2002\footnote{La Wayback Machine est officiellement lancée en 2001. Avant cette date les corpus d'Internet Archives n'étaient pas accessibles. En 2002, une copie des archives est disponible à la Bibliotheca Alexandrina, en Égypte}. 
+
+Une autre manière de catégoriser ces initiatives serait de regarder la nature des corpus archivés. Sont-ils basés sur une thématique particulière (tel qu'Archipol, un corpus centré sur les sites politiques néerlandais \citep{voerman_archiving_2002})? Ou sur une extension d'URL particulière pour délimiter les contours d'un Web territorial (d'un état entier en suède à une ville comme Anvers \citep{boudrez_archiving_2002})? Il est aussi possible d'associer chaque corpus à une utilisation caractéristique :
+
+\begin{itemize}[leftmargin=*]  
+\item Pour de la consultation libre ou des 
+\end{itemize}
 
 
 
-L'archivage du Web s'inscrit dans une tradition longue de préservation (volontaire et systématique) de l'héritage collectif :
-L'humanité a de tout temps inscrit son expérience sur des supports 
 
-- le monastère de vivarium https://fr.wikipedia.org/wiki/Monastère\_de\_Vivarium
-- la "gloire du monde" et les 50 musées des Médicis  https://fr.wikipedia.org/wiki/Maison\_de\_Médicis
-- le dépôt légal a été conçu en France par l'ordonnance royale du 28 décembre 1537, prise par François Ier https://fr.wikipedia.org/wiki/Dépôt\_légal\_en\_France puis supprimé à la révolution avant d'être rétablis. 
 
-Historiquement la question des archives, de leur sélection et de leur gestion a toujours été un enjeux politique et de pouvoir. Entre une volonté de sanctuariser, contrôler, affirmer son pouvoir, définir ce qui est nécessaire ... 
 
-L'organisation de la mémoire est un élément déterminant de la force d'une civilisation \citep{stiegler_les_1990} et vient l'industrialisation de la mémoire avec l'arrivée de l'informatique. Les archives évoluent \citep{stiegler_etat_1991} et l'on a la possibilité de qualifier, créer des liens, éditer, annoter 
-Ou Borgman (2000) pour la définition d'une global digital library
-
-- le projet gutemberg https://fr.wikipedia.org/wiki/Projet\_Gutenberg
-- le thésaurus linguae https://fr.wikipedia.org/wiki/Thesaurus\_Linguae\_Graecae
-
-Dans les 70's on va commencer à numériser (et parler de fait d'humanité numérique)
-
-Il a rapidement fallu s'attaquer à une matière nativement numérique : le Web. 
-
-Si l'archivage du Web a rapidement été considéré comme une nécessité, les premières années n'ont pas été simples. 3 arguments contre revenaient souvent : 1) la qualité n'est pas au rdv \& les éditeurs veulent garder le droit sur ce qui doit être fait, 2) le Web se préserve de lui même on peut donc le laisser tranquille, 3) c'est trop compliqué 
-
-Et là des gars ont voulu l'imprimer, mais il y avait mieux à faire 
-
-\subsection{l'archivage Web}
-
-Bon Mazanes commence par classifier les initiatives d'archivage par accès publics ou privés, offline ou online, certaine ne sont pas purement destinées aux archives web. D'autres sont des truc d'états ou non commerciales alors que certaines sont commerciales 
-
-NL de Sweden et Australie furent les première 1996, puis Finland, Denmark, Norway, Iceland, France, Czech Republic, Slovenia, Italy, and Greece, in Asia Japan, China, and Singapore, the Library of Congress in the USA ou même plus récement les belges (cf Jeru )
-
-Australian project Pandora chose to focus on a short selection of Web sites
-
-Kulturarw started in 1997 by the Swedish Royal Library (Arvidson et al. 2000)
-
-.gov (Cruse et al. 2003; Carlin 2004) or .edu (Lyle 2004)
 
 Bon là il faut une carte
 
@@ -395,13 +400,7 @@ Il y des archives régionales ou communales ou basés sur des sites précis The 
 
 la Library of Alexandria, Egypt donne un accès online
 
-Since its beginnings in 1995
-The Internet Archive was formally incorporated in April, 1996, by Bruce
-Gilliat and Brewster Kahle.
-L'Internet Archive est en partie financé par Alexa. c'est une initiative personelle
-Alexa Internet a été fondé en 1996 par Brewster Kahle et Bruce Gilliat, puis racheté par amazone
-L'internet Archive est le plus gros des corpus d'archives publiquement accessibles, mais il n'est pas publique au sens où le serait un dépot légale 
-Internet Archive, a small organization with small private funding (Kahle 1997, 2002)
+
 Internet Archive or the WA Pacific Islands also preserve information related to foreign countries
 
 Bon il y a of course google et son cache
@@ -443,6 +442,11 @@ La constitution juridique des corpus en france
 
 \section{Constituer des corpus d'archives}
 \label{sec:3_constituer}
+
+Archiver le Web a rapidement été considéré comme une nécessité 
+
+
+Si l'archivage du Web a rapidement été considéré comme une nécessité, les premières années n'ont pas été simples. 3 arguments contre revenaient souvent : 1) la qualité n'est pas au rdv \& les éditeurs veulent garder le droit sur ce qui doit être fait, 2) le Web se préserve de lui même on peut donc le laisser tranquille, 3) c'est trop compliqué 
 
 \subsection{Le Web est éphémère}
 

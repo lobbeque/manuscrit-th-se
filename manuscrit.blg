@@ -9,50 +9,51 @@ Warning--empty journal in arvidson_kulturarw3_2000
 Warning--empty journal in dougnac_depot_1960
 Warning--empty journal in finnemann_modernity_1997
 Warning--there's a number but no volume in ketelaar_de_2006
+Warning--empty journal in leclerc_cyberespace_2012
 Warning--there's a number but no volume in morsel_traces?_2016
 Warning--empty publisher in stiegler_etat_1991
 Warning--there's a number but no volume in stiegler_leroi-gourhan:_1998
 Warning--empty note in unesco_charter_2003
 Warning--empty institution in van_de_sompel_http_2013
-You've used 37 entries,
+You've used 48 entries,
             1935 wiz_defined-function locations,
-            671 strings with 9351 characters,
-and the built_in function-call counts, 14364 in all, are:
-= -- 1454
-> -- 452
-< -- 38
-+ -- 150
-- -- 144
-* -- 1067
-:= -- 2414
-add.period$ -- 119
-call.type$ -- 37
-change.case$ -- 249
-chr.to.int$ -- 37
-cite$ -- 46
-duplicate$ -- 649
-empty$ -- 1079
-format.name$ -- 193
-if$ -- 2935
+            724 strings with 11264 characters,
+and the built_in function-call counts, 19089 in all, are:
+= -- 1913
+> -- 662
+< -- 48
++ -- 230
+- -- 216
+* -- 1450
+:= -- 3217
+add.period$ -- 154
+call.type$ -- 48
+change.case$ -- 338
+chr.to.int$ -- 48
+cite$ -- 58
+duplicate$ -- 840
+empty$ -- 1401
+format.name$ -- 282
+if$ -- 3877
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 44
-newline$ -- 183
-num.names$ -- 111
-pop$ -- 279
+missing$ -- 57
+newline$ -- 237
+num.names$ -- 144
+pop$ -- 376
 preamble$ -- 1
-purify$ -- 257
+purify$ -- 348
 quote$ -- 0
-skip$ -- 497
+skip$ -- 640
 stack$ -- 0
-substring$ -- 975
-swap$ -- 133
-text.length$ -- 13
+substring$ -- 1268
+swap$ -- 169
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 204
-warning$ -- 9
-while$ -- 124
+type$ -- 266
+warning$ -- 10
+while$ -- 163
 width$ -- 0
-write$ -- 470
-(There were 11 warnings)
+write$ -- 610
+(There were 12 warnings)

@@ -1,5 +1,11 @@
 \begin{thebibliography}{}
 
+\bibitem[Abiteboul et~al., 2002]{abiteboul_first_2002}
+Abiteboul, S., Cobena, G., Masanes, J., and Sedrati, G. (2002).
+\newblock A first experience in archiving the {French} {Web}.
+\newblock In {\em International {Conference} on {Theory} and {Practice} of
+  {Digital} {Libraries}}, pages 1--15. Springer.
+
 \bibitem[Amitay et~al., 2004]{amitay_trend_2004}
 Amitay, E., Carmel, D., Herscovici, M., Lempel, R., and Soffer, A. (2004).
 \newblock Trend detection through temporal link analysis.
@@ -21,6 +27,12 @@ Baschet, J. (2018).
 \newblock {\em Défaire la tyrannie du présent: {Temporalités} émergentes et
   futurs inédits}.
 \newblock L'horizon des possibles. Editions La Découverte.
+
+\bibitem[Ben-David and Amram, 2018]{ben-david_internet_2018}
+Ben-David, A. and Amram, A. (2018).
+\newblock The {Internet} {Archive} and the socio-technical construction of
+  historical facts.
+\newblock {\em Internet Histories}, pages 1--23.
 
 \bibitem[Borges, 1974]{borges_fictions_1974}
 Borges, J. (1974).
@@ -47,12 +59,28 @@ Brügger, N. (2009).
 \newblock Website history and the website as an object of study.
 \newblock {\em New Media \& Society}, 11(1-2):115--132.
 
+\bibitem[Coriat and {others}, 2015]{coriat_retour_2015}
+Coriat, B. and {others} (2015).
+\newblock {\em Le retour des communs: \& la crise de l'idéologie
+  propriétaire}.
+\newblock Éditions Les Liens qui libèrent.
+
 \bibitem[De~Jong et~al., 2005]{de_jong_temporal_2005}
 De~Jong, F., Rode, H., and Hiemstra, D. (2005).
 \newblock Temporal language models for the disclosure of historical text.
 \newblock In {\em Humanities, computers and cultural heritage: {Proceedings} of
   the {XVIth} {International} {Conference} of the {Association} for {History}
   and {Computing} ({AHC} 2005)}, pages 161--168.
+
+\bibitem[De~Kosnik, 2016]{de_kosnik_rogue_2016}
+De~Kosnik, A. (2016).
+\newblock {\em Rogue archives: {Digital} cultural memory and media fandom}.
+\newblock MIT Press.
+
+\bibitem[Denev et~al., 2009]{denev_sharc:_2009}
+Denev, D., Mazeika, A., Spaniol, M., and Weikum, G. (2009).
+\newblock {SHARC}: framework for quality-conscious web archiving.
+\newblock {\em Proceedings of the VLDB Endowment}, 2(1):586--597.
 
 \bibitem[Derrida, 1995]{derrida_mal_1995}
 Derrida, J. (1995).
@@ -88,6 +116,11 @@ Gomes, D., Miranda, J., and Costa, M. (2011).
 \newblock In {\em International {Conference} on {Theory} and {Practice} of
   {Digital} {Libraries}}, pages 408--420. Springer.
 
+\bibitem[Gomes et~al., 2009]{gomes_introducing_2009}
+Gomes, D., Nogueira, A., Miranda, J., and Costa, M. (2009).
+\newblock Introducing the {Portuguese} web archive initiative.
+\newblock In {\em 8th {International} {Web} {Archiving} {Workshop}}. Springer.
+
 \bibitem[Hallgrinsson and Bang, 2003]{hallgrinsson_nordic_2003}
 Hallgrinsson, B. and Bang, S. (2003).
 \newblock Nordic web archive.
@@ -121,6 +154,16 @@ Keren, M. (2006).
 Ketelaar, E. (2006).
 \newblock ({Dé}) {Construire} l'archive.
 \newblock {\em Matériaux pour l’histoire de notre temps}, (2):65--70.
+
+\bibitem[Koehler, 1999]{koehler_analysis_1999}
+Koehler, W. (1999).
+\newblock An analysis of web page and web site constancy and permanence.
+\newblock {\em Journal of the Association for Information Science and
+  Technology}, 50(2):162.
+
+\bibitem[Leclerc, 2012]{leclerc_cyberespace_2012}
+Leclerc, E. (2012).
+\newblock Le cyberespace de la diaspora indienne.
 
 \bibitem[Leroi-Gourham, 1984]{leroi-gourham_art_1984}
 Leroi-Gourham, A. (1984).
@@ -158,11 +201,31 @@ Nunes, S., Ribeiro, C., and David, G. (2007).
 \newblock In {\em Proceedings of the 9th annual {ACM} international workshop on
   {Web} information and data management}, pages 129--136. ACM.
 
+\bibitem[Risse et~al., 2014]{risse_arcomem_2014}
+Risse, T., Demidova, E., Dietze, S., Peters, W., Papailiou, N., Doka, K.,
+  Stavrakas, Y., Plachouras, V., Senellart, P., Carpentier, F., and {others}
+  (2014).
+\newblock The {ARCOMEM} architecture for social-and semantic-driven web
+  archiving.
+\newblock {\em future internet}, 6(4):688--716.
+
 \bibitem[Rocco et~al., 2003]{rocco_page_2003}
 Rocco, D., Buttler, D., and Liu, L. (2003).
 \newblock Page digest for large-scale web services.
 \newblock In {\em E-{Commerce}, 2003. {CEC} 2003. {IEEE} {International}
   {Conference} on}, pages 381--390. IEEE.
+
+\bibitem[Schneider et~al., 2003]{schneider_building_2003}
+Schneider, S.~M., Foot, K., Kimpton, M., and Jones, G. (2003).
+\newblock Building thematic web collections: challenges and experiences from
+  the {September} 11 {Web} {Archive} and the {Election} 2002 {Web} {Archive}.
+\newblock {\em Digital Libraries, ECDL}, pages 77--94.
+
+\bibitem[Spaniol and Weikum, 2012]{spaniol_tracking_2012}
+Spaniol, M. and Weikum, G. (2012).
+\newblock Tracking entities in web archives: the {LAWA} project.
+\newblock In {\em Proceedings of the 21st {International} {Conference} on
+  {World} {Wide} {Web}}, pages 287--290. ACM.
 
 \bibitem[Spitz et~al., 2018]{spitz_predicting_2018}
 Spitz, A., Strötgen, J., and Gertz, M. (2018).

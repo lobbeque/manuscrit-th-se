@@ -332,6 +332,7 @@ De part la nature même du médium, le Web demande de penser et de mettre en pla
 \noindent Bien que cette thèse se concentre sur l'exploration d'archives Web déjà existantes, il nous semble important d'évoquer la façon dont ces dernières sont constituées en amont afin de mieux saisir les biais analytiques (Chapitre \ref{chap:4}) qui motiveront la présentation de notre principale contribution (Chapitre \ref{chap:5}). Ce faisant, les éléments que nous nous apprêtons à présenter s'appuieront principalement sur l'ouvrage de J.~Masanes : "\textit{Web Archiving}" \citep{masanes_web_2006} qui reste encore aujourd'hui une référence.
 
 \section{Vingt ans d'archivage du Web}
+\label{sec:3_20ans}
 
 \noindent En Octobre 2016, se tenait à la Bibliothèque Nationale de France (BNF) une grande conférence anniversaire réunissant, pour les 20 ans de l'archivage du Web\footnote{\url{http://www.bnf.fr/fr/professionnels/anx_journees_pro_2016/a.jp_161122_23_archivage_web.html}}, les acteurs français de la pratique. Alors qu'était évoqués les conditions du partage du dépôt légal du Web national entre la BNF et l'INA, il a été rappelé qu'à l'origine chacune des deux institutions souhaitait se voir attribuer la pleine gestion de ce dépôt. L'INA mettait en avant ses compétences techniques acquises en archivant les flux audiovisuels nouvellement introduits dans le paysage culturel. La BNF, pour sa part, s'appuyait sur son expérience pluricentenaire de préservation du patrimoine\footnote{\url{http://multimedia.bnf.fr/video/prof/161123_10_dl_web.mp4}}. 
 
@@ -365,80 +366,87 @@ Poursuivant son évolution, l'humanité développe plus avant les techniques de 
 
 \subsection{Un héritage numérique}
 
-\noindent L'archivage du Web débute à la fin des années 90, lorsqu'en 1996 se développent les premières initiatives de préservation du Web, soit 4 années à peine après la publication de la première page sur la toile~(Section \ref{sec:2_web}). La National Library of Australia est ainsi à l'initiative du projet Pandora\footnote{\url{http://pandora.nla.gov.au/}} qui vise à archiver les publications en ligne australiennes sur la base d'une collecte sélective et continue de sites Web. La Swedish Royal Library, quant à elle, lance le projet Kulturarw3\footnote{\url{https://web.archive.org/web/20040206225053/https://www.kb.se/kw3}} qui s'essaye à une collecte "\textit{intégrale}" mais dispersée dans le temps des sites du Web suédois \citep{arvidson_kulturarw3_2000}.
+\noindent L'archivage du Web débute à la fin des années 90, et plus précisément en 1996 lorsque se développent les premières initiatives de préservation du Web, soit 4 années à peine après la publication de la première page sur la toile~(Section \ref{sec:2_web}). La National Library of Australia est ainsi à l'initiative du projet Pandora\footnote{\url{http://pandora.nla.gov.au/}} qui vise à archiver les publications en ligne australiennes sur la base d'une collecte sélective et continue de sites Web australiens. La Swedish Royal Library, quant à elle, lance le projet Kulturarw3\footnote{\url{https://web.archive.org/web/20040206225053/https://www.kb.se/kw3}} qui s'essaye à une collecte "\textit{intégrale}" et espacée dans le temps des sites du Web suédois \citep{arvidson_kulturarw3_2000}.
 
-Mais c'est avec la création d'Internet Archive par B. Kahle la même année \citep{kahle_preserving_1997}, que s'écrit véritablement la première page de l'histoire des archives du Web. Ingénieur et activiste, Kahle s'inspire de la Bibliothèque d'Alexandrie pour motiver la création de son organisation à but non lucratif et rendre accessible au plus grand nombre le passé du Web\footnote{\url{https://archive.org/}}. Utilisant un crawler développé pour le compte de son autre société Alexa Internet, Kahle revendiquait, dans les premières années de la collecte, être capable d'archiver au moins une fois tous les deux mois chacun des sites de l'ensemble du Web \citep{mohr_introduction_2004}. La revente d'Alexa au groupe Amazon en 1999 va lui permettre de pérenniser financièrement Internet Archive, qui depuis ce temps n'a eu de cesse d'archiver le Web.
+Mais c'est avec la création d'Internet Archive par B. Kahle la même année \citep{kahle_preserving_1997}, que s'écrit véritablement la première page de l'histoire des archives du Web. Ingénieur et activiste, Kahle s'inspire de la Bibliothèque d'Alexandrie pour motiver la création d'une organisation à but non lucratif afin de rendre accessible au plus grand nombre le passé du Web\footnote{\url{https://archive.org/}}. Utilisant un crawler développé pour le compte de son autre société Alexa Internet, Kahle revendiquait, dans les premières années de la collecte, être capable d'archiver au moins une fois tous les deux mois chacun des sites de l'ensemble du Web \citep{mohr_introduction_2004}. La revente d'Alexa au groupe Amazon en 1999 va lui permettre de pérenniser financièrement Internet Archive, qui depuis ce temps n'a eu de cesse d'archiver le Web.
 
-%\begin{marginfigure}%
-%  \includegraphics[width=\linewidth]{tr}
-%  \caption{Distribution par année des initiatives d'archivage du Web (source \citep{gomes_survey_2011})}
-%  \label{fig:charte-unseco}
-%\end{marginfigure} 
+Ces pionniers de l'archivage sont rapidement suivis par la Finlande en 1997, le Danemark en 1998 et d'autres pays nordiques rassemblés autour du projet NWA\footnote{Nordic Web Archive} \citep{hallgrinsson_nordic_2003}. En 2003, la publication par l'UNESCO de la \textit{Charte sur la conservation du patrimoine numérique} \citep{unesco_charter_2003} marque un nouveau tournant pour l'archivage du Web en reconnaissant la valeur universelle d'une telle démarche et l'urgence face à la disparition potentiel de tout, ou d'une partie, de l'héritage numérique mondial : \\
 
-Ces pionniers de l'archivage sont rapidement suivis par la Finlande en 1997, le Danemark en 1998 et d'autres pays nordiques rassemblés autour du projet NWA\footnote{Nordic Web Archive} \citep{hallgrinsson_nordic_2003}. En 2003, la publication par l'UNESCO de la \textit{Charter on the Preservation of the Digital Heritage} \citep{unesco_charter_2003} marque un nouveau tournant pour l'archivage du Web en reconnaissant la valeur universelle d'une telle démarche. La charte fait l'effet d'un l'accélérateur (Figure ) pour de nombreuses bibliothèques nationales qui se mettent alors à archiver leur Web national respectif \citep{gomes_survey_2011}.  
+\begin{fullwidth}
+"\textit{Le  patrimoine  numérique  mondial  risque  d'être  perdu  pour  la  postérité.  Les  facteurs  qui  peuvent  contribuer  à  sa  perte  sont  l'obsolescence  rapide  du  matériel  et  des  logiciels  qui  servent  à  le  créer,  les  incertitudes  concernant  les  financements,  la  responsabilité  et  les  méthodes  de  la  maintenance  et  de  la  conservation et l'absence de législation favorable à sa préservation. L'évolution des attitudes n'a pas suivi celle des technologies. L'évolution numérique a été trop rapide et trop coûteuse pour que les pouvoirs publics et les institutions élaborent en temps voulu et en connaissance de cause des stratégies de conservation. La menace qui plane sur le potentiel économique, social, intellectuel et culturel du patrimoine, pierre angulaire de l'avenir, n'a pas été pleinement saisie.}" 
 
+\noindent(Charte sur la conservation du patrimoine numérique, Article 3)\\
+\end{fullwidth}
 
+\noindent Pour de nombreuses bibliothèques nationales, la charte de l'UNESCO fait l'effet d'un accélérateur (Figure \ref{fig:date-initiative}). Les institutions sont encouragées dès 2003 à archiver leur Web national \citep{gomes_survey_2011}. Mais notons ici que la notion de Web national reste discutable \citep{abiteboul_first_2002}, il s'agira souvent de crawler le Web en fonction d'une extension de nom de domaine donnée (.fr, .jp, .uk, etc), extension qui ne couvre pas exhaustivement l'ensemble des sites associés à un domaine national précis, elle est plutôt à considérer comme une borne inférieure de celui-ci \citep{koehler_analysis_1999}. Le cas des corpus de l'Atlas e-Diasporas en est un très bon contre-exemple, nombre de sites migrants possédant une extension générique (.com, .net) ou correspondant au pays d'accueil plutôt qu'au pays d'origine \citep{leclerc_cyberespace_2012}.  
 
+\begin{figure}%
+  \includegraphics[width=\linewidth]{graphics/date-initiative}
+  \caption{Évolution cumulée du nombre d'initiatives d'archivage du Web par année de création (source de données \citep{gomes_survey_2011} et Wikipédia \url{https://en.wikipedia.org/wiki/List_of_Web_archiving_initiatives})}
+  \label{fig:date-initiative}
+\end{figure} 
 
-Ces différents acteurs peuvent être classés suivant la terminologie introduite par J. Masanes \citep{masanes_web_2006}, entre initiatives publiques ou privées, poursuivant un but lucratif ou non. L'accès aux corpus archivés peut être entièrement public ou restreint, en ligne ou physique. Par exemple, Internet Archive est une initiative à but non commerciale, avec un accès public à l'ensemble de ses corpus, en ligne depuis 2001 et physique depuis 2002\footnote{La Wayback Machine est officiellement lancée en 2001. Avant cette date les corpus d'Internet Archives n'étaient pas accessibles. En 2002, une copie des archives est disponible à la Bibliotheca Alexandrina, en Égypte}. 
+\noindent Ces nouveaux acteurs de l'archivage du Web peuvent être classés suivant la terminologie introduite par J. Masanes \citep{masanes_web_2006}, entre initiatives publiques ou privées, poursuivant un but lucratif ou non. L'accès aux corpus archivés peut être entièrement public ou restreint et limité, en ligne ou physique (machine de consultation dans une bibliothèque). Par exemple, Internet Archive est une initiative à but non lucratif, avec un accès public à l'ensemble de ses corpus, en ligne depuis 2001 et physique depuis 2002\footnote{La Wayback Machine est officiellement lancée en 2001. Avant cette date les corpus d'Internet Archives n'étaient pas accessibles au public. En 2002, une copie intégrale des archives est consultable à la Bibliotheca Alexandrina, en Égypte}. 
 
-Une autre manière de catégoriser ces initiatives serait de regarder la nature des corpus archivés. Sont-ils basés sur une thématique particulière (tel qu'Archipol, un corpus centré sur les sites politiques néerlandais \citep{voerman_archiving_2002})? Ou sur une extension d'URL particulière pour délimiter les contours d'un Web territorial (d'un état entier en suède à une ville comme Anvers \citep{boudrez_archiving_2002})? Il est aussi possible d'associer chaque corpus à une utilisation caractéristique :
+Une autre manière de catégoriser ces initiatives est de regarder la nature des corpus archivés. Nous avons déjà évoqué les corpus territoriaux censés capturer les contours d'un Web national. Cette notion peut être également transposée à plus fine échelle : celle d'une région ou d'une ville \citep{boudrez_archiving_2002}. Un corpus d'archive peut être conçu pour cibler une thématique donnée, souvent  centrée sur des événements politiques \citep{voerman_archiving_2002,schneider_building_2003} : élections, référendums, etc. Certaines initiatives s'affranchissent même de barrières géographiques devenues contraignantes en préservant des sites de domaines nationaux étrangers \citep{gomes_introducing_2009}.
 
-\begin{itemize}[leftmargin=*]  
-\item Pour de la consultation libre ou des 
-\end{itemize}
-
-
-
-
-
+Enfin, il est possible de voir les corpus d'archives Web par rapport à l'utilisation que l'on en fait. Certains sont ouvertement tournés vers la consultation publique (Internet Archives, à nouveau), d'autres sont constitués à des fins universitaires (on pense au corpus japonais WARP\footnote{\url{http://warp.da.ndl.go.jp/search/}} de la National Diet Library). La British Library, de son côté, fait de ses archives Web une utilisation détournée, voire cachée, en chargeant la version passée d'une page Web de son site si cette dernière n'est momentanément ou définitivement plus accessible à un visiteur\footnote{\url{https://www.bl.uk/collection-guides/uk-web-archive}}. L'un des plus gros corpus d'archives Web reste en revanche celui détenu par Google qui permet d'accéder depuis le cache\footnote{\url{https://fr.wikipedia.org/wiki/Mémoire_cache}} de son moteur de recherche à une version précédemment crawlée d'une page. Notons, pour terminer ce tour d'horizon, que même si elles sont nombreuses de part le monde, les initiatives d'archivage du Web sont historiquement et géographiquement le fait d'états occidentaux (Figure \ref{fig:map-initiative}). Les continents sud Américain et Africain (hormis la la Bibliotheca Alexandrina) sont absents de ce paysage, rendant encore plus précieux les corpus transnationaux archivés par l'Internet Archives et l'Atlas e-Diasporas.  
 
 
-Bon là il faut une carte
-
-Il y des archives régionales ou communales ou basés sur des sites précis The national archives of Australia (National Archives of Australia 2001), UK national library (Brown 2006), Canada, USA (Carlin 2004) have started systematic web archiving. See also the city of Antwerp DAVID’s project (Boudrez and Eynde 2002).
-
-la Library of Alexandria, Egypt donne un accès online
-
-
-Internet Archive or the WA Pacific Islands also preserve information related to foreign countries
-
-Bon il y a of course google et son cache
-
-en france il y a l'ina et la bnf 
-
-il y a ceux qui sont centrés pour la recherche et trustés par des université : les jap, Digital Archive for Chinese Studies (DACHS) at Heidelberg University
-in Germany (see Chap. 10, Lecher 2006), or Archipol for analysis of Dutch political sites at Groningen University in the Netherlands, Voerman et al. 2002)
-
-t'as aussi harchomem
-
-t'as des truc qui se basent sur une problématique, par exemple les éléctions archiving electoral Web sites, such as the Minerva project
-from the Library of Congress (Schneider et al. 2003) or the French elections Web archive made by the Bibliothèque nationale de France (Masanès 2005)
-
-Mais t'as 4 type : les sites centrés (UK), les wild harvest (Internet Archives), les national harvest (INA/BNF), les recherches (Jap)
-
-L'unesco et puis là c'est la foire à la saucisse quoi 
-However, since 2003 there was a significant and constant growth with the creation of 31 initiatives
-
-The International Internet Preservation Consortium (IIPC) was founded in 2003 qui fait des survey réguliers http://internetmemory.org/
-images/uploads/Web\_Archiving\_Survey.pdf
-
-il y a une communauté d'archivsites Web Archiving Workshop mais peut de personnes bossent vraiment dedans cf le survey
-
-mais bon internet memory stop ...
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/map-initiative}
+  \caption{Carte des initiatives d'archivage du Web par pays et années de création (source de données \citep{gomes_survey_2011} et Wikipédia \url{https://en.wikipedia.org/wiki/List_of_Web_archiving_initiatives})}
+  \label{fig:map-initiative}
+\end{figure*} 
 
 
-Si l'on part sur un principe plus ouvertement milantant et libriste de l'ouverture du savoir à tous. 
+\noindent En vingt années d'existence, les archives du Web ont agrégé autour d'elles une communauté de chercheurs et d'ingénieurs participant à sa promotion. L'International Internet Preservation Consortium (IIPC) est fondé en 2003 dans l'idée de proposer des rapports et des suivis réguliers de l'archivage\footnote{\url{http://internetmemory.org/images/uploads/Web\_Archiving\_Survey.pdf}} et des workshops sont organisés (l'IWAW, International Web Archiving Workshops). Mais le fait est de constater que la dynamique visible à la fin des années 2000 est en train de se tasser. En 2017, une seule et unique initiative a vu le jour (en Belgique autour du projet Promise\footnote{\url{https://promise.hypotheses.org/}}). Les vastes projets de recherche et d'exploitation des archives Web que sont ARCOMEM \citep{risse_arcomem_2014}, LAWA \citep{spaniol_tracking_2012} et LIWA \citep{denev_sharc:_2009} n'ont pas trouvé de successeurs et, en 2018, l'Internet Memory Foundation a annoncé stopper ses activités d'archivage. Enfin, rappelons que la position centrale d'Internet Archive dans cet écosystème ne la met pas à l'abri d'une possible disparition. En 2016, B. Kahle prévoyait (notamment en réaction à l'élection de D. Trump à la tête des États Unis) de déplacer une nouvelle copie intégrale d'Internet Archive au Canada\footnote{\url{http://blog.archive.org/2016/11/29/help-us-keep-the-archive-free-accessible} \url{-and-private/}}. Et n'oublions pas que, jusqu'à présent, la survie d'Internet Archive est et reste étroitement liée à son fondateur, la question de sa succession et de la pérennité du corpus après sa mort devra être rapidement abordée.  
 
-- voire même le travail de Aaron Schwartz qui s'appuit même sur la notion de communs
+Mais alors que les institutions semblent s'en détourner, les archives Web trouveronst peut être une forme de continuité dans ce que M. Graham, directeur de la WayBack Machine, nomme les "\textit{rogue archivists}"\footnote{\url{https://youtu.be/33_fnPwaEM0}}. Ce sont des groupes d'activistes et libristes militants \citep{de_kosnik_rogue_2016}, s'inscrivant dans l'héritage d'A. Schwartz\footnote{En 2011, Schwartz télécharge plusieurs millions d'articles scientifiques payants sur le site de l'éditeur JSTOR afin de les rendre accessible au plus grand nombre \url{https://fr.wikipedia.org/wiki/Aaron_Swartz}} et voyant le Web comme un commun de l'Humanité \citep{coriat_retour_2015} à sauvegarder. Ils administrent de manière autonome certains des 7000 crawlers qui alimentent quotidiennement Internet Archive. La trace de ces hacktiviste a été décelée par A. Ben David, qui révèle que les archives du Web Nord Coréen, présentes dans le corpus d'Internet Archive, n'ont pas été collectées par des crawlers institutionnels (bloqués par leur proxy) mais par des crawlers autonomes et indépendants \citep{ben-david_internet_2018}.       
 
-Les archives sont des biens appartenant à tous pourquoi les privatiser ... les nationaliser ... 
-
-\subsection{Détour par la France}
+\subsection{Le cas des archives Françaises}
 
 on reprend la construction juridique du bouzin et là c'est la bnf qui fait du .fr tous les ans et l'ina qui fait du média quotidiennement avec un format spécial et aussi des corpus Tweeter ou vidéo 
 
 La constitution juridique des corpus en france 
+
+
+1) https://en.wikipedia.org/wiki/Copyright_Directive  Directive 2001/29/EC of the European Parliament and of the Council of 22 May 2001 on the harmonisation of certain aspects of copyright and related rights in the information society
+-> Information Society Directive
+
+2) Projet De Loi sur la société de l'information 2001 L. Fabius
+adaptation de notre droit aux besoins de la société de l'information
+
+3) projet de loi relatif au  droit d’auteur et aux droits voisins  dans la  société de l’information 2006 (reprise de 1 & 2) loi DADVSI
+
+DÉPÔT LÉGAL
+Article 21
+Le dernier alinéa de l’article L. 131-2 du code du patrimoine
+est remplacé par deux alinéas ainsi rédigés :
+« Les logiciels et les bases de données sont soumis à
+l’obligation de dépôt légal dès lors qu’ils sont mis à disposition
+d’un public par la diffusion d’un support matériel, quelle que
+soit la nature de ce support.
+« Sont également soumis au dépôt légal les signes, signaux,
+écrits, images, sons ou messages de toute nature faisant l’objet
+d’une communication au public par voie électronique. »
+
+mais ça avait déjà commencé avant 2006
+
+4) Lancée de manière expérimentale dès février 2009, la collecte des sites web dans le cadre du dépôt légal du web couvre plus de 14 000 sites web français.
+
+5) Le décret du 19 décembre 2011, organisant le dépôt légal du web, est venu en application de la loi du 1er août 2006
+
+Le périmètre de l'Ina, parmi les sites français, correspond aux :
+• Sites émanant des services des médias audiovisuels ;
+• Web TV et Web radios ;
+• Sites principalement consacrés aux programmes radio et télé ;
+• Sites des organismes de l’environnement professionnel et institutionnel du secteur de la communication audiovisuelle.
+
+la BNF fait un crawl anuel de tous les .fr, l'ina qui dispose d'une équipe r&d fait du quotidien.
+Il est possible de consulter les archives à la BNF ou dans des biblio spécialisées 
+
+
 
 \section{Constituer des corpus d'archives}
 \label{sec:3_constituer}
@@ -538,6 +546,8 @@ parser le web c'est l'enfer, ils ont un ensemble de connecteur maison et en util
 puis c'est du daff 
 
 ha et !!! les vidéos ne sont pas jouées dans le player d'origine mais dans le player de l'ina 
+
+Il concerne également 12 600 comptes twitter (depuis 2016) et 7800 comptes de plateformes vidéo (depuis 2008).
 
 \subsection{Stockage et accès}
 

@@ -454,36 +454,40 @@ Les corpus de la BNF et de l'INA se veulent donc complémentaires. Ils appartien
   
 \noindent Les conditions d'accès restreintes aux corpus de l'INA et de la BNF ne jouent pas en la faveur d'une démocratisation de leur exploitation. Auprès du grand public d'une part, mais également vis à vis de potentiels chercheurs voulant questionner les archives. S'il reste tout à fait possible de venir étudier une liste prédéfinie d'URL et de sites (en lecture seule), les modalités d'accès n'encouragent pas à l'exploration des corpus ni à la possibilité de mener des recherches larges et/ou automatisées (il n'y a pas d'API par exemple). 
 
-\section{Constituer des corpus}
+\section{Sélectionner, collecter et explorer des corpus}
 \label{sec:3_constituer}
 
-Archiver le Web a rapidement été considéré comme une nécessité 
+\noindent Archiver le Web a rapidement été considéré comme une nécessité. Mais l'enthousiasme des premières années a soulevé nombre d'opposi\-tions \citep{masanes_web_2006} : 1) la qualité des documents publiés sur le Web ne serait pas suffisante pour justifier leur sauvegarde, 2) le Web n'a pas besoin d'être collecté puisque par construction il se préserve lui même, 3) archiver le Web est une opération trop compliquée à mettre en place. 
 
+La première remarque, qui témoigne du conservatisme des éditeurs face a l'arrivée de contenus amateurs, issus du Web et publiés hors de leurs monopoles, s'est atténuée avec le temps et surtout, rappelons le, grâce à l'impacte de la charte de l'UNESCO \citep{unesco_charter_2003}. La seconde objection, ne résiste pas non plus à la réalité du Web. Le Web est un milieu volatile qui, dans une certaine mesure, peut effectivement être considéré comme \textit{self preserving} mais dont une partie importante du contenu reste éphémère. Enfin, nous présenterons les aspects techniques et méthodologiques déployés pour rendre possible l'archivage du Web et explorer ses versions passées.
 
-Si l'archivage du Web a rapidement été considéré comme une nécessité, les premières années n'ont pas été simples. 3 arguments contre revenaient souvent : 1) la qualité n'est pas au rdv \& les éditeurs veulent garder le droit sur ce qui doit être fait, 2) le Web se préserve de lui même on peut donc le laisser tranquille, 3) c'est trop compliqué 
+\subsection{Un objet éphémère et multiforme}  
+ 
+\noindent À l'époque où le Web ne contenait qu'une poignée de pages et de sites, la question de son auto-préservation\footnote{traduit ici de l'anglais "\textit{self preserving}" \citep{spinellis_decay_2003}} fut posée. Le Web s'archivait-il déjà de lui même ? 
 
-\subsection{Le Web est éphémère}
+Lorsqu'un nouveau contenu est publié, il est possible de reléguer en bas de page les élément plus anciens, à la manière d'une pile. Les \textit{content management system} (CMS\footnote{Wordpress, Drupal, Joomla!, etc}), apparus avec l'essor des blogs, avaient ainsi pour vocation de stabiliser ce processus de création et suppression de contenus en ligne, en reléguant les publications passées dans une section d'\textit{archives} dédiée. Rien n'empêche également un site Web d'être copié dans son intégralité puis redéployé sur de nouveaux serveurs pour le préserver. Le numérique facilite et rend possible la reproduction à l'infini de ses objets. Ainsi, une page Web aurait théoriquement pu ne jamais disparaitre de la toile. Mais il fut montré, dès le début des années 2000, que malgré ces possibilités, le Web restait un milieu hautement instable. La disparition de contenu est un phénomène inhérent au Web. 
 
-Le Web est il self préserving (oui théoriquement mais en pratique uniquement au début)
-Le web est "relativement" self préserving mais il faut en fait bien comprendre la notion de ressource Web :
-Car le Web a une cardinalité particulière, double même : 
-Jusqu'à l'imprimerie on faisait des copies de l'original mais il y avait toujours un original (Canfora 1989).
-En revanche depuis l'imprimerie il n'y a plus d'original. It stabilized content while permitting its wider distribution (Febvre and Martin 1976; Eisenstein 1979)
-un site a deux cardinalité : l'original et unique posté sur un serveur et l'infinité d'accès possible à cette ressourec de part le web. 
-A resource has a unique source (the Web server) and a unique identifier, but can be generated virtually infinitely and undergoes some degree of variation for each of its instantiations.
-Donc en fait, archiver le web revient à archiver des ressources Web et tout leurs états successifs
+La durée de vie d'un site Web, peut être calculée par rapport à la mesure de sa \textit{half life}, soit la durée qu'il faut pour que la moitié de son contenu (ici ramené au nombre de pages\footnote{La \textit{half life} peut être appliquée à d'autres objets numériques comme des bases de données ou des documents scannés. Cette mesure est elle même dérivée des techniques de datation des atomes.}) disparaisse du Web \citep{koehler_longitudinal_2004}. Dès 1999, la \textit{half life} moyenne d'un site Web est ramenée à 50 jours \citep{cho_evolution_1999}, estimation qui doit être relativisée par rapport au contexte de publication du site et à la nature de ses pages \citep{mcdonnell_cataloging_1999,fetterly_large-scale_2003}. De même, 80\% des pages Web collectées entre 2003 et 2004, par les archives du Web japonais ont été effacée en moins d'un an du Web vivant \citep{toyoda_whats_2006}. Pour préserver le Web il faut donc intervenir et archiver avant qu'une page ne soit détruite. Ainsi, avant toute collecte, l'archiviste doit prendre en compte les changements susceptibles d'intervenir sur une page ciblée, afin de minimiser la perte d'information.
 
-On peut calculer la durée de vie d'un site par rapport à sa Half life 
-Pour Cho and Garcia-Molina (2000) la half life est d'en moyenne de 50 jours
-Mais c'est en plus en fonction du contexte et des sujets (Fetterly et al. 2003) 
-Et aujourd'hui ça doit être encore plus court (mais peut être paradoxalement peut on trouver des choses qui auront tendance à se perdre)
-80\% of the pages are updated or disappear after 1 year (What’s new on the web?)
+Les changements subis par une page Web au cours de son existence sont multiples \citep{douglis_at&t_1998, adar_web_2009}, allant de la modification de son contenu jusqu'à une évolution de la structure des liens qui la relie au reste du site. La fréquence de changement d'une page peut être estimée et prédite en s'appuyant sur des versions précédemment archivées \citep{chawathe_meaningful_1997,khoury_efficient_2007}. Il est possible d'affiner l'estimation de cette fréquence en catégorisant les changements par types (structurels, sémantiques ou cosmétiques) \citep{yadav_change_2007}. Plutôt que de considérer chaque page indépendamment les unes des autres, les changements peuvent être détectés à l'échelle d'un site ou d'un réseau. On s'appuyera alors sur la présence de liens hypertextes \citep{liu_webcq-detecting_2000} ou sur des relations hierarchiques plus marquées \citep{lim_automated_2001}. Dans la suite de ce manuscrit, nous nous limiterons à considérer comme changements les seuls actes de création, de modification ou de suppression d'une partie ou de l'ensemble d'une page Web.
 
-Biblio sur les changements du Web et sur comment les crawler peuvent s'adapter 
+Il faut finalement attendre qu'il soit archivé, pour pouvoir considérer le Web comme un support d'informations \textit{self preserving}. Ce n'est qu'une fois les corpus d'archives rendus accessibles depuis le Web lui même \citep{brugger_website_2009}, que l'on peut considérer qu'il garde en lui la trace (mesurée et mesurable) de ses états passés.\\
 
-En revanche on peut conserver cette idée de self archiving pour plus tard (car c'est une propriété vraie qui nous emmerdera au moment des duplicate)
+\noindent Par ailleurs et à la différence d'autres types de documents à archiver, une page Web possède ce que J. Masanès \citep{masanes_web_2006} nomme une double cardinalité. 
+
+La cardinalité est le nombre d'instances en circulation d'un artéfact donné : un musée conservera des pièces uniques et originales, une librairie mettra à disposition de ces visiteurs des copies. La cardinalité donne toute sa valeur à un objet archivé et influence les techniques de préservation. Jusqu'à l'invention de l'imprimerie, pour archiver un livre il fallait le copier à la main. L'original était conservé dans un lieu donné et les copies envoyées vers d'autres bibliothèques \citep{canfora_vanished_1990}. L'original se perdant parfois, la copie (rectifiée ou annotée) devenait à défaut œuvre de référence. Mais la notion d'original disparait avec l'imprimerie. Le livre dans sa forme est stabilisée, les bibliothèques possédant toute la même version d'un ouvrage devenu reproductible à l'identique \citep{febvre_apparition_2013}. Ainsi  Au contraire du livre, sites et pages Web ont la singularité de présenter une double cardinalité : 
+
+\begin{enumerate}[leftmargin=*]  
+\item les fichiers sources, hébergés sur un serveur donné 
+\item l'infinité d'accès possibles à cette source
+\end{enumerate}
+
+\noindent D'une machine à l'autre ou d'un écran à l'autre, une page Web sera toujours vue différemment \citep{bon_apres_2014}. Soit que la taille de l'écran (ordinateur, smartphone, tablette, etc) aura modifié son aspect, soit que la qualité de la connexion à Internet n'aura pas permis de tout charger, ou encore que l'historique de navigation\footnote{Nous discuterons plus en détail de cette problématique dans le Chapitre \ref{chap:6}} aura influencé l'affichage de la page à nos yeux. C'est pour cela que J. Masanès propose de parler de \textit{ressource Web} pour nommer tout objet Web susceptible d'être archivé. Une ressource Web est un document unique dont la source peut être identifiée précisément mais interprétée d'une infinité de manière possibles. Depuis son navigateur, derrière son écran. Pour l'archiviste se pose alors la question de quoi archiver ? L'originale ou toutes les interprétations d'une même page ? Arrivé à ce point, archiver le Web revient donc à prendre en compte l'ensemble des états successifs d'une ressource Web afin de ne rien rater. Une fois la fréquence d'archivage décidée, la collecte peut être opérée du point de vue de la source ou du point de vue de l'internaute naviguant derrière son écran. Où l'archiviste choisira-il de se positionner, lui, et ses outils de collecte~?
 
 \subsection{Critère de sélection}
+
+
+En revanche on peut conserver cette idée de self archiving pour plus tard (car c'est une propriété vraie qui nous emmerdera au moment des duplicate)
 
 Qualité de quoi archiver **
 IA utilise une stratégie par pattern - Kimpton et al. (2006)

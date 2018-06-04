@@ -6,6 +6,13 @@ Abiteboul, S., Cobena, G., Masanes, J., and Sedrati, G. (2002).
 \newblock In {\em International {Conference} on {Theory} and {Practice} of
   {Digital} {Libraries}}, pages 1--15. Springer.
 
+\bibitem[Adar et~al., 2009]{adar_web_2009}
+Adar, E., Teevan, J., Dumais, S.~T., and Elsas, J.~L. (2009).
+\newblock The web changes everything: understanding the dynamics of web
+  content.
+\newblock In {\em Proceedings of the {Second} {ACM} {International}
+  {Conference} on {Web} {Search} and {Data} {Mining}}, pages 282--291. ACM.
+
 \bibitem[Amitay et~al., 2004]{amitay_trend_2004}
 Amitay, E., Carmel, D., Herscovici, M., Lempel, R., and Soffer, A. (2004).
 \newblock Trend detection through temporal link analysis.
@@ -34,6 +41,11 @@ Ben-David, A. and Amram, A. (2018).
   historical facts.
 \newblock {\em Internet Histories}, pages 1--23.
 
+\bibitem[Bon, 2014]{bon_apres_2014}
+Bon, F. (2014).
+\newblock {\em Après le livre}.
+\newblock Tiers Livre Éditeur.
+
 \bibitem[Borges, 1974]{borges_fictions_1974}
 Borges, J. (1974).
 \newblock {\em Fictions}.
@@ -58,6 +70,22 @@ Brügger, N. (2002).
 Brügger, N. (2009).
 \newblock Website history and the website as an object of study.
 \newblock {\em New Media \& Society}, 11(1-2):115--132.
+
+\bibitem[Canfora, 1990]{canfora_vanished_1990}
+Canfora, L. (1990).
+\newblock {\em The {Vanished} {Library}: {A} {Wonder} of the {Ancient}
+  {World}}, volume~7.
+\newblock Univ of California Press.
+
+\bibitem[Chawathe and Garcia-Molina, 1997]{chawathe_meaningful_1997}
+Chawathe, S.~S. and Garcia-Molina, H. (1997).
+\newblock Meaningful change detection in structured data.
+\newblock In {\em {ACM} {SIGMOD} {Record}}, volume~26, pages 26--37. ACM.
+
+\bibitem[Cho and Garcia-Molina, 1999]{cho_evolution_1999}
+Cho, J. and Garcia-Molina, H. (1999).
+\newblock The evolution of the web and implications for an incremental crawler.
+\newblock Technical report, Stanford.
 
 \bibitem[Coriat and {others}, 2015]{coriat_retour_2015}
 Coriat, B. and {others} (2015).
@@ -92,6 +120,12 @@ Derrida, J. (2014).
 \newblock {\em Trace et archive, image et art}.
 \newblock Collection {Collège} iconique. INA.
 
+\bibitem[Douglis et~al., 1998]{douglis_at&t_1998}
+Douglis, F., Ball, T., Chen, Y.-F., and Koutsofios, E. (1998).
+\newblock The {AT}\&{T} {Internet} {Difference} {Engine}: {Tracking} and
+  viewing changes on the web.
+\newblock {\em World Wide Web}, 1(1):27--44.
+
 \bibitem[Dougnac and Guilbaud, 1960]{dougnac_depot_1960}
 Dougnac, M.-T. and Guilbaud, M. (1960).
 \newblock Le dépôt légal: son sens et son évolution.
@@ -101,6 +135,17 @@ Drugeon, T. (2005).
 \newblock A technical approach for the {French} web legal deposit.
 \newblock In {\em 5th {International} {Web} {Archiving} {Workshop} ({IWAW}05),
   {Viena}, {Austria}}. Citeseer.
+
+\bibitem[Febvre and Martin, 2013]{febvre_apparition_2013}
+Febvre, L. and Martin, H.-J. (2013).
+\newblock {\em L'apparition du livre}.
+\newblock Albin Michel.
+
+\bibitem[Fetterly et~al., 2003]{fetterly_large-scale_2003}
+Fetterly, D., Manasse, M., Najork, M., and Wiener, J. (2003).
+\newblock A large-scale study of the evolution of web pages.
+\newblock In {\em Proceedings of the 12th international conference on {World}
+  {Wide} {Web}}, pages 669--678. ACM.
 
 \bibitem[Finnemann, 1997]{finnemann_modernity_1997}
 Finnemann, N.~O. (1997).
@@ -161,11 +206,25 @@ Ketelaar, E. (2006).
 \newblock ({Dé}) {Construire} l'archive.
 \newblock {\em Matériaux pour l’histoire de notre temps}, (2):65--70.
 
+\bibitem[Khoury et~al., 2007]{khoury_efficient_2007}
+Khoury, I., El-Mawas, R.~M., El-Rawas, O., Mounayar, E.~F., and Artail, H.
+  (2007).
+\newblock An {Efficient} {Web} {Page} {Change} {Detection} {System} {Based} on
+  an {Optimized} {Hungarian} {Algorithm}.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  19(5):599--613.
+
 \bibitem[Koehler, 1999]{koehler_analysis_1999}
 Koehler, W. (1999).
 \newblock An analysis of web page and web site constancy and permanence.
 \newblock {\em Journal of the Association for Information Science and
   Technology}, 50(2):162.
+
+\bibitem[Koehler and {others}, 2004]{koehler_longitudinal_2004}
+Koehler, W. and {others} (2004).
+\newblock A longitudinal study of {Web} pages continued: a consideration of
+  document persistence.
+\newblock {\em Information Research}, 9(2):9--2.
 
 \bibitem[Leclerc, 2012]{leclerc_cyberespace_2012}
 Leclerc, E. (2012).
@@ -183,10 +242,29 @@ Leroi-Gourhan, A. (1964).
 \newblock {\em Le geste et la parole}.
 \newblock Albin Michel.
 
+\bibitem[Lim and Ng, 2001]{lim_automated_2001}
+Lim, S.-J. and Ng, Y.-K. (2001).
+\newblock An automated change-detection algorithm for {HTML} documents based on
+  semantic hierarchies.
+\newblock In {\em Data {Engineering}, 2001. {Proceedings}. 17th {International}
+  {Conference} on}, pages 303--312. IEEE.
+
+\bibitem[Liu et~al., 2000]{liu_webcq-detecting_2000}
+Liu, L., Pu, C., and Tang, W. (2000).
+\newblock {WebCQ}-detecting and delivering information changes on the web.
+\newblock In {\em Proceedings of the ninth international conference on
+  {Information} and knowledge management}, pages 512--519. ACM.
+
 \bibitem[Masanès, 2006]{masanes_web_2006}
 Masanès, J. (2006).
 \newblock Web archiving: issues and methods.
 \newblock In {\em Web {Archiving}}, pages 1--53. Springer.
+
+\bibitem[McDonnell et~al., 1999]{mcdonnell_cataloging_1999}
+McDonnell, J.~P., Koehler~Jr, W.~C., and Carroll, B.~C. (1999).
+\newblock Cataloging {Challenges} in an {Area} {Studies} {Virtual} {Library}
+  {Catalog} ({ASVLC}) {Results} of a {Case} {Study}.
+\newblock {\em Journal of Internet Cataloging}, 2(2):15--42.
 
 \bibitem[Mohr et~al., 2004]{mohr_introduction_2004}
 Mohr, G., Stack, M., Ranitovic, I., Avery, D., and Kimpton, M. (2004).
@@ -239,6 +317,11 @@ Spaniol, M. and Weikum, G. (2012).
 \newblock In {\em Proceedings of the 21st {International} {Conference} on
   {World} {Wide} {Web}}, pages 287--290. ACM.
 
+\bibitem[Spinellis, 2003]{spinellis_decay_2003}
+Spinellis, D. (2003).
+\newblock The decay and failures of web references.
+\newblock {\em Communications of the ACM}, 46(1):71--77.
+
 \bibitem[Spitz et~al., 2018]{spitz_predicting_2018}
 Spitz, A., Strötgen, J., and Gertz, M. (2018).
 \newblock Predicting {Document} {Creation} {Times} in {News} {Citation}
@@ -278,5 +361,10 @@ Voerman, G., Keyzer, A., Den~Hollander, F., and Druiven, H. (2002).
 \newblock Archiving the {Web}: {Political} party {Web} sites in the
   {Netherlands}.
 \newblock {\em European Political Science}, 2(1):68--75.
+
+\bibitem[Yadav et~al., 2007]{yadav_change_2007}
+Yadav, D., Sharma, A.~K., and Gupta, J.~P. (2007).
+\newblock Change {Detection} in {Web} {Pages}.
+\newblock pages 265--270. IEEE.
 
 \end{thebibliography}

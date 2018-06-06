@@ -484,61 +484,71 @@ La cardinalité est le nombre d'instances en circulation d'un artéfact donné :
 
 \noindent D'une machine à l'autre ou d'un écran à l'autre, une page Web sera toujours vue différemment \citep{bon_apres_2014}. Soit que la taille de l'écran (ordinateur, smartphone, tablette, etc) aura modifié son aspect, soit que la qualité de la connexion à Internet n'aura pas permis de tout charger, ou encore que l'historique de navigation\footnote{Nous discuterons plus en détail de cette problématique dans le Chapitre \ref{chap:6}} aura influencé l'affichage de la page à nos yeux. C'est pour cela que J. Masanès propose de parler de \textit{ressource Web} pour nommer tout objet Web susceptible d'être archivé. Une ressource Web est un document unique dont la source peut être identifiée précisément mais interprétée d'une infinité de manière possibles. Depuis son navigateur, derrière son écran. Pour l'archiviste se pose alors la question de quoi archiver ? L'originale ou toutes les interprétations d'une même page ? Arrivé à ce point, archiver le Web revient donc à prendre en compte l'ensemble des états successifs d'une ressource Web afin de ne rien rater. Une fois la fréquence d'archivage décidée, la collecte peut être opérée du point de vue de la source ou du point de vue de l'internaute naviguant derrière son écran. Où l'archiviste choisira-il de se positionner, lui, et ses outils de collecte~?
 
-\subsection{Critère de sélection}
+\subsection{Sélection}
 
+\noindent Toute collecte sur le Web débute par le choix d'un point d'entrée clairement identifié. L'archiviste ne peut se permettre de dériver au hasard du Web pour trouver les sites qui l'intéressent. La \textbf{sélection} désigne donc l'ensemble des techniques mises en place pour définir ce ou ces points d'entrée. S'agit-il d'un site Web précis ? D'une liste de pages Web ? D'un masque ou d'un pattern d'URL à satisfaire ? À quelle profondeur débuter l'archivage ? Doit-on commencer par collecter la page principale d'un site, la \textit{front page}, ou un sous ensemble de pages contenant un mot clé donné ?     
 
-En revanche on peut conserver cette idée de self archiving pour plus tard (car c'est une propriété vraie qui nous emmerdera au moment des duplicate)
+Le principal critère de sélection définissant le périmètre d'un corpus à archiver reste l'extension d'URL. Les .fr, .uk et autres .ma définissent le cadre grossier d'un domaine national sur le Web (Section \ref{sec:3_20ans}). La sélection s'opère alors en validant un masque d'URL ou une heuristique prédéfinie\footnote{Dans un script cherchant à sélectionner les sites du domaine français, on ne conservera que les noms de domaine dont l'extension valide l'expression régulière suivante : $*.fr\$$}. Il est également possible de dessiner les contours d'une archive en partant d'une liste initiale de sites Web, appelés sites sources et liés à une thématique précise. Il faut pour cela faire appelle, en amont de toute collecte, à des experts (sociologues, historiens, etc). L'INA, par exemple, a procédé par expertise pour identifier les 14.000 sites média de son périmètre d'archivage. 
 
-Qualité de quoi archiver **
-IA utilise une stratégie par pattern - Kimpton et al. (2006)
-plutôt qu'une stratégie par requêtes à un moteur de recherche - Pandey and Olston 2005
-Il peut aussi s'agir de définir à priori la valeur d'un site par son degré (Masanès 2002) (Page et al. 1998; Abiteboul et al. 2002)
-quelle profondeur
+\begin{marginfigure}%
+  \includegraphics[width=\linewidth]{graphics/degree}
+  \caption{Graphe dont les nœuds sont labellisés par degré. En théorie des graphes, le degré $deg(v)$ d'un nœud $v$ correspond au nombre de liens incidents (entrant ou sortant) à ce nœud.}
+  \label{fig:degree}
+\end{marginfigure} 
 
-En 2006 IA lance le Archive-it-service qui est une sorte de crowdsourcing des archives ouvert à tous pour aller contre cette idée de quoi sélectionner 
-On peut aussi parler de l'externalisation des archives Web à diverses fin et des corpus d'archive ou de navigation privée 
-Il y a le cas des tunisiens et de la collecte des vidéos, mais aussi (Rekimoto 1999; Dumais et al. 2003; Ringel et al. 2003).
-The Internet Archive, Internet Memory and California Digital Library provide
-web archiving services that can be independently operated by third-party archivists. The
-services are named Archive-it 3 , ArchiveTheNet 4 and Web Archiving Service 5
-http://www.archive-it.org
-http://archivethe.net
-http://webarchives.cdlib.org
+Lors d'une collecte plus large, les archivistes peuvent s'appuyer sur des indices traduisant la valeur d'un site ou d'une page visitée. Le degré d'un site Web (Figure \ref{fig:degree}) permet ainsi d'estimer son autorité au sein d'un environnement hypertexte \citep{abiteboul_first_2002}. Une autre stratégie consiste à identifier les sites sources par rapport aux habitudes de navigation des internautes. Quels sites sont fréquemment visités ? Quelles pages en particulier ? Il s'agit alors d'exploiter les requêtes adressées à un moteur de recherche en ligne \citep{pandey_user-centric_2005}. Ou encore, de se baser sur les \textit{access patterns} \citep{alnoamany_access_2013} afin de privilégier, au sein d'un même site, l'archivage de séquences de pages fréquemment visitées. Le système de sélection d'Internet Archives, en particulier, utilise cette dernière méthode \citep{kimpton_year-by-year:_2006}. Dans la même veine, un historique de navigation personnel pourra faire office de liste de primo-candidats à archiver \citep{dumais_stuff_2016}. Cette fonctionnalité a récemment été ajoutée aux archives du Web danois\footnote{Une version bêta du système danois est disponible ici : \url{https://github.com/netarchivesuite/solrwayback}}. Mais précisons, qu'aucune stratégie de sélection ne prévaut sur une autre. Elles sont d'ailleurs souvent combinées pour former une chaine complexe en amont de tout collectage (Section \ref{sec:3_edias}). 
 
-Et il existe les rogue archivists (Cf conf à Jeru)
+Par ailleurs, il est possible d'opérer une sélection par \textit{crowd sourcing} en faisant appel à des archivistes tiers. C'est toute l'idée du service payant \textit{Archive-it}\footnote{\url{http://www.archive-it.org}}, lancé en 2006 par Internet Archive, permettant à tout un chacun de se constituer des corpus d'archives Web. Quelques 230 millions d'URLs ont ainsi été recueillies entre 2006 et 2007 avant d'être reversées dans le fond d'archives principales de la Wayback Machine. Dans l'idée de démocratiser encore d'avantage leur exploitation, les archives portugaises offrent la possibilité à chaque internautes de suggérer une liste de pages ou de sites Web (pas nécessairement appartenant au domaine portugais .pt) à ajouter aux  collectages\footnote{\url{http://sobre.arquivo.pt/en/collaborate/suggest/}}. L'utilisateur devient ainsi acteur de la préservation du Web.
+
+Terminons en soulignant que le choix d'archiver une page plutôt que l'ensemble d'un site (et inversement) n'est pas trivial. À quelle échelle doit on archiver ? L'arbitrage est souvent décidé au cas par cas et peut faire l'objet de compromis. Même si l'on demande à Internet Archive de sauvegarder une page précise, le système remontera toujours à la front page du site afin d'en archiver la racine  \citep{kimpton_year-by-year:_2006}. Ce genre de mécanisme permet d'amender et d'enrichir les points d'entrées après chaque collecte. La découverte de nouveaux sites appelant à réévaluer sans cesse la liste d'origine.    
 
 \subsection{Collecte}
 
-The term “acquisition” designates the various technical means used to get the content into the archive.
+\noindent Par \textbf{collecte} nous désignons l'ensemble des techniques visant à transformer une page du Web vivant en une page archivée. Comme nous l'indiquions précédemment le Web peut, sous certains aspects, être considéré comme \textit{self preserving}. Une fois archivés, l'ensemble des éléments collectés restent accessible depuis le Web. Le Web contient en lui même les traces de son passé. Lorsque l'on scanne une pellicule, image par image pour archiver un film, on fait subir à ce support de mémoire une transformation. De l'analogique au numérique. Dans le cas d'une ressource Web, la transformation induite par la collecte est minime. Il s'agit grossièrement de venir prélever les fichiers d'origines d'une page, sans les altérer et de les dater avant de les réintroduire dans les archives Web.     
 
-Tout d'abord d'un point de vue de l'architecture, les archives web, s'incrivent naturellement dans l'environnement Web et ne demande pas forcément de récréer des choses en cela qu'elle ne font que freezer un état dynamique. Le Web peut inclure ses propres archives 
+Or, le protocole HTTP qui régit les règles de communication sur le Web, entre client (l'internaute) et serveur (la page), n'autorise qu'un accès unitaire aux ressources Web. Il n'est possible d'accéder au Web qu'une page à la fois. La page Web (identifiée par une URL unique) est en cela l'unité de consultation de base du Web. La collecte doit donc s'effectuer page après page et non par lot, telle que :   
 
-Premier problème, c'est qu'avec le protocol http il faut procéder fichier par fichier et non en bulk
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/collecte}
+  \caption{Archivage du Web vivant page après page, de $p_1$ à $p_3$}
+  \label{fig:collecte}
+\end{figure*} 
 
-Il y a 3 méthodes ( techniques d'acquistion )  qui dépendent en fait du point de vue de l'archiviste 
+\noindent Il existe ainsi trois grandes familles de techniques d'archivage du Web, qui témoignent du déplacement progressif des outils de collecte du serveur vers le client. 
 
-- les crawler dérivés des systèmes de search (Roche 2006 chap 4 du bouqin de mazanes), c'est du client-side-archiving, le crawler étant un client comme un autre (devant sependant faire gaf aux robot;txt) qui peut capturer tout ou une partie d'un site. Ce que le crawler ne capture pas est appelé "Web profond" (Cf le chap 6)
+La première, nommée \textit{serveur-side-archiving}, consiste à collecter les ressources directement depuis le serveur hébergeant un site ou une page Web. Cette technique est plutôt employée par les producteurs de données eux même, s'ils souhaitent archiver l'ensemble des ressources d'une de leur plateforme Web par exemple. Mais les moyens à mettre en place sont considérables car, à la différence d'une simple copie, le \textit{serveur-side-archiving} induit la réplication du site (les fichiers HTML, CSS, etc d'origine) et de l'entièreté de son environnement de dévelop\-pement et d'hébergement. On utilisera plutôt cette méthode pour archiver le Web dit profond\footnote{À opposer à la portion visible du Web (ce que l'on voit derrière son écran), le Web profond désigne tout élément qui n'est pas accessible directement depuis un crawler : les formulaires, bases de données, etc \citep{lawrence_accessibility_2000}. Une discussion sur l'exploration d'archives du Web profond sera menée au chapitre \ref{chap:7}}.
 
-- "transaction-archiving" qui se base sur la participation des visiteurs d'un site donnée Fitch (2003) où l'on ne capture que des tuples request/response et ainsi les diférentes version dès que qq1 la voit 
+La seconde approche, dite \textit{transaction-archiving}, se situe à la frontière entre serveur et client. Il s'agit ici de positionner l'outil de collecte au niveau du système d'entrées/sorties (IO) du serveur hébergeant le site Web ciblé \citep{fitch_web_2003}. Ce que l'on archivera sera le couple [requête, réponse] du client au serveur, soit la demande d'un internaute cherchant à visiter une URL donnée et la page Web telle que retournée par le serveur. Cette forme d'archive dessine une vision non exhaustive d'un site Web mais néanmoins fidèle à la réalité du flot d'internautes qui le parcourent. En capturant la trace des pages effectivement visitées et la manière toujours unique dont celles-ci sont affichées à l'écran des utilisateurs, cette technique est la seule qui intègre directement l'humain et ses gestes dans les archives Web\footnote{Ce type d'archive fera l'objet d'une exploration dédiée au chapitre \ref{chap:7}, où nous interrogerons les logs de navigation Web de la Bibliothèque du Centre Pompidou}.  
 
-- "server-side-archiving" où le producteur de la ressource fait tout lui même. Mais ça pose un pb de tout archiver depuis le sserveur, déjà on perd le côté dynamique de ce que l'on voit depuis le client et du coup il faudra côté recréer l'ensemble de l'environnement (bdd, biblio, lybrari) pour tout refaire (tiens là on peut parler de l'exemple de ce site qui a été recré par les amsterdam)
+La dernière famille, connue sous l'appellation de \textit{client-side-archiving}, est aussi la plus rependue. Ayant acté qu'une ressource Web pouvait être visualisée d'une infinité de manière possible par le client (l'internaute), l'archiviste choisit ici de placer son outil de collecte en lieu et place de l'utilisateur. L'outil devient client et cherche à reproduire les interactions d'un internaute pour accéder au contenu ciblé~: la page Web à archiver. Tout l'enjeu est donc de définir et de contrôler l'exhaustivité de ces interactions pour construire une copie fidèle d'une page ou d'un site. 
 
-La client-side est la plus simple car en plus elle reflète la manière actuelle de se connecter au web et aussi les intéractions avec les sites 
-Et on explore lien par lien 
+Comme la collecte doit être menée page par page, programmée à l'avance et conduite à échelle large, les archivistes du Web se sont inspirés des \textit{crawlers} développés pour les moteurs de recherche \citep{pant_crawling_2004} à la fin des années 1990. Un \textbf{crawler} est un robot programmé pour parcourir un site ou un ensemble de sites, une page à la fois, en capturant au passage l'ensemble de ses fichiers d'origine. Un crawler, pour bien fonctionner, doit respecter des règles de politesse~: éviter les dénis de services (DNS, Serveurs HTTP), les blacklistages officiels (robots.txt, sitemap.xml, etc.) et officieux (\textit{cloaking}, pièges à robot)\footnote{Ce manuscrit n'étant pas spécifiquement centré sur la question des crawlers, il est possible d'en apprendre d'avantage en se référant aux cours de C. Maussang (\url{https://frama.link/FrFrZ5EC}) ou en se tournant vers des ouvrages dédiés \citep{chakravarthy_webvigil:_2002,mitchell_web_2015}}. Dans le cadre spécifique des archives du Web, un crawler doit en plus intégrer les contraintes temporelles évoquées précédemment. Il a pour mission de capter l'ensemble des changements intervenants sur une page ou un site cible. Enfin, nous appelons \textbf{crawl} une campagne d'archivage menée par un crawler et (par abus de langage) le résultat même de cette campagne. 
 
-en fait le crawler imite vraiment l'utilisateur, il doit être actif  et on ne peux pas archiver de manière passive ou sans s'impliquer dans ce que l'on fait (comme avec les bouquin ou un flux vidéo que l'on archiver silentieusement )
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/crawl}
+  \caption{Différentes stratégies adoptées par un crawler $c$ pour collecter les pages $\{p_1,...p_n\}$ d'un même site}
+  \label{fig:crawl}
+\end{figure*}
 
-Les crawler viennent des techno d'indéxation du web Sonnenreich (1997)
+\noindent L'aspect d'un corpus d'archives Web est directement le fait du crawler qui a mené la collecte. Un crawl peut ainsi être conduit de plusieurs manières. Une première possibilité revient à entreprendre une collecte en profondeur d'abord (\textit{depth-first}, Figure \ref{fig:crawl} (a)). Le crawler capturera en priorité les pages filles de la page sur laquelle il se trouve. Un autre approche consiste à travailler en largeur d'abord (\textit{breadth-first}, Figure \ref{fig:crawl} (b)). Le crawler privilégiera cette fois les pages sœurs. Mais ces techniques sont lentes et il faudra prévoir un temps considérable pour parcourir l'entièreté d'un site, or l'archiviste cherchera au contraire à minimiser le temps de capture. Aussi, on peut envisager l'instauration d'une limite en profondeur pour ne pas archiver des pages trop éloignées de la racine du site (Figure \ref{fig:crawl} (c)).
 
-Les crawler d'archives capturent tous les fichiers possibles (pas uniquement ce qui est indexable) et comme il ne faut pas se faire banned et respecter les rêgles de politesse d'un site et du coup il peut y avoir un delay certain pour archiver l'entièreté d'un site 
+En pratique, l'archiviste optera plutôt pour un compromis entre toutes ces méthodes de base. Avec la démocratisation des moteurs de recherches en ligne, l'internaute n'est plus obligé de passer par la front page d'un site pour en consulter le contenu \citep{holscher_web_2000}. Les crawlers doivent donc faire appelle à divers indicateurs topologiques ou sémantiques pour identifier les pages pertinentes à collecter. 
+
+
+
+
+
+
 
 Du coup on va plutôt crawler les best page first Cho et al. 1998; Najork and Heydon 2001; Najork and Wiener 2001; Castillo et al. 2004; Baeza-Yates and Castillo 2005)
 
-On peut avoir des stratégy qui cherche à minimiser cela et à garder la cohérence d'un contenu site (Masanès, 2004) (Castillo et al. 2004; Baeza-Yates and Castillo 2005) et où l'on va attaquer la front line d'un crawl Mohr et al. (2004) pour l'Heritrix
+On peut avoir des stratégy qui cherche à minimiser cela et à garder la cohérence d'un contenu site (Masanès, 2004) (Castillo et al. 2004; Baeza-Yates and Castillo 2005) saad et al et où l'on va attaquer la front line d'un crawl Mohr et al. (2004) pour l'Heritrix
 
 Also to be considered is the delay needed to find new sites. It can take lots of time for holistic crawl to discover sites. When it comes to ephemeral sites, related to an event for instance, the delay can be too long to locate and archive them. Si on veux faire un crawl thématique
 
 là je peux parler de l'archivage des diverses sources autre depuis que le bouquin de maznes a été écrit
+
+API (github par linkfluence), facebook (example de l'internet archives) rss, vidéo 
 
 Chez IA le crawl est effectué par Alexa
 
@@ -624,6 +634,7 @@ et on se dit que tout de même ça ressemble un peu à une capsule temporelle qu
 là placer la ref aux capsules tempo
 
 \section{Les archives Web de l'Atlas e-Diasporas}
+\label{sec:3_edias}
 
 Présentation rapide de l'ensemble des corpus et focus sur les Marocains (expliquation ...)
 
@@ -1070,6 +1081,7 @@ Là on commence à parler de la suite, du web que l'on souhaite, de la neutralit
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapitre 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Au Delà Des Archives Web}
+\label{chap:7}
 
 \section{Remettre l'humain au cœur des archives}
 

@@ -13,6 +13,12 @@ Adar, E., Teevan, J., Dumais, S.~T., and Elsas, J.~L. (2009).
 \newblock In {\em Proceedings of the {Second} {ACM} {International}
   {Conference} on {Web} {Search} and {Data} {Mining}}, pages 282--291. ACM.
 
+\bibitem[AlNoamany et~al., 2013]{alnoamany_access_2013}
+AlNoamany, Y.~A., Weigle, M.~C., and Nelson, M.~L. (2013).
+\newblock Access patterns for robots and humans in web archives.
+\newblock In {\em Proceedings of the 13th {ACM}/{IEEE}-{CS} joint conference on
+  {Digital} libraries}, pages 339--348. ACM.
+
 \bibitem[Amitay et~al., 2004]{amitay_trend_2004}
 Amitay, E., Carmel, D., Herscovici, M., Lempel, R., and Soffer, A. (2004).
 \newblock Trend detection through temporal link analysis.
@@ -77,6 +83,12 @@ Canfora, L. (1990).
   {World}}, volume~7.
 \newblock Univ of California Press.
 
+\bibitem[Chakravarthy et~al., 2002]{chakravarthy_webvigil:_2002}
+Chakravarthy, S., Jacob, J., Pandrangi, N., and Sanka, A. (2002).
+\newblock Webvigil: {An} approach to just-in-time information propagation in
+  large network-centric environments.
+\newblock In {\em Second {International} {Workshop} on {Web} {Dynamics}}.
+
 \bibitem[Chawathe and Garcia-Molina, 1997]{chawathe_meaningful_1997}
 Chawathe, S.~S. and Garcia-Molina, H. (1997).
 \newblock Meaningful change detection in structured data.
@@ -136,6 +148,13 @@ Drugeon, T. (2005).
 \newblock In {\em 5th {International} {Web} {Archiving} {Workshop} ({IWAW}05),
   {Viena}, {Austria}}. Citeseer.
 
+\bibitem[Dumais et~al., 2016]{dumais_stuff_2016}
+Dumais, S., Cutrell, E., Cadiz, J.~J., Jancke, G., Sarin, R., and Robbins,
+  D.~C. (2016).
+\newblock Stuff {I}'ve seen: a system for personal information retrieval and
+  re-use.
+\newblock In {\em {ACM} {SIGIR} {Forum}}, volume~49, pages 28--35. ACM.
+
 \bibitem[Febvre and Martin, 2013]{febvre_apparition_2013}
 Febvre, L. and Martin, H.-J. (2013).
 \newblock {\em L'apparition du livre}.
@@ -150,6 +169,11 @@ Fetterly, D., Manasse, M., Najork, M., and Wiener, J. (2003).
 \bibitem[Finnemann, 1997]{finnemann_modernity_1997}
 Finnemann, N.~O. (1997).
 \newblock Modernity modernised: {The} cultural impact of computerisation.
+
+\bibitem[Fitch, 2003]{fitch_web_2003}
+Fitch, K. (2003).
+\newblock Web site archiving-an approach to recording every materially
+  different response produced by a website.
 
 \bibitem[Flusser, 2014]{flusser_les_2014}
 Flusser, V. (2014).
@@ -178,6 +202,11 @@ Hallgrinsson, B. and Bang, S. (2003).
 \newblock In {\em Proceedings of the 3rd {Workshop} on {Web} {Archives} in
   conjunction with the 7th {European} {Conference} on {Research} and {Advanced}
   {Technologies} for {Digital} {Libraries} ({ECDL} 2003)}, pages 37--48.
+
+\bibitem[Hölscher and Strube, 2000]{holscher_web_2000}
+Hölscher, C. and Strube, G. (2000).
+\newblock Web search behavior of {Internet} experts and newbies.
+\newblock {\em Computer networks}, 33(1-6):337--346.
 
 \bibitem[Jatowt et~al., 2007]{jatowt_detecting_2007}
 Jatowt, A., Kawai, Y., and Tanaka, K. (2007).
@@ -214,6 +243,12 @@ Khoury, I., El-Mawas, R.~M., El-Rawas, O., Mounayar, E.~F., and Artail, H.
 \newblock {\em IEEE Transactions on Knowledge and Data Engineering},
   19(5):599--613.
 
+\bibitem[Kimpton and Ubois, 2006]{kimpton_year-by-year:_2006}
+Kimpton, M. and Ubois, J. (2006).
+\newblock Year-by-year: from an archive of the {Internet} to an archive on the
+  {Internet}.
+\newblock In {\em Web archiving}, pages 201--212. Springer.
+
 \bibitem[Koehler, 1999]{koehler_analysis_1999}
 Koehler, W. (1999).
 \newblock An analysis of web page and web site constancy and permanence.
@@ -225,6 +260,11 @@ Koehler, W. and {others} (2004).
 \newblock A longitudinal study of {Web} pages continued: a consideration of
   document persistence.
 \newblock {\em Information Research}, 9(2):9--2.
+
+\bibitem[Lawrence and Giles, 2000]{lawrence_accessibility_2000}
+Lawrence, S. and Giles, C.~L. (2000).
+\newblock Accessibility of information on the web.
+\newblock {\em intelligence}, 11(1):32--39.
 
 \bibitem[Leclerc, 2012]{leclerc_cyberespace_2012}
 Leclerc, E. (2012).
@@ -266,6 +306,12 @@ McDonnell, J.~P., Koehler~Jr, W.~C., and Carroll, B.~C. (1999).
   {Catalog} ({ASVLC}) {Results} of a {Case} {Study}.
 \newblock {\em Journal of Internet Cataloging}, 2(2):15--42.
 
+\bibitem[Mitchell, 2015]{mitchell_web_2015}
+Mitchell, R. (2015).
+\newblock {\em Web scraping with {Python}: collecting data from the modern
+  web}.
+\newblock " O'Reilly Media, Inc.".
+
 \bibitem[Mohr et~al., 2004]{mohr_introduction_2004}
 Mohr, G., Stack, M., Ranitovic, I., Avery, D., and Kimpton, M. (2004).
 \newblock An {Introduction} to {Heritrix} {An} open source archival quality web
@@ -284,6 +330,17 @@ Nunes, S., Ribeiro, C., and David, G. (2007).
 \newblock Using neighbors to date web documents.
 \newblock In {\em Proceedings of the 9th annual {ACM} international workshop on
   {Web} information and data management}, pages 129--136. ACM.
+
+\bibitem[Pandey and Olston, 2005]{pandey_user-centric_2005}
+Pandey, S. and Olston, C. (2005).
+\newblock User-centric web crawling.
+\newblock In {\em Proceedings of the 14th international conference on {World}
+  {Wide} {Web}}, pages 401--411. ACM.
+
+\bibitem[Pant et~al., 2004]{pant_crawling_2004}
+Pant, G., Srinivasan, P., and Menczer, F. (2004).
+\newblock Crawling the web.
+\newblock In {\em Web {Dynamics}}, pages 153--177. Springer.
 
 \bibitem[Risse et~al., 2014]{risse_arcomem_2014}
 Risse, T., Demidova, E., Dietze, S., Peters, W., Papailiou, N., Doka, K.,

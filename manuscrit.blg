@@ -8,6 +8,7 @@ Warning--I didn't find a database entry for "Tufte1990"
 Warning--empty journal in arvidson_kulturarw3_2000
 Warning--empty journal in dougnac_depot_1960
 Warning--empty journal in finnemann_modernity_1997
+Warning--empty journal in fitch_web_2003
 Warning--there's a number but no volume in ketelaar_de_2006
 Warning--empty journal in leclerc_cyberespace_2012
 Warning--there's a number but no volume in morsel_traces?_2016
@@ -16,45 +17,45 @@ Warning--there's a number but no volume in stiegler_leroi-gourhan:_1998
 Warning--empty note in unesco_charter_2003
 Warning--empty institution in van_de_sompel_http_2013
 Warning--empty booktitle in yadav_change_2007
-You've used 65 entries,
+You've used 75 entries,
             1935 wiz_defined-function locations,
-            809 strings with 14198 characters,
-and the built_in function-call counts, 26423 in all, are:
-= -- 2661
-> -- 919
-< -- 66
-+ -- 336
-- -- 300
-* -- 2023
-:= -- 4416
-add.period$ -- 212
-call.type$ -- 65
-change.case$ -- 463
-chr.to.int$ -- 65
-cite$ -- 76
-duplicate$ -- 1154
-empty$ -- 1936
-format.name$ -- 395
-if$ -- 5376
+            858 strings with 15850 characters,
+and the built_in function-call counts, 30962 in all, are:
+= -- 3127
+> -- 1077
+< -- 78
++ -- 388
+- -- 352
+* -- 2367
+:= -- 5143
+add.period$ -- 246
+call.type$ -- 75
+change.case$ -- 538
+chr.to.int$ -- 75
+cite$ -- 87
+duplicate$ -- 1360
+empty$ -- 2277
+format.name$ -- 465
+if$ -- 6331
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 76
-newline$ -- 322
-num.names$ -- 195
-pop$ -- 510
+missing$ -- 87
+newline$ -- 371
+num.names$ -- 225
+pop$ -- 600
 preamble$ -- 1
-purify$ -- 475
+purify$ -- 551
 quote$ -- 0
-skip$ -- 878
+skip$ -- 1034
 stack$ -- 0
-substring$ -- 1804
-swap$ -- 238
-text.length$ -- 25
+substring$ -- 2120
+swap$ -- 291
+text.length$ -- 31
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 362
-warning$ -- 11
-while$ -- 227
+type$ -- 420
+warning$ -- 12
+while$ -- 266
 width$ -- 0
-write$ -- 835
-(There were 13 warnings)
+write$ -- 966
+(There were 14 warnings)

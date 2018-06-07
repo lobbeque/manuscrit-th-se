@@ -35,6 +35,13 @@ Aturban, M., Nelson, M.~L., and Weigle, M.~C. (2017).
 \newblock Difficulties of {Timestamping} {Archived} {Web} {Pages}.
 \newblock {\em arXiv preprint arXiv:1712.03140}.
 
+\bibitem[Baeza-Yates et~al., 2005]{baeza-yates_crawling_2005}
+Baeza-Yates, R., Castillo, C., Marin, M., and Rodriguez, A. (2005).
+\newblock Crawling a country: better strategies than breadth-first for web page
+  ordering.
+\newblock In {\em Special interest tracks and posters of the 14th international
+  conference on {World} {Wide} {Web}}, pages 864--872. ACM.
+
 \bibitem[Baschet, 2018]{baschet_defaire_2018}
 Baschet, J. (2018).
 \newblock {\em Défaire la tyrannie du présent: {Temporalités} émergentes et
@@ -83,6 +90,12 @@ Canfora, L. (1990).
   {World}}, volume~7.
 \newblock Univ of California Press.
 
+\bibitem[Castillo et~al., 2004]{castillo_scheduling_2004}
+Castillo, C., Marin, M., Rodriguez, A., and Baeza-Yates, R. (2004).
+\newblock Scheduling algorithms for {Web} crawling.
+\newblock In {\em {WebMedia} and {LA}-{Web}, 2004. {Proceedings}}, pages
+  10--17. IEEE.
+
 \bibitem[Chakravarthy et~al., 2002]{chakravarthy_webvigil:_2002}
 Chakravarthy, S., Jacob, J., Pandrangi, N., and Sanka, A. (2002).
 \newblock Webvigil: {An} approach to just-in-time information propagation in
@@ -98,6 +111,11 @@ Chawathe, S.~S. and Garcia-Molina, H. (1997).
 Cho, J. and Garcia-Molina, H. (1999).
 \newblock The evolution of the web and implications for an incremental crawler.
 \newblock Technical report, Stanford.
+
+\bibitem[Cho et~al., 1998]{cho_efficient_1998}
+Cho, J., Garcia-Molina, H., and Page, L. (1998).
+\newblock Efficient crawling through {URL} ordering.
+\newblock {\em Computer Networks and ISDN Systems}, 30(1-7):161--172.
 
 \bibitem[Coriat and {others}, 2015]{coriat_retour_2015}
 Coriat, B. and {others} (2015).
@@ -331,6 +349,16 @@ Nunes, S., Ribeiro, C., and David, G. (2007).
 \newblock In {\em Proceedings of the 9th annual {ACM} international workshop on
   {Web} information and data management}, pages 129--136. ACM.
 
+\bibitem[Oita and Senellart, 2010]{oita_archiving_2010}
+Oita, M. and Senellart, P. (2010).
+\newblock Archiving data objects using {Web} feeds.
+\newblock In {\em International {Workshop} on {Web} {Archiving}}.
+
+\bibitem[Page et~al., 1999]{page_pagerank_1999}
+Page, L., Brin, S., Motwani, R., and Winograd, T. (1999).
+\newblock The {PageRank} {Citation} {Ranking}: {Bringing} {Order} to the {Web}.
+\newblock Technical {Report} 1999-66, Stanford InfoLab.
+
 \bibitem[Pandey and Olston, 2005]{pandey_user-centric_2005}
 Pandey, S. and Olston, C. (2005).
 \newblock User-centric web crawling.
@@ -341,6 +369,11 @@ Pandey, S. and Olston, C. (2005).
 Pant, G., Srinivasan, P., and Menczer, F. (2004).
 \newblock Crawling the web.
 \newblock In {\em Web {Dynamics}}, pages 153--177. Springer.
+
+\bibitem[Pop et~al., 2010]{pop_archiving_2010}
+Pop, R., Vasile, G., and Masanes, J. (2010).
+\newblock Archiving web video.
+\newblock In {\em International {Web} {Archiving} {Workshop} {IWAW} 2010}.
 
 \bibitem[Risse et~al., 2014]{risse_arcomem_2014}
 Risse, T., Demidova, E., Dietze, S., Peters, W., Papailiou, N., Doka, K.,
@@ -355,6 +388,13 @@ Rocco, D., Buttler, D., and Liu, L. (2003).
 \newblock Page digest for large-scale web services.
 \newblock In {\em E-{Commerce}, 2003. {CEC} 2003. {IEEE} {International}
   {Conference} on}, pages 381--390. IEEE.
+
+\bibitem[Saad et~al., 2011]{saad_coherence-oriented_2011}
+Saad, M.~B., Pehlivan, Z., and Gançarski, S. (2011).
+\newblock Coherence-oriented crawling and navigation using patterns for web
+  archives.
+\newblock In {\em International {Conference} on {Theory} and {Practice} of
+  {Digital} {Libraries}}, pages 421--433. Springer.
 
 \bibitem[Schafer and Thierry, 2016]{schafer_web_2016}
 Schafer, V. and Thierry, B.~G. (2016).

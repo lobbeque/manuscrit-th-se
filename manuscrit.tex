@@ -532,44 +532,25 @@ Comme la collecte doit être menée page par page, programmée à l'avance et co
 
 \noindent L'aspect d'un corpus d'archives Web est directement le fait du crawler qui a mené la collecte. Un crawl peut ainsi être conduit de plusieurs manières. Une première possibilité revient à entreprendre une collecte en profondeur d'abord (\textit{depth-first}, Figure \ref{fig:crawl} (a)). Le crawler capturera en priorité les pages filles de la page sur laquelle il se trouve. Un autre approche consiste à travailler en largeur d'abord (\textit{breadth-first}, Figure \ref{fig:crawl} (b)). Le crawler privilégiera cette fois les pages sœurs. Mais ces techniques sont lentes et il faudra prévoir un temps considérable pour parcourir l'entièreté d'un site, or l'archiviste cherchera au contraire à minimiser le temps de capture. Aussi, on peut envisager l'instauration d'une limite en profondeur pour ne pas archiver des pages trop éloignées de la racine du site (Figure \ref{fig:crawl} (c)).
 
-En pratique, l'archiviste optera plutôt pour un compromis entre toutes ces méthodes de base. Avec la démocratisation des moteurs de recherches en ligne, l'internaute n'est plus obligé de passer par la front page d'un site pour en consulter le contenu \citep{holscher_web_2000}. Les crawlers doivent donc faire appelle à divers indicateurs topologiques ou sémantiques pour identifier les pages pertinentes à collecter. 
+En pratique, l'archiviste optera plutôt pour un compromis entre largeur et profondeur. Avec la démocratisation des moteurs de re\-cherches en ligne, l'internaute n'est plus obligé de passer par la front page d'un site pour en consulter le contenu. Les profils de navigation se diversifient rapidement \citep{holscher_web_2000}. Pour identifier les pages pertinentes, les crawler doivent donc intégrer à leurs programmations divers indicateurs topologiques ou sémantiques. Le pageRank \citep{page_pagerank_1999} ou le degré entrant d'un site (Figure \ref{fig:degree-in}) traduisent tous deux l'importance d'une page crawlée \citep{cho_efficient_1998}. Ces mesures peuvent être enrichie au regard de l'historique du crawl ou d'une possible hiérarchie entre pages \citep{baeza-yates_crawling_2005}. 
 
+\begin{marginfigure}%
+  \includegraphics[width=\linewidth]{graphics/degree-in}
+  \caption{Graphe dont les nœuds sont labellisés par degré entrant. En théorie des graphes, le degré $deg^-(v)$ d'un nœud $v$ correspond au nombre de liens incidents entrant à ce nœud.}
+  \label{fig:degree-in}
+\end{marginfigure} 
 
+Nous le verrons, lorsque dans la chapitre \ref{chap:4} nous changerons de point de vue, passant de l'archiviste à l'explorateur d'archives, la cohérence est une notion fondamentale. Un crawl doit garantir une forme de cohérence topographique et temporelle vis à vis du corpus qu'il cherche à constituer. Sur ce point, il faudra poser la question de l'ordonnancement des sites les uns par rapport aux autres. Certains sites, larges ou volatiles, feront l'objet d'une collecte rapide (\textit{short-term scheduling}) qui mobilisera toutes les ressources du crawler.  Pour les autres, le crawl s'inscrira dans le temps long (\textit{long-term scheduling}) et pourra prendre plusieurs jours \citep{castillo_scheduling_2004}. Ne crawler que lorsque qu'un site est le moins susceptible de subir des changement peut aussi garantir une cohésion temporel au corpus \citep{saad_coherence-oriented_2011}. S'appuyant sur toutes ces réflexions, les équipes d'Internet Archive présentent en 2004 un crawler open-source, l'Heritrix \citep{mohr_introduction_2004} capable de s'adapter à divers type de collecte : large (\textit{broad crawling}), en continue (\textit{continuous crawling}) ou focalisée (\textit{focused crawling}). Heritrix reste encore aujourd'hui le crawler le plus répandu pour l'archivage du Web. 
 
+Face à l'évolution du Web, les crawler s'adaptent et archivent de nouveaux objets : allant des sites Flash\footnote{\url{https://fr.wikipedia.org/wiki/Adobe_Flash}} aux vidéos Youtube ou Dailymotion \citep{pop_archiving_2010}. Mais alors que les contenus publiés incorporent de plus en plus d'éléments dynamiques, se syndiquer à un flux RSS devient une stratégie à part entière pour collecter de l'information en continue \citep{oita_archiving_2010}. Des librairies sont développées pour interpréter les portions de code utilisant du Javascript\footnote{\url{https://github.com/ariya/phantomjs}} et les crawlers commencent à se spécialiser pour archiver certains réseaux sociaux. Les interfaces de programmation applicative (API) s'imposent comme des sources de données auxquelles il convient de se connecter. Si certaines APIs ouvertes permettent de crawler l'entièreté d'une plateforme\footnote{Voir la crawl de Github réalisé en 2010 par F. Cunny et Linkfluence (\url{http://www.visualcomplexity.com/vc/project.cfm?id=785})}, d'autres plus limitées obligent les archivistes à faire preuve d'inventivité. Ainsi, Internet Archive possède, depuis Mars 2016, un compte Facebook \textit{charlie.archivist} dont la timeline est régulièrement archivée\footnote{\url{https://web.archive.org/web/20170914234842/https://www.facebook.com/charlie.archivist}}. 
 
+Terminons ce descriptif des techniques de collecte, par une présentation plus poussée du crawler de l'INA. Développé par les équipes de T. Drugeon \citep{drugeon_technical_2005}, ce crawler fut en charge (de 2010 à 2014) de l'archivage des sites Web de l'Atlas e-Diasporas. 
 
-
-
-Du coup on va plutôt crawler les best page first Cho et al. 1998; Najork and Heydon 2001; Najork and Wiener 2001; Castillo et al. 2004; Baeza-Yates and Castillo 2005)
-
-On peut avoir des stratégy qui cherche à minimiser cela et à garder la cohérence d'un contenu site (Masanès, 2004) (Castillo et al. 2004; Baeza-Yates and Castillo 2005) saad et al et où l'on va attaquer la front line d'un crawl Mohr et al. (2004) pour l'Heritrix
-
-Also to be considered is the delay needed to find new sites. It can take lots of time for holistic crawl to discover sites. When it comes to ephemeral sites, related to an event for instance, the delay can be too long to locate and archive them. Si on veux faire un crawl thématique
-
-là je peux parler de l'archivage des diverses sources autre depuis que le bouquin de maznes a été écrit
-
-API (github par linkfluence), facebook (example de l'internet archives) rss, vidéo 
-
-Chez IA le crawl est effectué par Alexa
-
-%%% 
-
-à l'INA "A technical approach for the French Web Legal Deposit"
-Là on parle des sites média fr (mais 50\% sont des .com et seulement 30\% sont des .fr) ce qui montre aussi la limitation de l'archivage par estension environ 10000 sites 
-ils ont un site crawler qui collecte (un par site) toutes les pages d'un site 
-ils ont un scheduler qui définit les sites à archiver et estime les mises à jour 
-le crawler ne sort pas du scop du site (il conserve une trace des liens externe) et prend un breath first stratégie
-plusieurs crawler peuvent être envoyés si besoin 
-
-parser le web c'est l'enfer, ils ont un ensemble de connecteur maison et en utilise des déjà existants, on va extraire les liens, les vidéos ... n-gram si besoin ou des keywords spécifics mais il n'y a pas qu'une seule et unique stratégie d'indexation "N - Gram - Based Text Categorization"
-
-puis c'est du daff 
-
-ha et !!! les vidéos ne sont pas jouées dans le player d'origine mais dans le player de l'ina 
-
-Il concerne également 12 600 comptes twitter (depuis 2016) et 7800 comptes de plateformes vidéo (depuis 2008).
+Pour commencer, un ordonnanceur général (\textit{scheduler}) gère la liste des sites sources auxquels une fréquence de collecte a été associée. En se basant sur cette fréquence, l'ordonnanceur choisit les sites à archiver en priorité et leur dédie à chacun un crawler (\textit{site crawler}). Plusieurs centaines de crawlers peuvent être ainsi lancés en parallèle. Ces crawlers procèdent à une récolte en largeur d'abord, mais sans sortir du périmètre du site qui leur est alloué. Une fois les pages visitées, le contenu est indexé et stocké sur fichiers. À ce niveau, si des liens hypertextes sortants sont détectés dans une page, les sites pointés par ces derniers sont conservés afin de potentiellement venir enrichir la liste des sites sources. La fréquence de collecte est mise à jour entre deux crawls successifs. Soit en analysant les informations venues de l'agrégateur de flux RSS, soit en comparant l'évolution d'une page archivée d'une version à l'autre. Cette architecture, fait du crawler de l'INA un outil extrêmement réactif, adapté à la nature même des sites médias et, de fait, très efficace lorsqu'il s'agit de constituer rapidement des corpus portant sur un événement singulier\footnote{Voir la collecte réalisée pour les attentats de Paris en 2015 (\url{https://asap.hypotheses.org/173})}.
 
 \subsection{Stockage et accès}
+
+Tout comme son crawler, dont le développement est contemporain à la conception d'Heritrix, l'INA a crée son propre fichier de stockage des archives Web.
 
 Bon idéalement l'archive devrait être iso au site, mais ce n'est plsu le web cf brugger 
 Mais en fait on transforme le site pour l'archiver : re-creation of the Web information system

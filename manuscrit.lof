@@ -5,25 +5,28 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Carte des initiatives d'archivage du Web par pays et ann\IeC {\'e}es de cr\IeC {\'e}ation (source de donn\IeC {\'e}es \citep {gomes_survey_2011} et Wikip\IeC {\'e}dia \url {https://en.wikipedia.org/wiki/List_of_Web_archiving_initiatives})}}{22}{subsection*.7}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Demande d'accr\IeC {\'e}ditation pour acc\IeC {\'e}der aux zones de consultations des archives Web \IeC {\`a} la BNF (site Fran\IeC {\c c}ois Mitterand)}}{25}{subsection*.8}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Localisation (en bleu) des postes de consultation des archives Web \IeC {\`a} la BNF (Rez-de-Jardin, site Fran\IeC {\c c}ois Mitterand)}}{26}{subsection*.8}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Graphe dont les n\IeC {\oe }uds sont labellis\IeC {\'e}s par degr\IeC {\'e}. En th\IeC {\'e}orie des graphes, le degr\IeC {\'e} $deg(v)$ d'un n\IeC {\oe }ud $v$ correspond au nombre de liens incidents (entrant ou sortant) \IeC {\`a} ce n\IeC {\oe }ud.}}{29}{subsection*.10}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Archivage du Web vivant page apr\IeC {\`e}s page, de $p_1$ \IeC {\`a} $p_3$}}{31}{subsection*.11}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Diff\IeC {\'e}rentes strat\IeC {\'e}gies adopt\IeC {\'e}es par un crawler $c$ pour collecter les pages $\{p_1,...p_n\}$ d'un m\IeC {\^e}me site}}{32}{subsection*.11}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Graphe dont les n\IeC {\oe }uds sont labellis\IeC {\'e}s par degr\IeC {\'e} entrant. En th\IeC {\'e}orie des graphes, le degr\IeC {\'e} $deg^-(v)$ d'un n\IeC {\oe }ud $v$ correspond au nombre de liens incidents entrant \IeC {\`a} ce n\IeC {\oe }ud.}}{33}{subsection*.11}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces La double cardinalit\IeC {\'e} d'une ressource Web, d'apr\IeC {\`e}s \citep {masanes_web_2006}}}{28}{subsection*.9}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Graphe dont les n\IeC {\oe }uds sont labellis\IeC {\'e}s par degr\IeC {\'e}. En th\IeC {\'e}orie des graphes, le degr\IeC {\'e} $deg(v)$ d'un n\IeC {\oe }ud $v$ correspond au nombre de liens incidents (entrant ou sortant) \IeC {\`a} ce n\IeC {\oe }ud.}}{29}{subsection*.10}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Archivage du Web vivant page apr\IeC {\`e}s page, de $p_1$ \IeC {\`a} $p_3$}}{31}{subsection*.11}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Diff\IeC {\'e}rentes strat\IeC {\'e}gies adopt\IeC {\'e}es par un crawler $c$ pour collecter les pages $\{p_1,...p_n\}$ d'un m\IeC {\^e}me site}}{33}{subsection*.11}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Graphe dont les n\IeC {\oe }uds sont labellis\IeC {\'e}s par degr\IeC {\'e} entrant. En th\IeC {\'e}orie des graphes, le degr\IeC {\'e} $deg^-(v)$ d'un n\IeC {\oe }ud $v$ correspond au nombre de liens incidents entrant \IeC {\`a} ce n\IeC {\oe }ud.}}{33}{subsection*.11}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Fonctionnement g\IeC {\'e}n\IeC {\'e}ral du syst\IeC {\`e}me de collecte de l'INA}}{34}{subsection*.11}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Diff\IeC {\'e}rences entre les formats WARC (a) et DAFF (b)}}{36}{subsection*.12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces "Boulevard du Temple", Louis Daguerre, 1838}}{38}{section.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Warc vs Daff}}{38}{section.4.2}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces "Boulevard du Temple", Louis Daguerre, 1838}}{42}{section.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Warc vs Daff}}{42}{section.4.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Extraits de "\textit {Je Vous Salue, Sarajevo}", J.L. Godard (1993) \IeC {\`a} partir d'une photographie de R. Haviv (1992)}}{43}{subsection*.19}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Les 5 strates analytiques du Web, d'apr\IeC {\`e}s \citep {brugger_website_2009}}}{45}{Item.7}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces R\IeC {\'e}partition des archives de \textit {yabiladi.com} dans la WayBack Machine (\url {https://web.archive.org/web/*/www.yabiladi.com})}}{46}{subsection*.21}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Date de cr\IeC {\'e}ation (rouge) d'un post de forum sur \textit {yabiladi.com}}}{46}{subsection*.21}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Dimensions d'exploration des archives Web (ajout de l'acteur)}}{48}{subsection*.21}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Extraits de "\textit {Je Vous Salue, Sarajevo}", J.L. Godard (1993) \IeC {\`a} partir d'une photographie de R. Haviv (1992)}}{47}{subsection*.20}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Les 5 strates analytiques du Web, d'apr\IeC {\`e}s \citep {brugger_website_2009}}}{49}{Item.7}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces R\IeC {\'e}partition des archives de \textit {yabiladi.com} dans la WayBack Machine (\url {https://web.archive.org/web/*/www.yabiladi.com})}}{50}{subsection*.22}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Date de cr\IeC {\'e}ation (rouge) d'un post de forum sur \textit {yabiladi.com}}}{50}{subsection*.22}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Dimensions d'exploration des archives Web (ajout de l'acteur)}}{52}{subsection*.22}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces This is a margin figure. The helix is defined by $x = \mathop {\mathgroup \symoperators cos}\nolimits (2\pi z)$, $y = \mathop {\mathgroup \symoperators sin}\nolimits (2\pi z)$, and $z = [0, 2.7]$. The figure was drawn using Asymptote (\url {http://asymptote.sf.net/}).}}{57}{section.8.2}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces This graph shows $y = \mathop {\mathgroup \symoperators sin}\nolimits x$ from about $x = [-10, 10]$. \emph {Notice that this figure takes up the full page width.}}}{58}{section.8.2}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Hilbert curves of various degrees $n$.}}{58}{section.8.2}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces This is a margin figure. The helix is defined by $x = \mathop {\mathgroup \symoperators cos}\nolimits (2\pi z)$, $y = \mathop {\mathgroup \symoperators sin}\nolimits (2\pi z)$, and $z = [0, 2.7]$. The figure was drawn using Asymptote (\url {http://asymptote.sf.net/}).}}{61}{section.8.2}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces This graph shows $y = \mathop {\mathgroup \symoperators sin}\nolimits x$ from about $x = [-10, 10]$. \emph {Notice that this figure takes up the full page width.}}}{62}{section.8.2}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Hilbert curves of various degrees $n$.}}{62}{section.8.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 

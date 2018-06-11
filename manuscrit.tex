@@ -174,6 +174,18 @@
   
  \renewcommand\labelitemi{--}
 
+\usepackage{multirow}
+
+\makeatletter
+    \newcommand{\vast}{\bBigg@{3}}
+    \newcommand{\Vast}{\bBigg@{3.5}}
+    \newcommand{\vastt}{\bBigg@{4}}
+    \newcommand{\Vastt}{\bBigg@{11}}
+    %%
+    %% Size from smallest to largest:
+    %%\[ ( \big( \Big( \bigg( \Bigg( \vast( \Vast( \vastt( \Vastt(\]
+\makeatother
+
 \begin{document}
 
 % Front matter
@@ -475,7 +487,13 @@ Il faut finalement attendre qu'il soit archivé, pour pouvoir considérer le Web
 
 \noindent Par ailleurs et à la différence d'autres types de documents à archiver, une page Web possède ce que J. Masanès \citep{masanes_web_2006} nomme une double cardinalité. 
 
-La cardinalité est le nombre d'instances en circulation d'un artéfact donné : un musée conservera des pièces uniques et originales, une librairie mettra à disposition de ces visiteurs des copies. La cardinalité donne toute sa valeur à un objet archivé et influence les techniques de préservation. Jusqu'à l'invention de l'imprimerie, pour archiver un livre il fallait le copier à la main. L'original était conservé dans un lieu donné et les copies envoyées vers d'autres bibliothèques \citep{canfora_vanished_1990}. L'original se perdant parfois, la copie (rectifiée ou annotée) devenait à défaut œuvre de référence. Mais la notion d'original disparait avec l'imprimerie. Le livre dans sa forme est stabilisée, les bibliothèques possédant toute la même version d'un ouvrage devenu reproductible à l'identique \citep{febvre_apparition_2013}. Ainsi  Au contraire du livre, sites et pages Web ont la singularité de présenter une double cardinalité : 
+\begin{figure}
+  \includegraphics[width=\linewidth]{graphics/web-ressource}
+  \caption{La double cardinalité d'une ressource Web, d'après \citep{masanes_web_2006}}
+  \label{fig:web-ressource}
+\end{figure} 
+
+\noindent La cardinalité est le nombre d'instances en circulation d'un artéfact donné : un musée conservera des pièces uniques et originales, une librairie mettra à disposition de ces visiteurs des copies. La cardinalité donne toute sa valeur à un objet archivé et influence les techniques de préservation. Jusqu'à l'invention de l'imprimerie, pour archiver un livre il fallait le copier à la main. L'original était conservé dans un lieu donné et les copies envoyées vers d'autres bibliothèques \citep{canfora_vanished_1990}. L'original se perdant parfois, la copie (rectifiée ou annotée) devenait à défaut œuvre de référence. Mais la notion d'original disparait avec l'imprimerie. Le livre dans sa forme est stabilisée, les bibliothèques possédant toute la même version d'un ouvrage devenu reproductible à l'identique \citep{febvre_apparition_2013}. Ainsi  Au contraire du livre, sites et pages Web ont la singularité de présenter une double cardinalité : 
 
 \begin{enumerate}[leftmargin=*]  
 \item les fichiers sources, hébergés sur un serveur donné 
@@ -546,29 +564,78 @@ Face à l'évolution du Web, les crawler s'adaptent et archivent de nouveaux obj
 
 Terminons ce descriptif des techniques de collecte, par une présentation plus poussée du crawler de l'INA. Développé par les équipes de T. Drugeon \citep{drugeon_technical_2005}, ce crawler fut en charge (de 2010 à 2014) de l'archivage des sites Web de l'Atlas e-Diasporas. 
 
-Pour commencer, un ordonnanceur général (\textit{scheduler}) gère la liste des sites sources auxquels une fréquence de collecte a été associée. En se basant sur cette fréquence, l'ordonnanceur choisit les sites à archiver en priorité et leur dédie à chacun un crawler (\textit{site crawler}). Plusieurs centaines de crawlers peuvent être ainsi lancés en parallèle. Ces crawlers procèdent à une récolte en largeur d'abord, mais sans sortir du périmètre du site qui leur est alloué. Une fois les pages visitées, le contenu est indexé et stocké sur fichiers. À ce niveau, si des liens hypertextes sortants sont détectés dans une page, les sites pointés par ces derniers sont conservés afin de potentiellement venir enrichir la liste des sites sources. La fréquence de collecte est mise à jour entre deux crawls successifs. Soit en analysant les informations venues de l'agrégateur de flux RSS, soit en comparant l'évolution d'une page archivée d'une version à l'autre. Cette architecture, fait du crawler de l'INA un outil extrêmement réactif, adapté à la nature même des sites médias et, de fait, très efficace lorsqu'il s'agit de constituer rapidement des corpus portant sur un événement singulier\footnote{Voir la collecte réalisée pour les attentats de Paris en 2015 (\url{https://asap.hypotheses.org/173})}.
+\begin{figure}%
+  \includegraphics[width=\linewidth]{graphics/crawl-ina}
+  \caption{Fonctionnement général du système de collecte de l'INA}
+  \label{fig:crawl-ina}
+\end{figure}
 
-\subsection{Stockage et accès}
+\noindent Pour commencer (Figure \ref{fig:crawl-ina}), un ordonnanceur général (\textit{scheduler}) gère la liste des sites sources auxquels une fréquence de collecte a été associée. En se basant sur cette fréquence, l'ordonnanceur choisit les sites à archiver en priorité et leur dédie à chacun un crawler (\textit{site crawler}). Plusieurs centaines de crawlers peuvent être ainsi lancés en parallèle. Ces crawlers procèdent à une récolte en largeur d'abord, mais sans sortir du périmètre du site qui leur est alloué. Une fois les pages visitées, le contenu est indexé et stocké sur fichiers. À ce niveau, si des liens hypertextes sortants sont détectés dans une page, les sites pointés par ces derniers sont conservés afin de potentiellement venir enrichir la liste des sites sources. La fréquence de collecte est mise à jour entre deux crawls successifs. Soit en analysant les informations venues de l'agrégateur de flux RSS, soit en comparant l'évolution d'une page archivée d'une version à l'autre. Cette architecture, fait du crawler de l'INA un outil extrêmement réactif, adapté à la nature même des sites médias et, de fait, très efficace lorsqu'il s'agit de constituer rapidement des corpus portant sur un événement singulier\footnote{Voir la collecte réalisée pour les attentats de Paris en 2015 (\url{https://asap.hypotheses.org/173})}.
 
-Tout comme son crawler, dont le développement est contemporain à la conception d'Heritrix, l'INA a crée son propre fichier de stockage des archives Web.
+\subsection{Stockage}
 
-Bon idéalement l'archive devrait être iso au site, mais ce n'est plsu le web cf brugger 
-Mais en fait on transforme le site pour l'archiver : re-creation of the Web information system
+\noindent Le \textbf{stockage} représente l'ensemble des techniques d'enregistrement d'une ressource Web crawlée. Ainsi, parallèlement à son crawler, l'INA développe son propre format de fichier destiné au stockage des archives Web : le Digital Archive File Format (DAFF). L'INA prend ainsi le contre pied du reste de la communauté qui, elle, continue de s'en tenir au format Web ARChive (WARC) pour sauvegarder la grande majorité des corpus existants.
 
-1) Local Files System Served Archives
+C'est en 1996, s'inspirant du format de compression et d'archivage ARC (popularisé à la fin des années 80), qu'Internet Archive définie le ARC\_IA\footnote{\url{https://www.loc.gov/preservation/digital/formats/fdd/fdd000235.shtml}}. L'idée étant de combiner plusieurs ressources collectées en un seul et même fichier avant de les compresser pour en réduire la taille sur disque.
 
-Là on va carément recréer une copy locale du site archivé où l'on se premène de fichier en fichier en transformant les uri absolu en uri relatif
-ça marche si tu ne revient pas 36 sur le site (non incrémentale)
+Mais l'ARC\_IA évolue rapidement, suivant les avancées des techniques de crawl, et ce, jusqu'à atteindre sa version actuelle : le WARC. Devenu le format standard d'archivage Web en 2009\footnote{\url{https://www.iso.org/standard/44717.html}}, un fichier d'ar\-chives WARC peut être vu comme la concaténation de plusieurs enregistrements (ou blocs), chaque enregistrement correspondant à une ressource Web crawlée\footnote{Une page, une image, ... Chez Internet Archive, toute objet associé à une URL unique sera archivé comme ressource Web}. Les informations contenues dans un bloc WARC sont de deux natures : des \textit{meta données} et des \textit{données}. Les méta données (stockées dans le \textit{header} du bloc) couvrent toutes les informations relatives au crawl : date de collecte, taille de la ressource, URL de la ressource, ID du bloc, ... Ces méta données sont directement suivies des données à proprement parler : soit l'enregistrement brut des fichiers .HTML, .CSS, etc collectés. Ainsi, chaque fois qu'une page Web est archivée (qu'elle ait évolué ou non depuis le précédent crawl) un bloc est ajouté au fichier WARC courant (Figure \ref{fig:daff-warc} (a)). 
 
-sinon y'a le pdf ou un truc non hypertext tout et réorganisé
+Directement liés au WARC, il est possible d'extraire d'un bloc deux sous-formats spécialement dédiés à l'exploitation des corpus : les WAT et WET. Un fichier WAT (Web Archive Transformation) ne contient que des méta données. Contrairement au WET (Web Extracted Text) et à ses dérivés (LGA ou WANE\footnote{\url{https://webarchive.jira.com/wiki/spaces/ARS/pages/90997507/Datasets+Available}}) qui, eux, ne stockent que des éléments de texte issus de la partie données d'un bloc WARC. Ces fichiers WAT et WET répondent à l'une des principales critiques lancées à l'encontre du format WARC, pourtant hégémonique : le WARC introduit de la redondance dans les stocks d'archives Web.
 
-sinon y'a le 
+En effet, entre deux crawls successifs, un bloc WARC sera invariablement crée (que la ressource Web collectée ait évolué ou non). Une page Web stable dans le temps, verra ainsi son contenu archivé autant de fois qu'elle aura été crawlée, conduisant à une consommation d'espace de stockage considérable. C'est donc en partant de l'intuition selon laquelle méta données et données devraient être stockées séparément (pour ne pas surcharger les corpus) que l'INA a développé le format DAFF.  
 
-Warc (et autre) vs Daff
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/daff-warc}
+  \caption{Différences entre les formats WARC (a) et DAFF (b)}
+  \label{fig:daff-warc}
+\end{figure*}
 
-et il faut construire un serveur web par dessus 
+\noindent Une archive DAFF est en réalité l'association de deux fichiers complémentaires : un fichier de méta données et un fichier de données. Comme pour le WARC, chaque fichier est une suite de blocs correspondant à une ressource Web crawlée. Le fichier de méta données contient divers champs relatifs à la collecte (voir Table \ref{tab:daff}). Le fichier de données, quant à lui, ne renferme que deux champs : un identifiant unique et le contenu (HTML, CSS, etc) de la page Web archivée. Avec le DAFF, données et méta données sont stockées séparément. Ainsi, d'un crawl à l'autre, si la page Web visitée n'a pas évolué, alors son contenu ne sera pas re-téléchargé : seul un nouveau bloc de méta données sera ajouté pour témoigner du passage du crawler. Chaque bloc de données est donc associé à un ou plusieurs blocs de méta données (le champ \textit{content} des méta données correspondant au champ \textit{id} des données). Ce mécanisme permet, d'une part de ne pas dupliquer inutilement le contenu d'une page Web archivée et, d'autre part, de pouvoir pratiquer rapidement divers calculs statistiques sur le seul fichier de méta données. Celui étant pas nature plus léger qu'un WARC complet, donc moins long à traiter.
 
-the Internet Archive on the contrary, pays only for storage using compression (as crawl is donated by Alexa)
+Notons que pour tester si une page a évolué depuis sa précédente visite, le crawler de l'INA compare la valeur des champs \textit{id} des blocs de données concernés. En effet l'\textit{id} est une clé SHA-256 résultant du hachage\footnote{En cryptographie, le hachage consiste à une donnée de taille arbitraire, une image (ou clé) de taille fixe et unique} du contenu même de la page Web archivée. On dira donc d'une page Web qu'elle s'est transformée si et seulement si les deux clés successives sont différentes. La nature de ce changement ne sera en revanche pas connue, celui-ci pouvant aller de la refonte entière de la page à la simple suppression d'une virgule.        
+
+\begin{table*}
+  \label{tab:daff}
+  \begin{tabular}{lll}
+    \toprule
+    Méta données& Champ & Description\\
+    \midrule  
+    \multirow{5}{*}{\emph{obligatoire} \vastt\{ }&id&identifiant unique du bloc\\
+    &url&url associée à la ressource\\
+    &date&date de téléchargement (Timesone GMT, ISO 8601)\\
+    &content&identifiant unique du bloc de données associé\\     
+    &status&statut de retour du crawler (ok, request\_error, server\_error, etc)\\
+    \midrule     
+    \multirow{12}{*}{\emph{facultatif  } \Vastt\{ }&crawl\_session&identifiant unique de la campagne de crawl\\
+    &charset&encodage de la ressource\\
+    &type&MIME Type (identifiant du format de donnée de la ressource)\\
+    &corpus&nom du corpus d'archives associé\\
+    &ip&adresse ip associée au crawl\\
+    &level&profondeur du crawl\\
+    &page&la ressource est elle une page Web (0|1)\\
+    &client\_country&nationalité associée à la page\\
+    &length&taille du bloc de données associé\\
+	&active&la ressource était elle active au moment du crawl\\
+	&client\_lang&langue associée à la ressource\\
+	&referer\_url&url précédemment visitée par le crawler\\
+    \midrule
+    Données& Champ & Description\\
+    \midrule 
+    &id&clé SHA-256 unique\\
+    &content&contenu (HTML, CSS, etc) de la ressource\\    	
+    \bottomrule
+\end{tabular}
+  \bigskip
+  \caption{Ensemble des champs disponibles dans les fichiers de méta données et de données DAFF}
+\end{table*} 
+
+\noindent Outre le stockage sous formats WARC et DAFF, J. Masanès \citep{masanes_web_2006} rappelle qu'il existe des méthodes alternatives de sauvegarde des archives. Associées aux stratégies de collecte situées côté serveur (\textit{serveur-side-archiving}) on trouvera les formes dites de \textit{local file system served archives} qui consistent à transformer un site Web archivé en une copie locale de l'ensemble de ses ressources. Ainsi les URIs absolues, permettant (sur le Web) de naviguer d'une page à l'autre, seront transformées en URIs relatives à l'intérieur du fac-similé. Très couteuse, cette méthode nécessite de transformer en profondeur la nature des pages archivées et devient vite ingérable à mesure qu'augmente le nombre de collectes.
+
+Enfin, il reste toujours possible de copier un site, page après page, sous format PDF ou image (capture d'écran ou vidéo). Bien que facile à mettre en place (techniquement parlant) cette stratégie ne passera pas non plus à l'échelle\footnote{En 2013, K. Goldsmith imprime littéralement plusieurs centaines de milliers de pages Web en soutient à A. Schwartz, remplissant l'équivalent d'une pièce de 1,100 $\mathrm{m}^2$} et aura pour conséquence d'arracher les sites et pages Web archivés à leur environnement hypertexte d'origine.  
+
+Pour terminer, les corpus d'archives Web répartis dans le monde se comptent par centaines. Alors que le Web vivant continue son expansion, le volume du Web archivé ne cesse de croitre. En 2017, la BNF avait archivé 18,000 millions de pages Web (soit environ 370TB) tandis que l'INA plafonnait à 43,000 millions de pages pour un total avoisinant les 420TB. Et depuis sa création, l'Internet Archive a collecté à elle seule pas moins de 650,000 millions de ressources Web soit 40,000TB de données. Ainsi, face à ces corpus qui s'amassent et à la nécessité de les exploiter, les archivistes du Web ont du développer des outils dédiés à leur exploration.
+
+\subsection{Fouille}
 
 There are 21 initiatives (50\%) that provide full online accessto search mechanisms
 Some initiatives hold the copyright of the
@@ -643,6 +710,9 @@ De Derrida aux traces discrétisées, de la sélection effectuée par le crawler
 
 \section{Un temps sans extension}
 \label{sec:4_temporalite}
+
+Bon idéalement l'archive devrait être iso au site, mais ce n'est plsu le web cf brugger 
+Mais en fait on transforme le site pour l'archiver : re-creation of the Web information system
 
 Ici on part de Saint Augustin et de sa définition d'un présent sans extension qui a influencer le rapport des occidentaux au temps. Ce rapport au temps se retrouve lorsque l'on étudie en détail les modèles d'exploration des archives web qui s'appuient sur la date de capture d'un contenu. S'en suit plusieurs remarques qu'il faut conserver en tete avant de se plonger dans toute exploration
 

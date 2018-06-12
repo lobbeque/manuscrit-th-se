@@ -25,6 +25,13 @@ Amitay, E., Carmel, D., Herscovici, M., Lempel, R., and Soffer, A. (2004).
 \newblock {\em Journal of the Association for Information Science and
   Technology}, 55(14):1270--1281.
 
+\bibitem[Anand et~al., 2009]{anand_everlast:_2009}
+Anand, A., Bedathur, S., Berberich, K., Schenkel, R., and Tryfonopoulos, C.
+  (2009).
+\newblock {EverLast}: a distributed architecture for preserving the web.
+\newblock In {\em Proceedings of the 9th {ACM}/{IEEE}-{CS} joint conference on
+  {Digital} libraries}, pages 331--340. ACM.
+
 \bibitem[Arvidson et~al., 2000]{arvidson_kulturarw3_2000}
 Arvidson, A., Persson, K., and Mannerheim, J. (2000).
 \newblock The {Kulturarw}3 {Project}–{The} {Royal} {Swedish} {Web}
@@ -123,6 +130,23 @@ Coriat, B. and {others} (2015).
   propriétaire}.
 \newblock Éditions Les Liens qui libèrent.
 
+\bibitem[Costa et~al., 2013]{costa_survey_2013}
+Costa, M., Gomes, D., Couto, F., and Silva, M. (2013).
+\newblock A survey of web archive search architectures.
+\newblock In {\em Proceedings of the 22nd {International} {Conference} on
+  {World} {Wide} {Web}}, pages 1045--1050. ACM.
+
+\bibitem[Costa and Silva, 2011]{costa_characterizing_2011}
+Costa, M. and Silva, M.~J. (2011).
+\newblock Characterizing {Search} {Behavior} in {Web} {Archives}.
+\newblock In {\em {TWAW}}, pages 33--40.
+
+\bibitem[Costa and Silva, 2012]{costa_evaluating_2012}
+Costa, M. and Silva, M.~J. (2012).
+\newblock Evaluating web archive search systems.
+\newblock In {\em International {Conference} on {Web} {Information} {Systems}
+  {Engineering}}, pages 440--454. Springer.
+
 \bibitem[De~Jong et~al., 2005]{de_jong_temporal_2005}
 De~Jong, F., Rode, H., and Hiemstra, D. (2005).
 \newblock Temporal language models for the disclosure of historical text.
@@ -203,6 +227,12 @@ Foot, K. and Schneider, S.~M. (2006).
 \newblock {\em Web campaigning (acting with technology)}.
 \newblock The MIT Press.
 
+\bibitem[Gebeil, 2016]{gebeil_les_2016}
+Gebeil, S. (2016).
+\newblock Les mémoires de l’immigration maghrébine sur le web français de
+  1999 à 2014.
+\newblock {\em Les Cahiers du numérique}, 12(3):115--138.
+
 \bibitem[Gomes et~al., 2011]{gomes_survey_2011}
 Gomes, D., Miranda, J., and Costa, M. (2011).
 \newblock A survey on web archiving initiatives.
@@ -214,12 +244,28 @@ Gomes, D., Nogueira, A., Miranda, J., and Costa, M. (2009).
 \newblock Introducing the {Portuguese} web archive initiative.
 \newblock In {\em 8th {International} {Web} {Archiving} {Workshop}}. Springer.
 
+\bibitem[Grainger et~al., 2014]{grainger_solr_2014}
+Grainger, T., Potter, T., and Seeley, Y. (2014).
+\newblock {\em Solr in action}.
+\newblock Manning Cherry Hill.
+
 \bibitem[Hallgrinsson and Bang, 2003]{hallgrinsson_nordic_2003}
 Hallgrinsson, B. and Bang, S. (2003).
 \newblock Nordic web archive.
 \newblock In {\em Proceedings of the 3rd {Workshop} on {Web} {Archives} in
   conjunction with the 7th {European} {Conference} on {Research} and {Advanced}
   {Technologies} for {Digital} {Libraries} ({ECDL} 2003)}, pages 37--48.
+
+\bibitem[Hatcher and Gospodnetic, 2004]{hatcher_lucene_2004}
+Hatcher, E. and Gospodnetic, O. (2004).
+\newblock Lucene in action.
+
+\bibitem[Holzmann and Anand, 2016]{holzmann_tempas:_2016}
+Holzmann, H. and Anand, A. (2016).
+\newblock Tempas: {Temporal} {Archive} {Search} {Based} on {Tags}.
+\newblock In {\em Proceedings of the 25th {International} {Conference}
+  {Companion} on {World} {Wide} {Web}}, pages 207--210. International World
+  Wide Web Conferences Steering Committee.
 
 \bibitem[Hölscher and Strube, 2000]{holscher_web_2000}
 Hölscher, C. and Strube, G. (2000).
@@ -427,6 +473,11 @@ Spitz, A., Strötgen, J., and Gertz, M. (2018).
   {Conference} 2018}, pages 1731--1736. International World Wide Web
   Conferences Steering Committee.
 
+\bibitem[Stack, 2006]{stack_full_2006}
+Stack, M. (2006).
+\newblock Full text search of web archive collections.
+\newblock {\em Proc. of IWAW}.
+
 \bibitem[Stiegler, 1991]{stiegler_etat_1991}
 Stiegler, B. (1991).
 \newblock {\em Etat de la mémoire et mémoire de l'{Etat}}, volume~1.
@@ -435,6 +486,12 @@ Stiegler, B. (1991).
 Stiegler, B. (1998).
 \newblock Leroi-{Gourhan}: l'inorganique organisé.
 \newblock {\em Les Cahiers de médiologie}, (2):187--194.
+
+\bibitem[Tofel, 2007]{tofel_waybackfor_2007}
+Tofel, B. (2007).
+\newblock Wayback’for accessing web archives.
+\newblock In {\em Proceedings of the 7th {International} {Web} {Archiving}
+  {Workshop}}, pages 27--37.
 
 \bibitem[Toyoda and Kitsuregawa, 2006]{toyoda_whats_2006}
 Toyoda, M. and Kitsuregawa, M. (2006).
@@ -458,6 +515,12 @@ Voerman, G., Keyzer, A., Den~Hollander, F., and Druiven, H. (2002).
 \newblock Archiving the {Web}: {Political} party {Web} sites in the
   {Netherlands}.
 \newblock {\em European Political Science}, 2(1):68--75.
+
+\bibitem[Weltevrede and Helmond, 2012]{weltevrede_where_2012}
+Weltevrede, E. and Helmond, A. (2012).
+\newblock Where do bloggers blog? {Platform} transitions within the historical
+  {Dutch} blogosphere.
+\newblock {\em First Monday}, 17(2).
 
 \bibitem[Yadav et~al., 2007]{yadav_change_2007}
 Yadav, D., Sharma, A.~K., and Gupta, J.~P. (2007).

@@ -637,49 +637,33 @@ Pour terminer, les corpus d'archives Web répartis dans le monde se comptent par
 
 \subsection{Fouille}
 
-There are 21 initiatives (50\%) that provide full online accessto search mechanisms
-Some initiatives hold the copyright of the
-archived contents (e.g. German Bundestag, UK WA, Canada WA)
-The Internet Archive
-and the Portuguese WA proactively archive and provide access to contents but remove
-access on-demand.
-On the other hand, for 16 initiatives (38\%) the access to the collec-
-tions is somehow restricted. The Library of Congress, WebArchiv and Australia’s WA
-provide public online access to part of their collections.
-BnF, Web@rchive and Preservation .ES grant
-access exclusively through special rooms on their facilities.
+\noindent Par \textbf{fouille}, nous désignons les stratégies d'interrogation et de requêtage des archives Web. Ainsi, pour permettre aux chercheurs d'ana\-lyser le résultat des collectes, les archivistes déploient des dispositifs techniques \textit{au dessus} des corpus existants. 
 
-The Archive-Access tools are dominant (62\%), including the Heritrix,
-NutchWAX and Wayback projects,
+Comme nous l'évoquions en section \ref{sec:3_20ans}, la fouille est tributaire des modalités d'accès aux données qui, pour $50\%$ des initiatives \citep{costa_survey_2013}, passent par la mise en place d'un portail en ligne. Mais cela ne signifie pas pour autant que les archives sont entièrement accessibles. Su ce point, $38\%$ des initiatives restreignent la consultation de leurs corpus : soit que l'analyse doit se faire localement (INA, BNF, etc), soit que les archives ne sont pas intégralement mises à disposition du public (The Library of Congress, Australia's Web Archive, etc). Contrairement à Internet Archive et aux Portuguese Web Archives qui proposent un plein accès, en ligne, à leurs collectages.  
 
-Nonetheless, NutchWAX
-supports full-text search for the Finnish WA (148 million), Canada WA (170 million),
-Digital Heritage of Catalonia (200 million), California Digital Library (216 million)
-and BnF (estimated 2 100 million). Australia’s WA supports full-text search over 3 100
-million contents indexed using an in-house developed system named Trove. I
+Les dispositifs de fouille\footnote{Souvent désignés par \textit{search strategies} ou simplement \textit{search} dans la littérature}, déployés par dessus les archives, reprennent l'architecture générale de la plupart des système de moteurs de recherche \citep{grainger_solr_2014,hatcher_lucene_2004}. Les archives sont ainsi indexées puis mises à disposition d'un serveur de \textit{search} qui les rend interrogeables\footnote{Nous développerons le processus d'indexation des archives Web plus en détail dans la section \ref{sec:4_moteur}}. L'indexation définie l'étape de transformation d'un document texte en une liste de mots ou d'ensembles de mots, cette étape est nécessaire à toute construction d'un moteur de recherche. On appelle index la structure de données obtenue après indexation. 
 
-Even with
-the high computational resources required for this purpose,
-67% of world-wide web archives surveyed support full-text
-search for at least a part of their collections [14].  In another
-survey about European web archives this percentage is 70%
-[13].
+Côté utilisateur, la recherche se traduit par une interface Web, dans laquelle il est possible de rentrer une requête (un texte, un ensemble de mots clé, des filtres, etc), puis de consulter les résultats correspondants sous la forme d'une liste ou d'un histogramme (Figure \ref{fig:ia-search}). Tout l'enjeu pour ces moteurs d'exploration d'archives est de proposer la meilleur technique de recherche possible pour fouiller efficacement un corpus d'archives Web. Ou comment, partant de la requête d'un chercheur, proposer avec justesse un ensemble de page archivées qui satisfasse ses interrogations ?
 
- The Living Web Archives
-(LiWA) aimed to provide contributions to make archived in-
-formation accessible [19].  It addressed problems shared with
-other information retrieval (IR) areas, such as web spam de-
-tection, terminology evolution, capture of stream video, and
-assuring temporal coherence of archived content.  LiWA was
-followed by the Longitudinal Analytics of Web Archive data
-(LAWA), which aims to build an experimental testbed for large-scale data analytics [28].
+\begin{marginfigure}%
+  \includegraphics[width=\linewidth]{graphics/IA-search}
+  \caption{Interface de search de la WayBack Machine (\url{https://web.archive.org/web/*/yabiladi})}
+  \label{fig:ia-search}
+\end{marginfigure} 
 
-!!! aussi de dire que Internet Archives bouge ces data storage pour les garder à l'abri
+Dans ce domaine, la recherche dite plein texte (\textit{full-text}) est ce vers quoi tendent toutes les initiatives d'archive du Web \citep{costa_characterizing_2011,costa_evaluating_2012}. En recherche d'information, le full-text revient à faire correspondre les mots d'un document ou d'un ensemble de documents avec les critères fournis par un utilisateur (des mots clés, une phrase, etc). Popularisée sur le Web par AltaVista, c'est la recherche telle que nous l'expérimentons quotidiennement en interrogeant Google. Mais encore aujourd'hui, son application aux moteurs d'exploration d'archives Web reste limitée. Si l'INA, les portugais d'Arquivo.pt ou encore The Web Archive of Catalonia\footnote{\url{https://www.padicat.cat/en}} proposent d'étendre cette fonctionnalité à l'ensemble de leurs corpus \citep{stack_full_2006}, à la BNF, au contraire, le full-text n'est applicable que sur les seules URLs des pages archivées. C'est à dire qu'à une requête utilisateur donnée, le moteur de la BNF ne pourra faire correspondre qu'une recherche stricte par URL, sans regard pour le contenu même des pages. En 2016, Internet Archive ajoute à la Wayback Machine un système full-text basé sur le titre des pages Web collectées\footnote{Si et seulement si le titre est présent dans la balise \textit{head} du HTML de la page (\url{http://blog.archive.org/2016/10/24/beta-wayback-machine-now-with-site-search/}, \url{https://www.w3schools.com/html/html_head.asp})}, avant cette date seule une recherche stricte par URL était proposée. Selon M. Costa \citep{costa_survey_2013}, $67\%$ des initiatives d'archivage du Web proposaient en 2013 une recherche full-text complète, limitée ou dégradée. 
 
-ha et là je parle de comment on fait des analyses on top of web archives
+La taille importante des corpus ou la difficulté des archivistes à définir quelles doivent être les éléments d'une page Web à indexer, peuvent expliquer que le full-text soit si compliqué à mettre en place. Mais des alternatives existent : on peut ainsi envisager une recherche par catégories \citep{holzmann_tempas:_2016}, par entités nommées \citep{spaniol_tracking_2012} ou en se basant sur des tendances issues des réseaux sociaux \citep{risse_arcomem_2014}. Une solution originale consiste à ne pas construire de moteur d'exploration mais à s'adosser à des systèmes existants. Les créateurs du projet Memento\footnote{\url{http://mementoweb.org/about/}}, par exemple, intègrent les corpus d'Internet Archive directement à l'intérieur d'un navigateur Web. Ce faisant, la fonction de recherche à proprement parlé est assuré par le navigateur. 
 
-et on se dit que tout de même ça ressemble un peu à une capsule temporelle que l'on regardera plus tard 
-là placer la ref aux capsules tempo
+Créée en 2001, la Wayback Machine est le plus emblématique des systèmes de fouille d'archives Web \citep{tofel_waybackfor_2007}. L'ensemble des re\-ssources archivées y sont indexées page par page (bloc WARC par bloc WARC). Les indexes sont ensuite répartis sur les quelques 2500 serveurs de stockage du data center principal d'Internet Archive. Un ordonnanceur central envoie les requêtes utilisateurs à l'ensemble des serveurs avant d'agréger les résultats. Il existe un système de cache destiné à améliorer les temps de réponse de la Wayback Machine, ainsi l'attente variera en fonction de la popularité de chaque requête. Le moteur des Portuguese Web Archives propose, lui, d'indexer les archives d'abord par date de téléchargement puis page par page \citep{costa_survey_2013}. Si l'utilisateur associe à sa requête une années ou un intervalle de temps précis, le résultat de ses recherches lui sera plus rapidement retourné. Les moteurs d'exploration peuvent aussi être entièrement décentralisés. A. Anand décrit Everlast \citep{anand_everlast:_2009} comme un système de fouille \textit{peer-to-peer} où chaque élément du réseau est à la fois serveur et client, plus scalable donc. 
+
+Bénéficiant d'une distribution open source, la Wayback Machine est aujourd'hui réutilisée ou sert de base\footnote{Dans son intégralité ou élément par élément : Héritrix pour la partie crawl, NutchWAX pour la partie recherche full-text} à l'architecture de $62\%$ des initiatives d'archivage du Web \citep{costa_survey_2013}. Mais force est de constater que les systèmes existants n'encouragent pas particulièrement à l'exploration des archives, à la découverte des corpus, ou plus basiquement à leur exploitation à grande échelle (en terme de quantité de pages ou de temporalité). Il est de plus difficile de s'évader du cadre stricte imposé par des interfaces invariablement semblables, proposant une expérience des archives Web toujours identique identique.
+
+La Wayback Machine est redoutablement efficace lorsqu'il s'agit de rechercher une version précise d'une page déjà connue. Notons aussi qu'elle propose une API\footnote{\url{https://archive.org/help/wayback_api.php}} pour accélérer les traitements. Mais sans la possibilité de filtrer à priori le contenu des pages, tout le dispositif de fouille sera à développer du côté de l'explorateur qui bien souvent n'a pas les compétences ou les moyens techniques pour y arriver. Et si l'INA offre de meilleures fonctionnalités de recherche (plein text complet, n-gram, etc ...), le fait que l'on ne puisse accéder aux corpus que depuis des lieux dédiés reste un frein majeur à toute analyse. Ainsi, une asymétrie se dessine rapidement lorsque l'on parcourt la littérature basée sur les archives Web. Beaucoup de travaux portent sur la constitution en amont de corpus d'archives (sélection, collecte, etc), très peu en revanche se lancent dans l'exploitation ou le questionnement de corpus existants. Ces derniers, bien que précieux à juste titre, se \textit{limitent}\footnote{Pas forcément en conscience, mais nous pensons que les outils d'exploration jouent un rôle quand il s'agit de définir de la portée de ces travaux} soit à l'analyse de versions passées de sites identifiés à priori \citep{schafer_web_2016,gebeil_les_2016}, soit à l'extraction d'éléments singuliers d'un contenu archivé : des images \citep{ben-david_internet_2018} ou des liens hypertextes \citep{weltevrede_where_2012}.
+
+Les archives Web ont été construites pour inscrire la mémoire du Web sur un support durable et préserver notre héritage numérique. Offrir ainsi la possibilité aux chercheurs de demain d'interroger, de questionner et de critiquer le Web qui nous est contemporain. Mais plus on archive et plus la taille de ce Web passé grandit, laissant parfois les chercheurs seuls face à des corpus trop larges et trop vastes pour être explorer sans méthode et stratégie clairement définies. Les archives Web doivent rester une matière vivante. Prenons garde à ce qu'elles ne deviennent pas des capsules temporelles\footnote{\url{https://en.wikipedia.org/wiki/Westinghouse\_Time\_Capsules}} que l'on enterre dans l'espoir, qu'un jour, peut être, quelqu'un se décide à les rouvrir.   
+
+
 
 \section{Les archives Web de l'Atlas e-Diasporas}
 \label{sec:3_edias}
@@ -699,6 +683,10 @@ of the pages on the Web could be treated as a single collection, and
 indexed and made searchable for all users on the Net.
 
 De Derrida aux traces discrétisées, de la sélection effectuée par le crawler et l'archiviste, les archives sont des traces discrètes du Web, comme Funes on ne peut tout garder 
+
+
+
+!!! aussi de dire que Internet Archives bouge ces data storage pour les garder à l'abri
 
 \begin{figure*}
   \centering

@@ -186,6 +186,8 @@
     %%\[ ( \big( \Big( \bigg( \Bigg( \vast( \Vast( \vastt( \Vastt(\]
 \makeatother
 
+\usepackage{dpfloat}
+
 \begin{document}
 
 % Front matter
@@ -596,7 +598,7 @@ Notons que pour tester si une page a évolué depuis sa précédente visite, le 
 
 \begin{table*}
   \label{tab:daff}
-  \begin{tabular}{lll}
+  \begin{tabular}{lrl}
     \toprule
     Méta données& Champ & Description\\
     \midrule  
@@ -606,7 +608,7 @@ Notons que pour tester si une page a évolué depuis sa précédente visite, le 
     &content&identifiant unique du bloc de données associé\\     
     &status&statut de retour du crawler (ok, request\_error, server\_error, etc)\\
     \midrule     
-    \multirow{12}{*}{\emph{facultatif  } \Vastt\{ }&crawl\_session&identifiant unique de la campagne de crawl\\
+    \multirow{12}{*}{\emph{facultatif   } \Vastt\{ }&crawl\_session&identifiant unique de la campagne de crawl\\
     &charset&encodage de la ressource\\
     &type&MIME Type (identifiant du format de donnée de la ressource)\\
     &corpus&nom du corpus d'archives associé\\
@@ -661,14 +663,75 @@ Bénéficiant d'une distribution open source, la Wayback Machine est aujourd'hui
 
 La Wayback Machine est redoutablement efficace lorsqu'il s'agit de rechercher une version précise d'une page déjà connue. Notons aussi qu'elle propose une API\footnote{\url{https://archive.org/help/wayback_api.php}} pour accélérer les traitements. Mais sans la possibilité de filtrer à priori le contenu des pages, tout le dispositif de fouille sera à développer du côté de l'explorateur qui bien souvent n'a pas les compétences ou les moyens techniques pour y arriver. Et si l'INA offre de meilleures fonctionnalités de recherche (plein text complet, n-gram, etc ...), le fait que l'on ne puisse accéder aux corpus que depuis des lieux dédiés reste un frein majeur à toute analyse. Ainsi, une asymétrie se dessine rapidement lorsque l'on parcourt la littérature basée sur les archives Web. Beaucoup de travaux portent sur la constitution en amont de corpus d'archives (sélection, collecte, etc), très peu en revanche se lancent dans l'exploitation ou le questionnement de corpus existants. Ces derniers, bien que précieux à juste titre, se \textit{limitent}\footnote{Pas forcément en conscience, mais nous pensons que les outils d'exploration jouent un rôle quand il s'agit de définir de la portée de ces travaux} soit à l'analyse de versions passées de sites identifiés à priori \citep{schafer_web_2016,gebeil_les_2016}, soit à l'extraction d'éléments singuliers d'un contenu archivé : des images \citep{ben-david_internet_2018} ou des liens hypertextes \citep{weltevrede_where_2012}.
 
-Les archives Web ont été construites pour inscrire la mémoire du Web sur un support durable et préserver notre héritage numérique. Offrir ainsi la possibilité aux chercheurs de demain d'interroger, de questionner et de critiquer le Web qui nous est contemporain. Mais plus on archive et plus la taille de ce Web passé grandit, laissant parfois les chercheurs seuls face à des corpus trop larges et trop vastes pour être explorer sans méthode et stratégie clairement définies. Les archives Web doivent rester une matière vivante. Prenons garde à ce qu'elles ne deviennent pas des capsules temporelles\footnote{\url{https://en.wikipedia.org/wiki/Westinghouse\_Time\_Capsules}} que l'on enterre dans l'espoir, qu'un jour, peut être, quelqu'un se décide à les rouvrir.   
-
-
+Les archives Web ont été construites pour inscrire la mémoire du Web sur un support durable et préserver notre héritage numérique. Offrir ainsi la possibilité aux chercheurs de demain d'interroger, de questionner et de critiquer le Web qui nous est contemporain. Mais plus on archive et plus la taille de ce Web passé grandit, laissant parfois les chercheurs seuls face à des corpus trop larges et trop vastes pour être explorer sans méthode et stratégie clairement définies. Les archives Web doivent rester une matière vivante. Prenons garde à ce qu'elles ne deviennent pas des capsules temporelles\footnote{\url{https://en.wikipedia.org/wiki/Westinghouse\_Time\_Capsules}} que l'on enterre dans l'espoir, qu'un jour, peut être, quelqu'un se décide à les rouvrir. 
 
 \section{Les archives Web de l'Atlas e-Diasporas}
 \label{sec:3_edias}
 
-Présentation rapide de l'ensemble des corpus et focus sur les Marocains (expliquation ...)
+\noindent Parallèlement au travail de cartographie présenté en section \ref{sec:2_atlas}, les chercheurs pilotant la construction l'Atlas e-Diasporas prennent la décision d'archiver l'ensemble des sites Web déjà répertoriés. Tout autant pour les préserver des assauts du temps \citep{khouzaimi_e-diasporas_2015} que pour permettre la tenue de recherches futures : se donner la possibilité d'un retour arrière, analyser les évolutions et transformations subies par ces réseaux. Déjà associée à la collecte des sites, l'INA se voit confier la charge de l'archivage. Toutes les e-Diasporas seront concernées par cette campagne de sauvegarde, mais  nous nous attarderons ici sur la seule description de la section marocaine de l'Atlas. 
+
+L'archivage du corpus marocain débute en Mars 2010 et se termine en Septembre 2014 après une collecte patiente et continue. Le collectage couvre l'ensemble des 156 sites de l'e-Diasporas marocaine. La fréquence de collecte associée à chaque site est définie en amont par les chercheurs. Celle ci est sera au final soit hebdomadaire (pour $56\%$ des sites), soit mensuelle (pour les $44\%$ restants). La majorité des sites archivés à la semaine sont les plus fréquements mis à jours : des blogs, des portails communautaires ou des médias. Les archives sont stockées suivant le format DAFF, vu comme l'union d'un fichier de méta données (\textit{metadata-r-00006.daff} : 13GB) et d'un fichier de données (\textit{data-r-00006.daff} : 151GB). Ces fichiers représentent un total de 17,043,833 ressources collectées, parmi lesquelles nous comptons 16,897,787 pages Web ($99\%$), 145,301 images, 700 vidéos et 44 enregistrements audio. Dans le chapitre \ref{chap:6} nous explorerons les sites \textit{yabiladi.com} et \textit{larbi.org} dont une présentation détaillée est donnée par la table \ref{tab:detail-archive}. Cette table introduit un premier élément de comparaison entre les archives e-Diasporas et leurs équivalents chez Internet Archive.
+
+\begin{table}
+  \label{tab:detail-archive}
+  \begin{tabular}{lrr}
+    \toprule
+    &larbi.org&yabiladi.com\\
+    \midrule
+    Nombre d'archives (e-Diasporas)  & 78,311 & 2,683,928\\
+    Nombre d'archives (Internet Archive) & 24,537 & 887,981\\
+    \midrule
+    Début de l'archivage  (e-Diasporas) & Mars 2010 & Mars 2010\\
+    Début de l'archivage  (Internet Archive) & Oct. 2002 & Fev. 2001\\
+    \midrule
+    Fin de l'archivage  (e-Diasporas) & Sept. 2014 & Sept. 2014\\
+    Fin de l'archivage  (Internet Archive) & Sept 2018 & Sept 2018\\    
+  \bottomrule
+\end{tabular}
+  \bigskip
+  \caption{Décompte des archives Web des sites \textit{yabiladi.com} et \textit{larbi.org}}
+\end{table} 
+
+
+\noindent Si la fréquence d'archivage (telle que mise en place par l'INA) semble plus élevée du côté d'e-Diasporas, la durée de collecte est importante chez Internet Archive. L'idée ici n'est pas de prouver qu'un corpus est mieux qu'un autre, mais de saisir les particularités de chacun. Un corpus d'archives Web n'est jamais parfait, bien au contraire, et nous émettons ici l'hypothèse que c'est par une approche mixte, en conjuguant diverses sources de données que nous maximiserons la précision scientifique des explorations à venir. Ainsi, sur la période 2010-2014 et dans les cas précis de \textit{yabiladi.com} et \textit{larbi.org}, la capture réalisée pour e-Diasporas semble plus fidèle. Il faudra en revanche l'associer à Internet Archive lorsque nous chercherons à remonter au delà de 2010. 
+
+Mais essayons maintenant d'étendre cette comparaison à l'ensemble des sites du corpus marocain. Voyons comment ces sites ont été archivés par différentes initiatives. Comme beaucoup de ces observations devrons être faites à la main (notamment à la BNF), nous nous limitons tout d'abord aux seules front pages (pages racines) de chaque site Web de l'e-Diasporas marocaine. Pour chacune de ces pages, nous consultons successivement les archives e-Diasporas (produites par l'INA), les archives de la BNF et les archives d'Internet Archive, puis nous notons leurs dates de premier et dernier crawl afin de se donner une idée de l'étendue des collectes. Les résultats sont présentés et agrégés par les figures \ref{fig:date-crawl-ina} (pour l'INA), \ref{fig:date-crawl-bnf} (pour la BNF) et \ref{fig:date-crawl-ia} (pour Internet Archive). Le nom de domaine des sites est inscrit en ordonnée, le temps en abscisse. Chaque ligne est divisée en années puis en mois (1 mois = un tiret). Si un tiret est colorié c'est qu'il se trouve entre les dates de premier et de dernier crawl du site correspondant.
+
+\iffalse
+
+\begin{figure*}[hbtp]%
+  \includegraphics[width=\linewidth]{graphics/date-crawl-ina}
+  \caption{Préservation des sites de l'e-Diaspora marocaine par l'INA}
+  \label{fig:date-crawl-ina}
+\end{figure*}
+
+\begin{figure*}[hbtp]%
+  \includegraphics[width=\linewidth]{graphics/date-crawl-bnf}
+  \caption{Préservation des sites de l'e-Diaspora marocaine par la BNF}
+  \label{fig:date-crawl-bnf}
+\end{figure*}
+
+\begin{figure*}[hbtp]%
+  \includegraphics[width=\linewidth]{graphics/date-crawl-ia}
+  \caption{Préservation des sites de l'e-Diaspora marocaine par Internet Archive}
+  \label{fig:date-crawl-ia}
+\end{figure*}
+
+\fi
+
+L'intuition précédente est confirmée par ces trois figures : les corpus vu depuis Internet Archive et (dans une moindre mesure) depuis la BNF couvrent naturellement une plus grande étendue temporelle que la collecte de l'INA, limitée aux seules années 2010-2014. En revanche, leurs collectages sont incomplets, les sites marocains ne sont pas tous archivés. C'est assez naturel au regard du périmètre d'archivage de la BNF notamment, qui ne doit théoriquement couvrir que les sites du domaine français, ici la BNF aura archivé par effet de bord des sites marocains en .com ou .org ce qui nous amène à relativiser la notion de domaine Web national telle que présenté plus tôt (Section \ref{sec:3_20ans}). Ce qui frappe, enfin, est la cohérence générale de notre corpus tel qu'il est présenté par l'INA. L'ensemble des sites sont archivés, collectés au moins une fois entre 2010 et 2014 et forment un ensemble thématiquement homogène. 
+
+Mais ces figures ne doivent pas non plus nous induire en erreur, nous ne voyons pas le détail des collectes : ni ce qu'il s'est passé entre les dates de premier crawl et de dernier crawl, ni le comportement du crawler vis à vis de pages éloignées de la racine des sites. Or, nous le découvrirons dans le chapitre suivant, archiver est avant tout une question de choix et de sélections, ce qui posera nombre de problèmes à l'explorateur d'archives Web. 
+
+\begin{center}
+	*
+\end{center}
+
+\noindent Au cours de ce chapitre, nous nous sommes attaché à décrire la genèse de l'archivage du Web comme technique de préservation d'un nouvel héritage numérique. L'idée étant de comprendre la nature des corpus que nous manipulerons dans la suite de manuscrit. Au tournant des années 2000, de nombreuses initiatives privées et publiques se sont emparées du sujet, déployant en un temps record (à l'échelle du Web) des moyens humains et techniques. Néanmoins cette dynamique semble aujourd'hui s'essouffler et force est de constater que, même si les corpus grandissent toujours plus, peu de chercheurs se sont déjà aventurés dans les archives. Le Web passé reste un terrain en partie inexploré. 
+
+Pour se saisir du Web, il aura fallu aux pionniers du Web inventer et déployer de nouvelles méthodes de collecte et de stockage. C'est choix techniques façonnent et régissent les archives Web telles que nous les découvrons aujourd'hui. Détacher du Web vivant, l'archive Web se consultent dans des lieux sanctuarisés, souvent à la main et à travers des outils qui, malgré eux, réduisent les archives Web à de simples documents. La sensation du Web comme environnement n'est pas restituée dans les archives. L'exploration y est forcément ciblée, réduite à une URL ou un mot clé. 
+
+Cependant, comme pour le Web vivant, l'unité d'exploration des archives reste la page Web. WARC et DAFF sont deux formats construits au dessus des pages qu'ils capturent et dotent, par là même, d'une nouvelle temporalité. Une fois sur fichier chaque version d'une même page se voit associée à une date de téléchargement. Cette date devient dès lors le seul marqueur temporel par lequel nous pouvons explorer les archives Web. Dans le chapitre suivant, nous chercherons ainsi à comprendre ce que cette datation implique pour l'explorateur.    
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapitre 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

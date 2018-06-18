@@ -735,46 +735,82 @@ Cependant, comme pour le Web vivant, l'unité d'exploration des archives reste l
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapitre 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\clearpage
+\begin{minipage}[t,leftmargin=5em]{1.5\linewidth}%
+\begin{adjustwidth}{-0.5cm}{}
 \chapter{Traces Discrétisées et Temporalité Figée} 
 \label{chap:4}
+\end{adjustwidth}
+\end{minipage}
+\hfill
+
+\noindent Au cours de ce chapitre, nous amorcerons un changement du point de vue, glissant du regard de l'archiviste vers celui de l'explorateur d'archives Web. 
+
+Un explorateur d'archive est une personne ayant l'intention de découvrir ou d'étudier un corpus d'archives Web donné (fini ou toujours en construction). Son geste pourra tout autant être motivé par une question de recherche précise que par sa seule curiosité. Ce faisant, l'explorateur devra démêler les traces d'un Web passé pour faire émer\-ger une information ou un savoir de cette masse de données. 
+
+Dans un premier temps, nous déconstruirons la structure des ar\-chives Web pour en saisir les règles et la grammaire interne. En effet, selon N. Brügger \citep{brugger_website_2009}, le Web archivé n'est déjà plus le Web, c'est un autre espace, un autre environnement. Lorsqu'un site du Web vivant est sélectionné, stocké et collecté, il subit une série de transformations qui forcent les archivistes à recréer une partie du système d'information du Web. Pour explorer les archives, il faut se détacher des automatismes acquis en parcourant le Web vivant. Sur ce point, nous présenterons ici certaines propriétés et certains biais inhérents au Web archivé qu'il faudra prendre en considération avant toute analyse. 
+
+Pour l'explorateur, les archives Web se présentent d'abord comme des traces discrétisées du Web vivant, arrachées à un flux d'information en continu ou à un territoire en expansion. La discrétisation du Web par les archives est le fruit d'une sélection, mais surtout d'un ensemble de destructions, comme le souligne J. Derrida \citep{derrida_trace_2014}. Archiver c'est avant tout détruire ce que l'on ne peut conserver.
+
+Par ailleurs, la collecte propulse les ressources archivées dans une nouvelle temporalité. Les pages du Web passé n'appartiennent plus au temps du Web vivant mais au temps des archives : une temporalité faite d'instantanés figés et sans possibilité d'extension. Il n'y a pas de continuité absolue entre deux versions d'une même page archivée. D'un crawl à l'autre tout peut changer (Section \ref{sec:3_constituer}). Ainsi, il nous faudra discuter des phénomènes de leurres et de cécité des collectes\footnote{\textit{crawl blindness} en anglais}, de la notion de cohérence entre pages et de la présences de contenus sur-archivés qui peuvent être source de nombreux biais d'analyse. 
+
+Passé ces mises en gardes, nous décrirons le développement de notre propre moteur d'exploration d'archives Web. Un moteur adapté au format DAFF et suffisamment flexible pour être le support de nos futures expérimentations. Nous détaillerons notre chaine d'extraction et d'enrichissement des archives, ainsi que la pièce maitresse de tout système de fouille : le schéma d'indexation et ses implications. 
+
+Enfin, nous constaterons que les archives Web ne sont pas des traces directes du Web vivant, mais plutôt les traces directes des crawlers. Nous donnerons ainsi des exemples d'artéfacts de crawl, présents dans les archives de l'Atlas e-Diasporas et qui, à nos yeux, sont des freins majeurs à toute exploration large des corpus. Ce sera l'occasion de porter un regard critique sur les archives telles que nous les connaissons et d'ouvrir la voix à une exploration fragmentée du Web passé.\\
+
 
 \section{Détruire pour mieux archiver}
 \label{sec:4_derrida}
 
-on parle en fait de pages depuis alta vista The launch of the AltaVista service in December, 1995 proved that all
-of the pages on the Web could be treated as a single collection, and
-indexed and made searchable for all users on the Net.
+\noindent J.L. Borges ouvre la seconde partie de son recueil de nouvelles \textit{Fictions} \citep{borges_fictions_1974} par un court texte intitulé \textit{Funes ou la mémoire}. Il y fait le compte rendu concis de la rencontre entre son narrateur et le mystérieux Irénée Funes, personnage ayant la capacité de ne rien oublier, jamais. Funes a une mémoire prodigieuse : \\
 
-De Derrida aux traces discrétisées, de la sélection effectuée par le crawler et l'archiviste, les archives sont des traces discrètes du Web, comme Funes on ne peut tout garder 
+\begin{fullwidth}
+"\textit{En effet, non seulement Funes se rappelait chaque feuille de chaque arbre de chaque bois, mais chacune des fois qu'il l'avait vue ou imaginée. Il décida de réduire chacune de ses journées passées à quelque soixante-dix mille souvenirs, qu'il définirait ensuite par des chiffres. Il en fut dissuadé par deux considérations : la conscience que la besogne était interminable, la conscience qu'elle était inutile. Il pensa qu'à l'heure de sa mort il n'aurait pas fini de classer tous ses souvenirs d'enfance.}" --- \citep[p.~116-117]{borges_fictions_1974}\\
+\end{fullwidth}
 
+\noindent L'esprit de Funes est engorgé de souvenirs d'une infinie précision, enregistrés en continus. Mais la mémoire pour fonctionner, nous dit Borges, a besoin d'oublier, de sélectionner et de généraliser. C'est en substance la thèse soutenue par J. Derrida qui décrit le geste de l'archiviste comme un geste de pouvoir : le pouvoir de choisir ce qui doit être préserver ou non. L'archivage est le résultat d'une sélection féroce qui doit détruire avant de sauver : "\textit{Il n'y a pas d'archives sans destruction, on choisit, on ne peut pas tout garder.}" \citep[p.~60]{derrida_trace_2014}. C'est ainsi que l'organisation légitime de l'héritage collectif revient aux seuls archivistes qui définissent au présent la mémoire de demain\footnote{Internet Archive décide, suite à l'élection de D. Trump en 2016, de créer une nouvelle copie de ses corpus d'archives Web et de les déplacer au Canada (\url{https://frama.link/hgBbtPp6})}, en classifiant et hiérarchisant dans les bibliothèques les traces de nos expériences passées. Ce faisant, pour Derrida "\textit{l'archive commence là où la trace s'organise, se sélectionne}" \citep[p.~61]{derrida_trace_2014}, car toute expérience finit tôt ou tard par s'effacer, il en va de sa nature même. Ainsi, pour maintenir le lien qui nous renvoie à ce qui n'est plus là, il faut archiver nos traces avant qu'elle ne disparaissent. 
 
+Le Web vivant est tout autant un flux continu d'information qu'un territoire en perpétuelle expansion (Section \ref{sec:2_web}). Pour en archiver les traces, il faut procéder par \textbf{discrétisation}, c'est à dire : diviser une forme continue en une ou plusieurs valeurs individuelles. Les systèmes de stockage WARC et DAFF (Section \ref{sec:3_constituer}) réduisent le Web en un ensemble discret de pages archivées. Or, depuis le lancement d'Alta Vista en 1995\footnote{Alta Vista fut le plus important moteur de recherche pré-Google, capable d'indexer une grande partie des pages du Web et de les rendre accessibles via des requêtes plein-texte (\url{https://en.wikipedia.org/wiki/AltaVista})}, la page Web est considérée comme valeur élémentaire d'indexation, de fouille et d'exploration de la toile. Il en va de même pour les archives Web pour qui la page demeure l'unité de base de toute collecte. Ainsi, dans la suite de ce manuscrit, nous schématiserons une campagne de crawl comme telle : 
 
-!!! aussi de dire que Internet Archives bouge ces data storage pour les garder à l'abri
+Un site Web archivé consiste en \textit{n} pages Web numérotées $\{p_1$,...,$p_n\}$. Un corpus d'archives Web est le résultat d'un ou plusieurs crawls successifs $\{c_1$,...,$c_l\}$. Nous appelons crawl $c_i$ le processus de collecte des pages Web $\{p_1$,...,$p_n\}$ d'un site Web donné. Le temps nécessaire au téléchargement des pages est supposé négligeable. Nous appelons $t_i(p_j)$ la date de téléchargement de la page $p_j$ au cours du crawl $c_i$. La première date de téléchargement d'une page $p_j$ est, enfin, notée $\min\limits_{i} t_i(p_j)$. La figure \ref{fig:discret} illustre cette mécanique pour les pages $p_1, p_2, p_3$. 
 
-\begin{figure*}
-  \centering
-  \includegraphics[width=\linewidth]{graphics/boulevard}
-  \caption{"Boulevard du Temple", Louis Daguerre, 1838}
-  \label{fig:boulevard}
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/discretisation}
+  \caption{Archivage des pages $p_1, p_2, p_3$ au cours du crawl $c_i$}
+  \label{fig:discret}
 \end{figure*}
 
-
-\section{Un temps sans extension}
+\section{Un temps sans durée}
 \label{sec:4_temporalite}
 
-Bon idéalement l'archive devrait être iso au site, mais ce n'est plsu le web cf brugger 
-Mais en fait on transforme le site pour l'archiver : re-creation of the Web information system
+\noindent Au cours d'une collecte, les pages archivées sont propulsées dans une nouvelle temporalité. Elles n'ap\-partiennent plus au temps présent du Web vivant, mais au temps figé des archives passées. Comment dès lors capturer le temps présent ? Cette question nous ramène à Saint Augustin, dont l'expression du  présent à partir de l'instant influence encore aujourd'hui la pensée occidentale. Pour Saint Augustin, le présent est une suite infinie de points élémentaires, des instantanés sans étendue :\\ 
 
-Ici on part de Saint Augustin et de sa définition d'un présent sans extension qui a influencer le rapport des occidentaux au temps. Ce rapport au temps se retrouve lorsque l'on étudie en détail les modèles d'exploration des archives web qui s'appuient sur la date de capture d'un contenu. S'en suit plusieurs remarques qu'il faut conserver en tete avant de se plonger dans toute exploration
+\begin{fullwidth}
+"\textit{(...) Et cette même heure se compose elle-même de parcelles fugitives. Tout ce qui s'en détache, s'envole dans le passé; ce qui en reste est avenir. Que si l'on conçoit un point dans le temps sans division possible de moment, c'est ce point-là seul qu'on peut nommer présent. Et ce point vole, rapide, de l'avenir au passé, durée sans étendue; car s'il est étendu, il se divise en passé et avenir. Ainsi, le présent est sans étendue.}" ---  \citep[livre XI, chap. XV, 20, p.~195]{saint_augustin_confessions_1993}\\
+\end{fullwidth}
 
-proposer ici une échelle de datation (date de téléchargement et date de last modified)
+\noindent Le présent se déploie sous nos yeux comme un temps insaisissable qui, à peine éprouvé, cesse déjà d'exister pour se diluer dans le passé. La seul manière de le capturer reste donc de le diviser et de le réduire à ses plus petits éléments. Ainsi en va-t-il des archives Web qui sont, par construction, des instantanées du Web vivant : une suite de blocs DAFF régulièrement collectés et associés à des date de téléchargement. 
+
+Mais dans le temps des archives il n'y pas de durée. Toute page collectée n'a d'étendue temporelle que sa seule date de téléchargement. Sur ce point, l'un des enjeux de l'exploration sera justement de réinstaller de la durée dans les corpus archivés. Les phénomènes que nous souhaitons observer et étudier ont besoin d'être rapportés à une durée. Que l'on parle de l'évolution lente d'une communauté de bloggeurs ou de l'éruption soudaine d'un événement dans un forum de discussion, il faudra à chaque fois pouvoir en éprouver l'étendue dans le temps. 
+
+Pour réintégrer de la durée dans les archives, nous nous proposons de discuter de la notion de \textbf{persistance}. Une page archivée sera dite persistante si d'une version à l'autre, son contenu reste inchangé. Dans la formalisme DAFF, les données des pages sont identifiées par des clés SHA-256 (Section \ref{sec:3_constituer}). Ces clés sont des signatures uniques construites à partir du contenu même des pages archivées. Ainsi, en comparant les deux clés SHA-256 de deux versions successivement crawlées d'une même page, il est possible de savoir si cette page a évolué ou non. Par se procéder, nous pouvons identifier des chaînes de persistance entre différents collectages.
+
+Chaque chaîne de persistance s'ouvre sur une date de \textit{dernière modification}. Nous appelons ainsi $\mu_i(p_j)$ la date de \textit{dernière modification} d'une page $p_j$ au cours d'un crawl $c_i$, avec $\mu_i(p_j) \leq t_i(p_j)$. Par définition, au sein d'un même crawl, la date de dernière modification d'une page précédera toujours (ou sera égale à) sa date de téléchargement. La figure \ref{fig:last_modified} donne à voir des chaînes de persistance entre les multiples captures de la page $p_1$.
+
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/last_modified}
+  \caption{Chaînes de persistance entre captures (bleu) et dates de dernière modification (rouge) pour la page $p_1$}
+  \label{fig:last_modified}
+\end{figure*}
+
+\noindent Intuitivement, il devient alors possible de dire d'une page archivée qu'elle n'a pas évolué depuis telle ou telle collecte, qu'elle a duré dans le temps. De plus, grâce aux chaînes de persistance, la datation des corpus d'archives Web s'affine, se fait plus précise. Une page ne sera plus maintenant seulement rapportée à sa seule date de téléchargement mais également à sa date de dernière modification, potentiellement bien antérieure. La table \ref{tab:datation_1} propose ainsi une échelle de datation, utile pour évaluer la précision historique d'un élément du Web passé dont l'unité d'analyse reste, pour le moment, la page Web :\\
 
 \begin{table}
 \hspace{2em}%
   \label{tab:datation_1}
   \begin{tabular}{lll}
     \toprule
-    Niveau & Nature de la date &\\
+    Unité & Nature de la date &\\
     \midrule
     page&téléchargement & \tikzmark{start}\\
     page&dernière modification & \tikzmark{end}\\         
@@ -785,112 +821,114 @@ proposer ici une échelle de datation (date de téléchargement et date de last 
 \end{table} 
 
 \begin{tikzpicture}[overlay,remember picture]
-\draw[->] let \p1=(start), \p2=(end) in ($(\x1,\y1)+(0.8,0.2)$) -- node[label=right:Validité historique] {} ($(\x1,\y2)+(0.8,0)$);
+\draw[->] let \p1=(start), \p2=(end) in ($(\x1,\y1)+(0.8,0.2)$) -- node[label=right:précision historique] {} ($(\x1,\y2)+(0.8,0)$);
 \end{tikzpicture}
 
-\begin{figure}
-  \caption{Warc vs Daff}
-  \label{fig:warcVsDaff}
-\end{figure}
+\noindent En nous appuyant sur cette grammaire, nous souhaitons maintenant discuter de trois biais majeurs dont il faut prendre connaissance avant de débuter toute exploration.
 
-\subsection{Crawl blindness}
+\subsection{Cécité de crawl}
 
-\subsection{Cohérence}
+\noindent À ce que nous appelons cécité de crawl\footnote{\textit{Crawl blindness} en anglais} correspondent l'ensemble des changements subis par une page Web mais non captés par le crawler ou, tout au moins, mal daté par ce dernier. C'est une notion assez intuitive, dont nous donnons une illustration avec la figure \ref{fig:crawl_blind}. Dans cet exemple, une page $p_1$ subit quatre évolutions successives $e_1, e_2, e_3, e_4$ correspondant respectivement à : la publication d'une image accompagné d'un texte ($e_1$ puis $e_2$), la publication d'une seconde image directement suivie par sa suppression ($e_3$ puis $e_4$). Aux yeux de l'explorateur seul le résultat de $e_2$ restera gravé dans les archives (points bleus). Jamais il n'aura connaissance de l'état $e_1$ ni même de l'existence de $e_3$.     
 
-\subsection{Duplicata}
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/crawl_blind}
+  \caption{Cécité de crawl pour une page $p_1$}
+  \label{fig:crawl_blind}
+\end{figure*}
 
-\section{Construire un moteur d'exploration d'archive}
+\noindent Ces loupés sont essentiellement dus à la difficulté de calibrer un crawler vis à vis de la fréquence de mise à jour d'un site (Section \ref{sec:3_constituer}).
+
+\subsection{Cohérence entre pages}
+
+\noindent Dans les archives discrétisées du Web, deux pages collectées ne sont pas forcément cohérentes l'une envers l'autre. Prenons l'exemple de deux pages du Web vivant connectées deux à deux par un lien de citation hypertexte. L'une citant l'autre. Depuis la présentation de l'Atlas e-Diasporas (Section \ref{sec:2_atlas}), nous savons à quel point la nature de ces liens est importante aux yeux des sociologues et historiens.
+
+Mais qu'en est-il, si dans les archives la capture de ces sites est espacée de plusieurs mois ou de plusieurs années ? Ce lien a-t-il encore du sens ? Peut on dire que ces pages sont toujours cohérentes entre elles ? Sur ce point, M. Spaniol \citep{spaniol_data_2009} propose une définition générale de la \textbf{cohérence} entre deux pages archivées, ainsi :
+
+\begin{itshape}
+\begin{enumerate}[leftmargin=*]  
+\item Une page est toujours cohérente avec elle même
+\item L'intervalle d'invariance $[\mu_i(p_j),\mu_i(p_j)^*]$ de la page $p_j$ est borné par la date de dernière modification $\mu_i(p_j)$ par rapport à $ t_i(p_j)$ et le prochain changement $\mu_i(p_j)^*$ subit par $p_j$ directement après $t_i(p_j)$
+\item Deux pages ou plus sont cohérentes si il existe un seul point dans le temps (ou un intervalle) $t_{\mathrm{coherence}}$ tel que l'on puisse trouver une intersection non vide des intervalles d'invariance de toutes ces pages :
+\end{enumerate}
+\[
+	\forall p_j, \exists t_{\mathrm{coherence}}:t_{\mathrm{coherence}} \in \bigcap^n_{i=j}[\mu_i(p_j),\mu_i(p_j)^*] \neq \emptyset
+\]
+\end{itshape}
+
+\noindent La cohérence, telle qu'énoncée ici, est une cohérence absolue. Il suffit d'un unique chevauchement d'invariance, même en dix années de collecte, pour dire de deux pages qu'elles sont cohérentes.
+
+Or l'explorateur d'archive est avant tout un observateur, son point de vue est situé : dans l'espace (une URL donnée) autant que dans le temps (une date, un intervalle). Au cours d'une exploration, nous serons plus souvent amené à nous demander si deux pages sont cohérentes par rapport à notre point d'observation $t_i(p_j)$ plutôt que dans le cas général. Cette focalisation du regard est ce que M. Spaniol nomme \textbf{cohérence par observation}\footnote{\textit{Observable coherence} en anglais et dans la littérature \citep{spaniol_data_2009}} et qu'il définit comme suit :\\
+
+\begin{itshape}
+\noindent Deux pages ou plus sont cohérentes par observation, si il existe un seul point dans le temps $t_{\mathrm{coherence}}$ tel que l'on puisse trouver une intersection non vide d'intervalles couvrant respectivement la date de téléchargement $t_i(p_j)$ et la date de dernière modification correspondante $\mu_i(p_j)$ (avec $\mu_i(p_j) \leq t_i(p_j)$) :
+\[
+	\forall p_j, \exists t_{\mathrm{coherence}}:t_{\mathrm{coherence}} \in \bigcap^n_{i=j}[\mu_i(p_j),t_i(p_j)] \neq \emptyset
+\]
+\end{itshape}
+
+\noindent La figure \ref{fig:coherence} illustre pour deux points d'observation successifs, la notion de cohérence par observation. Dans le premier cas $p_1$ et $p_2$ sont effectivement cohérentes. Dans le second, les intervalles d'invariance ne se chevauchant malheureusement pas, il n'est pas possible de dire de $p_1$ et $p_2$ qu'elles sont cohérentes. 
+
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/coherence}
+  \caption{Cohérence par observation entre les pages $p_1$ et $p_2$}
+  \label{fig:coherence}
+\end{figure*}
+
+\subsection{Contenus dupliqués}
+
+\noindent L'une des particularités du formalisme DAFF est justement de ne pas dupliquer dans les archives des ressources Web qui n'auraient pas évolué (Section \ref{sec:3_constituer}). Seules les pages ayant subi une transformation sont ainsi re-collectées. Néanmoins, d'un crawl à l'autre, il est possible qu'une partie du contenu de la page soit similaire à la version précédemment capturée et ce malgré les divers changements qu'elle aurait pu subir. On pense notamment aux pages d'accueil des sites d'actualités ou des forums qui présentent des informations publiées sous la forme de listes où chaque nouvel élément est inséré en en-tête. Mécaniquement certains éléments peuvent se retrouver à plusieurs enregistrés dans les archives comme le présente la Figure \ref{fig:duplicate}.
+
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/duplicate}
+  \caption{Contenu d'une page (en rouge) collecté plusieurs fois}
+  \label{fig:duplicate}
+\end{figure*}
+
+\noindent Cela peut poser de lourds biais d'analyse si l'on cherche par exemple à connaitre la distribution d'un mot clé extrait des pages archivées. Ce dernier pourra, du fait de la structure même du corpus, être artificiellement sur-représenté dans les résultats. 
+
+\section{Construire un moteur d'exploration d'archives Web}
 \label{sec:4_moteur}
+
+\noindent Ces différents biais maintenant présentés, nous pouvons nous tourner vers la description de l'architecture de notre moteur d'exploration d'archives Web. Nos corpus étant en DAFF, il n'a pas forcément été possible de réutiliser des éléments open-source issus d'autres moteurs (quasiment tous conçus pour accueillir du WARC). De fait cette section est intéressante pour qui souhaite mettre en place ou comprendre dans le détail la mécanique d'une tel système. Il s'agira donc ici d'une description plutôt orientée ingénierie dont la majeure partie a fait l'objet d'une publication démonstration\footnote{Lobbé, Q. (2008), \textit{Revealing Historical Events out of Web Archives}, TPDL 2018}.
 
 \subsection{Extraction et enrichissement}
 
+les daff sont mangés dans un java, là ça va dans un hdfs puis dans un spark distribué où on join les data et méta et où on ajoute des infos venant de l'extérieure puis on envoie vers solr 
+
 \subsection{Définition du schéma d'indexation}
 
-bon y'a déjà des travaux 
+bon y'a déjà des travaux et on a vue que l'indexation se faisait à la page (document based partition)
 
-Web archives receive a significant number of queries with a
-specific time interval of interest, denoted time-travel queries
-"Characterizing search
-behavior in web archives".  Thus, partitioning the index by time enables searching
-only the sub-index corresponding to that interval.
+donc on va définir notre index 
 
-In this
-work,  we  refer  to  the  time  when  the  web  documents  were
-crawled, but we could use other time attributes associated
-to  documents,  such  as  their  creation  or  publication  dates.
-Some works use instead the time mentioned on the document
-text "On the
-value of temporal information in information retrieval".
+mais d'abord c'est quoi un index ?
 
-We can have at least four types of partitions, where the
-index is split per time and then per document or term, or the
-opposite.
+c'est quoi un schéma ?
 
-When  partitioning  first  by  document  and  then  by  time,
-subsets of documents are allocated to computer clusters ac-
-cording to their identifiers "A time machine for text search"
+à quoi correspond notre schéma ?
 
-Les gars préfèrent rester à la page 
-The document-based partition of the index offers superior
-query throughput and does not require rebuilding of the in-
-dexes  each  time  new  documents  are  indexed,  contrary  to
-the term-based partition. 
+\subsection{WAE}
 
-moi je vais en dessous 
+Au dessus de notre index on va créer des stratégies de requetes (à gauche ou à droite) pour intérroger les archives par rapport à une date 
 
-Alternatives  for  rebuilding  the  indexes
-when using the term-based partition exist, but are also more
-complex  and  less  efficient  than  using  the  document-based
-partition "Index maintenance for time-travel text
-search".
-
-%%%%%
-The open source Wayback Machine (WM) is a set of loosely
-coupled modules that can be exchanged and configured ac-
-cording  to  the  web  archive  needs  "Wayback’ for Accessing Web Archives"
-
-The Internet Archive’s WM uses as index a flat file sorted
-alphabetically by URL and divided in similar size buckets.
-The  buckets  are  distributed  across  web  servers  and  map
-URLs to the ARC files storing them [10].  Thus, each web
-server  responds  over  a  subset  of  documents  (i.e.   URLs),
-meaning that this architecture uses a document-based index
-partition.   When the WM receives  a URL query,  a broker
-routes  it  to  the  web  server  handling  that  range  of  URLs,
-which  replies  with  the  list  of  all  URL  versions.   To  access
-one of these versions, the web server replies with the respec-
-tive ARC name.  Then, the ARC file is located by sending a
-UDP broadcast to all storage servers.  There are more than
-2500 storage servers in the primary data center, each with up
-to four commodity disks.  The storage server containing the
-ARC file replies to the broadcast with the local file path and
-its identification.  Finally, the client browser is redirected to
-the respective storage server, which runs a lightweight web
-server to deliver the ARC file.
-%%%%%
-The  Portuguese  Web  Archive  (PWA)
-http://archive.pt
-is  based  on  the
-WM, but uses NutchWAX as its full-text and URL search
-engine "Introducing the Portuguese web archive initiative."
-
-NutchWax est un search basé sur lucene mais adapté pour bouffer du WARC "Full text searching of web archive collections." qui travaille sur une indéxation à la page puis sur un bucket of time
-
-Il y a d'autre search qui font du solr pur au lien de Nutch "A survey on web archiving initiatives"
-%%%%%
-Everlast est un systeme de search en peer to peer 
-ça partitionne par terme puis par time "EverLast:  a distributed architecture for preserving the web."
-
-%%%%%
-à la bpi c'est du elasticsearch 
-
-
-\subsection{Détection d'événements}
+Puis on va créer peastee pour accompagner les rescherches avec certaines facettes et des histograms entre autre chose 
 
 \section{Les archives sont des traces indirectes du Web}
 \label{sec:4_legacy}
 
-Les archives sont les traces directes du crawler et non du web (Cf mises en gardes précédentes) + exemple sur yabiladi.com donc il faut descendre au niveau de la page et y extraire d'autres temporalités, d'autres forme d'exploration qui ne dépendent pas non plus de la linéarité proposé par les moteurs d'exploration classique.
+Et là on tente une requete et merde ... y'a un trout, bon ok on pensait bien qu'il pouvait y avoir des crawl blindess mais à ce point !
+
+Les archives sont les traces directes du crawler et non du web (Cf mises en gardes précédentes) + exemple sur yabiladi.com 
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=\linewidth]{graphics/boulevard}
+  \caption{"Boulevard du Temple", Louis Daguerre, 1838}
+  \label{fig:boulevard}
+\end{figure*}
+
+donc il faut descendre au niveau de la page et y extraire d'autres temporalités, d'autres forme d'exploration qui ne dépendent pas non plus de la linéarité proposé par les moteurs d'exploration classique.
+
 La désagragation se fait dans le modèle de données mais également dans la façon de conduire sont exploration. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapitre 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -42,6 +42,11 @@ Aturban, M., Nelson, M.~L., and Weigle, M.~C. (2017).
 \newblock Difficulties of {Timestamping} {Archived} {Web} {Pages}.
 \newblock {\em arXiv preprint arXiv:1712.03140}.
 
+\bibitem[Augustin, 1993]{saint_augustin_confessions_1993}
+Augustin, S. (1993).
+\newblock {\em Confessions}.
+\newblock Folio. Gallimard Education.
+
 \bibitem[Baeza-Yates et~al., 2005]{baeza-yates_crawling_2005}
 Baeza-Yates, R., Castillo, C., Marin, M., and Rodriguez, A. (2005).
 \newblock Crawling a country: better strategies than breadth-first for web page
@@ -458,6 +463,12 @@ Schneider, S.~M., Foot, K., Kimpton, M., and Jones, G. (2003).
 \newblock Building thematic web collections: challenges and experiences from
   the {September} 11 {Web} {Archive} and the {Election} 2002 {Web} {Archive}.
 \newblock {\em Digital Libraries, ECDL}, pages 77--94.
+
+\bibitem[Spaniol et~al., 2009]{spaniol_data_2009}
+Spaniol, M., Denev, D., Mazeika, A., Weikum, G., and Senellart, P. (2009).
+\newblock Data quality in web archiving.
+\newblock In {\em Proceedings of the 3rd workshop on {Information} credibility
+  on the web}, pages 19--26. ACM.
 
 \bibitem[Spaniol and Weikum, 2012]{spaniol_tracking_2012}
 Spaniol, M. and Weikum, G. (2012).

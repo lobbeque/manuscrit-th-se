@@ -889,23 +889,46 @@ Or l'explorateur d'archive est avant tout un observateur, son point de vue est s
 \section{Construire un moteur d'exploration d'archives Web}
 \label{sec:4_moteur}
 
-\noindent Ces différents biais maintenant présentés, nous pouvons nous tourner vers la description de l'architecture de notre moteur d'exploration d'archives Web. Nos corpus étant en DAFF, il n'a pas forcément été possible de réutiliser des éléments open-source issus d'autres moteurs (quasiment tous conçus pour accueillir du WARC). De fait cette section est intéressante pour qui souhaite mettre en place ou comprendre dans le détail la mécanique d'une tel système. Il s'agira donc ici d'une description plutôt orientée ingénierie dont la majeure partie a fait l'objet d'une publication démonstration\footnote{Lobbé, Q. (2008), \textit{Revealing Historical Events out of Web Archives}, TPDL 2018}.
+\noindent Ces différents biais maintenant présentés, nous pouvons nous tourner vers la description de l'architecture de notre moteur d'exploration d'archives Web. Nos corpus étant en DAFF, il n'a pas forcément été possible de réutiliser des éléments open-source issus d'autres moteurs (quasiment tous conçus pour accueillir du WARC). De fait cette section est intéressante pour qui souhaite mettre en place ou comprendre dans le détail la mécanique d'une tel système. Notre architecture suit néanmoins la structure classique d'une chaîne d'extraction, d'analyse et de visualisation de données à grande échelle \citep{marz_big_2015}. La figure \ref{fig:architecture} donne à voir une illustration de son fonctionnement.  Il s'agira donc ici d'une description plutôt orientée ingénierie dont la majeure partie a fait l'objet d'une publication démonstration\footnote{Lobbé, Q. (2018), \textit{Revealing Historical Events out of Web Archives}, TPDL 2018}.
+
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/architecture}
+  \caption{Architecture de notre moteur d'exploration d'archives Web}
+  \label{fig:architecture}
+\end{figure*}
 
 \subsection{Extraction et enrichissement}
 
-les daff sont mangés dans un java, là ça va dans un hdfs puis dans un spark distribué où on join les data et méta et où on ajoute des infos venant de l'extérieure puis on envoie vers solr 
+\noindent Nous suivons ici l'hypothèse que notre moteur doit rendre accessible les archives Web d'une seule e-Diaspora à la fois. Nous prendrons comme exemple les archives du corpus marocain.
+ 
+La première étape consiste à extraire les informations contenues dans les fichiers DAFF. Rappelons que chaque corpus est divisé en deux fichiers DAFF : les données d'une part (\textit{data}) et les méta données (\textit{metadata}) d'autre part. Pour ce faire, nous commençons par adapter une librairie JAVA fournie par les équipes de l'INA (\textit{dlweb-commons}) qui cherche à transférer les archives des fichiers DAFF vers le système de stockage d'Hadoop\footnote{Voir \url{https://hadoop.apache.org/} et \url{https://fr.wikipedia.org/wiki/Hadoop}}, le Hadoop Distributed File System (HDFS). Le HDFS est un système de fichiers qui permet de manipuler de larges volumes de données, de manière distribuée (ie : réparti entre plusieurs machines) et relativement scalable (ie: pouvant supporter une forte montée en charge). Le format DAFF a ceci de limitant, qu'il reste pensé pour le stockage et non pour la manipulation des données. Filtrer un fichier DAFF par URL ou date de téléchargement n'est, par exemple, pas trivial.
 
-\subsection{Définition du schéma d'indexation}
+Une fois chargées dans le HDFS, nos data et metadata sont envoyées dans un pipeline de traitement nommé Spark\footnote{\url{https://spark.apache.org/}}. Spark permet de travailler par batchs (ie: par petits lots de données) dans un environnement distribué : c'est à dire que les data et metadata seront segmentées en sous ensembles plus facilement manipulables, puis répartis sur plusieurs machines où elles subiront toutes les mêmes traitements en parallèle (filtres, jointure, groupement, etc). Spark est un outil flexible dans lequel nous pouvons définir une suite d'instructions ayant pour finalité la fusion des data et metadata en une seule et même source de données. La figure \ref{fig:spark} décrit la manière dont s'enchainent ces diverses transformations. Les metadata sont traitées en premier et peuvent suivant la configuration du système être filtrées par date de téléchargement ou nom de domaine (ie: par site Web). Puis, en nous rappelant que les metadata possèdent chacune un pointeur vers le bloc de data dont elles sont l'extension (champ \textit{content} en DAFF, Section \ref{sec:3_constituer}), nous remplaçons l'identifiant des metadata pour l'identifiant de la data correspondante. Cette manipulation nous permet ensuite de grouper les metadata par identifiants communs, c'est à dire, toutes les metadata d'une seule et même chaine de persistance (Section \ref{sec:4_temporalite}). C'est à cette étape que nous identifions notamment les dates de dernière modification. De là, nous opérons une jointure entre les metadata et data afin de rassembler enfin les méta données du crawler et le contenu même des pages archivées. Pour terminer, nous préparons nos données à être envoyées dans le moteur de recherche, sans oublier de les enrichir avec des informations tirées de l'Atlas e-Diasporas (type de sites, langue, etc).  
 
-bon y'a déjà des travaux et on a vue que l'indexation se faisait à la page (document based partition)
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/spark}
+  \caption{Transformation des data et metadata dans Spark}
+  \label{fig:spark}
+\end{figure*}
 
-donc on va définir notre index 
+\noindent Deux configurations différentes ont été testées pour Spark, l'une distribuée entre plusieurs machines d'un même cluster (ie: groupe de machines), l'autre distribuée sur l'ensemble des cœurs d'une seule machine puissante. Si la première configuration s'est révélée la plus rapide (traitement de l'ensemble du corpus marocain en 3 jours), il a fallut néanmoins s'en détourner. En effet, Spark étant particulièrement dur à piloter sur un réseau souvent instable, il était régulier de voir le traitement des données s'arrêter après avoir perdu connexion avec une ou plusieurs machines. De fait, nous avons préféré nous contenter de la seconde configuration, plus lente (une dizaine de jours) mais garantissant la totalité du traitement. 
 
-mais d'abord c'est quoi un index ?
+\subsection{Adapter un moteur de recherche}
 
-c'est quoi un schéma ?
+\noindent Au cours de la Section \ref{sec:3_constituer}, nous avons présenté l'ensemble des méthodes aujourd'hui utilisées pour fouiller dans les archives. La plupart d'entre elles, s'appuient sur l'utilisation de moteurs de recherches qui offrent la possibilité de requêter des documents\footnote{Les données manipulées par des moteurs de recherche sont de manière générale appelées \textit{documents}} en plein texte. De notre côté, nous avons choisi d'adapter une solution open-source existante Solr/Lucene à la nature particulière de nos archives Web. Solr\footnote{Voir \citep{grainger_solr_2014} et \url{http://lucene.apache.org/solr/}} est un serveur de \textit{search}, c'est à dire qu'il permet de faire le lien entre une requête utilisateur (un mot clé, une dimension, etc) et un ensemble de documents préalablement indexés. Solr est construit au dessus de la librairie d'indexation Lucene\footnote{Voir \citep{hatcher_lucene_2004} et \url{http://lucene.apache.org/index.html}} dont le principe de base est de stocké un texte dans un \textbf{index inversé}.
 
-à quoi correspond notre schéma ?
+\begin{marginfigure}%
+  \includegraphics[width=\linewidth]{graphics/index}
+  \vspace*{0.2cm}  
+  \caption{Principe de base d'un index inversé}
+  \label{fig:index}
+\end{marginfigure} 
+
+
+Le fonctionnement basique d'un index inversé est illustré par la figure \ref{fig:index}. Un premier tableau de données (a) renferme le contenu de deux documents $doc 1$ et $doc 2$ dont les identifiants (\textit{doc id}) sont respectivement $0$ et $1$. Un second tableau de données (b) contient ce que l'on appelle un dictionnaire de termes (\textit{term dict}). Dans ce dictionnaire, sont répartis l'ensemble des mots uniques (numérotés de $1$ à $5$) contenus dans $doc 1$ et $doc 2$. Ces mots sont identifiés par des \textit{term id} et sont, de plus, associés à une \textit{posting list} qui fait correspondre à chaque mot la liste des doc id dans lesquels il est présent. 
+
+Ainsi, pour réaliser une recherche plein texte, il suffira de parcourir l'ensemble du term dict de nos indexes jusqu'à trouver les mots correspondants à la requête de l'utilisateur et, par extension, les documents qui y sont associés. Ces deux tableaux de données (a) et (b) forment ce que l'on appelle un \textit{segment}, soit le bloc de base de tout index inversé. On nomme \textbf{indexation} l'action de stocker un texte dans un index inversé. Différentes stratégies peuvent être mise en place pour accélérer la recherche dans un index, en optimiser la taille, etc.\footnote{Pour de plus amples détails sur l'indexation via Lucene/Solr, voir mon cours sur le fonctionnement interne des moteurs de recherche (Lobbé, Q. 2016, Voyage au cœur d'un index Lucene, \url{http://qlobbe.net/ressources/search.pdf})}. 
+
 
 \subsection{WAE}
 

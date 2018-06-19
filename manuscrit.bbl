@@ -369,6 +369,12 @@ Liu, L., Pu, C., and Tang, W. (2000).
 \newblock In {\em Proceedings of the ninth international conference on
   {Information} and knowledge management}, pages 512--519. ACM.
 
+\bibitem[Marz and Warren, 2015]{marz_big_2015}
+Marz, N. and Warren, J. (2015).
+\newblock {\em Big {Data}: {Principles} and best practices of scalable realtime
+  data systems}.
+\newblock Manning Publications Co.
+
 \bibitem[Masanès, 2006]{masanes_web_2006}
 Masanès, J. (2006).
 \newblock Web archiving: issues and methods.

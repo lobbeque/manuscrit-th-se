@@ -19,45 +19,45 @@ Warning--there's a number but no volume in stiegler_leroi-gourhan:_1998
 Warning--empty note in unesco_charter_2003
 Warning--empty institution in van_de_sompel_http_2013
 Warning--empty booktitle in yadav_change_2007
-You've used 96 entries,
+You've used 97 entries,
             1935 wiz_defined-function locations,
-            959 strings with 19237 characters,
-and the built_in function-call counts, 40110 in all, are:
-= -- 4059
-> -- 1410
-< -- 100
-+ -- 502
-- -- 462
-* -- 3052
-:= -- 6636
-add.period$ -- 316
-call.type$ -- 96
-change.case$ -- 696
-chr.to.int$ -- 96
-cite$ -- 110
-duplicate$ -- 1776
-empty$ -- 2945
-format.name$ -- 608
-if$ -- 8235
+            963 strings with 19381 characters,
+and the built_in function-call counts, 40426 in all, are:
+= -- 4088
+> -- 1423
+< -- 101
++ -- 506
+- -- 466
+* -- 3075
+:= -- 6693
+add.period$ -- 319
+call.type$ -- 97
+change.case$ -- 702
+chr.to.int$ -- 97
+cite$ -- 111
+duplicate$ -- 1790
+empty$ -- 2968
+format.name$ -- 615
+if$ -- 8297
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 108
-newline$ -- 474
-num.names$ -- 288
-pop$ -- 788
+missing$ -- 110
+newline$ -- 479
+num.names$ -- 291
+pop$ -- 797
 preamble$ -- 1
-purify$ -- 711
+purify$ -- 718
 quote$ -- 0
-skip$ -- 1347
+skip$ -- 1357
 stack$ -- 0
-substring$ -- 2722
-swap$ -- 394
+substring$ -- 2734
+swap$ -- 395
 text.length$ -- 42
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 542
+type$ -- 546
 warning$ -- 14
-while$ -- 342
+while$ -- 344
 width$ -- 0
-write$ -- 1237
+write$ -- 1249
 (There were 16 warnings)

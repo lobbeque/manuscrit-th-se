@@ -812,7 +812,8 @@ Chaque chaîne de persistance s'ouvre sur une date de \textit{dernière modifica
     \toprule
     Unité & Nature de la date &\\
     \midrule
-    page&téléchargement & \tikzmark{start}\\
+    page&lancement du crawl & \tikzmark{start}\\
+    page&téléchargement &\\
     page&dernière modification & \tikzmark{end}\\         
   \bottomrule
 \end{tabular}
@@ -925,16 +926,103 @@ Une fois chargées dans le HDFS, nos data et metadata sont envoyées dans un pip
 \end{marginfigure} 
 
 
-Le fonctionnement basique d'un index inversé est illustré par la figure \ref{fig:index}. Un premier tableau de données (a) renferme le contenu de deux documents $doc 1$ et $doc 2$ dont les identifiants (\textit{doc id}) sont respectivement $0$ et $1$. Un second tableau de données (b) contient ce que l'on appelle un dictionnaire de termes (\textit{term dict}). Dans ce dictionnaire, sont répartis l'ensemble des mots uniques (numérotés de $1$ à $5$) contenus dans $doc 1$ et $doc 2$. Ces mots sont identifiés par des \textit{term id} et sont, de plus, associés à une \textit{posting list} qui fait correspondre à chaque mot la liste des doc id dans lesquels il est présent. 
+Le fonctionnement basique d'un index inversé est illustré par la figure \ref{fig:index}. Un premier tableau de données (a) renferme le contenu de deux documents $doc 1$ et $doc 2$ dont les identifiants (\textit{doc id}) sont respectivement $0$ et $1$. Un second tableau de données (b) contient ce que l'on appelle un dictionnaire de termes (\textit{term dict}). Dans ce dictionnaire, sont répartis l'ensemble des mots uniques (numérotés de $1$ à $5$) contenus dans $doc 1$ et $doc 2$. Ces mots sont identifiés par des \textit{term id} et sont, de plus, associés à une \textit{posting list} qui fait correspondre à chaque mot la liste des documents où il est présent. 
 
-Ainsi, pour réaliser une recherche plein texte, il suffira de parcourir l'ensemble du term dict de nos indexes jusqu'à trouver les mots correspondants à la requête de l'utilisateur et, par extension, les documents qui y sont associés. Ces deux tableaux de données (a) et (b) forment ce que l'on appelle un \textit{segment}, soit le bloc de base de tout index inversé. On nomme \textbf{indexation} l'action de stocker un texte dans un index inversé. Différentes stratégies peuvent être mise en place pour accélérer la recherche dans un index, en optimiser la taille, etc.\footnote{Pour de plus amples détails sur l'indexation via Lucene/Solr, voir mon cours sur le fonctionnement interne des moteurs de recherche (Lobbé, Q. 2016, Voyage au cœur d'un index Lucene, \url{http://qlobbe.net/ressources/search.pdf})}. 
+Ainsi, pour réaliser une recherche plein texte, il suffira de parcourir l'ensemble du dictionnaire jusqu'à trouver les mots correspondants à la requête de l'utilisateur et, par extension, les documents associés. Ces deux tableaux de données (a) et (b) forment ce que l'on appelle un \textit{segment}, soit le bloc de base de tout index inversé. On nomme \textbf{indexation} l'action de stocker un texte dans un index inversé. Différentes stratégies peuvent être mises en place pour accélérer la recherche dans un index, en optimiser la taille, etc.\footnote{Pour de plus amples détails sur l'indexation via Lucene/Solr, voir mon cours sur le fonctionnement interne des moteurs de recherche (Lobbé, Q. 2016, Voyage au cœur d'un index Lucene, \url{http://qlobbe.net/ressources/search.pdf})}. 
 
+Un moteur de recherche se doit d'ordonner ses résultats avant de les retourner à l'utilisateur. On nomme cette étape le \textit{ranking}. Pour cela, il fait appel à une \textbf{fonction de similarité} qui trie les documents résultants en leur attribuant à chacun un score. Parmi les nombreux critères de ranking, les systèmes de search favoriseront souvent les documents où les mots clés recherchés sont les plus fréquents. Cette mesure sera pondérée par l'ajout d'une prime aux termes rares, c'est à dire : peu présents dans l'ensemble des indexes. C'est tout le sens du fameux \textit{tf-idf}\footnote{\textit{Term frequency-inverse document frequency}, fonction de similarité qui évalue l'importance d'un terme dans un document au regard d'un corpus donné (\url{https://fr.wikipedia.org/wiki/TF-IDF})} dont nous réutilisons ici une version légèrement modifiée : la \textit{defaultSimilarity} de Lucene\footnote{En plus du simple tf-df, cette fonction de similarité prend en compte la taille du document et la taille des champs vérifiant la requête (\url{http://lucene.apache.org/core/4_0_0/core/org/apache/lucene/search/similarities/TFIDFSimilarity.html})}. 
+
+Nous n'avons pas eu l'occasion de tester une fonction de similarité propre aux archives Web, la nôtre est finalement très générique. C'est pourtant une question  intéressante, puisque comme le suggère G. Weikum \citep{weikum_longitudinal_2011}, les moteurs d'exploration d'archives pourraient prendre en compte l'aspect temporel des documents collectés. En se basant sur les dérivées premières et secondaires du rapport entre deux dates de téléchargement, il serait ainsi possible de traduire une forme de vitesse ou d'accélération de certains termes dans les archives Web.  
+
+\subsection{Le schéma d'indexation}
+
+\noindent Tout document destiné à l'indexation doit d'abord passer au crible du \textbf{schéma} qui est considéré comme la pierre angulaire de tout moteur de recherche. 
+
+Le schéma est un fichier décrivant dans le détail la façon dont tout document sera indexé, il forme l'ossature de l'indexation. En effet, un document n'est pas indexé d'un seul tenant. Pour maximiser les chances de le voir matcher une requête, il peut être nécessaire de le découper en plusieurs champs (\textit{fields}), ayant chacun des attributs particuliers. Par exemple, un article issu d'un site de news pourra être segmenté suivant son titre, sa date, l'auteur et finalement le cœur du texte. Ce dernier sera indexé de manière classique en vue d'une recherche plein texte, l'auteur en revanche pourra être destiné à une recherche par \textit{facet}, c'est à dire par dimension  (ie: Quels sont les textes de tel ou tel auteur ?). Si tel est le cas, son indexation se fera via des \textit{docValues}\footnote{\url{https://lucene.apache.org/solr/guide/6_6/docvalues.html}}. Dans notre schéma, la plupart des informations issues du fichier de méta données DAFF sont destinées à une recherche par facet, telles que :\\
+
+
+\begin{fullwidth}
+\small
+\begin{verbatim}
+<field name="id"                type="string"  indexed="true"    multiValued="false" required="true" />
+
+<!-- archive fields -->
+<field name="archive_active"    type="boolean" indexed="true"    multiValued="false"/>
+<field name="archive_corpus"    type="string"  indexed="true"    docValues="true" multiValued="false"/>
+<field name="archive_ip"        type="string"  indexed="true"    docValues="true" multiValued="false"/>
+<field name="archive_length"    type="double"  indexed="true"    docValues="true" multiValued="false"/>
+<field name="archive_level"     type="int"     indexed="true"    docValues="true" multiValued="false"/>
+<field name="archive_referer"   type="string"  indexed="true"    docValues="true" multiValued="false"/>
+<field name="archive_mime"      type="string"  indexed="true"    docValues="true" multiValued="false"/>
+<field name="is_page"           type="boolean" indexed="true"    multiValued="false" default="false"/>    
+
+<!-- client fields -->
+<field name="client_country"    type="string"  indexed="true"    docValues="true" multiValued="false"/>
+<field name="client_ip"         type="string"  indexed="true"    docValues="true" multiValued="false"/>
+<field name="client_lang"       type="string"  indexed="true"    docValues="true" multiValued="true" />
+
+<!-- crawl fields -->
+<field name="crawl_id"          type="string"  indexed="true"    docValues="true" multiValued="true" />
+<field name="crawl_id_f"        type="string"  indexed="true"    docValues="true" multiValued="false"/>
+<field name="crawl_id_l"        type="string"  indexed="true"    docValues="true" multiValued="false"/>
+<field name="crawl_date"        type="date"    indexed="true"    docValues="true" multiValued="true" />
+<field name="crawl_date_f"      type="date"    indexed="true"    docValues="true" multiValued="fasle"/>
+<field name="crawl_date_l"      type="date"    indexed="true"    docValues="true" multiValued="true" />
+\end{verbatim} 
+\end{fullwidth}
+
+\newpage
+\begin{figure*}
+\begin{fullwidth}
+\small
+\begin{verbatim}
+<!-- download fields -->
+<field name="download_date"     type="date"    indexed="true"    docValues="true" multiValued="true" />
+<field name="download_date_f"   type="date"    indexed="true"    docValues="true" multiValued="false"/>
+<field name="download_date_l"   type="date"    indexed="true"    docValues="true" multiValued="false"/> 
+
+<!-- page fields -->
+<field name="page_site"         type="string"  indexed="true"    docValues="true" multiValued="false"/>
+<field name="page_url"          type="string"  indexed="true"    docValues="true" multiValued="false"/>
+<field name="page_url_id"       type="string"  indexed="true"    docValues="true" multiValued="false"/>      
+
+<!-- extracted page fields -->
+<field name="page_link"         type="string"  indexed="true"    docValues="true"  multiValued="true"/>     
+<field name="page_meta_title"   type="string"  indexed="true"    docValues="false" multiValued="false"/>
+<field name="page_meta_desc"    type="text"    indexed="true"    docValues="false" multiValued="false"/>
+<field name="page_meta_img"     type="string"  indexed="true"    docValues="false" multiValued="false"/>
+<field name="page_meta_date"    type="date"    indexed="true"    docValues="true"  multiValued="false"/>    
+<field name="page_meta_author"  type="string"  indexed="true"    docValues="true"  multiValued="false"/>    
+<field name="page_title"        type="text"    indexed="true"    docValues="false" multiValued="false"/>
+
+<!-- searchable page fields -->
+<field name="page_text"         type="text"    indexed="true"  stored="false" multiValued="true"/>
+<field name="page_text_shingle" type="shingle" indexed="true"  stored="false" multiValued="true"/> 
+\end{verbatim} 
+\end{fullwidth}
+\caption{Schéma d'indexation de notre moteur d'exploration d'archives Web}
+\label{fig:schema_1}
+\end{figure*}
+
+\noindent Pour chaque champ, nous définissons un nom et un type : une date, un nombre (int), du texte (string et text), ... Tous les champs sont indexés (\textit{indexed="true"}). Ceux destinés à une recherche par dimension sont associés à une docValue. Certain champs, comme les dates de téléchargement, sont multivalués (une page peut avoir été crawlée plusieurs fois à l'identique). Le champ de recherche plein text par défaut est le champ page\_text qui couvre l'ensemble du texte d'une page archivée\footnote{Ce champ subit un traitement particulier (un découpage en bi-gram : page\_text\_shingle) dont nous reparlerons en section \ref{sec:retour_au_moteur}}. Dans Spark, lors de la transformation des DAFF en document Solr, nous extrayons les liens de citation hypertextes (page\_link) et les informations contenues dans l'en tête des pages\footnote{Tout ce qui est contenu dans les balises HTML \textit{<meta>} (\url{https://www.w3schools.com/Tags/tag_meta.asp})} (page\_meta\_img, page\_meta\_date, etc). Les diverses dates associées à une page sont également présentes : allant de la date de lancement du crawl (crawl\_date\_f), à la date de téléchargement (download\_date) et en passant par la date de dernière modification (download\_date\_f).
+
+Mais les documents à indexer ne sont pas les seuls à devoir passer par le schéma. En effet, un moteur de recherche est un système à double entrée (Figure \ref{fig:architecture}), conjuguant des documents et des requêtes utilisateurs grâce à une fonction de similarité. Pour ce faire, documents et requêtes doivent parler la \textit{même langue}, c'est à dire qu'une requête utilisateur devra être traitée de la même manière que les documents à indexer, subir les mêmes transformations et interroger les bons champs. Cette suite de transformations est appelé \textit{analyzer}\footnote{Pour plus d'informations sur les analyzers et tokenizers dans Solr: \url{https://wiki.apache.org/solr/LanguageAnalysis}}. Sur ce point, documents et requêtes suivent les traitements suivants (Figure \ref{fig:tokenizer}) : tout d'abord, les majuscules deviennent minuscules (\textit{LowerCaseFilterFactory}), puis le texte est découpé en termes distincts et les \textit{stopwords}\footnote{Mots qui ne sont généralement pas intéressants pour l'analyse : et, il, elle, ... (\url{https://fr.wikipedia.org/wiki/Mot_vide})} sont écartés (\textit{StandardTokenizerFactory}), s'en suit une phase appelée \textit{stemming} dans laquelle on ne garde finalement que la racine des termes restants (\textit{ElisionFilterFactory} et \textit{SnowballPorterFilterFactory}).
+
+\begin{figure}%
+  \includegraphics[width=\linewidth]{graphics/tokenizer}
+  \caption{Cycle de transformation d'un texte dans notre moteur de recherche}
+  \label{fig:tokenizer}
+\end{figure}
+
+Nous implémentons, pour terminer, différentes stratégies de search pensées spécifiquement pour l'exploration des archives Web. Une fois que des documents ont matché une requête utilisateur, il s'agit, si ce dernier en fait la demande, de retourner les pages Web dont les archives sont les plus proches d'une date précise. Il est ainsi possible de préférer voir des pages collectées soit en amont, soit en aval ou soit autour de la date ciblée (Figure ???). Internet Archive par exemple utilise la dernière option dans la WayBack Machine.
+
+Là aussi ...
+
+Notre moteur de recherche est finalement déployé sur nos serveurs. Les indexes sont distribués entre plusieurs machines pour améliorer les temps de réponse et d'indexation du système. On appelle ainsi \textit{sharding} l'action de scinder un indexe en plusieurs sous indexes avant des les distribuer. Nous suivons une configuration classique \textit{master-slave}\footnote{\url{https://lucene.apache.org/solr/guide/6_6/solrcloud.html}} où l'instance maître de notre moteur de recherche centralise les réponses utilisateurs avant de les dispatcher entre ses instances esclaves qui, elles seules, sont habilitées à retourner des résultats. 
 
 \subsection{WAE}
 
-Au dessus de notre index on va créer des stratégies de requetes (à gauche ou à droite) pour intérroger les archives par rapport à une date 
 
-Puis on va créer peastee pour accompagner les rescherches avec certaines facettes et des histograms entre autre chose 
 
 \section{Les archives sont des traces indirectes du Web}
 \label{sec:4_legacy}
@@ -1138,6 +1226,7 @@ Du coup dans la suite, le treshold de la fonction distance sera toujours testée
 \subsection{Dédupliquer les corpus}
 
 \section{Intégration à un moteur d'exploration}
+\label{sec:retour_au_moteur}
 
 \subsection{D'un schéma à un autre}
 

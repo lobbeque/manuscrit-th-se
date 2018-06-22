@@ -1006,7 +1006,7 @@ Le schéma est un fichier décrivant dans le détail la façon dont tout documen
 
 \noindent Pour chaque champ, nous définissons un nom et un type : une date, un nombre (int), du texte (string et text), ... Tous les champs sont indexés (\textit{indexed="true"}). Ceux destinés à une recherche par dimension sont associés à une docValue. Certain champs, comme les dates de téléchargement, sont multivalués (une page peut avoir été crawlée plusieurs fois à l'identique). Le champ de recherche plein text par défaut est le champ page\_text qui couvre l'ensemble du texte d'une page archivée\footnote{Ce champ subit un traitement particulier (un découpage en bi-gram : page\_text\_shingle) dont nous reparlerons en section \ref{sec:retour_au_moteur}}. Dans Spark, lors de la transformation des DAFF en document Solr, nous extrayons les liens de citation hypertextes (page\_link) et les informations contenues dans l'en tête des pages\footnote{Tout ce qui est contenu dans les balises HTML \textit{<meta>} (\url{https://www.w3schools.com/Tags/tag_meta.asp})} (page\_meta\_img, page\_meta\_date, etc). Les diverses dates associées à une page sont également présentes : allant de la date de lancement du crawl (crawl\_date\_f), à la date de téléchargement (download\_date) et en passant par la date de dernière modification (download\_date\_f).
 
-Mais les documents à indexer ne sont pas les seuls à devoir passer par le schéma. En effet, un moteur de recherche est un système à double entrée (Figure \ref{fig:architecture}), conjuguant des documents et des requêtes utilisateurs grâce à une fonction de similarité. Pour ce faire, documents et requêtes doivent parler la \textit{même langue}, c'est à dire qu'une requête utilisateur devra être traitée de la même manière que les documents à indexer, subir les mêmes transformations et interroger les bons champs. Cette suite de transformations est appelé \textit{analyzer}\footnote{Pour plus d'informations sur les analyzers et tokenizers dans Solr: \url{https://wiki.apache.org/solr/LanguageAnalysis}}. Sur ce point, documents et requêtes suivent les traitements suivants (Figure \ref{fig:tokenizer}) : tout d'abord, les majuscules deviennent minuscules (\textit{LowerCaseFilterFactory}), puis le texte est découpé en termes distincts et les \textit{stopwords}\footnote{Mots qui ne sont généralement pas intéressants pour l'analyse : et, il, elle, ... (\url{https://fr.wikipedia.org/wiki/Mot_vide})} sont écartés (\textit{StandardTokenizerFactory}), s'en suit une phase appelée \textit{stemming} dans laquelle on ne garde finalement que la racine des termes restants (\textit{ElisionFilterFactory} et \textit{SnowballPorterFilterFactory}).
+Mais les documents à indexer ne sont pas les seuls à devoir passer par le schéma. En effet, un moteur de recherche est un système à double entrée (Figure \ref{fig:architecture}), conjuguant des documents et des requêtes utilisateurs grâce à une fonction de similarité. Pour ce faire, documents et requêtes doivent parler la \textit{même langue}, c'est à dire qu'une requête utilisateur devra être traitée de la même manière que les documents à indexer, subir les mêmes transformations et interroger les bons champs. Cette suite de transformations est appelé \textit{analyzer}\footnote{Pour plus d'informations sur les analyzers et tokenizers dans Solr: \url{https://wiki.apache.org/solr/LanguageAnalysis}}. Sur ce point, documents et requêtes suivent les traitements suivants : tout d'abord, les majuscules deviennent minuscules (Figure \ref{fig:tokenizer}, (a)), puis le texte est découpé en termes distincts (Figure \ref{fig:tokenizer}, (b)) et les \textit{stopwords}\footnote{Mots qui ne sont généralement pas intéressants pour l'analyse : et, il, elle, ... (\url{https://fr.wikipedia.org/wiki/Mot_vide})} sont écartés (Figure \ref{fig:tokenizer}, (c)), s'en suit une phase appelée \textit{stemming} dans laquelle on ne garde finalement que la racine des termes restants (Figure \ref{fig:tokenizer}, (d)) avant indexation (Figure \ref{fig:tokenizer}, (e)).
 
 \begin{figure}%
   \includegraphics[width=\linewidth]{graphics/tokenizer}
@@ -1014,22 +1014,65 @@ Mais les documents à indexer ne sont pas les seuls à devoir passer par le sch�
   \label{fig:tokenizer}
 \end{figure}
 
-Nous implémentons, pour terminer, différentes stratégies de search pensées spécifiquement pour l'exploration des archives Web. Une fois que des documents ont matché une requête utilisateur, il s'agit, si ce dernier en fait la demande, de retourner les pages Web dont les archives sont les plus proches d'une date précise. Il est ainsi possible de préférer voir des pages collectées soit en amont, soit en aval ou soit autour de la date ciblée (Figure ???). Internet Archive par exemple utilise la dernière option dans la WayBack Machine.
+\noindent Dans le cas particulier des archives Web, l'exploration de pages collectées peut être focalisée autour d'un instant précis. Si l'utilisateur en fait la demande, notre moteur lui proposera différentes stratégies de recherche pour retrouver les pages les plus proches d'une date donnée: soit en amont (Figure \ref{fig:date-picker}, (a)) , soit en aval (Figure \ref{fig:date-picker}, (c)) ou soit autour de cette dernière (Figure \ref{fig:date-picker}, (b)). Internet Archive par exemple utilise la première option dans la WayBack Machine.
 
-Là aussi ...
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/date-picker}
+  \caption{Stratégies de choix d'un ensemble de pages par rapport à une date précise}
+  \label{fig:date-picker}
+\end{figure*}
 
-Notre moteur de recherche est finalement déployé sur nos serveurs. Les indexes sont distribués entre plusieurs machines pour améliorer les temps de réponse et d'indexation du système. On appelle ainsi \textit{sharding} l'action de scinder un indexe en plusieurs sous indexes avant des les distribuer. Nous suivons une configuration classique \textit{master-slave}\footnote{\url{https://lucene.apache.org/solr/guide/6_6/solrcloud.html}} où l'instance maître de notre moteur de recherche centralise les réponses utilisateurs avant de les dispatcher entre ses instances esclaves qui, elles seules, sont habilitées à retourner des résultats. 
+\noindent Notre moteur de recherche est finalement déployé sur les serveurs. Les indexes sont distribués entre plusieurs machines pour améliorer les temps de réponse et d'indexation du système. On appelle \textit{sharding} l'action de scinder un indexe en plusieurs sous indexes avant de les distribuer. Nous suivons une configuration classique \textit{master-slave}\footnote{\url{https://lucene.apache.org/solr/guide/6_6/solrcloud.html}} où l'instance maître de notre moteur de recherche centralise les requêtes utilisateur avant de les dispatcher entre ses diverses instances esclaves qui, elles seules, sont habilitées à retourner des résultats. 
 
-\subsection{WAE}
+\subsection{Interface de visualisation}
 
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/gui}
+  \caption{Capture d'écran de notre interface de visualisation}
+  \label{fig:gui}
+\end{figure*}
 
+\noindent Une système de visualisation et d'interrogation des archives est dé\-veloppé\footnote{Nommé \textit{Peastee} en référence au narrateur de la nouvelle de H.P. Lovecraft \textit{The Shadow Out of Time} (1935), ce système est téléchargeable ici \url{https://github.com/lobbeque/peastee}} au dessus de notre moteur. Il s'agit en fait d'un \textit{service Web} permettant à tout utilisateur d'écrire une requête et de se voir présenter les résultats sous diverses formes. Un service Web est composé de deux briques logicielles distinctes : un serveur en \textit{node.js}\footnote{\url{https://nodejs.org/en/about/}} se charge tout d'abord de faire la liaison avec le moteur de recherche, une interface Web permet ensuite de visualiser les documents archivées. Les éléments de visualisation sont développés en \textit{d3.js} et l'architecture de l'interface en tant que telle se base sur \textit{angularjs}\footnote{D3 est une librairie Javascript de visualisation de données \url{https://d3js.org/}, Angular est un framework Javascript pour les applications Web \url{https://angularjs.org/}}. Notre interface suit un modèle \textit{en liste} très classique : les résultats sont présentés les uns à la suite des autres et des facets, à la marge, permettent de les filtrer ou de les trier après coup. Divers histogrammes offrent à voir une répartition dans le temps des pages archivées ayant matché la requête de l'utilisateur. La figure \ref{fig:gui} présente une capture d'écran de cette interface, une démonstration en vidéo permet de se faire une idée plus précise de son fonctionnement\footnote{\url{https://youtu.be/snW4O-usyTM}}
 
-\section{Les archives sont des traces indirectes du Web}
+Notre service Web accueille les nombreux prototypes que nous avons pu expérimenter tout au long de ces trois années de travail. Nous ne reviendrons pas ici en détail sur leurs développements respectifs, mais bien qu'incomplets ou inabouties, ces prototypes restent des jalons qui nous ont permis de cheminer vers les résultats présentés au chapitre~\ref{chap:6}. On retiendra une visualisation \textit{en oursin} de l'arborescence d'un site archivé mois après mois (Figure \ref{fig:prototypes}, (a)) ou encore une distribution temporelle des liens hypertextes sortant d'une page (Figure \ref{fig:prototypes}, (b), différenciés par catégories : réseaux sociaux, sites migrants e-Diasporas et reste du Web). 
+
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/prototypes}
+  \caption{Prototypes de visualisation d'archives Web}
+  \label{fig:prototypes}
+\end{figure*}
+
+\section{Les archives ne sont pas des traces directes du Web}
 \label{sec:4_legacy}
 
-Et là on tente une requete et merde ... y'a un trout, bon ok on pensait bien qu'il pouvait y avoir des crawl blindess mais à ce point !
+\noindent Notre moteur d'exploration maintenant présenté, nous voilà enfin en mesure d'interroger les archives de l'Atlas e-Diasporas. Depuis le chapitre \ref{chap:2}, le site \textit{yabiladi.com} et plus particulièrement son forum de discussion attire notre attention. De part la place qu'il occupe dans le corpus marocain depuis le début des années 2000, le site a su jouer un rôle clé pour l'ensemble de la diaspora en ligne. 
 
-Les archives sont les traces directes du crawler et non du web (Cf mises en gardes précédentes) + exemple sur yabiladi.com 
+\begin{marginfigure}%
+  \includegraphics[width=\linewidth]{graphics/yabiladi-map}
+  \vspace*{0.2cm}  
+  \caption{\textit{yabiladi.com} (rouge) dans l'e-Diaspora marocaine}
+  \label{fig:yabiladi-map}
+\end{marginfigure} 
+
+Notre première requête consiste donc à voir la répartition de \textit{yabiladi.com} dans les archives, saisir et comprendre la dynamique des publications postées sur le forum afin d'identifier des moments clés de l'histoire du site. Mais les résultats que nous retourne notre moteur d'exploration semblent très curieux, la figure \ref{fig:yabiladi-download} présente ainsi la répartition du nombre de pages collectées par jour pour \textit{yabiladi.com}, de Mars 2010 à Septembre 2014. Il semble que le site ait littéralement cessé de produire du contenu de Janvier 2013 à début 2014. Or, si l'on passe maintenant par la Wayback Machine\footnote{Voir \url{https://web.archive.org/web/20130801000000*/http://yabiladi.com/}}, on se rend rapidement compte que chez, Internet Archive, des ressources Web ont bel et bien été capturées à ces même dates. Où se situe donc notre erreur ?
+
+\begin{figure}%
+  \includegraphics[width=\linewidth]{graphics/yabiladi-download}
+  \caption{Distribution du nombre de pages archivées par jours pour \textit{yabiladi.com}}
+  \label{fig:yabiladi-download}
+\end{figure}
+
+\noindent Nous interprétons nos résultats de la mauvaise manière. Depuis le début de ce chapitre, nous cherchons à mettre en évidence les nombreux biais d'analyse possibles pour qui souhaite mener à bien une exploration d'ar\-chives Web. Nous avons notamment évoqué les cécités de crawl (Section \ref{sec:4_temporalite}), mais sans nous attendre à trouver dans nos propres corpus une telle défaillance de la collecte. Après enquête auprès des équipes de l'INA, il s'avère que le crawler de l'institution a stoppé sa collecte de \textit{yabiladi.com} pendant toute une année, avant qu'archivistes et chercheurs ne s'en rendent compte et relancent le robot. Ce que la figure \ref{fig:yabiladi-download} donne à voir est un \textit{artéfact de crawl}. C'est à dire un effet mécanique du crawler qui aura influencé la forme même du collectage, au delà du simple décalage ou de l'imprécision inévitable pour ce type de campagne. 
+
+Les archives Web ne sont pas les traces directes du Web, elle sont les traces directes des crawlers. Les outils de collecte façonnent l'image de ce qu'ils sont supposés préserver. Ils en modifient la forme, potentiellement le fond, et par là même, la nature des interprétations que nous ferons du corpus si l'on n'y prend pas garde. Ce que l'on voit dans les archives reste avant le geste de l'archiviste et des ses dispositifs de capture. 
+
+\begin{center}
+	*
+\end{center}
+
+\noindent En 1838, L. Daguerre réalise un daguerréotype\footnote{Procédé photographique basé sur l'exposition à la lumière d'une surface d'argent pure (\url{https://fr.wikipedia.org/wiki/Daguerréotype})}, le "\textit{Boulevard du Temple}", qui est aujourd'hui reconnu comme l'une des première photographie figurant un être humain : deux hommes seuls dans une rue vide (Figure \ref{fig:boulevard}). En réalité, le boulevard était ce jour là bondé. Demandant un temps d'exposition particulièrement long, les seuls sujets (en plus des bâtiments et des arbres) que le dispositif a su capturer sont ceux qui étaient restés pratiquement immobiles : un cireur de chaussures et son client assis devant lui. Cet exemple illustre parfaitement ce que nous rencontrons dans les archives Web. Associées à des dates de téléchargement qui les arrachent à leur temporalité, les archives Web sont des objets discrétisés et figés. Sans lien direct avec la réalité dont elles sont pourtant censées être le reflet. 
+
+Afin d'améliorer la pertinence historique de nos analyses à venir et pour s'affranchir des crawlers et de leurs artéfacts, nous proposerons, dans la suite de ce manuscrit, de descendre au delà du niveau des pages Web capturées et de s'appuyer sur une nouvelle unité d'exploration des archives : le \textit{fragment Web}. 
 
 \begin{figure*}
   \centering
@@ -1037,10 +1080,6 @@ Les archives sont les traces directes du crawler et non du web (Cf mises en gard
   \caption{"Boulevard du Temple", Louis Daguerre, 1838}
   \label{fig:boulevard}
 \end{figure*}
-
-donc il faut descendre au niveau de la page et y extraire d'autres temporalités, d'autres forme d'exploration qui ne dépendent pas non plus de la linéarité proposé par les moteurs d'exploration classique.
-
-La désagragation se fait dans le modèle de données mais également dans la façon de conduire sont exploration. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapitre 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

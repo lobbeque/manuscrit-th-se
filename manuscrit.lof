@@ -24,19 +24,24 @@
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Principe de base d'un index invers\IeC {\'e}}}{55}{subsection*.18}
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Sch\IeC {\'e}ma d'indexation de notre moteur d'exploration d'archives Web}}{57}{subsection*.19}
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Cycle de transformation d'un texte dans notre moteur de recherche}}{58}{subsection*.19}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces "Boulevard du Temple", Louis Daguerre, 1838}}{59}{section.4.4}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Strat\IeC {\'e}gies de choix d'un ensemble de pages par rapport \IeC {\`a} une date pr\IeC {\'e}cise}}{58}{subsection*.19}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Capture d'\IeC {\'e}cran de notre interface de visualisation}}{59}{subsection*.20}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Prototypes de visualisation d'archives Web}}{60}{subsection*.20}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces \textit {yabiladi.com} (rouge) dans l'e-Diaspora marocaine}}{60}{section.4.4}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Distribution du nombre de pages archiv\IeC {\'e}es par jours pour \textit {yabiladi.com}}}{61}{section.4.4}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces "Boulevard du Temple", Louis Daguerre, 1838}}{62}{section.4.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Extraits de "\textit {Je Vous Salue, Sarajevo}", J.L. Godard (1993) \IeC {\`a} partir d'une photographie de R. Haviv (1992)}}{63}{subsection*.21}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Les 5 strates analytiques du Web, d'apr\IeC {\`e}s \citep {brugger_website_2009}}}{65}{Item.10}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces R\IeC {\'e}partition des archives de \textit {yabiladi.com} dans la WayBack Machine (\url {https://web.archive.org/web/*/www.yabiladi.com})}}{66}{subsection*.23}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Date de cr\IeC {\'e}ation (rouge) d'un post de forum sur \textit {yabiladi.com}}}{66}{subsection*.23}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Dimensions d'exploration des archives Web (ajout de l'acteur)}}{68}{subsection*.23}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Extraits de "\textit {Je Vous Salue, Sarajevo}", J.L. Godard (1993) \IeC {\`a} partir d'une photographie de R. Haviv (1992)}}{65}{subsection*.21}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Les 5 strates analytiques du Web, d'apr\IeC {\`e}s \citep {brugger_website_2009}}}{67}{Item.10}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces R\IeC {\'e}partition des archives de \textit {yabiladi.com} dans la WayBack Machine (\url {https://web.archive.org/web/*/www.yabiladi.com})}}{68}{subsection*.23}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Date de cr\IeC {\'e}ation (rouge) d'un post de forum sur \textit {yabiladi.com}}}{68}{subsection*.23}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Dimensions d'exploration des archives Web (ajout de l'acteur)}}{70}{subsection*.23}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces This is a margin figure. The helix is defined by $x = \mathop {\mathgroup \symoperators cos}\nolimits (2\pi z)$, $y = \mathop {\mathgroup \symoperators sin}\nolimits (2\pi z)$, and $z = [0, 2.7]$. The figure was drawn using Asymptote (\url {http://asymptote.sf.net/}).}}{77}{section.8.2}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces This graph shows $y = \mathop {\mathgroup \symoperators sin}\nolimits x$ from about $x = [-10, 10]$. \emph {Notice that this figure takes up the full page width.}}}{78}{section.8.2}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Hilbert curves of various degrees $n$.}}{78}{section.8.2}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces This is a margin figure. The helix is defined by $x = \mathop {\mathgroup \symoperators cos}\nolimits (2\pi z)$, $y = \mathop {\mathgroup \symoperators sin}\nolimits (2\pi z)$, and $z = [0, 2.7]$. The figure was drawn using Asymptote (\url {http://asymptote.sf.net/}).}}{79}{section.8.2}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces This graph shows $y = \mathop {\mathgroup \symoperators sin}\nolimits x$ from about $x = [-10, 10]$. \emph {Notice that this figure takes up the full page width.}}}{80}{section.8.2}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Hilbert curves of various degrees $n$.}}{80}{section.8.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 

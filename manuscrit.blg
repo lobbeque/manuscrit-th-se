@@ -3,11 +3,8 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscrit.aux
 The style file: apalike.bst
 Database file #1: biblio.bib
-Warning--I didn't find a database entry for "Tufte2006"
-Warning--I didn't find a database entry for "Tufte1990"
 Warning--empty journal in arvidson_kulturarw3_2000
 Warning--empty journal in dougnac_depot_1960
-Warning--empty journal in finnemann_modernity_1997
 Warning--empty journal in fitch_web_2003
 Warning--empty journal in hatcher_lucene_2004
 Warning--there's a number but no volume in ketelaar_de_2006
@@ -19,45 +16,45 @@ Warning--there's a number but no volume in stiegler_leroi-gourhan:_1998
 Warning--empty note in unesco_charter_2003
 Warning--empty institution in van_de_sompel_http_2013
 Warning--empty booktitle in yadav_change_2007
-You've used 98 entries,
+You've used 96 entries,
             1935 wiz_defined-function locations,
-            968 strings with 19645 characters,
-and the built_in function-call counts, 41128 in all, are:
-= -- 4155
-> -- 1466
-< -- 102
-+ -- 522
-- -- 482
-* -- 3134
-:= -- 6804
-add.period$ -- 322
-call.type$ -- 98
-change.case$ -- 715
-chr.to.int$ -- 98
-cite$ -- 112
-duplicate$ -- 1817
-empty$ -- 3010
-format.name$ -- 632
-if$ -- 8442
+            955 strings with 19432 characters,
+and the built_in function-call counts, 40409 in all, are:
+= -- 4079
+> -- 1458
+< -- 98
++ -- 520
+- -- 480
+* -- 3093
+:= -- 6688
+add.period$ -- 317
+call.type$ -- 96
+change.case$ -- 703
+chr.to.int$ -- 96
+cite$ -- 109
+duplicate$ -- 1776
+empty$ -- 2955
+format.name$ -- 630
+if$ -- 8288
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 111
-newline$ -- 484
-num.names$ -- 294
-pop$ -- 814
+missing$ -- 110
+newline$ -- 475
+num.names$ -- 288
+pop$ -- 805
 preamble$ -- 1
-purify$ -- 731
+purify$ -- 720
 quote$ -- 0
-skip$ -- 1378
+skip$ -- 1338
 stack$ -- 0
-substring$ -- 2778
-swap$ -- 405
-text.length$ -- 43
+substring$ -- 2724
+swap$ -- 390
+text.length$ -- 41
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 552
-warning$ -- 14
-while$ -- 349
+type$ -- 538
+warning$ -- 13
+while$ -- 341
 width$ -- 0
-write$ -- 1262
-(There were 16 warnings)
+write$ -- 1238
+(There were 13 warnings)

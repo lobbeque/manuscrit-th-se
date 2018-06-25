@@ -31,17 +31,16 @@
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Distribution du nombre de pages archiv\IeC {\'e}es par jours pour \textit {yabiladi.com}}}{61}{section.4.4}
 \contentsline {figure}{\numberline {4.16}{\ignorespaces "Boulevard du Temple", Louis Daguerre, 1838}}{62}{section.4.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Extraits de "\textit {Je Vous Salue, Sarajevo}", J.L. Godard (1993) \IeC {\`a} partir d'une photographie de R. Haviv (1992)}}{65}{subsection*.21}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Les 5 strates analytiques du Web, d'apr\IeC {\`e}s \citep {brugger_website_2009}}}{67}{Item.10}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces R\IeC {\'e}partition des archives de \textit {yabiladi.com} dans la WayBack Machine (\url {https://web.archive.org/web/*/www.yabiladi.com})}}{68}{subsection*.23}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Date de cr\IeC {\'e}ation (rouge) d'un post de forum sur \textit {yabiladi.com}}}{68}{subsection*.23}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Dimensions d'exploration des archives Web (ajout de l'acteur)}}{70}{subsection*.23}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces C. Marker, 1977, Le Fond de l'Air est Rouge, (\url {https://youtu.be/dO1E4GYjF1s})}}{65}{subsection*.21}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces J.L. Godard, 1993, Je\nobreakspace {}Vous Salue, Sarajevo, (\url {https://youtu.be/WKbfu8rRrho})}}{65}{subsection*.21}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Les 5 strates analytiques du Web, d'apr\IeC {\`e}s \citep {brugger_website_2009}}}{66}{subsection*.22}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Une page $p_1$ et ses fragments Web $f_{11}, f_{12}, f_{13}$}}{67}{subsection*.22}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces R\IeC {\'e}partition des archives de \textit {yabiladi.com} dans la WayBack Machine (\url {https://web.archive.org/web/*/www.yabiladi.com})}}{67}{subsection*.23}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Date d'\IeC {\'e}ditions (rouge) d'un post de forum sur \textit {yabiladi.com}}}{67}{subsection*.23}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Dates d'\IeC {\'e}dition des fragments Web $\{f_{11}, f_{12}\}$ et date de cr\IeC {\'e}ation de la page $p_1$}}{68}{subsection*.23}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Distribution pour \textit {yabiladi.com} du nombre de pages et de fragments archiv\IeC {\'e}s par jours suivant leurs dates de t\IeC {\'e}l\IeC {\'e}chargement (bleu) et de d'\IeC {\'e}dition (rouge)}}{70}{subsection*.24}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces This is a margin figure. The helix is defined by $x = \mathop {\mathgroup \symoperators cos}\nolimits (2\pi z)$, $y = \mathop {\mathgroup \symoperators sin}\nolimits (2\pi z)$, and $z = [0, 2.7]$. The figure was drawn using Asymptote (\url {http://asymptote.sf.net/}).}}{79}{section.8.2}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces This graph shows $y = \mathop {\mathgroup \symoperators sin}\nolimits x$ from about $x = [-10, 10]$. \emph {Notice that this figure takes up the full page width.}}}{80}{section.8.2}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Hilbert curves of various degrees $n$.}}{80}{section.8.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 

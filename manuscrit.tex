@@ -1212,65 +1212,79 @@ Un article de blog ne s'écrit pas de lui même, il est le fruit du geste d'un a
 
 \subsection{Désagréger pour changer de temporalité}
 
-\noindent Le Web est un flot grandissant d'information tout autant qu'un territoire en perpétuelle expansion. Par l'action des crawlers, les archives Web sont arrachées à la temporalité continue du Web vivant pour rejoindre celle figée et discrétisée des corpus collectés (Section \ref{sec:4_derrida}). Les archives, malheureusement, ne peuvent revenir au temps du Web vivant, mais grâce au fragment Web, nous pouvons les faire basculer dans la \textbf{temporalité du Web tel qu'il a été}, temps que nous allons essayer de caractériser ci dessous.  
+\noindent Le Web est un flot grandissant d'information tout autant qu'un territoire en perpétuelle expansion. Par l'action des crawlers, les archives Web sont arrachées à la temporalité continue du Web vivant pour rejoindre celle figée et discrétisée des corpus collectés (Section \ref{sec:4_derrida}). Les archives, malheureusement, ne peuvent revenir au temps du Web vivant, mais grâce au fragment Web, nous pouvons les faire basculer dans la \textbf{temporalité du Web tel qu'il a été}. Temporalité que nous allons essayer de caractériser ci dessous.  
 
-Mais intéressons nous tout d'abord une première expérience. Au cours de la section \ref{sec:4_legacy} nous avions visualisé la répartition des pages archivées de la section forum du site \textit{yabiladi.com} dans le temps, et ce, par rapport à leurs seules date de téléchargement. Essayons maintenant de nous focaliser sur les dates d'éditions des fragments Web issues de ces mêmes pages. Faute de ne pas avoir encore définit clairement la nature d'un fragment Web, nous nous contenterons, à ce niveau du manuscrit, de l'approximation suivante : chaque \textit{post} (ie: message individuel) publié sur le forum de \textit{yabiladi.com} est considéré comme fragment Web de la page qui lui sert de support. Ici un fragment Web est donc équivalent à un post de forum (Figure \ref{fig:yabi-date-com}), écrit par un seul auteur (identifié comme tel) et daté précisément par une date d'édition. 
+Commençons par une expérience. Au cours de la section \ref{sec:4_legacy}, nous avions visualisé, dans le temps, la répartition des pages archivées de la section forum du site \textit{yabiladi.com}, et ce, par rapport à leurs seules dates de téléchargement. Maintenant, essayons plutôt de nous focaliser sur les dates d'édition des fragments Web de chacune de ces pages et tentons une comparaison. 
 
-Nous procédons alors à une extraction focalisée\footnote{Cette extraction n'est donc pas générique, voir la section \ref{sec:5_scraping} pour une approche plus générale} dans nos archives afin de ne conserver que les dates d'édition de chaque post collecté. Dans Spark, nous modifions notre moteur pour extraire ces seules dates, identifiées par un nœud HTML unique : 
+Faute de ne pas avoir encore définit clairement la nature d'un fragment Web, nous nous contenterons, à ce niveau du manuscrit, de l'approximation suivante : chaque \textit{post} (ie: message individuel) publié sur le forum de \textit{yabiladi.com} sera considéré comme fragment de la page dont il dépend. Un post est écrit par un unique auteur (identifié comme tel) et associé à une date d'édition (Figure \ref{fig:yabi-date-com}). 
+
+D'un point de vue pratique, nous procédons à une extraction focalisée\footnote{Cette extraction de données n'est donc pas générique, voir la section~\ref{sec:5_scraping} pour une approche plus générale} dans nos archives, afin de ne conserver que les dates d'édition des posts collectés. Dans Spark, nous modifions le moteur en conséquence, les dates d'édition étant identifiées dans le code des pages Web par un nœud HTML unique : 
 \begin{quote}
 \small
 \begin{verbatim}
-<div class="com-date">...</div>
+<div class="com-date">17 Novembre 2009</div>
 \end{verbatim}
 \end{quote}
-Nous construisons ensuite un index dédié dans Solr. Ne reste plus alors qu'à visualiser les deux distributions côte à côte : d'une part la répartition des pages par date de téléchargement (Figure \ref{fig:edition_vs_download}, bleu) et d'autre part la répartition des fragments par date d'édition (Figure \ref{fig:edition_vs_download}, rouge).
+Nous construisons ensuite un index dédié dans Solr. Ne reste plus alors qu'à visualiser les deux distributions côte à côte : d'une part la répartition des pages par date de téléchargement (Figure \ref{fig:edition_vs_download}, bleu) et d'autre part la répartition des fragments correspondants par date d'édition (Figure \ref{fig:edition_vs_download}, rouge) :
 
 \begin{figure*}%
   \includegraphics[width=\linewidth]{graphics/edition_vs_download}
-  \caption{Distribution pour \textit{yabiladi.com} du nombre de pages et de fragments archivés par jours suivant leurs dates de téléchargement (bleu) et de d'édition (rouge)}
+  \caption{Distribution, pour \textit{yabiladi.com}, du nombre de pages et de fragments archivés par jours et suivant leurs dates de téléchargement (bleu) et de d'édition (rouge) respectives}
   \label{fig:edition_vs_download}
 \end{figure*}
 
-\noindent Ce que l'on constate pour commencer est que la répartition par date d'édition semble \textit{gommer} l'artéfact de crawl précédemment observé sur l'année 2013. La distribution des fragments est linéaire et ne souffre d'aucune cécité. Plus intéressant encore ces archives d'où sont extraits les fragments Web semblent chargées d'une mémoire plus étendue que celle initialement prévue. En effet, partant d'une collecte débutée en 2010, nous voilà maintenant capable d'étudier des fragments Web édités en 2003 pour les plus anciens. Les pages sauvegardées contiennent, en elles même, les traces sédimentaires d'une activité antérieure.
+\noindent Tout d'abord, la répartition par date d'édition (rouge) semble \textit{gommer} l'artéfact de crawl précédemment observé sur l'année 2013 (bleu). La distribution des fragments est linéaire et ne souffre d'aucune cécité remarquable. Détachée de l'influence du crawler, elle n'en subit plus les effets. 
 
-Par l'extraction des fragments Web, nous nous donnons les moyens d'accéder à des entités porteuses d'une mémoire préexistante à chaque collecte et dont la datation semble plus précise. En désagrégeant les archives Web, nous changeons de temporalité, nous entrons dans le temps du Web tel qu'il a été. Là où le temps des archives était un temps figé, fait de séries de captures discrètes d'une même page, le temps du Web tel qu'il a été est un temps fragmenté. C'est à dire un temps éclaté, où chaque fragment Web se voit définit relativement par rapport à lui même et à sa seule date d'édition. 
+Par ailleurs, nos archives Web semblent chargées d'une mémoire plus étendue que celle initialement prévue. Ainsi, partant d'une collecte débutée en Mars 2010, nous voilà maintenant capable de considérer et d'analyser des fragments Web édités 7 années plus tôt, jusqu'en 2003 pour les plus anciens. Les pages archivées contiennent, en elles même, les traces sédimentaires de publications antérieures.
 
-Nos expérimentations pratiques ne portent sur les dates d'éditions, mais dans le temps du Web tel qu'il a été, chaque fragment suit sa propre temporalité détachée de celle des autres, soit une ligne allant de sa création (date d'édition) à sa disparition. Reste maintenant à l'explorateur de naviguer entre ses lignes de temps éclatées et de construire au cours de son analyse ce que T. Ingold nomme un \textit{trajet} :
+Par l'extraction et l'étude des fragments Web, nous nous donnons les moyens d'un saut dans le passé considérable. Ces fragments sont potentiellement porteurs d'une mémoire préexistante à chaque collecte et dont nous pouvons dater avec précision l'apparition. En désagrégeant les archives Web, en les fragmentant, nous changeons une nouvelle fois de temporalité pour entrer dans le temps du Web tel qu'il a été. Là ou le temps des archives était figé et fait de séries de captures discrètes d'une même page, le temps du Web tel qu'il a été est un temps fragmenté. C'est à dire un temps éclaté, où chaque fragment se voit définit relativement par rapport à lui même.
 
+Nos expérimentations pratiques ne portent que sur les seules dates d'édition, mais dans le temps du Web tel qu'il a été, chaque fragment Web suit sa propre temporalité, détachée de celle des autres. Une ligne allant de son apparition sur le Web (date d'édition) jusqu'à sa possible disparition de la toile. Isolées les unes des autres, c'est à l'explorateur d'archives que revient le rôle de naviguer entre ses lignes de temps éclatées. L'explorateur sélectionne, découpe et assemble des fragments pour construire ce que l'anthropologue T. Ingold nomme un \textbf{trajet}, support de l'exploration à venir : \\ 
 
 \begin{fullwidth}
 "\textit{Dans le cas du trajet, en revanche, on s'engage dans une voie qu'on a déjà explorée avec d’autres, ou qui a été explorée par d'autres, en reconstruisant l'itinéraire au fur et à mesure de sa progression.}" --- \citep[p.26]{ingold_breve_2013}\\
-\end{fullwidth}
+\end{fullwidth} 
 
-\noindent Le chercheur peut faire du montage entre les fragments, cheminer de l'un à l'autre suivant le sens et l'ordre qu'il juge pertinent, s'affran\-chissant ainsi des formes classique et linaire d'accès aux archives Web. Il peut choisir d'associer ensemble des fragments liés par des liens hypertextes, présents sur une même page, ou encore ayant été publiés par un même auteur. Nos explorations à venir (Chapitre \ref{chap:6}) se veulent désagrégées en cela qu'elles suivent un trajet allant de fragment en fragment selon des modalités propres à chaque chercheur.  
+\noindent Un trajet est fait de détours, de contours et de bifurcations. À mesure qu'il se conçoit, le trajet se développe et s'inscrit dans le temps. Suivant le cours de son analyse, c'est par le montage que le chercheur chemine d'un fragment Web à l'autre, dans le sens et l'ordre qu'il juge pertinent. En conjuguant les multiples lignes de temps il s'affranchit ainsi des formes classiques et linéaires d'accès aux archives Web. Ouvrant la voie à de nouveaux degrés de liberté, les fragments pourront être associés sur la base d'un lien hypertexte partagé, d'une présence sur la même page à un instant donné, d'une filiation commune, etc. Ces trajets entre fragments deviennent sous la plume de J. Bashet des \textbf{lignes processuelles} \citep[p.227]{baschet_defaire_2018}. L'historien cherche, ce faisant, à rompre avec une vision linéaire de l'histoire dont il faudrait faire éclater la continuité : \\
 
-Avec le fragment comme unité d'exploration, nous pouvons chercher à rompre avec une vision linéaire de l'histoire comme le préconise J. Bashet \citep[p.222-223]{baschet_defaire_2018}. 
+\begin{fullwidth}
+"\textit{En effet, il ne s'agit en aucun cas de penser l'Histoire tout entière comme un seul processus unifié, mais de saisir, dans l'histoire, un entrelacement complexe de multiples processus.}" --- \citep[p.227]{baschet_defaire_2018}\\
+\end{fullwidth} 
 
-Il propose ainsi de faire éclater la continuité de l'histoire pour en isoler d'une part des "\textit{constellations}"\footnote{Concept que Bashet empreinte ici à W. Benjamin et qui désigne une collusion de temporalités hétérogènes où passé et présent dialoguent} 
+\noindent En suivant le devenir historique de multiples lignes processuelles, l'écri\-ture de l'histoire revient à raisonner autour de \textbf{moments} singuliers où convergent et se croisent temporalités et processus hétérogènes :\\
 
-constellation -> trajets -> moments
+\begin{fullwidth}
+"\textit{Et on proposera plutôt d'explorer diverses manière de penser l'événement - le surgissement, le nouveau, la rupture mais aussi l'imprévu, l'imprévisible, l'improbable - à partir d'une pensée des processus. Ainsi, outre qu'elle peut naître ou disparaître, une ligne processuelle connaît par elle-même  des variations de rythme et des moments singuliers de concentration ou d'expansion des forces à l'œuvre : l'événement tient alors à une étape particulière de maturation ou correspond, peut-être à un seuil d'ébullition ou de cristallisation.}" --- \citep[p.227-228]{baschet_defaire_2018}\\
+\end{fullwidth} 
 
+\noindent Avec le passage de la page au fragment, nous basculons d'une unité d'exploration à l'autre. Le fragment Web nous invite à un changement d'échelle temporelle et spatiale dans le rapport que nous entretenons aux archives Web. Situé entre la page et l'élément Web, le fragment peut contenir en lui la trace du Web tel qu'il a été : une mémoire jusqu'ici retenue dans les fichiers archivés. Le chercheur associe alors un à un les fragments qu'il juge pertinents et conduit, chemin faisant, son exploration pour saisir l'histoire du Web et ses cristallisations autour de moments singuliers. 
 
-où se rencontrent de nombreux trajets. En partant de ces trajets, il est possible, toujours selon Bashet de saisir de le cours entier d'un mouvement historique. C'est ainsi à une réflexion historiques autour de \textbf{moments} précis fait de trajets que nous invite le fragments Web.
-
-Bref le fragment web c'est un changement d'échelle spatial et temporel. Et voici maintenant le moment de vous le présenter.
+Dans notre méthodologie, la place du chercheur est donc centrale. C'est lui qui, par ses choix de montage (basés sur sa propre expertise ou sur des indices qu'il aura recueilli en amont) définit les fragments Web à explorer et la manière de les parcourir. Il peut, dans cette tâche, se faire aider de scripts informatiques pour automatiser certains traitements. Le fragment Web doit ainsi être interprétable par une machine : un programme pourra l'analyser, le manipuler, le stocker, etc. Mais le fragment doit aussi rester compréhensible, en lui même, afin d'être étudié par un chercheur (sociologue, historien, ...). Nous discuterons, en section \ref{sec:5_scraping}, de l'implication ou non du chercheur dans le choix même de la forme des fragments Web. Nous donnerons, enfin, dans le chapitre \ref{chap:6}, deux exemples d'explorations désagrégées de nos corpus et basées sur le fragment Web.
 
 \section{Le fragment Web : définition}
 
-A partir de maintenant nous assumons la nécessité de trouver une nouvelle unité d'exploration des archives web baptisé fragment web, s'inscrivant dans la 5ème strate du web et émancé (autant que possible) de tout lien avec le crawleur. Cette unité devra autant que possible être relié à une éditiond ate pour éviter les crawl legacy et maximiser la présision historique. 
+\noindent La définition suivante est intentionnellement générique. Nous souhai\-tons par là, que d'autres chercheurs puissent se saisir après nous du fragment Web. Par ailleurs, la nature des fragments dépendant beaucoup du contexte de l'analyse et de la sensibilité propre à chaque chercheur, soit qu'il voudra une fragmentation plus ou moins englobante, soit qu'il se satisfera d'éléments abstrait, nous ne donnerons pas ici de définition technique précise du fragment. Nous proposerons, dans la section \ref{sec:5_scraping}, notre propre système d'extraction des fragments Web depuis une page archivée, d'autres approches et stratégies peuvent naturellement exister.\\
 
-Comme la forme de ces fragments sera toujours lié au contexte de l'exploration dans laquelle elle sera utilisée, et comme nous voulons que des sociologues oud es historiens puissent s'en saisir ( car un historien demandera toujours à conaitre le contexte (cf le papier sur les archives là) la définition suivante sera générique à dessein. Une définition pratique et son extraction technique sera proposer dans la section suivante et targété pour la question des collectifs migrants etteinds.
+\begin{itshape}
+\noindent Considérant la page web comme unité de consultation de base du World Wide Web, bâtit sur des modalités d'écriture propre au support numérique et constatant que du point de vue de la perception humaine \citep{bernard_criteria_2003, michailidou_visual_2008} une page web est le résultat de l'agencement logique d'éléments sémantiques distincts, alors nous nommons \textbf{fragment Web} un sous ensemble sémantique et syntaxique d'une page Web donnée.
 
-\subsection{Définition}
-
-Considérant la page Web comme unité de consultation de base du Web, bâtit sur des modalités d'écriture propre au support numérique et constatant que du point de vue de la perception humaine une page web est le résultat de l'agencement logique de fragments sémantiques distincts, alors :
-
-le fragment est un sous ensemble cohérent ... 
+\begin{enumerate}[leftmargin=*]  
+\item Il y a une relation d'échelle entre une page Web et ses fragments Web. Ceux-ci peuvent couvrir l'entièreté de la page ou n'être qu'un élément unitaire de cette dernière
+\item Un fragment Web est un assemblage cohérent d'éléments textuels, visuels, sonores ou logiciels extraits d'une page Web. Le fragment Web doit ainsi être compréhensible par lui même.
+\item Au sein d'une même page Web, deux fragments Web ne peuvent pas se superposer, même partiellement
+\item Certains éléments d'un fragment Web peuvent faire l'objet d'une catégorisation lors de l'extraction. Un fragment Web peut ainsi être associé à un titre, à un auteur, à une date d'édition, etc
+\item Le fragment Web capture l'ensemble des dispositifs d'écriture ( nœuds HTML, CMS widgets, éditeurs de texte ... ) et de partage ( liens hypertextes, liens de syndications, liens de publications … ) utilisés pour publier son contenu sur le Web
+\end{enumerate}
+\end{itshape}
 
 \section{Scraping et méthodologie d'extraction}
 \label{sec:5_scraping}
 
 \subsection{Extraire de l'information issue d'une page Web}
+
+Le scrapping ou extraction d'info du Web c'est ...
+
+On appelle scrapper ...
 
 Le scrapping c'est quoi ?
 Les méthode classique ( visuel vs le reste )

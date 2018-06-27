@@ -1282,17 +1282,43 @@ Dans notre méthodologie, la place du chercheur est donc centrale. C'est lui qui
 
 \subsection{Extraire de l'information issue d'une page Web}
 
-Le scrapping ou extraction d'info du Web c'est ...
+\noindent On appelle \textbf{scraping} l'ensemble des techniques et méthodes employées pour extraire de l'information depuis une page Web. Un \textbf{scraper} est un robot charger de scraper une page ou un ensemble de pages données. Le scraper est souvent focalisé, c'est à dire qu'il est paramétré pour ne conserver que certaines parties ou éléments distincts d'une page : des noms, des adresses, des images, des mots clés, ... Pour extraire les fragments Web de nos archives, nous chercherons donc à scraper l'ensemble des pages collectées.
 
-On appelle scrapper ...
+De prime abord, les scrapers ne considèrent pas les pages Web telles que nous les voyons depuis nos écrans, interprétées par les navigateurs Web. Lors d'une extraction, les scrapers parcourent d'abord et avant tout les portions de code, fichiers HTML et CSS, ... qui forment l'ossature de ces pages. 
 
-Le scrapping c'est quoi ?
-Les méthode classique ( visuel vs le reste )
-Néttoyer ou tout conserver ?
-Pourquoi scrapper ? ( orienter business ? )
-l'on parle de readability et de fathom...
+Le \textbf{HTML}\footnote{\textit{HyperText Markup Language}} est un langage de programmation décrivant la structure et le contenu d'une page Web (Figure \ref{fig:html}, (a)). Les pages Web sont des interprétations par le navigateur de fichiers HTML. 
+
+\begin{figure}%
+  \includegraphics[width=\linewidth]{graphics/html}
+  \caption{Usage de fichiers HTML, CSS et Javascript pour afficher une page Web}
+  \label{fig:html}
+\end{figure}
+
+\noindent Le HTML est un langage à \textbf{balises}, c'est à dire que chaque élément d'une page Web est délimité par une balise ouvrante et par une balise fermante. La nature de ces balises et leur syntaxe permettent d'enrichir le contenu textuel de l'élément HTML qu'elles définissent. On écrit alors de l'hypertexte. Une balise HTML est identifiée par un \textit{tag} (ie, son type : div, p, link, ...) et peut être complétée (entre autres) par un \textit{id} (ie, un identifiant permettant de la distinguer des autres balises) et une \textit{class} (ie, une classe permettant d'associer certains comportements à la balise et à son contenu).
+
+Une page Web est un document structuré. Les éléments HTML s'agencent entre eux suivant la forme particulière d'un arbre : l'\textbf{arbre DOM}\footnote{\textit{Document Object Model Tree}, en anglais. En informatique un arbre est une structure de données où chaque élément (nœud) s'inscrit hiérarchiquement par rapport aux autres (\url{https://fr.wikipedia.org/wiki/Arbre_binaire})} (Figure \ref{fig:html}, (b)). Par convention, on appelle \textbf{nœud} HTML tout élément d'un arbre DOM. Il existe ainsi un nœud \textit{racine}, des nœuds parents, enfants, etc. Un scraper peut accéder à un nœud HTML donné soit en l'adressant directement via son id, soit en parcourant l'arbre DOM.  
+
+Un fichier \textbf{CSS}\footnote{\textit{Cascading Style Sheets}, en anglais} peut accompagner un document HTML pour dé\-crire l'aspect visuel (et parfois des animations) de certains nœuds (Figure \ref{fig:html}, (c)). Dans un fichier CSS, une correspondance est faite entre l'id (et/ou la classe) d'un nœud et des règles de style prédéfinies. On jouera ainsi sur la couleur, la police d'écriture, les marges, ... de chaque éléments.
+
+Les éléments dynamiques d'une page Web sont générés majoritairement par des portions de code \textbf{JavaScript} (Figure \ref{fig:html}, (d)). Le JavaScript peut s'écrire dans un ou plusieurs fichiers séparés mais peut aussi être directement ajouté au HTML de la page Web, au sein de balises dédiées. Il est alors possible de manipuler des nœuds HTML et de leur attribuer un comportement associé au geste de tel ou tel utilisateur (un clic, un défilement, ...). Mais JavaScript n'est pas le seul langage capable de gérer ces aspects dynamiques. Le PHP\footnote{\textit{Hypertext Preprocessor}, en anglais} a ainsi largement été employé dans le courant des années 2000, néanmoins, il semble aujourd'hui être en perte de vitesse\footnote{Voir le dernier rapport de StackOverFlow sur les préférences des développeurs en 2018 (\url{https://insights.stackoverflow.com/survey/2018/})}. Au final, HTML, CSS et JavaScript forment le triptyque le plus courant face auquel doivent se débattre les scrapers.
+
+Ainsi, un scraper doit savoir s'adapter aux pages qu'il parcourt et à la complexité de celles-ci. Une page contenant du JavaScript doit être interprétée par le scraper lui même, afin de prendre en compte les éléments dynamiques qui ne se chargent qu'à l'affichage\footnote{Les librairies Beautifulsoup (python, \url{https://www.crummy.com/software/BeautifulSoup/bs4/doc/}) et After-load (nodeJs, \url{https://www.npmjs.com/package/after-load}) peuvent ici nous aider}. De fait, diverses stratégies de scraping sont envisageables en fonction des cas. Le scraping peut s'attarder sur les éléments visuels d'une page Web \citep{cai_vips:_2003} ou se contenter de la seule information sémantique présente dans le HTML \citep{jatowt_detecting_2007}. Là où la première solution cherche à se rapprocher d'une vision humaine de la page, la seconde privilégiera un meilleur temps de réponse. 
+
+La vitesse des traitements est, en effet, une composante essentielle de tout scraping. Faut-il parcourir toute la page ? Attendre qu'elle se charge intégralement ? Ou retourner des résultats partiels ? Ce faisant, les travaux portants sur l'extraction d'information depuis une page Web sont souvent pensés pour s'intégrer, d'abord et avant tout, à de vastes campagnes d'analyse \citep{weninger_text_2008, adar_web_2009, oita_forest:_2015}. La validation humaine n'est pas la finalité de ces recherches. De notre côté, nous préférons nous attarder sur des méthodes plus qualitatives, conçues sciemment pour être utilisées, en premier lieu, par des êtres humains. 
+
+L'extension Readability\footnote{\url{https://github.com/mozilla/readability}} du navigateur Web Firefox propose, par exemple, aux internautes d'expérimenter une forme de lecture \textit{zen} sur la toile. Le système cherche ainsi à identifier le contenu principal de chaque page (le corps d'un article), à l'extraire et à le présenter dépouillé des publicités, menus et autres suggestions qui pourraient nuire à la lecture. Bien que Readability se limite seulement à certains types de sites  (les sites de news notamment), une partie de son fonctionnement pourra être adaptée à notre propre moteur. 
 
 \subsection{Implémentation technique}
+
+\noindent Notre tâche consiste ici à fragmenter une page Web donnée. C'est à dire, à extraire de nos fichiers archivés, des sous ensembles cohérents de nœuds HTML. Soit une page Web $p_1$ composée de $m$ nœuds HTML $\{n_1,...,n_m\}$, organisés en un arbre DOM $t$ et associés à des règles de style CSS.
+
+La première étape consiste à nettoyer $p_1$ de tous les éléments qui ne nous semblent pas pertinents : publicités, menus de navigation, scripts~... Pour ce faire, nous utilisons certaines heuristiques issues de la méthode \textit{boilerplate}\footnote{Boilerplate fait en partie appel à une tâche d'apprentissage automatique, cherchant à définir un modèle de nettoyage pour chaque site. Or, nous ne connaissons pas, à priori, les évolutions structurelles et stylistiques subies par un site au cours de son histoire. La définition d'un set d'apprentissage nous semble compromise } \citep{kohlschutter_boilerplate_2010} auxquelles nous ajoutons nos propres observations ad hoc. Il s'agit essentiellement de supprimer certaines balises et certaines classes  
+
+C'est notre premier compromis entre manuel et générique  
+
+wesh \\
+
+readability va avec fathom
 
 Là on parle de rivelaine et de la fonction distance ...
 L'algo 

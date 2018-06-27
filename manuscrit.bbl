@@ -96,6 +96,10 @@ Brügger, N. (2009).
 \newblock Website history and the website as an object of study.
 \newblock {\em New Media \& Society}, 11(1-2):115--132.
 
+\bibitem[Cai et~al., 2003]{cai_vips:_2003}
+Cai, D., Yu, S., Wen, J.-R., and Ma, W.-Y. (2003).
+\newblock Vips: a vision-based page segmentation algorithm.
+
 \bibitem[Canfora, 1990]{canfora_vanished_1990}
 Canfora, L. (1990).
 \newblock {\em The {Vanished} {Library}: {A} {Wonder} of the {Ancient}
@@ -331,6 +335,12 @@ Koehler, W. and {others} (2004).
   document persistence.
 \newblock {\em Information Research}, 9(2):9--2.
 
+\bibitem[Kohlschütter et~al., 2010]{kohlschutter_boilerplate_2010}
+Kohlschütter, C., Fankhauser, P., and Nejdl, W. (2010).
+\newblock Boilerplate detection using shallow text features.
+\newblock In {\em Proceedings of the third {ACM} international conference on
+  {Web} search and data mining}, pages 441--450. ACM.
+
 \bibitem[Lawrence and Giles, 2000]{lawrence_accessibility_2000}
 Lawrence, S. and Giles, C.~L. (2000).
 \newblock Accessibility of information on the web.
@@ -418,6 +428,13 @@ Nunes, S., Ribeiro, C., and David, G. (2007).
 Oita, M. and Senellart, P. (2010).
 \newblock Archiving data objects using {Web} feeds.
 \newblock In {\em International {Workshop} on {Web} {Archiving}}.
+
+\bibitem[Oita and Senellart, 2015]{oita_forest:_2015}
+Oita, M. and Senellart, P. (2015).
+\newblock {FOREST}: {Focused} object retrieval by exploiting significant tag
+  paths.
+\newblock In {\em Proceedings of the 18th {International} {Workshop} on {Web}
+  and {Databases}}, pages 55--61. ACM.
 
 \bibitem[Page et~al., 1999]{page_pagerank_1999}
 Page, L., Brin, S., Motwani, R., and Winograd, T. (1999).
@@ -552,6 +569,12 @@ Weltevrede, E. and Helmond, A. (2012).
 \newblock Where do bloggers blog? {Platform} transitions within the historical
   {Dutch} blogosphere.
 \newblock {\em First Monday}, 17(2).
+
+\bibitem[Weninger and Hsu, 2008]{weninger_text_2008}
+Weninger, T. and Hsu, W.~H. (2008).
+\newblock Text extraction from the web via text-to-tag ratio.
+\newblock In {\em Database and {Expert} {Systems} {Application}, 2008.
+  {DEXA}'08. 19th {International} {Workshop} on}, pages 23--28. IEEE.
 
 \bibitem[Yadav et~al., 2007]{yadav_change_2007}
 Yadav, D., Sharma, A.~K., and Gupta, J.~P. (2007).

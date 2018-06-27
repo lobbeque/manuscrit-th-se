@@ -4,6 +4,7 @@ The top-level auxiliary file: manuscrit.aux
 The style file: apalike.bst
 Database file #1: biblio.bib
 Warning--empty journal in arvidson_kulturarw3_2000
+Warning--empty journal in cai_vips:_2003
 Warning--empty journal in dougnac_depot_1960
 Warning--empty journal in fitch_web_2003
 Warning--empty journal in hatcher_lucene_2004
@@ -16,45 +17,45 @@ Warning--there's a number but no volume in stiegler_leroi-gourhan:_1998
 Warning--empty note in unesco_charter_2003
 Warning--empty institution in van_de_sompel_http_2013
 Warning--empty booktitle in yadav_change_2007
-You've used 98 entries,
+You've used 102 entries,
             1935 wiz_defined-function locations,
-            968 strings with 19829 characters,
-and the built_in function-call counts, 41292 in all, are:
-= -- 4172
-> -- 1483
-< -- 100
-+ -- 528
-- -- 488
-* -- 3159
-:= -- 6831
-add.period$ -- 324
-call.type$ -- 98
-change.case$ -- 717
-chr.to.int$ -- 98
-cite$ -- 111
-duplicate$ -- 1817
-empty$ -- 3023
-format.name$ -- 640
-if$ -- 8475
+            985 strings with 20563 characters,
+and the built_in function-call counts, 43198 in all, are:
+= -- 4371
+> -- 1550
+< -- 105
++ -- 550
+- -- 510
+* -- 3299
+:= -- 7130
+add.period$ -- 338
+call.type$ -- 102
+change.case$ -- 748
+chr.to.int$ -- 102
+cite$ -- 116
+duplicate$ -- 1907
+empty$ -- 3163
+format.name$ -- 670
+if$ -- 8883
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 112
-newline$ -- 485
-num.names$ -- 294
-pop$ -- 816
+missing$ -- 116
+newline$ -- 504
+num.names$ -- 306
+pop$ -- 856
 preamble$ -- 1
-purify$ -- 734
+purify$ -- 765
 quote$ -- 0
-skip$ -- 1371
+skip$ -- 1440
 stack$ -- 0
-substring$ -- 2792
-swap$ -- 401
-text.length$ -- 42
+substring$ -- 2920
+swap$ -- 427
+text.length$ -- 45
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 550
-warning$ -- 13
-while$ -- 349
+type$ -- 574
+warning$ -- 14
+while$ -- 366
 width$ -- 0
-write$ -- 1267
-(There were 13 warnings)
+write$ -- 1319
+(There were 14 warnings)

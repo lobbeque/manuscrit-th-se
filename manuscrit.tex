@@ -188,6 +188,8 @@
 
 \usepackage{dpfloat}
 
+\usepackage[]{algorithm2e}
+
 \begin{document}
 
 % Front matter
@@ -1229,7 +1231,7 @@ Nous construisons ensuite un index dédié dans Solr. Ne reste plus alors qu'à 
 
 \begin{figure*}%
   \includegraphics[width=\linewidth]{graphics/edition_vs_download}
-  \caption{Distribution, pour \textit{yabiladi.com}, du nombre de pages et de fragments archivés par jours et suivant leurs dates de téléchargement (bleu) et de d'édition (rouge) respectives}
+  \caption{Distribution, pour \textit{yabiladi.com}, du nombre de pages et de fragments archivés par jours et suivant leurs dates de téléchargement (bleu) et d'édition (rouge) respectives}
   \label{fig:edition_vs_download}
 \end{figure*}
 
@@ -1262,6 +1264,7 @@ Nos expérimentations pratiques ne portent que sur les seules dates d'édition, 
 Dans notre méthodologie, la place du chercheur est donc centrale. C'est lui qui, par ses choix de montage (basés sur sa propre expertise ou sur des indices qu'il aura recueilli en amont) définit les fragments Web à explorer et la manière de les parcourir. Il peut, dans cette tâche, se faire aider de scripts informatiques pour automatiser certains traitements. Le fragment Web doit ainsi être interprétable par une machine : un programme pourra l'analyser, le manipuler, le stocker, etc. Mais le fragment doit aussi rester compréhensible, en lui même, afin d'être étudié par un chercheur (sociologue, historien, ...). Nous discuterons, en section \ref{sec:5_scraping}, de l'implication ou non du chercheur dans le choix même de la forme des fragments Web. Nous donnerons, enfin, dans le chapitre \ref{chap:6}, deux exemples d'explorations désagrégées de nos corpus et basées sur le fragment Web.
 
 \section{Le fragment Web : définition}
+\label{sec:5_fragment}
 
 \noindent La définition suivante est intentionnellement générique. Nous souhai\-tons par là, que d'autres chercheurs puissent se saisir après nous du fragment Web. Par ailleurs, la nature des fragments dépendant beaucoup du contexte de l'analyse et de la sensibilité propre à chaque chercheur, soit qu'il voudra une fragmentation plus ou moins englobante, soit qu'il se satisfera d'éléments abstrait, nous ne donnerons pas ici de définition technique précise du fragment. Nous proposerons, dans la section \ref{sec:5_scraping}, notre propre système d'extraction des fragments Web depuis une page archivée, d'autres approches et stratégies peuvent naturellement exister.\\
 
@@ -1308,38 +1311,316 @@ La vitesse des traitements est, de fait, une composante essentielle de tout scra
 
 L'extension Readability\footnote{\url{https://github.com/mozilla/readability}} du navigateur Web Firefox propose, par exemple, aux internautes d'expérimenter une forme de lecture \textit{zen} sur la toile. Le système cherche ainsi à identifier le contenu principal de chaque page (le corps d'un article), à l'extraire et à le présenter dépouillé des publicités, menus et autres suggestions qui pourraient nuire à la lecture. Bien que Readability se limite seulement à certains types de sites  (les sites de news notamment), une partie de son fonctionnement pourra être adaptée à notre propre moteur. 
 
-\subsection{Implémentation technique}
+\subsection{Des pages bruitées à nettoyer}
 
-\noindent Notre tâche consiste ici à fragmenter une page Web donnée. C'est à dire, à extraire de nos fichiers archivés, des sous ensembles cohérents de nœuds HTML. Pour ce faire nous prendrons chaque page une par une, nous la nettoierons, puis, nous définirons une mesure censée traduire la cohérence entre des nœuds HTML deux à deux, avant de les grouper en un ensemble de fragments Web distincts. Soit une page Web $p_1$ composée de $m$ nœuds HTML $\{n_1,...,n_m\}$, organisés en un arbre DOM $t$ et associés à des règles CSS.
+\noindent Notre tâche consiste ici à fragmenter une page Web donnée. C'est à dire (suivant les termes nouvellement introduits), à extraire de nos fichiers archivés, des sous ensembles cohérents de nœuds HTML. Pour ce faire nous prendrons chaque page une par une, nous la nettoierons, puis, nous définirons une mesure censée traduire la cohérence entre des nœuds HTML deux à deux, avant de les grouper en un ensemble de fragments Web distincts. Soit une page Web $p_1$ composée de $m$ nœuds HTML $\{n_1,...,n_m\}$, organisés en un arbre DOM $t$ et associés à des règles CSS.
 
-La première étape consiste à nettoyer $p_1$ de tous les éléments qui ne nous semblent pas pertinents : publicités, menus de navigation, scripts~... Pour ce faire, nous utilisons certaines heuristiques issues de la méthode \textit{boilerplate}\footnote{Boilerplate fait en partie appel à une tâche d'apprentissage automatique, cherchant à définir un modèle de nettoyage pour chaque site. Or, nous ne connaissons pas, à priori, les évolutions structurelles et stylistiques subies par un site au cours de son histoire. La définition d'un set d'apprentissage nous semble compromise } \citep{kohlschutter_boilerplate_2010} auxquelles nous ajoutons nos propres observations ad hoc. Il s'agit essentiellement de supprimer certaines balises et certaines classes  
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/bruit}
+  \caption{Processus de nettoyage, nœud par nœud, d'une page Web}
+  \label{fig:bruit}
+\end{figure*}
 
-C'est notre premier compromis entre manuel et générique  
+\noindent Nous commençons par \textit{nettoyer}\footnote{Voir la section suivante pour une discussion sur le nettoyage des pages} $p_1$ de tous les nœuds qui ne nous semblent pas pertinents : publicités, menus de navigation, scripts~... D'expérience, nous faisons l'hypothèse que le Web est une source de données très bruitée, tout l'enjeu est ici de trouver un juste milieu entre nettoyage et conservation des données pertinentes. Des méthodes très efficace, par apprentissage supervisé, existent \citep{kohlschutter_boilerplate_2010}, cherchant à définir des masques de nettoyage pour chaque site.  Or comme nous ne connaissons pas, à priori, les évolutions structurelles et stylistiques subies par un site Web au cours de son histoire, la définition d'un set d'apprentissage nous semble ici compromise. 
 
-wesh \\
+De notre côté, nous préférons favoriser une approche par heuristiques \citep{jatowt_detecting_2007}. Ainsi, nous définissons pour chaque nœud de $p_1$ un label, résultat de la concaténation de son tag, de son id et de sa classe : 
+\[
+label = tag + id + classe
+\]
+\noindent L'idée est ici de vérifier la valeur informative d'un nœud via un ensemble d'expressions régulières appliquées à son label \ref{fig:bruit}. Pour ce faire, nous parcourons l'arbre DOM $t$ et si l'un des labels contient les termes \textit{menu} ou \textit{navbare}, par exemple\footnote{Voir la liste complète dans le code source (l.72-73) : pattern\_avoid, pattern\_remove}, alors celui-ci ne sera pas conservé dans la suite du processus d'extraction. À la fin de cette étape nous ne retenons, à titre illustratif, que 30\% des nœuds des pages forums de \textit{yabiladi.com}, ce taux descend autour de 15\% pour les pages \textit{actualités}, plus bruitée donc. 
 
-readability va avec fathom
+\subsection{Clustering de nœuds}
 
-Là on parle de rivelaine et de la fonction distance ...
-L'algo 
-les différents filtres
-on dit qu'il y a plusieures implémentations
+\noindent Transposé au champ d'action de la recherche d'information, un fragment Web peut être vu comme un groupe cohérent de nœuds HTML. Toute la difficulté revient à traduire informatique cette notion de cohérence entre nœuds. Sur ce point, la librairie open-source Fathom\footnote{\url{https://github.com/mozilla/fathom}} a été conçue pour identifier des \textit{clusters} (ie: groupes) de nœuds HTML au sein d'une page Web donnée. L'idée de Fathom est simple : deux nœuds proches l'un de l'autre sont placés dans un même groupe, un nœud proche d'un groupe déjà formé le rejoindra alors, et ainsi de suite. L'algorithme réalise un clustering par agglomérations successives de l'ensemble des nœuds de l'arbre DOM~$t$. 
 
-\subsection{Exemples et discussions}
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/fathom}
+  \caption{Processus de nettoyage, nœud par nœud, d'une page Web}
+  \label{fig:fathom}
+\end{figure*}
 
-là on donne qq exemples 
-et on dit que en tant qu'ingé on avait cherché un truc qui fonctionnait tout le temps
-mais c'est pas possible et un historien a besoin de vouloir resizer à volonter 
-Là on parle de l'automatique vs le fait à la main avec le truc firefox
-Du coup dans la suite, le treshold de la fonction distance sera toujours testées avec le truc firefox
+\noindent Dans la figure \ref{fig:fathom}, la page $p_1$ contient cinq nœuds HTML identifiés par les tags de leurs balises : $A, B, C, D, E$. Deux nœuds $n_1, n_2$ sont considérés proches l'un de l'autre si la distance $d(n_1,n_2)$ les séparant est inférieure strictement à une variable $minDist$ : la distance minimal autorisant le rapprochement de deux nœuds (ici valant arbitrairement 4). Dans cet exemple\footnote{Les distances sont ici données à titre illustratif, voir la section suivante pour une discussion sur les fonctions de distance}, la distance $d(A,D)$ vaut $1$, $A$ et $D$ ne sont donc pas considérés comme proches. L'ensemble des $m$ nœuds de $p_1$ sont codés, dans Fathom, sous la forme d'une matrice d'adjacence $m \times m$ nommée $M$ (ici de taille 5). À chaque ligne (\textit{row}) de $M$ correspond un nœud et sa distance respective vis à vis des autres nœuds de $p_1$. À chaque itération de Fathom, une fonction \textit{closestRows} détermine les deux nœuds ou groupes de nœuds les plus proches. Dans notre exemple, au premier passage ce sont $A$ et $B$ qui sont considérés les plus proches avec $d(A,B)=1$, puis vient le tour de $C$ et $E$ situés à une distance $2$ l'un de l'autre. À la troisième itération plus aucun groupe ne peut être aggloméré, Fathom a donc identifié trois clusters distincts de nœuds. Le pseudo code, ci dessous, décrit avec plus de détail le fonctionnement de Fathom\footnote{Implémentation originale disponible ici : \url{https://github.com/mozilla/fathom/blob/master/clusters.js\#L156}} :  
+
+\begin{algorithm}
+ \While{rows(M) > 1 and closestRows(M) < minDist }{
+  $\{r_i,r_j\} = closestRows(M)$\\  
+  $newRow = \{ \}$\\
+  \For{$r\in rows(M)$}{
+   \If{$r \neq r_i \mathrm{ and } r \neq r_j$}{
+	$newRow[r] = \min(d(r_i,r),d(r_j,r))$   
+   }
+  }
+  remove($M[r_i]$)\\ 
+  remove($M[r_j]$)\\
+  remove($M[*][r_i]$)\\
+  remove($M[*][r_j]$)\\
+  append($M,newRow$)
+ }
+\end{algorithm}
+
+\noindent Fathom a besoin d'être paramétré pour fonctionner correctement. Il faut ainsi établir en amont la valeur de $minDist$ et définir une fonction de distance qui fasse sens. Dans notre cas nous voulons que cette dernière traduise la cohérence sémantique, syntaxique et visuelle d'un fragment Web. 
+
+\subsection{Définir une fonction de distance}
+
+\begin{marginfigure}%
+  \includegraphics[width=\linewidth]{graphics/depth}
+  \vspace*{0.2cm}  
+  \caption{Différence de profondeur entre deux nœuds HTML au sein d'un même arbre DOM. $d(n_1,n_2)=0$ s'ils sont frères. $d(n_1,n_2)=1$ si l'un est le parent de l'autre}
+  \label{fig:depth}
+\end{marginfigure}
+
+\noindent Une \textbf{fonction de distance} est un objet mathématique qui traduit et calcule l'éloignement entre deux entités, données en variable. Dans notre cas, deux nœuds HTML $n_1,n_2$ seront considérés comme \textit{proches} si le résultat de la fonction de distance $d(n_1,n_2)$ est strictement inférieure à la valeur de $minDist$. Ces nœuds pourront alors être groupés par Fathom et formeront un seul et même fragment Web. 
+
+Par défaut, Fathom réutilise la fonction de distance implémentée dans Readability et designée pour grouper ensemble les nœuds appartenant au contenu principale d'une page Web. Cette fonction s'appuie, d'une part, sur la différence de profondeur entre deux nœuds de l'arbre $t$ (Figure \ref{fig:depth}, $depth(n_i,n_j)$) et, d'autre part, sur le nombre d'éléments les séparant une fois l'arbre $t$ mis à plat ($length(n_i,n_j)$). Un malus est ensuite ajouté si les nœuds ne possèdent pas les mêmes balises HTML ($tag(n_i) \neq tag(n_j)$). Le pseudo code suivant décrit l'intégration de cette fonction de distance\footnote{Voir l'implémentation originale : \url{https://github.com/mozilla/readability/blob/master/Readability.js\#L760}} à Fathom, lors de la création de la matrice d'adjacence $M$ :  
+
+\begin{algorithm} 
+ \For{$n_i \in nodes$}{
+  \For{$n_j \in nodes$}{
+    $d(n_i,n_j) = 0$\\
+    $d(n_i,n_j) = d(n_i,n_j) + depth(n_i,n_j)$\\
+	$d(n_i,n_j) = d(n_i,n_j) + length(n_i,n_j)$\\    
+    \If{$tag(n_i) \neq tag(n_j)$}{
+		$d(n_i,n_j) = d(n_i,n_j) + malus$    
+    }
+    return $d(n_i,n_j)$      
+  } 
+ }
+\end{algorithm}
+
+\noindent En l'état, cette fonction ne traduit qu'une forme de cohérence structurelle (\textit{depth}, \textit{length}), voire sémantique si l'on considère la différence de balises telle quelle. Notre définition du fragment Web se veut plus complète. Nous allons donc enrichir cette fonction de distance en partant d'un principe simple : par défaut deux nœuds sont considérés comme proche, tout motif d'éloignement sera sanctionné d'un malus.
+
+Tout d'abord, la cohérence visuelle jouant un rôle important dans la segmentation d'une page Web donnée\footnote{"\textit{constatant que du point de vue de la perception humaine \citep{bernard_criteria_2003, michailidou_visual_2008} une page web est le résultat de l'agencement logique d'éléments sémantiques distincts}",  section \ref{sec:5_fragment}},nous éloignerons dont la couleur d'arrière plan ($color(n_i) \neq color(n_j)$, issue du CSS) n'est pas la même.
+
+Puis, nous ajouterons un malus aux éléments séparés par des par des \textit{breaking lines} ($vips(n_i,n_j)$). Dans l'algorithme de segmentation Vips \citep{cai_vips:_2003}, les breaking lines sont des nœuds HTML identifiés comme potentiels séparateurs de contenu sur le Web. Ce sont des sauts visuels entre deux portions de texte d'une même page. Les balises \textit{<hr>}, \textit{<br>}, etc sont des breaking lines.   
+
+Enfin, nous savons grâce aux travaux de J. Goody \citep{goody_raison_1979}, que la liste, comme forme d'organisation graphique de l'écriture, est fortement utilisée par l'Homme depuis qu'il a ressentit le besoin de stocker et d'organiser ses données\footnote{Des listes de contage des tablettes sumériennes aux listes de résultats de Google}. La liste abstrait par un jeu de discontinuités (retour à la ligne) et de continuités (récurrences) les données ainsi présentées, permettant un classement de ces dernière suivant de multiples critères. 
+
+Les pages Web, dans leur organisation à l'écran, n'échappent pas à cette règle : listes d'articles, de commentaires, de suggestions, de liens, ... Une manière de traduire la cohérence d'un fragment Web serait d'identifier chaque fragment à un élément d'une de ces listes, quelque soit sa taille. Pour ce faire, nous définissons, par l'observation des \textit{masques de continuité} entre nœuds HTML. La figure \ref{fig:masques} illustre cette intuition. La page $p_1$ peut se voir comme une liste de nouvelles écrites par Borges, chacune présentée par un titre et un phrase faisant office de texte. Nos masques de continuité prennent en compte, d'une part, la nature des nœuds HTML (par une catégorisation de ces derniers\footnote{Voir la section suivante pour une discussion sur la catégorisation des nœuds HTML}) et, d'autre part, une relation de hiérarchie entre ces mêmes nœuds : Le second est il plus profond que le premier ? Sont ils au même niveau~? Nous faisons l'hypothèse, que dans l'arbre DOM $t$ un nœud de profondeur moindre (le titre) subordonnera la réception d'un nœud plus éloigné de la racine (le texte). Ainsi, dans cette exemple nous définissons comme masque l'énoncé suivant : un nœud titre suivit d'un nœud texte plus profond. Si deux nœuds ne valident pas ce masque (ici un texte suivit d'un titre moins profond), un malus leur sera attribué dans la fonction de distance. Cela nous permet, au final, de fragmenter la page $p_1$ comme une liste de deux nouvelles, de deux fragments Web. 
+
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/masques}
+  \caption{Ségmentation d'une page Web suivant des masques de continuité}
+  \label{fig:masques}
+\end{figure*}
+
+\noindent Nous définissons ainsi plusieurs masques (Figure \ref{fig:coherente-nodes}), supposés englober la majorité des cas de figure rencontrés sur le Web. Une condition ($incoherent(n_i,n_j)$) est ajoutée à notre fonction de distance, qui traduit maintenant une forme de cohérence structurelle, visuelle et syntactique entre deux nœuds HTML. Fathom est maintenant capable de fragmenter les pages Web archivées. Le pseudo code suivant présente l'agencement de l'ensemble de nos malus au sein de la fonction\footnote{Voir l'implémentation détaillée : \url{https://github.com/lobbeque/rivelaine/blob/master/nodejs/cluster.js\#L41}} $d$ :
+
+\newpage
+
+\begin{marginfigure}%
+  \includegraphics[width=\linewidth]{graphics/coherente-nodes}
+  \vspace*{0.2cm}  
+  \caption{Masques de continuité entre deux types de nœuds HTML de profondeur variable}
+  \label{fig:coherente-nodes}
+\end{marginfigure}
+
+\begin{algorithm} 
+ \For{$n_i \in nodes$}{
+  \For{$n_j \in nodes$}{
+    $d(n_i,n_j) = 0$\\
+    $d(n_i,n_j) = d(n_i,n_j) + depth(n_i,n_j)$\\
+	$d(n_i,n_j) = d(n_i,n_j) + length(n_i,n_j)$\\      
+    \If{$tag(n_i) \neq tag(n_j)$}{
+		$d(n_i,n_j) = d(n_i,n_j) + malus$    
+    }
+    \If{$color(n_i) \neq color(n_j)$}{
+		$d(n_i,n_j) = d(n_i,n_j) + malus$    
+    } 
+    \If{$vips(n_i,n_j)$}{
+		$d(n_i,n_j) = d(n_i,n_j) + malus$    
+    }
+    \If{$incoherent(n_i,n_j)$}{
+		$d(n_i,n_j) = d(n_i,n_j) + malus$    
+    }
+    return $d(n_i,n_j)$                        
+  } 
+ }
+\end{algorithm}
+
+\subsection{Catégorisation}
+
+\noindent Pour définir nos masques de cohérence, il nous catégoriser certains nœuds HTML par rapport à la nature de leur contenu. La catégorisation se fait ici au niveau des nœuds et non à l'intérieur du texte de l'élément HTML observé. Ces catégories interviennent, donc, au moment de la segmentation d'une page Web en fragments, mais elles deviendront aussi, à terme, dimension d'interrogation à part entière des archives Web. Pour trouver l'ensemble des fragments Web écrits par un seul et même auteur, il faut, en amont, avoir déterminé les nœuds HTML susceptibles de nous renseigner sur l'identité de cette personne. Nous définissons ainsi six catégories de nœuds :
+
+\begin{enumerate}[leftmargin=*]  
+\item Les nœuds titres : titre d'une page, d'un article ...
+\item Les nœuds auteurs : auteur d'un post de blog, de forum, ...
+\item Les nœuds dates : toute information temporelle 
+\item Les nœuds textes : tout élément textuel qui ne soit ni un auteur, ni une date, ni un titre
+\item Les nœuds d'expression : nœuds permettant de partager, promouvoir, éditer du contenu en ligne (liens hypertextes, éditeur intégrés, bouton partager, ...)
+\item Les nœuds autres : ceux qui n'ont pas pu être catégorisés 
+\end{enumerate}
+
+\noindent La catégorisation en elle même se fait sur la base d'expressions régulières et d'heuristiques ad hoc. Nous cherchons, ainsi, à faire correspondre le label\footnote{Pour rappel, le label est la concaténation du tag, de l'id et de la classe d'un nœud } de chaque nœud à un ensemble de termes (balises, classe, etc) caractéristiques d'une catégorie donnée. Par exemple, trouver le terme "\textit{title}" associé à une balise \textit{<h1>}\footnote{Balise HTML définissant un titre} dans le label d'un nœud, nous permettra de le placer dans la famille des titres. Chaque label passe alors au crible de nos expressions régulières\footnote{Voir le détail des patterns recherchés : \url{https://github.com/lobbeque/rivelaine/blob/master/nodejs/utils.js}}, allant de la plus discriminante à la plus englobante, comme l'illustre la figure \ref{fig:categorie-nodes} : 
+
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/categorie-nodes}
+  \caption{Chaine d'expressions régulières permettant la catégorisation d'un nœud HTML sur la base de son label}
+  \label{fig:categorie-nodes}
+\end{figure*}
+
+\noindent Au sortir de cette étape, nous souhaitons normaliser les nœuds dates. En effet, ces nœuds renferment les dates d'édition que nous cherchons à extraire depuis le début de ce manuscrit. Mais il y a ici une différence importante à faire entre une date encapsulée dans un nœud date et une date trouvée dans le corps d'un nœud texte ou titre. 
+
+La première peut être vue comme une information extradiégétique à la page et à son contenu. Elle caractérise par exemple une date de publication, d'écriture d'un commentaire ou de réponse à un article\footnote{Ces nœuds dates sont souvent crées automatiquement par les CMS et autres éditeurs de sites}. La seconde, en revanche, peut faire référence à n'importe quel aspect du contenu textuel des pages analysées : la date d'un événement narré dans un article, la date d'une référence bibliographique, etc. La structure même du HTML ne nous renseigne pas sur le contexte de ces dates. Pour nous, elles ne sont pas directement liées à un geste d'édition en ligne. Ces dates pourront, par contre, faire l'objet d'une analyse ultérieure.
+
+Ainsi, nos nœuds dates passent finalement au travers d'une fonction de normalisation, qui sur la base d'un dernier jeu d'expressions régulières\footnote{Voir le détail des patterns : \url{https://github.com/lobbeque/rivelaine/blob/master/scala/src/main/scala/qlobbe/Patterns.scala}}, transforme une date écrite en langage naturelle en une date formatée\footnote{ISO 8601 Time zone} et compréhensible par notre moteur de recherche Solr.
+
+\subsection{Discussions}
+
+\noindent Depuis le début de cette section, nous suivons le parcourt d'une page Web $p_1$ d'une étape à l'autre de son processus de segmentation. La page est d'abord nettoyée, pour ne conserver que les nœuds à haute valeur informative. Les éléments HTML restants sont ensuite catégorisés suivant la nature de chacun. Grâce à l'algorithme de clustering Fathom, associé à une fonction de distance enrichie, nous groupons les nœuds entre eux et segmentons alors $p_1$ en une suite de fragments Web distincts. Nous appelons \textbf{Rivelaine} notre librairie d'extraction des fragments Web\footnote{Open-source et téléchargeable ici \url{https://github.com/lobbeque/rivelaine/tree/master/scala}}.
+
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/rivelaine}
+  \caption{Fragment Web de la page \url{https://www.yabiladi.com/forum/semoule-fine-pour-couscous-54-9290786.html}, tel que retourné par Rivelaine}
+  \label{fig:rivelaine}
+\end{figure*}
+
+\noindent Une première implémentation de Rivelaine est développée en Scala et intégrée à notre moteur d'exploration, au niveau de l'analyse des archives par Spark\footnote{Voir \url{https://www.scala-lang.org/}} (Section \ref{sec:4_moteur}). Plus précisément, c'est une fois la jointure réalisée entre données et méta données DAFF, que nous procédons à la segmentation des pages archivées. Les fragments Web sont ensuite envoyés à notre moteur de recherche qui les place dans un index dédié. En sortie de Rivelaine, les fragments Web sont retournés suivant le format\footnote{\textit{JavaScript Object Notation}, format de données textuelles (\url{https://fr.wikipedia.org/wiki/JavaScript\_Object\_Notation})} JSON (Figure \ref{fig:rivelaine}), de nombreux champs sont exploitables.
+
+Le champ \textit{node} renferme l'ensemble des nœuds HTML d'un fragment Web. Le contenu textuel est, quant à lui, présenté dans le champ \textit{text}. Le fragment de la figure \ref{fig:rivelaine} est constitué d'un auteur, d'une date, d'un texte et d'un nœud autre (champ \textit{type}), identifiés grâce à leurs labels (champ \textit{label}). Deux liens hypertextes ont été extraits (champ \textit{href}) et nous savons que ce fragment est le quatrième a avoir été identifié sur cette page (champ \textit{offset}). Enfin, ce fragment ne représente que $0.008\%$ de l'ensemble du HTML de la page (champ \textit{ratio}). Au regard du texte et de notre connaissance des pages de \textit{yabiladi.com}, ce fragment semble se rapprocher d'un message posté sur le forum du portail marocain (Figure \ref{fig:semoule}). \\
+
+\begin{marginfigure}%
+  \includegraphics[width=\linewidth]{graphics/semoule}
+  \vspace*{0.2cm}  
+  \caption{Fragment Web de la page \url{https://www.yabiladi.com/forum/semoule-fine-pour-couscous-54-9290786.html}, tel qu'affiché à l'écran}
+  \label{fig:semoule}
+\end{marginfigure}
+
+\noindent À mesure que se construisait Rivelaine, un changement de stratégie s'est opéré. Il s'agissait au début de définir une méthode de fragmentation universelle, capable de s'adapter à tous types de pages et à tous les âges du Web. Mais force est de constater, que les heuristiques, non génériques, ont pris une place grandissante dans l'architecture de Rivelaine. L'automatisme, premièrement visé, s'est effacé au profit d'un agencement compliqué de \textit{bricolages} par heuristiques et d'ajustements manuels. En effet, Fathom (pour ne citer que cet élément), est une méthode infiniment paramétrable. La forme d'un fragment Web, dé\-pend ainsi de la valeur de $minDist$ ou du rapport de grandeur entre les divers malus de la fonction de distance. Doit on favoriser la cohérence visuelle ? Structurelle ? Sémantique ? Au détriment d'une autre ? 
+
+Le Web est ainsi fait qu'il reste, pour tout chercheur, pour tout explorateur d'archives, un terrain d'étude non trivial. Le Web est vaste et sauvage. Les sites ne se ressembleront jamais, certains seront \textit{mieux} construits que d'autres et aucune méthode de fragmentation ne pourra satisfaire l'ensemble des chercheurs. Ainsi, lors d'une présentation de Rivelaine\footnote{Lobbé Q., 2017, \textit{Workshop : Introducing Web Fragments, Computational tools for the social study of Web archives}, Open University Of Israel, Tel Aviv}, l'historien Y. Scioldo-Zürcher suggéra d'ajouter plus de contexte aux fragments Web, d'élargir la segmentation des pages. La forme d'un fragment est, au final, dépendante de la question de recherche qui nous motive et de ce que l'on aimerait trouver dans les archives Web.
+
+Sur les conseils de T. Drugeon, il a été décidé de replacer les cher\-cheurs au cœur de la définition des fragments Web. Pour ce faire, une seconde implémentation de Rivelaine a été développée, cette fois en nodeJs\footnote{\url{https://github.com/lobbeque/rivelaine/tree/master/nodejs}}, afin de la rendre autonome et interrogeable en tant que Web service. Nous construisons, par dessus cette application, un \textit{addon}\footnote{Voir \url{https://github.com/lobbeque/rivelaine/tree/master/addon}, les addon ne sont malheureusement plus compatibles avec les version récentes de Firefox} (ie: une extension) au navigateur Firefox permettant de tester, sur le Web vivant, la fragmentation d'une page affichée à l'écran. Il est ainsi possible de jouer directement sur les réglages de Fathom et de sa fonction de distance pour apprécier la forme des futurs fragments Web. Une fois le chercheur satisfait, le paramétrage de Rivelaine est ajouté à la configuration du moteur d'exploration des archives et l'extraction peut débuter.     
+
+La fragmentation des archives Web, nous invite à une forme de souplesse et d'agilité vis à vis des données qui ne doit pas être le seul fait des outils que nous développons. Toute notre méthodologie d'exploration doit pouvoir débrayer, au besoin, d'un traitement large et automatisé des archives vers une analyse plus focalisée où une grande part du travail se fera à la main. Au cas par cas. Il en va ainsi de toute étude sur le Web, soit une alliance à dimensions variables, entre le chercheur, l'algorithme, l'heuristique, le moteur, ...  
+
+Ainsi, Rivelaine et la stratégie d'extraction qu'elle renferme, ne doi\-vent pas être vue comme la seule et unique manière de construire des fragments Web. Rivelaine n'est qu'une possibilité, parmi d'autres qui, nous l'espérons, arriveront bientôt. Ce que nous défendons, dans ce manuscrit, est la fragmentation des archives Web comme principe d'exploration et non la forme particulière de tel ou tel fragment. Il nous faudra, en revanche, être très clair, dans le Chapitre \ref{chap:6}, sur la définition de nos espaces d'explorations à venir.    
 
 \section{Penser une exploration désagrégée}
 
-\subsection{Atténuer les "crawl blindness"}
+\noindent Voyons, maintenant, comment les fragments Web peuvent nous aider à améliorer certains biais d'analyse identifiés en section \ref{sec:4_temporalite}. Nous nous plaçons dans l'hypothèse d'une exploration désagrégée d'un corpus d'archives Web. Nous rappelons qu'un site Web archivé se compose de \textit{n} pages Web numérotées $\{p_1$,...,$p_n\}$. Mais désormais, une page $p_j$ consiste elle même en \textit{m} fragments Web numérotés $\{f_{j1},...,f_{jm}\}$. Nous supposons connaitre et avoir identifié la date d'édition de chacun de ces fragments $\phi(f_{j1}),...,\phi(f_{jm})$.
 
-\subsection{Cohérence relative entre archives}
+\subsection{Atténuer les cécités de crawl}
+
+\noindent En désagrégeant les archives Web, nous faisons l'hypothèse qu'une date d'édition sera toujours antérieure ou égale à une date de téléchargement. C'est une hypothèse plus ou moins forte et qui tient essentiellement à la nature des sites explorés. Une date d'édition peut, en effet, être falsifiée si elle est directement écrite par un humain. Mais, pour un site comme \textit{yabiladi.com}, les dates d'édition, extraites de la partie forum, sont à la base automatiquement générées par le CMS\footnote{\textit{Content management system}, système permettant de gérer automatiquement et de manière dynamique le contenu d'un site Web} Phorum. Sur l'ensemble de l'e-Diasporas marocaine, nous décomptons plus de $55\%$ de sites associés à un CMS. Nous pouvons donc avoir raisonnablement confiance en la véracité des dates d'éditions manipulées, ainsi :
+
+\[
+	\forall p_j,f_{jk} \exists \phi(f_{jk}) : \phi(f_{jk}) \leq \mu_i(p_j) \leq t_i(p_j)
+\] 
+\[
+	\textrm{where } c_i \textrm{ is a crawl in which } f_{jk} \textrm{ exists   }
+\]
+
+\noindent Dans la section \ref{sec:5_dessous}, nous révélions que, par la désagrégation des archives, il était possible d'accéder à une mémoire antérieure à toute collecte, comme le rappelle la figure \ref{fig:frag_blindness}. 
+
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/frag_blindness}
+  \caption{La fragmentation de la page $p_1$ permet d'accéder à des éléments antérieurs à la date de collecte $t_1(p_1)$}
+  \label{fig:frag_blindness}
+\end{figure*}
+
+\noindent Mais, essayons maintenant de quantifier ce potentiel gain de mémoire. Quelle peut être la différence, en jours, entre une date de téléchargement et une date d'édition ? 
+
+Pour ce faire, reprenons le cours de l'expérience,  débutée en section \ref{sec:5_dessous}, où nous comparions la distribution (pour \textit{yabiladi.com}) du nombre de pages et de fragments archivés suivant leurs dates de téléchargement et d'édition respectives. Nous sélectionnons les 109,534 pages archivées de la section forum de \textit{yabiladi.com} que nous segmentons\footnote{Malus maximal sur la cohérence visuelle et les masques de continuité, pour qu'à tout post du forum corresponde un fragment Web}, via notre moteur, en 422,906 fragments Web associés à une date d'édition. Nous considérons, ensuite, la plus ancienne date d'édition de chaque page $\min\limits_{k} \phi(f_{jk})$ pour s'approcher au plus près de leurs dates de création (Section \ref{sec:5_dessous}). 
+
+Nous calculons alors la différence $\min\limits_{i} t_i(p_j) - \min\limits_{k} \phi(f_{jk})$  entre dates de création et dates de première collecte. La figure \ref{fig:timeDiffFull} donne à voir le gain en jours pour chaque page archivée. 
+\newpage
+
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/timeDiffFull}
+  \caption{La fragmentation de la page $p_1$ permet d'accéder à des éléments antérieurs à la date de collecte $t_1(p_1)$}
+  \label{fig:timeDiffFull}
+\end{figure*}
+
+\noindent Les quartiles correspondants sont donnés par la table \ref{tab:quartiles_1}. Pour $50\%$ des pages archivées de \textit{yabiladi.com} (Table \ref{tab:quartiles_1}, Q2) le gain est estimé à plus de deux années, la maximum étant de 3131 jours.
+
+\begin{table}
+\hspace{2em}%
+  \label{tab:quartiles_1}
+  \begin{tabular}{ccl}
+    \toprule
+    quartiles&différence en jours\\
+    \midrule
+    Q1 & 256\\
+    Q2 & 777\\
+    Q3 & 1340\\    
+    max & 3131\\  
+  \bottomrule
+\end{tabular}
+  \bigskip
+  \caption{Quartiles de la différence $\min\limits_{i} t_i(p_j) - \min\limits_{k} \phi(f_{jk})$ en jours}
+\end{table} 
+
+\noindent Mais les bénéfices, que nous constatons ici, peuvent être simplement liés à la date de commencement du crawl. En effet, la collecte menée par l'INA a débuté bien après la création de \textit{yabiladi.com}. L'écart entre date de création et date de première collecte ne doit donc pas nous surprendre outre mesure.
+
+Aussi, concentrons nous plutôt sur des moments singuliers de cette campagne de crawl. D'une part, les six premiers mois de crawl qui correspondent à l'initialisation du corpus, où l'on cherche capter des pages potentiellement antérieur de 7 ou 8 ans\footnote{\textit{yabiladi.com} est crée fin 2002 et la campagne de crawl débute, elle, en 2010}. D'autre part, une année dite de routine (2012-2013), où le crawl n'a plus rien à rattraper et doit simplement se contenter d'archiver le pages nouvellement crées. Nous calculons alors, pour chaque moment, la même différence $\min\limits_{i} t_i(p_j) - \min\limits_{k} \phi(f_{jk})$, les résultats sont donnés par la table \ref{tab:quartiles_2}.
+
+\begin{table}
+\hspace{2em}%
+  \label{tab:quartiles_2}
+  \begin{tabular}{ccc}
+    \toprule
+    quartiles&différence cas n°1&différence cas n°2\\
+    \midrule
+    Q1 & 428 & 39\\
+    Q2 & 875 & 49\\
+    Q3 & 1340 & 1229\\
+    max & 2628 & 2389\\      
+  \bottomrule
+\end{tabular}
+  \bigskip
+  \caption{Quartiles de la différence $\min\limits_{i} t_i(p_j) - \min\limits_{k} \phi(f_{jk})$ en jours, pour les 6 premiers mois de crawl (cas n°1) et les années 2012-2013 (cas n°2)}
+\end{table} 
+
+\noindent Dans le premier cas, la différence de dates est, comme prévue, plus importante : celle-ci passant à 2 ans et 4 mois pour $50\%$ des pages archivées (Table \ref{tab:quartiles_2}, cas n°1, Q2). Pour les crawls routiniers, les gains sont bien moins importants et oscillent majoritairement entre un et deux mois (Table \ref{tab:quartiles_2}, cas n°2, Q1 et Q2). Fragmenter les archives Web permet ainsi d'atténuer les diverses cécités de crawl. Mais ces bénéfices seront plus marqués dans le cadre d'une collecte déclenchée après la création du site ciblé (notre cas), que lors d'un crawl routinier (le cas d'Internet Archive).    
+
+\subsection{Cohérence relative entre pages}
+
+\noindent Lorsque nous explorions les archives Web au niveau des seules pages (Section \ref{sec:4_temporalite}), nous avions définit la cohérence par observation comme l'existence d'un unique instant $t_{\mathrm{coherence}}$ où se croisent les intervalles d'invariance respectifs des pages considérées. \citep{spaniol_data_2009}. 
+
+Avec le fragment Web, nous pouvons dépasser cette définition et introduire la notion de \textbf{cohérence par observation relative}. Entre deux pages, la cohérence telle que nous la connaissons est absolue, l'entièreté des pages est ainsi considérée. Or, nous nous plaçons maintenant dans le cadre d'une analyse focalisée sur un élément ou un ensemble d'éléments particuliers.
+
+Par exemple, si un chercheur souhaite vérifier la cohérence entre deux articles collectés, il pourrait vouloir connaitre la nature précise de l'in\-tervalle d'invariance. À ses yeux, la cohérence serait hors sujet ou abusive, si le seul élément d'invariance entre les deux pages se révèlait être une barre de navigation plutôt que le corps des articles. Comment, dès lors, considérer la cohérence relativement à une question de recherche donnée ? 
+
+Sur ce point, nous définissons un sous ensemble discret de fragments d'intérêt $\{f^*_{j1},...,f^*_{jl}\}$ (avec $l \leq m$). Le chercheur sélectionne lui même les fragments Web qui lui semblent pertinents pour son analyse et pour vérifier la cohérence, ainsi :
+
+\newpage
+
+\[
+	\forall p_j, \exists f^*_{jk} \in \{f_{j1},...,f_{jm}\}, \exists t^*_{\mathrm{coherence}}:
+\] 
+\[
+	t^*_{\mathrm{coherence}} \in \bigcap^n_{j=1}[\phi(f^*_{jk}),t_i(p_j)] \neq \emptyset
+\] 
+
+\noindent En désagrégeant les archives Web, le chercheur peut reprendre la main sur les analyses qu'il entend mener au cœur des archives. Il peut focaliser, à souhait, son expérience d'explo\-ration et déplacer son point d'observation relativement à son sujet. La figure \ref{fig:frag_coherence} décrit, de manière graphique, la différence entre cohérence par observation absolue et cohérence par observation relative pour deux pages $p_1, p_2$ et deux fragments Web choisis $f^*_{11}, f^*_{21}$. 
+
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/frag_coherence}
+  \caption{Cohérence par observation absolue et cohérence par observation relative}
+  \label{fig:frag_coherence}
+\end{figure*}
+
+\noindent Nous n'avons pas eu ici l'occasion de proposer une expérimentation pratique de la cohérence par observation relative. Mais nous pensons qu'il est tout a fait faisable de l'intégrer à un système d'exploration des archives Web et encourageons la mise en place future de travaux voulant traiter ce sujet.  
 
 \subsection{Dédupliquer les corpus}
+
+\noindent En section \ref{sec:4_temporalite}, nous nous sommes inquiétés de la possibilité de voir plusieurs fois le même contenu archivé dans un corpus. Cela peut provoquer des biais d'analyse, notamment si l'exploration est basée sur une recherche plein texte. 
+
+Mais par la désagrégation des archives, il est possible de dédupliquer des éléments qui auraient été re-collectés d'un crawl à l'autre. En utilisant le fragment Web comme unité d'exploration, nous pouvons définir une \textbf{fonction d'identité} nommée $id$. Cette fonction compare l'invariance dans le temps, d'un fragment $f_{jk}$ extrait d'une page $p_j$, au cours de deux crawls consécutifs $c_1$ et $c_2$ à $t_1(p_j)$ et $t_2(p_j)$ tel que :    
+\[
+	id(t_1(f_{jk})) = t_2(f_{jk})
+\]
+\noindent La figure \ref{fig:frag_doublon} illustre cette idée. D'un point de vue technique, la fonction d'identité ne peut être mise en place qu'au moment de retourner les résultats d'une requête depuis le moteur de recherche (Section \ref{sec:4_moteur}). En effet, cela serait trop couteux de maintenir, lors de l'extraction des fichiers DAFF, un index dynamique des fragments Web déjà identifiés. Nous laissons donc, à dessein, des doublons dans les indexes de Solr.  C'est lors de la restitution de ces résultats que nous décidons de les grouper via la fonction d'identité.  
+
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/frag_doublon}
+  \caption{Dédupliquer les archives Web grâce à une fonction d'identité}
+  \label{fig:frag_doublon}
+\end{figure*}
+
+\noindent Pour ce faire, nous associons à chaque fragment Web un champ unique\footnote{Voir la section suivante pour une discussion sur le schéma de l'indexation des fragments Web} appelé \textit{frag\_text\_id}. Ce champ est le résultat du passage de l'ensemble du contenu textuel du fragment Web dans une fonction de hachage\footnote{Fonction déjà évoquée en section \ref{sec:3_constituer} pour les identifiants des fichiers DAFF} SHA-256. Nous utilisons la fonction \textit{group by}\footnote{Voir \url{https://lucene.apache.org/solr/guide/6_6/result-grouping.html}} de Solr pour grouper les fragments potentiellement dupliqués par \textit{frag\_text\_id} unique. \\
+
+\noindent Dans notre modèle d'exploration désagrégé, une page Web archivée et observée à un instant $t$ donné, ne sera plus que le résultat de l'assem\-blage de fragments Web précédemment publiés. La page Web, en tant que telle, disparait de notre modèle de données. 
 
 \section{Intégration à un moteur d'exploration}
 \label{sec:retour_au_moteur}

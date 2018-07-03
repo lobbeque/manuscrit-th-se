@@ -5,6 +5,7 @@ The style file: apalike.bst
 Database file #1: biblio.bib
 Warning--empty journal in arvidson_kulturarw3_2000
 Warning--empty journal in cai_vips:_2003
+Warning--empty journal in chaney_who_2015
 Warning--empty journal in dougnac_depot_1960
 Warning--empty journal in fitch_web_2003
 Warning--empty journal in hatcher_lucene_2004
@@ -17,45 +18,45 @@ Warning--there's a number but no volume in stiegler_leroi-gourhan:_1998
 Warning--empty note in unesco_charter_2003
 Warning--empty institution in van_de_sompel_http_2013
 Warning--empty booktitle in yadav_change_2007
-You've used 103 entries,
+You've used 109 entries,
             1935 wiz_defined-function locations,
-            991 strings with 20723 characters,
-and the built_in function-call counts, 43551 in all, are:
-= -- 4405
-> -- 1568
-< -- 105
-+ -- 556
-- -- 516
-* -- 3327
-:= -- 7196
-add.period$ -- 342
-call.type$ -- 103
-change.case$ -- 755
-chr.to.int$ -- 103
-cite$ -- 117
-duplicate$ -- 1921
-empty$ -- 3186
-format.name$ -- 677
-if$ -- 8952
+            1022 strings with 22115 characters,
+and the built_in function-call counts, 46495 in all, are:
+= -- 4688
+> -- 1725
+< -- 108
++ -- 612
+- -- 572
+* -- 3582
+:= -- 7696
+add.period$ -- 360
+call.type$ -- 109
+change.case$ -- 813
+chr.to.int$ -- 109
+cite$ -- 124
+duplicate$ -- 2030
+empty$ -- 3369
+format.name$ -- 739
+if$ -- 9533
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 118
-newline$ -- 509
-num.names$ -- 309
-pop$ -- 865
+missing$ -- 123
+newline$ -- 538
+num.names$ -- 327
+pop$ -- 927
 preamble$ -- 1
-purify$ -- 773
+purify$ -- 831
 quote$ -- 0
-skip$ -- 1449
+skip$ -- 1533
 stack$ -- 0
-substring$ -- 2932
-swap$ -- 428
-text.length$ -- 45
+substring$ -- 3119
+swap$ -- 453
+text.length$ -- 47
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 578
-warning$ -- 14
-while$ -- 368
+type$ -- 614
+warning$ -- 15
+while$ -- 389
 width$ -- 0
-write$ -- 1332
-(There were 14 warnings)
+write$ -- 1408
+(There were 15 warnings)

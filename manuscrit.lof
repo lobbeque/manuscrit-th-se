@@ -52,6 +52,12 @@
 \contentsline {figure}{\numberline {5.19}{\ignorespaces La fragmentation de la page $p_1$ permet d'acc\IeC {\'e}der \IeC {\`a} des \IeC {\'e}l\IeC {\'e}ments ant\IeC {\'e}rieurs \IeC {\`a} la date de collecte $t_1(p_1)$}}{89}{subsection*.31}
 \contentsline {figure}{\numberline {5.20}{\ignorespaces Coh\IeC {\'e}rence par observation absolue et coh\IeC {\'e}rence par observation relative}}{91}{subsection*.32}
 \contentsline {figure}{\numberline {5.21}{\ignorespaces D\IeC {\'e}dupliquer les archives Web gr\IeC {\^a}ce \IeC {\`a} une fonction d'identit\IeC {\'e}}}{92}{subsection*.33}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Int\IeC {\'e}gration de la fragmentation aux restes des traitements Spark (Voir Figure \ref {fig:spark})}}{93}{subsection*.34}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Diff\IeC {\'e}rentes strat\IeC {\'e}gies d'indexation du fragment Web dans un moteur de recherche et complexit\IeC {\'e} de la recherche (bleu)}}{93}{subsection*.34}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Sch\IeC {\'e}ma d'indexation des fragments Web}}{95}{subsection*.34}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces D\IeC {\'e}tection d'\IeC {\'e}v\IeC {\'e}nements \IeC {\`a} partir d'un threshold}}{96}{subsection*.35}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Division d'une phrase en bigrams}}{96}{subsection*.35}
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Ajout de la d\IeC {\'e}tection d'\IeC {\'e}v\IeC {\'e}nements \IeC {\`a} notre interface d'exploration}}{97}{subsection*.35}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

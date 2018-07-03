@@ -1493,9 +1493,10 @@ Sur les conseils de T. Drugeon, il a été décidé de replacer les cher\-cheurs
 
 La fragmentation des archives Web, nous invite à une forme de souplesse et d'agilité vis à vis des données qui ne doit pas être le seul fait des outils que nous développons. Toute notre méthodologie d'exploration doit pouvoir débrayer, au besoin, d'un traitement large et automatisé des archives vers une analyse plus focalisée où une grande part du travail se fera à la main. Au cas par cas. Il en va ainsi de toute étude sur le Web, soit une alliance à dimensions variables, entre le chercheur, l'algorithme, l'heuristique, le moteur, ...  
 
-Ainsi, Rivelaine et la stratégie d'extraction qu'elle renferme, ne doi\-vent pas être vue comme la seule et unique manière de construire des fragments Web. Rivelaine n'est qu'une possibilité, parmi d'autres qui, nous l'espérons, arriveront bientôt. Ce que nous défendons, dans ce manuscrit, est la fragmentation des archives Web comme principe d'exploration et non la forme particulière de tel ou tel fragment. Il nous faudra, en revanche, être très clair, dans le Chapitre \ref{chap:6}, sur la définition de nos espaces d'explorations à venir.    
+Ainsi, Rivelaine et la stratégie d'extraction qu'elle renferme, ne doi\-vent pas être vues comme la seule et unique manière de construire des fragments Web. Rivelaine n'est qu'une possibilité, parmi d'autres qui, nous l'espérons, arriveront bientôt. Ce que nous défendons, dans ce manuscrit, est la fragmentation des archives Web comme principe d'exploration et non la forme particulière de tel ou tel fragment. Il nous faudra, en revanche, être très clair, dans le Chapitre \ref{chap:6}, sur la définition de nos espaces d'explorations à venir.    
 
 \section{Penser une exploration désagrégée}
+\label{sec:desagreger}
 
 \noindent Voyons, maintenant, comment les fragments Web peuvent nous aider à améliorer certains biais d'analyse identifiés en section \ref{sec:4_temporalite}. Nous nous plaçons dans l'hypothèse d'une exploration désagrégée d'un corpus d'archives Web. Nous rappelons qu'un site Web archivé se compose de \textit{n} pages Web numérotées $\{p_1$,...,$p_n\}$. Mais désormais, une page $p_j$ consiste elle même en \textit{m} fragments Web numérotés $\{f_{j1},...,f_{jm}\}$. Nous supposons connaitre et avoir identifié la date d'édition de chacun de ces fragments $\phi(f_{j1}),...,\phi(f_{jm})$.
 
@@ -1622,14 +1623,153 @@ Mais par la désagrégation des archives, il est possible de dédupliquer des é
 
 \noindent Dans notre modèle d'exploration désagrégé, une page Web archivée et observée à un instant $t$ donné, ne sera plus que le résultat de l'assem\-blage de fragments Web précédemment publiés. La page Web, en tant que telle, disparait de notre modèle de données. 
 
-\section{Intégration à un moteur d'exploration}
+\section{Intégration au moteur d'exploration}
 \label{sec:retour_au_moteur}
 
-\subsection{D'un schéma à un autre}
+\noindent Notre moteur d'exploration d'archives Web, tel que nous l'avions décrit en section \ref{sec:4_moteur}, prend la page Web comme unité principale d'exploration. Mais depuis, nous avons opéré un changement analytique de la page vers le fragment Web. Expliquons maintenant comment intégrer le fragment à notre moteur et proposons un premier cas d'usage, basé sur la détection d'événements dans les archives.
 
-\subsection{Retour à la détection d'événements}
+\subsection{D'un schéma à l'autre}
 
-\subsection{S'éloigner des moteurs d'exploration}
+\begin{marginfigure}%
+  \includegraphics[width=\linewidth]{graphics/rivelaine_moteur}
+  \vspace*{0.2cm}  
+  \caption{Intégration de la fragmentation aux restes des traitements Spark (Voir Figure \ref{fig:spark})}
+  \label{fig:rivelaine_moteur}
+\end{marginfigure}
+
+\noindent D'un point de vue pratique, l'extraction des fragments s'intègre à l'ensemble des traitements supervisés par Spark (Section \ref{sec:5_scraping}). Une fois la jointure effectuée entre méta données et données, notre moteur demande à Rivelaine de segmenter les pages archivées avant de les envoyer dans Solr pour indexation (Figure \ref{fig:rivelaine_moteur}).
+
+Un nouvel index doit alors être créé pour accueillir les fragments, le premier étant pensé pour les pages Web uniquement. Deux stratégies s'offrent ici à nous. Tout d'abord, conserver la page comme élément de référence, à laquelle nous subordonnons les fragments (Figure \ref{fig:schema_vs}, (a)). Ou éliminer la notion même de page et n'indexer que les fragments (Figure \ref{fig:schema_vs}, (b)). 
+
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/schema_vs}
+  \caption{Différentes stratégies d'indexation du fragment Web dans un moteur de recherche et complexité de la recherche (bleu)}
+  \label{fig:schema_vs}
+\end{figure*} 
+
+\noindent La première option, plus intuitive, conserve le lien ontologique entre la page et ses fragments Web. Elle nécessite la mise en place dans Solr, d'une structure dite de \textit{nested documents}\footnote{\url{http://yonik.com/solr-nested-objects/}}. Dans un même index, deux types de documents cohabiteraient, un document page et des documents fragments. Malheureusement, cette stratégie est conteuse, notamment lorsqu'il s'agit d'identifier et de retourner des résultats. En effet, dans les moteurs de recherche, il est toujours conseillé (surtout lorsque le nombre de document est important) de dupliquer au besoin les documents indexés. L'espace disque occupé par l'index sera plus important, mais les performance du \textit{search}, en tant que tel, seront améliorées, la complexité d'une recherche par documents à plat étant moindre que celle par documents subordonnés pour laquelle toute la structure doit être retournée (Figure  \ref{fig:schema_vs}, tracés bleus). 
+
+Nous nous orientons donc vers la seconde option, qui a pour effet de dupliquer les informations associées à une page à l'intérieur de chaque document fragment. Si l'utilisateur veut, au besoin retrouver l'ensemble des fragments d'une même page, il pourra s'orienter vers une requête \textit{group by} sur le \textit{page\_id} dans Solr. 
+
+Soit le schéma d'indexation des fragments Web présenté par la figure \ref{fig:schema_2}. Dans ce schéma, l'\textit{id} de chaque document correspond à l'identifiant unique d'un fragment. Les champs issus de Rivelaine (\textit{frag\_type}, \textit{frag\_offset}, ...) sont intégrés à l'index et la recherche plein texte est maintenant réalisée sur le seul champ \textit{frag\_text}. Pour retrouver l'ensemble des fragments d'une même page, on se servira du champ \textit{page\_url\_id} et pour dédupliquer les fragments (Section \ref{sec:desagreger}), on s'appuiera sur la valeur de \textit{frag\_text\_id}\footnote{Clé SHA-256 unique}. Les différents niveaux de notre échelle de datation (Table \ref{tab:datation_2}) sont indexés, le champ \textit{page\_date} correspondant à la date de création d'une page (Section \ref{sec:5_dessous}). Le champ \textit{frag\_date} est, lui, supposé contenir les dates d'édition de chaque fragment. Néanmoins, si nous sommes dans l'impossibilité d'associer une date d'édition à un fragment, le champ \textit{frag\_date} se verra attribuer la valeur de \textit{page\_date}, voire de la date de téléchargement \textit{download\_date} dans le pire des cas. Sur ce point, le type \textit{dateLvl} nous renseigne sur le niveau de précision alloué au champ \textit{frag\_date}.
+
+\begin{figure*}
+\small
+\begin{verbatim}
+<field name="id"                type="string"  indexed="true"    multiValued="false" required="true" />
+
+<!-- archive fields -->
+<field name="archive_active"    type="boolean" indexed="true"    multiValued="false"/>
+<field name="archive_corpus"    type="string"  indexed="true"    docValues="true" multiValued="false"/>
+<field name="archive_country"   type="string"  indexed="true"    docValues="true" multiValued="false"/>
+<field name="archive_lang"      type="double"  indexed="true"    docValues="true" multiValued="false"/>
+<field name="archive_mime"      type="string"  indexed="true"    docValues="true" multiValued="false"/>  
+
+<!-- crawl fields -->
+<field name="crawl_id"          type="string"  indexed="true"    docValues="true" multiValued="true" />
+<field name="crawl_id_f"        type="string"  indexed="true"    docValues="true" multiValued="false"/>
+<field name="crawl_id_l"        type="string"  indexed="true"    docValues="true" multiValued="false"/>
+<field name="crawl_date"        type="date"    indexed="true"    docValues="true" multiValued="true" />
+<field name="crawl_date_f"      type="date"    indexed="true"    docValues="true" multiValued="fasle"/>
+<field name="crawl_date_l"      type="date"    indexed="true"    docValues="true" multiValued="true" />
+
+<!-- download fields -->
+<field name="download_date"     type="date"    indexed="true"    docValues="true" multiValued="true" />
+<field name="download_date_f"   type="date"    indexed="true"    docValues="true" multiValued="false"/>
+<field name="download_date_l"   type="date"    indexed="true"    docValues="true" multiValued="false"/> 
+\end{verbatim} 
+\end{figure*}
+
+\newpage
+
+\begin{figure*}
+\small
+\begin{verbatim}
+<!-- page fields -->
+<field name="page_domain"       type="string"  indexed="true"    docValues="true" multiValued="false"/>
+<field name="page_url"          type="string"  indexed="true"    docValues="true" multiValued="false"/>
+<field name="page_url_id"       type="string"  indexed="true"    docValues="true" multiValued="false"/>      
+<field name="page_link"         type="string"  indexed="true"    docValues="true"  multiValued="true"/>      
+<field name="page_title"        type="text"    indexed="true"    docValues="false" multiValued="false"/>
+<field name="page_date"         type="date"    indexed="true"    docValues="true"  multiValued="true" />
+
+<!-- fragment fields -->
+<field name="frag_type"         type="string"  indexed="true"    docValues="true"  multiValued="true" />    
+<field name="frag_author"       type="string"  indexed="true"    docValues="false" multiValued="true" />
+<field name="frag_date"         type="date"    indexed="true"    docValues="true"  multiValued="true" />
+<field name="frag_date_level"   type="dateLvl" indexed="true"    docValues="true"  multiValued="false"/> 
+<field name="frag_href"         type="string"  indexed="true"    docValues="false" multiValued="true" />
+<field name="frag_href_id"      type="string"  indexed="true"    docValues="true"  multiValued="true" />
+<field name="frag_ratio"        type="int"     indexed="true"    docValues="true"  multiValued="true" />
+<field name="frag_node"         type="text"    indexed="false"   docValues="false" multiValued="true" />  
+<field name="frag_offset"       type="int"     indexed="true"    docValues="true"  multiValued="true" />
+<field name="frag_text_id"      type="string"  indexed="true"    docValues="true"  multiValued="false"/>
+
+<!-- searchable fragment fields -->
+<field name="frag_text"         type="text"    indexed="true"    stored="false"  multiValued="true" />
+<field name="frag_text_shingle" type="shingle" indexed="true"    stored="false"  multiValued="true" />   
+\end{verbatim} 
+\caption{Schéma d'indexation des fragments Web}
+\label{fig:schema_2}
+\end{figure*}
+
+\subsection{Détection d'événements}
+
+\noindent Comme cas d'usage pratique du fragment Web, nous souhaitons maintenant ajouter à notre moteur d'exploration un système de détection d'événements dans les archives. Cette proposition a fait l'objet d'une publication démonstration\footnote{Lobbé, Q. (2018), \textit{Revealing Historical Events out of Web Archives}, TPDL 2018} dont l'application est, jusqu'à présent, limitée aux seules archives du site \textit{yabiladi.com}. 
+
+La recherche par événements est une alternative aux méthodes d'ex\-ploration classiques qui se font principalement par URLs (Section \ref{sec:3_constituer}). Des travaux récents tentent également de s'en affranchir en proposant des analyses par catégories \citep{holzmann_tempas:_2016}, par entités nommées \citep{spaniol_tracking_2012} ou basées sur des tendances issues des réseaux sociaux \citep{risse_arcomem_2014}. Dans l'ensemble, tout indique que, face à des corpus d'archives Web si vastes, une exploration dirigée ou guidée (par exemple sur la base d'événements) peut être bénéfique. 
+
+Nous pensons que tout explorateur d'archives (Web ou autre) poursuit à moment donné la recherche d'événements singuliers qu'il puisse mettre au regard de l'histoire \citep{chaney_who_2015}. Ainsi, pour J. Baschet (Section \ref{sec:5_dessous}) l'étude historique de lignes processuelles pas par une pensée de l'évé\-nement comme "\textit{surgissement}" ou "\textit{rupture}" \citep[p.227]{baschet_defaire_2018}.  
+
+Au sein d'une distribution temporelle d'éléments donnés, un événement peut être caractérisé de trois manières différentes comme le propose T. Viard \citep[p.106]{viard_link_2016} : par sa détection, par son identification et par son explication. 
+
+\begin{marginfigure}%
+  \includegraphics[width=\linewidth]{graphics/event}
+  \vspace*{0.2cm}  
+  \caption{Détection d'événements à partir d'un threshold}
+  \label{fig:event}
+\end{marginfigure}
+
+Un événement \textbf{détecté} est une anomalie présente dans une distribution. Il peut s'agir d'un instant singulier ou d'une période entière durant laquelle le niveau de messages postés sur un blog est supérieure à une valeur de référence (une moyenne par exemple). Un événement \textbf{identifié} est un événement pour lequel un élément de causalité aura été trouvé dans les données sources. Un pic d'activité dans un forum en ligne est, par exemple, causé par un nombre important de messages postés. Enfin, un événement \textbf{expliqué} est un événement pour lequel une explication aura été trouvée et validée à l'extérieur des données sources. Ici, une expertise et une analyse humaine est nécessaire. Un pic de messages dans un forum peut, ainsi, être expliqué par un contexte social ou politique particulier qui aura fait réagir certains membres de la communauté.  
+
+Continuant sur notre logique exploratoire, nous ne voulons pas ici cibler une forme particulière d'événements, nous éviterons donc les méthodes de détection par pattern \citep{chaney_detecting_2016} ou clustering  \citep{dodds_temporal_2011}. Nous nous orientons plutôt vers une méthode de détection par \textit{threshold} \citep{fung_parameter_2005} à l'intérieur d'une fenêtre glissante d'une semaine\footnote{Sur \textit{yabiladi.com}, la durée de vie moyenne d'un thread de messages est d'un peu plus d'un jour, le choix de prendre la semaine comme granularité nous a donc semblé judicieux}. Nous définissons ici un événement comme une valeur aberrante détectée au sein d'une distribution de fragments Web (Figure \ref{fig:event}).
+
+Pour ce faire, le contenu textuel de chaque fragment Web indexé est divisé en \textbf{bigrams}\footnote{Le champ \textit{frag\_text\_shingle} de notre schéma d'indexation (Figure \ref{fig:schema_2})}. Un bigram est une séquence de deux mots consécutifs extraite d'un même ensemble textuel (Figure \ref{fig:bigram}). 
+
+\begin{figure}%
+  \includegraphics[width=\linewidth]{graphics/bigram}
+  \caption{Division d'une phrase en bigrams}
+  \label{fig:bigram}
+\end{figure} 
+
+\noindent Dans le cadre de cette démonstration, la recherche plein texte porte sur le contenu textuel des bigrams. Le moteur ne retourne donc plus que les fragments Web dont certains bigrams auraient matché des mots clés proposés par un chercheur. Dans notre cas, identifier un événement revient, en réalité, à détecter un pic soudain de bigrams dans le temps. Les bigrams sont souvent utilisés pour observer des tendances ou des évolutions lexicales au sein de grands corpus de textes. On citera par exemple, le système \textit{ngrams viewer}, conçu par les équipes de Google books, qui permet de suivre l'évolution temporelle de l'utilisation de certains mots dans leur base de données de livres numérisés \citep{michel_quantitative_2011}.
+
+Pour terminer, nous essayons d'expliquer nos événements en trouvant des corrélations avec certains titres d'articles de news, extraits des archives de la section actualités du site \textit{yabildai.com}. En effet, nous faisant l'hypothèse que les utilisateurs du forum sont susceptibles de réagir, par le biais de messages, à un événement précis de l'actualité (avant ou après que celui-ci ait été rapporté dans la presse). Nous construisons ainsi, à la volée, un nouvel index d'événements potentiels en utilisant le titre et la date d'édition de ces articles archivés. Lorsqu'un pic de messages est détecté, une requête secondaire est automatiquement adressée à notre index d'événements possibles. Si l'un des titres matche également la recherche du chercheur et que sa date d'édition se trouve à moins d'une semaine de la date du pic détecté, alors nous proposons ce titre comme potentielle explication de cette soudaine recrudescence de messages.
+
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/ben-ali}
+  \caption{Ajout de la détection d'événements à notre interface d'exploration}
+  \label{fig:ben-ali}
+\end{figure*} 
+
+\noindent Notre interface de visualisation, est modifiée en conséquence et permet maintenant au chercheur de choisir la granularité d'explo\-ration qui l'intéresse le plus, entre la page et le fragment (Figure \ref{fig:ben-ali}). Dans la partie fragment Web, apparait un nouvel histogramme affichant la distribution dans le temps des bigrams ayant matchés la requête du chercheur. C'est sur cet histogram que sont affichés les événements détectés et leur possible explication. Dans une vidéo de démonstration\footnote{Consultable ici : \url{https://youtu.be/snW4O-usyTM}}, nous décrivons différents cas d'usages de ce système et, plus généralement, nous y présentons le fonctionnement du moteur d'exploration. Nous donnons ainsi à voir, comme exemple d'événements détectés dans les archives, des pics de discussion autour de diverses actualités liées au roi du Maroc Mohammed VI et des réactions à la destitution de l'ancien dirigeant tunisien Z. Ben-Ali, au début de l'année 2011 (Figure \ref{fig:ben-ali}, tracé vert). Dans le Chapitre \ref{chap:6}, nous reviendrons en détail sur la manière avec laquelle le forum de \textit{yabiladi.com} a réagit à ce moment historique particulier qu'a été le Printemps arabe.
+
+\begin{center}
+	***
+\end{center}
+
+\noindent Tout au long de ce chapitre, nous nous sommes attelés à présenter, décrire et défricher les cas d'usage du fragment Web. 
+
+Le terrain théorique ayant été préparé, dans le courant des années 2000, par les travaux pionniers de N. Brügger, il existait un espace analytique à explorer entre l'élément Web et la page Web. C'est dans cet entre-deux, que nous avons défini notre nouvelle unité d'exploration des archives Web : le fragment Web. Le fragment Web est un sous ensemble sémantique et syntaxique d'une page Web.
+
+Avec le fragment Web, le chercheur retrouve une forme de souplesse vis à vis des archives Web. Il quitte les interfaces d'exploration vitrines et s'assoit à la table de montage. Là, la grammaire introduite par le fragment Web, lui permet de découper, déplacer et mettre en relation des éléments éparts, extraits de ses corpus archivés.  
+
+Plus précises, historiquement parlant, les analyses portant sur les fragments Web s'appuient, d'abord et avant tout, sur leurs dates d'édi\-tion, plutôt que sur les seules dates de téléchargement des pages Web collectées. Ce faisant, les archives basculent d'une temporalité à l'autre. Elles quittent le temps des crawlers pour retrouver le temps du Web tel qu'il a été. Le chercheur accède à une mémoire antérieur au passage du crawler, mémoire jusqu'ici retenue dans les données des fichiers archivés. Le fragment témoigne ainsi directement du geste des auteurs, lecteurs et bloggers du Web passé et replace, de fait, l'humain au cœurs de l'étude des archives Web.
+
+Intégré à un moteur d'exploration des archives Web, le fragment Web permet de réduire et d'atténuer considérablement les effets des artéfacts de crawl. Certains biais d'analyse disparaissent et de nouvelles modalité de recherches peuvent être testée, nous avons notamment insister sur la détection d'événements dans les archives. 
+
+Mais, trouver une bonne méthode d'extraction des fragments Web, depuis les pages archivées, reste un champ de recherches pleinement ouvert. Sur ce point, nous apportons une première proposition, critiquable par son usage important d'heuristiques non génériques, mais qui selon nous correspond bien à notre méthodologie d'analyse. Nous souhaitons garder le contrôle sur les traitements que nous déléguons aux algorithmes et aux machines. Nous verrons, dans le chapitre suivant, en suivant le fil de deux explorations successives, que le Web nous oblige à mettre les mains dans les données, à tout le temps débrayer du qualitatif au quantitatif, de l'automatique au coup par coup, etc. 
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapitre 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

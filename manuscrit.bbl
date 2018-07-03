@@ -118,6 +118,17 @@ Chakravarthy, S., Jacob, J., Pandrangi, N., and Sanka, A. (2002).
   large network-centric environments.
 \newblock In {\em Second {International} {Workshop} on {Web} {Dynamics}}.
 
+\bibitem[Chaney et~al., 2015]{chaney_who_2015}
+Chaney, A.~J., Wallach, H., and Blei, D.~M. (2015).
+\newblock Who, {What}, {When}, {Where}, and {Why}? {A} {Computational}
+  {Approach} to {Understanding} {Historical} {Events} {Using} {State}
+  {Department} {Cables}.
+
+\bibitem[Chaney et~al., 2016]{chaney_detecting_2016}
+Chaney, A. J.-B., Wallach, H.~M., Connelly, M., and Blei, D.~M. (2016).
+\newblock Detecting and {Characterizing} {Events}.
+\newblock In {\em {EMNLP}}, pages 1142--1152.
+
 \bibitem[Chawathe and Garcia-Molina, 1997]{chawathe_meaningful_1997}
 Chawathe, S.~S. and Garcia-Molina, H. (1997).
 \newblock Meaningful change detection in structured data.
@@ -178,6 +189,13 @@ Derrida, J. (2014).
 \newblock {\em Trace et archive, image et art}.
 \newblock Collection {Collège} iconique. INA.
 
+\bibitem[Dodds et~al., 2011]{dodds_temporal_2011}
+Dodds, P.~S., Harris, K.~D., Kloumann, I.~M., Bliss, C.~A., and Danforth, C.~M.
+  (2011).
+\newblock Temporal patterns of happiness and information in a global social
+  network: {Hedonometrics} and {Twitter}.
+\newblock {\em PloS one}, 6(12):e26752.
+
 \bibitem[Douglis et~al., 1998]{douglis_at&t_1998}
 Douglis, F., Ball, T., Chen, Y.-F., and Koutsofios, E. (1998).
 \newblock The {AT}\&{T} {Internet} {Difference} {Engine}: {Tracking} and
@@ -226,6 +244,12 @@ Flusser, V. (2014).
 Foot, K. and Schneider, S.~M. (2006).
 \newblock {\em Web campaigning (acting with technology)}.
 \newblock The MIT Press.
+
+\bibitem[Fung et~al., 2005]{fung_parameter_2005}
+Fung, G. P.~C., Yu, J.~X., Yu, P.~S., and Lu, H. (2005).
+\newblock Parameter free bursty events detection in text streams.
+\newblock In {\em Proceedings of the 31st international conference on {Very}
+  large data bases}, pages 181--192. VLDB Endowment.
 
 \bibitem[Gebeil, 2016]{gebeil_les_2016}
 Gebeil, S. (2016).
@@ -404,6 +428,12 @@ Michailidou, E., Harper, S., and Bechhofer, S. (2008).
   {Conference} on {Design} of {Communication}}, {SIGDOC} '08, pages 215--224,
   New York, NY, USA. ACM.
 
+\bibitem[Michel et~al., 2011]{michel_quantitative_2011}
+Michel, J.-B., Shen, Y.~K., Aiden, A.~P., Veres, A., Gray, M.~K., Pickett,
+  J.~P., Hoiberg, D., Clancy, D., Norvig, P., Orwant, J., and {others} (2011).
+\newblock Quantitative analysis of culture using millions of digitized books.
+\newblock {\em science}, 331(6014):176--182.
+
 \bibitem[Mitchell, 2015]{mitchell_web_2015}
 Mitchell, R. (2015).
 \newblock {\em Web scraping with {Python}: collecting data from the modern
@@ -556,6 +586,12 @@ Van~de Sompel, H., Nelson, M., and Sanderson, R. (2013).
 \newblock {HTTP} framework for time-based access to resource
   states–{Memento}.
 \newblock Technical report.
+
+\bibitem[Viard, 2016]{viard_link_2016}
+Viard, T. (2016).
+\newblock {\em Link streams for the modelling of interactions over time and
+  application to the analysis of {IP} traffic}.
+\newblock {PhD} {Thesis}, Université Pierre et Marie Curie.
 
 \bibitem[Voerman et~al., 2002]{voerman_archiving_2002}
 Voerman, G., Keyzer, A., Den~Hollander, F., and Druiven, H. (2002).

@@ -1776,35 +1776,180 @@ Intégrés à notre moteur d'exploration, nous nous appuierons sur les fragments
 \cleardoublepage
 \begin{minipage}[t,leftmargin=5em]{1.5\linewidth}%
 \begin{adjustwidth}{-0.5cm}{}
-\chapter{Explorations de Collectifs Migrants Éteints} 
+\chapter{Exploration de Collectifs Migrants Éteints} 
 \label{chap:6}
 \end{adjustwidth}
 \end{minipage}
 \hfill
 
-\noindent Où l'on parle d'exploration de blogs, de forum et de moments pivots \\
+\noindent Le processus de cartographie de l'e-Diaspora marocaine s'est étalé sur prêt de deux ans, de 2008 à 2010. L'archivage de ces sites s'est alors présenté comme une nécessité, leurs traces commençant déjà à disparaitre de la toile. Dix ans plus tard, en 2018, sur les 153 sites observés à l'époque, seuls 53 peuvent encore être qualifiés de vivants, c'est à dire : toujours en ligne et ayant été mis à jour au moins une fois au cours de la dernière année passée. Les deux autres tiers sont, pour la plupart hors ligne, tombés à l'abandon ou récupérés par des cybersquatteurs\footnote{Technique de hacking consistant à prendre possession d'un nom de domaine existant et de publier à sa place un contenu autre (e-commerce, publicités, arnaques, pornographie, ...)}.      
 
-\section{Qu'est ce que l'analyse exploratoire ?}
+Le Web est un environnement éphémère (Section \ref{sec:3_constituer}) et les e-Diaspo\-ras ne sont, au final, que des images instantanées d'un espace qui, une fois la capture effectuée, n'est déjà n'est plus tout a fait le même. Il a continué à évoluer et s'est transformé. 
+
+Parmi les nombreux sites du corpus marocain, les plateformes institutionnelles (Section \ref{sec:2_atlas}) sont celles qui ont le mieux résisté au passage du temps. En effet, $50\%$ d'entre elles sont toujours vivantes et leur encrage durable en ligne semble résulter d'une stratégie planifiée. La petite dizaine de sites consulaires, identifiés en 2008, s'est ainsi muée en un seul et même portail Web \textit{consulat.ma}\footnote{Voir \url{http://www.consulat.ma/fr/aide.cfm}, site lancé en 2011 dans le cadre du Plan Maroc Numeric 2013 (\url{http://www.egov.ma/sites/default/files/Maroc\%20Numeric\%202013.pdf})} sous l'impulsion du gouvernement marocain. Puis, derrière elles, viennent les sites des associations et ONG dont $30\%$ sont encore accessibles. Mais, c'est le cas de la blogosphère qui, en ce début de chapitre, nous interpelle le plus : sur les 48 blogs cartographiés, seuls 5 sont aujourd'hui vivants (soit à peine $10\%$).
+
+Au sein de l'e-Diaspora marocaine, la blogopshère avait été caractérisée\footnote{Voir l'intervention de M. Renault (\url{https://www.youtube.com/watch?v=1sE5PZVG6iM})} comme une communauté densément liée entre chacun de ses membres. Soit un espace d'expression et de représentation où circulaient, tout autant, commentaires politiques que témoignages de la vie quotidienne des marocains de l'étranger. Pourquoi ce graoupe de blogs s'est-il à ce point réduit perdant, au cours du temps, son influence et son dynamisme ? Les blogueurs ont-ils simplement disparu et quitté le Web ? Ou ont-ils migré vers d'autres territoires du Web ? Peut-on remonter le fil des potentielles traces archivées de cette cybermigration et en déterminer la destination ?
+
+Au cours de ce chapitre, nous mènerons deux explorations successives, proposant chacune une utilisation différente des fragments Web. La première nous permettra de comprendre la mutation progressive des blogs marocains vers les plateformes de réseaux sociaux à la fin des années 2010. Cette transformation, nous le découvrirons, est autant le fait d'une évolution technologique inhérente au Web, que le résultat de l'influence d'événements socio-politiques extérieurs à la toile. Parmi ces événements, le printemps Arabe et, plus particulièrement, la manifestation marocaine du 20 février 2011 semblent avoir été des moments déterminants de l'histoire de la blogosphère. 
+
+En suivant cette nouvelle piste, nous questionnerons la réception de ce même événement par les membres d'un autre collectif en ligne, central dans la vie de l'e-Diaspora marocaine : le forum de \textit{yabiladi.com}. Nous comprendrons, la manière avec laquelle les membres de ce site se sont momentanément organisés et retrouvés emportés par la vague révolutionnaire qui déferlait alors sur le Maghreb et le Moyen Orient. 
+
+Comme un bilan de ces deux explorations nous introduirons, pour terminer, la notion de \textbf{moments pivots du Web} : des instants particuliers de l'histoire de la toile où, celle ci, change soudainement de direction par la rencontre d'une avancée technologique et d'un groupe d'utilisateurs capables de s'en saisir.
+
+Mais, avant de débuter notre analyse, nous souhaitons revenir sur les aspects théoriques de ce que nous nommons \textbf{exploration} depuis le début de ce manuscrit. Il s'agit pour nous de présenter comment, ce courant des statistiques qu'est l'analyse exploratoire de données (AED), peut aujourd'hui servir de cadre méthodologique à toute re\-cherche portée sur le Web passé.\\
+
+\section{À la recherche de l'étonnement}
 \label{sec:6_eda}
 
-La montée des stats confirmatoires a 19eme a appelé un retour au réel
+\noindent Dans le courant du 19e siècle, la théorie statistique prend un tournant rigoriste majeur en préférant, à la longue tradition exploratoire\footnote{Les statisticien ont longtemps été des explorateurs de données, palliant certaines lacune théorique, par l'utilisation d'outils de recueil des données simples et visuels, comme le comptage par Quipu chez les civilisations précolombiennes (\url{https://fr.wikipedia.org/wiki/Quipu})}, des analyses et des inférences toutes tournées vers la seule quête de l'optimalité, de la moyenne et de la loi normale \citep{ladiray_laed_1997}. Les statisticiens tombent alors dans une logique \textbf{confirmatoire}, faisant des hypothèses fortes sur la nature même des données étudiées qui, dès lors, ne sont plus sources de calculs statistiques, mais un moyens vers la validation d'un modèle. La donnée est subordonnée au modèle et le réel doit venir confirmer la théorie. La domination des statistiques confirmatoires s'établit ainsi au détriment des statistiques exploratoires, souvent décriées par l'appellation péjorative de statistiques \textit{descriptives}.
 
-\subsection{À la recherche de l'étonnement}
+\subsection{L'analyse exploratoire de données}
 
-Tukey et la philosophie de l'EDA
+\noindent L'\textbf{analyse exploratoire de données} (AED) est un courant de la statistique moderne introduit, au cours des années 60-70, par le statisticien J.W. Tukey \citep{tukey_exploratory_1977}. Voulant réintroduire le réel au cœur des statistiques, Tukey préfère la résolution (même approximative) d'un problème véritable à la recherche d'un indicateur optimal sur une question de peu d'intérêt~:\\
 
-\subsection{Observer, découvrir et représenter}
+\begin{fullwidth}
+"\textit{The most important maxim for data analysis to heed, and one which many statisticians seem to have shunned, is this: Far better an approximate answer to the right question, which is often vague, than an exact answer to the wrong question, which can always be made precise. Data analysis must progress by approximate answers, at best, since its knowledge of what the problem really is will at best be approximate. It would be a mistake not to face up to this fact, for by denying it, we would deny ourselves the use of a great body of approximate knowledge, as well as failing to maintain alertness to the possible importance in each particular instance of particular ways in which our knowledge is incomplete.}" --- \citep[p13-14]{tukey_future_1962}\\
+\end{fullwidth}
 
-l'EDA c'est être comme un détective ... Ginstzburg
-1er schéma de l'eda
-Fry, Bertin et Bostock
-2nd schéma de fry
+\noindent Pour Tukey, les statistiques doivent ainsi retrouver le gout de l'in\-certitude et traiter à nouveau de la réalité, ainsi tout modèle ou toute d'analyse doit, selon lui, partir d'une réflexion empirique, sensibles. Les données doivent guider le choix des méthodes utilisées pour les étudier, et non l'inverse. C'est par la connaissance intime des données, que l'explorateur peut faire émerger des pistes de recherche et des hypothèses de travail. Il faut éprouver (qualitativement) les données dans la durée et retrouver une forme de rapport artisanal vis à vis d'elle. En cela, l'AED est un processus fondamentalement itératif, basé des boucles d'explorations successives, où l'analyste est amené à conjuguer intuition, capacités visuelle et expérience des données.
+
+Là où les statistiques confirmatoires s'inscrivent dans l'administra\-tion de la preuve, l'analyse exploratoire, elle, s'articule autour d'une logique d'observation et de découverte.  
+
+\subsection{Suivre et s'attacher aux indices}
+
+\noindent L'AED avance par investigation, guidée par la découverte de l'inat\-tendue. L'explorateur multiplie les facets et les vues lui permettant de décrire les données dans leur ensemble et se place ainsi dans une position d'étonnement. Il s'agit de s'attacher autant aux tendances générales qu'aux détails, pour progresser pas à pas, par hypothèses successives en suivant la piste des indices précédemment révélés (Figure \ref{fig:aed-1}). Mais dans le l'esprit de Tukey, l'AED ne doit pas remplacer l'analyse confirmatoire, il convient plutôt de conjuguer les deux : les boucles d'exploration (Figure \ref{fig:aed-1}, a) induisent toute modélisation (Figure \ref{fig:aed-1}, b). 
+
+\newpage
+
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/aed-1}
+  \caption{L'analyse exploratoire et les diverses phases de l'exploration préfigurent toute analyse confirmatoire}
+  \label{fig:aed-1}
+\end{figure*} 
+
+\noindent L'AED rencontre rapidement un écho grandissant, porté par le dé\-veloppement des techniques de calculs et de visualisations informatiques. Plusieurs années après, enrichissant sa réfection par la lecture des travaux de J. Bertin\footnote{Inspirateur de la sémiologie graphique ou science de la représentation graphique des données (\url{https://visionscarto.net/la-semiologie-graphique-a-50-ans})} \citep{bertin_semiologie_1973}, B. Fry propose de définir ce qu'il nomme \textbf{design computationnel d'information}\footnote{\textit{Computational information design} en anglais} \citep{fry_computational_2004}, comme une version moderne de l'AED, explicitement orientée vers la visualisation de données et la programmation informatique. Tout autant processus d'exploration itératif (Figure \ref{fig:aed-2}), qu'art de la représentation de la donnée, la méthode de Fry accompagne et motive le dé\-veloppement d'outils neufs : tels que l'environnement de programmation Processing\footnote{\url{https://processing.org/}} ou encore la librairie Javascript D3 créée par M. Bostock\footnote{https://d3js.org/}.
+
+\begin{figure*}%
+  \includegraphics[width=\linewidth]{graphics/aed-2}
+  \caption{Étapes du design computationnel d'information et ensemble des boucles d'analyses possibles selon \citep{fry_computational_2004}}
+  \label{fig:aed-2}
+\end{figure*} 
+
+\noindent Ce mode d'analyse par explorations offre un cadre méthodologique adapté à l'étude que nous souhaitons ici mener sur les archives Web. Concernant le devenir des blogs marocains après 2008, nous ne disposons au début de notre étude que d'un faisceau assez faible d'indices, susceptibles d'expliquer la disparition de la blogosphère. De plus, la taille de l'espace d'exploration (48 blogs segmentés en un multitude de fragments Web) et son étendue (4 années d'archives) nous pousse à cheminer par à-coups et à inférer de nos trouvailles de nouvelles hypothèses de travail. En cela, l'AED est souvent comparée (par Tukey lui même\footnote{"\textit{(EDA) is detective work – numerical detective work – or counting detective work – or graphical detective work ... unless exploratory data analysis uncovers indications, usually quantitative ones, there is likely to be nothing for confirmatory data analysis to consider}" --- \citep[p.1-3]{tukey_exploratory_1977}}) au travail du détective qui tisse la trame de ses recherches à travers un réseau d'indices. 
+
+Ce raisonnement par inférence, qui émerge de notre description de l'AED, peut être rapproché d'un autre mode de pensée, découvert par C. Ginzburg en 1979 : le \textbf{paradigme indiciaire} \citep{ginzburg_signes_1980}. En effet, l'historien révèle que, dans nombre de disciplines liées aux sciences humaines (psychanalyse, histoire de l'art, médecine ...), s'est installé au fil du temps, un paradigme permettant de révéler à partir d'effets ou d'éléments singuliers des événements plus généraux\footnote{"\textit{Si la réalité est opaque, des zones privilégiées existent (traces, indices) qui permettent de la déchiffrer.}" --- \citep[p290]{ginzburg_mythes_2012}}. Le psychanalyste progresse par l'étude des symptômes du patient et l'historien de l'art étudie les traces du geste du maître derrière le pinceau.
+
+Née à la suite des travaux de Ginzburg, la micro-histoire s'attache à analyser historiquement des objets de tailles limitées. Les chercheurs cheminent d'indices en indices, à la manière d'un Sherlock Holmes, pour compléter l'étude de trajectoires et de motivations individuelles. La micro-histoire se veut, ainsi, le contre poids focalisé d'une pratique plus quantitative du travail de l'historien. 
+
+Comme pour l'AED face aux statistiques confirmatoires, on reproche à la micro-histoire la non représentativité de ses travaux, trop précis et détachés de l'étude des tendances historiques normales et des grandes structures de masse. Mais, sur ce point, et c'est l'élément qui nous intéresse ici tout particulièrement, selon Ginzburg l'anomalie ou l'objet singulier peut se révéler porteur d'une résonance plus globale :\\
+
+\begin{fullwidth}
+"\textit{La possibilité de passer du cas isolé à la généralisation part d'une hypothèse qui a gagné en clarté à travers le temps. Aujourd'hui, je proposerai de considérer un individu comme le point d'intersection d'une série d'ensembles différents qui ont chacun une dimension variable. [...] L'historien doit partir de l'hypothèse que chez tout individu quel qu'il soit, coexistent des éléments partagés par un nombre variable (entre plusieurs milliards et zéro) d'individus. L'anomalie sera le résultats des réactions réciproques entre tous ces éléments.}" --- \citep[p359-360]{ginzburg_mythes_2012}\\
+\end{fullwidth} 
+
+\noindent Dans les explorations à venir nous nous attarderons autant sur les tendances générales que sur les détails singuliers, suivant la tradition de l'AED. Mais l'incomplétude des archives Web, leur caractère partiel et détaché (sous certains aspects) de la réalité du Web vivant, nous conduiront à affiner petit à petit notre échelle d'analyse, à nous concentrer sur de plus petits objets dont certains détails nous auront révélé l'importance. 
+
+Ce faisant, il peut alors être vertigineux de penser que, partant d'une archive de 70 terra octets, on en vienne à explorer, \textit{seulement}, le devenir en ligne d'une poignée d'internautes. Mais, en nous inspirant des travaux de Ginzburg, nous chercherons à repositionner ces éléments singuliers par rapport aux grandes vagues historiques dont ils ont été témoins ou vecteurs privilégiés. 
 
 \section{Les traces d'une mutation numérique}
 
-\subsection{D'une communauté vibrante de blogs ...}
+\noindent Concentrons nous maintenant sur le devenir de la blogosphère Marocaine, entre 2008 et 2018. Essayons de comprendre, à travers les archives Web, le ou les processus qui ont amené à sa disparition quasi complète. Peut on encore trouver les traces archivées, d'une possible mutation des blogs vers les plateformes de réseaux sociaux ? 
 
-\noindent Là on présente l'état des blogs en 2008
+\subsection{D'une communauté de blogs ...}
+
+\noindent Entre 2008 et 2010, D. Diminescu et M. Renault cartographient et recensent 47 blogs\footnote{\url{http://www.e-diasporas.fr/wp/moroccan.html}} qu'ils intègrent à l'e-Diaspora Marocaine, alors en cours de construction. Cette blogosphère est l'une des trois communautés\footnote{En théorie des graphes, une communauté de nœuds est un groupe fortement lié en son sein et faiblement lié avec le reste du réseau \citep{wasserman_social_1994, scott_social_2017}} majeures du réseau de sites marocains, telles que nous les présentions en section \ref{sec:2_atlas}. 
+
+Le terme \textbf{blogosphère} est un néologisme forgé, au début des années 2000, pour désigner les communautés de blogs alors florissantes sur la toile. À cette époque, d'anciens concepts, comme logosphère ou graphosphère\footnote{Communautés humaines basées sur le langage oral d'une part, et écrit d'autre part}, ne suffisent plus à traduire la nature hypertexte des liens établis entre les blogs. La connexion par liens de citation étant l'une des mécaniques de base des blogs. Ainsi, les auteurs en ligne, se constituent en liste et communautés de blogs amis, qu'ils affichent de manière ostensiblement visibles sur leurs sites comme marque consciente d'appartenance à un groupe délimité \citep{keren_blogosphere:_2006}.    
+
+Type particulier de site Web, un blog est une plateforme de publication en ligne de billets ou d'articles courts. Les blogs sont alimentés en contenu de manière régulière et se rapprochent en cela du journal intime : chaque billet est daté et signé par un auteur (le créateur du blog ou une personne partageant les droits d'édition). Les articles peuvent être lus et commentés par d'autres blogueurs ou par de simples visiteurs. 
+
+Un blog est un médium destiné avant tout à une population d'ama\-teurs. Sa facilité de création et de maintenance a fortement joué en faveur de la diffusion de ce support d'écriture. Il était ainsi possible, en quelques clics, de créer via des plateformes dédiées et souvent gratuites\footnote{Overblog, Blogger, Skyblog, ...} son premier blog, et ce, sans être un professionnel de l'informatique. De fait, les blogs ont permis une forme de démocratisation de la prise de parole sur le Web, atteignant leur apogée à la fin des années 2000\footnote{Les statistiques varient d'une source à l'autre, mais on estime généralement qu'entre 150 et 200 millions de blogs avaient été crées en 2011 \url{https://www.statista.com/statistics/278527/number-of-blogs-worldwide/}}. Les sujets de publication étaient divers et fonction du goût de chacun : on y parlait alors de son quotidien, on écrivait des billets d'humeur, voire même des commentaires et des analyses politiques. Le tout partagé et diffusé au sein de sa ou de ses communautés.  
+
+Sur ce point, de premières études ont rapidement montré le rôle grandissant des blogs quant à la diffusion et à la cristallisation d'opi\-nions politiques sur le Web, souvent en rupture avec les discours tenus par les médias classiques (télévision, radio, ...). Par exemple, L.A. Adamic caractérise les divergences de pensées démocrates et républicaines en ligne, lors de la campagne présidentielle de 2004 aux États-Unis \citep{adamic_political_2005, adar_implicit_2004}. En France, l'étude du collectif RTGI révèle la forte structuration et l'influence sur la toile du camp du \textit{non} avant la tenue de référendum sur la Constitution européenne de 2005 \citep{fouetillou_web_2008}. 
+
+Passé le tournant des années 2000, les blogs perdent peu à peu de leur influence au profit des plateformes de réseaux sociaux (Facebook, MySpace, Instagram ...) et de micro-blogging (Twitter, Tumblr, Sina Weibo, ...). Ces dernières reprennent à leur compte, et améliorent, les mécaniques de publication introduites par les blogs accélérant toujours la diffusion et le partage de contenu sur le Web. \\  
+
+\begin{table*}
+  \label{tab:blogs}
+  \begin{tabular}{llll}
+    \toprule
+    nom de domaine&catégorie&langue principale&pays du blog\\
+    \midrule
+    7didane.org&intimiste&Français&USA\\
+    9afia.blogspot.com&littérature&Français&USA\\
+    adilski.blogspot.com&mixe&Anglais&USA\\ 
+    al9adiya7amda.blogspot.com&social – politique&Français&USA\\
+    anasalaoui.com&social – politique&Français&France\\ 
+    badrryadi.centerblog.net&littérature&Français&France\\ 
+    blogreda.blogspot.com&mixe&Français&USA\\ 
+    boubouh.over-blog.com&social – politique&Français&France\\
+    cabalamuse.wordpress.com&mixe&Anglais&USA\\ 
+    eatbees.com/blog&intimiste&Anglais&USA\\ 
+    emigrant.canalblog.com&intimiste&Français&France\\ 
+    enmarruecos.blogspot.com&intimiste&Espagnol&USA\\ 
+    fatima-salma.over-blog.com&cuisine&Français&France\\ 
+    kalima.hautetfort.com&littérature&Français&France\\ 
+    karlamassini.blogspot.com&littérature&Français&USA\\ 
+    kennza.wordpress.com&mixe&Français&USA\\ 
+    kingstoune.com&mixe&Français&France\\ 
+    klamia.canalblog.com&mixe&Français&France\\ 
+    kugelschreiber.canalblog.com&humeur&Français&France\\
+    labelash.blogspot.com&mixe&Anglais&USA\\ 
+    lailalalami.com&littérature&Anglais&USA\\ 
+    lallamenana.free.fr&humeur&Français&France\\ 
+    larbi.org&social – politique&Français&France\\ 
+    lemythe.com&intimiste&Français&Maroc\\ 
+    lesamismarocains.blogspot.com&humeur&Français&USA\\ 
+    louladekhmissbatata.wordpress.com&mixe&Français&USA\\ 
+    magiaenmarruecos.blogspot.com&intimiste&Espagnol&Espagne\\ 
+    makhoudjit.blogspot.com&social – politique&Arabe&USA\\ 
+    marocainsdalgerie.sosblog.com&social – politique&Français&Algérie\\ 
+    marouki.joeuser.com&social – politique&Français&USA\\ 
+    mlouizi.unblog.fr&littérature&Français&France\\ 
+    mohblog.blogspot.com&littérature&Français&USA\\ 
+    monagora.fr&humeur&Français&France\\ 
+    murmures.net&intimiste&Français&USA\\ 
+    myrtus.typepad.com&humeur&Anglais&USA\\ 
+    nowbi.over-blog.com&intimiste&Français&France\\ 
+    oef75.blogspot.com&littérature&Français&USA\\ 
+    poliquonautemarocain.blogspot.com&social – politique&Français&USA\\ 
+    purplemind-candysha.blogspot.com&intimiste&Français&USA\\ 
+    saad.amrani.free.fr/blog&intimiste&Français&France\\ 
+    sahara-libre.blogspot.com&social – politique&Français&USA\\ 
+    sebti.fr&mixe&Français&France\\ 
+    slimane.canalblog.com&humeur&Français&France\\ 
+    sonofwords.blogspot.com&intimiste&Français&USA\\ 
+    soumiaz.blogspot.com&intimiste&Anglais&USA\\ 
+    supertimba.skynetblogs.be&intimiste&Français&Belgique\\ 
+    taha.fr/blog&mixe&Français&France\\ 
+  \bottomrule
+  \end{tabular}
+  \bigskip
+  \caption{Liste des 47 blogs de la blogosphère marocaine}
+\end{table*} 
+
+\noindent En 2008, la blogosphère marocaine est donc une communauté fortement connectée de 47 sites Web crées ou maintenus par des citoyens marocains de l'étranger. La table \ref{tab:blogs} recense ces blogs par noms de domaine et la figure \ref{fig:blogs-1} nous les présente sous la forme d'un graphe. 
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{graphics/blogs-1}
+  \caption{Blogosphère marocaine en 2008, la taille des nœuds correspondant à son degré}
+  \label{fig:blogs-1}
+\end{figure} 
+
+\noindent La localisation précise d'un site reste sujette à discussion. Durant la création de l'Atlas, les chercheurs se sont, à la fois, servis d'indications présentes sur les sites, eux même, et d'une méthode de localisation par adresse IP\footnote{La recherche par IP ne permet que de définir le pays d'hébergement du site, pas le pays de résidence de son auteur}. Ainsi, beaucoup de blogs sont hébergés aux USA, du fait des plateformes choisies pour créer les blogs.  La combinaison de cette information à la langue principale de chaque site (Table \ref{tab:blogs}), nous donne une idée générale de la répartition géographique de du réseau : partagé entre la France et les États Unis.
+
+\begin{figure}%
+  \includegraphics[width=\linewidth]{graphics/blogs-years}  
+  \caption{Répartition des blogs du corpus marocain par année de création}
+  \label{fig:blogs-years}
+\end{figure}
+
+\noindent La blogosphère est relativement jeune, lorsqu'elle est cartographiée en 2008, la majorité des blogs ayant moins de trois années d'existante (Figure \ref{fig:blogs-years}). En son sein, un site semble particulièrement faire autorité, il s'agit de \textit{larbi.org} (Figure \ref{fig:blogs-1}). Sa position est centrale et il possède le plus degré le plus élevé du réseau. En 2008, \textit{larbi.org} est même élu blog marocain et politique de l'année\footnote{Par un jury de professionnels de la communication et d'internautes (\url{https://fr.wikipedia.org/wiki/Maroc\_Web\_Awards\#Maroc\_Blog\_Awards\_2008})}. Cette forme de reconnaissance par les acteurs, eux même, semble courante dans cette blogosphère. On y cite volontiers les blogs qui nous semblent influents\footnote{L'auteur de \textit{manal.over-blog.com} se réfère explicitement à \textit{larbi.org} comme source d'inspiration (\url{http://manal.over-blog.com/article-517669.html})}, ou ou ceux que l'on souhaite mettre en avant\footnote{Les lecteurs de \textit{larbi.org} citant \textit{makhoudjit.blogspot.com} parmi d'autres (\url{https://web.archive.org/web/20130319234735/http://www.larbi.org/post/2006/03/05/183-hommage-aux-femmes})}. 
+
+La présence de certains membres sur le Web est parfois antérieure à la formation de la blogosphère, \textit{7didane.org} par exemple en est déjà à son second site\footnote{\url{https://web.archive.org/web/20110810230023/http://7didane.blogspot.com/
+} et nœuds jaunes de la figure \ref{fig:blogs-1}}. Et si \textit{larbi.org} se propose principalement de commenter la vie politique marocaine à travers son regard de marocain émigré, les billets publiés sur les autres blogs sont divers et variés : allant de recettes de cuisines (\textit{fatima-salma.over-blog.com}), à des récits de vie quotidienne (\textit{murmures.net}), et en passant par des chroniques littéraires (\textit{lailalalami.com}). Au final, au temps de sa cartographie, la blogosphère marocaine a tout d'une communauté vibrante et dynamique.   
+
+\newpage
 
 \subsection{... à un collectif éteint}
 

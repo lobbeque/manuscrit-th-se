@@ -6,12 +6,25 @@ Abiteboul, S., Cobena, G., Masanes, J., and Sedrati, G. (2002).
 \newblock In {\em International {Conference} on {Theory} and {Practice} of
   {Digital} {Libraries}}, pages 1--15. Springer.
 
+\bibitem[Adamic and Glance, 2005]{adamic_political_2005}
+Adamic, L.~A. and Glance, N. (2005).
+\newblock The political blogosphere and the 2004 {US} election: divided they
+  blog.
+\newblock In {\em Proceedings of the 3rd international workshop on {Link}
+  discovery}, pages 36--43. ACM.
+
 \bibitem[Adar et~al., 2009]{adar_web_2009}
 Adar, E., Teevan, J., Dumais, S.~T., and Elsas, J.~L. (2009).
 \newblock The web changes everything: understanding the dynamics of web
   content.
 \newblock In {\em Proceedings of the {Second} {ACM} {International}
   {Conference} on {Web} {Search} and {Data} {Mining}}, pages 282--291. ACM.
+
+\bibitem[Adar et~al., 2004]{adar_implicit_2004}
+Adar, E., Zhang, L., Adamic, L.~A., and Lukose, R.~M. (2004).
+\newblock Implicit structure and the dynamics of blogspace.
+\newblock In {\em Workshop on the weblogging ecosystem}, volume~13, pages
+  16989--16995.
 
 \bibitem[AlNoamany et~al., 2013]{alnoamany_access_2013}
 AlNoamany, Y.~A., Weigle, M.~C., and Nelson, M.~L. (2013).
@@ -70,6 +83,10 @@ Ben-David, A. and Amram, A. (2018).
 Bernard, M. (2003).
 \newblock Criteria for optimal web design (designing for usability).
 \newblock {\em Retrieved on April}, 13:2005.
+
+\bibitem[Bertin, 1973]{bertin_semiologie_1973}
+Bertin, J. (1973).
+\newblock Sémiologie graphique: {Les} diagrammes-{Les} réseaux-{Les} cartes.
 
 \bibitem[Bon, 2014]{bon_apres_2014}
 Bon, F. (2014).
@@ -245,6 +262,16 @@ Foot, K. and Schneider, S.~M. (2006).
 \newblock {\em Web campaigning (acting with technology)}.
 \newblock The MIT Press.
 
+\bibitem[Fouetillou, 2008]{fouetillou_web_2008}
+Fouetillou, G. (2008).
+\newblock Le web et le traité constitutionnel européen.
+\newblock {\em Réseaux}, (1):229--257.
+
+\bibitem[Fry, 2004]{fry_computational_2004}
+Fry, B.~J. (2004).
+\newblock {\em Computational information design}.
+\newblock {PhD} {Thesis}, Massachusetts Institute of Technology.
+
 \bibitem[Fung et~al., 2005]{fung_parameter_2005}
 Fung, G. P.~C., Yu, J.~X., Yu, P.~S., and Lu, H. (2005).
 \newblock Parameter free bursty events detection in text streams.
@@ -256,6 +283,16 @@ Gebeil, S. (2016).
 \newblock Les mémoires de l’immigration maghrébine sur le web français de
   1999 à 2014.
 \newblock {\em Les Cahiers du numérique}, 12(3):115--138.
+
+\bibitem[Ginzburg, 1980]{ginzburg_signes_1980}
+Ginzburg, C. (1980).
+\newblock Signes, traces, pistes.
+\newblock {\em Le débat}, (6):3--44.
+
+\bibitem[Ginzburg, 2012]{ginzburg_mythes_2012}
+Ginzburg, C. (2012).
+\newblock {\em Mythes, emblèmes, traces: morphologie et histoire}.
+\newblock Verdier/Poche.
 
 \bibitem[Gomes et~al., 2011]{gomes_survey_2011}
 Gomes, D., Miranda, J., and Costa, M. (2011).
@@ -323,6 +360,11 @@ Kanhabua, N. and Nørv{\textbackslash}a~ag, K. (2009).
 \newblock In {\em Joint {European} {Conference} on {Machine} {Learning} and
   {Knowledge} {Discovery} in {Databases}}, pages 738--741. Springer.
 
+\bibitem[Keren, 2006]{keren_blogosphere:_2006}
+Keren, M. (2006).
+\newblock {\em Blogosphere: {The} new political arena}.
+\newblock Lexington Books.
+
 \bibitem[Ketelaar, 2006]{ketelaar_de_2006}
 Ketelaar, E. (2006).
 \newblock ({Dé}) {Construire} l'archive.
@@ -364,6 +406,11 @@ Kohlschütter, C., Fankhauser, P., and Nejdl, W. (2010).
 \newblock Boilerplate detection using shallow text features.
 \newblock In {\em Proceedings of the third {ACM} international conference on
   {Web} search and data mining}, pages 441--450. ACM.
+
+\bibitem[Ladiray, 1997]{ladiray_laed_1997}
+Ladiray, D. (1997).
+\newblock L’{AED}, analyse exploratoire des données.
+\newblock {\em Courrier des statistique, 83}, 84:3--6.
 
 \bibitem[Lawrence and Giles, 2000]{lawrence_accessibility_2000}
 Lawrence, S. and Giles, C.~L. (2000).
@@ -520,6 +567,11 @@ Schneider, S.~M., Foot, K., Kimpton, M., and Jones, G. (2003).
   the {September} 11 {Web} {Archive} and the {Election} 2002 {Web} {Archive}.
 \newblock {\em Digital Libraries, ECDL}, pages 77--94.
 
+\bibitem[Scott, 2017]{scott_social_2017}
+Scott, J. (2017).
+\newblock {\em Social network analysis}.
+\newblock Sage.
+
 \bibitem[Spaniol et~al., 2009]{spaniol_data_2009}
 Spaniol, M., Denev, D., Mazeika, A., Weikum, G., and Senellart, P. (2009).
 \newblock Data quality in web archiving.
@@ -572,6 +624,16 @@ Toyoda, M. and Kitsuregawa, M. (2006).
 \newblock In {\em Proceedings of the 15th international conference on {World}
   {Wide} {Web}}, pages 233--241. ACM.
 
+\bibitem[Tukey, 1962]{tukey_future_1962}
+Tukey, J.~W. (1962).
+\newblock The future of data analysis.
+\newblock {\em The annals of mathematical statistics}, 33(1):1--67.
+
+\bibitem[Tukey, 1977]{tukey_exploratory_1977}
+Tukey, J.~W. (1977).
+\newblock {\em Exploratory {Data} {Analysis}}.
+\newblock Behavioral {Science}: {Quantitative} {Methods}. Addison-Wesley.
+
 \bibitem[{UNESCO}, 2003]{unesco_charter_2003}
 {UNESCO} (2003).
 \newblock Charter on the {Preservation} of {Digital} {Heritage}.
@@ -593,6 +655,11 @@ Voerman, G., Keyzer, A., Den~Hollander, F., and Druiven, H. (2002).
 \newblock Archiving the {Web}: {Political} party {Web} sites in the
   {Netherlands}.
 \newblock {\em European Political Science}, 2(1):68--75.
+
+\bibitem[Wasserman and Faust, 1994]{wasserman_social_1994}
+Wasserman, S. and Faust, K. (1994).
+\newblock {\em Social network analysis: {Methods} and applications}, volume~8.
+\newblock Cambridge university press.
 
 \bibitem[Weikum et~al., 2011]{weikum_longitudinal_2011}
 Weikum, G., Ntarmos, N., Spaniol, M., Triantafillou, P., Benczúr, A.~A.,

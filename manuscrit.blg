@@ -4,10 +4,13 @@ The top-level auxiliary file: manuscrit.aux
 The style file: apalike.bst
 Database file #1: biblio.bib
 Warning--empty journal in arvidson_kulturarw3_2000
+Warning--empty journal in bertin_semiologie_1973
 Warning--empty journal in cai_vips:_2003
 Warning--empty journal in chaney_who_2015
 Warning--empty journal in dougnac_depot_1960
 Warning--empty journal in fitch_web_2003
+Warning--there's a number but no volume in fouetillou_web_2008
+Warning--there's a number but no volume in ginzburg_signes_1980
 Warning--empty journal in hatcher_lucene_2004
 Warning--there's a number but no volume in ketelaar_de_2006
 Warning--empty note in khouzaimi_e-diasporas_2015
@@ -15,48 +18,49 @@ Warning--empty journal in leclerc_cyberespace_2012
 Warning--there's a number but no volume in morsel_traces?_2016
 Warning--empty publisher in stiegler_etat_1991
 Warning--there's a number but no volume in stiegler_leroi-gourhan:_1998
+Warning--can't use both author and editor fields in tukey_exploratory_1977
 Warning--empty note in unesco_charter_2003
 Warning--empty institution in van_de_sompel_http_2013
 Warning--empty booktitle in yadav_change_2007
-You've used 108 entries,
+You've used 121 entries,
             1935 wiz_defined-function locations,
-            1018 strings with 22025 characters,
-and the built_in function-call counts, 46220 in all, are:
-= -- 4663
-> -- 1718
-< -- 107
-+ -- 610
-- -- 570
-* -- 3565
-:= -- 7645
-add.period$ -- 357
-call.type$ -- 108
-change.case$ -- 808
-chr.to.int$ -- 108
-cite$ -- 123
-duplicate$ -- 2016
-empty$ -- 3346
-format.name$ -- 736
-if$ -- 9479
+            1083 strings with 23515 characters,
+and the built_in function-call counts, 50720 in all, are:
+= -- 5114
+> -- 1837
+< -- 123
++ -- 650
+- -- 606
+* -- 3896
+:= -- 8419
+add.period$ -- 397
+call.type$ -- 121
+change.case$ -- 886
+chr.to.int$ -- 121
+cite$ -- 140
+duplicate$ -- 2223
+empty$ -- 3694
+format.name$ -- 789
+if$ -- 10380
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 121
-newline$ -- 533
-num.names$ -- 324
-pop$ -- 919
+missing$ -- 138
+newline$ -- 597
+num.names$ -- 363
+pop$ -- 1003
 preamble$ -- 1
-purify$ -- 825
+purify$ -- 908
 quote$ -- 0
-skip$ -- 1523
+skip$ -- 1681
 stack$ -- 0
-substring$ -- 3107
-swap$ -- 452
-text.length$ -- 47
+substring$ -- 3409
+swap$ -- 487
+text.length$ -- 51
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 610
-warning$ -- 15
-while$ -- 387
+type$ -- 678
+warning$ -- 19
+while$ -- 427
 width$ -- 0
-write$ -- 1396
-(There were 15 warnings)
+write$ -- 1561
+(There were 19 warnings)

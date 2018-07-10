@@ -1703,7 +1703,7 @@ Soit le schéma d'indexation des fragments Web présenté par la figure \ref{fig
 <field name="frag_date"         type="date"    indexed="true"    docValues="true"  multiValued="true" />
 <field name="frag_date_level"   type="dateLvl" indexed="true"    docValues="true"  multiValued="false"/> 
 <field name="frag_href"         type="string"  indexed="true"    docValues="false" multiValued="true" />
-<field name="frag_href_id"      type="string"  indexed="true"    docValues="true"  multiValued="true" />
+<field name="frag_label"        type="string"  indexed="true"    docValues="true"  multiValued="true" />
 <field name="frag_ratio"        type="int"     indexed="true"    docValues="true"  multiValued="true" />
 <field name="frag_node"         type="text"    indexed="false"   docValues="false" multiValued="true" />  
 <field name="frag_offset"       type="int"     indexed="true"    docValues="true"  multiValued="true" />
@@ -1930,11 +1930,11 @@ Passé le tournant des années 2000, les blogs perdent peu à peu de leur influe
 
 \noindent En 2008, la blogosphère marocaine est donc une communauté fortement connectée de 47 sites Web crées ou maintenus par des citoyens marocains de l'étranger. La table \ref{tab:blogs} recense ces blogs par noms de domaine et la figure \ref{fig:blogs-1} nous les présente sous la forme d'un graphe. 
 
-\begin{figure}
+\begin{figure*}
   \includegraphics[width=\linewidth]{graphics/blogs-1}
-  \caption{Blogosphère marocaine en 2008, la taille des nœuds correspondant à son degré}
+  \caption{La blogosphère en 2008}
   \label{fig:blogs-1}
-\end{figure} 
+\end{figure*} 
 
 \noindent La localisation précise d'un site reste sujette à discussion. Durant la création de l'Atlas, les chercheurs se sont, à la fois, servis d'indications présentes sur les sites, eux même, et d'une méthode de localisation par adresse IP\footnote{La recherche par IP ne permet que de définir le pays d'hébergement du site, pas le pays de résidence de son auteur}. Ainsi, beaucoup de blogs sont hébergés aux USA, du fait des plateformes choisies pour créer les blogs.  La combinaison de cette information à la langue principale de chaque site (Table \ref{tab:blogs}), nous donne une idée générale de la répartition géographique de du réseau : partagé entre la France et les États Unis.
 
@@ -1953,19 +1953,114 @@ La présence de certains membres sur le Web est parfois antérieure à la format
 
 \subsection{... à un collectif éteint}
 
-\noindent Là on raconte l'état des blogs en 2018
+\noindent En 2015, un premier rapport de J. Khouzaimi \citep{khouzaimi_e-diasporas_2015} constate la disparition de 47 des 153 sites de l'e-Diaspora marocaine. Toujours selon ce rapport, la blogosphère est, elle, réduite à 17 membres actifs\footnote{Pour comprendre le décompte de J. Khouzaimi, un blog actif est (selon sa méthodologie) un blog toujours en ligne} seulement. Par ailleurs, une série d'entretiens enrichissant ce travail, nous apprennent que les blogueurs toujours \textit{actifs} ne sont pas tous de jeunes étudiants comme le pensait en premier lieu l'auteure, nombre d'entre eux sont des quarantenaires ou des cinquantenaires qui ont choisi malgré les évolutions du Web de maintenir leurs sites sur la toile. D'après les entretiens réalisés, une frontière entre les étudiants et les blogueurs se dessine. Chez les étudiants, l'attachement en ligne à un passé vécu au Maroc, se traduit d'abord par l'appartenance à certains groupes communautaires sur Facebook et Whatsapp\footnote{Tout comme Telegram, l'application de messagerie whatsapp permet de créer des salon de discussions virtuels à plusieurs, voir \url{https://frama.link/JnjBqw8u}}, plus que part la consultation des anciens blogs d'émigrés, dont ils ne connaissent pas toujours l'existence.  
+
+\begin{figure*}
+  \includegraphics[width=\linewidth]{graphics/blogs-2}
+  \caption{La blogosphère en 2018, (a) blogs vivants, (b) blogs vivants et abandonnés, la position est conservée}
+  \label{fig:blogs-2}
+\end{figure*} 
+
+\noindent Début 2018, nous choisissons de revenir en détail sur le cas de ces blogs marocains. Nous visitons chacune des 47 URLs associées et classons les sites selon trois catégories :
+
+\begin{enumerate}[leftmargin=*]  
+\item \textbf{vivant} : le blog est en ligne et a été mis à jour au moins une fois au cours de l'année passée (courant 2017 donc)
+\item \textbf{abandonné} : le blog est en ligne mais n'a pas été mis à jour récemment 
+\item \textbf{mort} : le blog n'est plus en ligne ou a été victime de cybersquatting (le blog n'est plus celui qu'il a été au moment de sa cartographie)
+\end{enumerate}
+
+\noindent La figure \ref{fig:blogs-2} présente l'état\footnote{La position des nœuds est conservée par rapport à la figure \ref{fig:blogs-1}} de la blogosphère telle que nous la trouvons en 2018. Nous ne recensons plus que 5 blogs vivants (Figure \ref{fig:blogs-2}, (a)), 23 ont été abandonnés (Figure \ref{fig:blogs-2}, (b)) et les 19 sont morts. Parmi les blogs toujours en vie, deux sont en fait des transformations de blogs cartographiés en 2008 mais déplacés depuis par leurs auteurs : \textit{louladekhmissbatata.wordpress.com} devient \textit{louladekhmissbatataprise2.com} en 2009 et \textit{cabalamuse.wordpress.com} devient \textit{amoroccandrifter.wordpress.com} en 2012.   
 
 \subsection{Définir l'espace d'exploration}
 
-\noindent Là on explique la forme des fragments que l'on va chercher à retrouver et la stratégie d'exploration
+\noindent À ce niveau, nous pouvons, en rassemblant les informations collectées, commencer a proposer quelques hypothèses. Nous savons, qu'en 2015, certains étudiants marocains préféraient les groupes Facebook aux blogs d'émigrés pour maintenir le lien avec leur vie passée au Maroc \citep{khouzaimi_e-diasporas_2015}. Ces groupes Facebook étaient, par ailleurs, déjà contemporains de la blogosphère au moment de sa cartographie. En effet, S. Marchandise a réalisé, dans le cadre de l'Atlas, une e-Diaspora \citep{marchandise_facebook_2014} entièrement centrée sur la présence\footnote{\url{http://www.e-diasporas.fr/wp/marchandise.html}} des étudiants émigrés marocains au sein de Facebook. Mais les mécanismes des réseaux sociaux (Facebook, Twitter, ...) ne sont éloignés que ça des fonctionnalités mis en place par les blogs en leur temps \citep{kwak_what_2010} : ils en reprennent certaines fonctionnalités (publication, création de liens, création de communautés, ...), en améliorent d'autres (vitesse de diffusion, intégration mobile, ...) et introduisent leurs propre règles (partage, retweet, ...).
 
-\subsection{Migration d'un territoire Web à un autre}
+Notre tâche d'exploration a ici pour but de comprendre, autant que faire ce pourra, le devenir d'un \textbf{collectif en ligne éteint}, c'est à dire une communauté pour laquelle peu ou plus aucune trace ne subsiste encore sur le Web vivant. Deux grandes hypothèses peuvent être formulées : soit les blogs ont purement et simplement disparus de la surface du Web, les auteurs qui les ont crées n'ont pas voulu ou pu donner suite à cette présence sur la toile, soit les blogs se sont mués en une autre entité, migrant d'un territoire du Web (la blogosphère) à un autre (ici, les plateformes de réseaux sociaux). Nous chercherons donc, dans un premier temps, à identifier les possibles indices archivés de cette possible mutation. 
 
-\noindent Là comprend que les blogs se sont déplacés vers Fb et Twitter
+L'espace d'exploration est le suivant : un nombre connu et limité de sites Web observés pendant 10 ans, de 2008 à 2018. Grâce aux archives de l'atlas e-Diasporas nous disposons de 4 années de collectes (2010-2014), que nous allons étendre à 6 ans grâce aux fragments Web (2008-2014), la période 2014-2018 sera, elle, couverte par les collectages d'Internet Archive. 
+
+Dans notre moteur d'exploration, nous nous focalisons sur les 47 sites de la blogosphère que nous fragmentons (Section \ref{sec:5_scraping}) et envoyons dans le moteur de recherche (Section \ref{sec:3_constituer}). L'idée est de réaliser une même requête plein texte sur deux champs différents de nos fragments Web. Cette requête contient des mots clés associés à divers réseaux sociaux :
+
+\small
+\begin{verbatim}
+facebook, twitter, instagram, pinterest, youtube, flicker, medium, 
+myspace, google+, googleplus, tumblr, share, like, retweet, tweet, 
+partager, aimer, social, ... 
+\end{verbatim} 
+
+\noindent Ces mots clés sont ensuite testés sur les champs \textit{frag\_text} et \textit{frag\_label} de chaque fragments. La première requête permettra de détecter de possibles références aux réseaux sociaux dans le corps du texte : par exemple, un blogueur parlant de Twitter dans l'un de ses billets. La seconde sera supposée capturer et retourner les nœuds HTML dont les labels\footnote{Pour rappel, le label d'un nœud HTML est la concaténation de sont tag, de son id et de sa classe} matchent l'un des mots clés : par exemple, un bouton "\textit{partager sur facebook}" présent dans une page d'un de nos blogs.
+
+À partir de maintenant, nous nommons \textbf{auteur} la personne ou l'ensemble de personnes ayant crée ou maintenu l'un des 47 blogs de la blogosphère marocaine. De même, nous nommons \textbf{lecteur} une personne qui visite, réagit ou laisse un commentaire sur l'un de ces sites.
+
+\subsection{Une migration d'un territoire du Web à un autre}
+
+\noindent Suite aux requêtes précédemment exposées, notre moteur d'exploration nous retourne trois types de fragments Web : \textbf{1)} des fragments issus d'articles ou de billets ayant matchés les mots clés \textit{twitter, facebook}, etc \textbf{2)} des fragments purement non textuels (des boutons partages, like, share, ...) mis à disposition des auteurs par les plateformes de blogs ou par les réseaux sociaux eux même \textbf{3)} un mélange de nœuds HTML non conventionnels, témoignant d'une époque où les \textit{widgets} des réseaux sociaux n'étaient pas encore normalisés, l'auteur du blog bricolant lui même un système de redirection vers ses comptes Twitter ou Facebook. 
+
+Les deux derniers types sont particulièrement intéressants, la figure \ref{fig:blogs-fragments-1} en présente quelques exemples. En effet, nous pouvons trouver, dans le code HTML, de certains de ces fragments Web, des noms de comptes associés. Lorsque l'on souhaite s'inscrire sur une plateforme sociale, il convient de se créer un nom d'utilisateur : le \textit{@user} de Twitter ou le \textit{pseudo} de Facebook. Chacun de ces avatars est alors lié aux widgets et boutons placés sur les pages des blogs, qu'ils soient ou non visibles à l'écran (Figure \ref{fig:blogs-fragments-1}).  
+
+\newpage   
+
+\begin{figure*}
+  \includegraphics[width=\linewidth]{graphics/blogs-fragments-1}
+  \caption{Exemples de fragments Web associés à divers réseaux sociaux}
+  \label{fig:blogs-fragments-1}
+\end{figure*} 
+
+\noindent Partant de ces fragments, nous identifions 20 blogs liés à un ou plusieurs réseaux sociaux. Afin d'élargir nos résultats, nous faisons ici l'hypothèse que les avatars, pseudos et autres noms d'utilisateurs peuvent être réutilisés par un même auteur, d'une plateforme à l'autre, moyennant une légère modification. Ainsi, nous normalisons\footnote{les majuscules sont transformées en minuscules et les pseudos sont ramenés à leur racine (pseudo moins un ou deux caractères finaux)} les 20 pseudonymes extraits que nous utilisons comme points de départ d'une nouvelle recherche. 
+
+L'objectif est désormais de retrouver le maximum de comptes sociaux liés à l'un ou l'autre de ces 20 avatars. Pour ce faire, nous les entrons un à un dans plusieurs moteurs de recherche du Web vivant et nous identifions manuellement les comptes Youtube, Flickr, Medium, etc correspondants. 
+
+Cette tâche ne peut pas être automatisée, la recherche par fragment Web nous a permis d'identifier des indices, mais c'est maintenant au chercheur de procéder à la vérification. Ce faisant, nous récoltons au total 33 comptes sociaux différents, liés par leurs avatars aux 20 blogs ayant matché la requête initiale. La figure \ref{fig:blogs-social} donne à voir la répartition de ces comptes, entre anciens blogs et réseaux sociaux. Facebook et Twitter dominent, ils agrègent 23 comptes à eux seuls. 
+
+Bien sûr, ce classement ne cherche pas l'exhaustivité, il ne peut pas l'être. En effet, Si l'un des auteurs des blogs a préféré utiliser un pseudonyme entièrement nouveau, sans en faire mention dans les pages de son ancien site, alors nous ne sommes pas ici en mesure de le retrouver.
+
+\begin{figure*}
+  \includegraphics[width=\linewidth]{graphics/blogs-social}
+  \caption{Liste des blogs de 2008 liés à des réseaux sociaux en 2018}
+  \label{fig:blogs-social}
+\end{figure*} 
+
+\noindent Nous procédons, ensuite, à un scraping des pages Facebook et Twitter pour y récolter les possibles liens d'amitié et d'intérêt\footnote{Lien entre \textit{fellowers} sur Twitter}. Ce faisant nous reconstruisons un nouveau réseau de citation entre ces comptes tels que nous les voyons aujourd'hui. La figure \ref{fig:blogs-3} se veut, ainsi, une vue de la blogosphère de 2008 (Figure \ref{fig:blogs-3}, (a)) comparée à celle que nous découvrons en 2018, une fois les réseaux sociaux ajoutés aux emplacements précédemment occupés par les blogs (Figure \ref{fig:blogs-3}, (b)). 
+
+Conserver son identité en ligne semble être une propriété partagée par nombre de membres de cette blogosphère. En effet, ce n'est pas une disparition mais une mutation que nous devons ici étudier. Crées entre 2005 et 2008, les blogs, en tant que tels, ont petit à petit été fermés ou abandonnés par leurs auteurs qui n'ont, à priori, pas souhaiter prolonger l'usage de ces espaces d'expression en ligne. Au tournant des années 2010, les blogs se sont transformés en une multitude de réseaux sociaux.
+
+L'expression en ligne se fragmente et se spécialise par type de réseau et de médium. Certains, comme \textit{7didane.org}, choisissent d'avoir un compte Facebook et un compte Twitter. D'autres utilisent Youtube ou Flickr pour publier des photos ou des vidéos comme \textit{larbi.org}. On peut également observer l'utilisation conjointe de Twitter et de Medium\footnote{Plateforme de partage de billets se voulant longs et argumentés} (ou d'un blog Médiapart), où l'on va choisir d'écrire un texte réfléchis et structurés sur Medium avant de le promouvoir à sa communauté sur Twitter, comme \textit{eatbees.com}. 
+
+\begin{marginfigure}%
+  \includegraphics[width=\linewidth]{graphics/density}
+  \vspace*{0.2cm}  
+  \caption{Densité d'un graphe}
+  \label{fig:density}
+\end{marginfigure}
+
+Mais, la migration vers les réseaux sociaux n'est pas synonyme d'éclatement ou d'isolation des anciens membres de la blogosphère. Prenons, ainsi, le cas des 16 auteurs ayant désormais un compte Twitter. Il est possible de comparer la densité du sous graphe qu'ils formaient en 2008 avec celle de leur graphe d'intérêt suis Twitter en 2018. En théorie des graphes, un graphe est dit \textbf{dense} si le nombre de liens effectifs est proche du nombre de liens maximum possibles. Si les nœuds ne sont pas du tout connectés entre eux, alors la densité vaudra $0$, mais s'ils sont tous liés, celle ci vaudra $1$ (Figure \ref{fig:density}). Entre 2008 et 2018, la densité du sous graphe des utilisateurs de Twitter, anciennement blogueurs, passe $0.16$ à $0.24$. L'aspect communauté de l'ancienne blogosphère est conservée et même augmentée par le passage sur Twitter.
+
+\begin{figure*}
+  \includegraphics[width=\linewidth]{graphics/blogs-3}
+  \caption{Vue comparée de la blogosphère en 2008, puis en 2018, les emplacements des blogs sont conservés}
+  \label{fig:blogs-3}
+\end{figure*} 
+
 
 \subsection{Conserver son identité numérique}
 
-\noindent Là on parle de la communauté de chaque blog (caractère diasporique et conservation du public de lecteur)
+\noindent Sur la figure \ref{fig:blogs-3}, la taille de chaque nouveau nœud social (partie b, en rouge) est fonction de l'étendue de leurs communautés respectives de followers (pour Twitter) ou d'amis (pour Facebook). Par exemple, \textit{7didane.org} est suivi par 43,512 sur Twitter et a 141,947 amis sur Facebook, \textit{lailalalalmi.com} de son côté dépasse les 35,000 followers sur Twitter.
+
+À l'ère des réseaux sociaux, l'influence d'un auteur est souvent liée au nombre de lecteurs ou visiteurs auxquels il est capable de s'adresser, la notion de communauté comme audience est ici privilégiée. De fait, la dynamique interne à la blogosphère a elle aussi évoluée : \textit{larbi.org} n'est plus hégémonique, \textit{7didane.org} et \textit{lailalalalmi.com} le dépasse désormais.
+
+L'origine des followers et des amis de chaque compte peut nous renseigner sur le caractère diasporique de la communauté des lecteurs. Celle ci est-elle conservée par le passage sur les réseaux sociaux ? Pour trouver cette information, nous procédons de deux manières : \textbf{1)} pour Facebook nous utilisons l'application Netvizz qui associe à chaque personne, ayant aimé une page donnée, une situation géographique\footnote{Cette information est issue des méta données renseignées lors de l'inscription à Facebook ou de la modification de son compte (\url{https://apps.facebook.com/netvizz/})}.\textbf{2)} pour Twitter, nous procédons au scraping des pages des followers, où le champs \textit{locationText} peut, s'il est renseigné, renfermer une information géographique. Nous croisons ensuite la valeur de ce champ avec la base de données d'entités géographiques Geonames\textit{\url{http://www.geonames.org/}} afin de désambiguïser l'information ainsi extraite. Nous faisons enfin l'hypothèse que la valeur \textit{locationText} de Twitter nous renseigne sur l'endroit d'où écrivent ces followers.
+
+\begin{figure*}
+  \includegraphics[width=\linewidth]{graphics/blogs-community}
+  \caption{Répartition géographique des followers des pages Twitter (a) et des amis Facebook (b)}
+  \label{fig:blogs-community}
+\end{figure*} 
+
+Cette seconde méthode est bien moins exhaustive qu'en utilisant Netvizz, nous avons donc choisi de limiter au maximum les faux positifs. La figure \ref{fig:blogs-community} présente pour chaque compte, la répartition géographique (si elle est connue) de ses followers Twitter ou amis Facebook. En pratique, \textit{7didane.org} est principalement à des personnes situées au Maroc ($82\%$, rouge foncé) mais aussi à des Français ($2\%$, bleu) et à des Égyptiens ($2\%$). De son coté, \textit{lailalalami.com} continue de s'adresser à des Marocains ($24\%$), à des Américains ($15\%$) et à des Pakistanais ($8\%$). Au moins 19 pays\footnote{Algérie, Maroc, Égypte, Tunisie, Libye, France, Chine, Espagne, Pays-Bas, USA, Pakistan, Indonésie, Bangladesh, Nigeria, Inde, Belgique, Grande Bretagne, Canada et Corée du Sud} sont ainsi représentés, témoignant du caractère géographiquement dispersé de cette communauté de lecteurs.
+
+Comme nous l'expliquions plus tôt, les auteurs ont su conserver leur identité numérique en réutilisant les même pseudonymes, d'une plateforme à l'autre, et ce, depuis le temps de leurs premiers blogs. Nous faisons maintenant l'hypothèse de trouver le même comportement chez les lecteurs. En effet, il nous semble raisonnable de dire que, considérant un blog comme étant un médium tourné vers l'engagement d'un public donné, quand un lien fort se crée entre un auteur et ses lecteurs, ces derniers peuvent vouloir conserver cette connexion. Donc nous supposons que les lecteurs ont gardé leurs pseudonymes sur Twitter pour suivre les auteurs qu'ils supportaient sur les blogs. 
+
+Pour tester cette idée, nous demandons à notre moteur d'exploration de nous retourner les fragments Web les plus proches du pattern d'un commentaire type posté sur \textit{larbi.org}, soit : un nom d'utilisateur, une date et un contenu textuel publié dessous l'article principal d'une page archivée. Nous obtenons, ainsi, 4177 résultats dont nous ne conservons que les noms d'utilisateurs (les lecteurs ayant postés un commentaire). Nous croisons cette liste à celle de followers actuels du compte Twitter de \textit{larbi.org} pour obtenir, au final, une borne inférieure de 647 lecteurs ayant, à priori, suivit \textit{larbi.org} sur Twitter. Ces lecteurs représentent une part importante de l'ancienne audience du blog, puisque rapporté à un nombre de commentaire, on se rend compte qu'ils sont à l'origine de prêt de $26\%$ des réactions postées sur le site. Les auteurs de blosg ne sont donc pas les seuls a avoir migré vers les réseaux sociaux, ils ont emporté à leur suite une partie de leur lecteur fidèles et de leur communauté.
 
 \subsection{Le Printemps Arabe vu comme un moment-clé}
 

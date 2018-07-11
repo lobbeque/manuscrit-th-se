@@ -60,21 +60,21 @@
 \contentsline {subsection}{D'une communaut\IeC {\'e} de blogs ...}{104}{subsection*.38}
 \contentsline {subsection}{... \IeC {\`a} un collectif \IeC {\'e}teint}{108}{subsection*.39}
 \contentsline {subsection}{D\IeC {\'e}finir l'espace d'exploration}{109}{subsection*.40}
-\contentsline {subsection}{Une migration d'un territoire du Web \IeC {\`a} un autre}{110}{subsection*.41}
-\contentsline {subsection}{Conserver son identit\IeC {\'e} num\IeC {\'e}rique}{113}{subsection*.42}
-\contentsline {subsection}{Le Printemps Arabe vu comme un moment-cl\IeC {\'e}}{115}{subsection*.43}
-\contentsline {section}{\numberline {6.3}Un soul\IeC {\`e}vement en ligne \IeC {\'e}ph\IeC {\'e}m\IeC {\`e}re}{115}{section.6.3}
-\contentsline {subsection}{Yabiladi.com : porte d'entr\IeC {\'e}e sur la diaspora}{115}{subsection*.44}
-\contentsline {subsection}{La manifestation du 20 F\IeC {\'e}vrier 2011}{115}{subsection*.45}
-\contentsline {subsection}{La gen\IeC {\`e}se d'un site}{115}{subsection*.46}
-\contentsline {subsection}{Agr\IeC {\'e}ger les contributeurs}{115}{subsection*.47}
-\contentsline {subsection}{De l'embrasement \IeC {\`a} l'\IeC {\'e}vasion}{116}{subsection*.48}
-\contentsline {section}{\numberline {6.4}Les Moments Pivot du Web}{116}{section.6.4}
-\contentsline {subsection}{Les limites de l'archivage du Web}{116}{subsection*.49}
-\contentsline {subsection}{Les moments pivots du Web}{116}{subsection*.50}
-\contentsline {chapter}{\numberline {7}Au Del\IeC {\`a} des Archives Web}{117}{chapter.7}
-\contentsline {section}{\numberline {7.1}Des archives centr\IeC {\'e}es sur la navigation}{117}{section.7.1}
-\contentsline {section}{\numberline {7.2}Fouiller les archives du Web profond}{117}{section.7.2}
-\contentsline {chapter}{\numberline {8}Conclusion}{119}{chapter.8}
-\contentsline {chapter}{Bibliographie}{121}{chapter*.51}
+\contentsline {subsection}{Migrer d'un territoire du Web \IeC {\`a} un autre}{111}{subsection*.41}
+\contentsline {subsection}{Communaut\IeC {\'e} de lecteurs et identit\IeC {\'e}}{115}{subsection*.42}
+\contentsline {subsection}{Le Printemps Arabe comme un moment cl\IeC {\'e} ?}{117}{subsection*.43}
+\contentsline {section}{\numberline {6.3}Un soul\IeC {\`e}vement en ligne \IeC {\'e}ph\IeC {\'e}m\IeC {\`e}re}{119}{section.6.3}
+\contentsline {subsection}{Yabiladi.com : porte d'entr\IeC {\'e}e sur la diaspora}{119}{subsection*.44}
+\contentsline {subsection}{La manifestation du 20 F\IeC {\'e}vrier 2011}{119}{subsection*.45}
+\contentsline {subsection}{La gen\IeC {\`e}se d'un site}{119}{subsection*.46}
+\contentsline {subsection}{Agr\IeC {\'e}ger les contributeurs}{119}{subsection*.47}
+\contentsline {subsection}{De l'embrasement \IeC {\`a} l'\IeC {\'e}vasion}{119}{subsection*.48}
+\contentsline {section}{\numberline {6.4}Les Moments Pivot du Web}{120}{section.6.4}
+\contentsline {subsection}{Les limites de l'archivage du Web}{120}{subsection*.49}
+\contentsline {subsection}{Les moments pivots du Web}{120}{subsection*.50}
+\contentsline {chapter}{\numberline {7}Au Del\IeC {\`a} des Archives Web}{121}{chapter.7}
+\contentsline {section}{\numberline {7.1}Des archives centr\IeC {\'e}es sur la navigation}{121}{section.7.1}
+\contentsline {section}{\numberline {7.2}Fouiller les archives du Web profond}{121}{section.7.2}
+\contentsline {chapter}{\numberline {8}Conclusion}{123}{chapter.8}
+\contentsline {chapter}{Bibliographie}{125}{chapter*.51}
 \contentsfinish 

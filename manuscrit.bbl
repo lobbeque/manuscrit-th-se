@@ -79,6 +79,18 @@ Ben-David, A. and Amram, A. (2018).
   historical facts.
 \newblock {\em Internet Histories}, pages 1--23.
 
+\bibitem[Bennafla and Seniguer, 2011]{bennafla_maroc_2011}
+Bennafla, K. and Seniguer, H. (2011).
+\newblock Le {Maroc} à l'épreuve du printemps arabe: une contestation
+  désamorcée?
+\newblock {\em Outre-terre}, (3):143--158.
+
+\bibitem[Bennani-Chraïbi and Jeghllaly, 2012]{bennani-chraibi_dynamique_2012}
+Bennani-Chraïbi, M. and Jeghllaly, M. (2012).
+\newblock La dynamique protestataire du {Mouvement} du 20 février à
+  {Casablanca}.
+\newblock {\em Revue française de science politique}, 62(5):867--894.
+
 \bibitem[Bernard, 2003]{bernard_criteria_2003}
 Bernard, M. (2003).
 \newblock Criteria for optimal web design (designing for usability).
@@ -206,6 +218,12 @@ Derrida, J. (2014).
 \newblock {\em Trace et archive, image et art}.
 \newblock Collection {Collège} iconique. INA.
 
+\bibitem[Desrues, 2012]{desrues_mouvement_2012}
+Desrues, T. (2012).
+\newblock Le mouvement du 20 février et le régime marocain: contestation,
+  révision constitutionnelle et élections.
+\newblock {\em L’Année du Maghreb}, (VIII):359--389.
+
 \bibitem[Dodds et~al., 2011]{dodds_temporal_2011}
 Dodds, P.~S., Harris, K.~D., Kloumann, I.~M., Bliss, C.~A., and Danforth, C.~M.
   (2011).
@@ -267,6 +285,11 @@ Fouetillou, G. (2008).
 \newblock Le web et le traité constitutionnel européen.
 \newblock {\em Réseaux}, (1):229--257.
 
+\bibitem[Fry, 2000]{fry_organic_2000}
+Fry, B.~J. (2000).
+\newblock {\em Organic information design}.
+\newblock {PhD} {Thesis}, Massachusetts Institute of Technology.
+
 \bibitem[Fry, 2004]{fry_computational_2004}
 Fry, B.~J. (2004).
 \newblock {\em Computational information design}.
@@ -326,6 +349,13 @@ Hallgrinsson, B. and Bang, S. (2003).
 Hatcher, E. and Gospodnetic, O. (2004).
 \newblock Lucene in action.
 
+\bibitem[Holten, 2006]{holten_hierarchical_2006}
+Holten, D. (2006).
+\newblock Hierarchical edge bundles: {Visualization} of adjacency relations in
+  hierarchical data.
+\newblock {\em IEEE Transactions on visualization and computer graphics},
+  12(5):741--748.
+
 \bibitem[Holzmann and Anand, 2016]{holzmann_tempas:_2016}
 Holzmann, H. and Anand, A. (2016).
 \newblock Tempas: {Temporal} {Archive} {Search} {Based} on {Tags}.
@@ -369,6 +399,11 @@ Keren, M. (2006).
 Ketelaar, E. (2006).
 \newblock ({Dé}) {Construire} l'archive.
 \newblock {\em Matériaux pour l’histoire de notre temps}, (2):65--70.
+
+\bibitem[Khondker, 2011]{khondker_role_2011}
+Khondker, H.~H. (2011).
+\newblock Role of the new media in the {Arab} {Spring}.
+\newblock {\em Globalizations}, 8(5):675--679.
 
 \bibitem[Khoury et~al., 2007]{khoury_efficient_2007}
 Khoury, I., El-Mawas, R.~M., El-Rawas, O., Mounayar, E.~F., and Artail, H.
@@ -451,6 +486,13 @@ Liu, L., Pu, C., and Tang, W. (2000).
 \newblock {WebCQ}-detecting and delivering information changes on the web.
 \newblock In {\em Proceedings of the ninth international conference on
   {Information} and knowledge management}, pages 512--519. ACM.
+
+\bibitem[Lotan et~al., 2011]{lotan_arab_2011}
+Lotan, G., Graeff, E., Ananny, M., Gaffney, D., Pearce, I., and {others}
+  (2011).
+\newblock The {Arab} {Spring}{\textbar} the revolutions were tweeted:
+  {Information} flows during the 2011 {Tunisian} and {Egyptian} revolutions.
+\newblock {\em International journal of communication}, 5:31.
 
 \bibitem[Marchandise, 2014]{marchandise_facebook_2014}
 Marchandise, S. (2014).
@@ -567,6 +609,12 @@ Saad, M.~B., Pehlivan, Z., and Gançarski, S. (2011).
 \newblock In {\em International {Conference} on {Theory} and {Practice} of
   {Digital} {Libraries}}, pages 421--433. Springer.
 
+\bibitem[Salmon, 2016]{salmon_29_2016}
+Salmon, J.-M. (2016).
+\newblock {\em 29 jours de révolution. {Histoire} du soulèvement tunisien, 17
+  décembre 2010 - 14 janvier 2011}.
+\newblock Les Petits matins.
+
 \bibitem[Schafer and Thierry, 2016]{schafer_web_2016}
 Schafer, V. and Thierry, B.~G. (2016).
 \newblock The “{Web} of pros” in the 1990s: {The} professional acclimation
@@ -628,6 +676,20 @@ Tofel, B. (2007).
 \newblock Wayback’for accessing web archives.
 \newblock In {\em Proceedings of the 7th {International} {Web} {Archiving}
   {Workshop}}, pages 27--37.
+
+\bibitem[Toyoda and Kitsuregawa, 2003]{toyoda_extracting_2003}
+Toyoda, M. and Kitsuregawa, M. (2003).
+\newblock Extracting evolution of web communities from a series of web
+  archives.
+\newblock In {\em Proceedings of the fourteenth {ACM} conference on {Hypertext}
+  and hypermedia}, pages 28--37. ACM.
+
+\bibitem[Toyoda and Kitsuregawa, 2005]{toyoda_system_2005}
+Toyoda, M. and Kitsuregawa, M. (2005).
+\newblock A system for visualizing and analyzing the evolution of the web with
+  a time series of graphs.
+\newblock In {\em Proceedings of the sixteenth {ACM} conference on {Hypertext}
+  and hypermedia}, pages 151--160. ACM.
 
 \bibitem[Toyoda and Kitsuregawa, 2006]{toyoda_whats_2006}
 Toyoda, M. and Kitsuregawa, M. (2006).

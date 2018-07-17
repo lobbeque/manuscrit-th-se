@@ -65,16 +65,16 @@
 \contentsline {subsection}{Le Printemps Arabe comme un moment cl\IeC {\'e} ?}{117}{subsection*.43}
 \contentsline {section}{\numberline {6.3}Un soul\IeC {\`e}vement en ligne \IeC {\'e}ph\IeC {\'e}m\IeC {\`e}re}{119}{section.6.3}
 \contentsline {subsection}{Yabiladi.com : porte d'entr\IeC {\'e}e sur la diaspora}{120}{subsection*.44}
-\contentsline {subsection}{La manifestation du 20 F\IeC {\'e}vrier 2011}{122}{subsection*.45}
-\contentsline {subsection}{La gen\IeC {\`e}se d'un site}{123}{subsection*.46}
-\contentsline {subsection}{Agr\IeC {\'e}ger les contributeurs}{123}{subsection*.47}
-\contentsline {subsection}{De l'embrasement \IeC {\`a} l'\IeC {\'e}vasion}{123}{subsection*.48}
-\contentsline {section}{\numberline {6.4}Les Moments Pivot du Web}{123}{section.6.4}
-\contentsline {subsection}{Les limites de l'archivage du Web}{123}{subsection*.49}
-\contentsline {subsection}{Les moments pivots du Web}{123}{subsection*.50}
-\contentsline {chapter}{\numberline {7}Au Del\IeC {\`a} des Archives Web}{125}{chapter.7}
-\contentsline {section}{\numberline {7.1}Des archives centr\IeC {\'e}es sur la navigation}{125}{section.7.1}
-\contentsline {section}{\numberline {7.2}Fouiller les archives du Web profond}{125}{section.7.2}
-\contentsline {chapter}{\numberline {8}Conclusion}{127}{chapter.8}
-\contentsline {chapter}{Bibliographie}{129}{chapter*.51}
+\contentsline {subsection}{La manifestation du 20 f\IeC {\'e}vrier 2011}{124}{subsection*.45}
+\contentsline {subsection}{Topologie et gen\IeC {\`e}se d'un site}{127}{subsection*.46}
+\contentsline {subsection}{Agr\IeC {\'e}ger les contributeurs}{134}{subsection*.47}
+\contentsline {subsection}{De l'embrasement \IeC {\`a} l'\IeC {\'e}vasion}{134}{subsection*.48}
+\contentsline {section}{\numberline {6.4}Les Moments Pivot du Web}{137}{section.6.4}
+\contentsline {subsection}{Les limites de l'archivage du Web}{137}{subsection*.49}
+\contentsline {subsection}{Les moments pivots du Web}{137}{subsection*.50}
+\contentsline {chapter}{\numberline {7}Au Del\IeC {\`a} des Archives Web}{139}{chapter.7}
+\contentsline {section}{\numberline {7.1}Des archives centr\IeC {\'e}es sur la navigation}{139}{section.7.1}
+\contentsline {section}{\numberline {7.2}Fouiller les archives du Web profond}{139}{section.7.2}
+\contentsline {chapter}{\numberline {8}Conclusion}{141}{chapter.8}
+\contentsline {chapter}{Bibliographie}{143}{chapter*.51}
 \contentsfinish 

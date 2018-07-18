@@ -2219,17 +2219,15 @@ Le 20 février 2011, entre 37,000 (selon le ministère Marocain de l'intérieur)
 
 La nouvelle constitution est approuvée par référendum le 1er Juillet 2011, malgré l'appel au boycott\footnote{\url{https://youtu.be/irbHL8Io--Q}} lancé par le M20F qui n'y voient que des changements de façade. Quelques manifestations émaillent le reste de l'année, mais le M20F penne à mobiliser et à retrouver sa légitimité. Lors des élections législatives de Novembre 2011, les conservateurs du Parti de la justice et du dévéloppement (PJD) arrivent en tête des suffrages, mettant ainsi un terme au volet marocain du Printemps Arabe.
 
-\subsection{Topologie et genèse d'un site}
+\subsection{Topologie d'un site Web}
 
-\noindent La mobilisation de la jeunesse marocaine sur les réseaux sociaux a servi d'amorce aux manifestations du 20 février 2011. Pour celles et ceux qui ne peuvent y participer, les plateformes Twitter et Facebook deviennent, l'espace d'une journée, une extension des rues de Casablanca, de Rabat et de Marrakech via les hashtags \textit{\#Feb20 \& \#20Fev} (Section \ref{sec:5_blogs}). Porté par une stratégie de communication numérique inédite, l'élan de ce mouvement parvient à atteindre la communauté des marocains de l'étranger \citep{desrues_mouvement_2012}. Parallèlement, le portail en ligne \textit{yabiladi.com}  s'impose au cœur de la diaspora marocaine comme un point de rassemblement et de discussion privilégié. Dès lors, se pose une question : comment les membres du forum de \textit{yabiladi.com} ont-il pu réagir à ces événements ? Peut on trouver dans nos archives, la trace de l'organisation de cette mobilisation et de la gestion de ces conséquences après coup ?
+\noindent Comment évolue un site ? Comment s'étend-il sur le Web ? Comment naissent et disparaissent certaines de ses sections ? Peut-on voir un site croitre, à mesure que de nouvelles pages s'ajoutent à son arborescence~? 
 
-Attachés aux principes de l'AED, nous suivrons, à partir de ce point, une approche résolument visuelle. Aussi, commençons par définir notre espace d'exploration comme suit : un site Web unique (\textit{yabiladi.com}), archivé toutes les semaines entre Mars 2010 et Septembre 2014 par les équipes de l'INA (Section \ref{sec:3_edias}). Mais parmi la masse des données préservées, seuls les remous provoqués par les événements du 20 février 2011 doivent attirer, dans un premier temps, notre attention. Il nous faut définir un avant et un après 20 février, dans le cadre très précis du forum de \textit{yabiladi.com}, de ces pages et de ces threads de messages. Notre exploration se place donc à hauteur de ces messages et, à travers eux, des utilisateurs qui les ont publié. Pour ce faire, nous ne conservons, grâce à notre moteur d'exploration, que les fragments Web ayant la forme générique d'un message posté sur un forum : un nom d'auteur, une date d'édition et un contenu textuel publiés au fil d'un thread. 
+Ces questions sortent du cadre stricte de notre étude sur le forum de \textit{yabildai.com}, mais nous souhaitons tout de même nous y attarder ici, afin d'ajouter une nouvelle brique à nos outils d'exploration. En effet, le Web est tout autant un flux continu d'informations qu'un espace en pleine expansion, dont nous voulons maintenant retracer la genèse (à l'échelle d'un site tout du moins). Aussi, plusieurs pistes de réflexion s'offrent à nous : Qu'est ce qu'un site Web, d'un point de vue topographique ? Comment le représenter ? Comment traduire ses dynamiques internes ? Comment rendre compte de l'évolution de ses diverses ramifications, partant d'un corpus d'archives Web ? Notre corpus suffit il, à lui seul, à couvrir toute la ramure d'un site ? 
 
-Une fois ces fragments extraits et filtrés, nous pouvont formuler la problématique de visualisation suivante : Comment voir le processus d'agrégation d'un ensemble d'utilisateurs autour d'un événement particulier, et ce, à travers les messages qu'ils postent sur un forum ? Mais à y regarder de plus prêt, plusieurs pistes de réflexion sous tendent cette question : \textbf{1)} penser un site Web et sa structure comme un espace ou naviguent des utilisateurs \textbf{2)} penser l'évolution dans le temps de la structure de ce site \textbf{3)} penser le devenir d'un utilisateur comme un trajet passant d'un message ou d'une page à l'autre de ce site \textbf{4)} penser l'agrégation de plusieurs trajets autour d'un événements singulier. 
+Sur ce point, M. Toyoda et M. Kitsuregawa proposent de se baser sur les URLs d'un site pour en reconstituer le graphe \citep{toyoda_extracting_2003,toyoda_system_2005}. Chaque élément d'une URL (compris entre deux "\textit{/}") formant un nœud particulier du graphe, dont l'évolution est ici retranscrite par une série de captures successives. On appelle cette méthode, une série temporelle de graphes. C'est l'approche que nous avions utilisé pour notre prototype \textit{en oursin} (Figure \ref{fig:prototypes}, a), présenté en section \ref{sec:3_constituer}. Mais, avec un peu de recul, il nous semble difficile de comparer visuellement de telles séries, surtout lorsque les sites (comme \textit{yabiladi.com}) se révèlent être très verbeux en URLs à afficher. De plus, la période de capture et de représentation reste sujette à discussion et peut varier sensiblement d'un site à l'autre.
 
-Pour résoudre ce problème, commençons par chercher une solution aux deux premières pistes de réflexion : Comment visualiser, partant d'un corpus d'archives Web, les changements topologiques d'un site Web au cours du temps ? Sur ce point, M. Toyoda et M. Kitsuregawa proposent de voir la genèse d'un site à travers une série temporelle de graphes \citep{toyoda_extracting_2003,toyoda_system_2005}, approche qui a servi d'inspiration à notre prototype \textit{en oursin} (Figure \ref{fig:prototypes}, a), présenté en section \ref{sec:3_constituer}. Mais, il nous semble difficile de comparer visuellement de telles séries surtout lorsque les sites (comme \textit{yabiladi.com}) se révèlent être très verbeux en URLs à afficher. 
-
-À l'opposé, la méthode employée par B. Fry, dans son application Anemone\footnote{\url{http://benfry.com/anemone/}} \citep[p.76-82]{fry_organic_2000}, permet de saisir de manière dynamique l'évolution d'un site, vu ici comme un être vivant en pleine croissance. Le système, conçu par Fry, part de la première page archivée d'un site donné, à laquelle il ajoute toutes les $n$ secondes une nouvelle ramification, collant ainsi à l'arborescence du site tel qu'il a été collecté (figure \ref{fig:anemone}) :
+À l'opposé, la méthode employée par B. Fry, dans son application Anemone\footnote{\url{http://benfry.com/anemone/}} \citep[p.76-82]{fry_organic_2000}, permet de saisir de manière dynamique l'évolution d'un site, vu ici comme un être vivant en pleine croissance. Le système, conçu par Fry, part de la première page archi\-vée d'un site Web donné, à laquelle il ajoute toutes les $n$ secondes une nouvelle ramification, collant ainsi à l'arborescence du site telle qu'elle a été collectée (figure \ref{fig:anemone}) :
 
 \begin{figure*}
   \includegraphics[width=\linewidth]{graphics/anemone}
@@ -2237,9 +2235,7 @@ Pour résoudre ce problème, commençons par chercher une solution aux deux prem
   \label{fig:anemone}
 \end{figure*}
 
-\noindent Mais, si l'idée de croissance est bien restituée par Anemone, la spatialisation (en haut, en bas, à gauche, ...), de chaque branche est, quant à elle, codée pour suivre un comportement aléatoire : la structure du site reste la même, mais l'agencement local des pages varie à chaque relance de l'application. Ce procédé écarte malheureusement toute possibilité d'étude répétée et systématique. De plus, le temps est ici pensé comme une mécanique de visualisation (une période de mise à jour de l'Anemone) et non comme une possible dimension d'analyse.
-
-Pour visualiser les dimensions spatio-temporelles d'un processus historique, la célèbre \textit{Carte figurative des pertes successives en hommes de l'Armée Française dans la campagne de Russie 1812-1813} de C. J. Minard reste la meilleure source d'inspiration. Elle permet de suivre le trajet (tracé beige) de l'armée napoléonienne et ses pertes humaines (épaisseur du tracé), à travers la Russie (indications géographique), au cours de l'hiver 1812-1813 (temps en abscisse). Deux dimensions (temps et espaces) servent ici de cadre à l'étude de l'évolution d'une troisième (le nombre d'hommes).  
+\noindent Mais, si l'idée de croissance est bien restituée par Anemone, la spatialisation (en haut, en bas, à gauche, ...), de chaque branche est, quant à elle, codée pour suivre un comportement aléatoire : la structure du site reste la même, mais l'agencement local des pages varie à chaque relance de l'application. Ce procédé écarte malheureusement toute possibilité d'étude répétée et systématique. De plus, le temps est ici pensé comme une mécanique de visualisation (le temps sert à mettre à jour l'Anemone) et non comme une véritable dimension d'analyse.
 
 \begin{figure*}
   \includegraphics[width=\linewidth]{graphics/minard}
@@ -2247,17 +2243,17 @@ Pour visualiser les dimensions spatio-temporelles d'un processus historique, la 
   \label{fig:minard}
 \end{figure*}
 
-\noindent De notre côté, deux dimensions (le site comme espace et le temps) servent également de cadre à l'étude d'un processus historique plus général (l'agrégation des utilisateurs autour du M20F). Aussi, définissons maintenant notre proposition de représentation.
+\noindent Sur ce point, en matière de visualisation des dimensions spatio-tempo\-relles d'un processus historique, la célèbre \textit{Carte figurative des pertes successives en hommes de l'Armée Française dans la campagne de Russie 1812-1813} de C. J. Minard reste la meilleure source d'inspiration. Elle permet de suivre le trajet (tracé beige) de l'armée napoléonienne et ses pertes humaines (épaisseur du tracé), à travers la Russie (indications géographique), au cours de l'hiver 1812-1813 (temps en abscisse). Deux dimensions (temps et espaces) servent ici de cadre à l'étude de l'évolution d'une troisième (le nombre d'hommes). \\ 
+
+\noindent Au regard de ces exemples, il nous semble judicieux de choisir de représenter un site comme un arbre d'URLs, se déployant depuis sa racine (la première page mise en ligne) et grandissant à mesure que de nouvelles pages y sont publiées. En effet, un arbre croît suivant une direction donnée qui peut, dans notre cas, être associée à un axe temporel, placé en abscisse à la manière d'une timeline \ref{fig:topo}. 
 
 \begin{figure}
   \includegraphics[width=\linewidth]{graphics/topo}
-  \caption{Évolution de la structure d'un site fictif \textit{inter.net} dans le temps}
+  \caption{Proposition de visualisation de l'évolution de la structure d'un site fictif \textit{inter.net} dans le temps}
   \label{fig:topo}
 \end{figure}
 
-\noindent Pour visualiser l'évolution de la structure d'un site, nous choisissons de conserver le temps comme dimension d'analyse, placé en abscisse à la manière d'une timeline. Au dessus de cet axe, le site se déploie sous la forme d'un arbre d'URLs, grandissant à mesure que de nouvelles pages y sont publiées, comme l'illustre la figure \ref{fig:topo}. 
-
-Chaque URL du site représente une branche de l'arbre, dont les feuilles sont les pages Web (Figure \ref{fig:topo}, points rouges). L'abscisse d'une URL est déterminée suivant la date de création (dans le meilleur des cas) ou de téléchargement (dans le pire des cas) de la page qu'elle adresse. Pour positionner les embranchements mécaniques\footnote{les portions d'URL entre deux "\textit{/}" ne correspondant à aucune page réelle} de notre arbre, nous leur attribuons arbitrairement une date médiane (Figure \ref{fig:topo}, $t(p_2) - t(p_1)$). L'ordonnée d'une URL est d'abord fonction de son âge (du haut vers le bas, de la plus ancienne à la plus récente) qui sert ensuite d'encrage sur un demi-cercle partant de l'embranchement parent (Figure \ref{fig:ordonnee}).
+\noindent Chaque URL du site représente ici une branche de l'arbre et les pages Web font office de feuilles (Figure \ref{fig:topo}, points rouges). L'abscisse d'une URL est déterminée suivant la date de création (dans le meilleur des cas) ou de téléchargement (dans le pire des cas) de la page qu'elle adresse. Pour positionner les embranchements mécaniques\footnote{les portions d'URL entre deux "\textit{/}" ne correspondant à aucune page réelle} de notre arbre, nous leur attribuons arbitrairement une date médiane (Figure \ref{fig:topo}, $t(p_2) - t(p_1)$). L'ordonnée d'une URL est, quant à elle, fonction de son âge (du haut vers le bas, de la plus ancienne à la plus récente) et lui sert d'encrage autour de l'embranchement parent (Figure \ref{fig:ordonnee}). L'épaisseur d'une branche de l'arbre d'URLs est déterminée par son nombre d'enfants. La taille des marqueurs représentant les pages peut être ramenée à une mesure donnée, comme par exemple, un nombre de messages postés.
 
 \begin{marginfigure}%
   \includegraphics[width=\linewidth]{graphics/ordonnee}
@@ -2266,25 +2262,37 @@ Chaque URL du site représente une branche de l'arbre, dont les feuilles sont le
   \label{fig:ordonnee}
 \end{marginfigure} 
 
-L'épaisseur d'une branche de l'arbre d'URLs est fonction du nombre d'enfants à chaque embranchement. Les pages Web utiles à l'étude sont indiquées par des points rouges dont la taille est proportionnelle au nombre de messages postés dessus. Nous développons ensuite un système\footnote{Open-source et téléchargeable ici \url{https://github.com/lobbeque/archive-viz/tree/master/stayingAlive}} permettant de récupérer, depuis notre moteur d'exploration et depuis Internet Archive, l'ensemble des URLs archivées d'un site donné, que nous représentons à travers une interface de visualisation Web. L'utilisateur peut zoomer à volonté dans l'arbre et sélectionner le détail d'une branche s'il le souhaite (Figure \ref{fig:reve}).
+Ceci étant défini, nous développons alors un système\footnote{Open-source et téléchargeable ici \url{https://github.com/lobbeque/archive-viz/tree/master/stayingAlive}}, permettant de récupérer, depuis notre moteur d'exploration et depuis le corpus d'Internet Archive, l'ensemble des URLs archivées d'un site donné. En effet, afin de garantir une plus grande couverture de l'étendue d'un site nous choisissons de coupler plusieurs sources de données. Nous implémentons cette méthode et construisons une interface de visualisation Web. L'utilisateur peut y zoomer à volonté et sélectionner, s'il le souhaite, le détail d'une branche ou d'une feuille (Figure \ref{fig:reve}).
 
 \begin{figure*}
   \includegraphics[width=\linewidth]{graphics/reve}
-  \caption{Aperçut de notre interface pour visualiser l'évolution topographique d'un site, ici pour la section \textit{Interprétation des rêves, roqya, djinn} du forum de \textit{yabiladi.com}}
+  \caption{Capture d'écran de l'évolution topologique de la section \textit{Interprétation des rêves, roqya, djinn} du forum de \textit{yabiladi.com}}
   \label{fig:reve}
 \end{figure*}
 
-\noindent Ceci étant définit, revenons maintenant à \textit{yabiladi.com} et à la manifestation du 20 février 2011. L'arbre d'URLs qui servira de support à la visualisation est construit à partir des 2,683,928 pages archivées de notre corpus et des 887,981 pages des collectages d'Internet Archives. L'idée étant, ici, de proposer une représentation, la complète possible, de la structure du site et de son évolution. Donc nous associons et mélangeons plusieurs sources de données entre elles. Les pages venant de nos archives sont associées, si possible, à une date de création; les pages fournies par Internet Archives sont, elles, datées par rapport à leurs dates de collecte. En cas de doublon d'un corpus à l'autre, nous privilégions la datation la plus ancienne.
+\subsection{Revenir au 20 février}
 
-Les archives DAFF de \textit{yabiladi.com} sont alors envoyées dans notre moteur d'exploration qui les fragmente et les indexe. Là, un filtre est appliqué pour ne conserver que les pages appartenant à la seule section forum du site, celles contenant la mention "\textit{/forum/}" dans leurs URLs. À ce niveau, nous obtenons 109,534 pages associées à une date de création et segmentées en 422,906 fragments Web.
+\noindent La mobilisation de la jeunesse marocaine sur les réseaux sociaux a servi d'amorce aux manifestations du 20 février 2011. Le temps d'une journée, les plateformes Twitter et Facebook ont prolongé les rues de Casablanca, de Rabat et de Marrakech via les hashtags \textit{\#Feb20 \& \#20Fev} (Section \ref{sec:5_blogs}). Porté par une communication inédite, l'élan de ce mouvement a atteint la communauté des marocains de l'étranger, qui s'est orga\-nisée pour apporter son soutien \citep{desrues_mouvement_2012}. Parallèlement à ces événements, le portail en ligne \textit{yabiladi.com} s'est imposé comme un point de rassemblement et de discussion privilégié par la diaspora Marocaine sur le Web. 
 
-Il ne nous semble pas nécessaire, dans un premier temps, d'analyser toutes les catégories du forum, les sections \textit{Général} et \textit{Actualités} étant plus susceptibles de renfermer des threads et des messages associés au 20 février. Or, depuis l'analyse de la figure \ref{fig:categories}, nous savons que la section \textit{Actualités} a subi de nombreux changements au cours du temps : \textit{Actualités}, \textit{Actualités du Maroc}, \textit{Actualités Marocaines},  \textit{Actualités internationales} et \textit{Actualité du Maroc et du Monde}. Aussi, nous choisissons d'agréger ces diverses entités en une seule et même section \textit{Actualités}. Par ailleurs, la structure des URLs du forum est ainsi faite, qu'il est possible de construire un nouveau filtre par catégories. En effet, depuis la création du forum en 2002, les URLs suivent le même schéma~:
+Partant de là, notre exploration se tourne maintenant vers la masse des archives de \textit{yabiladi.com}. Dans quelle mesure, la mobilisation du 20 février 2011, a-elle pu impacter le quotidien de ce site et de ses utilisateurs ? Y-a-il eu une forme d'organisation collective, en amont de la manifestation ? Une communauté, même éphémère, de soutiens ou de détracteurs a-elle pu y voir le jour ?
+
+Aussi, commençons par définir notre espace d'exploration. Nous partons d'un site Web unique, \textit{yabiladi.com}, dont nous possédons des collectages hebdomadaires, allant de Mars 2010 à Septembre 2014. Les corpus d'Internet Archive peuvent, ici, servir de données d'appoint ou complémentaires. \textit{Yabiladi.com} est un site vaste, possédant plusieurs sections, dont un forum divisé lui même en une dizaine ou une vingtaine de catégories (Figure \ref{fig:categories}). Chaque catégorie englobe plusieurs threads de messages, hébergés sur des pages Web dédiées. Si, d'un point de vue temporel, notre cible est connue, il s'agit de l'avant et de l'après 20 février 2011, le nombre de messages ou de threads s'y référant reste pour le moment inconnu. L'idée est donc : \textbf{1)} d'identifier les messages parlant de la mobilisation, \textbf{2)} de remonter aux utilisateurs qui les ont publiés, \textbf{3)} de voir si ces membre forment une communauté. \\   
+
+\noindent Tout d'abord, nous construisons un arbre d'URLs qui servira de support à nos visualisations. Nous partons des 2,683,928 pages archivées du corpus e-Diasporas et des 887,981 pages collectées par Internet Archives, pour proposer une représentation, la complète possible, de la structure du site et de son évolution. Les données venant de nos archives sont associées, si possible, à une date de création; les pages fournies par Internet Archives sont, elles, datées par rapport à leur collecte. En cas de doublon, nous privilégions la datation la plus précise (Table \ref{tab:datation_2}).
+
+Les archives DAFF de \textit{yabiladi.com} sont ensuite envoyées dans notre moteur d'exploration qui les fragmente et les indexe. Là, un filtre est appliqué, pour ne conserver que les pages appartenant à la seule section forum du site : celles contenant la mention "\textit{/forum/}" dans leurs URLs. Passé cette étape, nous retenons un groupe de 109,534 pages Web, associées à une date de création unique et segmentées en 422,906 fragments Web.
+
+Mais, il ne nous semble pas nécessaire, d'analyser toutes les catégories du forum. Les sections \textit{Général} et \textit{Actualités} étant plus susceptibles de renfermer des threads et des messages associés au 20 février. Or, comme nous savons que la section \textit{Actualités} a subi de nombreux changements au cours du temps \ref{fig:categories} : \textit{Actualités}, \textit{Actualités du Maroc}, \textit{Actualités Marocaines},  \textit{Actualités internationales} et \textit{Actualité du Maroc et du Monde}, nous choisissons de les agréger en une seule et même section renommée \textit{Actualités}. 
+
+Par ailleurs, en se basant sur la structure des URLs du forum, il est possible d'en filtrer les pages par catégorie. En effet, depuis la création du forum en 2002, les URLs suivent toutes le même schéma~:
 
 \begin{figure}
   \includegraphics[width=\linewidth]{graphics/filtre}
 \end{figure}  
 
-\noindent Par exemple, la \textit{category\_id} de la section \textit{Général} est $1$. Nous appliquons donc ce filtre et obtenons en sortie de notre moteur les résultats suivants :
+\noindent Par exemple, la \textit{category\_id} de la section \textit{Général} est $1$, information qui peut être facilement extraite. Nous appliquons ainsi ce filtre et obtenons en sortie de notre moteur les résultats de la table \ref{tab:forum}.
+
+\newpage
 
 \begin{table}
   \label{tab:forum}
@@ -2305,9 +2313,7 @@ Il ne nous semble pas nécessaire, dans un premier temps, d'analyser toutes les 
   \caption{Statistique des archives des sections \textit{Général} et \textit{Actualités} de \textit{yabiladi.com}}
 \end{table} 
 
-\noindent La table \ref{tab:forum} présente diverses statistiques issues de l'analyse de ces données, rappelons qu'un \textit{message} est ici un fragment Web ayant la forme supposée d'un message posté sur un forum et qu'un thread est une suite de messages associés à un même sujet de conversation. 
-
-Pour identifier les messages\footnote{Le forum est écrit en majorité en français} se référant aux événements du 20 février 2011, nous utilisons la recherche plein texte de notre moteur et partons de l'ensemble de mots clés suivants :
+\noindent Pour construire cette table, nous demandons à notre moteur de nous retourner les fragments Web ayant la forme d'un message générique, publié sur le forum, soit : un nom d'utilisateur, une date d'édition et un ensemble d'éléments textuels postés au fil d'un thread. Dans la suite de cette section, et par abus de langage, fragments Web et messages publiés, seront confondus et utilisés de manière équivalente. Aussi, pour identifier les messages\footnote{Le forum est écrit en majorité en français} se référant aux événements du 20 février 2011, nous utilisons la recherche plein texte de notre moteur et partons de l'ensemble de mots clés suivants :
 
 \begin{figure}
   \includegraphics[width=\linewidth]{graphics/20fev}
@@ -2315,7 +2321,7 @@ Pour identifier les messages\footnote{Le forum est écrit en majorité en franç
   \label{fig:mot}
 \end{figure}  
 
-\noindent Nous agrégeons, ensuite, par thread les fragments retournés. Après une validation manuelle, Nous n'en conservons que 12, selon qu'ils traitent directement du 20 février ou de ses conséquences. Nous présentons, ci dessous, la liste des différents titres (ou sujets) de ces 12 threads~:
+\noindent Nous agrégeons, ensuite, par thread les fragments retournés. Après une validation manuelle, nous n'en conservons que 12, selon qu'ils traitent directement du 20 février ou de ses conséquences\footnote{réception par la diaspora, suites à donner au mouvement, discréditation d'un des organisateurs, ...}. Nous présentons, ci dessous, la liste des différents titres (ou sujets) de ces 12 threads~:
 
 \begin{figure}
   \includegraphics[width=\linewidth]{graphics/20fev-topic}
@@ -2323,9 +2329,7 @@ Pour identifier les messages\footnote{Le forum est écrit en majorité en franç
   \label{fig:20fevTopic}
 \end{figure}  
 
-\noindent Bien qu'étant tous liés au même événement, ces threads l'abordent sous divers aspects : celui de sa réception par la diaspora, des suites à donner au mouvement, de la discréditation d'un des organisateurs, etc. À ce niveau, nous appelons $V_0$ ce groupe initial de 12 threads, consistant en un ensemble de 196 messages, écrits par un panel de 94 auteurs uniques nommé $E_0$.
-
-L'idée est maintenant d'élargir ce premier groupe aux messages écrits en amont et en aval de la manifestation. Pour ce faire, nous utilisons $E_0$ comme nouveau point de départ et filtre de sélection. Aussi, nous demandons à notre moteur de nous retourner tous les threads du forum dans lesquels au moins deux auteurs de $E_0$ ont publiés un message. En effet, c'est un collectif d'utilisateurs que nous cherchons ici à étudier. Il nous faut donc découvrir s'ils se connaissaient avant la manifestation et s'ils ont continué à collaborer par la suite, notamment en alimentant les même threads à plusieurs mains. 
+\noindent Nous appelons $V_0$ ce groupe initial de 12 threads, consistant en un ensemble de 196 messages, écrits par un panel de 94 auteurs uniques nommé $E_0$.
 
 \begin{figure*}[hbtp]%
   \includegraphics[width=\linewidth]{graphics/yabi-1}
@@ -2333,20 +2337,32 @@ L'idée est maintenant d'élargir ce premier groupe aux messages écrits en amon
   \label{fig:yabi-1}
 \end{figure*}
 
-\noindent Au final, nous obtenons un nouveau groupe de 343 threads appelé $V_1$. La figure \ref{fig:yabi-1} donne à voir la répartition de ces threads (points rouges) dans le temps, parmi les pages archivées du forum de \textit{yabiladi.com}.
+\noindent L'idée est maintenant d'élargir ce premier groupe aux messages écrits en amont et en aval de la manifestation. Pour ce faire, nous utilisons $E_0$ comme nouveau point de départ et filtre de sélection. Aussi, nous demandons à notre moteur de nous retourner tous les threads du forum dans lesquels au moins deux auteurs de $E_0$ ont publiés un message. En effet, c'est un collectif d'utilisateurs que nous cherchons ici à étudier. Il nous faut donc découvrir s'ils se connaissaient avant la manifestation et s'ils ont continué à collaborer par la suite, notamment en alimentant les même threads à plusieurs mains. Au final, nous obtenons un nouveau groupe de 343 threads appelé $V_1$. La figure \ref{fig:yabi-1} donne à voir la répartition de ces threads (points rouges) dans le temps, parmi les pages archivées du forum de \textit{yabiladi.com}.
 
 \subsection{Agréger les contributeurs}
 
-\noindent Il manque, à la figure \ref{fig:yabi-1}, une information importe : celle du trajet d'un utilisateur naviguant d'un thread à l'autre du forum. En définissant le fragment Web (Section \ref{sec:4_derrida}), nous souhaitions réintégrer de l'humain au cœur des archives Web, revenir aux gestes de celles et ceux qui alimentent quotidiennement les sites collectés.  
-
 \begin{marginfigure}%
-  \includegraphics[width=\linewidth]{graphics/thread}
+  \includegraphics[width=\linewidth]{graphics/trajet}
   \vspace*{0.2cm}  
-  \caption{Détail du thread \textit{J'ai besoin de vous ...}, les messages d'un auteur sont sélectionnés (bleu), les threads auxquels il a participé sont listés (bas)}
-  \label{fig:thread}
+  \caption{Trajet d'un utilisateur ayant posté des messages (bleu) sur deux threads (rouge)}
+  \label{fig:trajet}
 \end{marginfigure} 
 
-Or, les fragments Web que nous manipulons sont ici associés aux noms des auteurs qui les ont écrits. Il est ainsi possible de constituer des trajets entre fragments Web, suivant la trace laissée par les utilisateurs lorsqu'ils contribuent, par leurs messages, aux threads qui les intéressent. Nous modifions donc notre système de visualisation pour afficher de manière dynamique le trajet d'un utilisateur donné (Figure \ref{fig:thread}). La figure \ref{fig:yabi-2} présente l'un de ces trajets, agrégé au niveau des threads. Celui d'un utilisateur ayant écrit sur le forum d'avril 2007 à septembre 2011, contribuant par là même à 66 threads différents. Plus précisément, ce dernier a posté des messages dans les threads \textit{Qui assistera le 20 février au Maroc....???} et \textit{Le "20 Fevrier" est il democratique}. 
+\noindent Il faut ajouter à la figure \ref{fig:yabi-1} une nouvelle information : la trace du trajet d'un utilisateur, naviguant d'un thread à l'autre du forum. En effet, en utilisant le fragment Web (Section \ref{sec:4_derrida}) comme unité principale d'exploration, nous souhaitons réintégrer de l'humain au cœur des archives Web, revenir aux gestes de celles et ceux qui alimentent quotidiennement les sites collectés. Aussi, en nous servant des noms d'auteurs associés aux messages que nous manipulons comme moyen d'identification, nous pouvons afficher de manière dynamique le trajet d'un membre donné (Figure \ref{fig:trajet}). La figure \ref{fig:yabi-2} présente ainsi l'un de ces trajets individuels, agrégé ici au niveau des threads. 
+
+Mais bien plus qu'un individu isolé, c'est une communauté que nous cherchons d'abord à caractériser. Or, le fragment Web nous permet justement de conjuguer le devenir historique de multiples lignes processuelles (Section \ref{sec:4_derrida}), afin de raisonner autour de moments singuliers, à l'image du 20 février 2011. Nous définissons ainsi l'ensemble $E_1$ comme l'agrégation des trajets empruntés par le groupe d'utilisateurs $E_0$ et le graphe $G=(V_1,E_1)$ comme un réseau de threads liés entre eux par les trajets de contributeurs communs (Figure \ref{fig:graphe_g}). 
+
+\begin{marginfigure}%
+  \includegraphics[width=\linewidth]{graphics/graphe_g}
+  \vspace*{0.2cm}  
+  \caption{Le graphe $G=(V_1,E_1)$ pour $V_1$ contenant quatre threads de messages}
+  \label{fig:graphe_g}
+\end{marginfigure} 
+
+
+Nous affichons donc l'ensemble des trajets d'utilisateurs, extraits de nos archives et associés au 20 février. Mais afin de faciliter l'analyse de ces chemins, nous les représentons en utilisant la méthode \textit{edge bundling} \citep{holten_hierarchical_2006}, qui permet de modifier localement la courbure d'un lien dans un graphe, pour le rapprocher visuellement de ces voisins. 
+
+La figure \ref{fig:yabi-3} donne à voir ce graphe $G$ et la manière dont il se construit au cours du temps. Pour clarifier, une dernière fois, la lecture de cette figure, nous dissimulons l'ossature de l'arbre d'URLs de \textit{yabiladi.com} et n'affichons que les trajets $E_1$ (tracés noirs) parmi les threads $V_1$ (points rouges).
 
 \begin{figure*}[hbtp]%
   \includegraphics[width=\linewidth]{graphics/yabi-2}
@@ -2354,15 +2370,15 @@ Or, les fragments Web que nous manipulons sont ici associés aux noms des auteur
   \label{fig:yabi-2}
 \end{figure*}
 
-Mais c'est à un collectif que nous nous intéressons ici, pas à un individu isolé. Or, le fragment Web nous permet justement de conjuguer le devenir historique de multiples lignes processuelles (Section \ref{sec:4_derrida}), afin de raisonner autour de moments singuliers, à l'image du 20 février 2011. Pour ce faire, nous définissons maintenant $E_1$ comme l'ensemble des chemins empruntés par le groupe d'utilisateurs $E_0$ et le graphe $G=(V_1,E_1)$ comme un réseau de threads liés entre eux par les trajets de contributeurs communs. 
-
-Afin de faciliter l'analyse de l'ensemble de ces chemins, nous les représentons en utilisant la méthode \textit{edge bundling} \citep{holten_hierarchical_2006}, qui permet de modifier localement la courbure d'un lien dans un graphe, pour le rapprocher visuellement de ces voisins. La figure \ref{fig:yabi-3} représente le graphe $G$ et donne à voir la manière dont il s'est construit dans le temps. Pour clarifier la lecture de cette figure, nous dissimulons l'ossature de l'arbre d'URLs \textit{yabiladi.com} et affichons (en noir) les trajets $E_1$ parmi les threads $V_1$ (en rouge).
-
 \begin{figure*}[hbtp]%
   \includegraphics[width=\linewidth]{graphics/yabi-3}
   \caption{Trajets agrégés $E_1$ de l'ensemble des contributeurs des threads $V_1$ du forum \textit{yabiladi.com}}
   \label{fig:yabi-3}
 \end{figure*}
+
+\newpage
+
+blabla bblz
 
 \subsection{De l'embrasement à l'évasion}
 

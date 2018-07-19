@@ -2376,13 +2376,57 @@ La figure \ref{fig:yabi-3} donne à voir ce graphe $G$ et la manière dont il se
   \label{fig:yabi-3}
 \end{figure*}
 
-\newpage
+\noindent Une première analyse de la figure \ref{fig:yabi-3}, révèle l'apparition de plusieurs \textit{points de fixations}. Ce sont des points précis du graphe $G$ où arcs et nœuds semblent converger tous au même endroit et même moment. Le plus visible de ces points, où le nombre de threads est le plus important et où les trajets sont les plus densément  concentrés, correspond aux voisinages directs du 20 février 2011 (Figure \ref{fig:yabi-3}, flèche rouge). Plus précisément,  ce sont $25\%$ des 343 threads de $V_1$ qui sont crées entre Janvier et Février 2011.
 
-blabla bblz
+Cette première observation fait sens, au regard, notamment de la construction de notre groupe de départ $V_0$, centré sur la mobilisation marocaine. Mais, nous voyons également que les manifestations du 20 février ont agrégé, autour d'elles, une communauté de membres du forum qui communiquaient déjà en entre eux, en amont des événements (un autre point de fixation est visible en 2009 par exemple, Figure \ref{fig:yabi-3}).
 
-\subsection{De l'embrasement à l'évasion}
+Aussi, si nous divisons maintenant la figure \ref{fig:yabi-3} en deux parties, séparées par le 20 février et appelées respectivement parties \textit{pré-mouvement} et \textit{post-mouvement}, nous voyons que la partie pré-mouvement prend la forme d'un sous-graphe de $G$, clairsemé et étalé sur une période relativement importante, allant de début 2004 à février 2011.
 
-\noindent Là on regarde les clusters de Threads du forum
+\begin{figure}
+  \includegraphics[width=\linewidth]{graphics/user-first}
+  \caption{Répartition des utilisateurs du groupe $E_0$ par date de premier message}
+  \label{fig:user-first}
+\end{figure}  
+
+\noindent Sur l'ensemble du groupe initial d'utilisateur $E_0$, $62\%$ écrivent leur premier message sur le forum durant la période pré-mouvement (Figure \ref{fig:user-first}). En particulier, $20\%$ d'entre eux, sont apparus sur \textit{yabiladi.com} en 2007-2008, suivant une vague de nouveaux arrivants\footnote{Ces auteurs ont notamment contribué au thread "\textit{Accueil des nouveaux yabis ! Marhaba !}"}. Ces premiers membres se sont alors réunis et retrouvés pour débattre ensemble dans des threads dédiés au 20 février et ont, semble-il, continué à communiquer entre eux après ces événements. En effet, les $38\%$ restant, du groupe d'utilisateurs $E_0$, ont contribué d'abord et en premier aux threads directement liés au 20 février. Avant cette date, ils n'apparaissent pas dans les archives de \textit{yabiladi.com}. Nous les retrouvons, néanmoins dans la partie post-mouvement de notre graphe. 
+
+
+Ces observations sont ici purement topographiques et basées sur des corrélations temporelles, nous ne rentrons pas encore dans le détail des conversations. Mais à ce niveau, nous pouvons déjà affirmer être face à un double comportement : \textbf{1)} d'anciens utilisateurs du forum convergent collectivement vers les threads mentionnant les manifestations \textbf{2)} de nouveaux membres débarquent directement sur \textit{yabiladi.com} pour contribuer aux débats post-mouvement. En revanche, tous disparaissent et s'évanouissent soudainement du site au début de l'année 2012.
+
+\subsection{Un embrasement soudain}
+
+\noindent Afin de mieux saisir la dynamique de convergence des anciens et des nouveaux utilisateurs du forum autour des événements du 20 février 2011, nous souhaitons maintenant affiner notre analyse du graphe $G$. Avec la figure \ref{fig:yabi-3}, la spatialisation du graphe, c'est à dire la manière dont nous le représentons, est uniquement fonction de la date à la laquelle chaque thread de $V_1$ a été crée. Mais d'autres types de spatialisation existent, d'autres manière de reprocher ou d'éloigner visuellement les nœuds d'un graphe peuvent être employées. 
+
+Nous reprenons donc notre graphe et l'envoyons dans le logiciel de visualisation gephi\footnote{\url{https://gephi.org/}} où nous choisissons de le spatialiser en utilisant, cette fois ci, la méthode \textit{force atlas} \citep{jacomy_forceatlas2_2014}. Appartenant à la famille des algorithmes dits \textbf{force-directed}\footnote{\url{https://en.wikipedia.org/wiki/Force-directed_graph_drawing}}, force atlas suit une approche purement topographique, où les nœuds  
+d'un graphe sont supposés être chargés d'une force de répulsion et où les arrêtes sont elles chargées de les retenir (Figure \ref{fig:force_atlas}). L'algorithme itère sur l'ensemble du graphe, déplaçant les nœuds et les rapports de force jusqu'à trouver un point d'équilibre global.
+
+\begin{marginfigure}%
+  \includegraphics[width=\linewidth]{graphics/force_atlas}
+  \vspace*{0.2cm}  
+  \caption{Principe de base de Force Atlas, les noeuds d'un graphe sont chargés d'une force de répulsion et les arcs d'une force d'attraction}
+  \label{fig:force_atlas}
+\end{marginfigure} 
+
+La figure \ref{fig:cluster-yabiladi} présente le graphe $G$ nouvellement spatialisé. De la même manière qu'avec la figure \ref{fig:yabi-3}, nous voyons que $G$ suit à nouveau une distribution longitudinale, la graphe est étiré confirmant, de fait, sont aspect temporel. 
+
+Les membres du forum contribuent d'abord et avant tout aux threads nouvellement crées. Ils ne reviennent que dans de très infimes cas participer à des discussions passées, construisant leur trajet d'auteur d'un instant $t_i$ vers un instant $t_{i+1}$, sans retour arrière. Le forum est ainsi ressenti comme flux continu de nouveaux threads, demandant des utilisateurs qu'ils entretiennent une présence régulière sur le site. En cela, ils sont peu nombreux à marquer de longues pauses entre deux interventions, l'intervalle de temps maximum entre deux messages postés par un même auteur étant de 7~années. 
+
+\begin{figure*}
+  \includegraphics[width=\linewidth]{graphics/cluster-yabiladi}
+  \caption{Spatialisation du graphe $G$ par Force Atlas et clustering des threads par classes de modularité}
+  \label{fig:cluster-yabiladi}
+\end{figure*} 
+
+\noindent Nous utilisons, ensuite, un algorithme de clustering par classes de modularité\footnote{\url{https://fr.wikipedia.org/wiki/Modularité\_(réseaux)}} \citep{blondel_fast_2008}, pour grouper entre eux les threads du forum et voir, sous une nouvelle perspective, les points de fixations précédemment révélés par la figure \ref{fig:yabi-3}. La \textbf{modularité} d'un graphe est un score $\in [-1,1]$ qui traduit le rapport entre le nombre d'arêtes réel et le nombre d'arêtes espérée (en plaçant des arrêtes de manière aléatoire) d'un groupe de nœud. Plus ce score est élevé, plus ce groupe se rapproche topographiquement de la structure d'une communauté (Figure \ref{fig:cluster-yabiladi}).
+
+\begin{marginfigure}%
+  \includegraphics[width=\linewidth]{graphics/modularite}
+  \vspace*{0.2cm}  
+  \caption{Exemple de clustering d'un graphe en 4 classes de modularité (couleurs)}
+  \label{fig:modularite}
+\end{marginfigure} 
+
+Ce faisant, le graphe $G$ est divisé en 8 groupes distincts (Figure \ref{fig:cluster-yabiladi}, couleurs et numérotés), traduisant chacun un moment singulier de l'histoire de cette communauté.
 
 \section{Les Moments Pivot du Web}
 

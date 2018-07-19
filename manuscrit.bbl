@@ -100,6 +100,12 @@ Bernard, M. (2003).
 Bertin, J. (1973).
 \newblock Sémiologie graphique: {Les} diagrammes-{Les} réseaux-{Les} cartes.
 
+\bibitem[Blondel et~al., 2008]{blondel_fast_2008}
+Blondel, V.~D., Guillaume, J.-L., Lambiotte, R., and Lefebvre, E. (2008).
+\newblock Fast unfolding of communities in large networks.
+\newblock {\em Journal of statistical mechanics: theory and experiment},
+  2008(10):P10008.
+
 \bibitem[Bon, 2014]{bon_apres_2014}
 Bon, F. (2014).
 \newblock {\em Après le livre}.
@@ -372,6 +378,12 @@ Hölscher, C. and Strube, G. (2000).
 Ingold, T. and Renaut, S. (2013).
 \newblock {\em Une brève histoire des lignes}.
 \newblock Zones sensibles.
+
+\bibitem[Jacomy et~al., 2014]{jacomy_forceatlas2_2014}
+Jacomy, M., Venturini, T., Heymann, S., and Bastian, M. (2014).
+\newblock {ForceAtlas}2, a continuous graph layout algorithm for handy network
+  visualization designed for the {Gephi} software.
+\newblock {\em PloS one}, 9(6):e98679.
 
 \bibitem[Jatowt et~al., 2007]{jatowt_detecting_2007}
 Jatowt, A., Kawai, Y., and Tanaka, K. (2007).

@@ -8,6 +8,7 @@ Warning--there's a number but no volume in bennafla_maroc_2011
 Warning--empty journal in bertin_semiologie_1973
 Warning--empty journal in cai_vips:_2003
 Warning--empty journal in chaney_who_2015
+Warning--there's a number but no volume in chen_cerner_2011
 Warning--there's a number but no volume in desrues_mouvement_2012
 Warning--empty journal in dougnac_depot_1960
 Warning--empty journal in fitch_web_2003
@@ -24,45 +25,45 @@ Warning--can't use both author and editor fields in tukey_exploratory_1977
 Warning--empty note in unesco_charter_2003
 Warning--empty institution in van_de_sompel_http_2013
 Warning--empty booktitle in yadav_change_2007
-You've used 135 entries,
+You've used 140 entries,
             1935 wiz_defined-function locations,
-            1149 strings with 26005 characters,
-and the built_in function-call counts, 56396 in all, are:
-= -- 5686
-> -- 2033
-< -- 136
-+ -- 718
-- -- 670
-* -- 4365
-:= -- 9380
-add.period$ -- 442
-call.type$ -- 135
-change.case$ -- 987
-chr.to.int$ -- 135
-cite$ -- 156
-duplicate$ -- 2453
-empty$ -- 4110
-format.name$ -- 875
-if$ -- 11514
+            1170 strings with 26527 characters,
+and the built_in function-call counts, 58058 in all, are:
+= -- 5847
+> -- 2086
+< -- 141
++ -- 736
+- -- 686
+* -- 4495
+:= -- 9673
+add.period$ -- 457
+call.type$ -- 140
+change.case$ -- 1017
+chr.to.int$ -- 140
+cite$ -- 162
+duplicate$ -- 2523
+empty$ -- 4237
+format.name$ -- 902
+if$ -- 11838
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 152
-newline$ -- 667
-num.names$ -- 405
-pop$ -- 1091
+missing$ -- 160
+newline$ -- 692
+num.names$ -- 420
+pop$ -- 1125
 preamble$ -- 1
-purify$ -- 1010
+purify$ -- 1043
 quote$ -- 0
-skip$ -- 1855
+skip$ -- 1905
 stack$ -- 0
-substring$ -- 3836
-swap$ -- 526
+substring$ -- 3942
+swap$ -- 531
 text.length$ -- 54
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 760
-warning$ -- 21
-while$ -- 477
+type$ -- 784
+warning$ -- 22
+while$ -- 491
 width$ -- 0
-write$ -- 1745
-(There were 21 warnings)
+write$ -- 1807
+(There were 22 warnings)

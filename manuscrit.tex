@@ -1852,7 +1852,7 @@ Comme pour l'AED face aux statistiques confirmatoires, on reproche à la micro-h
 Ce faisant, il peut alors être vertigineux de penser que, partant d'une archive de 70 terra octets, on en vienne à explorer, \textit{seulement}, le devenir en ligne d'une poignée d'internautes. Mais, en nous inspirant des travaux de Ginzburg, nous chercherons à repositionner ces éléments singuliers par rapport aux grandes vagues historiques dont ils ont été témoins ou vecteurs privilégiés. 
 
 \section{Les traces d'une mutation numérique}
-\label{sec:5_blogs}
+\label{sec:6_blogs}
 
 \noindent Concentrons nous maintenant sur le devenir de la blogosphère Marocaine, entre 2008 et 2018. Essayons de comprendre, à travers les archives Web, le ou les processus qui ont amené à sa disparition quasi complète. Sommes nous témoins d'une extinction ? Ou d'une migration d'un territoire du Web vers un autre ? Peut-on encore trouver, dans nos collectages, les traces archivées d'une possible mutation des blogs vers les plateformes de réseaux sociaux ? 
 
@@ -2103,6 +2103,7 @@ Pour ces deux auteurs, Twitter n'a pas véritablement été découvert dans le c
 Nous pouvons ici émettre l'hypothèse que le Printemps Arabe, dans le cas particulier du Maroc, s'est inscrit dans un faisceau complexe d'événements qui ont, à un moment donné, influencé le devenir de la blogosphère, voire du reste de l'e-Diaspora marocaine. Bien sur, à l'échelle de nos archives, ces deux textes sont des détails statistiques, mais ils sont suffisamment intéressants pour nous mettre maintenant sur la piste de la manifestation du 20 février 2011 et de ce hashtag \textit{\#20Fev}. Cet événement a-il-pu avoir un impacte visible sur d'autres espaces de notre corpus ?
 
 \section{Un soulèvement en ligne éphémère}
+\label{sec:6_printemps}
 
 \noindent En section \ref{sec:retour_au_moteur}, partant d'une démonstration technique, nous avions commencé à entrevoir le contenu des archives du forum \textit{yabiladi.com}. Notre système de détection d'événements nous révélait un pic de conversations portant sur la démission de l'ancien dirigeant tunisien Z. Ben Ali, comme un trait d'union entre un fait du Web et un bouleversement du réel. En effet, cette démission marque l'un des moments forts de la vague de contestations populaires qui a déferlé, fin 2010, sur l'ensemble du monde Arabe.
 
@@ -2339,7 +2340,7 @@ Par ailleurs, en se basant sur la structure des URLs du forum, il est possible d
 
 \noindent L'idée est maintenant d'élargir ce premier groupe aux messages écrits en amont et en aval de la manifestation. Pour ce faire, nous utilisons $E_0$ comme nouveau point de départ et filtre de sélection. Aussi, nous demandons à notre moteur de nous retourner tous les threads du forum dans lesquels au moins deux auteurs de $E_0$ ont publiés un message. En effet, c'est un collectif d'utilisateurs que nous cherchons ici à étudier. Il nous faut donc découvrir s'ils se connaissaient avant la manifestation et s'ils ont continué à collaborer par la suite, notamment en alimentant les même threads à plusieurs mains. Au final, nous obtenons un nouveau groupe de 343 threads appelé $V_1$. La figure \ref{fig:yabi-1} donne à voir la répartition de ces threads (points rouges) dans le temps, parmi les pages archivées du forum de \textit{yabiladi.com}.
 
-\subsection{Agréger les contributeurs}
+\subsection{Des trajets de contributeurs}
 
 \begin{marginfigure}%
   \includegraphics[width=\linewidth]{graphics/trajet}
@@ -2393,7 +2394,7 @@ Aussi, si nous divisons maintenant la figure \ref{fig:yabi-3} en deux parties, s
 
 Ces observations sont ici purement topographiques et basées sur des corrélations temporelles, nous ne rentrons pas encore dans le détail des conversations. Mais à ce niveau, nous pouvons déjà affirmer être face à un double comportement : \textbf{1)} d'anciens utilisateurs du forum convergent collectivement vers les threads mentionnant les manifestations \textbf{2)} de nouveaux membres débarquent directement sur \textit{yabiladi.com} pour contribuer aux débats post-mouvement. En revanche, tous disparaissent et s'évanouissent soudainement du site au début de l'année 2012.
 
-\subsection{Un embrasement soudain}
+\subsection{Vers un embrasement}
 
 \noindent Afin de mieux saisir la dynamique de convergence des anciens et des nouveaux utilisateurs du forum autour des événements du 20 février 2011, nous souhaitons maintenant affiner notre analyse du graphe $G$. Avec la figure \ref{fig:yabi-3}, la spatialisation du graphe, c'est à dire la manière dont nous le représentons, est uniquement fonction de la date à la laquelle chaque thread de $V_1$ a été crée. Mais d'autres types de spatialisation existent, d'autres manière de reprocher ou d'éloigner visuellement les nœuds d'un graphe peuvent être employées. 
 
@@ -2409,15 +2410,17 @@ d'un graphe sont supposés être chargés d'une force de répulsion et où les a
 
 La figure \ref{fig:cluster-yabiladi} présente le graphe $G$ nouvellement spatialisé. De la même manière qu'avec la figure \ref{fig:yabi-3}, nous voyons que $G$ suit à nouveau une distribution longitudinale, la graphe est étiré confirmant, de fait, sont aspect temporel. 
 
-Les membres du forum contribuent d'abord et avant tout aux threads nouvellement crées. Ils ne reviennent que dans de très infimes cas participer à des discussions passées, construisant leur trajet d'auteur d'un instant $t_i$ vers un instant $t_{i+1}$, sans retour arrière. Le forum est ainsi ressenti comme flux continu de nouveaux threads, demandant des utilisateurs qu'ils entretiennent une présence régulière sur le site. En cela, ils sont peu nombreux à marquer de longues pauses entre deux interventions, l'intervalle de temps maximum entre deux messages postés par un même auteur étant de 7~années. 
+Les membres du forum contribuent d'abord et avant tout aux threads nouvellement crées. Ils ne reviennent que dans de très infimes cas participer à des discussions passées, construisant leur trajet d'auteur d'un instant $t_i$ vers un instant $t_{i+1}$, sans retour arrière. Le forum est ainsi vécu comme un flux continu de nouveaux threads, demandant des utilisateurs qu'ils entretiennent une présence régulière sur le site. Le temps moyen espaçant deux threads auxquels participe un auteur est ainsi de 53 jours, la valeur médiane étant de 8 jours. Ils sont, en cela, peu nombreux à marquer de longues pauses entre deux interventions, seuls $20\%$ des trajets durent plus d'un mois, l'intervalle maximum étant de 6 ans et 2 mois.   
 
 \begin{figure*}
-  \includegraphics[width=\linewidth]{graphics/cluster-yabiladi}
-  \caption{Spatialisation du graphe $G$ par Force Atlas et clustering des threads par classes de modularité}
-  \label{fig:cluster-yabiladi}
+  \includegraphics[width=\linewidth]{graphics/gephi}
+  \caption{Spatialisation du graphe $G$ par \textit{force atlas} et clustering des threads par classes de modularité}
+  \label{fig:gephi}
 \end{figure*} 
 
-\noindent Nous utilisons, ensuite, un algorithme de clustering par classes de modularité\footnote{\url{https://fr.wikipedia.org/wiki/Modularité\_(réseaux)}} \citep{blondel_fast_2008}, pour grouper entre eux les threads du forum et voir, sous une nouvelle perspective, les points de fixations précédemment révélés par la figure \ref{fig:yabi-3}. La \textbf{modularité} d'un graphe est un score $\in [-1,1]$ qui traduit le rapport entre le nombre d'arêtes réel et le nombre d'arêtes espérée (en plaçant des arrêtes de manière aléatoire) d'un groupe de nœud. Plus ce score est élevé, plus ce groupe se rapproche topographiquement de la structure d'une communauté (Figure \ref{fig:cluster-yabiladi}).
+\noindent Dans un second temps, nous appliquons à notre graphe un algorithme de clustering par classes de modularité\footnote{\url{https://fr.wikipedia.org/wiki/Modularité\_(réseaux)}} \citep{blondel_fast_2008}. Nous souhaitons grouper entre eux les threads du forum et ainsi analyser, sous une nouvelle perspective, les points de fixations précédemment révélés (Figure \ref{fig:yabi-3}). 
+
+La \textbf{modularité} d'un graphe est un score $\in [-1,1]$ qui cherche à traduire le rapport entre le nombre d'arêtes réel et le nombre d'arêtes espéré (placées de manière aléatoire) d'un groupe de nœuds. Plus ce score est élevé, plus le groupe tend à se rapprocher topographiquement de la structure d'une communauté (Figure \ref{fig:modularite}).
 
 \begin{marginfigure}%
   \includegraphics[width=\linewidth]{graphics/modularite}
@@ -2426,17 +2429,107 @@ Les membres du forum contribuent d'abord et avant tout aux threads nouvellement 
   \label{fig:modularite}
 \end{marginfigure} 
 
-Ce faisant, le graphe $G$ est divisé en 8 groupes distincts (Figure \ref{fig:cluster-yabiladi}, couleurs et numérotés), traduisant chacun un moment singulier de l'histoire de cette communauté.
+\begin{table*}
+  \label{tab:threads}
+  \begin{tabular}{clcl}
+    \toprule
+    Cluster & Thread & Degré & Date de création\\
+    \midrule    
+	1&des espions a yabiladi?&8&25-05-2009\\
+	1&Un nouveau forum ? Suggestions ?&9&04-05-2009\\
+	1&adopter un chat&10&14-07-2009\\
+	1&Assumez-vous vos écrits depuis votre inscription?&10&26-07-2009\\
+	1&Accueil des nouveaux yabis ! Marhaba !&16&25-06-2007\\
+    \midrule 	
+	2&Les arabes et les apparences....&9&13-07-2010\\
+	2&Franciser son prénom&10&20-06-2010\\
+	2&correction orthographique...&12&24-08-2010\\
+	2&Double triple pseudo etc...&14&08-02-2010\\
+	2&Quels sont les 3 mots que vous associez à la France?&15&13-08-2010\\
+    \midrule 	
+	3&les homo sont musulmans comme les autres&10&15-10-2010\\
+	3&Mais qu'est ce qui retiens certains en Occident????&10&26-09-2010\\
+	3&Fautes d'orthographe: Catastrophique&10&19-10-2010\\
+	3&porter une barbe au maroc...terrorisme ?&12&15-09-2010\\
+	3&Plus beau pays du monde??&12&03-09-2010\\
+	\midrule 
+	4&Bonne Année 2011 Meilleurs Voeux&12&28-11-2010\\
+	4&Elections miss and mister yabi 2011.&14&04-11-2010\\
+	4&Oh mon Dieu ! Qu'il est beau mon pays&15&16-11-2010\\
+	4&L'accueil des MRE au Maroc&15&21-11-2010\\
+	4&marocains et algériens&15&29-10-2010\\
+    \midrule 	
+	5&Arabe et Tamazight langues officielles !&12&28-01-2011\\
+	5&Photos Des Manifestations&13&21-01-2011\\
+	5&2 millions de manifestants a la place jame3 lfna&14&20-01-2011\\
+	5&Le Couscous est il un plat raffiné ou populaire&14&16-01-2011\\
+	5&Qui assistera le 20 février au Maroc....???&30&15-01-2011\\
+    \midrule 
+	6&Kadafi est juif&11&28-02-2011\\
+	6&Images d'Algérie&12&04-03-2011\\
+	6&Manifestation le 20 Mars au Maroc&12&15-02-2011\\
+	6&Le "20 Fevrier" est il democratique&14&17-02-2011\\
+	6&Si le Front national passe en 2012 ? ? ?&16&08-02-2011\\
+    \midrule 	
+	7&Oui ou Non pour la nouvelle constitution&10&20-05-2011\\
+	7&J'aime notre Roi&10&29-06-2011\\
+	7&Le roi du Maroc dans la boue !&10&24-05-2011\\
+	7&Pourquoi un garçon a droit a plus d'héritages qu'une fille&11&27-08-2011\\
+	7&Racisme biologique&12&07-04-2011\\
+    \midrule 	
+	8&Mariage à durée..déterminée !&10&07-09-2011\\
+	8&Brandissons nos couleurs Rif......&10&19-11-2011\\
+	8&J'ai peur de la présence musulmane au Québec&10&21-11-2011\\
+	8&Bonne année 2961 et meilleurs voeux à tous!&10&12-12-2011\\
+	8&La Grande Classe Marocaine....&11&22-09-2011\\  
+  \bottomrule
+  \end{tabular}
+  \bigskip
+  \caption{Liste des 5 premiers threads (par degré) de chacun des 8 clusters du graphe $G$}
+\end{table*} 
 
-\section{Les Moments Pivot du Web}
+Ceci étant fait, le graphe $G$ se voit divisé en 8 clusters distincts (Figure \ref{fig:gephi}, $\{\#1,...,\#8\}$), témoignant chacun d'un moment singulier de l'histoire de cette communauté. À nouveau, rappelons que cette segmentation ne prend pas en compte le contenu des threads, mais uniquement la structure du réseau. Le cluster \textit{\#1} couvre ainsi les premières années de $G$ (de Juillet 2004 à Septembre 2009) et le cluster \textit{\#5}, quant à lui, s'étend sur la période la plus courte, de Janvier à Septembre 2011. 
 
-\subsection{Les limites de l'archivage du Web}
+Afin de donner du sens à la lecture de ces clusters, nous procédons à une analyse manuelle du contenu de chacun des threads les composant. Avertissons simplement qu'il n'est pas aisé de résumer la diversité de ces conversations en une ou deux thématiques, cela n'a peut être même pas beaucoup de sens, aussi ce qui suit doit être pris avec précaution, de futures analyses viendront compléter cette première observation. La table \ref{tab:threads} présente pour chaque cluster, les sujets des 5 threads ayant agrégé le plus d'auteurs (en se basant sur le degré).
 
-\noindent Bon, il faut rappeler que les archives ne capturent pas le Web comme un environnement (Cf Section \ref{sec:3_constituer})
+Le cluster \textit{\#1}, le plus long, est constitué de conversations sur les règles de fonctionnement internes au forum. Les groupes \textit{\#2} et \textit{\#3} agrègent des propos que l'on peut, faute de mieux, qualifier de quotidien pour ce forum. Le cluster \textit{\#4} marque le tournant des années 2010 à 2011, on note néanmoins une focalisation sur l'identité marocaine et des comparaisons entre le Maroc et ses voisins maghrébins. Mais soudainement, le cluster \textit{\#5} fait émerger une majorité de threads (19 sur 35) liés au Printemps Arabe et à la manifestation du 20 février. Puis, le cluster \textit{\#6} regroupe certains débats post-mouvement et diverses prises de position politiques. Le cluster \textit{\#7} traite de l'héritage politique du 20 février et du changement de constitution à venir. Enfin, avec le cluster \textit{\#8}, le forum retombe dans ses conversations quotidiennes.\\ 
+
+\noindent Arrivée à cette étape, notre exploration des archives de \textit{yabiladi.com} nous suggère donc que le mouvement du 20 février 2011 n'a pas réellement été préparé de longue date sur le Web (ou tout du moins sur ce forum). Une étincelle a, soudainement et sans crier gare, embrasé une partie très minoritaire de \textit{yabiladi.com} : 94 utilisateurs actifs sur un total de 30,564. Cette vague a agrégé d'anciens membres établis du forum et de nouveaux venus en brisant leurs habitudes et la routine de leurs conversations quotidiennes. Mais, la mobilisation n'a pas duré dans le temps, ni donné lieu à une autre forme de protestation en ligne ou a une autre incarnation. La réforme de la constitution, menée par le roi du Maroc au printemps 2011, est venue clore ce moment révolutionnaire. Cette communauté d'utilisateurs est, en cela, une construction éphémère et aujourd'hui éteinte. 
+
+En effet, la plupart de ses membres ont disparu du forum, au début de l'année 2012, quelques mois seulement après la première apparition de Twitter\footnote{\url{https://web.archive.org/web/20120627021244/www.yabiladi.com}} sur la page principale de \textit{yabiladi.com} (Figure \ref{fig:timeline}). Mais, sur les 94 auteurs de l'ensemble $E_0$, nous pouvons avancer qu'au moins 26 d'entre eux ont crée et utilisent aujourd'hui un compte Twitter avec le même avatar\footnote{Comptage et validation manuelle réalisés en Avril 2018}.
+
+\section{Mener des recherches historiques depuis les archives Web}
+\label{sec:6_moment}
+
+\noindent Au regard des derniers éléments tirés de nos explorations, peut-être est il maintenant temps d'interroger le bien fondé d'études basées sur les archives Web comme matière historique. Qu'il s'agisse des auteurs de la blogosphère marocaine ou des membres de \textit{yabiladi.com}, tous ont, peu de temps  après le début des opérations de collecte de l'e-Diaspora, choisi de quitter ces territoires du Web pour migrer vers les réseaux sociaux. En explorant d'abord et avant tout ces corpus d'archives Web, ne sommes nous pas passés à côté d'un des aspects majeurs de notre problématique ?
+
+\subsection{Face aux limites de l'archivage du Web}
+
+\noindent La mise en place de notre moteur d'exploration (Section \ref{sec:4_moteur}) et la définition du fragment Web comme nouvelle unité d'analyse des archi\-ves Web (Section \ref{sec:5_fragment}) ont été guidées par l'idée, selon laquelle, un site Web devait faire l'objet de recherches historiques dédiées \citep{brugger_web_2017}. 
+
+Ce faisant, nous montrons qu'en étudiant les archives Web sur une échelle de temps large (Section \ref{sec:6_blogs}) ou à travers un vaste espace d'explo\-ration (Section \ref{sec:6_printemps}), il est possible de comprendre et d'analyser historiquement le devenir de collectifs en ligne aujourd'hui disparus. Nous avons trouvé les indices d'une mutation des auteurs et des lecteurs du Web (blogueurs, commentateurs, membres de forum, ...) depuis les anciens blogs et les portails en ligne vers les nouvelles plateformes de réseaux sociaux (Facebook, Twitter, ...). 
+
+Mais, partant de nos seuls corpus archivés, nous ne pouvons mettre en lumière l'intégralité du processus de mutation. Seules quelques traces éparses de cette transition (Section \ref{sec:6_blogs}), voire l'absence soudaine de ses dernières (Section \ref{sec:6_printemps}), restent aujourd'hui décelables. À ce niveau, force est de constater que nous touchons ici l'une des limites des archives Web. Il nous faut, dès lors, considérer l'idée que nos corpus peuvent être intrinsèquement incomplets et partiales. 
+
+Cette incomplétude va même bien au delà des cécités et autres artéfacts de crawl hérités de la structure même des archives Web (Section \ref{sec:4_legacy}). Créées et pensées principalement au début des années 2000 \citep{masanes_web_2006}, les systèmes de préservation de la toile ont suivi avec succès les multiples évolutions du Web en tant que médium \citep{cho_evolution_1999,oita_archiving_2010,pop_archiving_2010}, mais pourtant, ils échouent encore à traduire le Web comme un écosystème \citep{brugger_website_2009}. 
+
+Le Web vivant est un flot continu d'informations autant qu'un espace en perpétuel expansion. C'est un environnement de créations et de mutations où une multitude d'acteurs peuvent interagir organiquement. Les archives Web, elles, sont des collections figées de captures discrètes, stockées les unes à l'écart des autres. L'INA archive des données Twitter, la BNF collecte des blogs et Internet Archive préserve les premiers pas du Web mais sans jamais chercher à constituer des ponts entre chacun de ces corpus. Les archives des réseaux sociaux et les archives des sites Web classiques sont traitées comme deux entités séparées et irréconciliables. Quand bien même elles ont, toutes deux, été arrachées au même écosystème. 
+
+Alors que nous cherchions à remonter la trace archivées des possibles conséquences du Printemps Arabe, les acteurs du Web (auteurs, lecteurs, visiteurs, ...) s'étaient, depuis longtemps déjà, détournés des blogs et des forums \citep{khondker_role_2011,lotan_arab_2011}. La problématique des collectifs en ligne éteints est, ainsi, moins une question de disparition, qu'une question de transition. Malheureusement, nos archives Web ne témoignent que du premier saut de cette transition.  
 
 \subsection{Les moments pivots du Web}
 
-\noindent Un moment pivot c'est quoi ? La Web a déjà sa propre micro histoire 
+\noindent Dans son \textit{Manifeste pour une pensée numérique de l'écrit}\footnote{Manifeste vidéo \url{https://youtu.be/8kFntt1l09o}} (2016), F. Bon questionne les mutations récentes de l'écriture numérique au regard des moments charnières de l'écriture dite classique, celle du livre papier. Il émet l'hypothèse de construire une histoire de l'écriture numé\-rique, et notamment de l'écriture sur le Web, qui questionnerait les "\textit{sauts mentaux, ces moments de transition où deux systèmes techniques se superposent}"\footnote{Ibid, 5mn 30s}, pour ressituer des textes et des œuvres numériques dans l'histoire même de leur genèse.
+
+L'histoire de l'écriture a ainsi été ponctuée de moments clés, de moments de transitions \citep{febvre_apparition_2013} où tout un écosystème (les modalités techniques, les supports d'écriture, les auteurs, les œuvres, les moyens de diffusion ...) pivote sur lui même et s'engage sur une nouvelle ligne : le passage de l'oral à l'écrit, l'apparition des méta données sur les rouleaux de parchemins, l'invention de la recopie mécanique et de l'imprimerie, ... 
+
+Mais, le Web et l'Internet en général ne sont pas en reste, puisqu'ils possèdent déjà leur propre micro-histoire (Section \ref{sec:2_web}), parsemée de ces moments où tout bascule, de ces moments que nous appelons pivots : l'apparition des communautés en ligne avec le \textit{MsgGroup} dans les années 80 \citep[p.218]{hafner_where_1998}, l'arrivée du minitel et ses conséquences sur l'émergence du Web en France \citep{schafer_minitel._2012}, la mise en place des systèmes xDSL et ADSL\footnote{\url{https://fr.wikipedia.org/wiki/ADSL}} qui participent de la démocratisation du Web à la fin des années 90, le modèle économique des \textit{consumer gifts} \citep{giesler_consumer_2006} qui tracent de premiers ponts entre économie du Web et du réel ou encore le développement des smartphones et du Web mobile au tournant des années 2010. 
+
+Par ailleurs, parler ici de \textbf{moment} plutôt qu'\textit{in\-stant} ou \textit{point}, est un choix qui s'inscrit dans la continuité de notre discussion (Section \ref{sec:4_temporalite}) sur les temporalités du Web et de ses archives. En effet, le moment, tel que nous l'employons ici, est issu de la conception chinoise du temps qui, contrairement à la pensée occidentale, envisage le temps comme une suite de moments successifs, à la fois distincts et liés entre eux \citep{chen_cerner_2011} et non comme un continuum abstrait de points élémentaires \citep[livre XI, chap. XV, 20, p.~195]{saint_augustin_confessions_1993}. Dans la pensée chinoise, le moment (\textit{shi}) s'éprouve qualitativement, comme marqueur d'une temporalité concrète dont on fait l'expérience en le vivant (comme une saison ou une époque). Ainsi, le moment se voit doté de caractéristiques propres qui le différencie des autres moments, son intensité est variable (un moment peut être doux, fort, tendu, ...) tout autant que sa temporalité (brève ou durable). En optant pour la notion de moment, nous cherchons à décrire ce que J. Baschet nomme "\textit{une forme diversifié du temps vécu}", une forme singulière et caractérisée par une "\textit{densité spécifique}" \citep[p.186]{baschet_defaire_2018}.    
+
+De fait, nous appelons \textbf{moment pivot du Web}, une période de transition entre deux systèmes, un moment où de nouveaux usages du Web émergent et s'écartent des pratiques établies. Un moment où l'on peut faire l'expérience d'un saut mental entre deux manière de vivre et d'expérimenter le Web. Un moment pivot du Web nait de la rencontre de trois facteurs, soit : la convergence à un moment donné \textbf{(1)} entre une avancée technique \textbf{(2)} et des utilisateurs s'en emparant \textbf{(3)}, qui font, ainsi, basculer le Web vers une nouvelle ligne de développement.
+
+Les sections \ref{sec:6_blogs} et \ref{sec:6_printemps} témoignent, à travers le prisme particulier des sites Web migrants marocains, du moment spécifique où des acteurs du Web ont choisi de quitter les territoires du Web 2.0 pour rejoindre le Web des plateformes de réseaux sociaux et subvenir, par là même, à leurs  besoins grandissant d'expression et de partage de l'information en ligne. Nos archives Web (par leur contenu et par leur forme) sont ainsi chargée des derniers soubresauts d'un Web mourant, qui ne reflétait déjà plus la réalité de son temps. Aussi, nous pensons qu'il pourra être intéressant à l'avenir, de penser des explorations des corpus d'archives Web, centrées sur ces moments pivots, où les traces archivées ont le plus de chance de porter en elles des comportements et des gestes singuliers. Par ailleurs, notre méthode d'exploration désagrégée, semble particulièrement adaptée à l'analyse de ces moments puisque nous avons montré qu'il était possible de conjuguer entre eux divers fragments Web éparses pour étudier des processus historiques à étendue et durée variable.
 
 \begin{center}
 	\textbf{***}

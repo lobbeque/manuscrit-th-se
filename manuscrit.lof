@@ -90,7 +90,7 @@
 \contentsline {figure}{\numberline {6.29}{\ignorespaces Trajets agr\IeC {\'e}g\IeC {\'e}s $E_1$ de l'ensemble des contributeurs des threads $V_1$ du forum \textit {yabiladi.com}}}{136}{subsection*.48}
 \contentsline {figure}{\numberline {6.30}{\ignorespaces R\IeC {\'e}partition des utilisateurs du groupe $E_0$ par date de premier message}}{137}{subsection*.48}
 \contentsline {figure}{\numberline {6.31}{\ignorespaces Principe de base de Force Atlas, les noeuds d'un graphe sont charg\IeC {\'e}s d'une force de r\IeC {\'e}pulsion et les arcs d'une force d'attraction}}{138}{subsection*.49}
-\contentsline {figure}{\numberline {6.32}{\ignorespaces Spatialisation du graphe $G$ par Force Atlas et clustering des threads par classes de modularit\IeC {\'e}}}{139}{subsection*.49}
+\contentsline {figure}{\numberline {6.32}{\ignorespaces Spatialisation du graphe $G$ par \textit {force atlas} et clustering des threads par classes de modularit\IeC {\'e}}}{139}{subsection*.49}
 \contentsline {figure}{\numberline {6.33}{\ignorespaces Exemple de clustering d'un graphe en 4 classes de modularit\IeC {\'e} (couleurs)}}{139}{subsection*.49}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

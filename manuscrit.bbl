@@ -258,6 +258,11 @@ Douglis, F., Ball, T., Chen, Y.-F., and Koutsofios, E. (1998).
 Dougnac, M.-T. and Guilbaud, M. (1960).
 \newblock Le dépôt légal: son sens et son évolution.
 
+\bibitem[Driscoll and Paloque-Berges, 2017]{driscoll_searching_2017}
+Driscoll, K. and Paloque-Berges, C. (2017).
+\newblock Searching for missing “net histories”.
+\newblock {\em Internet Histories}, 1(1-2):47--59.
+
 \bibitem[Drugeon, 2005]{drugeon_technical_2005}
 Drugeon, T. (2005).
 \newblock A technical approach for the {French} web legal deposit.
@@ -318,11 +323,16 @@ Fung, G. P.~C., Yu, J.~X., Yu, P.~S., and Lu, H. (2005).
 \newblock In {\em Proceedings of the 31st international conference on {Very}
   large data bases}, pages 181--192. VLDB Endowment.
 
-\bibitem[Gebeil, 2016]{gebeil_les_2016}
-Gebeil, S. (2016).
+\bibitem[Gebeil, 2016a]{gebeil_les_2016}
+Gebeil, S. (2016a).
 \newblock Les mémoires de l’immigration maghrébine sur le web français de
   1999 à 2014.
 \newblock {\em Les Cahiers du numérique}, 12(3):115--138.
+
+\bibitem[Gebeil, 2016b]{gebeil_quand_2016}
+Gebeil, S. (2016b).
+\newblock Quand l’historien rencontre les archives du {Web}.
+\newblock {\em Revue de la BNF}, (2):185--191.
 
 \bibitem[Giesler, 2006]{giesler_consumer_2006}
 Giesler, M. (2006).
@@ -375,6 +385,18 @@ Hallgrinsson, B. and Bang, S. (2003).
 \bibitem[Hatcher and Gospodnetic, 2004]{hatcher_lucene_2004}
 Hatcher, E. and Gospodnetic, O. (2004).
 \newblock Lucene in action.
+
+\bibitem[Helmond, 2015]{helmond_platformization_2015}
+Helmond, A. (2015).
+\newblock The platformization of the web: {Making} web data platform ready.
+\newblock {\em Social Media+ Society}, 1(2):2056305115603080.
+
+\bibitem[Helmond, 2017]{helmond_historical_2017}
+Helmond, A. (2017).
+\newblock Historical {Website} {Ecology}. {Analyzing} {Past} {States} of the
+  {Web} {Using} {Archived} {Source} {Code}.
+\newblock {\em Web 25: Histories from the First 25 Years of the World Wide
+  Web}.
 
 \bibitem[Holten, 2006]{holten_hierarchical_2006}
 Holten, D. (2006).
@@ -605,6 +627,12 @@ Page, L., Brin, S., Motwani, R., and Winograd, T. (1999).
 \newblock The {PageRank} {Citation} {Ranking}: {Bringing} {Order} to the {Web}.
 \newblock Technical {Report} 1999-66, Stanford InfoLab.
 
+\bibitem[Paloque-Bergès, 2018]{paloque-berges_quest-ce_2018}
+Paloque-Bergès, C. (2018).
+\newblock {\em Qu’est-ce qu’un forum internet?: {Une} généalogie
+  historique au prisme des cultures savantes numériques}.
+\newblock OpenEdition Press.
+
 \bibitem[Pandey and Olston, 2005]{pandey_user-centric_2005}
 Pandey, S. and Olston, C. (2005).
 \newblock User-centric web crawling.
@@ -635,6 +663,12 @@ Rocco, D., Buttler, D., and Liu, L. (2003).
 \newblock In {\em E-{Commerce}, 2003. {CEC} 2003. {IEEE} {International}
   {Conference} on}, pages 381--390. IEEE.
 
+\bibitem[Russell and Schafer, 2014]{russell_shadow_2014}
+Russell, A.~L. and Schafer, V. (2014).
+\newblock In the {Shadow} of {ARPANET} and {Internet}: {Louis} {Pouzin} and the
+  {Cyclades} {Network} in the 1970s.
+\newblock {\em Technology and Culture}, 55(4):880--907.
+
 \bibitem[Saad et~al., 2011]{saad_coherence-oriented_2011}
 Saad, M.~B., Pehlivan, Z., and Gançarski, S. (2011).
 \newblock Coherence-oriented crawling and navigation using patterns for web
@@ -648,10 +682,11 @@ Salmon, J.-M. (2016).
   décembre 2010 - 14 janvier 2011}.
 \newblock Les Petits matins.
 
-\bibitem[Schafer and Thierry, 2012]{schafer_minitel._2012}
-Schafer, V. and Thierry, B.~G. (2012).
-\newblock {\em Le {Minitel}. {L}'enfance numérique de la {France}}.
-\newblock Nuvis.
+\bibitem[Schafer, 2015]{schafer_part_2015}
+Schafer, V. (2015).
+\newblock Part of a whole: {RENATER}, a twenty-year-old network within the
+  {Internet}.
+\newblock {\em Information \& Culture}, 50(2):217--235.
 
 \bibitem[Schafer and Thierry, 2016]{schafer_web_2016}
 Schafer, V. and Thierry, B.~G. (2016).
@@ -699,6 +734,19 @@ Spitz, A., Strötgen, J., and Gertz, M. (2018).
 Stack, M. (2006).
 \newblock Full text search of web archive collections.
 \newblock {\em Proc. of IWAW}.
+
+\bibitem[Stevenson, 2016]{stevenson_slashdot_2016}
+Stevenson, M. (2016).
+\newblock Slashdot, open news and informated media: exploring the intersection
+  of imagined futures and web publishing technology.
+\newblock {\em New Media, Old Media: a History and Theory Reader}, pages
+  616--630.
+
+\bibitem[Stevenson, 2018]{stevenson_hypertext_2018}
+Stevenson, M. (2018).
+\newblock From hypertext to hype and back again: exploring the roots of social
+  media in the early web.
+\newblock {\em The SAGE Handbook of Social Media}.
 
 \bibitem[Stiegler, 1991]{stiegler_etat_1991}
 Stiegler, B. (1991).

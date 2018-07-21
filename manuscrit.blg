@@ -13,6 +13,7 @@ Warning--there's a number but no volume in desrues_mouvement_2012
 Warning--empty journal in dougnac_depot_1960
 Warning--empty journal in fitch_web_2003
 Warning--there's a number but no volume in fouetillou_web_2008
+Warning--there's a number but no volume in gebeil_quand_2016
 Warning--there's a number but no volume in ginzburg_signes_1980
 Warning--empty journal in hatcher_lucene_2004
 Warning--there's a number but no volume in ketelaar_de_2006
@@ -25,45 +26,45 @@ Warning--can't use both author and editor fields in tukey_exploratory_1977
 Warning--empty note in unesco_charter_2003
 Warning--empty institution in van_de_sompel_http_2013
 Warning--empty booktitle in yadav_change_2007
-You've used 140 entries,
+You've used 148 entries,
             1935 wiz_defined-function locations,
-            1170 strings with 26527 characters,
-and the built_in function-call counts, 58058 in all, are:
-= -- 5847
-> -- 2086
-< -- 141
-+ -- 736
-- -- 686
-* -- 4495
-:= -- 9673
-add.period$ -- 457
-call.type$ -- 140
-change.case$ -- 1017
-chr.to.int$ -- 140
-cite$ -- 162
-duplicate$ -- 2523
-empty$ -- 4237
-format.name$ -- 902
-if$ -- 11838
-int.to.chr$ -- 1
+            1206 strings with 27871 characters,
+and the built_in function-call counts, 60964 in all, are:
+= -- 6146
+> -- 2148
+< -- 150
++ -- 757
+- -- 704
+* -- 4725
+:= -- 10167
+add.period$ -- 481
+call.type$ -- 148
+change.case$ -- 1066
+chr.to.int$ -- 147
+cite$ -- 171
+duplicate$ -- 2642
+empty$ -- 4469
+format.name$ -- 930
+if$ -- 12415
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 160
-newline$ -- 692
-num.names$ -- 420
-pop$ -- 1125
+missing$ -- 168
+newline$ -- 732
+num.names$ -- 444
+pop$ -- 1157
 preamble$ -- 1
-purify$ -- 1043
+purify$ -- 1092
 quote$ -- 0
-skip$ -- 1905
+skip$ -- 2002
 stack$ -- 0
-substring$ -- 3942
-swap$ -- 531
-text.length$ -- 54
+substring$ -- 4214
+swap$ -- 548
+text.length$ -- 55
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 784
-warning$ -- 22
-while$ -- 491
+type$ -- 832
+warning$ -- 23
+while$ -- 519
 width$ -- 0
-write$ -- 1807
-(There were 22 warnings)
+write$ -- 1909
+(There were 23 warnings)

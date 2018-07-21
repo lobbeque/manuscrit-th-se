@@ -72,10 +72,11 @@
 \contentsline {subsection}{Vers un embrasement}{138}{subsection*.49}
 \contentsline {section}{\numberline {6.4}Mener des recherches historiques depuis les archives Web}{142}{section.6.4}
 \contentsline {subsection}{Face aux limites de l'archivage du Web}{142}{subsection*.50}
-\contentsline {subsection}{Les moments pivots du Web}{143}{subsection*.51}
+\contentsline {subsection}{Une micro-histoire}{143}{subsection*.51}
+\contentsline {subsection}{Les moments pivot du Web}{144}{subsection*.52}
 \contentsline {chapter}{\numberline {7}Au Del\IeC {\`a} des Archives Web}{147}{chapter.7}
 \contentsline {section}{\numberline {7.1}Des archives centr\IeC {\'e}es sur la navigation}{147}{section.7.1}
 \contentsline {section}{\numberline {7.2}Fouiller les archives du Web profond}{147}{section.7.2}
 \contentsline {chapter}{\numberline {8}Conclusion}{149}{chapter.8}
-\contentsline {chapter}{Bibliographie}{151}{chapter*.52}
+\contentsline {chapter}{Bibliographie}{151}{chapter*.53}
 \contentsfinish 

@@ -73,6 +73,12 @@ Baschet, J. (2018).
   futurs inédits}.
 \newblock L'horizon des possibles. Editions La Découverte.
 
+\bibitem[Beaudouin and Denis, 2014]{beaudouin_observer_2014}
+Beaudouin, V. and Denis, J. (2014).
+\newblock {\em Observer et évaluer les usages de {Gallica}. {Réflexion}
+  épistémologique et stratégique}.
+\newblock {PhD} {Thesis}, BnF; Telecom ParisTech.
+
 \bibitem[Ben-David and Amram, 2018]{ben-david_internet_2018}
 Ben-David, A. and Amram, A. (2018).
 \newblock The {Internet} {Archive} and the socio-technical construction of
@@ -136,6 +142,12 @@ Brügger, N. and Schroeder, R. (2017).
 \newblock {\em The {Web} as {History}: {Using} {Web} {Archives} to {Understand}
   the {Past} and the {Present}}.
 \newblock UCL Press.
+
+\bibitem[Cadez et~al., 2003]{cadez_model-based_2003}
+Cadez, I., Heckerman, D., Meek, C., Smyth, P., and White, S. (2003).
+\newblock Model-based clustering and visualization of navigation patterns on a
+  web site.
+\newblock {\em Data mining and knowledge discovery}, 7(4):399--424.
 
 \bibitem[Cai et~al., 2003]{cai_vips:_2003}
 Cai, D., Yu, S., Wen, J.-R., and Ma, W.-Y. (2003).
@@ -281,6 +293,12 @@ Febvre, L. and Martin, H.-J. (2013).
 \newblock {\em L'apparition du livre}.
 \newblock Albin Michel.
 
+\bibitem[Feng et~al., 2006]{feng_web_2006}
+Feng, G., Ma, G.-S., and Hu, J. (2006).
+\newblock Web navigation patterns mining based on clustering of paths and pages
+  content.
+\newblock In {\em Asia-{Pacific} {Web} {Conference}}, pages 857--860. Springer.
+
 \bibitem[Fetterly et~al., 2003]{fetterly_large-scale_2003}
 Fetterly, D., Manasse, M., Najork, M., and Wiener, J. (2003).
 \newblock A large-scale study of the evolution of web pages.
@@ -322,6 +340,11 @@ Fung, G. P.~C., Yu, J.~X., Yu, P.~S., and Lu, H. (2005).
 \newblock Parameter free bursty events detection in text streams.
 \newblock In {\em Proceedings of the 31st international conference on {Very}
   large data bases}, pages 181--192. VLDB Endowment.
+
+\bibitem[Gaumont et~al., 2017]{gaumont_methods_2017}
+Gaumont, N., Panahi, M., and Chavalarias, D. (2017).
+\newblock Methods for the reconstruction of the socio-semantic dynamics of
+  political activist {Twitter} networks.
 
 \bibitem[Gebeil, 2016a]{gebeil_les_2016}
 Gebeil, S. (2016a).
@@ -517,6 +540,12 @@ Lawrence, S. and Giles, C.~L. (2000).
 Leclerc, E. (2012).
 \newblock Le cyberespace de la diaspora indienne.
 
+\bibitem[Legrady, 2005]{legrady_making_2005}
+Legrady, G. (2005).
+\newblock Making visible the invisible.
+\newblock {\em Seattle Library Data Flow Visualization. In: Digital Culture and
+  Heritage. Proceedings of ICHIM05 Sept}, pages 21--23.
+
 \bibitem[Leroi-Gourham, 1984]{leroi-gourham_art_1984}
 Leroi-Gourham, A. (1984).
 \newblock {\em L'{Art} des cavernes: {Atlas} des grottes ornées
@@ -644,6 +673,16 @@ Pant, G., Srinivasan, P., and Menczer, F. (2004).
 \newblock Crawling the web.
 \newblock In {\em Web {Dynamics}}, pages 153--177. Springer.
 
+\bibitem[Pasquier, 2018]{pasquier_classes_2018}
+Pasquier, D. (2018).
+\newblock Classes populaires en ligne: des «oubliés» de la recherche?
+\newblock {\em Réseaux}, (2):9--23.
+
+\bibitem[Paugam and Giorgetti, 2013]{paugam_pauvres_2013}
+Paugam, S. and Giorgetti, C. (2013).
+\newblock Des pauvres à la bibliothèque.
+\newblock {\em Enquête au Centre Pompidou. Paris}.
+
 \bibitem[Pop et~al., 2010]{pop_archiving_2010}
 Pop, R., Vasile, G., and Masanes, J. (2010).
 \newblock Archiving web video.
@@ -734,6 +773,12 @@ Spitz, A., Strötgen, J., and Gertz, M. (2018).
 Stack, M. (2006).
 \newblock Full text search of web archive collections.
 \newblock {\em Proc. of IWAW}.
+
+\bibitem[Stevanovic et~al., 2011]{stevanovic_unsupervised_2011}
+Stevanovic, D., Vlajic, N., and An, A. (2011).
+\newblock Unsupervised clustering of {Web} sessions to detect malicious and
+  non-malicious website users.
+\newblock {\em Procedia Computer Science}, 5:123--131.
 
 \bibitem[Stevenson, 2016]{stevenson_slashdot_2016}
 Stevenson, M. (2016).

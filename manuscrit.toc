@@ -77,7 +77,11 @@
 \contentsline {chapter}{\numberline {7}Au Del\IeC {\`a} des Archives Web}{153}{chapter.7}
 \contentsline {section}{\numberline {7.1}Les archives de navigation Web de la BPI}{154}{section.7.1}
 \contentsline {subsection}{Les postes Internet Libre}{154}{subsection*.53}
-\contentsline {section}{\numberline {7.2}Fouiller les archives du Web profond}{155}{section.7.2}
-\contentsline {chapter}{\numberline {8}Conclusion}{157}{chapter.8}
-\contentsline {chapter}{Bibliographie}{159}{chapter*.54}
+\contentsline {subsection}{Les logs de navigation}{155}{subsection*.54}
+\contentsline {subsection}{Construire une chaine de traitements}{158}{subsection*.55}
+\contentsline {subsection}{Des profils de navigation Web}{159}{subsection*.56}
+\contentsline {subsection}{Des dimensions particuli\IeC {\`e}res}{162}{subsection*.57}
+\contentsline {section}{\numberline {7.2}Fouiller les archives du Web profond}{164}{section.7.2}
+\contentsline {chapter}{\numberline {8}Conclusion}{165}{chapter.8}
+\contentsline {chapter}{Bibliographie}{167}{chapter*.58}
 \contentsfinish 

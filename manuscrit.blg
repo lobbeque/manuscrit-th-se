@@ -13,6 +13,7 @@ Warning--there's a number but no volume in desrues_mouvement_2012
 Warning--empty journal in dougnac_depot_1960
 Warning--empty journal in fitch_web_2003
 Warning--there's a number but no volume in fouetillou_web_2008
+Warning--empty note in gaumont_methods_2017
 Warning--there's a number but no volume in gebeil_quand_2016
 Warning--there's a number but no volume in ginzburg_signes_1980
 Warning--empty journal in hatcher_lucene_2004
@@ -20,51 +21,52 @@ Warning--there's a number but no volume in ketelaar_de_2006
 Warning--empty note in khouzaimi_e-diasporas_2015
 Warning--empty journal in leclerc_cyberespace_2012
 Warning--there's a number but no volume in morsel_traces?_2016
+Warning--there's a number but no volume in pasquier_classes_2018
 Warning--empty publisher in stiegler_etat_1991
 Warning--there's a number but no volume in stiegler_leroi-gourhan:_1998
 Warning--can't use both author and editor fields in tukey_exploratory_1977
 Warning--empty note in unesco_charter_2003
 Warning--empty institution in van_de_sompel_http_2013
 Warning--empty booktitle in yadav_change_2007
-You've used 148 entries,
+You've used 156 entries,
             1935 wiz_defined-function locations,
-            1206 strings with 27871 characters,
-and the built_in function-call counts, 60964 in all, are:
-= -- 6146
-> -- 2148
-< -- 150
-+ -- 757
-- -- 704
-* -- 4725
-:= -- 10167
-add.period$ -- 481
-call.type$ -- 148
-change.case$ -- 1066
-chr.to.int$ -- 147
-cite$ -- 171
-duplicate$ -- 2642
-empty$ -- 4469
-format.name$ -- 930
-if$ -- 12415
+            1241 strings with 29234 characters,
+and the built_in function-call counts, 64109 in all, are:
+= -- 6465
+> -- 2270
+< -- 156
++ -- 797
+- -- 744
+* -- 4982
+:= -- 10712
+add.period$ -- 505
+call.type$ -- 156
+change.case$ -- 1126
+chr.to.int$ -- 155
+cite$ -- 181
+duplicate$ -- 2766
+empty$ -- 4680
+format.name$ -- 982
+if$ -- 13033
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 168
-newline$ -- 732
-num.names$ -- 444
-pop$ -- 1157
+missing$ -- 174
+newline$ -- 771
+num.names$ -- 468
+pop$ -- 1209
 preamble$ -- 1
-purify$ -- 1092
+purify$ -- 1152
 quote$ -- 0
-skip$ -- 2002
+skip$ -- 2100
 stack$ -- 0
-substring$ -- 4214
-swap$ -- 548
-text.length$ -- 55
+substring$ -- 4432
+swap$ -- 571
+text.length$ -- 57
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 832
-warning$ -- 23
-while$ -- 519
+type$ -- 880
+warning$ -- 25
+while$ -- 547
 width$ -- 0
-write$ -- 1909
-(There were 23 warnings)
+write$ -- 2010
+(There were 25 warnings)

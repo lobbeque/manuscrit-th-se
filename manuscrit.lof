@@ -102,6 +102,13 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7.1}{\ignorespaces Ticket de r\IeC {\'e}servation d'une session de 40 mn sur l'un des postes Internet Libre de la BPI}}{154}{subsection*.53}
 \contentsline {figure}{\numberline {7.2}{\ignorespaces Implantation des postes Internet Libre (rouge) sur les trois \IeC {\'e}tages de la BPI}}{155}{subsection*.53}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Exemple de logs de navigation g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}s par le proxy Web de la BPI}}{156}{subsection*.54}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Une page Web peut g\IeC {\'e}n\IeC {\'e}rer plusieurs logs de navigation}}{156}{subsection*.54}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Chaine de traitement des logs de navigation de la BPI}}{158}{subsection*.55}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Exemple de fonctionnement de l'algorithme k-means avec 2 centres (bleu et rouge)}}{160}{subsection*.56}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Clustering des sessions de navigation Web par la m\IeC {\'e}thode des k-means pour la semaine du 20 au 26 mars 2017}}{161}{subsection*.56}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Exemple d'url du site de traduction linguee, pour le mot m\IeC {\'e}moire, du fran\IeC {\c c}ais vers l'anglais}}{162}{subsection*.57}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Prototypes de syst\IeC {\`e}mes de visualisations, bas\IeC {\'e}s sur des dimensions particuli\IeC {\`e}res des logs de la BPI}}{163}{subsection*.57}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 

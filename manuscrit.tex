@@ -2742,11 +2742,11 @@ Cela peut s'expliquer par la simplicité de la méthode employée, une stratégi
 
 Sur ce point, les enquêtes terrains menées par le service Études et Recherche de la bibliothèque et l'expérience que nous commençons en acquérir, nous conduisent à revoir nos priorités d'exploration et à penser une analyse des logs \textbf{par dimensions} particulières. Comme la masse des logs générés par les sites verbeux écrasent les cas singuliers, nous nous proposons de construire des sous ensembles de données, suivant une ligne thématique dictée par nos observations in situ. Par exemple, les URLs des sites de traduction, contiennent, en elles même, les mots que l'usager a cherché à traduire :
 
-\begin{figure}
+\begin{figure*}
   \includegraphics[width=\linewidth]{graphics/traduction}
   \caption{Exemple d'url du site de traduction linguee, pour le mot mémoire, du français vers l'anglais}
   \label{fig:traduction}
-\end{figure} 
+\end{figure*} 
 
 \noindent Ces informations, agrégée, à l'échelle d'une semaine, d'un mois ou d'une année peuvent nous renseigner indirectement, sur la nationalité de certains usagers ou sur leurs préoccupations de traduction : s'agit-il de termes courants ou de termes techniques ? Aussi, comme base de nos futures recherches par dimensions, nous assemblons plusieurs sous ensembles de données, soit en déconstruisant les URLs, soit scrapant les pages Web et ainsi d'obtenir : les termes traduits, les requêtes adressées aux moteurs de recherches (Google, Bing, ...), les titres des articles des sites de news et d'actualité, les titres et les descriptions des vidéos visionnées, ...
 
@@ -2766,13 +2766,73 @@ Ces travaux exploratoires, finiront certainement par révéler de nouvelles pist
 
 Mais plus nous laissons le temps passer et plus les données du Web se protègent de nos explorations. En effet, le taux de sites Web sécurisés augmente chaque jour et les URLs en \textit{https}\footnote{\url{https://fr.wikipedia.org/wiki/HyperText\_Transfer\_Protocol\_Secure}} empêchent le proxy de la BPI d'enregistrer l'entièreté des adresses hypertextes : sur une journée moyenne de logs\footnote{Données de juillet 2018}, $88\%$ des sites Web sont identifiés comme protégés. Par exemple, toutes les URLs du site \textit{youtube.com}, contenues dans les logs, sont tronquées après le nom de domaine. Nous ne pouvons donc plus avoir accès à l'adresse exacte d'une vidéo ou d'une page personnelle. Ainsi en va-t-il du Web et de ses archives, lorsque le premier évolue les secondes deviennent momentanément obsolètes, tant qu'elles n'intègrent pas elles même ces nouvelles mutations. 
 
+\section{Les dynamiques de l'accueil des réfugiés (2015-2017)} 
 
+\noindent Certaines zones de la toile se trouvent hors de ce qu'il est coutume d'appeler "\textit{the indexable Web}"\footnote{Le Web indexable} \citep{lawrence_searching_1998}, soit la surface du Web rendue accessible par le travail des crawlers des moteurs de recherche généralistes (Google, Yahoo, ...). La partie immergée du Web, dissimulée derrière les logins et les mots de passes, traduit une réalité technique de la toile : la grande majorité des formulaires, des services Web et des diverses bases de données, sur lesquels s'appuient les sites, ne sont pas adressables depuis la structure hypertexte du Web. Ainsi, le \textbf{Web profond} \citep{bergman_white_2001} représente, selon une étude publiée 2001, 500 fois la taille du Web de surface\footnote{\url{http://archive.wikiwix.com/cache/?url=http://www.press.umich.edu/jep/07-01/bergman.html}} et constitue, de fait, un défit pour les archivistes du Web cherchant, autant que faire ce peut, à le préserver \citep{masanes_archiving_2006}.
 
-\section{Fouiller les archives du Web profond}
+Dans cette section, nous partirons de l'archivage d'un de ces formulaires du Web profond pour tenter de comprendre, à travers l'analyse de ses évolutions successives (structure et contenu), un moment récent de l'histoire des migrations : la \textit{crise des réfugiés} de l'été 2015 et les formes multiples d'accueil qu'elle a engendrées ou réactivées\footnote{Cette section fait l'objet d'une publication en cours de rédaction : D. Diminescu, Q. Lobbé, \textit{Les mots de l'accueil} (titre provisoire)}.
 
-\noindent là on présente le travail fait pour calm, on insiste juste sur l'évolution de la base de données, qui nous apprend des choses sur les méthodes de travail de cette asso et de manière générale sur l'économie sociale et solidaire
+\subsection{Été 2015 : organiser l'accueil}
 
-\noindent on fait aussi un point sur les mots utilisés et le moment particulier de début septembre 2015 
+\noindent À l'été 2015, les médias et les réseaux sociaux regorgent de reportages sur les réfugiés en détresse, aux portes de l’Europe, qualifiant cette vague d'arrivées de \textit{crise migratoire} sans précédent et essentiellement due à la persistance des conflits en Irak et en Syrie. Ainsi, près de 5 millions de Syriens franchissent les frontières de leur pays et fuient vers les territoires voisins : 3 millions d'entre eux s'installent dans des camps en Turquie et le Liban voit, la proportion de réfugiés accueillis, monter à hauteur d'un tiers de sa population \citep{blanchard_crise_2016}.   
+
+Mais depuis le début du printemps 2015, des milliers de personnes débarquent quotidiennement sur les îles de la mer Égée, au prix d'une traversée mortelle, partant des côtes turques et transformant ces eaux en un cimetière à ciel ouvert. Aussi, devant l'ampleur du phénomène, l'État grec finance rapidement le transfert des réfugiés vers Athènes \citep{pillant_en_2016}. Point à partir duquel, beaucoup décident ensuite de suivre la \textit{route des Balkans}, espérant trouver un abris en Europe de l'ouest, en Allemagne ou en Angleterre. L'espace de quelques mois, les frontières balkaniques deviennent ainsi \textit{facilement} franchissables, et ce, malgré la couverture médiatique grandissante. 
+
+Néanmoins et petit à petit, les gouvernements d'Europe centrale choisissent de fermer les points de passages, se servant politiquement de ce geste comme d'une démonstration de force autoritaire, protectionniste et xénophobe. Et après l'échec des processus de relocalisation\footnote{Transfert, depuis l'Italie et la Grèce, de personnes éligibles aux droits d'asile, et ce, vers d'autres pays de l'Union Européenne \citep{tervonen_finlande:_2016}}, l'Union Européenne (UE) finit par verrouiller ses frontières extérieures, avec la mise en place de hotspots dès le mois d'octobre 2015~: des lieux de privation de liberté alors présentés comme des \textit{centres d'identification et de réception}.   
+
+Bien que l'année 2015 soit celle où le Haut-Commissariat des Nations unies pour les réfugiés (HCR) a comptabilisé prêt de 65 millions de personnes victimes de migrations forcées dans le monde\footnote{Demandeurs d'asile, réfugiés enregistrés, personnes apatrides ou déplacées dans leur propre pays}, l'arrivée, à la même période, des réfugiés en Europe reste, elle, difficile à estimer. Sur ce point nous pouvons, tout de même, nous tourner vers les statistiques d'eurostats\footnote{Voir \url{https://frama.link/rb9m8yRD}} portant sur le nombre de demandes d'asile, déposées dans l'UE en 2015. Soit 1,255,640 primo-demandeurs sur l'ensemble des 28 États membres (en augmentation de $123\%$ par rapport à 2014), l'Allemagne en prenant à elle seule $35,2\%$, devant la Hongrie ($13,9\%$) et la Suède ($12,4\%$).
+
+Loin derrière, mais sans pour autant rester totalement à l'écart, la France enregistre en 2015 plus de 70,000 nouvelles demandes d'asile, le taux de reconnaissance du statut de réfugié\footnote{Chiffres de l'Office français de protection des réfugiés et apatrides (Ofpra) \url{https://www.ofpra.gouv.fr/fr/l-ofpra/actualites/premiers-chiffres-de-l-asile-en}} atteignant, lui, $31,5\%$. Or, derrière chacune de ces demandes, se trouve une personne à accueillir et à prendre en charge. Ainsi, parallèlement aux services de l'État, se développe un tissu associatif chargé de l'organisation et de la mise en place de l'accueil en France. 
+
+En particulier, l'association Singa\footnote{\url{https://www.singafrance.com/}} propose à travers son programme \textit{Comme à la maison} (CALM) de mettre en relation des familles françaises souhaitant accueillir chez elles, à la maison, une personne ayant fait une demande d'asile, et ce, pour une durée allant de 3 à 6 mois. La médiation entre les particuliers \textit{accueillants} et les réfugiés \textit{accueillis}, se fait d'abord en remplissant un formulaire en ligne\footnote{\url{http://calm.singa.fr/inscription/accueillant/}}, c'est ensuite au personnel de Singa que revient la tâche de créer les pairs accueillants/accueillis.
+
+\subsection{Les archives du formulaire des accueillants}
+
+\noindent Dans le cadre d'un projet de recherche, monté en partenariat avec l'équipe en charge de CALM, nous avons eu accès, entre 2015 et 2017, aux enregistrements des formulaires d'inscriptions et à leurs évolutions successives\footnote{Données anonymisées par les membres de l'association}. Ainsi, lorsque l'on se connecte sur la plateforme CALM, il convient d'abord d'indiquer si l'on est un futur accueillant ou un futur accueillis, le système nous dirige ensuite vers un formulaire dédié (Figure \ref{fig:calm-capture}). Ces formulaires s'appuient sur la technologie gratuite Google Form\footnote{Web service permettant de créer et de partager à la volée des formulaires en ligne \url{https://docs.google.com/forms/u/0/}} et se présentent comme une suite de questions ouvertes ou fermées, régulièrement mises à jours et modifiées par l'équipe de CALM. Nous comptons, par exemple, 4 versions successives du formulaire accueillants : \textbf{1)} avant juin 2015 \textbf{2)} de juin 2015 à novembre 2016 \textbf{3)} de novembre 2016 à juin 2017 \textbf{1)} après juin 2017.       
+
+\begin{figure*}
+  \includegraphics[width=\linewidth]{graphics/calm-capture}
+  \caption{Premières questions du formulaire accueillants}
+  \label{fig:calm-capture}
+\end{figure*}
+
+\noindent Dans les faits, le formulaire accueillis n'a jamais été réellement mis en place, si ce n'est durant quelques jours, à l'automne 2015, où il croule rapidement sous plusieurs centaines d'inscriptions. Mais, faute de pouvoir gérer la demande, le formulaire est fermé, l'équipe de CALM proposant plutôt aux futurs accueillis de se déplacer dans les locaux de l'association pour les rencontrer directement.
+
+En revanche, le formulaire accueillants reste lui accessible et notre première tâche\footnote{Travail réalisé en collaboration avec E. Barnoud, S. Dahan, M. Garnier, T. Glasser, N. Leclerc, K. Nguyen, C. Ruppli, M. Verstraete, étudiants à Télécom ParisTech}, lorsque nous entrons en possession de ces archives, consiste à les nettoyer, à les structurer et à les uniformiser. En effet, il est courant de voir, d'une version à l'autre du formulaire, la formulation d'une question évoluer, apparaitre ou disparaitre. Par exemple, l'âge d'un accueillant se transforme en une date de naissance, or si l'information finale reste la même, la donnée à traiter est différente. Il nous faut donc, soit transformer les âges en date soit faire l'inverse afin de procéder, comme nous l'envisageons, à une analyse longitudinale de l'ensemble des inscriptions. 
+
+\begin{figure*}
+  \includegraphics[width=\linewidth]{graphics/calm-0}
+  \caption{Évolutions de la structure du questionnaire accueillants}
+  \label{fig:calm-0}
+\end{figure*}
+
+Mais l'évolution même des questions du formulaire, leur disparition ou leur spécialisation est, en soit, une information riche d'enseignement. La figure \ref{fig:calm-0} présente ainsi ces différentes mutations.
+
+  
+
+On raconte que le formulaire accueillis a rapidement fermé 
+le formulaire est un google forme (4 versions), on récupère les données, on les nettoie, les normalises avec les étudiants 
+Les évolutions du formulaire => montre une volonté de rationnaliser l'info pour apporter de l'automatisme à la mise en relation 
+Là on parle de l'interv de dana avec le programmeur et les fondateurs de l'asso
+Singa est passé d'un hackathon a une structure plus importante bénéfiçiant de la vague de boites qui voulait se faire leur petit refugee washing (IBM) qui propose de faire du dèv pour eux => c'est la technophorie (cf la Jungle en 2016)
+
+Mais finalement le matching se fait toujours à la main pour mieux connaitre les familles et ces ce qui est plébicité 
+
+\subsection{Les mots de l'accueil}
+
+Là on parle de l'extraction des infos,
+du petit aylan 
+des données texte que nous analysons 
+dynamiques des mots 2015 vs 2017
+Et role important de france inter plus la vizu
+
+et on termine en mini conclu sur les autres modèles, les autres archives des jésuites (des emails) et les belges (un réseaux de groupes facebook et de sondages autogérés)
+
+Mini conclu 
+
+Aussi d'autres types d'archives exhistent, les vidéos youtubes, les comptes facebook et twitter, les whatsapp 
+Et la jungle dont j'ai pu cartographier la zone en 2016 et dont aujourd'hui il ne reste plus qu'une carte sur le Web
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Conclusion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -81,7 +81,10 @@
 \contentsline {subsection}{Construire une chaine de traitements}{158}{subsection*.55}
 \contentsline {subsection}{Des profils de navigation Web}{159}{subsection*.56}
 \contentsline {subsection}{Des dimensions particuli\IeC {\`e}res}{162}{subsection*.57}
-\contentsline {section}{\numberline {7.2}Fouiller les archives du Web profond}{164}{section.7.2}
-\contentsline {chapter}{\numberline {8}Conclusion}{165}{chapter.8}
-\contentsline {chapter}{Bibliographie}{167}{chapter*.58}
+\contentsline {section}{\numberline {7.2}Les dynamiques de l'accueil des r\IeC {\'e}fugi\IeC {\'e}s (2015-2017)}{164}{section.7.2}
+\contentsline {subsection}{\IeC {\'E}t\IeC {\'e} 2015 : organiser l'accueil}{164}{subsection*.58}
+\contentsline {subsection}{Les archives du formulaire des accueillants}{165}{subsection*.59}
+\contentsline {subsection}{Les mots de l'accueil}{168}{subsection*.60}
+\contentsline {chapter}{\numberline {8}Conclusion}{169}{chapter.8}
+\contentsline {chapter}{Bibliographie}{171}{chapter*.61}
 \contentsfinish 

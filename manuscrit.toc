@@ -85,6 +85,6 @@
 \contentsline {subsection}{\IeC {\'E}t\IeC {\'e} 2015 : organiser l'accueil}{164}{subsection*.58}
 \contentsline {subsection}{Les archives du formulaire des accueillants}{166}{subsection*.59}
 \contentsline {subsection}{Les mots de l'accueil}{170}{subsection*.60}
-\contentsline {chapter}{\numberline {8}Conclusion}{175}{chapter.8}
-\contentsline {chapter}{Bibliographie}{177}{chapter*.61}
+\contentsline {chapter}{\numberline {8}Conclusion}{177}{chapter.8}
+\contentsline {chapter}{Bibliographie}{179}{chapter*.61}
 \contentsfinish 

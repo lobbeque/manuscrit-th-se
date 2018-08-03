@@ -8,6 +8,7 @@ Warning--there's a number but no volume in bennafla_maroc_2011
 Warning--empty journal in bertin_semiologie_1973
 Warning--there's a number but no volume in blanchard_crise_2016
 Warning--empty journal in cai_vips:_2003
+Warning--empty note in cern_document_1993
 Warning--empty journal in chaney_who_2015
 Warning--there's a number but no volume in chen_cerner_2011
 Warning--there's a number but no volume in desrues_mouvement_2012
@@ -32,45 +33,45 @@ Warning--can't use both author and editor fields in tukey_exploratory_1977
 Warning--empty note in unesco_charter_2003
 Warning--empty institution in van_de_sompel_http_2013
 Warning--empty booktitle in yadav_change_2007
-You've used 165 entries,
+You've used 172 entries,
             1935 wiz_defined-function locations,
-            1279 strings with 30218 characters,
-and the built_in function-call counts, 67279 in all, are:
-= -- 6791
-> -- 2351
-< -- 166
-+ -- 821
-- -- 768
-* -- 5235
-:= -- 11259
-add.period$ -- 533
-call.type$ -- 165
-change.case$ -- 1182
-chr.to.int$ -- 164
-cite$ -- 194
-duplicate$ -- 2902
-empty$ -- 4925
-format.name$ -- 1021
-if$ -- 13661
+            1313 strings with 31131 characters,
+and the built_in function-call counts, 69578 in all, are:
+= -- 7021
+> -- 2412
+< -- 174
++ -- 845
+- -- 786
+* -- 5403
+:= -- 11663
+add.period$ -- 553
+call.type$ -- 172
+change.case$ -- 1224
+chr.to.int$ -- 171
+cite$ -- 202
+duplicate$ -- 3003
+empty$ -- 5096
+format.name$ -- 1050
+if$ -- 14112
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 183
-newline$ -- 816
-num.names$ -- 495
-pop$ -- 1255
+missing$ -- 191
+newline$ -- 850
+num.names$ -- 516
+pop$ -- 1290
 preamble$ -- 1
-purify$ -- 1209
+purify$ -- 1253
 quote$ -- 0
-skip$ -- 2200
+skip$ -- 2286
 stack$ -- 0
-substring$ -- 4667
-swap$ -- 589
-text.length$ -- 58
+substring$ -- 4827
+swap$ -- 604
+text.length$ -- 59
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 932
-warning$ -- 29
-while$ -- 578
+type$ -- 970
+warning$ -- 30
+while$ -- 599
 width$ -- 0
-write$ -- 2127
-(There were 29 warnings)
+write$ -- 2213
+(There were 30 warnings)

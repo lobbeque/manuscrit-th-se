@@ -1,19 +1,19 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Ensemble des champs disponibles dans les fichiers de m\IeC {\'e}ta donn\IeC {\'e}es et de donn\IeC {\'e}es DAFF}}{41}{subsection*.12}
-\contentsline {table}{\numberline {3.2}{\ignorespaces D\IeC {\'e}compte des archives Web des sites \textit {yabiladi.com} et \textit {larbi.org}}}{46}{section.3.3}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Ensemble des champs disponibles dans les fichiers de m\IeC {\'e}ta donn\IeC {\'e}es et de donn\IeC {\'e}es DAFF}}{49}{subsection*.15}
+\contentsline {table}{\numberline {3.2}{\ignorespaces D\IeC {\'e}compte des archives Web des sites \textit {yabiladi.com} et \textit {larbi.org}}}{54}{section.3.3}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces \IeC {\'E}chelle de datation d'une page Web archiv\IeC {\'e}e}}{53}{section.4.2}
+\contentsline {table}{\numberline {4.1}{\ignorespaces \IeC {\'E}chelle de datation d'une page Web archiv\IeC {\'e}e}}{61}{section.4.2}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces \IeC {\'E}chelle (actualis\IeC {\'e}e) de datation d'une page Web archiv\IeC {\'e}e}}{72}{subsection*.23}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Quartiles de la diff\IeC {\'e}rence $\mathop {\mathgroup \symoperators min}\limits _{i} t_i(p_j) - \mathop {\mathgroup \symoperators min}\limits _{k} \phi (f_{jk})$ en jours}}{91}{subsection*.31}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Quartiles de la diff\IeC {\'e}rence $\mathop {\mathgroup \symoperators min}\limits _{i} t_i(p_j) - \mathop {\mathgroup \symoperators min}\limits _{k} \phi (f_{jk})$ en jours, pour les 6 premiers mois de crawl (cas n\IeC {\textdegree }1) et les ann\IeC {\'e}es 2012-2013 (cas n\IeC {\textdegree }2)}}{92}{subsection*.31}
+\contentsline {table}{\numberline {5.1}{\ignorespaces \IeC {\'E}chelle (actualis\IeC {\'e}e) de datation d'une page Web archiv\IeC {\'e}e}}{80}{subsection*.26}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Quartiles de la diff\IeC {\'e}rence $\mathop {\mathgroup \symoperators min}\limits _{i} t_i(p_j) - \mathop {\mathgroup \symoperators min}\limits _{k} \phi (f_{jk})$ en jours}}{99}{subsection*.34}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Quartiles de la diff\IeC {\'e}rence $\mathop {\mathgroup \symoperators min}\limits _{i} t_i(p_j) - \mathop {\mathgroup \symoperators min}\limits _{k} \phi (f_{jk})$ en jours, pour les 6 premiers mois de crawl (cas n\IeC {\textdegree }1) et les ann\IeC {\'e}es 2012-2013 (cas n\IeC {\textdegree }2)}}{100}{subsection*.34}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Liste des 47 blogs de la blogosph\IeC {\`e}re marocaine}}{108}{subsection*.38}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Liste des pays touch\IeC {\'e}s par le Printemps arabe (source: \url {https://fr.wikipedia.org/wiki/Printemps_arabe})}}{127}{subsection*.45}
-\contentsline {table}{\numberline {6.3}{\ignorespaces Statistique des archives des sections \textit {G\IeC {\'e}n\IeC {\'e}ral} et \textit {Actualit\IeC {\'e}s} de \textit {yabiladi.com}}}{134}{subsection*.47}
-\contentsline {table}{\numberline {6.4}{\ignorespaces Liste des 5 premiers threads (par degr\IeC {\'e}) de chacun des 8 clusters du graphe $G$}}{142}{subsection*.49}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Liste des 47 blogs de la blogosph\IeC {\`e}re marocaine}}{116}{subsection*.41}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Liste des pays touch\IeC {\'e}s par le Printemps arabe (source: \url {https://fr.wikipedia.org/wiki/Printemps_arabe})}}{135}{subsection*.48}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Statistique des archives des sections \textit {G\IeC {\'e}n\IeC {\'e}ral} et \textit {Actualit\IeC {\'e}s} de \textit {yabiladi.com}}}{142}{subsection*.50}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Liste des 5 premiers threads (par degr\IeC {\'e}) de chacun des 8 clusters du graphe $G$}}{150}{subsection*.52}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

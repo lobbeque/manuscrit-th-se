@@ -2,89 +2,91 @@
 \contentsline {section}{\numberline {1.1}Mise en garde}{17}{section.1.1}
 \contentsline {subsection}{Penser le pass\IeC {\'e} depuis le pr\IeC {\'e}sent}{17}{subsection*.4}
 \contentsline {subsection}{Conservation diff\IeC {\'e}rentielle et nature des archives Web}{17}{subsection*.5}
-\contentsline {chapter}{\numberline {2}Les Repr\IeC {\'e}sentations en Ligne des Diasporas}{19}{chapter.2}
-\contentsline {section}{\numberline {2.1}Aux origines du Web}{19}{section.2.1}
-\contentsline {section}{\numberline {2.2}Le migrant connect\IeC {\'e}}{19}{section.2.2}
-\contentsline {section}{\numberline {2.3}Un espace de communication et d'organisation}{19}{section.2.3}
-\contentsline {section}{\numberline {2.4}L'Atlas e-Diasporas}{19}{section.2.4}
-\contentsline {chapter}{\numberline {3}Archiver le Web}{21}{chapter.3}
-\contentsline {section}{\numberline {3.1}Vingt ans d'archivage du Web}{22}{section.3.1}
-\contentsline {subsection}{Pr\IeC {\'e}server la m\IeC {\'e}moire collective}{22}{subsection*.6}
-\contentsline {subsection}{Un h\IeC {\'e}ritage num\IeC {\'e}rique}{24}{subsection*.7}
-\contentsline {subsection}{Le cas des archives Fran\IeC {\c c}aises}{28}{subsection*.8}
-\contentsline {section}{\numberline {3.2}S\IeC {\'e}lectionner, collecter et fouiller des corpus}{31}{section.3.2}
-\contentsline {subsection}{Un objet \IeC {\'e}ph\IeC {\'e}m\IeC {\`e}re et multiforme}{31}{subsection*.9}
-\contentsline {subsection}{S\IeC {\'e}lection}{33}{subsection*.10}
-\contentsline {subsection}{Collecte}{35}{subsection*.11}
-\contentsline {subsection}{Stockage}{39}{subsection*.12}
-\contentsline {subsection}{Fouille}{42}{subsection*.13}
-\contentsline {section}{\numberline {3.3}Les archives Web de l'Atlas e-Diasporas}{45}{section.3.3}
-\contentsline {chapter}{\numberline {4}Traces Discr\IeC {\'e}tis\IeC {\'e}es et Temporalit\IeC {\'e} Fig\IeC {\'e}e}{49}{chapter.4}
-\contentsline {section}{\numberline {4.1}D\IeC {\'e}truire pour mieux archiver}{50}{section.4.1}
-\contentsline {section}{\numberline {4.2}Un temps sans dur\IeC {\'e}e}{51}{section.4.2}
-\contentsline {subsection}{C\IeC {\'e}cit\IeC {\'e} de crawl}{53}{subsection*.14}
-\contentsline {subsection}{Coh\IeC {\'e}rence entre pages}{54}{subsection*.15}
-\contentsline {subsection}{Contenus dupliqu\IeC {\'e}s}{56}{subsection*.16}
-\contentsline {section}{\numberline {4.3}Construire un moteur d'exploration d'archives Web}{56}{section.4.3}
-\contentsline {subsection}{Extraction et enrichissement}{57}{subsection*.17}
-\contentsline {subsection}{Adapter un moteur de recherche}{58}{subsection*.18}
-\contentsline {subsection}{Le sch\IeC {\'e}ma d'indexation}{60}{subsection*.19}
-\contentsline {subsection}{Interface de visualisation}{63}{subsection*.20}
-\contentsline {section}{\numberline {4.4}Les archives ne sont pas des traces directes du Web}{64}{section.4.4}
-\contentsline {chapter}{\numberline {5}Fragmenter les Archives Web}{67}{chapter.5}
-\contentsline {section}{\numberline {5.1}Au dessous des pages Web}{68}{section.5.1}
-\contentsline {subsection}{D\IeC {\'e}couper, d\IeC {\'e}placer, monter}{68}{subsection*.21}
-\contentsline {subsection}{Les strates du Web}{70}{subsection*.22}
-\contentsline {subsection}{Dater une page archiv\IeC {\'e}e}{71}{subsection*.23}
-\contentsline {subsection}{D\IeC {\'e}sagr\IeC {\'e}ger pour changer de temporalit\IeC {\'e}}{73}{subsection*.24}
-\contentsline {section}{\numberline {5.2}Le fragment Web : d\IeC {\'e}finition}{76}{section.5.2}
-\contentsline {section}{\numberline {5.3}Scraping et m\IeC {\'e}thodologie d'extraction}{77}{section.5.3}
-\contentsline {subsection}{Extraire de l'information issue d'une page Web}{77}{subsection*.25}
-\contentsline {subsection}{Des pages bruit\IeC {\'e}es \IeC {\`a} nettoyer}{80}{subsection*.26}
-\contentsline {subsection}{Clustering de n\IeC {\oe }uds}{81}{subsection*.27}
-\contentsline {subsection}{D\IeC {\'e}finir une fonction de distance}{82}{subsection*.28}
-\contentsline {subsection}{Cat\IeC {\'e}gorisation}{85}{subsection*.29}
-\contentsline {subsection}{Discussions}{87}{subsection*.30}
-\contentsline {section}{\numberline {5.4}Penser une exploration d\IeC {\'e}sagr\IeC {\'e}g\IeC {\'e}e}{89}{section.5.4}
-\contentsline {subsection}{Att\IeC {\'e}nuer les c\IeC {\'e}cit\IeC {\'e}s de crawl}{89}{subsection*.31}
-\contentsline {subsection}{Coh\IeC {\'e}rence relative entre pages}{92}{subsection*.32}
-\contentsline {subsection}{D\IeC {\'e}dupliquer les corpus}{93}{subsection*.33}
-\contentsline {section}{\numberline {5.5}Int\IeC {\'e}gration au moteur d'exploration}{94}{section.5.5}
-\contentsline {subsection}{D'un sch\IeC {\'e}ma \IeC {\`a} l'autre}{95}{subsection*.34}
-\contentsline {subsection}{D\IeC {\'e}tection d'\IeC {\'e}v\IeC {\'e}nements}{97}{subsection*.35}
-\contentsline {chapter}{\numberline {6}Exploration de Collectifs Migrants \IeC {\'E}teints}{101}{chapter.6}
-\contentsline {section}{\numberline {6.1}\IeC {\`A} la recherche de l'\IeC {\'e}tonnement}{102}{section.6.1}
-\contentsline {subsection}{L'analyse exploratoire de donn\IeC {\'e}es}{103}{subsection*.36}
-\contentsline {subsection}{Suivre et s'attacher aux indices}{103}{subsection*.37}
-\contentsline {section}{\numberline {6.2}Les traces d'une mutation num\IeC {\'e}rique}{106}{section.6.2}
-\contentsline {subsection}{D'une communaut\IeC {\'e} de blogs ...}{106}{subsection*.38}
-\contentsline {subsection}{... \IeC {\`a} un collectif \IeC {\'e}teint}{110}{subsection*.39}
-\contentsline {subsection}{D\IeC {\'e}finir l'espace d'exploration}{111}{subsection*.40}
-\contentsline {subsection}{Migrer d'un territoire du Web \IeC {\`a} un autre}{113}{subsection*.41}
-\contentsline {subsection}{Communaut\IeC {\'e} de lecteurs et identit\IeC {\'e}}{117}{subsection*.42}
-\contentsline {subsection}{Le Printemps Arabe comme un moment cl\IeC {\'e} ?}{119}{subsection*.43}
-\contentsline {section}{\numberline {6.3}Un soul\IeC {\`e}vement en ligne \IeC {\'e}ph\IeC {\'e}m\IeC {\`e}re}{121}{section.6.3}
-\contentsline {subsection}{Yabiladi.com : porte d'entr\IeC {\'e}e sur la diaspora}{122}{subsection*.44}
-\contentsline {subsection}{La manifestation du 20 f\IeC {\'e}vrier 2011}{126}{subsection*.45}
-\contentsline {subsection}{Topologie d'un site Web}{129}{subsection*.46}
-\contentsline {subsection}{Revenir au 20 f\IeC {\'e}vrier}{132}{subsection*.47}
-\contentsline {subsection}{Des trajets de contributeurs}{136}{subsection*.48}
-\contentsline {subsection}{Vers un embrasement}{140}{subsection*.49}
-\contentsline {section}{\numberline {6.4}Mener des recherches historiques depuis les archives Web}{144}{section.6.4}
-\contentsline {subsection}{Face aux limites de l'archivage du Web}{144}{subsection*.50}
-\contentsline {subsection}{Une micro-histoire}{145}{subsection*.51}
-\contentsline {subsection}{Les moments pivot du Web}{146}{subsection*.52}
-\contentsline {chapter}{\numberline {7}Au Del\IeC {\`a} des Archives Web}{153}{chapter.7}
-\contentsline {section}{\numberline {7.1}Les archives de navigation Web de la BPI}{154}{section.7.1}
-\contentsline {subsection}{Les postes Internet Libre}{154}{subsection*.53}
-\contentsline {subsection}{Les logs de navigation}{155}{subsection*.54}
-\contentsline {subsection}{Construire une chaine de traitements}{158}{subsection*.55}
-\contentsline {subsection}{Des profils de navigation Web}{159}{subsection*.56}
-\contentsline {subsection}{Des dimensions particuli\IeC {\`e}res}{162}{subsection*.57}
-\contentsline {section}{\numberline {7.2}Les dynamiques de l'accueil des r\IeC {\'e}fugi\IeC {\'e}s (2015-2017)}{164}{section.7.2}
-\contentsline {subsection}{\IeC {\'E}t\IeC {\'e} 2015 : organiser l'accueil}{164}{subsection*.58}
-\contentsline {subsection}{Les archives du formulaire des accueillants}{166}{subsection*.59}
-\contentsline {subsection}{Les mots de l'accueil}{170}{subsection*.60}
-\contentsline {chapter}{\numberline {8}Conclusion}{177}{chapter.8}
-\contentsline {chapter}{Bibliographie}{179}{chapter*.61}
+\contentsline {chapter}{\numberline {2}Les Repr\IeC {\'e}sentations en ligne des diasporas}{19}{chapter.2}
+\contentsline {section}{\numberline {2.1}G\IeC {\'e}n\IeC {\'e}alogie du Web}{20}{section.2.1}
+\contentsline {subsection}{Faire se rapprocher les machines}{21}{subsection*.6}
+\contentsline {subsection}{L'invention du World Wide Web}{24}{subsection*.7}
+\contentsline {subsection}{Toile, silos et bulles}{26}{subsection*.8}
+\contentsline {section}{\numberline {2.2}Dispers\IeC {\'e}s mais pr\IeC {\'e}sents sur la toile}{27}{section.2.2}
+\contentsline {section}{\numberline {2.3}L'Atlas e-Diasporas : cartographier les sites migrants}{27}{section.2.3}
+\contentsline {chapter}{\numberline {3}Archiver le Web}{29}{chapter.3}
+\contentsline {section}{\numberline {3.1}Vingt ans d'archivage du Web}{30}{section.3.1}
+\contentsline {subsection}{Pr\IeC {\'e}server la m\IeC {\'e}moire collective}{30}{subsection*.9}
+\contentsline {subsection}{Un h\IeC {\'e}ritage num\IeC {\'e}rique}{32}{subsection*.10}
+\contentsline {subsection}{Le cas des archives Fran\IeC {\c c}aises}{36}{subsection*.11}
+\contentsline {section}{\numberline {3.2}S\IeC {\'e}lectionner, collecter et fouiller des corpus}{39}{section.3.2}
+\contentsline {subsection}{Un objet \IeC {\'e}ph\IeC {\'e}m\IeC {\`e}re et multiforme}{39}{subsection*.12}
+\contentsline {subsection}{S\IeC {\'e}lection}{41}{subsection*.13}
+\contentsline {subsection}{Collecte}{43}{subsection*.14}
+\contentsline {subsection}{Stockage}{47}{subsection*.15}
+\contentsline {subsection}{Fouille}{50}{subsection*.16}
+\contentsline {section}{\numberline {3.3}Les archives Web de l'Atlas e-Diasporas}{53}{section.3.3}
+\contentsline {chapter}{\numberline {4}Traces Discr\IeC {\'e}tis\IeC {\'e}es et Temporalit\IeC {\'e} Fig\IeC {\'e}e}{57}{chapter.4}
+\contentsline {section}{\numberline {4.1}D\IeC {\'e}truire pour mieux archiver}{58}{section.4.1}
+\contentsline {section}{\numberline {4.2}Un temps sans dur\IeC {\'e}e}{59}{section.4.2}
+\contentsline {subsection}{C\IeC {\'e}cit\IeC {\'e} de crawl}{61}{subsection*.17}
+\contentsline {subsection}{Coh\IeC {\'e}rence entre pages}{62}{subsection*.18}
+\contentsline {subsection}{Contenus dupliqu\IeC {\'e}s}{64}{subsection*.19}
+\contentsline {section}{\numberline {4.3}Construire un moteur d'exploration d'archives Web}{64}{section.4.3}
+\contentsline {subsection}{Extraction et enrichissement}{65}{subsection*.20}
+\contentsline {subsection}{Adapter un moteur de recherche}{66}{subsection*.21}
+\contentsline {subsection}{Le sch\IeC {\'e}ma d'indexation}{68}{subsection*.22}
+\contentsline {subsection}{Interface de visualisation}{71}{subsection*.23}
+\contentsline {section}{\numberline {4.4}Les archives ne sont pas des traces directes du Web}{72}{section.4.4}
+\contentsline {chapter}{\numberline {5}Fragmenter les Archives Web}{75}{chapter.5}
+\contentsline {section}{\numberline {5.1}Au dessous des pages Web}{76}{section.5.1}
+\contentsline {subsection}{D\IeC {\'e}couper, d\IeC {\'e}placer, monter}{76}{subsection*.24}
+\contentsline {subsection}{Les strates du Web}{78}{subsection*.25}
+\contentsline {subsection}{Dater une page archiv\IeC {\'e}e}{79}{subsection*.26}
+\contentsline {subsection}{D\IeC {\'e}sagr\IeC {\'e}ger pour changer de temporalit\IeC {\'e}}{81}{subsection*.27}
+\contentsline {section}{\numberline {5.2}Le fragment Web : d\IeC {\'e}finition}{84}{section.5.2}
+\contentsline {section}{\numberline {5.3}Scraping et m\IeC {\'e}thodologie d'extraction}{85}{section.5.3}
+\contentsline {subsection}{Extraire de l'information issue d'une page Web}{85}{subsection*.28}
+\contentsline {subsection}{Des pages bruit\IeC {\'e}es \IeC {\`a} nettoyer}{88}{subsection*.29}
+\contentsline {subsection}{Clustering de n\IeC {\oe }uds}{89}{subsection*.30}
+\contentsline {subsection}{D\IeC {\'e}finir une fonction de distance}{90}{subsection*.31}
+\contentsline {subsection}{Cat\IeC {\'e}gorisation}{93}{subsection*.32}
+\contentsline {subsection}{Discussions}{95}{subsection*.33}
+\contentsline {section}{\numberline {5.4}Penser une exploration d\IeC {\'e}sagr\IeC {\'e}g\IeC {\'e}e}{97}{section.5.4}
+\contentsline {subsection}{Att\IeC {\'e}nuer les c\IeC {\'e}cit\IeC {\'e}s de crawl}{97}{subsection*.34}
+\contentsline {subsection}{Coh\IeC {\'e}rence relative entre pages}{100}{subsection*.35}
+\contentsline {subsection}{D\IeC {\'e}dupliquer les corpus}{101}{subsection*.36}
+\contentsline {section}{\numberline {5.5}Int\IeC {\'e}gration au moteur d'exploration}{102}{section.5.5}
+\contentsline {subsection}{D'un sch\IeC {\'e}ma \IeC {\`a} l'autre}{103}{subsection*.37}
+\contentsline {subsection}{D\IeC {\'e}tection d'\IeC {\'e}v\IeC {\'e}nements}{105}{subsection*.38}
+\contentsline {chapter}{\numberline {6}Exploration de Collectifs Migrants \IeC {\'E}teints}{109}{chapter.6}
+\contentsline {section}{\numberline {6.1}\IeC {\`A} la recherche de l'\IeC {\'e}tonnement}{110}{section.6.1}
+\contentsline {subsection}{L'analyse exploratoire de donn\IeC {\'e}es}{111}{subsection*.39}
+\contentsline {subsection}{Suivre et s'attacher aux indices}{111}{subsection*.40}
+\contentsline {section}{\numberline {6.2}Les traces d'une mutation num\IeC {\'e}rique}{114}{section.6.2}
+\contentsline {subsection}{D'une communaut\IeC {\'e} de blogs ...}{114}{subsection*.41}
+\contentsline {subsection}{... \IeC {\`a} un collectif \IeC {\'e}teint}{118}{subsection*.42}
+\contentsline {subsection}{D\IeC {\'e}finir l'espace d'exploration}{119}{subsection*.43}
+\contentsline {subsection}{Migrer d'un territoire du Web \IeC {\`a} un autre}{121}{subsection*.44}
+\contentsline {subsection}{Communaut\IeC {\'e} de lecteurs et identit\IeC {\'e}}{125}{subsection*.45}
+\contentsline {subsection}{Le Printemps Arabe comme un moment cl\IeC {\'e} ?}{127}{subsection*.46}
+\contentsline {section}{\numberline {6.3}Un soul\IeC {\`e}vement en ligne \IeC {\'e}ph\IeC {\'e}m\IeC {\`e}re}{129}{section.6.3}
+\contentsline {subsection}{Yabiladi.com : porte d'entr\IeC {\'e}e sur la diaspora}{130}{subsection*.47}
+\contentsline {subsection}{La manifestation du 20 f\IeC {\'e}vrier 2011}{134}{subsection*.48}
+\contentsline {subsection}{Topologie d'un site Web}{137}{subsection*.49}
+\contentsline {subsection}{Revenir au 20 f\IeC {\'e}vrier}{140}{subsection*.50}
+\contentsline {subsection}{Des trajets de contributeurs}{144}{subsection*.51}
+\contentsline {subsection}{Vers un embrasement}{148}{subsection*.52}
+\contentsline {section}{\numberline {6.4}Mener des recherches historiques depuis les archives Web}{152}{section.6.4}
+\contentsline {subsection}{Face aux limites de l'archivage du Web}{152}{subsection*.53}
+\contentsline {subsection}{Une micro-histoire}{153}{subsection*.54}
+\contentsline {subsection}{Les moments pivot du Web}{154}{subsection*.55}
+\contentsline {chapter}{\numberline {7}Au Del\IeC {\`a} des Archives Web}{161}{chapter.7}
+\contentsline {section}{\numberline {7.1}Les archives de navigation Web de la BPI}{162}{section.7.1}
+\contentsline {subsection}{Les postes Internet Libre}{162}{subsection*.56}
+\contentsline {subsection}{Les logs de navigation}{163}{subsection*.57}
+\contentsline {subsection}{Construire une chaine de traitements}{166}{subsection*.58}
+\contentsline {subsection}{Des profils de navigation Web}{167}{subsection*.59}
+\contentsline {subsection}{Des dimensions particuli\IeC {\`e}res}{170}{subsection*.60}
+\contentsline {section}{\numberline {7.2}Les dynamiques de l'accueil des r\IeC {\'e}fugi\IeC {\'e}s (2015-2017)}{172}{section.7.2}
+\contentsline {subsection}{\IeC {\'E}t\IeC {\'e} 2015 : organiser l'accueil}{172}{subsection*.61}
+\contentsline {subsection}{Les archives du formulaire des accueillants}{174}{subsection*.62}
+\contentsline {subsection}{Les mots de l'accueil}{178}{subsection*.63}
+\contentsline {chapter}{\numberline {8}Conclusion}{185}{chapter.8}
+\contentsline {chapter}{Bibliographie}{187}{chapter*.64}
 \contentsfinish 

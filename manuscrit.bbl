@@ -175,6 +175,11 @@ Castillo, C., Marin, M., Rodriguez, A., and Baeza-Yates, R. (2004).
 \newblock In {\em {WebMedia} and {LA}-{Web}, 2004. {Proceedings}}, pages
   10--17. IEEE.
 
+\bibitem[{CERN}, 1993]{cern_document_1993}
+{CERN} (1993).
+\newblock The document that officially put the {World} {Wide} {Web} into the
+  public domain.
+
 \bibitem[Chakravarthy et~al., 2002]{chakravarthy_webvigil:_2002}
 Chakravarthy, S., Jacob, J., Pandrangi, N., and Sanka, A. (2002).
 \newblock Webvigil: {An} approach to just-in-time information propagation in
@@ -262,6 +267,17 @@ Desrues, T. (2012).
 \newblock Le mouvement du 20 février et le régime marocain: contestation,
   révision constitutionnelle et élections.
 \newblock {\em L’Année du Maghreb}, (VIII):359--389.
+
+\bibitem[Diminescu, 2008]{diminescu_connected_2008}
+Diminescu, D. (2008).
+\newblock The connected migrant: an epistemological manifesto.
+\newblock {\em Social Science Information}, 47(4):565--579.
+
+\bibitem[Diminescu, 2012]{diminescu_e-diasporas_2012}
+Diminescu, D. (2012).
+\newblock {\em E-{Diasporas} {Atlas}: {Exploration} and {Cartography} of
+  {Diasporas} on {Digital} {Networks}}.
+\newblock Ed. de la Maison des sciences de l'homme.
 
 \bibitem[Dodds et~al., 2011]{dodds_temporal_2011}
 Dodds, P.~S., Harris, K.~D., Kloumann, I.~M., Bliss, C.~A., and Danforth, C.~M.
@@ -551,6 +567,12 @@ Lawrence, S. and Giles, C.~L. (2000).
 \newblock Accessibility of information on the web.
 \newblock {\em intelligence}, 11(1):32--39.
 
+\bibitem[Lazard and Mounier-Kuhn, 2016]{lazard_histoire_2016}
+Lazard, E. and Mounier-Kuhn, P.-E. (2016).
+\newblock {\em Histoire illustrée de l'informatique: {Histoire} illustrée de
+  l'informatique}.
+\newblock EDP sciences.
+
 \bibitem[Leclerc, 2012]{leclerc_cyberespace_2012}
 Leclerc, E. (2012).
 \newblock Le cyberespace de la diaspora indienne.
@@ -572,6 +594,11 @@ Leroi-Gourham, A. (1984).
 Leroi-Gourhan, A. (1964).
 \newblock {\em Le geste et la parole}.
 \newblock Albin Michel.
+
+\bibitem[Licklider and Taylor, 1968]{licklider_computer_1968}
+Licklider, J.~C. and Taylor, R.~W. (1968).
+\newblock The computer as a communication device.
+\newblock {\em Science and technology}, 76(2):1--3.
 
 \bibitem[Lim and Ng, 2001]{lim_automated_2001}
 Lim, S.-J. and Ng, Y.-K. (2001).
@@ -664,6 +691,11 @@ Morsel, J. (2016).
 \newblock Traces? {Quelles} traces? {Réflexions} pour une histoire non
   passéiste.
 \newblock {\em Revue historique}, (4):813--868.
+
+\bibitem[Nelson, 1967]{nelson_getting_1967}
+Nelson, T.~H. (1967).
+\newblock Getting it out of our system.
+\newblock {\em Information retrieval: A critical review}, pages 191--210.
 
 \bibitem[Nunes et~al., 2007]{nunes_using_2007}
 Nunes, S., Ribeiro, C., and David, G. (2007).
@@ -762,6 +794,12 @@ Salmon, J.-M. (2016).
 \newblock {\em 29 jours de révolution. {Histoire} du soulèvement tunisien, 17
   décembre 2010 - 14 janvier 2011}.
 \newblock Les Petits matins.
+
+\bibitem[Sayad, 1999]{sayad_double_1999}
+Sayad, A. (1999).
+\newblock La double absence.
+\newblock {\em Des illusions de l’émigré aux souffrances de l’immigré},
+  327.
 
 \bibitem[Schafer, 2015]{schafer_part_2015}
 Schafer, V. (2015).

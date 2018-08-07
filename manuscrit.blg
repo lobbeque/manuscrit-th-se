@@ -3,15 +3,18 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscrit.aux
 The style file: apalike.bst
 Database file #1: biblio.bib
+Warning--I didn't find a database entry for "saint_augustin_confessions_1993"
 Warning--empty journal in arvidson_kulturarw3_2000
 Warning--there's a number but no volume in bennafla_maroc_2011
 Warning--empty journal in bertin_semiologie_1973
 Warning--there's a number but no volume in blanchard_crise_2016
+Warning--there's a number but no volume in bounie_analyse_2010
 Warning--empty journal in cai_vips:_2003
 Warning--empty note in cern_document_1993
 Warning--empty journal in chaney_who_2015
 Warning--there's a number but no volume in chen_cerner_2011
 Warning--there's a number but no volume in desrues_mouvement_2012
+Warning--there's a number but no volume in diminescu_traces_2016
 Warning--empty journal in dougnac_depot_1960
 Warning--empty journal in fitch_web_2003
 Warning--there's a number but no volume in fouetillou_web_2008
@@ -21,57 +24,58 @@ Warning--there's a number but no volume in ginzburg_signes_1980
 Warning--empty journal in hatcher_lucene_2004
 Warning--there's a number but no volume in ketelaar_de_2006
 Warning--empty note in khouzaimi_e-diasporas_2015
+Warning--there's a number but no volume in laflaquiere_archiver_2005
 Warning--empty journal in leclerc_cyberespace_2012
 Warning--there's a number but no volume in morsel_traces?_2016
 Warning--there's a number but no volume in pasquier_classes_2018
 Warning--there's a number but no volume in pillant_en_2016
-Warning--there's a number but no volume in rouvroy_gouvernementalite_2013
-Warning--empty publisher in stiegler_etat_1991
+Warning--empty journal in sabancioglu_new_2011
+Warning--empty journal in stiegler_etat_1991
 Warning--there's a number but no volume in stiegler_leroi-gourhan:_1998
 Warning--there's a number but no volume in tervonen_finlande:_2016
 Warning--can't use both author and editor fields in tukey_exploratory_1977
 Warning--empty note in unesco_charter_2003
 Warning--empty institution in van_de_sompel_http_2013
 Warning--empty booktitle in yadav_change_2007
-You've used 172 entries,
+You've used 200 entries,
             1935 wiz_defined-function locations,
-            1313 strings with 31131 characters,
-and the built_in function-call counts, 69578 in all, are:
-= -- 7021
-> -- 2412
-< -- 174
-+ -- 845
-- -- 786
-* -- 5403
-:= -- 11663
-add.period$ -- 553
-call.type$ -- 172
-change.case$ -- 1224
-chr.to.int$ -- 171
-cite$ -- 202
-duplicate$ -- 3003
-empty$ -- 5096
-format.name$ -- 1050
-if$ -- 14112
+            1451 strings with 36488 characters,
+and the built_in function-call counts, 80831 in all, are:
+= -- 8131
+> -- 2844
+< -- 194
++ -- 990
+- -- 929
+* -- 6399
+:= -- 13619
+add.period$ -- 637
+call.type$ -- 200
+change.case$ -- 1432
+chr.to.int$ -- 199
+cite$ -- 233
+duplicate$ -- 3407
+empty$ -- 5903
+format.name$ -- 1233
+if$ -- 16289
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 191
-newline$ -- 850
-num.names$ -- 516
-pop$ -- 1290
+missing$ -- 220
+newline$ -- 989
+num.names$ -- 602
+pop$ -- 1444
 preamble$ -- 1
-purify$ -- 1253
+purify$ -- 1462
 quote$ -- 0
-skip$ -- 2286
+skip$ -- 2598
 stack$ -- 0
-substring$ -- 4827
-swap$ -- 604
+substring$ -- 5734
+swap$ -- 642
 text.length$ -- 59
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 970
-warning$ -- 30
-while$ -- 599
+type$ -- 1136
+warning$ -- 33
+while$ -- 697
 width$ -- 0
-write$ -- 2213
-(There were 30 warnings)
+write$ -- 2573
+(There were 34 warnings)

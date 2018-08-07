@@ -138,7 +138,7 @@
 
 \usepackage{indentfirst}
 
-\usepackage[utf8]{inputenc}
+\usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Customization %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -227,7 +227,7 @@
 \thispagestyle{empty}
 \setlength{\parskip}{\baselineskip}
 
-\par\noindent Thèse présentée par \textbf{\thanklessauthor}\\
+\par\noindent Thèse présentée par \textbf{Quentin Lobbé}\\
 LTCI, Télécom ParisTech, Université Paris Saclay \& Inria. Paris, France.\\
 quentin.lobbe@telecom-paristech.fr
 
@@ -328,14 +328,14 @@ Aussi, la seconde partie de ce chapitre, nous permettra de saisir le changement 
 
 Ce faisant, l'intérêt sociologique ou historique pour les formes de représentations en ligne des diasporas s'est rapidement développé. Sur la toile, les populations migrantes s'organisent collectivement à travers des réseaux de blogs ou sur des forums de discussion. Les personnes s'y rassemblent et font groupe autour de valeurs culturelles communes et partagées. Le Web devient alors un terrain favorable à l'établissement de points de rencontres, considérés comme des espaces de connections ou de re-connections avec les siens, tout autant que des lieux de conservation d'une mémoire dispersée, voire comme de véritables outils au service d'actions militantes.
 
-Ce faisant, nous terminerons ce chapitre par la présentation de l'Atlas e-Diasporas \citep{diminescu_e-diasporas_2012}, fruit du travail coordonné d'un collectif de cher\-cheurs, d'ingénieurs et de designers, visant à explorer, documenter et cartographier des réseaux de sites Web migrants. Crées ou maintenus par des personnes migrantes\footnote{De manière générale, tous les sites liés explicitement à la vie d'une diaspora donnée ont été cartographiés (sites personnels, d'associations ou d'ambassades)}, ces sites Web sont connectés les uns aux autres, formant ce que nous appelons une e-Diaspora suivant la nomenclature introduite par l'Atlas. Aussi et plus concrètement, nos réflexions à venir seront basées sur l'exploration de ces e-Diasporas et de leurs archives Web\footnote{ Archives sur lesquelles nous reviendrons en détail (Section \ref{sec:3_edias})}.
+Ce faisant, nous terminerons ce chapitre par la présentation de l'Atlas e-Diasporas \citep{diminescu_e-diasporas_2012}, fruit du travail coordonné d'un collectif de cher\-cheurs, d'ingénieurs et de designers, visant à explorer, documenter et cartographier des réseaux de sites Web migrants. Crées ou maintenus par des personnes migrantes\footnote{De manière générale, tous les sites liés explicitement à la vie d'une diaspora donnée ont été cartographiés (sites personnels, d'associations ou d'ambassades)}, ces sites Web sont connectés les uns aux autres, formant ce que nous appelons une e-Diaspora suivant la nomenclature introduite par l'Atlas. Aussi et plus concrètement, nos réflexions à venir seront basées sur l'exploration de ces e-Diasporas et de leurs archives Web\footnote{Archives sur lesquelles nous reviendrons en détail (Section \ref{sec:3_edias})}.
 
 \section{Généalogie du Web}
 \label{sec:2_web}
 
 \noindent L'informatique est la science des machines programmables et du traitement automatisé de l'information. Alors que l'origine des premières machines à calculer remonte à l'antiquité (abaques grecs\footnote{\url{https://fr.wikipedia.org/wiki/Abaque\_(calcul)}}, bouliers chinois, ...), le traitement automatisé de tâches élémentaires n'apparait qu'avec l'inauguration du métier à tisser programmable, crée par J.M. Jacquard, au début du XIXe siècle. Suites finies et non ambiguës d'instructions codées sur des cartes perforées, l'invention de Jacquard préfigure la \textbf{programmation algorithmique} à venir qui, de A. Lovelace\footnote{En 1843, A. Lovelace crée ce qui est considéré comme le premier programme informatique, à savoir un algorithme de calcul des nombres de Bernouilli.} à la machine de Turing (1935), s'attèlera alors à la résolution de problèmes de plus en plus complexes. Parallèlement, les ordinateurs ne cessent de se perfectionner et de voir leurs capacités de calculs augmenter \citep{lazard_histoire_2016}.
 
-\subsection{Faire se rapprocher les machines}
+\subsection{Faire dialoguer les machines}
 
 \noindent En pleine Guerre Froide, J.C.R. Licklider, alors directeur de l'agence américaine Advanced Research Projects Agency (ARPA), théorise un changement majeur : le passage de l'âge du calcul par ordinateur à celui des communications par machines interposées \citep{licklider_computer_1968}. Profitant de la création de la NASA\footnote{National Aeronautics and Space Administration}, lancée pour contrer l'URSS sur le terrain de la conquête spatiale, Licklider réoriente les travaux de l'ARPA pour laquelle il négocie une plus grande indépendance budgétaire et scientifique. Ce faisant, ses équipes se focalisent sur la possibilité de faire communiquer des ordinateurs entre eux et à distance par transfère d'information. Alors qu'il existait déjà des circuits de mutualisation des forces de calcul, Licklider cherche plutôt à privilégier la conception d'un réseau informatique pensé, d'abord, comme un vecteur de circulation de l'information, tel qu'il le prophétise : \\
 
@@ -419,69 +419,106 @@ Plusieurs pages peuvent être rassemblées en une seule et même entité de plus
 
 \subsection{Toile, silos et bulles} 
 
+\noindent Le premier navigateur Web est développé par les équipes du CERN en 1992. Ce \textit{navigateur en ligne de commande}\footnote{\url{http://line-mode.cern.ch/}}, qui ne dispose pas encore d'interface graphique à proprement parler, permet, en entrant une URL donnée, d'accéder à une page Web et d'afficher le texte qu'elle contient. Le Web est alors considéré comme une \textbf{toile}\footnote{Traduction littérale de World Wide Web} pouvant théoriquement s'étendre dans toutes les directions de développement et formant, de fait, un réseau rhizomatique\footnote{\url{https://frama.link/zXhEvzna}} de sites et de pages sans véritable hiérarchie interne. 
 
+Pourtant, le Web est plus structuré qu'il n'y parait. Plusieurs modèles le décrive ainsi comme une galaxie possédant, en son centre, un noyau très dense de sites Web fortement connectés les uns aux autres \citep{broder_graph_2000}. Ces sites font \textbf{autorité} car, suivant une loi de puissance\footnote{\url{https://fr.wikipedia.org/wiki/Loi\_de\_puissance}}, ils attirent dans leur seule direction une grande partie des liens de citations émis par les autres pages \citep{barabasi_scale-free_2000}. C'est en passant par ces points centraux du réseau que l'on accède généralement aux parties les plus éloignées du Web formées, par endroit, de grappes lointaines de sites ou d'îlot de pages isolées \citep{kumar_stochastic_2000}.
 
-wesh\\
+Pour l'internaute, à moins de connaitre d'avance une URL à visiter, l'exploration du Web se fait en cheminant de page en page, via un navigateur. Aussi et afin d'améliorer ce processus de découverte, un nouveau type de site apparait : les moteurs de recherche. Deux d'entre eux, Lycos et Yahoo! sont lancés conjointement dès 1994 et préfigurent déjà l'arrivée d'un grand nombre de concurrents. Ce sont des registres indexant les URL de plusieurs centaines ou milliers de sites Web  que l'on peut alors parcourir. En outre, les modalités de présentation des URL sont propres à chaque moteur, qu'il s'agisse d'une liste alphabétique à dérouler ou d'un arbre thématique à parcourir.
 
-Le Web en 89 au CERN par berners Lee, (ref), libérer au grand public en 92
-une système applicatif fonctionnant sur l'internet (couche application)
-Le Web est un système hypertext permetant l'accès à des documents (pages) rattachés à des unités plus générale (site), les documents sont liés entre eux par des liens hypertext
-Il utilise le protocole HTTP qui permet à un serveur de servir un document hypertetxe et à client de le lire. 
-On navigue dans le Web de lien en lien à travers un navigateur (brawoser)
+C'est avec l'arrivée de Google, en 1998, que se dessinent de nouvelles formes de navigation basées, cette fois ci, sur le contenu des ressources à découvrir. Les méta données, le texte puis les images des pages Web sont automatiquement analysés par les systèmes de Google, et ce, à très grande échelle \citep{brin_anatomy_1998}. L'accès à un document ne se fait plus par le choix d'une URL ou d'une suite d'URL, mais en se fiant à une liste de résultats retournés par un algorithme. Face la toile, l'internaute peut alors être vu comme un navigateur ayant à sa disposition un certains nombre d'outils conçus pour accélérer ou spécialiser ses recherches (Figure \ref{fig:arpanet-6}, a).   
 
-puis moteurs de recherche yahoo -> google
-Puis flux de syndicatiosn et réseaux sociaux puis 
-Web mobile 
+Dans la foulée, l'invention des systèmes de syndication permet à l'internaute de ne plus aller chercher l'information au hasard de sa navigation, mais de la suivre directement depuis des applications dédiées. Les Google Reader\footnote{\url{https://fr.wikipedia.org/wiki/Google\_Reader}} et autres lecteurs de flux RSS ou Atom\footnote{Formats de données utilisés pour la syndication à du contenu Web \url{https://fr.wikipedia.org/wiki/RSS} et \url{https://fr.wikipedia.org/wiki/Atom}} agrègent les contenus publiés sur des blogs, sur des forums ou sur des sites d'actualités en un ou plusieurs canaux unifiés. Le Web n'est plus alors seulement un territoire à explorer, il se présente également comme un flux continu d'informations et de ressources à suivre. 
 
+\begin{figure*}
+  \includegraphics[width=\linewidth]{graphics/arpanet-6}
+  \caption{Différents modes de consultation d'une information dans un réseau hypertexte (type Web)}
+  \label{fig:arpanet-6}
+\end{figure*} 
 
+\noindent Poussant cette logique plus avant, la vague des réseaux sociaux Myspace (2003), Facebook (2004) ou encore Twitter (2006) cherche à installer des espaces de partages et de connections à l'intérieur même du Web, voire \textit{en marge} de celui ci \citep{ellison_social_2007}. En effet, tout est fait pour que l'internaute consulte le Web depuis l'intérieur de ces plateformes, de manière indirecte via le contenu partagé par des amis en ligne ou par des algorithmes de recommandation. Ces réseaux sociaux deviennent alors de véritables médias alternatifs dont le modèle économique est en partie basé sur la vente d'espaces publicitaires en ligne. Ce faisant, la navigation sur le Web s'oriente de plus en plus vers des circuits fermés, l'information se découvrant et s'échangeant depuis des \textbf{silos} de données (Figure \ref{fig:arpanet-6}, b) auxquels il faut se connecter \citep{helmond_platformization_2015}. 
 
-Internet était nait sur les principes fondateurs de l'Arpanent 
+Au tournant des années 2010, le Web devient mobile et peut être consulté autrement que depuis l'ordinateur du salon. Grâce au smartphone, le Web nous suit partout, tout le temps. Nous le glissons dans nos poches et il s'adapte en conséquence, la forme et le contenu des sites variant en fonction de l'appareil depuis lequel on navigue ou par rapport à la qualité de notre connexion réseau\footnote{\url{https://fr.wikipedia.org/wiki/Site\_web\_adaptatif}}. De plus, certaines applications ou certaines plateformes de réseaux sociaux sont créées à dessein et uniquement pour être utilisées depuis un téléphone portable ou via l'écran d'une télévision. Ainsi, le Web se personnalise, il apprend de nous et des traces que nous déposons sur la toile. 
 
-Qui appelle naturellement le Web
-
-
-théorise pour la première fois le passage de l'ère des calculs par ordinateur à celle de la communication par machine interposées. Les travaux de nous permettent ainsi de remonter à la source du rêve imaginé par Licklider, enticipant les transformations 
-
-Faire communiquer des machines entres elles, le réseau au service de la circulation de l'information plutôt que de la mutualisation des forces de calcules. 
-
-Le premier point est de trouver un vocabuaire commun, un protocole de communication entre machines, à cette époque seule scertaines université dispose de grosses bécannes 
-
-le rêve e les faire communiquer 
-
-Le Web s'inscrit dans la longue histoire de l'informatique et des systèmes gravitant autour des machines programmables.
-
-
- partant des premiers métiers à tisser programmables au début du XIXe siècle, à la machine analytique de Babbage (1834), en passant par la machine de Turing (1936).  
-
-
-
-wesh \\
-
-Le Web est un espace numérique addossé au Réel, et qui s'inscrit dans la longue histoire de l'informatique.
-Des canuts à turing les machines automatisées et programables ne cesse de s'améliorér accompagnant la révolution indius
-le monde fermé de la guerre froide et les intranet (arpa et autres) ver sle mond eouvert poste URSS et le Web
-Les miliataire veulent des réseaux fermés et les scientifiques veulent ouvrir des champs d'expressions 
-Un projet en particulier incarne ce paradoxe ou ces tirraillements diplomatico scientifique, le projet Arpa d'abord initié par la naza (p174) p233 raconter dans le bouquin
-Request for comment (RFC)
-p245 communautéss en ligne
-Le Web p259 TCPI IP CERN
-p383 outllage numérique des mouvemnts sociaux, les hacker vs monopole d'état et des FAI
-
-\noindent Ici on parle des origines du Web, de sa genèse et des premières communautés en ligne.
-De la thèse de truc (environ p150)là on retourne aux prémisses de l'informatique  
-c'est quoi le Web, c'est quoi un site Web, c'est quoi un réseau de site, les réseaux sociaux ...
-
-puis le Web passe vers un modèle en silo avant de tourner plus récement vers un modèle de bulles de perceptions 
+La plasticité du Web va alors grandissante à mesure que les systèmes qui y prospèrent nous dépossèdent de nos choix de consultations. Les filtres cherchent à se faire oublier de nous. Ils sont automatiquement réajustés suivant l'évolution de nos profils en ligne et déterminés par des algorithmes toujours plus performant. Nous expérimentons tous désormais un Web différent. Il n'y a plus une seule toile, mais une multitude de versions adaptées à nos habitudes de navigation. Les résultats des moteurs de recherche ou l'information qui circule sur les pages Facebook sont personnalisés suivant chacune de nos particularités \citep{robertson_auditing_2018}. Nous cheminons maintenant sur le Web enfermés dans des \textbf{bulles} de filtrage (Figure \ref{fig:arpanet-6}, c) façonnées à notre image \citep{gillani_me_2018}.
 
 \section{Dispersés mais présents sur la toile}
 \label{sec:2_migrant}
 
-\noindent Ici on parle du migrant connecté et de la manière dont les TIC ont fait évoluer l'étude des migrations
+\noindent Lors de la leçon inaugurale\footnote{Voir la leçon : \url{https://frama.link/CmK5e2ex}} de sa chaire \textit{Migrations et sociétés}, donnée au Collège de France en avril 2018, F. Héran choisit de rappeler, en préambule, que les migrations ont de tout temps été encrées dans nos vies. Par delà les crises et les épisodes spectaculaires qui polarisent l'attention\footnote{Voir le travail réalisé sur la base de données CALM en rapport avec la \textit{crise des réfugiés}, en Europe à l'été 2015 (Section \ref{sec:7_calm}).}, les migrations restent et demeurent des composantes essentielles des dynamiques qui animent nos sociétés, comme nous le rappellent les faits suivants : 
 
-\noindent Ici on revient sur les premiers temps des communautés diasporiques sur le Web. Et on présente également la manière dont tout cela se passe aujourd'hui (smartphone, applications, ...)
+Pour l'ONU\footnote{\url{https://refugeesmigrants.un.org/fr/définitions}}, le terme \textbf{migrant} désigne "\textit{toute personne qui a résidé dans un pays étranger pendant plus d'une année, quelles que soient les causes, volontaires ou involontaires, du mouvement, et quels que soient les moyens, réguliers ou irréguliers, utilisés pour migrer}". En Europe et plus précisément au sein de l'Union Européenne (UE), le flux de migrants est estimé selon l'INSEE\footnote{\url{https://www.insee.fr/fr/statistiques/1521331}} à près de 2,4 millions de personnes pour l'année 2015. Cet ordre de grandeur fait de l'Europe un continent important d'immigration, supérieur même à des terres historiques de migrations comme les États-Unis. 
+
+De son côté, la France est un pays d'immigration depuis le milieu du XIXème siècle, époque où la main d'œuvre étrangère était sollicitée pour venir travailler dans l'industrie minière et ferroviaire. Aussi, durablement marquée par le passé colonial français, l'immigration hexagonale est aujourd'hui constituée à $43\%$ de personnes originaires du Maghreb et d'Afrique Subsaharienne\footnote{Projection pour l'année 2018, basée sur les statistiques 2014 de l'INSEE  \url{https://www.insee.fr/fr/statistiques/3303358?sommaire=3353488}}. En 2018, les migrants de la première génération\footnote{C.à.d, les personnes nées à l'étranger, même naturalisées française par la suite} représentent ainsi $11\%$ de la population française, la seconde génération\footnote{Personne descendant d'un ou deux parents migrants} comptant, quant à elle, pour $13\%$ du total. De fait, un quart de la population française est aujourd'hui liée à l'immigration.
+
+Par ailleurs, le fait économique (se déplacer pour trouver du travail) n'est plus une composante première des migrations modernes. En effet, à partir des années 70, une décorrélation s'opère entre motifs économiques (croissance/récession du pays d'accueil) et flux d'immi\-gration. De nos jours, les motifs qui poussent une personne à se déplacer sont bien plus nombreux : études, regroupement familiale, changement climatique, bouleversements politiques, fuir sous contrain\-te un pays, un régime ou tout simplement rechercher une vie meilleur.   
+
+Mais, souvent perçues comme trop froides, les statistiques sur les migrations échouent à traduire et à transcrire l'infinie complexité de ces dispersions individuelles et collectives. Ce faisant, F. Héran clôt sa leçon en rappelant que les entretiens sociologiques, les récits de migrants et les analyses de traces (parlées, écrites ...) sont autant de contrepoints capables de venir contextualiser, densifier, critiquer ou interroger les chiffres manipulés par les démographes, les administrations et les politiques.
+
+Aussi, cette section sera pour nous l'occasion de présenter comment de nouveaux types de traces : les traces nativement numériques et notamment celle laissées sur le Web sont devenues, depuis la fin des années 90, objets de compréhension des migrations, passant d'une science de l'absence à l'étude de multiples formes de présences.  
+
+\subsection{Absence et présence}
+
+Au cours des années 70 et 80, le sociologue A. Sayad réalise plusieurs séries d'enquêtes de terrain, s'entretenant le plus souvent avec des immigrés Algériens venus travailler en France dix ou vingts ans plus tôt \citep{sayad_double_1999}. Partant de l'étude de ces récits individuels, sa méthode consiste à avancer par croisements et rapprochements successifs~: croisements de sujets interviewés, rapprochements d'époques, confrontation entre générations ... Il amène ainsi les personnes, avec qui il s'entretient, à restituer au présent des récits d'immigrations passées, révélant par la même certains regrets face aux illusions initiales de l'émigré, voire une forme de souffrance à postériori chez l'immigrant. Il met également en avant les déterminations individuelles et collectives liées à la mémoire récente de la Guerre d'Algérie et de la colonisation française, montrant, de fait, l'existence de décalages générationnels structurant les représentations et les pratiques des personnes rencontrées.  
+
+Une distance nait ainsi au cœur de la figure de l'émigré/immigré~: une distance physique, sentimentale, familiale et spirituelle vis à vis de son pays d'origine d'une part et une distance culturelle, linguistique, religieuse voire sociale et politique vis à vis du pays d'accueil d'autre part. Le migrant est alors vu comme un déraciné, pris dans un tiraillement continu entre présence et absence :\\
+
+\newpage
+
+\begin{fullwidth}
+"\textit{L'émigration, pour ne pas être pure "absence", appelle une manière d'ubiquité impossible, une manière d'être qui affecte les modalités de l'absence qu'elle entraîne (de même qu'elle affecte les modalités de la présence par laquelle se matérialise l'immigration) : continuer à "être présent en dépit de l'absence", à être "présent même absent et même là où on est absent" --- ce qui revient à "n'être que partiellement absent là où on est absent" --- c'est le sort ou le paradoxe de l'émigré --- et, corrélativement, à "ne pas être totalement présent là où on est présent, ce qui revient à être absent en dépit de la présence", à être "absent (partiellement) même présent et même là  où on est présent" --- c'est la condition ou le paradoxe de l'immigré. Le risque pour l'émigré et pour l'immigré qu'il est aussi est  que  ces  formes  incomplètes  d'absence  et  de  présence  finissent,  tôt  ou  tard,  par  s'accomplir intégralement : la présence "physique" et seulement physique de l'immigré finira par devenir une présence "morale" aussi (par le corps et par l'esprit ; par l'actuel et par le futur ; par le travail et par l'engendrement, c'est-à-dire le sang; par le fait et par le droit) ; corrélativement, l'absence matérielle et seulement matérielle de l'émigré finira par devenir une absence "morale" (et "spirituelle"), une absence consommée, une rupture accomplie avec la communauté.}" --- \citep[p.~225-226]{sayad_double_1999}\\
+\end{fullwidth}
+
+\noindent Pourtant, les derniers travaux de Sayad, à la fin des années 80, révèlent déjà les prémisses d'un changement à venir. De nouvelles formes de présences à distance, qu'il détecte dans l'\textit{usage inattendu de l'enre\-gistrement sur magnétophone} \citep{sayad_du_1985}, permettent d'entretenir un lien discontinu entre deux personnes. Ainsi, décryptant l'envoie de messages sur cassettes magnétiques entre une mère et son jeune fils émigré, Sayad note cette phrase prononcée par la mère :\\
+
+\begin{fullwidth}
+"\textit{Ah ! Celle-là [la mallette contenant le magnétophone], c'est ma consolation ! Elle me cautérise (les plaies). Depuis qu'on a inventé ces caissettes, si je pouvais je ne m'en séparerais jamais. Je leur parle comme je te parle, comme je vous parle à tous, comme s'il était là devant moi.}" --- \citep[p.~12]{sayad_du_1985}\\
+\end{fullwidth}
+
+\noindent La technique commence alors à rendre possible l'ubiquité recherchée par le migrant. En effet, dans les années 90, le perfectionnement et la démocratisation des Technologies de l'Information et de la Communication (TIC) révolutionnent notre rapport à l'espace, au temps et aux frontières. Les téléphones portables, les systèmes de messagerie électroniques et le Web naissant deviennent rapidement, dans les mains des personnes migrantes, des outils de communication et d'organisation individuelle ou collective. 
+
+D'un point de vue épistémologique, l'usage des TIC s'installe comme un nouvel angle d'analyse possible des migrations, voire comme une composante essentielle de la figure moderne du \textbf{migrant connecté} \citep{diminescu_connected_2008}. Suivant les analyses de D. Diminescu, l'image du déraciné est à repenser :\\
+
+\begin{fullwidth}
+"\textit{un autre principe organisateur émerge : mobilité et connectivité forment désormais un ensemble de base dans la définition du migrant du XXI siècle. Ensemble ils agissent comme un vecteur qui assure et conduit les lignes de continuité dans la vie des migrants et dans les rapports que ceux-ci entretiennent avec leur environnement d’origine, d’accueil ou parcouru. Hier : immigrer et couper les racines ; aujourd’hui : circuler et garder le contact. Cette évolution semble marquer un nouvel âge dans l’histoire des migrations : l’âge du migrant connecté}" --- \citep[p.~3]{diminescu_connected_2008}\\
+\end{fullwidth}
+
+\noindent Le migrant s'inscrit désormais dans une culture de liens qu'il construit lui même et qu'il entretient dans sa mobilité (géographique, sociale, sur les réseaux, ...). Il se déplace, noue des alliances à l'extérieur de sa communauté mais sans pour autant se détacher de cette dernière, la somme des liens virtuels permettant d'être toujours présent à distance, ici ou là bas. Réactivables, ces liens s'inscrivent dans une dynamique faite de ruptures et de moments de continuité qu'il nous faut apprendre à analyser. 
+
+Ainsi, ces nouvelles formes de présences à distance font rapidement l'objet de recherches dédiées \citep{diminescu_les_2002}. Les traces qu'elles génèrent, de par les systèmes techniques sur lesquels elles s'appuient ou via les modalités de stockage qu'elles induisent, engendrent une hybridation scientifique. Des projets pionniers et interdisciplinaires sont alors mis en place dans les années 2000, alliant de fait, méthodes d'analyses sociologiques et techniques d'exploration informatiques. 
+
+\subsection{Des traces nativement numériques}
+
+\noindent Les pratiques communicationnelles des migrants, portées et accentuées par l'usage des TIC, forment de vastes corpus de données à explorer. Captées directement depuis des flux d'informations \textit{live} ou récupérées après coup dans des systèmes de stockage, ces données peuvent aider à comprendre le fonctionnement de certains réseaux transnationaux, tels que des systèmes de transfère d'argent par téléphone portable \citep{bounie_analyse_2010}, ou encore servir à mesurer l'inté\-gration des migrants dans les pays d'accueil. Ce sont également des vecteurs de compréhension des modalités de surveillance déployés par les institutions pour contrôler les étrangers \citep{amoore_biometric_2006}. Nous pouvons enfin nous servir de ces traces pour reconstituer le parcours individuel d'une personne passant d'une frontière à l'autre, à la manière d'un journal de bord, et ce, en supplément d'une série d'entretiens \citep{diminescu_traces_2016}.
+
+Définies, structurées et finement datées par des systèmes informatiques et automatiques, ces données sont des traces témoignant du quotidien des migrations ou de grands événements polarisants. Elles peuvent être déposées en conscience sur la toile (un message sur un blog), arrachées de forces et inscrites dans une base de données (au passage d'une frontière) ou encore dérobées par divers systèmes espions et capteurs à l'insu des personnes concernées (vidéo surveillance). \textbf{Nativement numériques}, certaines de ces traces sont produites exclusivement par et depuis les TIC, ne devant ainsi pas être confondues avec d'autres formes de traces numérisées à postériori (textes et images scannés, transcription au format numérique de documents historiques passés, ...) et qui sont, l'apanage du champ plus large des Humanités Numériques\footnote{\url{https://fr.wikipedia.org/wiki/Humanités_numériques}}. Le présent manuscrit est quasi-exclusivement concerné par l'exploration de ces traces dites nativement numériques. 
+
+Aussi, plutôt que de réévaluer et de mettre à jour des méthodes de recherche existantes, ces traces nécessitent le développement d'outils conceptuels et méthodologiques nouveaux\footnote{Voir, par exemple, les outils d'analyse développés par les équipes du MédiaLab \url{http://tools.medialab.sciences-po.fr/} ou de DMI \url{https://wiki.digitalmethods.net/Dmi/ToolDatabase}}  \citep{barats_manuel_2016}. 
+
+À titre d'exemples, travailler sur ce type de traces revient à analyser des séries de mails, des conversations en ligne via des systèmes de chat \citep{dekker_smart_2018}, la couverture d'un territoire par un réseau mobile \citep{sanchez-querubin_connected_2018}, des échanges vidéos en direct\footnote{Voir le projet Ubi-screen réalisé par I. Grosse \url{http://www.isabellegrosse.net/ubiscreen/}}, des traces GPS d'embarcations \citep{heller__2014}, des messages vocaux postés sur Telegram\footnote{Utilisation de l'application Telegram (\url{https://telegram.org/}), voir \url{https://frama.link/JnjBqw8u}}, ou encore des \textit{selfies} partagés sur Instagram \citep{risam_now_2018}, etc. 
+
+\subsection{Être ensemble sur le Web}
+
+\noindent Au début des années 2000, le Web est déjà pourvoyeur d'une grande partie des traces numériques sur lesquelles peuvent être menées des investigations.  Sites et pages Web \citep{tyner_pan-national_2000}, blogs \citep{park_developing_2008}, forums en ligne \citep{van_den_bos_territorial_2006} et autres bases de données sont autant de documents succeptibles de faire l'objet de recherches. Ce faisant, le groupe de travail TIC-Migration, coordonné par D. Diminescu, se constitue dans le but d'analyser certains sites Web retenus pour leurs liens directs avec les migrations. En effet, ces nouveaux supports d'information commencent à devenir des formes de représentation à part entière pour les communautés dispersées. 
+
+Pour S. Dufoix, le terme \textbf{diaspora} renvoie à l'idée de dispersion d'un peuple ou d'une communauté à travers le monde. Mais, il peut également désigner les multiples formes d'organisations et de représentations (ethniques, nationales ou religieuses) de ces même communautés \citep{dufoix_les_2003}. Ainsi, toute diaspora cherche à maintenir une mémoire collective, pour créer des repères et un imaginaire commun \citep{bernal_diaspora_2006}. Et s'il faut essayer de demeurer ensemble malgré la distance, cela passe souvent par la création d'espaces (physiques, en ligne, sur papier, par la musique, ...) et de moments dédiés à l'animation de la communauté. Là, on y évoque d'égale manière les grands bouleversements historiques et les petits événements du quotidien \citep{koukoutsaki-monnier_deterritorialising_2012} qui jalonnent la vie du groupe. 
+
+De fait, les sites Web deviennent progressivement de nouveaux points de rencontres à distance, où chaque communauté décide de son mode de communication privilégié (par vidéo pour les tziganes, par messages vocaux pour les kabyles, ...). De natures variables, ces espaces en ligne prennent la forme de carrefours où l'on se croisent, de vitrines pour l'histoire de la communauté \citep{whitaker_tamilnet._2004}, de lieux de reconstruction et de partage de repères communs \citep{sabancioglu_new_2011}, ou encore de porte-voix au service de revendications politiques \citep{kumar_rerouting_2018}.
+
+Combinant leurs analyses, les premiers travaux des chercheurs du groupe TIC-Migration apportent rapidement de nouvelles pistes de réflexion \citep{laflaquiere_archiver_2005}. Selon C. Scopi \citep{scopsi_les_2009}, certains sites Web\footnote{\textit{mondeberbere.com}, \textit{originesvietnam.com},~...} sont crées autour de valeurs culturelles communes et maintenus exclusivement par des communautés en ligne de migrants, tels que les RME (Ressortissants Marocains de l'Étranger) ou les Viet Keu (Vietnamien de l'étranger). L'analyse de sites communautaires bulgares, menée par R. Soultanova, révèle pour sa part la transformation progressive de sites personnels de migrants\footnote{\textit{bgcanada.com}} en véritables portails ouverts sur la diaspora et fédérant un collectif régulier d'utilisateurs.  Pour S. Gangloff, le Web peut aussi servir de point d'appui\footnote{\textit{info-turk.be}, \textit{bleublancturc.com}, ...}, afin de sensibiliser l'opinion publique sur le devenir des ressortissants turques de l'étranger. De son côté, T. Guignard voit, dans les messages postés sur des sites sénégalais\footnote{\textit{homeview.sn}, \textit{lesoleil.sn}, ...}, un nouvel espace d'échange nord/sud, les membres de la diaspora sénégalaise souhaitant, grâce au Web, renouer avec leur culture d'origine. 
+
+Le profil des migrants faisant vivre quotidiennement les diasporas en ligne peut aussi faire l'objet d'études. En effet, la mise en place et la maintenance de ces sites appellent (tout au moins dans les premières années du Web) un important baguage technique, comme le décrit M. Nedelcu en documentant la création du portail roumain \textit{thebans.com} par un jeune ingénieur émigré au Canada \citep{nedelcu_e-communautarisme_2003}. Enfin, la toile devient parfois un outil militant, servant à organiser une action ou à maintenir vivace le souvenir d'une lutte. Sur ce point, le site \textit{pajol}\footnote{\url{http://www.bok.net/pajol/index2.html}} fait figure de précurseur. Crée en 1996, il retrace l'histoire de l'occupation de l'église Saint-Bernard à Paris par le mouvement des sans-papiers, et ce, jusqu'à leur expulsion par les forces de l'ordre en août de la même année\footnote{\url{https://fr.wikipedia.org/wiki/Mouvement_des_sans-papiers_à_Paris_en_1996}}.
+
+Pris indépendamment les uns des autres, ces sites ont tous un élément ou une information importante à nous révéler. Pourtant, le Web peut aussi s'appréhender à une échelle plus large et bien plus complexe, faite de rapports de forces, de rapprochements et d'éloignements, d'amitié et d'ignorance. Car le Web est une toile et les formes de représentations en ligne des diasporas n'échappent pas à la tentation de faire réseau. Bien au contraire, les sites migrants se connectent les uns aux autres, via des liens de citation hypertextes et forment ainsi les nouveaux territoires de la dispersion. Pour les explorer, le collectif TIC-Migration s'agrandit et se lance, à la fin de années 2000, dans une campagne de cartographie de plusieurs milliers de sites migrants, aujourd'hui réunis au sein de l'Atlas e-Diaspora.  
+
 
 \section{L'Atlas e-Diasporas : cartographier les sites migrants}
 \label{sec:2_atlas}
+
+diasporas = territoire, personnes, liens = réseau
+
+ La notion de diaspora s'applique donc tout autant à un groupe de personnes dispersé, qu'aux règles communes déterminant les liens qu'elles tissent entre elles, en passant par les lieux même (réels ou imaginés) de cette dispersion.
+
+ le problème du contenu visuel vs text
 
 \noindent Ici on présente l'Atlas e-Diasporas (en tant qu'Atlas, pas en tant qu'archives)
 

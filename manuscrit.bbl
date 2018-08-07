@@ -38,6 +38,11 @@ Amitay, E., Carmel, D., Herscovici, M., Lempel, R., and Soffer, A. (2004).
 \newblock {\em Journal of the Association for Information Science and
   Technology}, 55(14):1270--1281.
 
+\bibitem[Amoore, 2006]{amoore_biometric_2006}
+Amoore, L. (2006).
+\newblock Biometric borders: {Governing} mobilities in the war on terror.
+\newblock {\em Political geography}, 25(3):336--351.
+
 \bibitem[Anand et~al., 2009]{anand_everlast:_2009}
 Anand, A., Bedathur, S., Berberich, K., Schenkel, R., and Tryfonopoulos, C.
   (2009).
@@ -55,17 +60,25 @@ Aturban, M., Nelson, M.~L., and Weigle, M.~C. (2017).
 \newblock Difficulties of {Timestamping} {Archived} {Web} {Pages}.
 \newblock {\em arXiv preprint arXiv:1712.03140}.
 
-\bibitem[Augustin, 1993]{saint_augustin_confessions_1993}
-Augustin, S. (1993).
-\newblock {\em Confessions}.
-\newblock Folio. Gallimard Education.
-
 \bibitem[Baeza-Yates et~al., 2005]{baeza-yates_crawling_2005}
 Baeza-Yates, R., Castillo, C., Marin, M., and Rodriguez, A. (2005).
 \newblock Crawling a country: better strategies than breadth-first for web page
   ordering.
 \newblock In {\em Special interest tracks and posters of the 14th international
   conference on {World} {Wide} {Web}}, pages 864--872. ACM.
+
+\bibitem[Barabási et~al., 2000]{barabasi_scale-free_2000}
+Barabási, A.-L., Albert, R., and Jeong, H. (2000).
+\newblock Scale-free characteristics of random networks: the topology of the
+  world-wide web.
+\newblock {\em Physica A: statistical mechanics and its applications},
+  281(1-4):69--77.
+
+\bibitem[Barats, 2016]{barats_manuel_2016}
+Barats, C. (2016).
+\newblock {\em Manuel d'analyse du web-2e éd.: {En} {Sciences} {Humaines} et
+  {Sociales}}.
+\newblock Armand Colin.
 
 \bibitem[Baschet, 2018]{baschet_defaire_2018}
 Baschet, J. (2018).
@@ -101,6 +114,12 @@ Bennani-Chraïbi, M. and Jeghllaly, M. (2012).
 Bergman, M.~K. (2001).
 \newblock White paper: the deep web: surfacing hidden value.
 \newblock {\em Journal of electronic publishing}, 7(1).
+
+\bibitem[Bernal, 2006]{bernal_diaspora_2006}
+Bernal, V. (2006).
+\newblock Diaspora, cyberspace and political imagination: the {Eritrean}
+  diaspora online.
+\newblock {\em Global networks}, 6(2):161--179.
 
 \bibitem[Bernard, 2003]{bernard_criteria_2003}
 Bernard, M. (2003).
@@ -142,15 +161,31 @@ Boudrez, F. and Van~den Eynde, S. (2002).
 \newblock Archiving websites.
 \newblock {\em State Archives of Antwerp, Antwerp-Leuven}.
 
+\bibitem[Bounie et~al., 2010]{bounie_analyse_2010}
+Bounie, D., Diminescu, D., and François, A. (2010).
+\newblock Une analyse socio-économique des transferts d'argent des migrants
+  par téléphone.
+\newblock {\em Réseaux}, (1):91--109.
+
+\bibitem[Brin and Page, 1998]{brin_anatomy_1998}
+Brin, S. and Page, L. (1998).
+\newblock The anatomy of a large-scale hypertextual web search engine.
+\newblock {\em Computer networks and ISDN systems}, 30(1-7):107--117.
+
+\bibitem[Broder et~al., 2000]{broder_graph_2000}
+Broder, A., Kumar, R., Maghoul, F., Raghavan, P., Rajagopalan, S., Stata, R.,
+  Tomkins, A., and Wiener, J. (2000).
+\newblock Graph structure in the web.
+\newblock {\em Computer networks}, 33(1):309--320.
+
 \bibitem[Brügger, 2009]{brugger_website_2009}
 Brügger, N. (2009).
 \newblock Website history and the website as an object of study.
 \newblock {\em New Media \& Society}, 11(1-2):115--132.
 
-\bibitem[Brügger and Schroeder, 2017]{brugger_web_2017}
-Brügger, N. and Schroeder, R. (2017).
-\newblock {\em The {Web} as {History}: {Using} {Web} {Archives} to {Understand}
-  the {Past} and the {Present}}.
+\bibitem[Brügger, 2017]{brugger_web_2017}
+Brügger, N. (2017).
+\newblock {\em The {Web} as {History}}.
 \newblock UCL Press.
 
 \bibitem[Cadez et~al., 2003]{cadez_model-based_2003}
@@ -161,7 +196,7 @@ Cadez, I., Heckerman, D., Meek, C., Smyth, P., and White, S. (2003).
 
 \bibitem[Cai et~al., 2003]{cai_vips:_2003}
 Cai, D., Yu, S., Wen, J.-R., and Ma, W.-Y. (2003).
-\newblock Vips: a vision-based page segmentation algorithm.
+\newblock {VIPS}: {A} vision-based page segmentation algorithm.
 
 \bibitem[Canfora, 1990]{canfora_vanished_1990}
 Canfora, L. (1990).
@@ -252,6 +287,12 @@ De~Kosnik, A. (2016).
 \newblock {\em Rogue archives: {Digital} cultural memory and media fandom}.
 \newblock MIT Press.
 
+\bibitem[Dekker et~al., 2018]{dekker_smart_2018}
+Dekker, R., Engbersen, G., Klaver, J., and Vonk, H. (2018).
+\newblock Smart {Refugees}: {How} {Syrian} {Asylum} {Migrants} {Use} {Social}
+  {Media} {Information} in {Migration} {Decision}-{Making}.
+\newblock {\em Social Media+ Society}, 4(1):2056305118764439.
+
 \bibitem[Denev et~al., 2009]{denev_sharc:_2009}
 Denev, D., Mazeika, A., Spaniol, M., and Weikum, G. (2009).
 \newblock {SHARC}: framework for quality-conscious web archiving.
@@ -268,6 +309,11 @@ Desrues, T. (2012).
   révision constitutionnelle et élections.
 \newblock {\em L’Année du Maghreb}, (VIII):359--389.
 
+\bibitem[Diminescu, 2002]{diminescu_les_2002}
+Diminescu, D. (2002).
+\newblock Les migrations à l'âge des nouvelles technologies.
+\newblock {\em Hommes \& Migrations}, 1240(1240):6--9.
+
 \bibitem[Diminescu, 2008]{diminescu_connected_2008}
 Diminescu, D. (2008).
 \newblock The connected migrant: an epistemological manifesto.
@@ -279,12 +325,17 @@ Diminescu, D. (2012).
   {Diasporas} on {Digital} {Networks}}.
 \newblock Ed. de la Maison des sciences de l'homme.
 
+\bibitem[Diminescu, 2016]{diminescu_traces_2016}
+Diminescu, D. (2016).
+\newblock Traces numériques.
+\newblock {\em Plein droit}, (3):3--6.
+
 \bibitem[Dodds et~al., 2011]{dodds_temporal_2011}
 Dodds, P.~S., Harris, K.~D., Kloumann, I.~M., Bliss, C.~A., and Danforth, C.~M.
   (2011).
-\newblock Temporal patterns of happiness and information in a global social
-  network: {Hedonometrics} and {Twitter}.
-\newblock {\em PloS one}, 6(12):e26752.
+\newblock Temporal {Patterns} of {Happiness} and {Information} in a {Global}
+  {Social} {Network}: {Hedonometrics} and {Twitter}.
+\newblock {\em PLoS ONE}, 6(12):e26752.
 
 \bibitem[Douglis et~al., 1998]{douglis_at&t_1998}
 Douglis, F., Ball, T., Chen, Y.-F., and Koutsofios, E. (1998).
@@ -307,12 +358,22 @@ Drugeon, T. (2005).
 \newblock In {\em 5th {International} {Web} {Archiving} {Workshop} ({IWAW}05),
   {Viena}, {Austria}}. Citeseer.
 
+\bibitem[Dufoix, 2003]{dufoix_les_2003}
+Dufoix, S. (2003).
+\newblock {\em Les diasporas}.
+\newblock Que sais-je ? Presses Universitaires de France, Paris.
+
 \bibitem[Dumais et~al., 2016]{dumais_stuff_2016}
 Dumais, S., Cutrell, E., Cadiz, J.~J., Jancke, G., Sarin, R., and Robbins,
   D.~C. (2016).
 \newblock Stuff {I}'ve seen: a system for personal information retrieval and
   re-use.
 \newblock In {\em {ACM} {SIGIR} {Forum}}, volume~49, pages 28--35. ACM.
+
+\bibitem[Ellison and {others}, 2007]{ellison_social_2007}
+Ellison, N.~B. and {others} (2007).
+\newblock Social network sites: {Definition}, history, and scholarship.
+\newblock {\em Journal of computer-mediated Communication}, 13(1):210--230.
 
 \bibitem[Febvre and Martin, 2013]{febvre_apparition_2013}
 Febvre, L. and Martin, H.-J. (2013).
@@ -321,9 +382,13 @@ Febvre, L. and Martin, H.-J. (2013).
 
 \bibitem[Feng et~al., 2006]{feng_web_2006}
 Feng, G., Ma, G.-S., and Hu, J. (2006).
-\newblock Web navigation patterns mining based on clustering of paths and pages
-  content.
-\newblock In {\em Asia-{Pacific} {Web} {Conference}}, pages 857--860. Springer.
+\newblock Web {Navigation} {Patterns} {Mining} {Based} on {Clustering} of
+  {Paths} and {Pages} {Content}.
+\newblock In Shen, H.~T., Li, J., Li, M., Ni, J., and Wang, W., editors, {\em
+  Advanced {Web} and {Network} {Technologies}, and {Applications}: {APWeb} 2006
+  {International} {Workshops}: {XRA}, {IWSN}, {MEGA}, and {ICSE}, {Harbin},
+  {China}, {January} 16-18, 2006. {Proceedings}}, pages 857--860. Springer
+  Berlin Heidelberg, Berlin, Heidelberg.
 
 \bibitem[Fetterly et~al., 2003]{fetterly_large-scale_2003}
 Fetterly, D., Manasse, M., Najork, M., and Wiener, J. (2003).
@@ -388,6 +453,12 @@ Giesler, M. (2006).
 \newblock Consumer gift systems.
 \newblock {\em Journal of consumer research}, 33(2):283--290.
 
+\bibitem[Gillani et~al., 2018]{gillani_me_2018}
+Gillani, N., Yuan, A., Saveski, M., Vosoughi, S., and Roy, D. (2018).
+\newblock Me, {My} {Echo} {Chamber}, and {I}: {Introspection} on {Social}
+  {Media} {Polarization}.
+\newblock {\em arXiv preprint arXiv:1803.01731}.
+
 \bibitem[Ginzburg, 1980]{ginzburg_signes_1980}
 Ginzburg, C. (1980).
 \newblock Signes, traces, pistes.
@@ -435,6 +506,13 @@ Hallgrinsson, B. and Bang, S. (2003).
 Hatcher, E. and Gospodnetic, O. (2004).
 \newblock Lucene in action.
 
+\bibitem[Heller and Pezzani, 2014]{heller__2014}
+Heller, C. and Pezzani, L. (2014).
+\newblock ‪ {Traces} liquides: enquête sur la mort de migrants dans la
+  zone-frontière maritime de l’{Union} européenne‪.
+\newblock {\em Revue européenne des migrations internationales},
+  30(3):71--107.
+
 \bibitem[Helmond, 2015]{helmond_platformization_2015}
 Helmond, A. (2015).
 \newblock The platformization of the web: {Making} web data platform ready.
@@ -473,9 +551,9 @@ Ingold, T. and Renaut, S. (2013).
 
 \bibitem[Jacomy et~al., 2014]{jacomy_forceatlas2_2014}
 Jacomy, M., Venturini, T., Heymann, S., and Bastian, M. (2014).
-\newblock {ForceAtlas}2, a continuous graph layout algorithm for handy network
-  visualization designed for the {Gephi} software.
-\newblock {\em PloS one}, 9(6):e98679.
+\newblock {ForceAtlas}2, a {Continuous} {Graph} {Layout} {Algorithm} for
+  {Handy} {Network} {Visualization} {Designed} for the {Gephi} {Software}.
+\newblock {\em PLoS ONE}, 9(6):e98679.
 
 \bibitem[Jatowt et~al., 2007]{jatowt_detecting_2007}
 Jatowt, A., Kawai, Y., and Tanaka, K. (2007).
@@ -546,6 +624,26 @@ Kohlschütter, C., Fankhauser, P., and Nejdl, W. (2010).
 \newblock In {\em Proceedings of the third {ACM} international conference on
   {Web} search and data mining}, pages 441--450. ACM.
 
+\bibitem[Koukoutsaki-Monnier,
+  2012]{koukoutsaki-monnier_deterritorialising_2012}
+Koukoutsaki-Monnier, A. (2012).
+\newblock Deterritorialising the nation? {Internet} and the politics of the
+  {Greek}-{American} diaspora.
+\newblock {\em Nations and Nationalism}, 18(4):663--683.
+
+\bibitem[Kumar, 2018]{kumar_rerouting_2018}
+Kumar, P. (2018).
+\newblock Rerouting the narrative: {Mapping} the online identity politics of
+  the {Tamil} and {Palestinian} diaspora.
+\newblock {\em Social Media+ Society}, 4(1):2056305118764429.
+
+\bibitem[Kumar et~al., 2000]{kumar_stochastic_2000}
+Kumar, R., Raghavan, P., Rajagopalan, S., Sivakumar, D., Tomkins, A., and
+  Upfal, E. (2000).
+\newblock Stochastic models for the web graph.
+\newblock In {\em Foundations of {Computer} {Science}, 2000. {Proceedings}.
+  41st {Annual} {Symposium} on}, pages 57--65. IEEE.
+
 \bibitem[Kwak et~al., 2010]{kwak_what_2010}
 Kwak, H., Lee, C., Park, H., and Moon, S. (2010).
 \newblock What is {Twitter}, a social network or a news media?
@@ -556,6 +654,13 @@ Kwak, H., Lee, C., Park, H., and Moon, S. (2010).
 Ladiray, D. (1997).
 \newblock L’{AED}, analyse exploratoire des données.
 \newblock {\em Courrier des statistique, 83}, 84:3--6.
+
+\bibitem[Laflaquière et~al., 2005]{laflaquiere_archiver_2005}
+Laflaquière, J., Gangloff, S., Scopsi, C., Guignard, T., Soultanova, R.,
+  Salzbrunn, M., Beaujouan, V., and Diminescu, D. (2005).
+\newblock Archiver le {Web} sur les migrations: quelles approches techniques et
+  scientifiques? {Rapport} d'étape.
+\newblock {\em Migrance}, (23):72--93.
 
 \bibitem[Lawrence and Giles, 1998]{lawrence_searching_1998}
 Lawrence, S. and Giles, C.~L. (1998).
@@ -579,9 +684,9 @@ Leclerc, E. (2012).
 
 \bibitem[Legrady, 2005]{legrady_making_2005}
 Legrady, G. (2005).
-\newblock Making visible the invisible.
-\newblock {\em Seattle Library Data Flow Visualization. In: Digital Culture and
-  Heritage. Proceedings of ICHIM05 Sept}, pages 21--23.
+\newblock Making visible the invisible : {Seattle} library data flow
+  visualization.
+\newblock {\em Digital Culture \& Heritage}.
 
 \bibitem[Leroi-Gourham, 1984]{leroi-gourham_art_1984}
 Leroi-Gourham, A. (1984).
@@ -640,8 +745,8 @@ Marz, N. and Warren, J. (2015).
 
 \bibitem[Masanès, 2006]{masanes_web_2006}
 Masanès, J. (2006).
-\newblock Web archiving: issues and methods.
-\newblock In {\em Web {Archiving}}, pages 1--53. Springer.
+\newblock {\em Web {Archiving}}.
+\newblock Springer, New York.
 
 \bibitem[Masanés, 2006]{masanes_archiving_2006}
 Masanés, J. (2006).
@@ -692,6 +797,13 @@ Morsel, J. (2016).
   passéiste.
 \newblock {\em Revue historique}, (4):813--868.
 
+\bibitem[Nedelcu, 2003]{nedelcu_e-communautarisme_2003}
+Nedelcu, M. (2003).
+\newblock E-communautarisme ou l’impact de l’internet sur le quotidien des
+  migrants. {Les} nouvelles migrations des professionnels roumains au {Canada}.
+\newblock {\em Visibles mais peu nombreux. Les circulations migratoires
+  roumaines}, pages 325--339.
+
 \bibitem[Nelson, 1967]{nelson_getting_1967}
 Nelson, T.~H. (1967).
 \newblock Getting it out of our system.
@@ -737,6 +849,12 @@ Pant, G., Srinivasan, P., and Menczer, F. (2004).
 \newblock Crawling the web.
 \newblock In {\em Web {Dynamics}}, pages 153--177. Springer.
 
+\bibitem[Park and Thelwall, 2008]{park_developing_2008}
+Park, H.~W. and Thelwall, M. (2008).
+\newblock Developing network indicators for ideological landscapes from the
+  political blogosphere in {South} {Korea}.
+\newblock {\em Journal of computer-mediated communication}, 13(4):856--879.
+
 \bibitem[Pasquier, 2018]{pasquier_classes_2018}
 Pasquier, D. (2018).
 \newblock Classes populaires en ligne: des «oubliés» de la recherche?
@@ -757,13 +875,26 @@ Pop, R., Vasile, G., and Masanes, J. (2010).
 \newblock Archiving web video.
 \newblock In {\em International {Web} {Archiving} {Workshop} {IWAW} 2010}.
 
+\bibitem[Risam, 2018]{risam_now_2018}
+Risam, R. (2018).
+\newblock Now you see them: {Self}-representation and the refugee selfie.
+\newblock {\em Popular Communication}, 16(1):58--71.
+
 \bibitem[Risse et~al., 2014]{risse_arcomem_2014}
 Risse, T., Demidova, E., Dietze, S., Peters, W., Papailiou, N., Doka, K.,
-  Stavrakas, Y., Plachouras, V., Senellart, P., Carpentier, F., and {others}
-  (2014).
-\newblock The {ARCOMEM} architecture for social-and semantic-driven web
-  archiving.
-\newblock {\em future internet}, 6(4):688--716.
+  Stavrakas, Y., Plachouras, V., Senellart, P., Carpentier, F., Mantrach, A.,
+  Cautis, B., Siehndel, P., and Spiliotopoulos, D. (2014).
+\newblock The {ARCOMEM} {Architecture} for {Social}- and {Semantic}-{Driven}
+  {Web} {Archiving}.
+\newblock {\em Future Internet}, 6(4):688--716.
+
+\bibitem[Robertson et~al., 2018]{robertson_auditing_2018}
+Robertson, R.~E., Lazer, D., and Wilson, C. (2018).
+\newblock Auditing the {Personalization} and {Composition} of
+  {Politically}-{Related} {Search} {Engine} {Results} {Pages}.
+\newblock In {\em Proceedings of the 2018 {World} {Wide} {Web} {Conference} on
+  {World} {Wide} {Web}}, pages 955--965. International World Wide Web
+  Conferences Steering Committee.
 
 \bibitem[Rocco et~al., 2003]{rocco_page_2003}
 Rocco, D., Buttler, D., and Liu, L. (2003).
@@ -773,8 +904,9 @@ Rocco, D., Buttler, D., and Liu, L. (2003).
 
 \bibitem[Rouvroy and Berns, 2013]{rouvroy_gouvernementalite_2013}
 Rouvroy, A. and Berns, T. (2013).
-\newblock Gouvernementalité algorithmique et perspectives d'émancipation.
-\newblock {\em Réseaux}, (1):163--196.
+\newblock Gouvernementalité algorithmique et perspectives d'émancipation:
+  {Le} disparate comme condition d'individuation par la relation ?
+\newblock {\em Réseaux}, 177(1):163.
 
 \bibitem[Russell and Schafer, 2014]{russell_shadow_2014}
 Russell, A.~L. and Schafer, V. (2014).
@@ -789,11 +921,22 @@ Saad, M.~B., Pehlivan, Z., and Gançarski, S. (2011).
 \newblock In {\em International {Conference} on {Theory} and {Practice} of
   {Digital} {Libraries}}, pages 421--433. Springer.
 
+\bibitem[Sabancioglu, 2011]{sabancioglu_new_2011}
+Sabancioglu, M. (2011).
+\newblock New {Custom} for the {Old} {Village} {Interpreting} {History} through
+  {Turkish} {Village} {Web}-{Sites}.
+
 \bibitem[Salmon, 2016]{salmon_29_2016}
 Salmon, J.-M. (2016).
 \newblock {\em 29 jours de révolution. {Histoire} du soulèvement tunisien, 17
   décembre 2010 - 14 janvier 2011}.
 \newblock Les Petits matins.
+
+\bibitem[Sayad, 1985]{sayad_du_1985}
+Sayad, A. (1985).
+\newblock Du message oral au message sur cassette, la communication avec
+  l'absent.
+\newblock {\em Actes de la recherche en sciences sociales}, 59(1):61--72.
 
 \bibitem[Sayad, 1999]{sayad_double_1999}
 Sayad, A. (1999).
@@ -818,6 +961,11 @@ Schneider, S.~M., Foot, K., Kimpton, M., and Jones, G. (2003).
 \newblock Building thematic web collections: challenges and experiences from
   the {September} 11 {Web} {Archive} and the {Election} 2002 {Web} {Archive}.
 \newblock {\em Digital Libraries, ECDL}, pages 77--94.
+
+\bibitem[Scopsi, 2009]{scopsi_les_2009}
+Scopsi, C. (2009).
+\newblock Les sites web diasporiques : un nouveau genre médiatique ?
+\newblock {\em tic\&société [En ligne]}, 3(1-2).
 
 \bibitem[Scott, 2017]{scott_social_2017}
 Scott, J. (2017).
@@ -875,12 +1023,18 @@ Stevenson, M. (2018).
 
 \bibitem[Stiegler, 1991]{stiegler_etat_1991}
 Stiegler, B. (1991).
-\newblock {\em Etat de la mémoire et mémoire de l'{Etat}}, volume~1.
+\newblock Etat de la mémoire et mémoire de l'{Etat}.
 
 \bibitem[Stiegler, 1998]{stiegler_leroi-gourhan:_1998}
 Stiegler, B. (1998).
 \newblock Leroi-{Gourhan}: l'inorganique organisé.
 \newblock {\em Les Cahiers de médiologie}, (2):187--194.
+
+\bibitem[Sánchez-Querubín and Rogers, 2018]{sanchez-querubin_connected_2018}
+Sánchez-Querubín, N. and Rogers, R. (2018).
+\newblock Connected routes: {Migration} studies with digital devices and
+  platforms.
+\newblock {\em Social Media+ Society}, 4(1):2056305118764427.
 
 \bibitem[Tervonen, 2016]{tervonen_finlande:_2016}
 Tervonen, T. (2016).
@@ -916,13 +1070,19 @@ Toyoda, M. and Kitsuregawa, M. (2006).
 
 \bibitem[Tukey, 1962]{tukey_future_1962}
 Tukey, J.~W. (1962).
-\newblock The future of data analysis.
-\newblock {\em The annals of mathematical statistics}, 33(1):1--67.
+\newblock The {Future} of {Data} {Analysis}.
+\newblock {\em The Annals of Mathematical Statistics}, 33(1):1--67.
 
 \bibitem[Tukey, 1977]{tukey_exploratory_1977}
 Tukey, J.~W. (1977).
 \newblock {\em Exploratory {Data} {Analysis}}.
 \newblock Behavioral {Science}: {Quantitative} {Methods}. Addison-Wesley.
+
+\bibitem[Tyner and Kuhlke, 2000]{tyner_pan-national_2000}
+Tyner, J.~A. and Kuhlke, O. (2000).
+\newblock Pan-national identities: representations of the {Philippine} diaspora
+  on the world wide web.
+\newblock {\em Asia Pacific Viewpoint}, 41(3):231--252.
 
 \bibitem[{UNESCO}, 2003]{unesco_charter_2003}
 {UNESCO} (2003).
@@ -933,6 +1093,13 @@ Van~de Sompel, H., Nelson, M., and Sanderson, R. (2013).
 \newblock {HTTP} framework for time-based access to resource
   states–{Memento}.
 \newblock Technical report.
+
+\bibitem[Van~den Bos and Nell, 2006]{van_den_bos_territorial_2006}
+Van~den Bos, M. and Nell, L. (2006).
+\newblock Territorial bounds to virtual space: transnational online and offline
+  networks of {Iranian} and {Turkish}–{Kurdish} immigrants in the
+  {Netherlands}.
+\newblock {\em Global Networks}, 6(2):201--220.
 
 \bibitem[Viard, 2016]{viard_link_2016}
 Viard, T. (2016).
@@ -968,6 +1135,12 @@ Weninger, T. and Hsu, W.~H. (2008).
 \newblock Text extraction from the web via text-to-tag ratio.
 \newblock In {\em Database and {Expert} {Systems} {Application}, 2008.
   {DEXA}'08. 19th {International} {Workshop} on}, pages 23--28. IEEE.
+
+\bibitem[Whitaker, 2004]{whitaker_tamilnet._2004}
+Whitaker, M.~P. (2004).
+\newblock Tamilnet. com: {Some} reflections on popular anthropology,
+  nationalism, and the {Internet}.
+\newblock {\em Anthropological Quarterly}, 77(3):469--498.
 
 \bibitem[Yadav et~al., 2007]{yadav_change_2007}
 Yadav, D., Sharma, A.~K., and Gupta, J.~P. (2007).

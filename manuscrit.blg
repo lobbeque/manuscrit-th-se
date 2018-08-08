@@ -6,9 +6,11 @@ Database file #1: biblio.bib
 Warning--I didn't find a database entry for "saint_augustin_confessions_1993"
 Warning--empty journal in arvidson_kulturarw3_2000
 Warning--there's a number but no volume in bennafla_maroc_2011
+Warning--empty booktitle in berthomiere_french_2013
 Warning--empty journal in bertin_semiologie_1973
 Warning--there's a number but no volume in blanchard_crise_2016
 Warning--there's a number but no volume in bounie_analyse_2010
+Warning--empty journal in brusle_les_2012
 Warning--empty journal in cai_vips:_2003
 Warning--empty note in cern_document_1993
 Warning--empty journal in chaney_who_2015
@@ -37,45 +39,45 @@ Warning--can't use both author and editor fields in tukey_exploratory_1977
 Warning--empty note in unesco_charter_2003
 Warning--empty institution in van_de_sompel_http_2013
 Warning--empty booktitle in yadav_change_2007
-You've used 200 entries,
+You've used 206 entries,
             1935 wiz_defined-function locations,
-            1451 strings with 36488 characters,
-and the built_in function-call counts, 80831 in all, are:
-= -- 8131
-> -- 2844
-< -- 194
-+ -- 990
-- -- 929
-* -- 6399
-:= -- 13619
-add.period$ -- 637
-call.type$ -- 200
-change.case$ -- 1432
-chr.to.int$ -- 199
-cite$ -- 233
-duplicate$ -- 3407
-empty$ -- 5903
-format.name$ -- 1233
-if$ -- 16289
+            1477 strings with 37409 characters,
+and the built_in function-call counts, 83014 in all, are:
+= -- 8343
+> -- 2913
+< -- 200
++ -- 1018
+- -- 951
+* -- 6568
+:= -- 13992
+add.period$ -- 653
+call.type$ -- 206
+change.case$ -- 1472
+chr.to.int$ -- 205
+cite$ -- 241
+duplicate$ -- 3502
+empty$ -- 6067
+format.name$ -- 1261
+if$ -- 16718
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 220
-newline$ -- 989
-num.names$ -- 602
-pop$ -- 1444
+missing$ -- 227
+newline$ -- 1017
+num.names$ -- 620
+pop$ -- 1487
 preamble$ -- 1
-purify$ -- 1462
+purify$ -- 1503
 quote$ -- 0
-skip$ -- 2598
+skip$ -- 2673
 stack$ -- 0
-substring$ -- 5734
-swap$ -- 642
-text.length$ -- 59
+substring$ -- 5891
+swap$ -- 656
+text.length$ -- 61
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1136
-warning$ -- 33
-while$ -- 697
+type$ -- 1170
+warning$ -- 35
+while$ -- 716
 width$ -- 0
-write$ -- 2573
-(There were 34 warnings)
+write$ -- 2645
+(There were 36 warnings)

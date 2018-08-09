@@ -11,124 +11,127 @@
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Exemple de r\IeC {\'e}seau dirig\IeC {\'e}, (a) fait autorit\IeC {\'e}, (b) cherche \IeC {\`a} int\IeC {\'e}grer la communaut\IeC {\'e}}}{35}{section.2.3}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Cha\IeC {\^\i }ne d'analyse socio-technique de l'Atlas e-Diasporas (source\nobreakspace {}: M. Jacomy)}}{35}{subsection*.12}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Annotation de l'e-Diaspora des \IeC {\'e}tudiants Marocains sur Facebook, par S. Marchandise \citep {marchandise_facebook_2014}}}{36}{subsection*.12}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces L'e-Diaspora palestinienne (a, par A. Ben-David) et l'e-Diaspora indienne (b, par E. Leclerc)}}{38}{subsection*.13}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces R\IeC {\'e}partition des sites de l'e-Diaspora marocaine par cat\IeC {\'e}gorie, sous-cat\IeC {\'e}gorie et langue principale (source : Atlas e-Diaspora \url {https://frama.link/Pyt3Aq2x})}}{40}{subsection*.14}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Cartographie de l'e-Diaspora marocaine (Par D. Diminescu \& M. Renault)}}{41}{subsection*.14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces \IeC {\'E}volution cumul\IeC {\'e}e du nombre d'initiatives d'archivage du Web par ann\IeC {\'e}e de cr\IeC {\'e}ation (source de donn\IeC {\'e}es \citep {gomes_survey_2011} et Wikip\IeC {\'e}dia \url {https://en.wikipedia.org/wiki/List_of_Web_archiving_initiatives})}}{43}{subsection*.16}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Carte des initiatives d'archivage du Web par pays et ann\IeC {\'e}es de cr\IeC {\'e}ation (source de donn\IeC {\'e}es \citep {gomes_survey_2011} et Wikip\IeC {\'e}dia \url {https://en.wikipedia.org/wiki/List_of_Web_archiving_initiatives})}}{44}{subsection*.16}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Demande d'accr\IeC {\'e}ditation pour acc\IeC {\'e}der aux zones de consultations des archives Web \IeC {\`a} la BNF (site Fran\IeC {\c c}ois Mitterand)}}{48}{subsection*.17}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Localisation (en bleu) des postes de consultation des archives Web \IeC {\`a} la BNF (Rez-de-Jardin, site Fran\IeC {\c c}ois Mitterand)}}{48}{subsection*.17}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces La double cardinalit\IeC {\'e} d'une ressource Web, d'apr\IeC {\`e}s \citep {masanes_web_2006}}}{50}{subsection*.18}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Graphe dont les n\IeC {\oe }uds sont labellis\IeC {\'e}s par degr\IeC {\'e}. En th\IeC {\'e}orie des graphes, le degr\IeC {\'e} $deg(v)$ d'un n\IeC {\oe }ud $v$ correspond au nombre de liens incidents (entrant ou sortant) \IeC {\`a} ce n\IeC {\oe }ud.}}{52}{subsection*.19}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Archivage du Web vivant page apr\IeC {\`e}s page, de $p_1$ \IeC {\`a} $p_3$, entre les instants $t_1$ et $t_3$}}{53}{subsection*.20}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Diff\IeC {\'e}rentes strat\IeC {\'e}gies adopt\IeC {\'e}es par un crawler $c$ pour collecter les pages $\{p_1,...p_n\}$ d'un m\IeC {\^e}me site}}{55}{subsection*.20}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Graphe dont les n\IeC {\oe }uds sont labellis\IeC {\'e}s par degr\IeC {\'e} entrant. En th\IeC {\'e}orie des graphes, le degr\IeC {\'e} $deg^-(v)$ d'un n\IeC {\oe }ud $v$ correspond au nombre de liens incidents entrant \IeC {\`a} ce n\IeC {\oe }ud.}}{55}{subsection*.20}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Fonctionnement g\IeC {\'e}n\IeC {\'e}ral du syst\IeC {\`e}me de collecte de l'INA}}{56}{subsection*.20}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Diff\IeC {\'e}rences entre les formats WARC (a) et DAFF (b)}}{58}{subsection*.21}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Interface de search de la WayBack Machine (\url {https://web.archive.org/web/*/yabiladi})}}{61}{subsection*.22}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces \IeC {\'E}volution cumul\IeC {\'e}e du nombre d'initiatives d'archivage du Web par ann\IeC {\'e}e de cr\IeC {\'e}ation (source de donn\IeC {\'e}es \citep {gomes_survey_2011} et Wikip\IeC {\'e}dia \url {https://en.wikipedia.org/wiki/List_of_Web_archiving_initiatives})}}{47}{subsection*.16}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Carte des initiatives d'archivage du Web par pays et ann\IeC {\'e}es de cr\IeC {\'e}ation (source de donn\IeC {\'e}es \citep {gomes_survey_2011} et Wikip\IeC {\'e}dia \url {https://en.wikipedia.org/wiki/List_of_Web_archiving_initiatives})}}{48}{subsection*.16}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Demande d'accr\IeC {\'e}ditation pour acc\IeC {\'e}der aux zones de consultations des archives Web \IeC {\`a} la BNF (site Fran\IeC {\c c}ois Mitterand)}}{52}{subsection*.17}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Localisation (en bleu) des postes de consultation des archives Web \IeC {\`a} la BNF (Rez-de-Jardin, site Fran\IeC {\c c}ois Mitterand)}}{52}{subsection*.17}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces La double cardinalit\IeC {\'e} d'une ressource Web, d'apr\IeC {\`e}s \citep {masanes_web_2006}}}{54}{subsection*.18}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Graphe dont les n\IeC {\oe }uds sont labellis\IeC {\'e}s par degr\IeC {\'e}. En th\IeC {\'e}orie des graphes, le degr\IeC {\'e} $deg(v)$ d'un n\IeC {\oe }ud $v$ correspond au nombre de liens incidents (entrant ou sortant) \IeC {\`a} ce n\IeC {\oe }ud.}}{56}{subsection*.19}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Archivage du Web vivant page apr\IeC {\`e}s page, de $p_1$ \IeC {\`a} $p_3$, entre les instants $t_1$ et $t_3$}}{57}{subsection*.20}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Diff\IeC {\'e}rentes strat\IeC {\'e}gies adopt\IeC {\'e}es par un crawler $c$ pour collecter les pages $\{p_1,...p_n\}$ d'un m\IeC {\^e}me site}}{59}{subsection*.20}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Graphe dont les n\IeC {\oe }uds sont labellis\IeC {\'e}s par degr\IeC {\'e} entrant. En th\IeC {\'e}orie des graphes, le degr\IeC {\'e} $deg^-(v)$ d'un n\IeC {\oe }ud $v$ correspond au nombre de liens incidents entrant \IeC {\`a} ce n\IeC {\oe }ud.}}{59}{subsection*.20}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Fonctionnement g\IeC {\'e}n\IeC {\'e}ral du syst\IeC {\`e}me de collecte de l'INA}}{60}{subsection*.20}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Diff\IeC {\'e}rences entre les formats WARC (a) et DAFF (b)}}{62}{subsection*.21}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Interface de search de la WayBack Machine (\url {https://web.archive.org/web/*/yabiladi})}}{65}{subsection*.22}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Archivage des pages $p_1, p_2, p_3$ au cours du crawl $c_i$}}{69}{section.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Cha\IeC {\^\i }nes de persistance entre captures (bleu) et dates de derni\IeC {\`e}re modification (rouge) pour la page $p_1$}}{71}{section.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces C\IeC {\'e}cit\IeC {\'e} de crawl pour une page $p_1$}}{72}{subsection*.23}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Coh\IeC {\'e}rence par observation entre les pages $p_1$ et $p_2$}}{73}{Item.5}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Contenu d'une page (en rouge) collect\IeC {\'e} plusieurs fois}}{74}{subsection*.25}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Architecture de notre moteur d'exploration d'archives Web}}{75}{section.4.3}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Transformation des data et metadata dans Spark}}{76}{subsection*.26}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Principe de base d'un index invers\IeC {\'e}}}{77}{subsection*.27}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Sch\IeC {\'e}ma d'indexation de notre moteur d'exploration d'archives Web}}{79}{subsection*.28}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Cycle de transformation d'un texte dans notre moteur de recherche}}{80}{subsection*.28}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Strat\IeC {\'e}gies de choix d'un ensemble de pages par rapport \IeC {\`a} une date pr\IeC {\'e}cise}}{80}{subsection*.28}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Capture d'\IeC {\'e}cran de notre interface de visualisation}}{81}{subsection*.29}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Prototypes de visualisation d'archives Web}}{82}{subsection*.29}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces \textit {yabiladi.com} (rouge) dans l'e-Diaspora marocaine}}{82}{section.4.4}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Distribution du nombre de pages archiv\IeC {\'e}es par jours pour \textit {yabiladi.com}}}{83}{section.4.4}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces "Boulevard du Temple", Louis Daguerre, 1838}}{84}{section.4.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Archivage des pages $p_1, p_2, p_3$ au cours du crawl $c_i$}}{73}{section.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Cha\IeC {\^\i }nes de persistance entre captures (bleu) et dates de derni\IeC {\`e}re modification (rouge) pour la page $p_1$}}{75}{section.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces C\IeC {\'e}cit\IeC {\'e} de crawl pour une page $p_1$}}{76}{subsection*.23}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Coh\IeC {\'e}rence par observation entre les pages $p_1$ et $p_2$}}{77}{Item.5}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Contenu d'une page (en rouge) collect\IeC {\'e} plusieurs fois}}{78}{subsection*.25}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Architecture de notre moteur d'exploration d'archives Web}}{79}{section.4.3}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Transformation des data et metadata dans Spark}}{80}{subsection*.26}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Principe de base d'un index invers\IeC {\'e}}}{81}{subsection*.27}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Sch\IeC {\'e}ma d'indexation de notre moteur d'exploration d'archives Web}}{83}{subsection*.28}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Cycle de transformation d'un texte dans notre moteur de recherche}}{84}{subsection*.28}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Strat\IeC {\'e}gies de choix d'un ensemble de pages par rapport \IeC {\`a} une date pr\IeC {\'e}cise}}{84}{subsection*.28}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Capture d'\IeC {\'e}cran de notre interface de visualisation}}{85}{subsection*.29}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Prototypes de visualisation d'archives Web}}{86}{subsection*.29}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces \textit {yabiladi.com} (rouge) dans l'e-Diaspora marocaine}}{86}{section.4.4}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Distribution du nombre de pages archiv\IeC {\'e}es par jours pour \textit {yabiladi.com}}}{87}{section.4.4}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces "Boulevard du Temple", Louis Daguerre, 1838}}{88}{section.4.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces C. Marker, 1977, Le Fond de l'Air est Rouge, (\url {https://youtu.be/dO1E4GYjF1s})}}{87}{subsection*.30}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces J.L. Godard, 1993, Je\nobreakspace {}Vous Salue, Sarajevo, (\url {https://youtu.be/WKbfu8rRrho})}}{87}{subsection*.30}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Les 5 strates analytiques du Web, d'apr\IeC {\`e}s \citep {brugger_website_2009}}}{88}{subsection*.31}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Une page $p_1$ et ses fragments Web $f_{11}, f_{12}, f_{13}$}}{89}{subsection*.31}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces R\IeC {\'e}partition des archives de \textit {yabiladi.com} dans la WayBack Machine (\url {https://web.archive.org/web/*/www.yabiladi.com})}}{89}{subsection*.32}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Date d'\IeC {\'e}ditions (rouge) d'un post de forum sur \textit {yabiladi.com}}}{89}{subsection*.32}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Dates d'\IeC {\'e}dition des fragments Web $\{f_{11}, f_{12}\}$ et date de cr\IeC {\'e}ation de la page $p_1$}}{90}{subsection*.32}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Distribution, pour \textit {yabiladi.com}, du nombre de pages et de fragments archiv\IeC {\'e}s par jours et suivant leurs dates de t\IeC {\'e}l\IeC {\'e}chargement (bleu) et d'\IeC {\'e}dition (rouge) respectives}}{92}{subsection*.33}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Ajout successif d'\IeC {\'e}l\IeC {\'e}ment HTML, CSS et JavaScript \IeC {\`a} une page Web et transcription sur l'\IeC {\'e}cran d'un internaute}}{96}{subsection*.34}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Processus de nettoyage, n\IeC {\oe }ud par n\IeC {\oe }ud, d'une page Web}}{98}{subsection*.35}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Processus de nettoyage, n\IeC {\oe }ud par n\IeC {\oe }ud, d'une page Web}}{99}{subsection*.36}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Diff\IeC {\'e}rence de profondeur entre deux n\IeC {\oe }uds HTML au sein d'un m\IeC {\^e}me arbre DOM. $d(n_1,n_2)=0$ s'ils sont fr\IeC {\`e}res. $d(n_1,n_2)=1$ si l'un est le parent de l'autre}}{100}{subsection*.37}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces S\IeC {\'e}gmentation d'une page Web suivant des masques de continuit\IeC {\'e}}}{102}{algocfline.2}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Masques de continuit\IeC {\'e} entre deux types de n\IeC {\oe }uds HTML de profondeur variable}}{103}{algocfline.2}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Chaine d'expressions r\IeC {\'e}guli\IeC {\`e}res permettant la cat\IeC {\'e}gorisation d'un n\IeC {\oe }ud HTML sur la base de son label}}{104}{Item.16}
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Fragment Web de la page \url {https://www.yabiladi.com/forum/semoule-fine-pour-couscous-54-9290786.html}, tel que retourn\IeC {\'e} par Rivelaine}}{105}{subsection*.39}
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Fragment Web de la page \url {https://www.yabiladi.com/forum/semoule-fine-pour-couscous-54-9290786.html}, tel qu'affich\IeC {\'e} \IeC {\`a} l'\IeC {\'e}cran}}{106}{subsection*.39}
-\contentsline {figure}{\numberline {5.18}{\ignorespaces La fragmentation de la page $p_1$ permet d'acc\IeC {\'e}der \IeC {\`a} des \IeC {\'e}l\IeC {\'e}ments ant\IeC {\'e}rieurs \IeC {\`a} la date de collecte $t_1(p_1)$}}{108}{subsection*.40}
-\contentsline {figure}{\numberline {5.19}{\ignorespaces La fragmentation de la page $p_1$ permet d'acc\IeC {\'e}der \IeC {\`a} des \IeC {\'e}l\IeC {\'e}ments ant\IeC {\'e}rieurs \IeC {\`a} la date de collecte $t_1(p_1)$}}{109}{subsection*.40}
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Coh\IeC {\'e}rence par observation absolue et coh\IeC {\'e}rence par observation relative}}{111}{subsection*.41}
-\contentsline {figure}{\numberline {5.21}{\ignorespaces D\IeC {\'e}dupliquer les archives Web gr\IeC {\^a}ce \IeC {\`a} une fonction d'identit\IeC {\'e}}}{112}{subsection*.42}
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Int\IeC {\'e}gration de la fragmentation aux restes des traitements Spark (Voir Figure \ref {fig:spark})}}{113}{subsection*.43}
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Diff\IeC {\'e}rentes strat\IeC {\'e}gies d'indexation du fragment Web dans un moteur de recherche et complexit\IeC {\'e} de la recherche (bleu)}}{113}{subsection*.43}
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Sch\IeC {\'e}ma d'indexation des fragments Web}}{115}{subsection*.43}
-\contentsline {figure}{\numberline {5.25}{\ignorespaces D\IeC {\'e}tection d'\IeC {\'e}v\IeC {\'e}nements \IeC {\`a} partir d'un threshold}}{116}{subsection*.44}
-\contentsline {figure}{\numberline {5.26}{\ignorespaces Division d'une phrase en bigrams}}{116}{subsection*.44}
-\contentsline {figure}{\numberline {5.27}{\ignorespaces Ajout de la d\IeC {\'e}tection d'\IeC {\'e}v\IeC {\'e}nements \IeC {\`a} notre interface d'exploration}}{117}{subsection*.44}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces C. Marker, 1977, Le Fond de l'Air est Rouge, (\url {https://youtu.be/dO1E4GYjF1s})}}{91}{subsection*.30}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces J.L. Godard, 1993, Je\nobreakspace {}Vous Salue, Sarajevo, (\url {https://youtu.be/WKbfu8rRrho})}}{91}{subsection*.30}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Les 5 strates analytiques du Web, d'apr\IeC {\`e}s \citep {brugger_website_2009}}}{92}{subsection*.31}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Une page $p_1$ et ses fragments Web $f_{11}, f_{12}, f_{13}$}}{93}{subsection*.31}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces R\IeC {\'e}partition des archives de \textit {yabiladi.com} dans la WayBack Machine (\url {https://web.archive.org/web/*/www.yabiladi.com})}}{93}{subsection*.32}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Date d'\IeC {\'e}ditions (rouge) d'un post de forum sur \textit {yabiladi.com}}}{93}{subsection*.32}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Dates d'\IeC {\'e}dition des fragments Web $\{f_{11}, f_{12}\}$ et date de cr\IeC {\'e}ation de la page $p_1$}}{94}{subsection*.32}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Distribution, pour \textit {yabiladi.com}, du nombre de pages et de fragments archiv\IeC {\'e}s par jours et suivant leurs dates de t\IeC {\'e}l\IeC {\'e}chargement (bleu) et d'\IeC {\'e}dition (rouge) respectives}}{96}{subsection*.33}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Ajout successif d'\IeC {\'e}l\IeC {\'e}ment HTML, CSS et JavaScript \IeC {\`a} une page Web et transcription sur l'\IeC {\'e}cran d'un internaute}}{100}{subsection*.34}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Processus de nettoyage, n\IeC {\oe }ud par n\IeC {\oe }ud, d'une page Web}}{102}{subsection*.35}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Processus de nettoyage, n\IeC {\oe }ud par n\IeC {\oe }ud, d'une page Web}}{103}{subsection*.36}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Diff\IeC {\'e}rence de profondeur entre deux n\IeC {\oe }uds HTML au sein d'un m\IeC {\^e}me arbre DOM. $d(n_1,n_2)=0$ s'ils sont fr\IeC {\`e}res. $d(n_1,n_2)=1$ si l'un est le parent de l'autre}}{104}{subsection*.37}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces S\IeC {\'e}gmentation d'une page Web suivant des masques de continuit\IeC {\'e}}}{106}{algocfline.2}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Masques de continuit\IeC {\'e} entre deux types de n\IeC {\oe }uds HTML de profondeur variable}}{107}{algocfline.2}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Chaine d'expressions r\IeC {\'e}guli\IeC {\`e}res permettant la cat\IeC {\'e}gorisation d'un n\IeC {\oe }ud HTML sur la base de son label}}{108}{Item.16}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Fragment Web de la page \url {https://www.yabiladi.com/forum/semoule-fine-pour-couscous-54-9290786.html}, tel que retourn\IeC {\'e} par Rivelaine}}{109}{subsection*.39}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Fragment Web de la page \url {https://www.yabiladi.com/forum/semoule-fine-pour-couscous-54-9290786.html}, tel qu'affich\IeC {\'e} \IeC {\`a} l'\IeC {\'e}cran}}{110}{subsection*.39}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces La fragmentation de la page $p_1$ permet d'acc\IeC {\'e}der \IeC {\`a} des \IeC {\'e}l\IeC {\'e}ments ant\IeC {\'e}rieurs \IeC {\`a} la date de collecte $t_1(p_1)$}}{112}{subsection*.40}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces La fragmentation de la page $p_1$ permet d'acc\IeC {\'e}der \IeC {\`a} des \IeC {\'e}l\IeC {\'e}ments ant\IeC {\'e}rieurs \IeC {\`a} la date de collecte $t_1(p_1)$}}{113}{subsection*.40}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Coh\IeC {\'e}rence par observation absolue et coh\IeC {\'e}rence par observation relative}}{115}{subsection*.41}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces D\IeC {\'e}dupliquer les archives Web gr\IeC {\^a}ce \IeC {\`a} une fonction d'identit\IeC {\'e}}}{116}{subsection*.42}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Int\IeC {\'e}gration de la fragmentation aux restes des traitements Spark (Voir Figure \ref {fig:spark})}}{117}{subsection*.43}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Diff\IeC {\'e}rentes strat\IeC {\'e}gies d'indexation du fragment Web dans un moteur de recherche et complexit\IeC {\'e} de la recherche (bleu)}}{117}{subsection*.43}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Sch\IeC {\'e}ma d'indexation des fragments Web}}{119}{subsection*.43}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces D\IeC {\'e}tection d'\IeC {\'e}v\IeC {\'e}nements \IeC {\`a} partir d'un threshold}}{120}{subsection*.44}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Division d'une phrase en bigrams}}{120}{subsection*.44}
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Ajout de la d\IeC {\'e}tection d'\IeC {\'e}v\IeC {\'e}nements \IeC {\`a} notre interface d'exploration}}{121}{subsection*.44}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces L'analyse exploratoire et les diverses phases de l'exploration pr\IeC {\'e}figurent toute analyse confirmatoire}}{122}{subsection*.46}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces \IeC {\'E}tapes du design computationnel d'information et ensemble des boucles d'analyses possibles selon \citep {fry_computational_2004}}}{122}{subsection*.46}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces R\IeC {\'e}partition des blogs de la blogosph\IeC {\`e}re marocaine par ann\IeC {\'e}e de cr\IeC {\'e}ation}}{125}{subsection*.47}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces La blogosph\IeC {\`e}re marocaine en 2008}}{127}{subsection*.47}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces \textit {larbi.org} (rouge) dans l'e-Diaspora marocaine}}{127}{subsection*.47}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces La blogosph\IeC {\`e}re en 2018, (a) blogs vivants, (b) blogs vivants et abandonn\IeC {\'e}s, la position est conserv\IeC {\'e}e}}{129}{Item.19}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Exemples de fragments Web associ\IeC {\'e}s \IeC {\`a} divers r\IeC {\'e}seaux sociaux}}{131}{subsection*.49}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces \textit {eatbess.com} (rouge) dans l'e-Diaspora marocaine}}{132}{subsection*.50}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Liste des blogs de 2008 li\IeC {\'e}s \IeC {\`a} des r\IeC {\'e}seaux sociaux en 2018}}{133}{subsection*.50}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces La blogosph\IeC {\`e}re en 2018, les emplacements des blogs sont conserv\IeC {\'e}s}}{134}{subsection*.50}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Densit\IeC {\'e} d'un graphe}}{134}{subsection*.50}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces \textit {lailalalami.com} (rouge) dans l'e-Diaspora marocaine}}{135}{subsection*.50}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces R\IeC {\'e}partition g\IeC {\'e}ographique des followers Twitter (a) et des amis Facebook (b)}}{135}{subsection*.51}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Annonce de la fermeture de \textit {7didane.org} (a) et article pr\IeC {\'e}c\IeC {\'e}dant la cl\IeC {\^o}ture de \textit {larbi.org} (b)}}{137}{subsection*.52}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Premiers fragments Web archiv\IeC {\'e}s faisant mention de Twitter chez \textit {larbi.org} \textit {7didane.org}}}{138}{subsection*.52}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces \textit {7didane.org} (rouge) dans l'e-Diaspora marocaine}}{139}{subsection*.52}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces \textit {yabiladi.com} (rouge) dans l'e-Diaspora marocaine}}{140}{subsection*.53}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces Dynamique de cr\IeC {\'e}ation d'un portail Web autour d'une communaut\IeC {\'e} de sites}}{140}{subsection*.53}
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Timeline des \IeC {\'e}volutions successives de \textit {yabiladi.com}}}{141}{subsection*.53}
-\contentsline {figure}{\numberline {6.20}{\ignorespaces \IeC {\'E}volution des cat\IeC {\'e}gories du forum de \textit {yabiladi.com}, par date d'apparition}}{143}{subsection*.53}
-\contentsline {figure}{\numberline {6.21}{\ignorespaces Principaux foyers de contestation, lors des manifestations du 20 f\IeC {\'e}vrier 2011 au Maroc (source : \url { https://globalvoices.org/2011/02/20/morocco-across} \url {-the-nation-demonstration/}) }}{146}{subsection*.54}
-\contentsline {figure}{\numberline {6.22}{\ignorespaces Fonctionnement du syst\IeC {\`e}me de visualisation Anemone, pour un site fictif \textit {inter.net}}}{148}{subsection*.55}
-\contentsline {figure}{\numberline {6.23}{\ignorespaces C.J. Minard, (1869), Carte figurative des pertes successives en hommes de l'Arm\IeC {\'e}e Fran\IeC {\c c}aise dans la campagne de Russie 1812-1813}}{148}{subsection*.55}
-\contentsline {figure}{\numberline {6.24}{\ignorespaces Proposition de visualisation de l'\IeC {\'e}volution de la structure d'un site fictif \textit {inter.net} dans le temps}}{149}{subsection*.55}
-\contentsline {figure}{\numberline {6.25}{\ignorespaces Positionnement de 3 pages (rouge) autour d'un embranchement parent (bleu)}}{149}{subsection*.55}
-\contentsline {figure}{\numberline {6.26}{\ignorespaces Capture d'\IeC {\'e}cran de l'\IeC {\'e}volution topologique de la section \textit {Interpr\IeC {\'e}tation des r\IeC {\^e}ves, roqya, djinn} du forum de \textit {yabiladi.com}}}{150}{subsection*.55}
-\contentsline {figure}{\numberline {6.27}{\ignorespaces Mot cl\IeC {\'e}s associ\IeC {\'e}s \IeC {\`a} la manifestation du 20 f\IeC {\'e}vrier 2011}}{152}{subsection*.56}
-\contentsline {figure}{\numberline {6.28}{\ignorespaces Titre des 12 threads directement associ\IeC {\'e}s au 20 f\IeC {\'e}vrier}}{152}{subsection*.56}
-\contentsline {figure}{\numberline {6.29}{\ignorespaces \IeC {\'E}volution de la structure de \textit {yabiladi.com} et ensemble de threads $V_1$}}{153}{subsection*.56}
-\contentsline {figure}{\numberline {6.30}{\ignorespaces Trajet d'un utilisateur ayant post\IeC {\'e} des messages (bleu) sur deux threads (rouge)}}{154}{subsection*.57}
-\contentsline {figure}{\numberline {6.31}{\ignorespaces Le graphe $G=(V_1,E_1)$ pour $V_1$ contenant quatre threads de messages}}{154}{subsection*.57}
-\contentsline {figure}{\numberline {6.32}{\ignorespaces Exemple de trajet individuel (trac\IeC {\'e} bleu clair) parmi 66 threads du forum \textit {yabiladi.com}}}{155}{subsection*.57}
-\contentsline {figure}{\numberline {6.33}{\ignorespaces Trajets agr\IeC {\'e}g\IeC {\'e}s $E_1$ de l'ensemble des contributeurs des threads $V_1$ du forum \textit {yabiladi.com}}}{156}{subsection*.57}
-\contentsline {figure}{\numberline {6.34}{\ignorespaces R\IeC {\'e}partition des utilisateurs du groupe $E_0$ par date de premier message}}{157}{subsection*.57}
-\contentsline {figure}{\numberline {6.35}{\ignorespaces Principe de base de Force Atlas, les noeuds d'un graphe sont charg\IeC {\'e}s d'une force de r\IeC {\'e}pulsion et les arcs d'une force d'attraction}}{158}{subsection*.58}
-\contentsline {figure}{\numberline {6.36}{\ignorespaces Spatialisation du graphe $G$ par \textit {force atlas} et clustering des threads par classes de modularit\IeC {\'e}}}{159}{subsection*.58}
-\contentsline {figure}{\numberline {6.37}{\ignorespaces Exemple de clustering d'un graphe en 4 classes de modularit\IeC {\'e} (couleurs)}}{159}{subsection*.58}
-\contentsline {figure}{\numberline {6.38}{\ignorespaces vue de l'\IeC {\'e}volution de la structure des sites \textit {7didane.org} (haut), \textit {atmf.org} (bas)}}{167}{subsection*.61}
-\contentsline {figure}{\numberline {6.39}{\ignorespaces R\IeC {\'e}sum\IeC {\'e} des diverses op\IeC {\'e}rations mises en place lors des explorations \ref {sec:6_blogs} et \ref {sec:6_printemps}, avec distinction entre approches automatique et manuelle}}{168}{subsection*.61}
-\contentsline {figure}{\numberline {6.40}{\ignorespaces \textit {atmf.org} (rouge) dans l'e-Diaspora marocaine}}{169}{subsection*.61}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces L'analyse exploratoire et les diverses phases de l'exploration pr\IeC {\'e}figurent toute analyse confirmatoire}}{126}{subsection*.46}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces \IeC {\'E}tapes du design computationnel d'information et ensemble des boucles d'analyses possibles selon \citep {fry_computational_2004}}}{126}{subsection*.46}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces R\IeC {\'e}partition des blogs de la blogosph\IeC {\`e}re marocaine par ann\IeC {\'e}e de cr\IeC {\'e}ation}}{129}{subsection*.47}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces La blogosph\IeC {\`e}re marocaine en 2008}}{131}{subsection*.47}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces \textit {larbi.org} (rouge) dans l'e-Diaspora marocaine}}{131}{subsection*.47}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces La blogosph\IeC {\`e}re en 2018, (a) blogs vivants, (b) blogs vivants et abandonn\IeC {\'e}s, la position est conserv\IeC {\'e}e}}{133}{Item.19}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Exemples de fragments Web associ\IeC {\'e}s \IeC {\`a} divers r\IeC {\'e}seaux sociaux}}{135}{subsection*.49}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces \textit {eatbess.com} (rouge) dans l'e-Diaspora marocaine}}{136}{subsection*.50}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Liste des blogs de 2008 li\IeC {\'e}s \IeC {\`a} des r\IeC {\'e}seaux sociaux en 2018}}{137}{subsection*.50}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces La blogosph\IeC {\`e}re en 2018, les emplacements des blogs sont conserv\IeC {\'e}s}}{138}{subsection*.50}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Densit\IeC {\'e} d'un graphe}}{138}{subsection*.50}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces \textit {lailalalami.com} (rouge) dans l'e-Diaspora marocaine}}{139}{subsection*.50}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces R\IeC {\'e}partition g\IeC {\'e}ographique des followers Twitter (a) et des amis Facebook (b)}}{139}{subsection*.51}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Annonce de la fermeture de \textit {7didane.org} (a) et article pr\IeC {\'e}c\IeC {\'e}dant la cl\IeC {\^o}ture de \textit {larbi.org} (b)}}{141}{subsection*.52}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Premiers fragments Web archiv\IeC {\'e}s faisant mention de Twitter chez \textit {larbi.org} \textit {7didane.org}}}{142}{subsection*.52}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces \textit {7didane.org} (rouge) dans l'e-Diaspora marocaine}}{143}{subsection*.52}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces \textit {yabiladi.com} (rouge) dans l'e-Diaspora marocaine}}{144}{subsection*.53}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Dynamique de cr\IeC {\'e}ation d'un portail Web autour d'une communaut\IeC {\'e} de sites}}{144}{subsection*.53}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Timeline des \IeC {\'e}volutions successives de \textit {yabiladi.com}}}{145}{subsection*.53}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces \IeC {\'E}volution des cat\IeC {\'e}gories du forum de \textit {yabiladi.com}, par date d'apparition}}{147}{subsection*.53}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Principaux foyers de contestation, lors des manifestations du 20 f\IeC {\'e}vrier 2011 au Maroc (source : \url { https://globalvoices.org/2011/02/20/morocco-across} \url {-the-nation-demonstration/}) }}{150}{subsection*.54}
+\contentsline {figure}{\numberline {6.22}{\ignorespaces Fonctionnement du syst\IeC {\`e}me de visualisation Anemone, pour un site fictif \textit {inter.net}}}{152}{subsection*.55}
+\contentsline {figure}{\numberline {6.23}{\ignorespaces C.J. Minard, (1869), Carte figurative des pertes successives en hommes de l'Arm\IeC {\'e}e Fran\IeC {\c c}aise dans la campagne de Russie 1812-1813}}{152}{subsection*.55}
+\contentsline {figure}{\numberline {6.24}{\ignorespaces Proposition de visualisation de l'\IeC {\'e}volution de la structure d'un site fictif \textit {inter.net} dans le temps}}{153}{subsection*.55}
+\contentsline {figure}{\numberline {6.25}{\ignorespaces Positionnement de 3 pages (rouge) autour d'un embranchement parent (bleu)}}{153}{subsection*.55}
+\contentsline {figure}{\numberline {6.26}{\ignorespaces Capture d'\IeC {\'e}cran de l'\IeC {\'e}volution topologique de la section \textit {Interpr\IeC {\'e}tation des r\IeC {\^e}ves, roqya, djinn} du forum de \textit {yabiladi.com}}}{154}{subsection*.55}
+\contentsline {figure}{\numberline {6.27}{\ignorespaces Mot cl\IeC {\'e}s associ\IeC {\'e}s \IeC {\`a} la manifestation du 20 f\IeC {\'e}vrier 2011}}{156}{subsection*.56}
+\contentsline {figure}{\numberline {6.28}{\ignorespaces Titre des 12 threads directement associ\IeC {\'e}s au 20 f\IeC {\'e}vrier}}{156}{subsection*.56}
+\contentsline {figure}{\numberline {6.29}{\ignorespaces \IeC {\'E}volution de la structure de \textit {yabiladi.com} et ensemble de threads $V_1$}}{157}{subsection*.56}
+\contentsline {figure}{\numberline {6.30}{\ignorespaces Trajet d'un utilisateur ayant post\IeC {\'e} des messages (bleu) sur deux threads (rouge)}}{158}{subsection*.57}
+\contentsline {figure}{\numberline {6.31}{\ignorespaces Le graphe $G=(V_1,E_1)$ pour $V_1$ contenant quatre threads de messages}}{158}{subsection*.57}
+\contentsline {figure}{\numberline {6.32}{\ignorespaces Exemple de trajet individuel (trac\IeC {\'e} bleu clair) parmi 66 threads du forum \textit {yabiladi.com}}}{159}{subsection*.57}
+\contentsline {figure}{\numberline {6.33}{\ignorespaces Trajets agr\IeC {\'e}g\IeC {\'e}s $E_1$ de l'ensemble des contributeurs des threads $V_1$ du forum \textit {yabiladi.com}}}{160}{subsection*.57}
+\contentsline {figure}{\numberline {6.34}{\ignorespaces R\IeC {\'e}partition des utilisateurs du groupe $E_0$ par date de premier message}}{161}{subsection*.57}
+\contentsline {figure}{\numberline {6.35}{\ignorespaces Principe de base de Force Atlas, les noeuds d'un graphe sont charg\IeC {\'e}s d'une force de r\IeC {\'e}pulsion et les arcs d'une force d'attraction}}{162}{subsection*.58}
+\contentsline {figure}{\numberline {6.36}{\ignorespaces Spatialisation du graphe $G$ par \textit {force atlas} et clustering des threads par classes de modularit\IeC {\'e}}}{163}{subsection*.58}
+\contentsline {figure}{\numberline {6.37}{\ignorespaces Exemple de clustering d'un graphe en 4 classes de modularit\IeC {\'e} (couleurs)}}{163}{subsection*.58}
+\contentsline {figure}{\numberline {6.38}{\ignorespaces vue de l'\IeC {\'e}volution de la structure des sites \textit {7didane.org} (haut), \textit {atmf.org} (bas)}}{171}{subsection*.61}
+\contentsline {figure}{\numberline {6.39}{\ignorespaces R\IeC {\'e}sum\IeC {\'e} des diverses op\IeC {\'e}rations mises en place lors des explorations \ref {sec:6_blogs} et \ref {sec:6_printemps}, avec distinction entre approches automatique et manuelle}}{172}{subsection*.61}
+\contentsline {figure}{\numberline {6.40}{\ignorespaces \textit {atmf.org} (rouge) dans l'e-Diaspora marocaine}}{173}{subsection*.61}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Ticket de r\IeC {\'e}servation d'une session de 40 mn sur l'un des postes Internet Libre de la BPI}}{172}{subsection*.62}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Implantation des postes Internet Libre (rouge) sur les trois \IeC {\'e}tages de la BPI}}{173}{subsection*.62}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Exemple de logs de navigation g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}s par le proxy Web de la BPI}}{174}{subsection*.63}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Une page Web peut g\IeC {\'e}n\IeC {\'e}rer plusieurs logs de navigation}}{174}{subsection*.63}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Chaine de traitement des logs de navigation de la BPI}}{176}{subsection*.64}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Exemple de fonctionnement de l'algorithme k-means avec 2 centres (bleu et rouge)}}{178}{subsection*.65}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Clustering des sessions de navigation Web par la m\IeC {\'e}thode des k-means pour la semaine du 20 au 26 mars 2017}}{179}{subsection*.65}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Exemple d'url du site de traduction linguee, pour le mot m\IeC {\'e}moire, du fran\IeC {\c c}ais vers l'anglais}}{180}{subsection*.66}
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Prototypes de syst\IeC {\`e}mes de visualisations, bas\IeC {\'e}s sur des dimensions particuli\IeC {\`e}res des logs de la BPI}}{181}{subsection*.66}
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Premi\IeC {\`e}res questions du formulaire accueillants}}{184}{subsection*.68}
-\contentsline {figure}{\numberline {7.11}{\ignorespaces \IeC {\'E}volution de la structure du questionnaire des accueillants}}{185}{subsection*.68}
-\contentsline {figure}{\numberline {7.12}{\ignorespaces Unification des diff\IeC {\'e}rentes versions d'une m\IeC {\^e}me base de donn\IeC {\'e}es}}{186}{subsection*.68}
-\contentsline {figure}{\numberline {7.13}{\ignorespaces Inscriptions par jour au programme CALM (Septembre 2015) et pourcentage de d'utilisation des mots \textit {internet} et \textit {radio} dans le champ \textit {Motivations ?}}}{188}{subsection*.69}
-\contentsline {figure}{\numberline {7.14}{\ignorespaces R\IeC {\'e}partition des accueillants par classes professionnelles}}{189}{subsection*.69}
-\contentsline {figure}{\numberline {7.15}{\ignorespaces Distribution de l'\IeC {\^a}ge des accueillants}}{189}{subsection*.69}
-\contentsline {figure}{\numberline {7.16}{\ignorespaces \IeC {\'E}volution de la fr\IeC {\'e}quence d'utilisation de certains termes du champ \textit {Motivations ?}}}{190}{subsection*.69}
-\contentsline {figure}{\numberline {7.17}{\ignorespaces Utilisation d'un m\IeC {\^e}me vocabulaire (bleu) entre les reportages de France Inter (gauche) et les d\IeC {\'e}clarations de motivation des accueillants (droite)}}{191}{subsection*.69}
-\contentsline {figure}{\numberline {7.18}{\ignorespaces \IeC {\'E}volution de la cr\IeC {\'e}ation de la carte de la Jungle de Calais en Juillet 2016 (a) et carte finale (b)}}{194}{subsection*.69}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Ticket de r\IeC {\'e}servation d'une session de 40 mn sur l'un des postes Internet Libre de la BPI}}{176}{subsection*.62}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Implantation des postes Internet Libre (rouge) sur les trois \IeC {\'e}tages de la BPI}}{177}{subsection*.62}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Exemple de logs de navigation g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}s par le proxy Web de la BPI}}{178}{subsection*.63}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Une page Web peut g\IeC {\'e}n\IeC {\'e}rer plusieurs logs de navigation}}{178}{subsection*.63}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Chaine de traitement des logs de navigation de la BPI}}{180}{subsection*.64}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Exemple de fonctionnement de l'algorithme k-means avec 2 centres (bleu et rouge)}}{182}{subsection*.65}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Clustering des sessions de navigation Web par la m\IeC {\'e}thode des k-means pour la semaine du 20 au 26 mars 2017}}{183}{subsection*.65}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Exemple d'url du site de traduction linguee, pour le mot m\IeC {\'e}moire, du fran\IeC {\c c}ais vers l'anglais}}{184}{subsection*.66}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Prototypes de syst\IeC {\`e}mes de visualisations, bas\IeC {\'e}s sur des dimensions particuli\IeC {\`e}res des logs de la BPI}}{185}{subsection*.66}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Premi\IeC {\`e}res questions du formulaire accueillants}}{188}{subsection*.68}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces \IeC {\'E}volution de la structure du questionnaire des accueillants}}{189}{subsection*.68}
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Unification des diff\IeC {\'e}rentes versions d'une m\IeC {\^e}me base de donn\IeC {\'e}es}}{190}{subsection*.68}
+\contentsline {figure}{\numberline {7.13}{\ignorespaces Inscriptions par jour au programme CALM (Septembre 2015) et pourcentage de d'utilisation des mots \textit {internet} et \textit {radio} dans le champ \textit {Motivations ?}}}{192}{subsection*.69}
+\contentsline {figure}{\numberline {7.14}{\ignorespaces R\IeC {\'e}partition des accueillants par classes professionnelles}}{193}{subsection*.69}
+\contentsline {figure}{\numberline {7.15}{\ignorespaces Distribution de l'\IeC {\^a}ge des accueillants}}{193}{subsection*.69}
+\contentsline {figure}{\numberline {7.16}{\ignorespaces \IeC {\'E}volution de la fr\IeC {\'e}quence d'utilisation de certains termes du champ \textit {Motivations ?}}}{194}{subsection*.69}
+\contentsline {figure}{\numberline {7.17}{\ignorespaces Utilisation d'un m\IeC {\^e}me vocabulaire (bleu) entre les reportages de France Inter (gauche) et les d\IeC {\'e}clarations de motivation des accueillants (droite)}}{195}{subsection*.69}
+\contentsline {figure}{\numberline {7.18}{\ignorespaces \IeC {\'E}volution de la cr\IeC {\'e}ation de la carte de la Jungle de Calais en Juillet 2016 (a) et carte finale (b)}}{198}{subsection*.69}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 

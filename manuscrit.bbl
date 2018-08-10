@@ -1,1182 +1,1472 @@
 \begin{thebibliography}{}
+\expandafter\ifx\csname fonteauteurs\endcsname\relax
+\def\fonteauteurs{\scshape}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}%
+    \message{You should include the url package}\fi
 
-\bibitem[Abiteboul et~al., 2002]{abiteboul_first_2002}
-Abiteboul, S., Cobena, G., Masanes, J., and Sedrati, G. (2002).
+\bibitem[Abiteboul \emph{et~al.}, 2002]{abiteboul_first_2002}
+\bgroup\fonteauteurs\bgroup Abiteboul\egroup\egroup{}, S.,
+  \bgroup\fonteauteurs\bgroup Cobena\egroup\egroup{}, G.,
+  \bgroup\fonteauteurs\bgroup Masanes\egroup\egroup{}, J. et
+  \bgroup\fonteauteurs\bgroup Sedrati\egroup\egroup{}, G. (2002).
 \newblock A first experience in archiving the {French} {Web}.
-\newblock In {\em International {Conference} on {Theory} and {Practice} of
-  {Digital} {Libraries}}, pages 1--15. Springer.
+\newblock \emph{In} {\em International {Conference} on {Theory} and {Practice}
+  of {Digital} {Libraries}}, pages 1--15. Springer.
 
-\bibitem[Adamic and Glance, 2005]{adamic_political_2005}
-Adamic, L.~A. and Glance, N. (2005).
+\bibitem[Adamic et Glance, 2005]{adamic_political_2005}
+\bgroup\fonteauteurs\bgroup Adamic\egroup\egroup{}, L.~A. et
+  \bgroup\fonteauteurs\bgroup Glance\egroup\egroup{}, N. (2005).
 \newblock The political blogosphere and the 2004 {US} election: divided they
   blog.
-\newblock In {\em Proceedings of the 3rd international workshop on {Link}
-  discovery}, pages 36--43. ACM.
+\newblock \emph{In} {\em Proceedings of the 3rd international workshop on
+  {Link} discovery}, pages 36--43. ACM.
 
-\bibitem[Adar et~al., 2009]{adar_web_2009}
-Adar, E., Teevan, J., Dumais, S.~T., and Elsas, J.~L. (2009).
+\bibitem[Adar \emph{et~al.}, 2009]{adar_web_2009}
+\bgroup\fonteauteurs\bgroup Adar\egroup\egroup{}, E.,
+  \bgroup\fonteauteurs\bgroup Teevan\egroup\egroup{}, J.,
+  \bgroup\fonteauteurs\bgroup Dumais\egroup\egroup{}, S.~T. et
+  \bgroup\fonteauteurs\bgroup Elsas\egroup\egroup{}, J.~L. (2009).
 \newblock The web changes everything: understanding the dynamics of web
   content.
-\newblock In {\em Proceedings of the {Second} {ACM} {International}
+\newblock \emph{In} {\em Proceedings of the {Second} {ACM} {International}
   {Conference} on {Web} {Search} and {Data} {Mining}}, pages 282--291. ACM.
 
-\bibitem[Adar et~al., 2004]{adar_implicit_2004}
-Adar, E., Zhang, L., Adamic, L.~A., and Lukose, R.~M. (2004).
+\bibitem[Adar \emph{et~al.}, 2004]{adar_implicit_2004}
+\bgroup\fonteauteurs\bgroup Adar\egroup\egroup{}, E.,
+  \bgroup\fonteauteurs\bgroup Zhang\egroup\egroup{}, L.,
+  \bgroup\fonteauteurs\bgroup Adamic\egroup\egroup{}, L.~A. et
+  \bgroup\fonteauteurs\bgroup Lukose\egroup\egroup{}, R.~M. (2004).
 \newblock Implicit structure and the dynamics of blogspace.
-\newblock In {\em Workshop on the weblogging ecosystem}, volume~13, pages
-  16989--16995.
+\newblock \emph{In} {\em Workshop on the weblogging ecosystem}, volume~13,
+  pages 16989--16995.
 
-\bibitem[AlNoamany et~al., 2013]{alnoamany_access_2013}
-AlNoamany, Y.~A., Weigle, M.~C., and Nelson, M.~L. (2013).
+\bibitem[AlNoamany \emph{et~al.}, 2013]{alnoamany_access_2013}
+\bgroup\fonteauteurs\bgroup AlNoamany\egroup\egroup{}, Y.~A.,
+  \bgroup\fonteauteurs\bgroup Weigle\egroup\egroup{}, M.~C. et
+  \bgroup\fonteauteurs\bgroup Nelson\egroup\egroup{}, M.~L. (2013).
 \newblock Access patterns for robots and humans in web archives.
-\newblock In {\em Proceedings of the 13th {ACM}/{IEEE}-{CS} joint conference on
-  {Digital} libraries}, pages 339--348. ACM.
+\newblock \emph{In} {\em Proceedings of the 13th {ACM}/{IEEE}-{CS} joint
+  conference on {Digital} libraries}, pages 339--348. ACM.
 
-\bibitem[Amitay et~al., 2004]{amitay_trend_2004}
-Amitay, E., Carmel, D., Herscovici, M., Lempel, R., and Soffer, A. (2004).
+\bibitem[Amitay \emph{et~al.}, 2004]{amitay_trend_2004}
+\bgroup\fonteauteurs\bgroup Amitay\egroup\egroup{}, E.,
+  \bgroup\fonteauteurs\bgroup Carmel\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Herscovici\egroup\egroup{}, M.,
+  \bgroup\fonteauteurs\bgroup Lempel\egroup\egroup{}, R. et
+  \bgroup\fonteauteurs\bgroup Soffer\egroup\egroup{}, A. (2004).
 \newblock Trend detection through temporal link analysis.
 \newblock {\em Journal of the Association for Information Science and
-  Technology}, 55(14):1270--1281.
+  Technology}, 55(14)\string:\penalty500\relax 1270--1281.
 
 \bibitem[Amoore, 2006]{amoore_biometric_2006}
-Amoore, L. (2006).
+\bgroup\fonteauteurs\bgroup Amoore\egroup\egroup{}, L. (2006).
 \newblock Biometric borders: {Governing} mobilities in the war on terror.
-\newblock {\em Political geography}, 25(3):336--351.
+\newblock {\em Political geography}, 25(3)\string:\penalty500\relax 336--351.
 
-\bibitem[Anand et~al., 2009]{anand_everlast:_2009}
-Anand, A., Bedathur, S., Berberich, K., Schenkel, R., and Tryfonopoulos, C.
-  (2009).
+\bibitem[Anand \emph{et~al.}, 2009]{anand_everlast:_2009}
+\bgroup\fonteauteurs\bgroup Anand\egroup\egroup{}, A.,
+  \bgroup\fonteauteurs\bgroup Bedathur\egroup\egroup{}, S.,
+  \bgroup\fonteauteurs\bgroup Berberich\egroup\egroup{}, K.,
+  \bgroup\fonteauteurs\bgroup Schenkel\egroup\egroup{}, R. et
+  \bgroup\fonteauteurs\bgroup Tryfonopoulos\egroup\egroup{}, C. (2009).
 \newblock {EverLast}: a distributed architecture for preserving the web.
-\newblock In {\em Proceedings of the 9th {ACM}/{IEEE}-{CS} joint conference on
-  {Digital} libraries}, pages 331--340. ACM.
+\newblock \emph{In} {\em Proceedings of the 9th {ACM}/{IEEE}-{CS} joint
+  conference on {Digital} libraries}, pages 331--340. ACM.
 
-\bibitem[Arvidson et~al., 2000]{arvidson_kulturarw3_2000}
-Arvidson, A., Persson, K., and Mannerheim, J. (2000).
+\bibitem[Arvidson \emph{et~al.}, 2000]{arvidson_kulturarw3_2000}
+\bgroup\fonteauteurs\bgroup Arvidson\egroup\egroup{}, A.,
+  \bgroup\fonteauteurs\bgroup Persson\egroup\egroup{}, K. et
+  \bgroup\fonteauteurs\bgroup Mannerheim\egroup\egroup{}, J. (2000).
 \newblock The {Kulturarw}3 {Project}–{The} {Royal} {Swedish} {Web}
   {Archiw}3e–{An} {Example} of" {Complete}" {Collection} of {Web} {Pages}.
 
-\bibitem[Aturban et~al., 2017]{aturban_difficulties_2017}
-Aturban, M., Nelson, M.~L., and Weigle, M.~C. (2017).
+\bibitem[Aturban \emph{et~al.}, 2017]{aturban_difficulties_2017}
+\bgroup\fonteauteurs\bgroup Aturban\egroup\egroup{}, M.,
+  \bgroup\fonteauteurs\bgroup Nelson\egroup\egroup{}, M.~L. et
+  \bgroup\fonteauteurs\bgroup Weigle\egroup\egroup{}, M.~C. (2017).
 \newblock Difficulties of {Timestamping} {Archived} {Web} {Pages}.
 \newblock {\em arXiv preprint arXiv:1712.03140}.
 
-\bibitem[Baeza-Yates et~al., 2005]{baeza-yates_crawling_2005}
-Baeza-Yates, R., Castillo, C., Marin, M., and Rodriguez, A. (2005).
+\bibitem[Baeza-Yates \emph{et~al.}, 2005]{baeza-yates_crawling_2005}
+\bgroup\fonteauteurs\bgroup Baeza-Yates\egroup\egroup{}, R.,
+  \bgroup\fonteauteurs\bgroup Castillo\egroup\egroup{}, C.,
+  \bgroup\fonteauteurs\bgroup Marin\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Rodriguez\egroup\egroup{}, A. (2005).
 \newblock Crawling a country: better strategies than breadth-first for web page
   ordering.
-\newblock In {\em Special interest tracks and posters of the 14th international
-  conference on {World} {Wide} {Web}}, pages 864--872. ACM.
+\newblock \emph{In} {\em Special interest tracks and posters of the 14th
+  international conference on {World} {Wide} {Web}}, pages 864--872. ACM.
 
-\bibitem[Barabási et~al., 2000]{barabasi_scale-free_2000}
-Barabási, A.-L., Albert, R., and Jeong, H. (2000).
+\bibitem[Barabási \emph{et~al.}, 2000]{barabasi_scale-free_2000}
+\bgroup\fonteauteurs\bgroup Barabási\egroup\egroup{}, A.-L.,
+  \bgroup\fonteauteurs\bgroup Albert\egroup\egroup{}, R. et
+  \bgroup\fonteauteurs\bgroup Jeong\egroup\egroup{}, H. (2000).
 \newblock Scale-free characteristics of random networks: the topology of the
   world-wide web.
 \newblock {\em Physica A: statistical mechanics and its applications},
-  281(1-4):69--77.
+  281(1-4)\string:\penalty500\relax 69--77.
 
 \bibitem[Barats, 2016]{barats_manuel_2016}
-Barats, C. (2016).
+\bgroup\fonteauteurs\bgroup Barats\egroup\egroup{}, C. (2016).
 \newblock {\em Manuel d'analyse du web-2e éd.: {En} {Sciences} {Humaines} et
   {Sociales}}.
 \newblock Armand Colin.
 
 \bibitem[Baschet, 2018]{baschet_defaire_2018}
-Baschet, J. (2018).
+\bgroup\fonteauteurs\bgroup Baschet\egroup\egroup{}, J. (2018).
 \newblock {\em Défaire la tyrannie du présent: {Temporalités} émergentes et
   futurs inédits}.
 \newblock L'horizon des possibles. Editions La Découverte.
 
-\bibitem[Beaudouin and Denis, 2014]{beaudouin_observer_2014}
-Beaudouin, V. and Denis, J. (2014).
+\bibitem[Beaudouin et Denis, 2014]{beaudouin_observer_2014}
+\bgroup\fonteauteurs\bgroup Beaudouin\egroup\egroup{}, V. et
+  \bgroup\fonteauteurs\bgroup Denis\egroup\egroup{}, J. (2014).
 \newblock {\em Observer et évaluer les usages de {Gallica}. {Réflexion}
   épistémologique et stratégique}.
-\newblock {PhD} {Thesis}, BnF; Telecom ParisTech.
+\newblock Th\`ese de doctorat, BnF; Telecom ParisTech.
 
 \bibitem[Ben-David, 2012]{ben-david_palestinian_2012}
-Ben-David, A. (2012).
+\bgroup\fonteauteurs\bgroup Ben-David\egroup\egroup{}, A. (2012).
 \newblock The {Palestinian} diaspora on the {Web}: {Between}
   de-territorialization and re-territorialization.
-\newblock {\em Social Science Information}, 51(4):459--474.
+\newblock {\em Social Science Information}, 51(4)\string:\penalty500\relax
+  459--474.
 
-\bibitem[Ben-David and Amram, 2018]{ben-david_internet_2018}
-Ben-David, A. and Amram, A. (2018).
+\bibitem[Ben-David et Amram, 2018]{ben-david_internet_2018}
+\bgroup\fonteauteurs\bgroup Ben-David\egroup\egroup{}, A. et
+  \bgroup\fonteauteurs\bgroup Amram\egroup\egroup{}, A. (2018).
 \newblock The {Internet} {Archive} and the socio-technical construction of
   historical facts.
 \newblock {\em Internet Histories}, pages 1--23.
 
-\bibitem[Ben-David et~al., 2018]{ben-david_colors_2018}
-Ben-David, A., Amram, A., and Bekkerman, R. (2018).
+\bibitem[Ben-David \emph{et~al.}, 2018]{ben-david_colors_2018}
+\bgroup\fonteauteurs\bgroup Ben-David\egroup\egroup{}, A.,
+  \bgroup\fonteauteurs\bgroup Amram\egroup\egroup{}, A. et
+  \bgroup\fonteauteurs\bgroup Bekkerman\egroup\egroup{}, R. (2018).
 \newblock The colors of the national {Web}: visual data analysis of the
   historical {Yugoslav} {Web} domain.
-\newblock {\em International Journal on Digital Libraries}, 19(1):95--106.
+\newblock {\em International Journal on Digital Libraries},
+  19(1)\string:\penalty500\relax 95--106.
 
-\bibitem[Bennafla and Seniguer, 2011]{bennafla_maroc_2011}
-Bennafla, K. and Seniguer, H. (2011).
+\bibitem[Bennafla et Seniguer, 2011]{bennafla_maroc_2011}
+\bgroup\fonteauteurs\bgroup Bennafla\egroup\egroup{}, K. et
+  \bgroup\fonteauteurs\bgroup Seniguer\egroup\egroup{}, H. (2011).
 \newblock Le {Maroc} à l'épreuve du printemps arabe: une contestation
   désamorcée?
-\newblock {\em Outre-terre}, (3):143--158.
+\newblock {\em Outre-terre}, (3)\string:\penalty500\relax 143--158.
 
-\bibitem[Bennani-Chraïbi and Jeghllaly, 2012]{bennani-chraibi_dynamique_2012}
-Bennani-Chraïbi, M. and Jeghllaly, M. (2012).
+\bibitem[Bennani-Chraïbi et Jeghllaly, 2012]{bennani-chraibi_dynamique_2012}
+\bgroup\fonteauteurs\bgroup Bennani-Chraïbi\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Jeghllaly\egroup\egroup{}, M. (2012).
 \newblock La dynamique protestataire du {Mouvement} du 20 février à
   {Casablanca}.
-\newblock {\em Revue française de science politique}, 62(5):867--894.
+\newblock {\em Revue française de science politique},
+  62(5)\string:\penalty500\relax 867--894.
 
 \bibitem[Bergman, 2001]{bergman_white_2001}
-Bergman, M.~K. (2001).
+\bgroup\fonteauteurs\bgroup Bergman\egroup\egroup{}, M.~K. (2001).
 \newblock White paper: the deep web: surfacing hidden value.
 \newblock {\em Journal of electronic publishing}, 7(1).
 
 \bibitem[Bernal, 2006]{bernal_diaspora_2006}
-Bernal, V. (2006).
+\bgroup\fonteauteurs\bgroup Bernal\egroup\egroup{}, V. (2006).
 \newblock Diaspora, cyberspace and political imagination: the {Eritrean}
   diaspora online.
-\newblock {\em Global networks}, 6(2):161--179.
+\newblock {\em Global networks}, 6(2)\string:\penalty500\relax 161--179.
 
 \bibitem[Bernard, 2003]{bernard_criteria_2003}
-Bernard, M. (2003).
+\bgroup\fonteauteurs\bgroup Bernard\egroup\egroup{}, M. (2003).
 \newblock Criteria for optimal web design (designing for usability).
-\newblock {\em Retrieved on April}, 13:2005.
+\newblock {\em Retrieved on April}, 13\string:\penalty500\relax 2005.
 
 \bibitem[Berthomière, 2013]{berthomiere_french_2013}
-Berthomière, W. (2013).
+\bgroup\fonteauteurs\bgroup Berthomière\egroup\egroup{}, W. (2013).
 \newblock ‘{A} {French} what?’. à la recherche d’une diaspora
   française. {Premiers} éléments d’enquête au sein de l’espace
   internet.
 
 \bibitem[Bertin, 1973]{bertin_semiologie_1973}
-Bertin, J. (1973).
+\bgroup\fonteauteurs\bgroup Bertin\egroup\egroup{}, J. (1973).
 \newblock Sémiologie graphique: {Les} diagrammes-{Les} réseaux-{Les} cartes.
 
-\bibitem[Blanchard and Rodier, 2016]{blanchard_crise_2016}
-Blanchard, E. and Rodier, C. (2016).
+\bibitem[Blanchard et Rodier, 2016]{blanchard_crise_2016}
+\bgroup\fonteauteurs\bgroup Blanchard\egroup\egroup{}, E. et
+  \bgroup\fonteauteurs\bgroup Rodier\egroup\egroup{}, C. (2016).
 \newblock «{Crise} migratoire»: ce que cachent les mots.
-\newblock {\em Plein droit}, (4):3--6.
+\newblock {\em Plein droit}, (4)\string:\penalty500\relax 3--6.
 
-\bibitem[Blondel et~al., 2008]{blondel_fast_2008}
-Blondel, V.~D., Guillaume, J.-L., Lambiotte, R., and Lefebvre, E. (2008).
+\bibitem[Blondel \emph{et~al.}, 2008]{blondel_fast_2008}
+\bgroup\fonteauteurs\bgroup Blondel\egroup\egroup{}, V.~D.,
+  \bgroup\fonteauteurs\bgroup Guillaume\egroup\egroup{}, J.-L.,
+  \bgroup\fonteauteurs\bgroup Lambiotte\egroup\egroup{}, R. et
+  \bgroup\fonteauteurs\bgroup Lefebvre\egroup\egroup{}, E. (2008).
 \newblock Fast unfolding of communities in large networks.
 \newblock {\em Journal of statistical mechanics: theory and experiment},
-  2008(10):P10008.
+  2008(10)\string:\penalty500\relax P10008.
 
 \bibitem[Bon, 2014]{bon_apres_2014}
-Bon, F. (2014).
+\bgroup\fonteauteurs\bgroup Bon\egroup\egroup{}, F. (2014).
 \newblock {\em Après le livre}.
 \newblock Tiers Livre Éditeur.
 
 \bibitem[Borges, 1974]{borges_fictions_1974}
-Borges, J. (1974).
+\bgroup\fonteauteurs\bgroup Borges\egroup\egroup{}, J. (1974).
 \newblock {\em Fictions}.
 \newblock Collection {Folio}. Editions Gallimard.
 
 \bibitem[Borgman, 2000]{borgman_digital_2000}
-Borgman, C.~L. (2000).
+\bgroup\fonteauteurs\bgroup Borgman\egroup\egroup{}, C.~L. (2000).
 \newblock Digital libraries and the continuum of scholarly communication.
-\newblock {\em Journal of documentation}, 56(4):412--430.
+\newblock {\em Journal of documentation}, 56(4)\string:\penalty500\relax
+  412--430.
 
-\bibitem[Boudrez and Van~den Eynde, 2002]{boudrez_archiving_2002}
-Boudrez, F. and Van~den Eynde, S. (2002).
+\bibitem[Boudrez et Van~den Eynde, 2002]{boudrez_archiving_2002}
+\bgroup\fonteauteurs\bgroup Boudrez\egroup\egroup{}, F. et Van~den
+  \bgroup\fonteauteurs\bgroup Eynde\egroup\egroup{}, S. (2002).
 \newblock Archiving websites.
 \newblock {\em State Archives of Antwerp, Antwerp-Leuven}.
 
-\bibitem[Bounie et~al., 2010]{bounie_analyse_2010}
-Bounie, D., Diminescu, D., and François, A. (2010).
+\bibitem[Bounie \emph{et~al.}, 2010]{bounie_analyse_2010}
+\bgroup\fonteauteurs\bgroup Bounie\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Diminescu\egroup\egroup{}, D. et
+  \bgroup\fonteauteurs\bgroup François\egroup\egroup{}, A. (2010).
 \newblock Une analyse socio-économique des transferts d'argent des migrants
   par téléphone.
-\newblock {\em Réseaux}, (1):91--109.
+\newblock {\em Réseaux}, (1)\string:\penalty500\relax 91--109.
 
-\bibitem[Brin and Page, 1998]{brin_anatomy_1998}
-Brin, S. and Page, L. (1998).
+\bibitem[Brin et Page, 1998]{brin_anatomy_1998}
+\bgroup\fonteauteurs\bgroup Brin\egroup\egroup{}, S. et
+  \bgroup\fonteauteurs\bgroup Page\egroup\egroup{}, L. (1998).
 \newblock The anatomy of a large-scale hypertextual web search engine.
-\newblock {\em Computer networks and ISDN systems}, 30(1-7):107--117.
+\newblock {\em Computer networks and ISDN systems},
+  30(1-7)\string:\penalty500\relax 107--117.
 
-\bibitem[Broder et~al., 2000]{broder_graph_2000}
-Broder, A., Kumar, R., Maghoul, F., Raghavan, P., Rajagopalan, S., Stata, R.,
-  Tomkins, A., and Wiener, J. (2000).
+\bibitem[Broder \emph{et~al.}, 2000]{broder_graph_2000}
+\bgroup\fonteauteurs\bgroup Broder\egroup\egroup{}, A.,
+  \bgroup\fonteauteurs\bgroup Kumar\egroup\egroup{}, R.,
+  \bgroup\fonteauteurs\bgroup Maghoul\egroup\egroup{}, F.,
+  \bgroup\fonteauteurs\bgroup Raghavan\egroup\egroup{}, P.,
+  \bgroup\fonteauteurs\bgroup Rajagopalan\egroup\egroup{}, S.,
+  \bgroup\fonteauteurs\bgroup Stata\egroup\egroup{}, R.,
+  \bgroup\fonteauteurs\bgroup Tomkins\egroup\egroup{}, A. et
+  \bgroup\fonteauteurs\bgroup Wiener\egroup\egroup{}, J. (2000).
 \newblock Graph structure in the web.
-\newblock {\em Computer networks}, 33(1):309--320.
+\newblock {\em Computer networks}, 33(1)\string:\penalty500\relax 309--320.
 
 \bibitem[Bruslé, 2012]{brusle_les_2012}
-Bruslé, T. (2012).
+\bgroup\fonteauteurs\bgroup Bruslé\egroup\egroup{}, T. (2012).
 \newblock Les sites diasporiques népalais, signes et conditions d’une
   diaspora en formation?
 
 \bibitem[Brügger, 2009]{brugger_website_2009}
-Brügger, N. (2009).
+\bgroup\fonteauteurs\bgroup Brügger\egroup\egroup{}, N. (2009).
 \newblock Website history and the website as an object of study.
-\newblock {\em New Media \& Society}, 11(1-2):115--132.
+\newblock {\em New Media \& Society}, 11(1-2)\string:\penalty500\relax
+  115--132.
 
-\bibitem[Brügger, 2017]{brugger_web_2017}
-Brügger, N. (2017).
-\newblock {\em The {Web} as {History}}.
+\bibitem[Brügger et Schroeder, 2017]{brugger_web_2017}
+\bgroup\fonteauteurs\bgroup Brügger\egroup\egroup{}, N. et
+  \bgroup\fonteauteurs\bgroup Schroeder\egroup\egroup{}, R. (2017).
+\newblock {\em The {Web} as {History}: {Using} {Web} {Archives} to {Understand}
+  the {Past} and the {Present}}.
 \newblock UCL Press.
 
-\bibitem[Cadez et~al., 2003]{cadez_model-based_2003}
-Cadez, I., Heckerman, D., Meek, C., Smyth, P., and White, S. (2003).
+\bibitem[Cadez \emph{et~al.}, 2003]{cadez_model-based_2003}
+\bgroup\fonteauteurs\bgroup Cadez\egroup\egroup{}, I.,
+  \bgroup\fonteauteurs\bgroup Heckerman\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Meek\egroup\egroup{}, C.,
+  \bgroup\fonteauteurs\bgroup Smyth\egroup\egroup{}, P. et
+  \bgroup\fonteauteurs\bgroup White\egroup\egroup{}, S. (2003).
 \newblock Model-based clustering and visualization of navigation patterns on a
   web site.
-\newblock {\em Data mining and knowledge discovery}, 7(4):399--424.
+\newblock {\em Data mining and knowledge discovery},
+  7(4)\string:\penalty500\relax 399--424.
 
-\bibitem[Cai et~al., 2003]{cai_vips:_2003}
-Cai, D., Yu, S., Wen, J.-R., and Ma, W.-Y. (2003).
-\newblock {VIPS}: {A} vision-based page segmentation algorithm.
+\bibitem[Cai \emph{et~al.}, 2003]{cai_vips:_2003}
+\bgroup\fonteauteurs\bgroup Cai\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Yu\egroup\egroup{}, S.,
+  \bgroup\fonteauteurs\bgroup Wen\egroup\egroup{}, J.-R. et
+  \bgroup\fonteauteurs\bgroup Ma\egroup\egroup{}, W.-Y. (2003).
+\newblock Vips: a vision-based page segmentation algorithm.
 
 \bibitem[Canfora, 1990]{canfora_vanished_1990}
-Canfora, L. (1990).
+\bgroup\fonteauteurs\bgroup Canfora\egroup\egroup{}, L. (1990).
 \newblock {\em The {Vanished} {Library}: {A} {Wonder} of the {Ancient}
   {World}}, volume~7.
 \newblock Univ of California Press.
 
-\bibitem[Castillo et~al., 2004]{castillo_scheduling_2004}
-Castillo, C., Marin, M., Rodriguez, A., and Baeza-Yates, R. (2004).
+\bibitem[Castillo \emph{et~al.}, 2004]{castillo_scheduling_2004}
+\bgroup\fonteauteurs\bgroup Castillo\egroup\egroup{}, C.,
+  \bgroup\fonteauteurs\bgroup Marin\egroup\egroup{}, M.,
+  \bgroup\fonteauteurs\bgroup Rodriguez\egroup\egroup{}, A. et
+  \bgroup\fonteauteurs\bgroup Baeza-Yates\egroup\egroup{}, R. (2004).
 \newblock Scheduling algorithms for {Web} crawling.
-\newblock In {\em {WebMedia} and {LA}-{Web}, 2004. {Proceedings}}, pages
+\newblock \emph{In} {\em {WebMedia} and {LA}-{Web}, 2004. {Proceedings}}, pages
   10--17. IEEE.
 
 \bibitem[{CERN}, 1993]{cern_document_1993}
-{CERN} (1993).
+\bgroup\fonteauteurs\bgroup {CERN}\egroup\egroup{} (1993).
 \newblock The document that officially put the {World} {Wide} {Web} into the
   public domain.
 
-\bibitem[Chakravarthy et~al., 2002]{chakravarthy_webvigil:_2002}
-Chakravarthy, S., Jacob, J., Pandrangi, N., and Sanka, A. (2002).
+\bibitem[Chakravarthy \emph{et~al.}, 2002]{chakravarthy_webvigil:_2002}
+\bgroup\fonteauteurs\bgroup Chakravarthy\egroup\egroup{}, S.,
+  \bgroup\fonteauteurs\bgroup Jacob\egroup\egroup{}, J.,
+  \bgroup\fonteauteurs\bgroup Pandrangi\egroup\egroup{}, N. et
+  \bgroup\fonteauteurs\bgroup Sanka\egroup\egroup{}, A. (2002).
 \newblock Webvigil: {An} approach to just-in-time information propagation in
   large network-centric environments.
-\newblock In {\em Second {International} {Workshop} on {Web} {Dynamics}}.
+\newblock \emph{In} {\em Second {International} {Workshop} on {Web}
+  {Dynamics}}.
 
-\bibitem[Chaney et~al., 2015]{chaney_who_2015}
-Chaney, A.~J., Wallach, H., and Blei, D.~M. (2015).
+\bibitem[Chaney \emph{et~al.}, 2015]{chaney_who_2015}
+\bgroup\fonteauteurs\bgroup Chaney\egroup\egroup{}, A.~J.,
+  \bgroup\fonteauteurs\bgroup Wallach\egroup\egroup{}, H. et
+  \bgroup\fonteauteurs\bgroup Blei\egroup\egroup{}, D.~M. (2015).
 \newblock Who, {What}, {When}, {Where}, and {Why}? {A} {Computational}
   {Approach} to {Understanding} {Historical} {Events} {Using} {State}
   {Department} {Cables}.
 
-\bibitem[Chaney et~al., 2016]{chaney_detecting_2016}
-Chaney, A. J.-B., Wallach, H.~M., Connelly, M., and Blei, D.~M. (2016).
+\bibitem[Chaney \emph{et~al.}, 2016]{chaney_detecting_2016}
+\bgroup\fonteauteurs\bgroup Chaney\egroup\egroup{}, A. J.-B.,
+  \bgroup\fonteauteurs\bgroup Wallach\egroup\egroup{}, H.~M.,
+  \bgroup\fonteauteurs\bgroup Connelly\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Blei\egroup\egroup{}, D.~M. (2016).
 \newblock Detecting and {Characterizing} {Events}.
-\newblock In {\em {EMNLP}}, pages 1142--1152.
+\newblock \emph{In} {\em {EMNLP}}, pages 1142--1152.
 
-\bibitem[Chawathe and Garcia-Molina, 1997]{chawathe_meaningful_1997}
-Chawathe, S.~S. and Garcia-Molina, H. (1997).
+\bibitem[Chawathe et Garcia-Molina, 1997]{chawathe_meaningful_1997}
+\bgroup\fonteauteurs\bgroup Chawathe\egroup\egroup{}, S.~S. et
+  \bgroup\fonteauteurs\bgroup Garcia-Molina\egroup\egroup{}, H. (1997).
 \newblock Meaningful change detection in structured data.
-\newblock In {\em {ACM} {SIGMOD} {Record}}, volume~26, pages 26--37. ACM.
+\newblock \emph{In} {\em {ACM} {SIGMOD} {Record}}, volume~26, pages 26--37.
+  ACM.
 
 \bibitem[Chen, 2011]{chen_cerner_2011}
-Chen, J. (2011).
+\bgroup\fonteauteurs\bgroup Chen\egroup\egroup{}, J. (2011).
 \newblock Cerner la notion de temps.
-\newblock {\em Rue Descartes}, (2):30--51.
+\newblock {\em Rue Descartes}, (2)\string:\penalty500\relax 30--51.
 
-\bibitem[Cho and Garcia-Molina, 1999]{cho_evolution_1999}
-Cho, J. and Garcia-Molina, H. (1999).
+\bibitem[Cho et Garcia-Molina, 1999]{cho_evolution_1999}
+\bgroup\fonteauteurs\bgroup Cho\egroup\egroup{}, J. et
+  \bgroup\fonteauteurs\bgroup Garcia-Molina\egroup\egroup{}, H. (1999).
 \newblock The evolution of the web and implications for an incremental crawler.
-\newblock Technical report, Stanford.
+\newblock Rapport technique, Stanford.
 
-\bibitem[Cho et~al., 1998]{cho_efficient_1998}
-Cho, J., Garcia-Molina, H., and Page, L. (1998).
+\bibitem[Cho \emph{et~al.}, 1998]{cho_efficient_1998}
+\bgroup\fonteauteurs\bgroup Cho\egroup\egroup{}, J.,
+  \bgroup\fonteauteurs\bgroup Garcia-Molina\egroup\egroup{}, H. et
+  \bgroup\fonteauteurs\bgroup Page\egroup\egroup{}, L. (1998).
 \newblock Efficient crawling through {URL} ordering.
-\newblock {\em Computer Networks and ISDN Systems}, 30(1-7):161--172.
+\newblock {\em Computer Networks and ISDN Systems},
+  30(1-7)\string:\penalty500\relax 161--172.
 
-\bibitem[Coriat and {others}, 2015]{coriat_retour_2015}
-Coriat, B. and {others} (2015).
+\bibitem[Coriat et {others}, 2015]{coriat_retour_2015}
+\bgroup\fonteauteurs\bgroup Coriat\egroup\egroup{}, B. et
+  \bgroup\fonteauteurs\bgroup {others}\egroup\egroup{} (2015).
 \newblock {\em Le retour des communs: \& la crise de l'idéologie
   propriétaire}.
 \newblock Éditions Les Liens qui libèrent.
 
-\bibitem[Costa et~al., 2013]{costa_survey_2013}
-Costa, M., Gomes, D., Couto, F., and Silva, M. (2013).
+\bibitem[Costa \emph{et~al.}, 2013]{costa_survey_2013}
+\bgroup\fonteauteurs\bgroup Costa\egroup\egroup{}, M.,
+  \bgroup\fonteauteurs\bgroup Gomes\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Couto\egroup\egroup{}, F. et
+  \bgroup\fonteauteurs\bgroup Silva\egroup\egroup{}, M. (2013).
 \newblock A survey of web archive search architectures.
-\newblock In {\em Proceedings of the 22nd {International} {Conference} on
-  {World} {Wide} {Web}}, pages 1045--1050. ACM.
+\newblock \emph{In} {\em Proceedings of the 22nd {International} {Conference}
+  on {World} {Wide} {Web}}, pages 1045--1050. ACM.
 
-\bibitem[Costa and Silva, 2011]{costa_characterizing_2011}
-Costa, M. and Silva, M.~J. (2011).
+\bibitem[Costa et Silva, 2011]{costa_characterizing_2011}
+\bgroup\fonteauteurs\bgroup Costa\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Silva\egroup\egroup{}, M.~J. (2011).
 \newblock Characterizing {Search} {Behavior} in {Web} {Archives}.
-\newblock In {\em {TWAW}}, pages 33--40.
+\newblock \emph{In} {\em {TWAW}}, pages 33--40.
 
-\bibitem[Costa and Silva, 2012]{costa_evaluating_2012}
-Costa, M. and Silva, M.~J. (2012).
+\bibitem[Costa et Silva, 2012]{costa_evaluating_2012}
+\bgroup\fonteauteurs\bgroup Costa\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Silva\egroup\egroup{}, M.~J. (2012).
 \newblock Evaluating web archive search systems.
-\newblock In {\em International {Conference} on {Web} {Information} {Systems}
-  {Engineering}}, pages 440--454. Springer.
+\newblock \emph{In} {\em International {Conference} on {Web} {Information}
+  {Systems} {Engineering}}, pages 440--454. Springer.
 
-\bibitem[De~Jong et~al., 2005]{de_jong_temporal_2005}
-De~Jong, F., Rode, H., and Hiemstra, D. (2005).
+\bibitem[De~Jong \emph{et~al.}, 2005]{de_jong_temporal_2005}
+\bgroup\fonteauteurs\bgroup De~Jong\egroup\egroup{}, F.,
+  \bgroup\fonteauteurs\bgroup Rode\egroup\egroup{}, H. et
+  \bgroup\fonteauteurs\bgroup Hiemstra\egroup\egroup{}, D. (2005).
 \newblock Temporal language models for the disclosure of historical text.
-\newblock In {\em Humanities, computers and cultural heritage: {Proceedings} of
-  the {XVIth} {International} {Conference} of the {Association} for {History}
-  and {Computing} ({AHC} 2005)}, pages 161--168.
+\newblock \emph{In} {\em Humanities, computers and cultural heritage:
+  {Proceedings} of the {XVIth} {International} {Conference} of the
+  {Association} for {History} and {Computing} ({AHC} 2005)}, pages 161--168.
 
 \bibitem[De~Kosnik, 2016]{de_kosnik_rogue_2016}
-De~Kosnik, A. (2016).
+\bgroup\fonteauteurs\bgroup De~Kosnik\egroup\egroup{}, A. (2016).
 \newblock {\em Rogue archives: {Digital} cultural memory and media fandom}.
 \newblock MIT Press.
 
-\bibitem[Dekker et~al., 2018]{dekker_smart_2018}
-Dekker, R., Engbersen, G., Klaver, J., and Vonk, H. (2018).
+\bibitem[Dekker \emph{et~al.}, 2018]{dekker_smart_2018}
+\bgroup\fonteauteurs\bgroup Dekker\egroup\egroup{}, R.,
+  \bgroup\fonteauteurs\bgroup Engbersen\egroup\egroup{}, G.,
+  \bgroup\fonteauteurs\bgroup Klaver\egroup\egroup{}, J. et
+  \bgroup\fonteauteurs\bgroup Vonk\egroup\egroup{}, H. (2018).
 \newblock Smart {Refugees}: {How} {Syrian} {Asylum} {Migrants} {Use} {Social}
   {Media} {Information} in {Migration} {Decision}-{Making}.
-\newblock {\em Social Media+ Society}, 4(1):2056305118764439.
+\newblock {\em Social Media+ Society}, 4(1).
 
-\bibitem[Denev et~al., 2009]{denev_sharc:_2009}
-Denev, D., Mazeika, A., Spaniol, M., and Weikum, G. (2009).
+\bibitem[Denev \emph{et~al.}, 2009]{denev_sharc:_2009}
+\bgroup\fonteauteurs\bgroup Denev\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Mazeika\egroup\egroup{}, A.,
+  \bgroup\fonteauteurs\bgroup Spaniol\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Weikum\egroup\egroup{}, G. (2009).
 \newblock {SHARC}: framework for quality-conscious web archiving.
-\newblock {\em Proceedings of the VLDB Endowment}, 2(1):586--597.
+\newblock {\em Proceedings of the VLDB Endowment},
+  2(1)\string:\penalty500\relax 586--597.
 
 \bibitem[Derrida, 2014]{derrida_trace_2014}
-Derrida, J. (2014).
+\bgroup\fonteauteurs\bgroup Derrida\egroup\egroup{}, J. (2014).
 \newblock {\em Trace et archive, image et art}.
 \newblock Collection {Collège} iconique. INA.
 
 \bibitem[Desrues, 2012]{desrues_mouvement_2012}
-Desrues, T. (2012).
+\bgroup\fonteauteurs\bgroup Desrues\egroup\egroup{}, T. (2012).
 \newblock Le mouvement du 20 février et le régime marocain: contestation,
   révision constitutionnelle et élections.
-\newblock {\em L’Année du Maghreb}, (VIII):359--389.
+\newblock {\em L’Année du Maghreb}, (VIII)\string:\penalty500\relax
+  359--389.
 
 \bibitem[Diminescu, 2002]{diminescu_les_2002}
-Diminescu, D. (2002).
+\bgroup\fonteauteurs\bgroup Diminescu\egroup\egroup{}, D. (2002).
 \newblock Les migrations à l'âge des nouvelles technologies.
-\newblock {\em Hommes \& Migrations}, 1240(1240):6--9.
+\newblock {\em Hommes \& Migrations}, 1240(1240)\string:\penalty500\relax 6--9.
 
 \bibitem[Diminescu, 2008]{diminescu_connected_2008}
-Diminescu, D. (2008).
+\bgroup\fonteauteurs\bgroup Diminescu\egroup\egroup{}, D. (2008).
 \newblock The connected migrant: an epistemological manifesto.
-\newblock {\em Social Science Information}, 47(4):565--579.
+\newblock {\em Social Science Information}, 47(4)\string:\penalty500\relax
+  565--579.
 
 \bibitem[Diminescu, 2012]{diminescu_e-diasporas_2012}
-Diminescu, D. (2012).
+\bgroup\fonteauteurs\bgroup Diminescu\egroup\egroup{}, D. (2012).
 \newblock {\em E-{Diasporas} {Atlas}: {Exploration} and {Cartography} of
   {Diasporas} on {Digital} {Networks}}.
 \newblock Ed. de la Maison des sciences de l'homme.
 
 \bibitem[Diminescu, 2016]{diminescu_traces_2016}
-Diminescu, D. (2016).
+\bgroup\fonteauteurs\bgroup Diminescu\egroup\egroup{}, D. (2016).
 \newblock Traces numériques.
-\newblock {\em Plein droit}, (3):3--6.
+\newblock {\em Plein droit}, (3)\string:\penalty500\relax 3--6.
 
-\bibitem[Dodds et~al., 2011]{dodds_temporal_2011}
-Dodds, P.~S., Harris, K.~D., Kloumann, I.~M., Bliss, C.~A., and Danforth, C.~M.
-  (2011).
-\newblock Temporal {Patterns} of {Happiness} and {Information} in a {Global}
-  {Social} {Network}: {Hedonometrics} and {Twitter}.
-\newblock {\em PLoS ONE}, 6(12):e26752.
+\bibitem[Dodds \emph{et~al.}, 2011]{dodds_temporal_2011}
+\bgroup\fonteauteurs\bgroup Dodds\egroup\egroup{}, P.~S.,
+  \bgroup\fonteauteurs\bgroup Harris\egroup\egroup{}, K.~D.,
+  \bgroup\fonteauteurs\bgroup Kloumann\egroup\egroup{}, I.~M.,
+  \bgroup\fonteauteurs\bgroup Bliss\egroup\egroup{}, C.~A. et
+  \bgroup\fonteauteurs\bgroup Danforth\egroup\egroup{}, C.~M. (2011).
+\newblock Temporal patterns of happiness and information in a global social
+  network: {Hedonometrics} and {Twitter}.
+\newblock {\em PloS one}, 6(12).
 
-\bibitem[Douglis et~al., 1998]{douglis_at&t_1998}
-Douglis, F., Ball, T., Chen, Y.-F., and Koutsofios, E. (1998).
+\bibitem[Douglis \emph{et~al.}, 1998]{douglis_at&t_1998}
+\bgroup\fonteauteurs\bgroup Douglis\egroup\egroup{}, F.,
+  \bgroup\fonteauteurs\bgroup Ball\egroup\egroup{}, T.,
+  \bgroup\fonteauteurs\bgroup Chen\egroup\egroup{}, Y.-F. et
+  \bgroup\fonteauteurs\bgroup Koutsofios\egroup\egroup{}, E. (1998).
 \newblock The {AT}\&{T} {Internet} {Difference} {Engine}: {Tracking} and
   viewing changes on the web.
-\newblock {\em World Wide Web}, 1(1):27--44.
+\newblock {\em World Wide Web}, 1(1)\string:\penalty500\relax 27--44.
 
-\bibitem[Dougnac and Guilbaud, 1960]{dougnac_depot_1960}
-Dougnac, M.-T. and Guilbaud, M. (1960).
+\bibitem[Dougnac et Guilbaud, 1960]{dougnac_depot_1960}
+\bgroup\fonteauteurs\bgroup Dougnac\egroup\egroup{}, M.-T. et
+  \bgroup\fonteauteurs\bgroup Guilbaud\egroup\egroup{}, M. (1960).
 \newblock Le dépôt légal: son sens et son évolution.
 
-\bibitem[Driscoll and Paloque-Berges, 2017]{driscoll_searching_2017}
-Driscoll, K. and Paloque-Berges, C. (2017).
+\bibitem[Driscoll et Paloque-Berges, 2017]{driscoll_searching_2017}
+\bgroup\fonteauteurs\bgroup Driscoll\egroup\egroup{}, K. et
+  \bgroup\fonteauteurs\bgroup Paloque-Berges\egroup\egroup{}, C. (2017).
 \newblock Searching for missing “net histories”.
-\newblock {\em Internet Histories}, 1(1-2):47--59.
+\newblock {\em Internet Histories}, 1(1-2)\string:\penalty500\relax 47--59.
 
 \bibitem[Drugeon, 2005]{drugeon_technical_2005}
-Drugeon, T. (2005).
+\bgroup\fonteauteurs\bgroup Drugeon\egroup\egroup{}, T. (2005).
 \newblock A technical approach for the {French} web legal deposit.
-\newblock In {\em 5th {International} {Web} {Archiving} {Workshop} ({IWAW}05),
-  {Viena}, {Austria}}. Citeseer.
+\newblock \emph{In} {\em 5th {International} {Web} {Archiving} {Workshop}
+  ({IWAW}05), {Viena}, {Austria}}. Citeseer.
 
 \bibitem[Dufoix, 2003]{dufoix_les_2003}
-Dufoix, S. (2003).
+\bgroup\fonteauteurs\bgroup Dufoix\egroup\egroup{}, S. (2003).
 \newblock {\em Les diasporas}.
 \newblock Que sais-je ? Presses Universitaires de France, Paris.
 
-\bibitem[Dumais et~al., 2016]{dumais_stuff_2016}
-Dumais, S., Cutrell, E., Cadiz, J.~J., Jancke, G., Sarin, R., and Robbins,
-  D.~C. (2016).
+\bibitem[Dumais \emph{et~al.}, 2016]{dumais_stuff_2016}
+\bgroup\fonteauteurs\bgroup Dumais\egroup\egroup{}, S.,
+  \bgroup\fonteauteurs\bgroup Cutrell\egroup\egroup{}, E.,
+  \bgroup\fonteauteurs\bgroup Cadiz\egroup\egroup{}, J.~J.,
+  \bgroup\fonteauteurs\bgroup Jancke\egroup\egroup{}, G.,
+  \bgroup\fonteauteurs\bgroup Sarin\egroup\egroup{}, R. et
+  \bgroup\fonteauteurs\bgroup Robbins\egroup\egroup{}, D.~C. (2016).
 \newblock Stuff {I}'ve seen: a system for personal information retrieval and
   re-use.
-\newblock In {\em {ACM} {SIGIR} {Forum}}, volume~49, pages 28--35. ACM.
+\newblock \emph{In} {\em {ACM} {SIGIR} {Forum}}, volume~49, pages 28--35. ACM.
 
-\bibitem[Ellison and {others}, 2007]{ellison_social_2007}
-Ellison, N.~B. and {others} (2007).
+\bibitem[Ellison et {others}, 2007]{ellison_social_2007}
+\bgroup\fonteauteurs\bgroup Ellison\egroup\egroup{}, N.~B. et
+  \bgroup\fonteauteurs\bgroup {others}\egroup\egroup{} (2007).
 \newblock Social network sites: {Definition}, history, and scholarship.
-\newblock {\em Journal of computer-mediated Communication}, 13(1):210--230.
+\newblock {\em Journal of computer-mediated Communication},
+  13(1)\string:\penalty500\relax 210--230.
 
-\bibitem[Febvre and Martin, 2013]{febvre_apparition_2013}
-Febvre, L. and Martin, H.-J. (2013).
+\bibitem[Febvre et Martin, 2013]{febvre_apparition_2013}
+\bgroup\fonteauteurs\bgroup Febvre\egroup\egroup{}, L. et
+  \bgroup\fonteauteurs\bgroup Martin\egroup\egroup{}, H.-J. (2013).
 \newblock {\em L'apparition du livre}.
 \newblock Albin Michel.
 
-\bibitem[Feng et~al., 2006]{feng_web_2006}
-Feng, G., Ma, G.-S., and Hu, J. (2006).
-\newblock Web {Navigation} {Patterns} {Mining} {Based} on {Clustering} of
-  {Paths} and {Pages} {Content}.
-\newblock In Shen, H.~T., Li, J., Li, M., Ni, J., and Wang, W., editors, {\em
-  Advanced {Web} and {Network} {Technologies}, and {Applications}: {APWeb} 2006
-  {International} {Workshops}: {XRA}, {IWSN}, {MEGA}, and {ICSE}, {Harbin},
-  {China}, {January} 16-18, 2006. {Proceedings}}, pages 857--860. Springer
-  Berlin Heidelberg, Berlin, Heidelberg.
+\bibitem[Feng \emph{et~al.}, 2006]{feng_web_2006}
+\bgroup\fonteauteurs\bgroup Feng\egroup\egroup{}, G.,
+  \bgroup\fonteauteurs\bgroup Ma\egroup\egroup{}, G.-S. et
+  \bgroup\fonteauteurs\bgroup Hu\egroup\egroup{}, J. (2006).
+\newblock Web navigation patterns mining based on clustering of paths and pages
+  content.
+\newblock \emph{In} {\em Asia-{Pacific} {Web} {Conference}}, pages 857--860.
+  Springer.
 
-\bibitem[Fetterly et~al., 2003]{fetterly_large-scale_2003}
-Fetterly, D., Manasse, M., Najork, M., and Wiener, J. (2003).
+\bibitem[Fetterly \emph{et~al.}, 2003]{fetterly_large-scale_2003}
+\bgroup\fonteauteurs\bgroup Fetterly\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Manasse\egroup\egroup{}, M.,
+  \bgroup\fonteauteurs\bgroup Najork\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Wiener\egroup\egroup{}, J. (2003).
 \newblock A large-scale study of the evolution of web pages.
-\newblock In {\em Proceedings of the 12th international conference on {World}
-  {Wide} {Web}}, pages 669--678. ACM.
+\newblock \emph{In} {\em Proceedings of the 12th international conference on
+  {World} {Wide} {Web}}, pages 669--678. ACM.
 
 \bibitem[Fitch, 2003]{fitch_web_2003}
-Fitch, K. (2003).
+\bgroup\fonteauteurs\bgroup Fitch\egroup\egroup{}, K. (2003).
 \newblock Web site archiving-an approach to recording every materially
   different response produced by a website.
 
 \bibitem[Flusser, 2014]{flusser_les_2014}
-Flusser, V. (2014).
+\bgroup\fonteauteurs\bgroup Flusser\egroup\egroup{}, V. (2014).
 \newblock {\em Les gestes}.
 \newblock Cahiers {Du} {Midi}. Al Dante Eds.
 
-\bibitem[Foot and Schneider, 2006]{foot_web_2006}
-Foot, K. and Schneider, S.~M. (2006).
+\bibitem[Foot et Schneider, 2006]{foot_web_2006}
+\bgroup\fonteauteurs\bgroup Foot\egroup\egroup{}, K. et
+  \bgroup\fonteauteurs\bgroup Schneider\egroup\egroup{}, S.~M. (2006).
 \newblock {\em Web campaigning (acting with technology)}.
 \newblock The MIT Press.
 
 \bibitem[Fouetillou, 2008]{fouetillou_web_2008}
-Fouetillou, G. (2008).
+\bgroup\fonteauteurs\bgroup Fouetillou\egroup\egroup{}, G. (2008).
 \newblock Le web et le traité constitutionnel européen.
-\newblock {\em Réseaux}, (1):229--257.
+\newblock {\em Réseaux}, (1)\string:\penalty500\relax 229--257.
 
 \bibitem[Fry, 2000]{fry_organic_2000}
-Fry, B.~J. (2000).
-\newblock {\em Organic information design}.
-\newblock {PhD} {Thesis}, Massachusetts Institute of Technology.
+\bgroup\fonteauteurs\bgroup Fry\egroup\egroup{}, B.~J. (2000).
+\newblock Organic information design.
+\newblock M\'emoire de D.E.A., Massachusetts Institute of Technology.
 
 \bibitem[Fry, 2004]{fry_computational_2004}
-Fry, B.~J. (2004).
+\bgroup\fonteauteurs\bgroup Fry\egroup\egroup{}, B.~J. (2004).
 \newblock {\em Computational information design}.
 \newblock {PhD} {Thesis}, Massachusetts Institute of Technology.
 
-\bibitem[Fung et~al., 2005]{fung_parameter_2005}
-Fung, G. P.~C., Yu, J.~X., Yu, P.~S., and Lu, H. (2005).
+\bibitem[Fung \emph{et~al.}, 2005]{fung_parameter_2005}
+\bgroup\fonteauteurs\bgroup Fung\egroup\egroup{}, G. P.~C.,
+  \bgroup\fonteauteurs\bgroup Yu\egroup\egroup{}, J.~X.,
+  \bgroup\fonteauteurs\bgroup Yu\egroup\egroup{}, P.~S. et
+  \bgroup\fonteauteurs\bgroup Lu\egroup\egroup{}, H. (2005).
 \newblock Parameter free bursty events detection in text streams.
-\newblock In {\em Proceedings of the 31st international conference on {Very}
-  large data bases}, pages 181--192. VLDB Endowment.
+\newblock \emph{In} {\em Proceedings of the 31st international conference on
+  {Very} large data bases}, pages 181--192. VLDB Endowment.
 
-\bibitem[Gaumont et~al., 2017]{gaumont_methods_2017}
-Gaumont, N., Panahi, M., and Chavalarias, D. (2017).
+\bibitem[Gaumont \emph{et~al.}, 2017]{gaumont_methods_2017}
+\bgroup\fonteauteurs\bgroup Gaumont\egroup\egroup{}, N.,
+  \bgroup\fonteauteurs\bgroup Panahi\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Chavalarias\egroup\egroup{}, D. (2017).
 \newblock Methods for the reconstruction of the socio-semantic dynamics of
   political activist {Twitter} networks.
 
 \bibitem[Gebeil, 2016a]{gebeil_les_2016}
-Gebeil, S. (2016a).
+\bgroup\fonteauteurs\bgroup Gebeil\egroup\egroup{}, S. (2016a).
 \newblock Les mémoires de l’immigration maghrébine sur le web français de
   1999 à 2014.
-\newblock {\em Les Cahiers du numérique}, 12(3):115--138.
+\newblock {\em Les Cahiers du numérique}, 12(3)\string:\penalty500\relax
+  115--138.
 
 \bibitem[Gebeil, 2016b]{gebeil_quand_2016}
-Gebeil, S. (2016b).
+\bgroup\fonteauteurs\bgroup Gebeil\egroup\egroup{}, S. (2016b).
 \newblock Quand l’historien rencontre les archives du {Web}.
-\newblock {\em Revue de la BNF}, (2):185--191.
+\newblock {\em Revue de la BNF}, (2)\string:\penalty500\relax 185--191.
 
 \bibitem[Giesler, 2006]{giesler_consumer_2006}
-Giesler, M. (2006).
+\bgroup\fonteauteurs\bgroup Giesler\egroup\egroup{}, M. (2006).
 \newblock Consumer gift systems.
-\newblock {\em Journal of consumer research}, 33(2):283--290.
+\newblock {\em Journal of consumer research}, 33(2)\string:\penalty500\relax
+  283--290.
 
-\bibitem[Gillani et~al., 2018]{gillani_me_2018}
-Gillani, N., Yuan, A., Saveski, M., Vosoughi, S., and Roy, D. (2018).
+\bibitem[Gillani \emph{et~al.}, 2018]{gillani_me_2018}
+\bgroup\fonteauteurs\bgroup Gillani\egroup\egroup{}, N.,
+  \bgroup\fonteauteurs\bgroup Yuan\egroup\egroup{}, A.,
+  \bgroup\fonteauteurs\bgroup Saveski\egroup\egroup{}, M.,
+  \bgroup\fonteauteurs\bgroup Vosoughi\egroup\egroup{}, S. et
+  \bgroup\fonteauteurs\bgroup Roy\egroup\egroup{}, D. (2018).
 \newblock Me, {My} {Echo} {Chamber}, and {I}: {Introspection} on {Social}
   {Media} {Polarization}.
 \newblock {\em arXiv preprint arXiv:1803.01731}.
 
 \bibitem[Ginzburg, 1980]{ginzburg_signes_1980}
-Ginzburg, C. (1980).
+\bgroup\fonteauteurs\bgroup Ginzburg\egroup\egroup{}, C. (1980).
 \newblock Signes, traces, pistes.
-\newblock {\em Le débat}, (6):3--44.
+\newblock {\em Le débat}, (6)\string:\penalty500\relax 3--44.
 
 \bibitem[Ginzburg, 2012]{ginzburg_mythes_2012}
-Ginzburg, C. (2012).
+\bgroup\fonteauteurs\bgroup Ginzburg\egroup\egroup{}, C. (2012).
 \newblock {\em Mythes, emblèmes, traces: morphologie et histoire}.
 \newblock Verdier/Poche.
 
-\bibitem[Gomes et~al., 2011]{gomes_survey_2011}
-Gomes, D., Miranda, J., and Costa, M. (2011).
+\bibitem[Gomes \emph{et~al.}, 2011]{gomes_survey_2011}
+\bgroup\fonteauteurs\bgroup Gomes\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Miranda\egroup\egroup{}, J. et
+  \bgroup\fonteauteurs\bgroup Costa\egroup\egroup{}, M. (2011).
 \newblock A survey on web archiving initiatives.
-\newblock In {\em International {Conference} on {Theory} and {Practice} of
-  {Digital} {Libraries}}, pages 408--420. Springer.
+\newblock \emph{In} {\em International {Conference} on {Theory} and {Practice}
+  of {Digital} {Libraries}}, pages 408--420. Springer.
 
-\bibitem[Gomes et~al., 2009]{gomes_introducing_2009}
-Gomes, D., Nogueira, A., Miranda, J., and Costa, M. (2009).
+\bibitem[Gomes \emph{et~al.}, 2009]{gomes_introducing_2009}
+\bgroup\fonteauteurs\bgroup Gomes\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Nogueira\egroup\egroup{}, A.,
+  \bgroup\fonteauteurs\bgroup Miranda\egroup\egroup{}, J. et
+  \bgroup\fonteauteurs\bgroup Costa\egroup\egroup{}, M. (2009).
 \newblock Introducing the {Portuguese} web archive initiative.
-\newblock In {\em 8th {International} {Web} {Archiving} {Workshop}}. Springer.
+\newblock \emph{In} {\em 8th {International} {Web} {Archiving} {Workshop}}.
+  Springer.
 
-\bibitem[Goody et~al., 1979]{goody_raison_1979}
-Goody, J., Bazin, J., and Bensa, A. (1979).
+\bibitem[Goody \emph{et~al.}, 1979]{goody_raison_1979}
+\bgroup\fonteauteurs\bgroup Goody\egroup\egroup{}, J.,
+  \bgroup\fonteauteurs\bgroup Bazin\egroup\egroup{}, J. et
+  \bgroup\fonteauteurs\bgroup Bensa\egroup\egroup{}, A. (1979).
 \newblock {\em La raison graphique: la domestication de la pensée sauvage}.
 \newblock Collection le sens commun. Editions de Minuit.
 
-\bibitem[Grainger et~al., 2014]{grainger_solr_2014}
-Grainger, T., Potter, T., and Seeley, Y. (2014).
+\bibitem[Grainger \emph{et~al.}, 2014]{grainger_solr_2014}
+\bgroup\fonteauteurs\bgroup Grainger\egroup\egroup{}, T.,
+  \bgroup\fonteauteurs\bgroup Potter\egroup\egroup{}, T. et
+  \bgroup\fonteauteurs\bgroup Seeley\egroup\egroup{}, Y. (2014).
 \newblock {\em Solr in action}.
 \newblock Manning Cherry Hill.
 
-\bibitem[Hafner and Lyon, 1998]{hafner_where_1998}
-Hafner, K. and Lyon, M. (1998).
+\bibitem[Hafner et Lyon, 1998]{hafner_where_1998}
+\bgroup\fonteauteurs\bgroup Hafner\egroup\egroup{}, K. et
+  \bgroup\fonteauteurs\bgroup Lyon\egroup\egroup{}, M. (1998).
 \newblock {\em Where wizards stay up late: {The} origins of the {Internet}}.
 \newblock Simon and Schuster.
 
-\bibitem[Hallgrinsson and Bang, 2003]{hallgrinsson_nordic_2003}
-Hallgrinsson, B. and Bang, S. (2003).
+\bibitem[Hallgrinsson et Bang, 2003]{hallgrinsson_nordic_2003}
+\bgroup\fonteauteurs\bgroup Hallgrinsson\egroup\egroup{}, B. et
+  \bgroup\fonteauteurs\bgroup Bang\egroup\egroup{}, S. (2003).
 \newblock Nordic web archive.
-\newblock In {\em Proceedings of the 3rd {Workshop} on {Web} {Archives} in
-  conjunction with the 7th {European} {Conference} on {Research} and {Advanced}
-  {Technologies} for {Digital} {Libraries} ({ECDL} 2003)}, pages 37--48.
+\newblock \emph{In} {\em Proceedings of the 3rd {Workshop} on {Web} {Archives}
+  in conjunction with the 7th {European} {Conference} on {Research} and
+  {Advanced} {Technologies} for {Digital} {Libraries} ({ECDL} 2003)}, pages
+  37--48.
 
-\bibitem[Hatcher and Gospodnetic, 2004]{hatcher_lucene_2004}
-Hatcher, E. and Gospodnetic, O. (2004).
+\bibitem[Hatcher et Gospodnetic, 2004]{hatcher_lucene_2004}
+\bgroup\fonteauteurs\bgroup Hatcher\egroup\egroup{}, E. et
+  \bgroup\fonteauteurs\bgroup Gospodnetic\egroup\egroup{}, O. (2004).
 \newblock Lucene in action.
 
-\bibitem[Heller and Pezzani, 2014]{heller__2014}
-Heller, C. and Pezzani, L. (2014).
+\bibitem[Heller et Pezzani, 2014]{heller__2014}
+\bgroup\fonteauteurs\bgroup Heller\egroup\egroup{}, C. et
+  \bgroup\fonteauteurs\bgroup Pezzani\egroup\egroup{}, L. (2014).
 \newblock ‪ {Traces} liquides: enquête sur la mort de migrants dans la
   zone-frontière maritime de l’{Union} européenne‪.
 \newblock {\em Revue européenne des migrations internationales},
-  30(3):71--107.
+  30(3)\string:\penalty500\relax 71--107.
 
 \bibitem[Helmond, 2015]{helmond_platformization_2015}
-Helmond, A. (2015).
+\bgroup\fonteauteurs\bgroup Helmond\egroup\egroup{}, A. (2015).
 \newblock The platformization of the web: {Making} web data platform ready.
-\newblock {\em Social Media+ Society}, 1(2):2056305115603080.
+\newblock {\em Social Media+ Society}, 1(2).
 
 \bibitem[Helmond, 2017]{helmond_historical_2017}
-Helmond, A. (2017).
+\bgroup\fonteauteurs\bgroup Helmond\egroup\egroup{}, A. (2017).
 \newblock Historical {Website} {Ecology}. {Analyzing} {Past} {States} of the
   {Web} {Using} {Archived} {Source} {Code}.
 \newblock {\em Web 25: Histories from the First 25 Years of the World Wide
   Web}.
 
 \bibitem[Holten, 2006]{holten_hierarchical_2006}
-Holten, D. (2006).
+\bgroup\fonteauteurs\bgroup Holten\egroup\egroup{}, D. (2006).
 \newblock Hierarchical edge bundles: {Visualization} of adjacency relations in
   hierarchical data.
 \newblock {\em IEEE Transactions on visualization and computer graphics},
-  12(5):741--748.
+  12(5)\string:\penalty500\relax 741--748.
 
-\bibitem[Holzmann and Anand, 2016]{holzmann_tempas:_2016}
-Holzmann, H. and Anand, A. (2016).
+\bibitem[Holzmann et Anand, 2016]{holzmann_tempas:_2016}
+\bgroup\fonteauteurs\bgroup Holzmann\egroup\egroup{}, H. et
+  \bgroup\fonteauteurs\bgroup Anand\egroup\egroup{}, A. (2016).
 \newblock Tempas: {Temporal} {Archive} {Search} {Based} on {Tags}.
-\newblock In {\em Proceedings of the 25th {International} {Conference}
+\newblock \emph{In} {\em Proceedings of the 25th {International} {Conference}
   {Companion} on {World} {Wide} {Web}}, pages 207--210. International World
   Wide Web Conferences Steering Committee.
 
-\bibitem[Hölscher and Strube, 2000]{holscher_web_2000}
-Hölscher, C. and Strube, G. (2000).
+\bibitem[Hölscher et Strube, 2000]{holscher_web_2000}
+\bgroup\fonteauteurs\bgroup Hölscher\egroup\egroup{}, C. et
+  \bgroup\fonteauteurs\bgroup Strube\egroup\egroup{}, G. (2000).
 \newblock Web search behavior of {Internet} experts and newbies.
-\newblock {\em Computer networks}, 33(1-6):337--346.
+\newblock {\em Computer networks}, 33(1-6)\string:\penalty500\relax 337--346.
 
-\bibitem[Ingold and Renaut, 2013]{ingold_breve_2013}
-Ingold, T. and Renaut, S. (2013).
+\bibitem[Ingold et Renaut, 2013]{ingold_breve_2013}
+\bgroup\fonteauteurs\bgroup Ingold\egroup\egroup{}, T. et
+  \bgroup\fonteauteurs\bgroup Renaut\egroup\egroup{}, S. (2013).
 \newblock {\em Une brève histoire des lignes}.
 \newblock Zones sensibles.
 
-\bibitem[Jacomy et~al., 2014]{jacomy_forceatlas2_2014}
-Jacomy, M., Venturini, T., Heymann, S., and Bastian, M. (2014).
-\newblock {ForceAtlas}2, a {Continuous} {Graph} {Layout} {Algorithm} for
-  {Handy} {Network} {Visualization} {Designed} for the {Gephi} {Software}.
-\newblock {\em PLoS ONE}, 9(6):e98679.
+\bibitem[Jacomy \emph{et~al.}, 2014]{jacomy_forceatlas2_2014}
+\bgroup\fonteauteurs\bgroup Jacomy\egroup\egroup{}, M.,
+  \bgroup\fonteauteurs\bgroup Venturini\egroup\egroup{}, T.,
+  \bgroup\fonteauteurs\bgroup Heymann\egroup\egroup{}, S. et
+  \bgroup\fonteauteurs\bgroup Bastian\egroup\egroup{}, M. (2014).
+\newblock {ForceAtlas}2, a continuous graph layout algorithm for handy network
+  visualization designed for the {Gephi} software.
+\newblock {\em PloS one}, 9(6).
 
-\bibitem[Jatowt et~al., 2007]{jatowt_detecting_2007}
-Jatowt, A., Kawai, Y., and Tanaka, K. (2007).
+\bibitem[Jatowt \emph{et~al.}, 2007]{jatowt_detecting_2007}
+\bgroup\fonteauteurs\bgroup Jatowt\egroup\egroup{}, A.,
+  \bgroup\fonteauteurs\bgroup Kawai\egroup\egroup{}, Y. et
+  \bgroup\fonteauteurs\bgroup Tanaka\egroup\egroup{}, K. (2007).
 \newblock Detecting age of page content.
-\newblock In {\em Proceedings of the 9th annual {ACM} international workshop on
-  {Web} information and data management}, pages 137--144. ACM.
+\newblock \emph{In} {\em Proceedings of the 9th annual {ACM} international
+  workshop on {Web} information and data management}, pages 137--144. ACM.
 
 \bibitem[Kahle, 1997]{kahle_preserving_1997}
-Kahle, B. (1997).
+\bgroup\fonteauteurs\bgroup Kahle\egroup\egroup{}, B. (1997).
 \newblock Preserving the {Internet}.
-\newblock {\em Scientific American}, 276:82--83.
+\newblock {\em Scientific American}, 276\string:\penalty500\relax 82--83.
 
-\bibitem[Kanhabua and Nørv{\textbackslash}a~ag, 2009]{kanhabua_using_2009}
-Kanhabua, N. and Nørv{\textbackslash}a~ag, K. (2009).
+\bibitem[Kanhabua et Nørv{\textbackslash}a~ag, 2009]{kanhabua_using_2009}
+\bgroup\fonteauteurs\bgroup Kanhabua\egroup\egroup{}, N. et
+  \bgroup\fonteauteurs\bgroup Nørv{\textbackslash}a~ag\egroup\egroup{}, K.
+  (2009).
 \newblock Using temporal language models for document dating.
-\newblock In {\em Joint {European} {Conference} on {Machine} {Learning} and
-  {Knowledge} {Discovery} in {Databases}}, pages 738--741. Springer.
+\newblock \emph{In} {\em Joint {European} {Conference} on {Machine} {Learning}
+  and {Knowledge} {Discovery} in {Databases}}, pages 738--741. Springer.
 
 \bibitem[Keren, 2006]{keren_blogosphere:_2006}
-Keren, M. (2006).
+\bgroup\fonteauteurs\bgroup Keren\egroup\egroup{}, M. (2006).
 \newblock {\em Blogosphere: {The} new political arena}.
 \newblock Lexington Books.
 
 \bibitem[Ketelaar, 2006]{ketelaar_de_2006}
-Ketelaar, E. (2006).
+\bgroup\fonteauteurs\bgroup Ketelaar\egroup\egroup{}, E. (2006).
 \newblock ({Dé}) {Construire} l'archive.
-\newblock {\em Matériaux pour l’histoire de notre temps}, (2):65--70.
+\newblock {\em Matériaux pour l’histoire de notre temps},
+  (2)\string:\penalty500\relax 65--70.
 
 \bibitem[Khondker, 2011]{khondker_role_2011}
-Khondker, H.~H. (2011).
+\bgroup\fonteauteurs\bgroup Khondker\egroup\egroup{}, H.~H. (2011).
 \newblock Role of the new media in the {Arab} {Spring}.
-\newblock {\em Globalizations}, 8(5):675--679.
+\newblock {\em Globalizations}, 8(5)\string:\penalty500\relax 675--679.
 
-\bibitem[Khoury et~al., 2007]{khoury_efficient_2007}
-Khoury, I., El-Mawas, R.~M., El-Rawas, O., Mounayar, E.~F., and Artail, H.
-  (2007).
+\bibitem[Khoury \emph{et~al.}, 2007]{khoury_efficient_2007}
+\bgroup\fonteauteurs\bgroup Khoury\egroup\egroup{}, I.,
+  \bgroup\fonteauteurs\bgroup El-Mawas\egroup\egroup{}, R.~M.,
+  \bgroup\fonteauteurs\bgroup El-Rawas\egroup\egroup{}, O.,
+  \bgroup\fonteauteurs\bgroup Mounayar\egroup\egroup{}, E.~F. et
+  \bgroup\fonteauteurs\bgroup Artail\egroup\egroup{}, H. (2007).
 \newblock An {Efficient} {Web} {Page} {Change} {Detection} {System} {Based} on
   an {Optimized} {Hungarian} {Algorithm}.
 \newblock {\em IEEE Transactions on Knowledge and Data Engineering},
-  19(5):599--613.
+  19(5)\string:\penalty500\relax 599--613.
 
 \bibitem[Khouzaimi, 2015]{khouzaimi_e-diasporas_2015}
-Khouzaimi, J. (2015).
+\bgroup\fonteauteurs\bgroup Khouzaimi\egroup\egroup{}, J. (2015).
 \newblock e-{Diasporas} : {Réalisation} et {Interprétation} du corpus
   marocain.
 
-\bibitem[Kimpton and Ubois, 2006]{kimpton_year-by-year:_2006}
-Kimpton, M. and Ubois, J. (2006).
+\bibitem[Kimpton et Ubois, 2006]{kimpton_year-by-year:_2006}
+\bgroup\fonteauteurs\bgroup Kimpton\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Ubois\egroup\egroup{}, J. (2006).
 \newblock Year-by-year: from an archive of the {Internet} to an archive on the
   {Internet}.
-\newblock In {\em Web archiving}, pages 201--212. Springer.
+\newblock \emph{In} {\em Web archiving}, pages 201--212. Springer.
 
 \bibitem[Koehler, 1999]{koehler_analysis_1999}
-Koehler, W. (1999).
+\bgroup\fonteauteurs\bgroup Koehler\egroup\egroup{}, W. (1999).
 \newblock An analysis of web page and web site constancy and permanence.
 \newblock {\em Journal of the Association for Information Science and
-  Technology}, 50(2):162.
+  Technology}, 50(2)\string:\penalty500\relax 162.
 
-\bibitem[Koehler and {others}, 2004]{koehler_longitudinal_2004}
-Koehler, W. and {others} (2004).
+\bibitem[Koehler et {others}, 2004]{koehler_longitudinal_2004}
+\bgroup\fonteauteurs\bgroup Koehler\egroup\egroup{}, W. et
+  \bgroup\fonteauteurs\bgroup {others}\egroup\egroup{} (2004).
 \newblock A longitudinal study of {Web} pages continued: a consideration of
   document persistence.
-\newblock {\em Information Research}, 9(2):9--2.
+\newblock {\em Information Research}, 9(2)\string:\penalty500\relax 9--2.
 
-\bibitem[Kohlschütter et~al., 2010]{kohlschutter_boilerplate_2010}
-Kohlschütter, C., Fankhauser, P., and Nejdl, W. (2010).
+\bibitem[Kohlschütter \emph{et~al.}, 2010]{kohlschutter_boilerplate_2010}
+\bgroup\fonteauteurs\bgroup Kohlschütter\egroup\egroup{}, C.,
+  \bgroup\fonteauteurs\bgroup Fankhauser\egroup\egroup{}, P. et
+  \bgroup\fonteauteurs\bgroup Nejdl\egroup\egroup{}, W. (2010).
 \newblock Boilerplate detection using shallow text features.
-\newblock In {\em Proceedings of the third {ACM} international conference on
-  {Web} search and data mining}, pages 441--450. ACM.
+\newblock \emph{In} {\em Proceedings of the third {ACM} international
+  conference on {Web} search and data mining}, pages 441--450. ACM.
 
 \bibitem[Koukoutsaki-Monnier,
   2012]{koukoutsaki-monnier_deterritorialising_2012}
-Koukoutsaki-Monnier, A. (2012).
+\bgroup\fonteauteurs\bgroup Koukoutsaki-Monnier\egroup\egroup{}, A. (2012).
 \newblock Deterritorialising the nation? {Internet} and the politics of the
   {Greek}-{American} diaspora.
-\newblock {\em Nations and Nationalism}, 18(4):663--683.
+\newblock {\em Nations and Nationalism}, 18(4)\string:\penalty500\relax
+  663--683.
 
 \bibitem[Kumar, 2018]{kumar_rerouting_2018}
-Kumar, P. (2018).
+\bgroup\fonteauteurs\bgroup Kumar\egroup\egroup{}, P. (2018).
 \newblock Rerouting the narrative: {Mapping} the online identity politics of
   the {Tamil} and {Palestinian} diaspora.
-\newblock {\em Social Media+ Society}, 4(1):2056305118764429.
+\newblock {\em Social Media+ Society}, 4(1).
 
-\bibitem[Kumar et~al., 2000]{kumar_stochastic_2000}
-Kumar, R., Raghavan, P., Rajagopalan, S., Sivakumar, D., Tomkins, A., and
-  Upfal, E. (2000).
+\bibitem[Kumar \emph{et~al.}, 2000]{kumar_stochastic_2000}
+\bgroup\fonteauteurs\bgroup Kumar\egroup\egroup{}, R.,
+  \bgroup\fonteauteurs\bgroup Raghavan\egroup\egroup{}, P.,
+  \bgroup\fonteauteurs\bgroup Rajagopalan\egroup\egroup{}, S.,
+  \bgroup\fonteauteurs\bgroup Sivakumar\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Tomkins\egroup\egroup{}, A. et
+  \bgroup\fonteauteurs\bgroup Upfal\egroup\egroup{}, E. (2000).
 \newblock Stochastic models for the web graph.
-\newblock In {\em Foundations of {Computer} {Science}, 2000. {Proceedings}.
-  41st {Annual} {Symposium} on}, pages 57--65. IEEE.
+\newblock \emph{In} {\em Foundations of {Computer} {Science}, 2000.
+  {Proceedings}. 41st {Annual} {Symposium} on}, pages 57--65. IEEE.
 
-\bibitem[Kwak et~al., 2010]{kwak_what_2010}
-Kwak, H., Lee, C., Park, H., and Moon, S. (2010).
+\bibitem[Kwak \emph{et~al.}, 2010]{kwak_what_2010}
+\bgroup\fonteauteurs\bgroup Kwak\egroup\egroup{}, H.,
+  \bgroup\fonteauteurs\bgroup Lee\egroup\egroup{}, C.,
+  \bgroup\fonteauteurs\bgroup Park\egroup\egroup{}, H. et
+  \bgroup\fonteauteurs\bgroup Moon\egroup\egroup{}, S. (2010).
 \newblock What is {Twitter}, a social network or a news media?
-\newblock In {\em Proceedings of the 19th international conference on {World}
-  wide web}, pages 591--600. ACM.
+\newblock \emph{In} {\em Proceedings of the 19th international conference on
+  {World} wide web}, pages 591--600. ACM.
 
 \bibitem[Ladiray, 1997]{ladiray_laed_1997}
-Ladiray, D. (1997).
+\bgroup\fonteauteurs\bgroup Ladiray\egroup\egroup{}, D. (1997).
 \newblock L’{AED}, analyse exploratoire des données.
-\newblock {\em Courrier des statistique, 83}, 84:3--6.
+\newblock {\em Courrier des statistique, 83}, 84\string:\penalty500\relax 3--6.
 
-\bibitem[Laflaquière et~al., 2005]{laflaquiere_archiver_2005}
-Laflaquière, J., Gangloff, S., Scopsi, C., Guignard, T., Soultanova, R.,
-  Salzbrunn, M., Beaujouan, V., and Diminescu, D. (2005).
+\bibitem[Laflaquière \emph{et~al.}, 2005]{laflaquiere_archiver_2005}
+\bgroup\fonteauteurs\bgroup Laflaquière\egroup\egroup{}, J.,
+  \bgroup\fonteauteurs\bgroup Gangloff\egroup\egroup{}, S.,
+  \bgroup\fonteauteurs\bgroup Scopsi\egroup\egroup{}, C.,
+  \bgroup\fonteauteurs\bgroup Guignard\egroup\egroup{}, T.,
+  \bgroup\fonteauteurs\bgroup Soultanova\egroup\egroup{}, R.,
+  \bgroup\fonteauteurs\bgroup Salzbrunn\egroup\egroup{}, M.,
+  \bgroup\fonteauteurs\bgroup Beaujouan\egroup\egroup{}, V. et
+  \bgroup\fonteauteurs\bgroup Diminescu\egroup\egroup{}, D. (2005).
 \newblock Archiver le {Web} sur les migrations: quelles approches techniques et
   scientifiques? {Rapport} d'étape.
-\newblock {\em Migrance}, (23):72--93.
+\newblock {\em Migrance}, (23)\string:\penalty500\relax 72--93.
 
-\bibitem[Lawrence and Giles, 1998]{lawrence_searching_1998}
-Lawrence, S. and Giles, C.~L. (1998).
+\bibitem[Lawrence et Giles, 1998]{lawrence_searching_1998}
+\bgroup\fonteauteurs\bgroup Lawrence\egroup\egroup{}, S. et
+  \bgroup\fonteauteurs\bgroup Giles\egroup\egroup{}, C.~L. (1998).
 \newblock Searching the world wide web.
-\newblock {\em Science}, 280(5360):98--100.
+\newblock {\em Science}, 280(5360)\string:\penalty500\relax 98--100.
 
-\bibitem[Lawrence and Giles, 2000]{lawrence_accessibility_2000}
-Lawrence, S. and Giles, C.~L. (2000).
+\bibitem[Lawrence et Giles, 2000]{lawrence_accessibility_2000}
+\bgroup\fonteauteurs\bgroup Lawrence\egroup\egroup{}, S. et
+  \bgroup\fonteauteurs\bgroup Giles\egroup\egroup{}, C.~L. (2000).
 \newblock Accessibility of information on the web.
-\newblock {\em intelligence}, 11(1):32--39.
+\newblock {\em intelligence}, 11(1)\string:\penalty500\relax 32--39.
 
-\bibitem[Lazard and Mounier-Kuhn, 2016]{lazard_histoire_2016}
-Lazard, E. and Mounier-Kuhn, P.-E. (2016).
+\bibitem[Lazard et Mounier-Kuhn, 2016]{lazard_histoire_2016}
+\bgroup\fonteauteurs\bgroup Lazard\egroup\egroup{}, E. et
+  \bgroup\fonteauteurs\bgroup Mounier-Kuhn\egroup\egroup{}, P.-E. (2016).
 \newblock {\em Histoire illustrée de l'informatique: {Histoire} illustrée de
   l'informatique}.
 \newblock EDP sciences.
 
 \bibitem[Leclerc, 2012]{leclerc_cyberespace_2012}
-Leclerc, E. (2012).
+\bgroup\fonteauteurs\bgroup Leclerc\egroup\egroup{}, E. (2012).
 \newblock Le cyberespace de la diaspora indienne.
 
 \bibitem[Legrady, 2005]{legrady_making_2005}
-Legrady, G. (2005).
-\newblock Making visible the invisible : {Seattle} library data flow
-  visualization.
-\newblock {\em Digital Culture \& Heritage}.
+\bgroup\fonteauteurs\bgroup Legrady\egroup\egroup{}, G. (2005).
+\newblock Making visible the invisible.
+\newblock {\em Seattle Library Data Flow Visualization. In: Digital Culture and
+  Heritage. Proceedings of ICHIM05 Sept}, pages 21--23.
 
 \bibitem[Leroi-Gourham, 1984]{leroi-gourham_art_1984}
-Leroi-Gourham, A. (1984).
+\bgroup\fonteauteurs\bgroup Leroi-Gourham\egroup\egroup{}, A. (1984).
 \newblock {\em L'{Art} des cavernes: {Atlas} des grottes ornées
   paléolithiques françaises ({Atlas} archéologiques de la {France})
   ({French} {Edition})}.
 \newblock Impr. nationale.
 
 \bibitem[Leroi-Gourhan, 1964]{leroi-gourhan_geste_1964}
-Leroi-Gourhan, A. (1964).
+\bgroup\fonteauteurs\bgroup Leroi-Gourhan\egroup\egroup{}, A. (1964).
 \newblock {\em Le geste et la parole}.
 \newblock Albin Michel.
 
-\bibitem[Licklider and Taylor, 1968]{licklider_computer_1968}
-Licklider, J.~C. and Taylor, R.~W. (1968).
+\bibitem[Licklider et Taylor, 1968]{licklider_computer_1968}
+\bgroup\fonteauteurs\bgroup Licklider\egroup\egroup{}, J.~C. et
+  \bgroup\fonteauteurs\bgroup Taylor\egroup\egroup{}, R.~W. (1968).
 \newblock The computer as a communication device.
-\newblock {\em Science and technology}, 76(2):1--3.
+\newblock {\em Science and technology}, 76(2)\string:\penalty500\relax 1--3.
 
-\bibitem[Lim and Ng, 2001]{lim_automated_2001}
-Lim, S.-J. and Ng, Y.-K. (2001).
+\bibitem[Lim et Ng, 2001]{lim_automated_2001}
+\bgroup\fonteauteurs\bgroup Lim\egroup\egroup{}, S.-J. et
+  \bgroup\fonteauteurs\bgroup Ng\egroup\egroup{}, Y.-K. (2001).
 \newblock An automated change-detection algorithm for {HTML} documents based on
   semantic hierarchies.
-\newblock In {\em Data {Engineering}, 2001. {Proceedings}. 17th {International}
-  {Conference} on}, pages 303--312. IEEE.
+\newblock \emph{In} {\em Data {Engineering}, 2001. {Proceedings}. 17th
+  {International} {Conference} on}, pages 303--312. IEEE.
 
-\bibitem[Liu et~al., 2000]{liu_webcq-detecting_2000}
-Liu, L., Pu, C., and Tang, W. (2000).
+\bibitem[Liu \emph{et~al.}, 2000]{liu_webcq-detecting_2000}
+\bgroup\fonteauteurs\bgroup Liu\egroup\egroup{}, L.,
+  \bgroup\fonteauteurs\bgroup Pu\egroup\egroup{}, C. et
+  \bgroup\fonteauteurs\bgroup Tang\egroup\egroup{}, W. (2000).
 \newblock {WebCQ}-detecting and delivering information changes on the web.
-\newblock In {\em Proceedings of the ninth international conference on
+\newblock \emph{In} {\em Proceedings of the ninth international conference on
   {Information} and knowledge management}, pages 512--519. ACM.
 
 \bibitem[Lobbé, 2018]{lobbe_concevoir_2018}
-Lobbé, J. (2018).
+\bgroup\fonteauteurs\bgroup Lobbé\egroup\egroup{}, J. (2018).
 \newblock {\em Concevoir des produits pour tous et par tous, co-créer la
   situation de vie}.
 \newblock {PhD} {Thesis}, Université de Technologie de Belfort Montbéliard.
 
-\bibitem[Lotan et~al., 2011]{lotan_arab_2011}
-Lotan, G., Graeff, E., Ananny, M., Gaffney, D., Pearce, I., and {others}
-  (2011).
+\bibitem[Lotan \emph{et~al.}, 2011]{lotan_arab_2011}
+\bgroup\fonteauteurs\bgroup Lotan\egroup\egroup{}, G.,
+  \bgroup\fonteauteurs\bgroup Graeff\egroup\egroup{}, E.,
+  \bgroup\fonteauteurs\bgroup Ananny\egroup\egroup{}, M.,
+  \bgroup\fonteauteurs\bgroup Gaffney\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Pearce\egroup\egroup{}, I. et
+  \bgroup\fonteauteurs\bgroup {others}\egroup\egroup{} (2011).
 \newblock The {Arab} {Spring}{\textbar} the revolutions were tweeted:
   {Information} flows during the 2011 {Tunisian} and {Egyptian} revolutions.
-\newblock {\em International journal of communication}, 5:31.
+\newblock {\em International journal of communication},
+  5\string:\penalty500\relax 31.
 
 \bibitem[Marchandise, 2014]{marchandise_facebook_2014}
-Marchandise, S. (2014).
+\bgroup\fonteauteurs\bgroup Marchandise\egroup\egroup{}, S. (2014).
 \newblock Le {Facebook} des étudiants marocains. {Territoire} relationnel et
   territoire des possibles.
 \newblock {\em Revue européenne des migrations internationales}, 30(3-4).
 
-\bibitem[Marz and Warren, 2015]{marz_big_2015}
-Marz, N. and Warren, J. (2015).
+\bibitem[Marz et Warren, 2015]{marz_big_2015}
+\bgroup\fonteauteurs\bgroup Marz\egroup\egroup{}, N. et
+  \bgroup\fonteauteurs\bgroup Warren\egroup\egroup{}, J. (2015).
 \newblock {\em Big {Data}: {Principles} and best practices of scalable realtime
   data systems}.
 \newblock Manning Publications Co.
 
 \bibitem[Masanès, 2006]{masanes_web_2006}
-Masanès, J. (2006).
-\newblock {\em Web {Archiving}}.
-\newblock Springer, New York.
+\bgroup\fonteauteurs\bgroup Masanès\egroup\egroup{}, J. (2006).
+\newblock Web archiving: issues and methods.
+\newblock \emph{In} {\em Web {Archiving}}, pages 1--53. Springer.
 
 \bibitem[Masanés, 2006]{masanes_archiving_2006}
-Masanés, J. (2006).
+\bgroup\fonteauteurs\bgroup Masanés\egroup\egroup{}, J. (2006).
 \newblock Archiving the hidden web.
-\newblock In {\em Web {Archiving}}, pages 115--129. Springer.
+\newblock \emph{In} {\em Web {Archiving}}, pages 115--129. Springer.
 
-\bibitem[McDonnell et~al., 1999]{mcdonnell_cataloging_1999}
-McDonnell, J.~P., Koehler~Jr, W.~C., and Carroll, B.~C. (1999).
+\bibitem[McDonnell \emph{et~al.}, 1999]{mcdonnell_cataloging_1999}
+\bgroup\fonteauteurs\bgroup McDonnell\egroup\egroup{}, J.~P.,
+  \bgroup\fonteauteurs\bgroup Koehler~Jr\egroup\egroup{}, W.~C. et
+  \bgroup\fonteauteurs\bgroup Carroll\egroup\egroup{}, B.~C. (1999).
 \newblock Cataloging {Challenges} in an {Area} {Studies} {Virtual} {Library}
   {Catalog} ({ASVLC}) {Results} of a {Case} {Study}.
-\newblock {\em Journal of Internet Cataloging}, 2(2):15--42.
+\newblock {\em Journal of Internet Cataloging}, 2(2)\string:\penalty500\relax
+  15--42.
 
-\bibitem[Michailidou et~al., 2008]{michailidou_visual_2008}
-Michailidou, E., Harper, S., and Bechhofer, S. (2008).
+\bibitem[Michailidou \emph{et~al.}, 2008]{michailidou_visual_2008}
+\bgroup\fonteauteurs\bgroup Michailidou\egroup\egroup{}, E.,
+  \bgroup\fonteauteurs\bgroup Harper\egroup\egroup{}, S. et
+  \bgroup\fonteauteurs\bgroup Bechhofer\egroup\egroup{}, S. (2008).
 \newblock Visual {Complexity} and {Aesthetic} {Perception} of {Web} {Pages}.
-\newblock In {\em Proceedings of the 26th {Annual} {ACM} {International}
+\newblock \emph{In} {\em Proceedings of the 26th {Annual} {ACM} {International}
   {Conference} on {Design} of {Communication}}, {SIGDOC} '08, pages 215--224,
   New York, NY, USA. ACM.
 
-\bibitem[Michel et~al., 2011]{michel_quantitative_2011}
-Michel, J.-B., Shen, Y.~K., Aiden, A.~P., Veres, A., Gray, M.~K., Pickett,
-  J.~P., Hoiberg, D., Clancy, D., Norvig, P., Orwant, J., and {others} (2011).
+\bibitem[Michel \emph{et~al.}, 2011]{michel_quantitative_2011}
+\bgroup\fonteauteurs\bgroup Michel\egroup\egroup{}, J.-B.,
+  \bgroup\fonteauteurs\bgroup Shen\egroup\egroup{}, Y.~K.,
+  \bgroup\fonteauteurs\bgroup Aiden\egroup\egroup{}, A.~P.,
+  \bgroup\fonteauteurs\bgroup Veres\egroup\egroup{}, A.,
+  \bgroup\fonteauteurs\bgroup Gray\egroup\egroup{}, M.~K.,
+  \bgroup\fonteauteurs\bgroup Pickett\egroup\egroup{}, J.~P.,
+  \bgroup\fonteauteurs\bgroup Hoiberg\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Clancy\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Norvig\egroup\egroup{}, P.,
+  \bgroup\fonteauteurs\bgroup Orwant\egroup\egroup{}, J. et
+  \bgroup\fonteauteurs\bgroup {others}\egroup\egroup{} (2011).
 \newblock Quantitative analysis of culture using millions of digitized books.
-\newblock {\em science}, 331(6014):176--182.
+\newblock {\em science}, 331(6014)\string:\penalty500\relax 176--182.
 
 \bibitem[Mitchell, 2015]{mitchell_web_2015}
-Mitchell, R. (2015).
+\bgroup\fonteauteurs\bgroup Mitchell\egroup\egroup{}, R. (2015).
 \newblock {\em Web scraping with {Python}: collecting data from the modern
   web}.
 \newblock " O'Reilly Media, Inc.".
 
-\bibitem[Mohr et~al., 2004]{mohr_introduction_2004}
-Mohr, G., Stack, M., Ranitovic, I., Avery, D., and Kimpton, M. (2004).
+\bibitem[Mohr \emph{et~al.}, 2004]{mohr_introduction_2004}
+\bgroup\fonteauteurs\bgroup Mohr\egroup\egroup{}, G.,
+  \bgroup\fonteauteurs\bgroup Stack\egroup\egroup{}, M.,
+  \bgroup\fonteauteurs\bgroup Ranitovic\egroup\egroup{}, I.,
+  \bgroup\fonteauteurs\bgroup Avery\egroup\egroup{}, D. et
+  \bgroup\fonteauteurs\bgroup Kimpton\egroup\egroup{}, M. (2004).
 \newblock An {Introduction} to {Heritrix} {An} open source archival quality web
   crawler.
-\newblock In {\em In {IWAW}’04, 4th {International} {Web} {Archiving}
+\newblock \emph{In} {\em In {IWAW}’04, 4th {International} {Web} {Archiving}
   {Workshop}}. Citeseer.
 
 \bibitem[Morozov, 2013]{morozov_save_2013}
-Morozov, E. (2013).
+\bgroup\fonteauteurs\bgroup Morozov\egroup\egroup{}, E. (2013).
 \newblock {\em To save everything, click here: {Technology}, solutionism, and
   the urge to fix problems that don’t exist}.
 \newblock Penguin UK.
 
 \bibitem[Morsel, 2016]{morsel_traces?_2016}
-Morsel, J. (2016).
+\bgroup\fonteauteurs\bgroup Morsel\egroup\egroup{}, J. (2016).
 \newblock Traces? {Quelles} traces? {Réflexions} pour une histoire non
   passéiste.
-\newblock {\em Revue historique}, (4):813--868.
+\newblock {\em Revue historique}, (4)\string:\penalty500\relax 813--868.
 
 \bibitem[Nedelcu, 2003]{nedelcu_e-communautarisme_2003}
-Nedelcu, M. (2003).
+\bgroup\fonteauteurs\bgroup Nedelcu\egroup\egroup{}, M. (2003).
 \newblock E-communautarisme ou l’impact de l’internet sur le quotidien des
   migrants. {Les} nouvelles migrations des professionnels roumains au {Canada}.
 \newblock {\em Visibles mais peu nombreux. Les circulations migratoires
   roumaines}, pages 325--339.
 
 \bibitem[Nelson, 1967]{nelson_getting_1967}
-Nelson, T.~H. (1967).
+\bgroup\fonteauteurs\bgroup Nelson\egroup\egroup{}, T.~H. (1967).
 \newblock Getting it out of our system.
 \newblock {\em Information retrieval: A critical review}, pages 191--210.
 
-\bibitem[Nunes et~al., 2007]{nunes_using_2007}
-Nunes, S., Ribeiro, C., and David, G. (2007).
+\bibitem[Nunes \emph{et~al.}, 2007]{nunes_using_2007}
+\bgroup\fonteauteurs\bgroup Nunes\egroup\egroup{}, S.,
+  \bgroup\fonteauteurs\bgroup Ribeiro\egroup\egroup{}, C. et
+  \bgroup\fonteauteurs\bgroup David\egroup\egroup{}, G. (2007).
 \newblock Using neighbors to date web documents.
-\newblock In {\em Proceedings of the 9th annual {ACM} international workshop on
-  {Web} information and data management}, pages 129--136. ACM.
+\newblock \emph{In} {\em Proceedings of the 9th annual {ACM} international
+  workshop on {Web} information and data management}, pages 129--136. ACM.
 
-\bibitem[Oita and Senellart, 2010]{oita_archiving_2010}
-Oita, M. and Senellart, P. (2010).
+\bibitem[Oita et Senellart, 2010]{oita_archiving_2010}
+\bgroup\fonteauteurs\bgroup Oita\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Senellart\egroup\egroup{}, P. (2010).
 \newblock Archiving data objects using {Web} feeds.
-\newblock In {\em International {Workshop} on {Web} {Archiving}}.
+\newblock \emph{In} {\em International {Workshop} on {Web} {Archiving}}.
 
-\bibitem[Oita and Senellart, 2015]{oita_forest:_2015}
-Oita, M. and Senellart, P. (2015).
+\bibitem[Oita et Senellart, 2015]{oita_forest:_2015}
+\bgroup\fonteauteurs\bgroup Oita\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Senellart\egroup\egroup{}, P. (2015).
 \newblock {FOREST}: {Focused} object retrieval by exploiting significant tag
   paths.
-\newblock In {\em Proceedings of the 18th {International} {Workshop} on {Web}
-  and {Databases}}, pages 55--61. ACM.
+\newblock \emph{In} {\em Proceedings of the 18th {International} {Workshop} on
+  {Web} and {Databases}}, pages 55--61. ACM.
 
-\bibitem[Page et~al., 1999]{page_pagerank_1999}
-Page, L., Brin, S., Motwani, R., and Winograd, T. (1999).
+\bibitem[Page \emph{et~al.}, 1999]{page_pagerank_1999}
+\bgroup\fonteauteurs\bgroup Page\egroup\egroup{}, L.,
+  \bgroup\fonteauteurs\bgroup Brin\egroup\egroup{}, S.,
+  \bgroup\fonteauteurs\bgroup Motwani\egroup\egroup{}, R. et
+  \bgroup\fonteauteurs\bgroup Winograd\egroup\egroup{}, T. (1999).
 \newblock The {PageRank} {Citation} {Ranking}: {Bringing} {Order} to the {Web}.
 \newblock Technical {Report} 1999-66, Stanford InfoLab.
 
 \bibitem[Paloque-Bergès, 2018]{paloque-berges_quest-ce_2018}
-Paloque-Bergès, C. (2018).
+\bgroup\fonteauteurs\bgroup Paloque-Bergès\egroup\egroup{}, C. (2018).
 \newblock {\em Qu’est-ce qu’un forum internet?: {Une} généalogie
   historique au prisme des cultures savantes numériques}.
 \newblock OpenEdition Press.
 
-\bibitem[Pandey and Olston, 2005]{pandey_user-centric_2005}
-Pandey, S. and Olston, C. (2005).
+\bibitem[Pandey et Olston, 2005]{pandey_user-centric_2005}
+\bgroup\fonteauteurs\bgroup Pandey\egroup\egroup{}, S. et
+  \bgroup\fonteauteurs\bgroup Olston\egroup\egroup{}, C. (2005).
 \newblock User-centric web crawling.
-\newblock In {\em Proceedings of the 14th international conference on {World}
-  {Wide} {Web}}, pages 401--411. ACM.
+\newblock \emph{In} {\em Proceedings of the 14th international conference on
+  {World} {Wide} {Web}}, pages 401--411. ACM.
 
-\bibitem[Pant et~al., 2004]{pant_crawling_2004}
-Pant, G., Srinivasan, P., and Menczer, F. (2004).
+\bibitem[Pant \emph{et~al.}, 2004]{pant_crawling_2004}
+\bgroup\fonteauteurs\bgroup Pant\egroup\egroup{}, G.,
+  \bgroup\fonteauteurs\bgroup Srinivasan\egroup\egroup{}, P. et
+  \bgroup\fonteauteurs\bgroup Menczer\egroup\egroup{}, F. (2004).
 \newblock Crawling the web.
-\newblock In {\em Web {Dynamics}}, pages 153--177. Springer.
+\newblock \emph{In} {\em Web {Dynamics}}, pages 153--177. Springer.
 
-\bibitem[Park and Thelwall, 2008]{park_developing_2008}
-Park, H.~W. and Thelwall, M. (2008).
+\bibitem[Park et Thelwall, 2008]{park_developing_2008}
+\bgroup\fonteauteurs\bgroup Park\egroup\egroup{}, H.~W. et
+  \bgroup\fonteauteurs\bgroup Thelwall\egroup\egroup{}, M. (2008).
 \newblock Developing network indicators for ideological landscapes from the
   political blogosphere in {South} {Korea}.
-\newblock {\em Journal of computer-mediated communication}, 13(4):856--879.
+\newblock {\em Journal of computer-mediated communication},
+  13(4)\string:\penalty500\relax 856--879.
 
 \bibitem[Pasquier, 2018]{pasquier_classes_2018}
-Pasquier, D. (2018).
+\bgroup\fonteauteurs\bgroup Pasquier\egroup\egroup{}, D. (2018).
 \newblock Classes populaires en ligne: des «oubliés» de la recherche?
-\newblock {\em Réseaux}, (2):9--23.
+\newblock {\em Réseaux}, (2)\string:\penalty500\relax 9--23.
 
-\bibitem[Paugam and Giorgetti, 2013]{paugam_pauvres_2013}
-Paugam, S. and Giorgetti, C. (2013).
+\bibitem[Paugam et Giorgetti, 2013]{paugam_pauvres_2013}
+\bgroup\fonteauteurs\bgroup Paugam\egroup\egroup{}, S. et
+  \bgroup\fonteauteurs\bgroup Giorgetti\egroup\egroup{}, C. (2013).
 \newblock Des pauvres à la bibliothèque.
 \newblock {\em Enquête au Centre Pompidou. Paris}.
 
 \bibitem[Pillant, 2016]{pillant_en_2016}
-Pillant, L. (2016).
+\bgroup\fonteauteurs\bgroup Pillant\egroup\egroup{}, L. (2016).
 \newblock En {Grèce}, une crise migratoire chronique.
-\newblock {\em Plein droit}, (4):31--34.
+\newblock {\em Plein droit}, (4)\string:\penalty500\relax 31--34.
 
-\bibitem[Pop et~al., 2010]{pop_archiving_2010}
-Pop, R., Vasile, G., and Masanes, J. (2010).
+\bibitem[Pop \emph{et~al.}, 2010]{pop_archiving_2010}
+\bgroup\fonteauteurs\bgroup Pop\egroup\egroup{}, R.,
+  \bgroup\fonteauteurs\bgroup Vasile\egroup\egroup{}, G. et
+  \bgroup\fonteauteurs\bgroup Masanes\egroup\egroup{}, J. (2010).
 \newblock Archiving web video.
-\newblock In {\em International {Web} {Archiving} {Workshop} {IWAW} 2010}.
+\newblock \emph{In} {\em International {Web} {Archiving} {Workshop} {IWAW}
+  2010}.
 
 \bibitem[Risam, 2018]{risam_now_2018}
-Risam, R. (2018).
+\bgroup\fonteauteurs\bgroup Risam\egroup\egroup{}, R. (2018).
 \newblock Now you see them: {Self}-representation and the refugee selfie.
-\newblock {\em Popular Communication}, 16(1):58--71.
+\newblock {\em Popular Communication}, 16(1)\string:\penalty500\relax 58--71.
 
-\bibitem[Risse et~al., 2014]{risse_arcomem_2014}
-Risse, T., Demidova, E., Dietze, S., Peters, W., Papailiou, N., Doka, K.,
-  Stavrakas, Y., Plachouras, V., Senellart, P., Carpentier, F., Mantrach, A.,
-  Cautis, B., Siehndel, P., and Spiliotopoulos, D. (2014).
-\newblock The {ARCOMEM} {Architecture} for {Social}- and {Semantic}-{Driven}
-  {Web} {Archiving}.
-\newblock {\em Future Internet}, 6(4):688--716.
+\bibitem[Risse \emph{et~al.}, 2014]{risse_arcomem_2014}
+\bgroup\fonteauteurs\bgroup Risse\egroup\egroup{}, T.,
+  \bgroup\fonteauteurs\bgroup Demidova\egroup\egroup{}, E.,
+  \bgroup\fonteauteurs\bgroup Dietze\egroup\egroup{}, S.,
+  \bgroup\fonteauteurs\bgroup Peters\egroup\egroup{}, W.,
+  \bgroup\fonteauteurs\bgroup Papailiou\egroup\egroup{}, N.,
+  \bgroup\fonteauteurs\bgroup Doka\egroup\egroup{}, K.,
+  \bgroup\fonteauteurs\bgroup Stavrakas\egroup\egroup{}, Y.,
+  \bgroup\fonteauteurs\bgroup Plachouras\egroup\egroup{}, V.,
+  \bgroup\fonteauteurs\bgroup Senellart\egroup\egroup{}, P.,
+  \bgroup\fonteauteurs\bgroup Carpentier\egroup\egroup{}, F. et
+  \bgroup\fonteauteurs\bgroup {others}\egroup\egroup{} (2014).
+\newblock The {ARCOMEM} architecture for social-and semantic-driven web
+  archiving.
+\newblock {\em future internet}, 6(4)\string:\penalty500\relax 688--716.
 
-\bibitem[Robertson et~al., 2018]{robertson_auditing_2018}
-Robertson, R.~E., Lazer, D., and Wilson, C. (2018).
+\bibitem[Robertson \emph{et~al.}, 2018]{robertson_auditing_2018}
+\bgroup\fonteauteurs\bgroup Robertson\egroup\egroup{}, R.~E.,
+  \bgroup\fonteauteurs\bgroup Lazer\egroup\egroup{}, D. et
+  \bgroup\fonteauteurs\bgroup Wilson\egroup\egroup{}, C. (2018).
 \newblock Auditing the {Personalization} and {Composition} of
   {Politically}-{Related} {Search} {Engine} {Results} {Pages}.
-\newblock In {\em Proceedings of the 2018 {World} {Wide} {Web} {Conference} on
-  {World} {Wide} {Web}}, pages 955--965. International World Wide Web
-  Conferences Steering Committee.
+\newblock \emph{In} {\em Proceedings of the 2018 {World} {Wide} {Web}
+  {Conference} on {World} {Wide} {Web}}, pages 955--965. International World
+  Wide Web Conferences Steering Committee.
 
-\bibitem[Rocco et~al., 2003]{rocco_page_2003}
-Rocco, D., Buttler, D., and Liu, L. (2003).
+\bibitem[Rocco \emph{et~al.}, 2003]{rocco_page_2003}
+\bgroup\fonteauteurs\bgroup Rocco\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Buttler\egroup\egroup{}, D. et
+  \bgroup\fonteauteurs\bgroup Liu\egroup\egroup{}, L. (2003).
 \newblock Page digest for large-scale web services.
-\newblock In {\em E-{Commerce}, 2003. {CEC} 2003. {IEEE} {International}
+\newblock \emph{In} {\em E-{Commerce}, 2003. {CEC} 2003. {IEEE} {International}
   {Conference} on}, pages 381--390. IEEE.
 
 \bibitem[Rogers, 2009]{rogers_end_2009}
-Rogers, R. (2009).
+\bgroup\fonteauteurs\bgroup Rogers\egroup\egroup{}, R. (2009).
 \newblock {\em The end of the virtual: {Digital} methods}, volume 339.
 \newblock Amsterdam University Press.
 
-\bibitem[Rogers et~al., 2013]{rogers_national_2013}
-Rogers, R., Weltevrede, E., Borra, E., and Niederer, S. (2013).
+\bibitem[Rogers \emph{et~al.}, 2013]{rogers_national_2013}
+\bgroup\fonteauteurs\bgroup Rogers\egroup\egroup{}, R.,
+  \bgroup\fonteauteurs\bgroup Weltevrede\egroup\egroup{}, E.,
+  \bgroup\fonteauteurs\bgroup Borra\egroup\egroup{}, E. et
+  \bgroup\fonteauteurs\bgroup Niederer\egroup\egroup{}, S. (2013).
 \newblock National {Web} {Studies}.
 \newblock {\em A companion to new media dynamics}, pages 142--166.
 
-\bibitem[Rouvroy and Berns, 2013]{rouvroy_gouvernementalite_2013}
-Rouvroy, A. and Berns, T. (2013).
-\newblock Gouvernementalité algorithmique et perspectives d'émancipation:
-  {Le} disparate comme condition d'individuation par la relation ?
-\newblock {\em Réseaux}, 177(1):163.
+\bibitem[Rouvroy et Berns, 2013]{rouvroy_gouvernementalite_2013}
+\bgroup\fonteauteurs\bgroup Rouvroy\egroup\egroup{}, A. et
+  \bgroup\fonteauteurs\bgroup Berns\egroup\egroup{}, T. (2013).
+\newblock Gouvernementalité algorithmique et perspectives d'émancipation.
+\newblock {\em Réseaux}, (1)\string:\penalty500\relax 163--196.
 
-\bibitem[Russell and Schafer, 2014]{russell_shadow_2014}
-Russell, A.~L. and Schafer, V. (2014).
+\bibitem[Russell et Schafer, 2014]{russell_shadow_2014}
+\bgroup\fonteauteurs\bgroup Russell\egroup\egroup{}, A.~L. et
+  \bgroup\fonteauteurs\bgroup Schafer\egroup\egroup{}, V. (2014).
 \newblock In the {Shadow} of {ARPANET} and {Internet}: {Louis} {Pouzin} and the
   {Cyclades} {Network} in the 1970s.
-\newblock {\em Technology and Culture}, 55(4):880--907.
+\newblock {\em Technology and Culture}, 55(4)\string:\penalty500\relax
+  880--907.
 
-\bibitem[Saad et~al., 2011]{saad_coherence-oriented_2011}
-Saad, M.~B., Pehlivan, Z., and Gançarski, S. (2011).
+\bibitem[Saad \emph{et~al.}, 2011]{saad_coherence-oriented_2011}
+\bgroup\fonteauteurs\bgroup Saad\egroup\egroup{}, M.~B.,
+  \bgroup\fonteauteurs\bgroup Pehlivan\egroup\egroup{}, Z. et
+  \bgroup\fonteauteurs\bgroup Gançarski\egroup\egroup{}, S. (2011).
 \newblock Coherence-oriented crawling and navigation using patterns for web
   archives.
-\newblock In {\em International {Conference} on {Theory} and {Practice} of
-  {Digital} {Libraries}}, pages 421--433. Springer.
+\newblock \emph{In} {\em International {Conference} on {Theory} and {Practice}
+  of {Digital} {Libraries}}, pages 421--433. Springer.
 
 \bibitem[Sabancioglu, 2011]{sabancioglu_new_2011}
-Sabancioglu, M. (2011).
+\bgroup\fonteauteurs\bgroup Sabancioglu\egroup\egroup{}, M. (2011).
 \newblock New {Custom} for the {Old} {Village} {Interpreting} {History} through
   {Turkish} {Village} {Web}-{Sites}.
 
 \bibitem[Salmon, 2016]{salmon_29_2016}
-Salmon, J.-M. (2016).
+\bgroup\fonteauteurs\bgroup Salmon\egroup\egroup{}, J.-M. (2016).
 \newblock {\em 29 jours de révolution. {Histoire} du soulèvement tunisien, 17
   décembre 2010 - 14 janvier 2011}.
 \newblock Les Petits matins.
 
 \bibitem[Sayad, 1985]{sayad_du_1985}
-Sayad, A. (1985).
+\bgroup\fonteauteurs\bgroup Sayad\egroup\egroup{}, A. (1985).
 \newblock Du message oral au message sur cassette, la communication avec
   l'absent.
-\newblock {\em Actes de la recherche en sciences sociales}, 59(1):61--72.
+\newblock {\em Actes de la recherche en sciences sociales},
+  59(1)\string:\penalty500\relax 61--72.
 
 \bibitem[Sayad, 1999]{sayad_double_1999}
-Sayad, A. (1999).
+\bgroup\fonteauteurs\bgroup Sayad\egroup\egroup{}, A. (1999).
 \newblock La double absence.
 \newblock {\em Des illusions de l’émigré aux souffrances de l’immigré},
   327.
 
 \bibitem[Schafer, 2015]{schafer_part_2015}
-Schafer, V. (2015).
+\bgroup\fonteauteurs\bgroup Schafer\egroup\egroup{}, V. (2015).
 \newblock Part of a whole: {RENATER}, a twenty-year-old network within the
   {Internet}.
-\newblock {\em Information \& Culture}, 50(2):217--235.
+\newblock {\em Information \& Culture}, 50(2)\string:\penalty500\relax
+  217--235.
 
-\bibitem[Schafer and Thierry, 2016]{schafer_web_2016}
-Schafer, V. and Thierry, B.~G. (2016).
+\bibitem[Schafer et Thierry, 2016]{schafer_web_2016}
+\bgroup\fonteauteurs\bgroup Schafer\egroup\egroup{}, V. et
+  \bgroup\fonteauteurs\bgroup Thierry\egroup\egroup{}, B.~G. (2016).
 \newblock The “{Web} of pros” in the 1990s: {The} professional acclimation
   of the {World} {Wide} {Web} in {France}.
-\newblock {\em New Media \& Society}, 18(7):1143--1158.
+\newblock {\em New Media \& Society}, 18(7)\string:\penalty500\relax
+  1143--1158.
 
-\bibitem[Schneider et~al., 2003]{schneider_building_2003}
-Schneider, S.~M., Foot, K., Kimpton, M., and Jones, G. (2003).
+\bibitem[Schneider \emph{et~al.}, 2003]{schneider_building_2003}
+\bgroup\fonteauteurs\bgroup Schneider\egroup\egroup{}, S.~M.,
+  \bgroup\fonteauteurs\bgroup Foot\egroup\egroup{}, K.,
+  \bgroup\fonteauteurs\bgroup Kimpton\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Jones\egroup\egroup{}, G. (2003).
 \newblock Building thematic web collections: challenges and experiences from
   the {September} 11 {Web} {Archive} and the {Election} 2002 {Web} {Archive}.
 \newblock {\em Digital Libraries, ECDL}, pages 77--94.
 
 \bibitem[Scopsi, 2009]{scopsi_les_2009}
-Scopsi, C. (2009).
+\bgroup\fonteauteurs\bgroup Scopsi\egroup\egroup{}, C. (2009).
 \newblock Les sites web diasporiques : un nouveau genre médiatique ?
 \newblock {\em tic\&société [En ligne]}, 3(1-2).
 
 \bibitem[Scott, 2017]{scott_social_2017}
-Scott, J. (2017).
+\bgroup\fonteauteurs\bgroup Scott\egroup\egroup{}, J. (2017).
 \newblock {\em Social network analysis}.
 \newblock Sage.
 
-\bibitem[Spaniol et~al., 2009]{spaniol_data_2009}
-Spaniol, M., Denev, D., Mazeika, A., Weikum, G., and Senellart, P. (2009).
+\bibitem[Spaniol \emph{et~al.}, 2009]{spaniol_data_2009}
+\bgroup\fonteauteurs\bgroup Spaniol\egroup\egroup{}, M.,
+  \bgroup\fonteauteurs\bgroup Denev\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Mazeika\egroup\egroup{}, A.,
+  \bgroup\fonteauteurs\bgroup Weikum\egroup\egroup{}, G. et
+  \bgroup\fonteauteurs\bgroup Senellart\egroup\egroup{}, P. (2009).
 \newblock Data quality in web archiving.
-\newblock In {\em Proceedings of the 3rd workshop on {Information} credibility
-  on the web}, pages 19--26. ACM.
+\newblock \emph{In} {\em Proceedings of the 3rd workshop on {Information}
+  credibility on the web}, pages 19--26. ACM.
 
-\bibitem[Spaniol and Weikum, 2012]{spaniol_tracking_2012}
-Spaniol, M. and Weikum, G. (2012).
+\bibitem[Spaniol et Weikum, 2012]{spaniol_tracking_2012}
+\bgroup\fonteauteurs\bgroup Spaniol\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Weikum\egroup\egroup{}, G. (2012).
 \newblock Tracking entities in web archives: the {LAWA} project.
-\newblock In {\em Proceedings of the 21st {International} {Conference} on
-  {World} {Wide} {Web}}, pages 287--290. ACM.
+\newblock \emph{In} {\em Proceedings of the 21st {International} {Conference}
+  on {World} {Wide} {Web}}, pages 287--290. ACM.
 
 \bibitem[Spinellis, 2003]{spinellis_decay_2003}
-Spinellis, D. (2003).
+\bgroup\fonteauteurs\bgroup Spinellis\egroup\egroup{}, D. (2003).
 \newblock The decay and failures of web references.
-\newblock {\em Communications of the ACM}, 46(1):71--77.
+\newblock {\em Communications of the ACM}, 46(1)\string:\penalty500\relax
+  71--77.
 
-\bibitem[Spitz et~al., 2018]{spitz_predicting_2018}
-Spitz, A., Strötgen, J., and Gertz, M. (2018).
+\bibitem[Spitz \emph{et~al.}, 2018]{spitz_predicting_2018}
+\bgroup\fonteauteurs\bgroup Spitz\egroup\egroup{}, A.,
+  \bgroup\fonteauteurs\bgroup Strötgen\egroup\egroup{}, J. et
+  \bgroup\fonteauteurs\bgroup Gertz\egroup\egroup{}, M. (2018).
 \newblock Predicting {Document} {Creation} {Times} in {News} {Citation}
   {Networks}.
-\newblock In {\em Companion of the {The} {Web} {Conference} 2018 on {The} {Web}
-  {Conference} 2018}, pages 1731--1736. International World Wide Web
-  Conferences Steering Committee.
+\newblock \emph{In} {\em Companion of the {The} {Web} {Conference} 2018 on
+  {The} {Web} {Conference} 2018}, pages 1731--1736. International World Wide
+  Web Conferences Steering Committee.
 
 \bibitem[Stack, 2006]{stack_full_2006}
-Stack, M. (2006).
+\bgroup\fonteauteurs\bgroup Stack\egroup\egroup{}, M. (2006).
 \newblock Full text search of web archive collections.
 \newblock {\em Proc. of IWAW}.
 
-\bibitem[Stevanovic et~al., 2011]{stevanovic_unsupervised_2011}
-Stevanovic, D., Vlajic, N., and An, A. (2011).
+\bibitem[Stevanovic \emph{et~al.}, 2011]{stevanovic_unsupervised_2011}
+\bgroup\fonteauteurs\bgroup Stevanovic\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Vlajic\egroup\egroup{}, N. et
+  \bgroup\fonteauteurs\bgroup An\egroup\egroup{}, A. (2011).
 \newblock Unsupervised clustering of {Web} sessions to detect malicious and
   non-malicious website users.
-\newblock {\em Procedia Computer Science}, 5:123--131.
+\newblock {\em Procedia Computer Science}, 5\string:\penalty500\relax 123--131.
 
 \bibitem[Stevenson, 2016]{stevenson_slashdot_2016}
-Stevenson, M. (2016).
+\bgroup\fonteauteurs\bgroup Stevenson\egroup\egroup{}, M. (2016).
 \newblock Slashdot, open news and informated media: exploring the intersection
   of imagined futures and web publishing technology.
 \newblock {\em New Media, Old Media: a History and Theory Reader}, pages
   616--630.
 
 \bibitem[Stevenson, 2018]{stevenson_hypertext_2018}
-Stevenson, M. (2018).
+\bgroup\fonteauteurs\bgroup Stevenson\egroup\egroup{}, M. (2018).
 \newblock From hypertext to hype and back again: exploring the roots of social
   media in the early web.
 \newblock {\em The SAGE Handbook of Social Media}.
 
 \bibitem[Stiegler, 1991]{stiegler_etat_1991}
-Stiegler, B. (1991).
-\newblock Etat de la mémoire et mémoire de l'{Etat}.
+\bgroup\fonteauteurs\bgroup Stiegler\egroup\egroup{}, B. (1991).
+\newblock {\em Etat de la mémoire et mémoire de l'{Etat}}, volume~1.
 
 \bibitem[Stiegler, 1998]{stiegler_leroi-gourhan:_1998}
-Stiegler, B. (1998).
+\bgroup\fonteauteurs\bgroup Stiegler\egroup\egroup{}, B. (1998).
 \newblock Leroi-{Gourhan}: l'inorganique organisé.
-\newblock {\em Les Cahiers de médiologie}, (2):187--194.
+\newblock {\em Les Cahiers de médiologie}, (2)\string:\penalty500\relax
+  187--194.
 
-\bibitem[Sánchez-Querubín and Rogers, 2018]{sanchez-querubin_connected_2018}
-Sánchez-Querubín, N. and Rogers, R. (2018).
+\bibitem[Sánchez-Querubín et Rogers, 2018]{sanchez-querubin_connected_2018}
+\bgroup\fonteauteurs\bgroup Sánchez-Querubín\egroup\egroup{}, N. et
+  \bgroup\fonteauteurs\bgroup Rogers\egroup\egroup{}, R. (2018).
 \newblock Connected routes: {Migration} studies with digital devices and
   platforms.
-\newblock {\em Social Media+ Society}, 4(1):2056305118764427.
+\newblock {\em Social Media+ Society}, 4(1).
 
 \bibitem[Tervonen, 2016]{tervonen_finlande:_2016}
-Tervonen, T. (2016).
+\bgroup\fonteauteurs\bgroup Tervonen\egroup\egroup{}, T. (2016).
 \newblock Finlande: le droit d’asile menacé?
-\newblock {\em Plein droit}, (4):7--10.
+\newblock {\em Plein droit}, (4)\string:\penalty500\relax 7--10.
 
 \bibitem[Tofel, 2007]{tofel_waybackfor_2007}
-Tofel, B. (2007).
+\bgroup\fonteauteurs\bgroup Tofel\egroup\egroup{}, B. (2007).
 \newblock Wayback’for accessing web archives.
-\newblock In {\em Proceedings of the 7th {International} {Web} {Archiving}
-  {Workshop}}, pages 27--37.
+\newblock \emph{In} {\em Proceedings of the 7th {International} {Web}
+  {Archiving} {Workshop}}, pages 27--37.
 
-\bibitem[Toyoda and Kitsuregawa, 2003]{toyoda_extracting_2003}
-Toyoda, M. and Kitsuregawa, M. (2003).
+\bibitem[Toyoda et Kitsuregawa, 2003]{toyoda_extracting_2003}
+\bgroup\fonteauteurs\bgroup Toyoda\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Kitsuregawa\egroup\egroup{}, M. (2003).
 \newblock Extracting evolution of web communities from a series of web
   archives.
-\newblock In {\em Proceedings of the fourteenth {ACM} conference on {Hypertext}
-  and hypermedia}, pages 28--37. ACM.
+\newblock \emph{In} {\em Proceedings of the fourteenth {ACM} conference on
+  {Hypertext} and hypermedia}, pages 28--37. ACM.
 
-\bibitem[Toyoda and Kitsuregawa, 2005]{toyoda_system_2005}
-Toyoda, M. and Kitsuregawa, M. (2005).
+\bibitem[Toyoda et Kitsuregawa, 2005]{toyoda_system_2005}
+\bgroup\fonteauteurs\bgroup Toyoda\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Kitsuregawa\egroup\egroup{}, M. (2005).
 \newblock A system for visualizing and analyzing the evolution of the web with
   a time series of graphs.
-\newblock In {\em Proceedings of the sixteenth {ACM} conference on {Hypertext}
-  and hypermedia}, pages 151--160. ACM.
+\newblock \emph{In} {\em Proceedings of the sixteenth {ACM} conference on
+  {Hypertext} and hypermedia}, pages 151--160. ACM.
 
-\bibitem[Toyoda and Kitsuregawa, 2006]{toyoda_whats_2006}
-Toyoda, M. and Kitsuregawa, M. (2006).
+\bibitem[Toyoda et Kitsuregawa, 2006]{toyoda_whats_2006}
+\bgroup\fonteauteurs\bgroup Toyoda\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Kitsuregawa\egroup\egroup{}, M. (2006).
 \newblock What's really new on the web?: identifying new pages from a series of
   unstable web snapshots.
-\newblock In {\em Proceedings of the 15th international conference on {World}
-  {Wide} {Web}}, pages 233--241. ACM.
+\newblock \emph{In} {\em Proceedings of the 15th international conference on
+  {World} {Wide} {Web}}, pages 233--241. ACM.
 
 \bibitem[Tukey, 1962]{tukey_future_1962}
-Tukey, J.~W. (1962).
-\newblock The {Future} of {Data} {Analysis}.
-\newblock {\em The Annals of Mathematical Statistics}, 33(1):1--67.
+\bgroup\fonteauteurs\bgroup Tukey\egroup\egroup{}, J.~W. (1962).
+\newblock The future of data analysis.
+\newblock {\em The annals of mathematical statistics},
+  33(1)\string:\penalty500\relax 1--67.
 
 \bibitem[Tukey, 1977]{tukey_exploratory_1977}
-Tukey, J.~W. (1977).
+\bgroup\fonteauteurs\bgroup Tukey\egroup\egroup{}, J.~W. (1977).
 \newblock {\em Exploratory {Data} {Analysis}}.
 \newblock Behavioral {Science}: {Quantitative} {Methods}. Addison-Wesley.
 
-\bibitem[Tyner and Kuhlke, 2000]{tyner_pan-national_2000}
-Tyner, J.~A. and Kuhlke, O. (2000).
+\bibitem[Tyner et Kuhlke, 2000]{tyner_pan-national_2000}
+\bgroup\fonteauteurs\bgroup Tyner\egroup\egroup{}, J.~A. et
+  \bgroup\fonteauteurs\bgroup Kuhlke\egroup\egroup{}, O. (2000).
 \newblock Pan-national identities: representations of the {Philippine} diaspora
   on the world wide web.
-\newblock {\em Asia Pacific Viewpoint}, 41(3):231--252.
+\newblock {\em Asia Pacific Viewpoint}, 41(3)\string:\penalty500\relax
+  231--252.
 
 \bibitem[{UNESCO}, 2003]{unesco_charter_2003}
-{UNESCO} (2003).
+\bgroup\fonteauteurs\bgroup {UNESCO}\egroup\egroup{} (2003).
 \newblock Charter on the {Preservation} of {Digital} {Heritage}.
 
-\bibitem[Van~de Sompel et~al., 2013]{van_de_sompel_http_2013}
-Van~de Sompel, H., Nelson, M., and Sanderson, R. (2013).
+\bibitem[Van~de Sompel \emph{et~al.}, 2013]{van_de_sompel_http_2013}
+Van~de \bgroup\fonteauteurs\bgroup Sompel\egroup\egroup{}, H.,
+  \bgroup\fonteauteurs\bgroup Nelson\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Sanderson\egroup\egroup{}, R. (2013).
 \newblock {HTTP} framework for time-based access to resource
   states–{Memento}.
-\newblock Technical report.
+\newblock Rapport technique.
 
-\bibitem[Van~den Bos and Nell, 2006]{van_den_bos_territorial_2006}
-Van~den Bos, M. and Nell, L. (2006).
+\bibitem[Van~den Bos et Nell, 2006]{van_den_bos_territorial_2006}
+Van~den \bgroup\fonteauteurs\bgroup Bos\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Nell\egroup\egroup{}, L. (2006).
 \newblock Territorial bounds to virtual space: transnational online and offline
   networks of {Iranian} and {Turkish}–{Kurdish} immigrants in the
   {Netherlands}.
-\newblock {\em Global Networks}, 6(2):201--220.
+\newblock {\em Global Networks}, 6(2)\string:\penalty500\relax 201--220.
 
 \bibitem[Viard, 2016]{viard_link_2016}
-Viard, T. (2016).
+\bgroup\fonteauteurs\bgroup Viard\egroup\egroup{}, T. (2016).
 \newblock {\em Link streams for the modelling of interactions over time and
   application to the analysis of {IP} traffic}.
 \newblock {PhD} {Thesis}, Université Pierre et Marie Curie.
 
-\bibitem[Voerman et~al., 2002]{voerman_archiving_2002}
-Voerman, G., Keyzer, A., Den~Hollander, F., and Druiven, H. (2002).
+\bibitem[Voerman \emph{et~al.}, 2002]{voerman_archiving_2002}
+\bgroup\fonteauteurs\bgroup Voerman\egroup\egroup{}, G.,
+  \bgroup\fonteauteurs\bgroup Keyzer\egroup\egroup{}, A.,
+  \bgroup\fonteauteurs\bgroup Den~Hollander\egroup\egroup{}, F. et
+  \bgroup\fonteauteurs\bgroup Druiven\egroup\egroup{}, H. (2002).
 \newblock Archiving the {Web}: {Political} party {Web} sites in the
   {Netherlands}.
-\newblock {\em European Political Science}, 2(1):68--75.
+\newblock {\em European Political Science}, 2(1)\string:\penalty500\relax
+  68--75.
 
-\bibitem[Wasserman and Faust, 1994]{wasserman_social_1994}
-Wasserman, S. and Faust, K. (1994).
+\bibitem[Wasserman et Faust, 1994]{wasserman_social_1994}
+\bgroup\fonteauteurs\bgroup Wasserman\egroup\egroup{}, S. et
+  \bgroup\fonteauteurs\bgroup Faust\egroup\egroup{}, K. (1994).
 \newblock {\em Social network analysis: {Methods} and applications}, volume~8.
 \newblock Cambridge university press.
 
-\bibitem[Weikum et~al., 2011]{weikum_longitudinal_2011}
-Weikum, G., Ntarmos, N., Spaniol, M., Triantafillou, P., Benczúr, A.~A.,
-  Kirkpatrick, S., Rigaux, P., and Williamson, M. (2011).
+\bibitem[Weikum \emph{et~al.}, 2011]{weikum_longitudinal_2011}
+\bgroup\fonteauteurs\bgroup Weikum\egroup\egroup{}, G.,
+  \bgroup\fonteauteurs\bgroup Ntarmos\egroup\egroup{}, N.,
+  \bgroup\fonteauteurs\bgroup Spaniol\egroup\egroup{}, M.,
+  \bgroup\fonteauteurs\bgroup Triantafillou\egroup\egroup{}, P.,
+  \bgroup\fonteauteurs\bgroup Benczúr\egroup\egroup{}, A.~A.,
+  \bgroup\fonteauteurs\bgroup Kirkpatrick\egroup\egroup{}, S.,
+  \bgroup\fonteauteurs\bgroup Rigaux\egroup\egroup{}, P. et
+  \bgroup\fonteauteurs\bgroup Williamson\egroup\egroup{}, M. (2011).
 \newblock Longitudinal analytics on web archive data: it's about time!
-\newblock In {\em {CIDR}}, pages 199--202.
+\newblock \emph{In} {\em {CIDR}}, pages 199--202.
 
-\bibitem[Weltevrede and Helmond, 2012]{weltevrede_where_2012}
-Weltevrede, E. and Helmond, A. (2012).
+\bibitem[Weltevrede et Helmond, 2012]{weltevrede_where_2012}
+\bgroup\fonteauteurs\bgroup Weltevrede\egroup\egroup{}, E. et
+  \bgroup\fonteauteurs\bgroup Helmond\egroup\egroup{}, A. (2012).
 \newblock Where do bloggers blog? {Platform} transitions within the historical
   {Dutch} blogosphere.
 \newblock {\em First Monday}, 17(2).
 
-\bibitem[Weninger and Hsu, 2008]{weninger_text_2008}
-Weninger, T. and Hsu, W.~H. (2008).
+\bibitem[Weninger et Hsu, 2008]{weninger_text_2008}
+\bgroup\fonteauteurs\bgroup Weninger\egroup\egroup{}, T. et
+  \bgroup\fonteauteurs\bgroup Hsu\egroup\egroup{}, W.~H. (2008).
 \newblock Text extraction from the web via text-to-tag ratio.
-\newblock In {\em Database and {Expert} {Systems} {Application}, 2008.
+\newblock \emph{In} {\em Database and {Expert} {Systems} {Application}, 2008.
   {DEXA}'08. 19th {International} {Workshop} on}, pages 23--28. IEEE.
 
 \bibitem[Whitaker, 2004]{whitaker_tamilnet._2004}
-Whitaker, M.~P. (2004).
+\bgroup\fonteauteurs\bgroup Whitaker\egroup\egroup{}, M.~P. (2004).
 \newblock Tamilnet. com: {Some} reflections on popular anthropology,
   nationalism, and the {Internet}.
-\newblock {\em Anthropological Quarterly}, 77(3):469--498.
+\newblock {\em Anthropological Quarterly}, 77(3)\string:\penalty500\relax
+  469--498.
 
-\bibitem[Yadav et~al., 2007]{yadav_change_2007}
-Yadav, D., Sharma, A.~K., and Gupta, J.~P. (2007).
+\bibitem[Yadav \emph{et~al.}, 2007]{yadav_change_2007}
+\bgroup\fonteauteurs\bgroup Yadav\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Sharma\egroup\egroup{}, A.~K. et
+  \bgroup\fonteauteurs\bgroup Gupta\egroup\egroup{}, J.~P. (2007).
 \newblock Change {Detection} in {Web} {Pages}.
 \newblock pages 265--270. IEEE.
 

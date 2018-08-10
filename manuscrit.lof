@@ -1,3 +1,4 @@
+\select@language {french}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Trois mod\IeC {\`e}les de r\IeC {\'e}seaux : centralis\IeC {\'e} (a), d\IeC {\'e}centralis\IeC {\'e} (b), distribu\IeC {\'e} (c)}}{22}{subsection*.6}
@@ -9,7 +10,7 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces De la page au site Web}}{25}{subsection*.7}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Diff\IeC {\'e}rents modes de consultation d'une information dans un r\IeC {\'e}seau hypertexte (type Web)}}{27}{subsection*.8}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Exemple de r\IeC {\'e}seau dirig\IeC {\'e}, (a) fait autorit\IeC {\'e}, (b) cherche \IeC {\`a} int\IeC {\'e}grer la communaut\IeC {\'e}}}{35}{section.2.3}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Cha\IeC {\^\i }ne d'analyse socio-technique de l'Atlas e-Diasporas (source\nobreakspace {}: M. Jacomy)}}{35}{subsection*.12}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Cha\IeC {\^\i }ne d'analyse socio-technique de l'Atlas e-Diasporas (source~: M. Jacomy)}}{35}{subsection*.12}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Annotation de l'e-Diaspora des \IeC {\'e}tudiants Marocains sur Facebook, par S. Marchandise \citep {marchandise_facebook_2014}}}{36}{subsection*.12}
 \contentsline {figure}{\numberline {2.12}{\ignorespaces L'e-Diaspora palestinienne (a, par A. Ben-David) et l'e-Diaspora indienne (b, par E. Leclerc)}}{38}{subsection*.13}
 \contentsline {figure}{\numberline {2.13}{\ignorespaces R\IeC {\'e}partition des sites de l'e-Diaspora marocaine par cat\IeC {\'e}gorie, sous-cat\IeC {\'e}gorie et langue principale (source : Atlas e-Diaspora \url {https://frama.link/Pyt3Aq2x})}}{40}{subsection*.14}
@@ -46,7 +47,7 @@
 \contentsline {figure}{\numberline {4.16}{\ignorespaces "Boulevard du Temple", Louis Daguerre, 1838}}{88}{section.4.4}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces C. Marker, 1977, Le Fond de l'Air est Rouge, (\url {https://youtu.be/dO1E4GYjF1s})}}{91}{subsection*.30}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces J.L. Godard, 1993, Je\nobreakspace {}Vous Salue, Sarajevo, (\url {https://youtu.be/WKbfu8rRrho})}}{91}{subsection*.30}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces J.L. Godard, 1993, Je~Vous Salue, Sarajevo, (\url {https://youtu.be/WKbfu8rRrho})}}{91}{subsection*.30}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Les 5 strates analytiques du Web, d'apr\IeC {\`e}s \citep {brugger_website_2009}}}{92}{subsection*.31}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Une page $p_1$ et ses fragments Web $f_{11}, f_{12}, f_{13}$}}{93}{subsection*.31}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces R\IeC {\'e}partition des archives de \textit {yabiladi.com} dans la WayBack Machine (\url {https://web.archive.org/web/*/www.yabiladi.com})}}{93}{subsection*.32}
@@ -82,37 +83,37 @@
 \contentsline {figure}{\numberline {6.7}{\ignorespaces Exemples de fragments Web associ\IeC {\'e}s \IeC {\`a} divers r\IeC {\'e}seaux sociaux}}{135}{subsection*.49}
 \contentsline {figure}{\numberline {6.8}{\ignorespaces \textit {eatbess.com} (rouge) dans l'e-Diaspora marocaine}}{136}{subsection*.50}
 \contentsline {figure}{\numberline {6.9}{\ignorespaces Liste des blogs de 2008 li\IeC {\'e}s \IeC {\`a} des r\IeC {\'e}seaux sociaux en 2018}}{137}{subsection*.50}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces La blogosph\IeC {\`e}re en 2018, les emplacements des blogs sont conserv\IeC {\'e}s}}{138}{subsection*.50}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Densit\IeC {\'e} d'un graphe}}{138}{subsection*.50}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces \textit {lailalalami.com} (rouge) dans l'e-Diaspora marocaine}}{139}{subsection*.50}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces R\IeC {\'e}partition g\IeC {\'e}ographique des followers Twitter (a) et des amis Facebook (b)}}{139}{subsection*.51}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Annonce de la fermeture de \textit {7didane.org} (a) et article pr\IeC {\'e}c\IeC {\'e}dant la cl\IeC {\^o}ture de \textit {larbi.org} (b)}}{141}{subsection*.52}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Premiers fragments Web archiv\IeC {\'e}s faisant mention de Twitter chez \textit {larbi.org} \textit {7didane.org}}}{142}{subsection*.52}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces \textit {7didane.org} (rouge) dans l'e-Diaspora marocaine}}{143}{subsection*.52}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces \textit {yabiladi.com} (rouge) dans l'e-Diaspora marocaine}}{144}{subsection*.53}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces Dynamique de cr\IeC {\'e}ation d'un portail Web autour d'une communaut\IeC {\'e} de sites}}{144}{subsection*.53}
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Timeline des \IeC {\'e}volutions successives de \textit {yabiladi.com}}}{145}{subsection*.53}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces La blogosph\IeC {\`e}re en 2018, les emplacements des blogs sont conserv\IeC {\'e}s}}{139}{subsection*.50}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Densit\IeC {\'e} d'un graphe}}{139}{subsection*.50}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces \textit {lailalalami.com} (rouge) dans l'e-Diaspora marocaine}}{140}{subsection*.50}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces R\IeC {\'e}partition g\IeC {\'e}ographique des followers Twitter (a) et des amis Facebook (b)}}{140}{subsection*.51}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Annonce de la fermeture de \textit {7didane.org} (a) et article pr\IeC {\'e}c\IeC {\'e}dant la cl\IeC {\^o}ture de \textit {larbi.org} (b)}}{142}{subsection*.52}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Premiers fragments Web archiv\IeC {\'e}s faisant mention de Twitter chez \textit {larbi.org} \textit {7didane.org}}}{143}{subsection*.52}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces \textit {7didane.org} (rouge) dans l'e-Diaspora marocaine}}{144}{subsection*.52}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces \textit {yabiladi.com} (rouge) dans l'e-Diaspora marocaine}}{145}{subsection*.53}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Dynamique de cr\IeC {\'e}ation d'un portail Web autour d'une communaut\IeC {\'e} de sites}}{145}{subsection*.53}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Timeline des \IeC {\'e}volutions successives de \textit {yabiladi.com}}}{146}{subsection*.53}
 \contentsline {figure}{\numberline {6.20}{\ignorespaces \IeC {\'E}volution des cat\IeC {\'e}gories du forum de \textit {yabiladi.com}, par date d'apparition}}{147}{subsection*.53}
-\contentsline {figure}{\numberline {6.21}{\ignorespaces Principaux foyers de contestation, lors des manifestations du 20 f\IeC {\'e}vrier 2011 au Maroc (source : \url { https://globalvoices.org/2011/02/20/morocco-across} \url {-the-nation-demonstration/}) }}{150}{subsection*.54}
-\contentsline {figure}{\numberline {6.22}{\ignorespaces Fonctionnement du syst\IeC {\`e}me de visualisation Anemone, pour un site fictif \textit {inter.net}}}{152}{subsection*.55}
-\contentsline {figure}{\numberline {6.23}{\ignorespaces C.J. Minard, (1869), Carte figurative des pertes successives en hommes de l'Arm\IeC {\'e}e Fran\IeC {\c c}aise dans la campagne de Russie 1812-1813}}{152}{subsection*.55}
-\contentsline {figure}{\numberline {6.24}{\ignorespaces Proposition de visualisation de l'\IeC {\'e}volution de la structure d'un site fictif \textit {inter.net} dans le temps}}{153}{subsection*.55}
-\contentsline {figure}{\numberline {6.25}{\ignorespaces Positionnement de 3 pages (rouge) autour d'un embranchement parent (bleu)}}{153}{subsection*.55}
-\contentsline {figure}{\numberline {6.26}{\ignorespaces Capture d'\IeC {\'e}cran de l'\IeC {\'e}volution topologique de la section \textit {Interpr\IeC {\'e}tation des r\IeC {\^e}ves, roqya, djinn} du forum de \textit {yabiladi.com}}}{154}{subsection*.55}
-\contentsline {figure}{\numberline {6.27}{\ignorespaces Mot cl\IeC {\'e}s associ\IeC {\'e}s \IeC {\`a} la manifestation du 20 f\IeC {\'e}vrier 2011}}{156}{subsection*.56}
-\contentsline {figure}{\numberline {6.28}{\ignorespaces Titre des 12 threads directement associ\IeC {\'e}s au 20 f\IeC {\'e}vrier}}{156}{subsection*.56}
-\contentsline {figure}{\numberline {6.29}{\ignorespaces \IeC {\'E}volution de la structure de \textit {yabiladi.com} et ensemble de threads $V_1$}}{157}{subsection*.56}
-\contentsline {figure}{\numberline {6.30}{\ignorespaces Trajet d'un utilisateur ayant post\IeC {\'e} des messages (bleu) sur deux threads (rouge)}}{158}{subsection*.57}
-\contentsline {figure}{\numberline {6.31}{\ignorespaces Le graphe $G=(V_1,E_1)$ pour $V_1$ contenant quatre threads de messages}}{158}{subsection*.57}
-\contentsline {figure}{\numberline {6.32}{\ignorespaces Exemple de trajet individuel (trac\IeC {\'e} bleu clair) parmi 66 threads du forum \textit {yabiladi.com}}}{159}{subsection*.57}
-\contentsline {figure}{\numberline {6.33}{\ignorespaces Trajets agr\IeC {\'e}g\IeC {\'e}s $E_1$ de l'ensemble des contributeurs des threads $V_1$ du forum \textit {yabiladi.com}}}{160}{subsection*.57}
-\contentsline {figure}{\numberline {6.34}{\ignorespaces R\IeC {\'e}partition des utilisateurs du groupe $E_0$ par date de premier message}}{161}{subsection*.57}
-\contentsline {figure}{\numberline {6.35}{\ignorespaces Principe de base de Force Atlas, les noeuds d'un graphe sont charg\IeC {\'e}s d'une force de r\IeC {\'e}pulsion et les arcs d'une force d'attraction}}{162}{subsection*.58}
-\contentsline {figure}{\numberline {6.36}{\ignorespaces Spatialisation du graphe $G$ par \textit {force atlas} et clustering des threads par classes de modularit\IeC {\'e}}}{163}{subsection*.58}
-\contentsline {figure}{\numberline {6.37}{\ignorespaces Exemple de clustering d'un graphe en 4 classes de modularit\IeC {\'e} (couleurs)}}{163}{subsection*.58}
-\contentsline {figure}{\numberline {6.38}{\ignorespaces vue de l'\IeC {\'e}volution de la structure des sites \textit {7didane.org} (haut), \textit {atmf.org} (bas)}}{171}{subsection*.61}
-\contentsline {figure}{\numberline {6.39}{\ignorespaces R\IeC {\'e}sum\IeC {\'e} des diverses op\IeC {\'e}rations mises en place lors des explorations \ref {sec:6_blogs} et \ref {sec:6_printemps}, avec distinction entre approches automatique et manuelle}}{172}{subsection*.61}
-\contentsline {figure}{\numberline {6.40}{\ignorespaces \textit {atmf.org} (rouge) dans l'e-Diaspora marocaine}}{173}{subsection*.61}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Principaux foyers de contestation, lors des manifestations du 20 f\IeC {\'e}vrier 2011 au Maroc (source : \url { https://globalvoices.org/2011/02/20/morocco-across} \url {-the-nation-demonstration/}) }}{151}{subsection*.54}
+\contentsline {figure}{\numberline {6.22}{\ignorespaces Fonctionnement du syst\IeC {\`e}me de visualisation Anemone, pour un site fictif \textit {inter.net}}}{153}{subsection*.55}
+\contentsline {figure}{\numberline {6.23}{\ignorespaces C.J. Minard, (1869), Carte figurative des pertes successives en hommes de l'Arm\IeC {\'e}e Fran\IeC {\c c}aise dans la campagne de Russie 1812-1813}}{153}{subsection*.55}
+\contentsline {figure}{\numberline {6.24}{\ignorespaces Proposition de visualisation de l'\IeC {\'e}volution de la structure d'un site fictif \textit {inter.net} dans le temps}}{154}{subsection*.55}
+\contentsline {figure}{\numberline {6.25}{\ignorespaces Positionnement de 3 pages (rouge) autour d'un embranchement parent (bleu)}}{154}{subsection*.55}
+\contentsline {figure}{\numberline {6.26}{\ignorespaces Capture d'\IeC {\'e}cran de l'\IeC {\'e}volution topologique de la section \textit {Interpr\IeC {\'e}tation des r\IeC {\^e}ves, roqya, djinn} du forum de \textit {yabiladi.com}}}{155}{subsection*.55}
+\contentsline {figure}{\numberline {6.27}{\ignorespaces Mot cl\IeC {\'e}s associ\IeC {\'e}s \IeC {\`a} la manifestation du 20 f\IeC {\'e}vrier 2011}}{157}{subsection*.56}
+\contentsline {figure}{\numberline {6.28}{\ignorespaces Titre des 12 threads directement associ\IeC {\'e}s au 20 f\IeC {\'e}vrier}}{157}{subsection*.56}
+\contentsline {figure}{\numberline {6.29}{\ignorespaces \IeC {\'E}volution de la structure de \textit {yabiladi.com} et ensemble de threads $V_1$}}{158}{subsection*.56}
+\contentsline {figure}{\numberline {6.30}{\ignorespaces Trajet d'un utilisateur ayant post\IeC {\'e} des messages (bleu) sur deux threads (rouge)}}{159}{subsection*.57}
+\contentsline {figure}{\numberline {6.31}{\ignorespaces Le graphe $G=(V_1,E_1)$ pour $V_1$ contenant quatre threads de messages}}{159}{subsection*.57}
+\contentsline {figure}{\numberline {6.32}{\ignorespaces Exemple de trajet individuel (trac\IeC {\'e} bleu clair) parmi 66 threads du forum \textit {yabiladi.com}}}{160}{subsection*.57}
+\contentsline {figure}{\numberline {6.33}{\ignorespaces Trajets agr\IeC {\'e}g\IeC {\'e}s $E_1$ de l'ensemble des contributeurs des threads $V_1$ du forum \textit {yabiladi.com}}}{161}{subsection*.57}
+\contentsline {figure}{\numberline {6.34}{\ignorespaces R\IeC {\'e}partition des utilisateurs du groupe $E_0$ par date de premier message}}{162}{subsection*.57}
+\contentsline {figure}{\numberline {6.35}{\ignorespaces Principe de base de Force Atlas, les noeuds d'un graphe sont charg\IeC {\'e}s d'une force de r\IeC {\'e}pulsion et les arcs d'une force d'attraction}}{163}{subsection*.58}
+\contentsline {figure}{\numberline {6.36}{\ignorespaces Spatialisation du graphe $G$ par \textit {force atlas} et clustering des threads par classes de modularit\IeC {\'e}}}{164}{subsection*.58}
+\contentsline {figure}{\numberline {6.37}{\ignorespaces Exemple de clustering d'un graphe en 4 classes de modularit\IeC {\'e} (couleurs)}}{164}{subsection*.58}
+\contentsline {figure}{\numberline {6.38}{\ignorespaces vue de l'\IeC {\'e}volution de la structure des sites \textit {7didane.org} (haut), \textit {atmf.org} (bas)}}{172}{subsection*.61}
+\contentsline {figure}{\numberline {6.39}{\ignorespaces R\IeC {\'e}sum\IeC {\'e} des diverses op\IeC {\'e}rations mises en place lors des explorations \ref {sec:6_blogs} et \ref {sec:6_printemps}, avec distinction entre approches automatique et manuelle}}{173}{subsection*.61}
+\contentsline {figure}{\numberline {6.40}{\ignorespaces \textit {atmf.org} (rouge) dans l'e-Diaspora marocaine}}{174}{subsection*.61}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7.1}{\ignorespaces Ticket de r\IeC {\'e}servation d'une session de 40 mn sur l'un des postes Internet Libre de la BPI}}{176}{subsection*.62}
 \contentsline {figure}{\numberline {7.2}{\ignorespaces Implantation des postes Internet Libre (rouge) sur les trois \IeC {\'e}tages de la BPI}}{177}{subsection*.62}

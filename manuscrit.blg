@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscrit.aux
-The style file: apalike.bst
+The style file: apalike-fr.bst
 Database file #1: biblio.bib
 Warning--I didn't find a database entry for "saint_augustin_confessions_1993"
 Warning--empty journal in arvidson_kulturarw3_2000
@@ -31,8 +31,9 @@ Warning--empty journal in leclerc_cyberespace_2012
 Warning--there's a number but no volume in morsel_traces?_2016
 Warning--there's a number but no volume in pasquier_classes_2018
 Warning--there's a number but no volume in pillant_en_2016
+Warning--there's a number but no volume in rouvroy_gouvernementalite_2013
 Warning--empty journal in sabancioglu_new_2011
-Warning--empty journal in stiegler_etat_1991
+Warning--empty publisher in stiegler_etat_1991
 Warning--there's a number but no volume in stiegler_leroi-gourhan:_1998
 Warning--there's a number but no volume in tervonen_finlande:_2016
 Warning--can't use both author and editor fields in tukey_exploratory_1977
@@ -40,44 +41,44 @@ Warning--empty note in unesco_charter_2003
 Warning--empty institution in van_de_sompel_http_2013
 Warning--empty booktitle in yadav_change_2007
 You've used 206 entries,
-            1935 wiz_defined-function locations,
-            1477 strings with 37409 characters,
-and the built_in function-call counts, 83014 in all, are:
-= -- 8343
-> -- 2913
-< -- 200
-+ -- 1018
-- -- 951
-* -- 6568
-:= -- 13992
-add.period$ -- 653
+            2038 wiz_defined-function locations,
+            1510 strings with 37657 characters,
+and the built_in function-call counts, 94989 in all, are:
+= -- 10782
+> -- 2767
+< -- 203
++ -- 1049
+- -- 942
+* -- 6423
+:= -- 18855
+add.period$ -- 654
 call.type$ -- 206
-change.case$ -- 1472
+change.case$ -- 1469
 chr.to.int$ -- 205
-cite$ -- 241
-duplicate$ -- 3502
-empty$ -- 6067
-format.name$ -- 1261
-if$ -- 16718
+cite$ -- 242
+duplicate$ -- 3513
+empty$ -- 6011
+format.name$ -- 1254
+if$ -- 19374
 int.to.chr$ -- 2
 int.to.str$ -- 0
 missing$ -- 227
-newline$ -- 1017
-num.names$ -- 620
+newline$ -- 1022
+num.names$ -- 618
 pop$ -- 1487
 preamble$ -- 1
-purify$ -- 1503
+purify$ -- 1501
 quote$ -- 0
-skip$ -- 2673
+skip$ -- 2641
 stack$ -- 0
-substring$ -- 5891
-swap$ -- 656
-text.length$ -- 61
+substring$ -- 8234
+swap$ -- 669
+text.length$ -- 64
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 1170
-warning$ -- 35
+warning$ -- 36
 while$ -- 716
 width$ -- 0
-write$ -- 2645
-(There were 36 warnings)
+write$ -- 2652
+(There were 37 warnings)

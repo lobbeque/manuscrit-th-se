@@ -5,6 +5,7 @@ The style file: apalike-fr.bst
 Database file #1: biblio.bib
 Warning--I didn't find a database entry for "saint_augustin_confessions_1993"
 Warning--empty journal in arvidson_kulturarw3_2000
+Warning--empty publisher in saint_augustin_confessions_421
 Warning--there's a number but no volume in bennafla_maroc_2011
 Warning--empty booktitle in berthomiere_french_2013
 Warning--empty journal in bertin_semiologie_1973
@@ -40,45 +41,45 @@ Warning--can't use both author and editor fields in tukey_exploratory_1977
 Warning--empty note in unesco_charter_2003
 Warning--empty institution in van_de_sompel_http_2013
 Warning--empty booktitle in yadav_change_2007
-You've used 206 entries,
+You've used 207 entries,
             2038 wiz_defined-function locations,
-            1510 strings with 37657 characters,
-and the built_in function-call counts, 94989 in all, are:
-= -- 10782
-> -- 2767
-< -- 203
-+ -- 1049
-- -- 942
-* -- 6423
-:= -- 18855
-add.period$ -- 654
-call.type$ -- 206
-change.case$ -- 1469
-chr.to.int$ -- 205
-cite$ -- 242
-duplicate$ -- 3513
-empty$ -- 6011
-format.name$ -- 1254
-if$ -- 19374
+            1513 strings with 37527 characters,
+and the built_in function-call counts, 95124 in all, are:
+= -- 10799
+> -- 2749
+< -- 205
++ -- 1041
+- -- 934
+* -- 6417
+:= -- 18896
+add.period$ -- 656
+call.type$ -- 207
+change.case$ -- 1468
+chr.to.int$ -- 206
+cite$ -- 244
+duplicate$ -- 3523
+empty$ -- 6028
+format.name$ -- 1243
+if$ -- 19402
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 227
-newline$ -- 1022
-num.names$ -- 618
-pop$ -- 1487
+missing$ -- 230
+newline$ -- 1026
+num.names$ -- 621
+pop$ -- 1488
 preamble$ -- 1
-purify$ -- 1501
+purify$ -- 1502
 quote$ -- 0
-skip$ -- 2641
+skip$ -- 2655
 stack$ -- 0
-substring$ -- 8234
-swap$ -- 669
+substring$ -- 8258
+swap$ -- 670
 text.length$ -- 64
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1170
-warning$ -- 36
-while$ -- 716
+type$ -- 1172
+warning$ -- 37
+while$ -- 718
 width$ -- 0
-write$ -- 2652
-(There were 37 warnings)
+write$ -- 2662
+(There were 38 warnings)

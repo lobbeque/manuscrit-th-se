@@ -88,6 +88,10 @@
 \newblock Difficulties of {Timestamping} {Archived} {Web} {Pages}.
 \newblock {\em arXiv preprint arXiv:1712.03140}.
 
+\bibitem[Augustin, 421]{saint_augustin_confessions_421}
+\bgroup\fonteauteurs\bgroup Augustin\egroup\egroup{}, S. (421).
+\newblock {\em Confessions}.
+
 \bibitem[Baeza-Yates \emph{et~al.}, 2005]{baeza-yates_crawling_2005}
 \bgroup\fonteauteurs\bgroup Baeza-Yates\egroup\egroup{}, R.,
   \bgroup\fonteauteurs\bgroup Castillo\egroup\egroup{}, C.,
@@ -310,15 +314,10 @@
 \newblock The document that officially put the {World} {Wide} {Web} into the
   public domain.
 
-\bibitem[Chakravarthy \emph{et~al.}, 2002]{chakravarthy_webvigil:_2002}
-\bgroup\fonteauteurs\bgroup Chakravarthy\egroup\egroup{}, S.,
-  \bgroup\fonteauteurs\bgroup Jacob\egroup\egroup{}, J.,
-  \bgroup\fonteauteurs\bgroup Pandrangi\egroup\egroup{}, N. et
-  \bgroup\fonteauteurs\bgroup Sanka\egroup\egroup{}, A. (2002).
-\newblock Webvigil: {An} approach to just-in-time information propagation in
-  large network-centric environments.
-\newblock \emph{In} {\em Second {International} {Workshop} on {Web}
-  {Dynamics}}.
+\bibitem[Chakrabarti, 2002]{chakrabarti_mining_2002}
+\bgroup\fonteauteurs\bgroup Chakrabarti\egroup\egroup{}, S. (2002).
+\newblock {\em Mining the {Web}: {Discovering} knowledge from hypertext data}.
+\newblock Elsevier.
 
 \bibitem[Chaney \emph{et~al.}, 2015]{chaney_who_2015}
 \bgroup\fonteauteurs\bgroup Chaney\egroup\egroup{}, A.~J.,
@@ -362,9 +361,8 @@
 \newblock {\em Computer Networks and ISDN Systems},
   30(1-7)\string:\penalty500\relax 161--172.
 
-\bibitem[Coriat et {others}, 2015]{coriat_retour_2015}
-\bgroup\fonteauteurs\bgroup Coriat\egroup\egroup{}, B. et
-  \bgroup\fonteauteurs\bgroup {others}\egroup\egroup{} (2015).
+\bibitem[Coriat, 2015]{coriat_retour_2015}
+\bgroup\fonteauteurs\bgroup Coriat\egroup\egroup{}, B. (2015).
 \newblock {\em Le retour des communs: \& la crise de l'idéologie
   propriétaire}.
 \newblock Éditions Les Liens qui libèrent.
@@ -798,9 +796,8 @@
 \newblock {\em Journal of the Association for Information Science and
   Technology}, 50(2)\string:\penalty500\relax 162.
 
-\bibitem[Koehler et {others}, 2004]{koehler_longitudinal_2004}
-\bgroup\fonteauteurs\bgroup Koehler\egroup\egroup{}, W. et
-  \bgroup\fonteauteurs\bgroup {others}\egroup\egroup{} (2004).
+\bibitem[Koehler, 2004]{koehler_longitudinal_2004}
+\bgroup\fonteauteurs\bgroup Koehler\egroup\egroup{}, W. (2004).
 \newblock A longitudinal study of {Web} pages continued: a consideration of
   document persistence.
 \newblock {\em Information Research}, 9(2)\string:\penalty500\relax 9--2.

@@ -743,10 +743,9 @@
 \newblock Preserving the {Internet}.
 \newblock {\em Scientific American}, 276\string:\penalty500\relax 82--83.
 
-\bibitem[Kanhabua et Nørv{\textbackslash}a~ag, 2009]{kanhabua_using_2009}
+\bibitem[Kanhabua et Nørvaag, 2009]{kanhabua_using_2009}
 \bgroup\fonteauteurs\bgroup Kanhabua\egroup\egroup{}, N. et
-  \bgroup\fonteauteurs\bgroup Nørv{\textbackslash}a~ag\egroup\egroup{}, K.
-  (2009).
+  \bgroup\fonteauteurs\bgroup Nørvaag\egroup\egroup{}, K. (2009).
 \newblock Using temporal language models for document dating.
 \newblock \emph{In} {\em Joint {European} {Conference} on {Machine} {Learning}
   and {Knowledge} {Discovery} in {Databases}}, pages 738--741. Springer.

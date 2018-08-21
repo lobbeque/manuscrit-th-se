@@ -92,6 +92,20 @@
 \bgroup\fonteauteurs\bgroup Augustin\egroup\egroup{}, S. (421).
 \newblock {\em Confessions}.
 
+\bibitem[Bachimont, 2009]{bachimont_archivage_2009}
+\bgroup\fonteauteurs\bgroup Bachimont\egroup\egroup{}, B. (2009).
+\newblock Archivage audiovisuel et numérique: les enjeux de la longue durée.
+\newblock {\em Archivage et stockage pérennes. Paris: Hermès Science
+  Publications: Lavoisier}, pages 195--222.
+
+\bibitem[Bachimont \emph{et~al.}, 2005]{bachimont_documenter_2005}
+\bgroup\fonteauteurs\bgroup Bachimont\egroup\egroup{}, B.,
+  \bgroup\fonteauteurs\bgroup Drugeon\egroup\egroup{}, T. et
+  \bgroup\fonteauteurs\bgroup Piéjut\egroup\egroup{}, G. (2005).
+\newblock Documenter et partitionner une archive du {Web} : vers le dépot
+  légal d'un domaine media.
+\newblock {\em Archives \& Museum Informatics}, page~2.
+
 \bibitem[Baeza-Yates \emph{et~al.}, 2005]{baeza-yates_crawling_2005}
 \bgroup\fonteauteurs\bgroup Baeza-Yates\egroup\egroup{}, R.,
   \bgroup\fonteauteurs\bgroup Castillo\egroup\egroup{}, C.,
@@ -1026,6 +1040,11 @@
 \newblock Traces? {Quelles} traces? {Réflexions} pour une histoire non
   passéiste.
 \newblock {\em Revue historique}, (4)\string:\penalty500\relax 813--868.
+
+\bibitem[Mussou, 2012]{mussou_et_2012}
+\bgroup\fonteauteurs\bgroup Mussou\egroup\egroup{}, C. (2012).
+\newblock Et le {Web} devint archive: enjeux et défis.
+\newblock {\em Le Temps des médias}, (2)\string:\penalty500\relax 259--266.
 
 \bibitem[Nedelcu, 2003]{nedelcu_e-communautarisme_2003}
 \bgroup\fonteauteurs\bgroup Nedelcu\egroup\egroup{}, M. (2003).

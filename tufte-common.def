@@ -125,7 +125,7 @@
 % Each allows one of {justified,raggedleft,raggedright,raggedouter,auto}.
 
 \newcommand*{\@tufte@sidenote@justification}{\@tufte@justification@autodetect}
-\define@choicekey*+[tufte]{common}{sidenote}[\@tufte@kvtext\@tufte@kvnum]{justified,raggedleft,raggedright,raggedouter,auto}[auto]{%
+\define@choicekey*+[tufte]{common}{sidenote}[\@tufte@kvtext\@tufte@kvnum]{justified,raggedleft,raggedright,raggedouter,auto}[raggedouter]{%
   \ifcase\@tufte@kvnum\relax
     \renewcommand*{\@tufte@sidenote@justification}{\justifying}% justified
   \or
@@ -1166,7 +1166,12 @@
     {\RaggedLeft}%
 }
 
-
+\newcommand*{\RaggedOuter}{%
+  \@tufte@checkoddpage%
+  \ifthenelse{\boolean{@tufte@odd@page}}%
+    {\RaggedRight}%
+    {\RaggedLeft}%
+}
 
 %%
 % A collection of macros to be used with the new Tufte-style float environments.

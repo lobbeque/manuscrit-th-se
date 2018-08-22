@@ -41,7 +41,7 @@
 \contentsline {subsection}{Le sch\IeC {\'e}ma d'indexation}{80}{subsection*.29}
 \contentsline {subsection}{Interface de visualisation}{83}{subsection*.30}
 \contentsline {section}{\numberline {3.4}Les archives ne sont pas des traces directes du Web}{85}{section.3.4}
-\contentsline {chapter}{\numberline {4}Fragmenter les Archives Web}{89}{chapter.4}
+\contentsline {chapter}{\numberline {4}Fragmenter les archives Web}{89}{chapter.4}
 \contentsline {section}{\numberline {4.1}En dessous des pages Web}{90}{section.4.1}
 \contentsline {subsection}{D\IeC {\'e}couper, d\IeC {\'e}placer, monter}{90}{subsection*.31}
 \contentsline {subsection}{Les strates du Web}{91}{subsection*.32}
@@ -60,9 +60,9 @@
 \contentsline {subsection}{Coh\IeC {\'e}rence relative entre pages}{115}{subsection*.42}
 \contentsline {subsection}{D\IeC {\'e}dupliquer les corpus}{116}{subsection*.43}
 \contentsline {section}{\numberline {4.5}Int\IeC {\'e}gration au moteur d'exploration}{117}{section.4.5}
-\contentsline {subsection}{D'un sch\IeC {\'e}ma \IeC {\`a} l'autre}{118}{subsection*.44}
+\contentsline {subsection}{D'un sch\IeC {\'e}ma \IeC {\`a} l'autre}{117}{subsection*.44}
 \contentsline {subsection}{D\IeC {\'e}tection d'\IeC {\'e}v\IeC {\'e}nements}{120}{subsection*.45}
-\contentsline {chapter}{\numberline {5}Exploration de Collectifs Migrants \IeC {\'E}teints}{125}{chapter.5}
+\contentsline {chapter}{\numberline {5}Exploration de collectifs migrants \IeC {\'e}teints}{125}{chapter.5}
 \contentsline {section}{\numberline {5.1}\IeC {\`A} la recherche de l'\IeC {\'e}tonnement}{126}{section.5.1}
 \contentsline {subsection}{L'analyse exploratoire de donn\IeC {\'e}es}{127}{subsection*.46}
 \contentsline {subsection}{Suivre et s'attacher aux indices}{127}{subsection*.47}
@@ -71,30 +71,30 @@
 \contentsline {subsection}{\dots {}\IeC {\`a} un collectif \IeC {\'e}teint}{134}{subsection*.49}
 \contentsline {subsection}{D\IeC {\'e}finir l'espace d'exploration}{135}{subsection*.50}
 \contentsline {subsection}{Migrer d'un territoire du Web \IeC {\`a} un autre}{137}{subsection*.51}
-\contentsline {subsection}{Communaut\IeC {\'e} de lecteurs et identit\IeC {\'e}}{141}{subsection*.52}
-\contentsline {subsection}{Le Printemps Arabe comme un moment cl\IeC {\'e} ?}{143}{subsection*.53}
-\contentsline {section}{\numberline {5.3}Un soul\IeC {\`e}vement en ligne \IeC {\'e}ph\IeC {\'e}m\IeC {\`e}re}{145}{section.5.3}
-\contentsline {subsection}{Yabiladi.com : porte d'entr\IeC {\'e}e sur la diaspora}{146}{subsection*.54}
-\contentsline {subsection}{La manifestation du 20 f\IeC {\'e}vrier 2011}{150}{subsection*.55}
-\contentsline {subsection}{Topologie d'un site Web}{153}{subsection*.56}
+\contentsline {subsection}{Communaut\IeC {\'e} de lecteurs et identit\IeC {\'e}}{142}{subsection*.52}
+\contentsline {subsection}{Le Printemps Arabe comme un moment cl\IeC {\'e} ?}{144}{subsection*.53}
+\contentsline {section}{\numberline {5.3}Un soul\IeC {\`e}vement en ligne \IeC {\'e}ph\IeC {\'e}m\IeC {\`e}re}{146}{section.5.3}
+\contentsline {subsection}{Yabiladi.com : porte d'entr\IeC {\'e}e sur la diaspora}{147}{subsection*.54}
+\contentsline {subsection}{La manifestation du 20 f\IeC {\'e}vrier 2011}{151}{subsection*.55}
+\contentsline {subsection}{Topologie d'un site Web}{154}{subsection*.56}
 \contentsline {subsection}{Revenir au 20 f\IeC {\'e}vrier}{156}{subsection*.57}
-\contentsline {subsection}{Des trajets de contributeurs}{160}{subsection*.58}
-\contentsline {subsection}{Vers un embrasement}{164}{subsection*.59}
-\contentsline {section}{\numberline {5.4}Mener des recherches historiques depuis les archives Web}{168}{section.5.4}
-\contentsline {subsection}{Face aux limites de l'archivage du Web}{168}{subsection*.60}
-\contentsline {subsection}{Une micro-histoire}{169}{subsection*.61}
-\contentsline {subsection}{Les moments pivot du Web}{171}{subsection*.62}
-\contentsline {chapter}{\numberline {6}Au Del\IeC {\`a} des Archives Web}{177}{chapter.6}
-\contentsline {section}{\numberline {6.1}Les archives de navigation Web de la BPI}{178}{section.6.1}
-\contentsline {subsection}{Les postes Internet Libre}{178}{subsection*.63}
-\contentsline {subsection}{Les logs de navigation}{179}{subsection*.64}
-\contentsline {subsection}{Construire une chaine de traitements}{182}{subsection*.65}
-\contentsline {subsection}{Des profils de navigation Web}{183}{subsection*.66}
-\contentsline {subsection}{Des dimensions particuli\IeC {\`e}res}{186}{subsection*.67}
-\contentsline {section}{\numberline {6.2}Les dynamiques de l'accueil des r\IeC {\'e}fugi\IeC {\'e}s (2015-2017)}{188}{section.6.2}
-\contentsline {subsection}{\IeC {\'E}t\IeC {\'e} 2015 : organiser l'accueil}{188}{subsection*.68}
-\contentsline {subsection}{Les archives du formulaire des accueillants}{190}{subsection*.69}
-\contentsline {subsection}{Les mots de l'accueil}{194}{subsection*.70}
-\contentsline {chapter}{\relax \fontsize {12}{16}\selectfont Conclusion}{201}{chapter*.71}
-\contentsline {chapter}{Bibliographie}{205}{chapter*.72}
+\contentsline {subsection}{Des trajets de contributeurs}{161}{subsection*.58}
+\contentsline {subsection}{Vers un embrasement}{165}{subsection*.59}
+\contentsline {section}{\numberline {5.4}Mener des recherches historiques depuis les archives Web}{169}{section.5.4}
+\contentsline {subsection}{Face aux limites de l'archivage du Web}{169}{subsection*.60}
+\contentsline {subsection}{Une micro-histoire}{170}{subsection*.61}
+\contentsline {subsection}{Les moments pivot du Web}{172}{subsection*.62}
+\contentsline {chapter}{\numberline {6}Au Del\IeC {\`a} des Archives Web}{179}{chapter.6}
+\contentsline {section}{\numberline {6.1}Les archives de navigation Web de la BPI}{180}{section.6.1}
+\contentsline {subsection}{Les postes Internet Libre}{180}{subsection*.63}
+\contentsline {subsection}{Les logs de navigation}{181}{subsection*.64}
+\contentsline {subsection}{Construire une chaine de traitements}{184}{subsection*.65}
+\contentsline {subsection}{Des profils de navigation Web}{185}{subsection*.66}
+\contentsline {subsection}{Des dimensions particuli\IeC {\`e}res}{188}{subsection*.67}
+\contentsline {section}{\numberline {6.2}Les dynamiques de l'accueil des r\IeC {\'e}fugi\IeC {\'e}s (2015-2017)}{190}{section.6.2}
+\contentsline {subsection}{\IeC {\'E}t\IeC {\'e} 2015 : organiser l'accueil}{190}{subsection*.68}
+\contentsline {subsection}{Les archives du formulaire des accueillants}{192}{subsection*.69}
+\contentsline {subsection}{Les mots de l'accueil}{196}{subsection*.70}
+\contentsline {chapter}{\relax \fontsize {12}{16}\selectfont Conclusion}{203}{chapter*.71}
+\contentsline {chapter}{Bibliographie}{207}{chapter*.72}
 \contentsfinish 

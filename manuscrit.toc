@@ -71,19 +71,19 @@
 \contentsline {subsection}{\dots {}\IeC {\`a} un collectif \IeC {\'e}teint}{134}{subsection*.49}
 \contentsline {subsection}{D\IeC {\'e}finir l'espace d'exploration}{135}{subsection*.50}
 \contentsline {subsection}{Migrer d'un territoire du Web \IeC {\`a} un autre}{137}{subsection*.51}
-\contentsline {subsection}{Communaut\IeC {\'e} de lecteurs et identit\IeC {\'e}}{142}{subsection*.52}
-\contentsline {subsection}{Le Printemps Arabe comme un moment cl\IeC {\'e} ?}{144}{subsection*.53}
-\contentsline {section}{\numberline {5.3}Un soul\IeC {\`e}vement en ligne \IeC {\'e}ph\IeC {\'e}m\IeC {\`e}re}{146}{section.5.3}
-\contentsline {subsection}{Yabiladi.com : porte d'entr\IeC {\'e}e sur la diaspora}{147}{subsection*.54}
-\contentsline {subsection}{La manifestation du 20 f\IeC {\'e}vrier 2011}{151}{subsection*.55}
-\contentsline {subsection}{Topologie d'un site Web}{154}{subsection*.56}
+\contentsline {subsection}{Communaut\IeC {\'e} de lecteurs et identit\IeC {\'e} en ligne}{141}{subsection*.52}
+\contentsline {subsection}{Le Printemps arabe comme un moment cl\IeC {\'e} ?}{143}{subsection*.53}
+\contentsline {section}{\numberline {5.3}Un soul\IeC {\`e}vement en ligne \IeC {\'e}ph\IeC {\'e}m\IeC {\`e}re}{145}{section.5.3}
+\contentsline {subsection}{Yabiladi.com : un pont et une porte d'entr\IeC {\'e}e sur la diaspora}{146}{subsection*.54}
+\contentsline {subsection}{La manifestation du 20 f\IeC {\'e}vrier 2011}{150}{subsection*.55}
+\contentsline {subsection}{Topologie d'un site Web}{153}{subsection*.56}
 \contentsline {subsection}{Revenir au 20 f\IeC {\'e}vrier}{156}{subsection*.57}
-\contentsline {subsection}{Des trajets de contributeurs}{161}{subsection*.58}
-\contentsline {subsection}{Vers un embrasement}{165}{subsection*.59}
-\contentsline {section}{\numberline {5.4}Mener des recherches historiques depuis les archives Web}{169}{section.5.4}
-\contentsline {subsection}{Face aux limites de l'archivage du Web}{169}{subsection*.60}
+\contentsline {subsection}{Des trajets de contributeurs}{160}{subsection*.58}
+\contentsline {subsection}{Vers un embrasement}{164}{subsection*.59}
+\contentsline {section}{\numberline {5.4}Mener des recherches historiques depuis les archives Web}{168}{section.5.4}
+\contentsline {subsection}{Face aux limites de l'archivage du Web}{168}{subsection*.60}
 \contentsline {subsection}{Une micro-histoire}{170}{subsection*.61}
-\contentsline {subsection}{Les moments pivot du Web}{172}{subsection*.62}
+\contentsline {subsection}{Les moments pivot du Web}{171}{subsection*.62}
 \contentsline {chapter}{\numberline {6}Au Del\IeC {\`a} des Archives Web}{179}{chapter.6}
 \contentsline {section}{\numberline {6.1}Les archives de navigation Web de la BPI}{180}{section.6.1}
 \contentsline {subsection}{Les postes Internet Libre}{180}{subsection*.63}

@@ -3,7 +3,6 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscrit.aux
 The style file: apalike-fr.bst
 Database file #1: biblio.bib
-Warning--I didn't find a database entry for "saint_augustin_confessions_1993"
 Warning--empty journal in arvidson_kulturarw3_2000
 Warning--empty publisher in saint_augustin_confessions_421
 Warning--there's a number but no volume in bennafla_maroc_2011
@@ -44,7 +43,7 @@ Warning--empty institution in van_de_sompel_http_2013
 Warning--empty booktitle in yadav_change_2007
 You've used 210 entries,
             2038 wiz_defined-function locations,
-            1527 strings with 38009 characters,
+            1526 strings with 37978 characters,
 and the built_in function-call counts, 96507 in all, are:
 = -- 10958
 > -- 2780
@@ -83,4 +82,4 @@ warning$ -- 38
 while$ -- 730
 width$ -- 0
 write$ -- 2701
-(There were 39 warnings)
+(There were 38 warnings)

@@ -49,6 +49,19 @@
 \newblock \emph{In} {\em Proceedings of the 13th {ACM}/{IEEE}-{CS} joint
   conference on {Digital} libraries}, pages 339--348. ACM.
 
+\bibitem[Amar, 2018]{amar_analyse_2018}
+\bgroup\fonteauteurs\bgroup Amar\egroup\egroup{}, M. (2018).
+\newblock Analyse des logs de consultation d'{Internet} en accès libre à la
+  {Bpi} : qu'apporte le {Big} {Data} ?
+\newblock Rapport technique, Bibliothèque Publique d'Information.
+
+\bibitem[Amar et Béguet, 2008]{amar_les_2008}
+\bgroup\fonteauteurs\bgroup Amar\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Béguet\egroup\egroup{}, B. (2008).
+\newblock Les consultations ” libres ” d'{Internet} à la {Bpi} : enquête
+  exploratoire.
+\newblock Rapport technique.
+
 \bibitem[Amitay \emph{et~al.}, 2004]{amitay_trend_2004}
 \bgroup\fonteauteurs\bgroup Amitay\egroup\egroup{}, E.,
   \bgroup\fonteauteurs\bgroup Carmel\egroup\egroup{}, D.,
@@ -137,12 +150,13 @@
   futurs inédits}.
 \newblock L'horizon des possibles. Editions La Découverte.
 
-\bibitem[Beaudouin et Denis, 2014]{beaudouin_observer_2014}
-\bgroup\fonteauteurs\bgroup Beaudouin\egroup\egroup{}, V. et
-  \bgroup\fonteauteurs\bgroup Denis\egroup\egroup{}, J. (2014).
-\newblock {\em Observer et évaluer les usages de {Gallica}. {Réflexion}
-  épistémologique et stratégique}.
-\newblock Th\`ese de doctorat, BnF; Telecom ParisTech.
+\bibitem[Beaudouin \emph{et~al.}, 2016]{beaudouin__2016}
+\bgroup\fonteauteurs\bgroup Beaudouin\egroup\egroup{}, V.,
+  \bgroup\fonteauteurs\bgroup Garron\egroup\egroup{}, I. et
+  \bgroup\fonteauteurs\bgroup Rollet\egroup\egroup{}, N. (2016).
+\newblock “ {Je} pars d'un sujet, je rebondis sur un autre ”.
+\newblock Research {Report}, Télécom ParisTech ; Bibliothèque nationale de
+  France ; Labex Obvil.
 
 \bibitem[Ben-David, 2012]{ben-david_palestinian_2012}
 \bgroup\fonteauteurs\bgroup Ben-David\egroup\egroup{}, A. (2012).
@@ -661,6 +675,15 @@
 \newblock {\em La raison graphique: la domestication de la pensée sauvage}.
 \newblock Collection le sens commun. Editions de Minuit.
 
+\bibitem[Gossart \emph{et~al.}, 2018]{gossart_panorama_2018}
+\bgroup\fonteauteurs\bgroup Gossart\egroup\egroup{}, C.,
+  \bgroup\fonteauteurs\bgroup Jullien\egroup\egroup{}, N.,
+  \bgroup\fonteauteurs\bgroup Massé\egroup\egroup{}, D. et
+  \bgroup\fonteauteurs\bgroup Özman\egroup\egroup{}, M. (2018).
+\newblock Panorama des innovations sociales numériques.
+\newblock {\em Terminal. Technologie de l'information, culture \& société},
+  (122).
+
 \bibitem[Grainger \emph{et~al.}, 2014]{grainger_solr_2014}
 \bgroup\fonteauteurs\bgroup Grainger\egroup\egroup{}, T.,
   \bgroup\fonteauteurs\bgroup Potter\egroup\egroup{}, T. et
@@ -969,15 +992,15 @@
   data systems}.
 \newblock Manning Publications Co.
 
-\bibitem[Masanès, 2006]{masanes_web_2006}
-\bgroup\fonteauteurs\bgroup Masanès\egroup\egroup{}, J. (2006).
-\newblock Web archiving: issues and methods.
-\newblock \emph{In} {\em Web {Archiving}}, pages 1--53. Springer.
-
-\bibitem[Masanés, 2006]{masanes_archiving_2006}
-\bgroup\fonteauteurs\bgroup Masanés\egroup\egroup{}, J. (2006).
+\bibitem[Masanès, 2006a]{masanes_archiving_2006}
+\bgroup\fonteauteurs\bgroup Masanès\egroup\egroup{}, J. (2006a).
 \newblock Archiving the hidden web.
 \newblock \emph{In} {\em Web {Archiving}}, pages 115--129. Springer.
+
+\bibitem[Masanès, 2006b]{masanes_web_2006}
+\bgroup\fonteauteurs\bgroup Masanès\egroup\egroup{}, J. (2006b).
+\newblock Web archiving: issues and methods.
+\newblock \emph{In} {\em Web {Archiving}}, pages 1--53. Springer.
 
 \bibitem[McDonnell \emph{et~al.}, 1999]{mcdonnell_cataloging_1999}
 \bgroup\fonteauteurs\bgroup McDonnell\egroup\egroup{}, J.~P.,
@@ -1272,6 +1295,11 @@
 \bgroup\fonteauteurs\bgroup Scott\egroup\egroup{}, J. (2017).
 \newblock {\em Social network analysis}.
 \newblock Sage.
+
+\bibitem[Senellart, 2007]{senellart_comprendre_2007}
+\bgroup\fonteauteurs\bgroup Senellart\egroup\egroup{}, P. (2007).
+\newblock {\em Comprendre le {Web} caché. {Understanding} the hidden {Web}}.
+\newblock Thèse.
 
 \bibitem[Spaniol \emph{et~al.}, 2009]{spaniol_data_2009}
 \bgroup\fonteauteurs\bgroup Spaniol\egroup\egroup{}, M.,

@@ -60,7 +60,7 @@
   \bgroup\fonteauteurs\bgroup Béguet\egroup\egroup{}, B. (2008).
 \newblock Les consultations ” libres ” d'{Internet} à la {Bpi} : enquête
   exploratoire.
-\newblock Rapport technique.
+\newblock Rapport de recherche.
 
 \bibitem[Amitay \emph{et~al.}, 2004]{amitay_trend_2004}
 \bgroup\fonteauteurs\bgroup Amitay\egroup\egroup{}, E.,
@@ -150,13 +150,13 @@
   futurs inédits}.
 \newblock L'horizon des possibles. Editions La Découverte.
 
-\bibitem[Beaudouin \emph{et~al.}, 2016]{beaudouin__2016}
+\bibitem[Beaudouin \emph{et~al.}, 2016]{beaudouin_je_2016}
 \bgroup\fonteauteurs\bgroup Beaudouin\egroup\egroup{}, V.,
   \bgroup\fonteauteurs\bgroup Garron\egroup\egroup{}, I. et
   \bgroup\fonteauteurs\bgroup Rollet\egroup\egroup{}, N. (2016).
-\newblock “ {Je} pars d'un sujet, je rebondis sur un autre ”.
-\newblock Research {Report}, Télécom ParisTech ; Bibliothèque nationale de
-  France ; Labex Obvil.
+\newblock Je pars d'un sujet, je rebondis sur un autre.
+\newblock Rapport de recherche, Télécom ParisTech ; Bibliothèque nationale
+  de France ; Labex Obvil.
 
 \bibitem[Ben-David, 2012]{ben-david_palestinian_2012}
 \bgroup\fonteauteurs\bgroup Ben-David\egroup\egroup{}, A. (2012).
@@ -214,13 +214,15 @@
 
 \bibitem[Berthomière, 2013]{berthomiere_french_2013}
 \bgroup\fonteauteurs\bgroup Berthomière\egroup\egroup{}, W. (2013).
-\newblock ‘{A} {French} what?’. à la recherche d’une diaspora
-  française. {Premiers} éléments d’enquête au sein de l’espace
-  internet.
+\newblock A {French} what? À la recherche d’une diaspora française.
+  {Premiers} éléments d’enquête au sein de l’espace internet.
 
-\bibitem[Bertin, 1973]{bertin_semiologie_1973}
-\bgroup\fonteauteurs\bgroup Bertin\egroup\egroup{}, J. (1973).
-\newblock Sémiologie graphique: {Les} diagrammes-{Les} réseaux-{Les} cartes.
+\bibitem[Bertin \emph{et~al.}, 1967]{bertin_semiologie_1967}
+\bgroup\fonteauteurs\bgroup Bertin\egroup\egroup{}, J.,
+  \bgroup\fonteauteurs\bgroup Barbut\egroup\egroup{}, M. et
+  \bgroup\fonteauteurs\bgroup Bonin\egroup\egroup{}, S. (1967).
+\newblock Sémiologie graphique: les diagrammes, les réseaux, les cartes.
+\newblock {\em Paris/La Haye, Éd. Gauthier-Villars/Mouton}.
 
 \bibitem[Blanchard et Rodier, 2016]{blanchard_crise_2016}
 \bgroup\fonteauteurs\bgroup Blanchard\egroup\egroup{}, E. et
@@ -315,18 +317,27 @@
 \newblock {\em Data mining and knowledge discovery},
   7(4)\string:\penalty500\relax 399--424.
 
-\bibitem[Cai \emph{et~al.}, 2003]{cai_vips:_2003}
+\bibitem[Cai \emph{et~al.}, 2003]{cai_extracting_2003}
 \bgroup\fonteauteurs\bgroup Cai\egroup\egroup{}, D.,
   \bgroup\fonteauteurs\bgroup Yu\egroup\egroup{}, S.,
   \bgroup\fonteauteurs\bgroup Wen\egroup\egroup{}, J.-R. et
   \bgroup\fonteauteurs\bgroup Ma\egroup\egroup{}, W.-Y. (2003).
-\newblock Vips: a vision-based page segmentation algorithm.
+\newblock Extracting content structure for web pages based on visual
+  representation.
+\newblock \emph{In} {\em Asia-{Pacific} {Web} {Conference}}, pages 406--417.
+  Springer.
 
 \bibitem[Canfora, 1990]{canfora_vanished_1990}
 \bgroup\fonteauteurs\bgroup Canfora\egroup\egroup{}, L. (1990).
 \newblock {\em The {Vanished} {Library}: {A} {Wonder} of the {Ancient}
   {World}}, volume~7.
 \newblock Univ of California Press.
+
+\bibitem[Cardon, 2015]{cardon_quoi_2015}
+\bgroup\fonteauteurs\bgroup Cardon\egroup\egroup{}, D. (2015).
+\newblock {\em A quoi rêvent les algorithmes. {Nos} vies à l'heure: {Nos}
+  vies à l’heure des big data}.
+\newblock Le Seuil.
 
 \bibitem[Castillo \emph{et~al.}, 2004]{castillo_scheduling_2004}
 \bgroup\fonteauteurs\bgroup Castillo\egroup\egroup{}, C.,
@@ -375,6 +386,13 @@
 \newblock Cerner la notion de temps.
 \newblock {\em Rue Descartes}, (2)\string:\penalty500\relax 30--51.
 
+\bibitem[Chen, 2010]{chen_internet-usage_2010}
+\bgroup\fonteauteurs\bgroup Chen\egroup\egroup{}, W. (2010).
+\newblock Internet-usage patterns of immigrants in the process of intercultural
+  adaptation.
+\newblock {\em Cyberpsychology, Behavior, and Social Networking},
+  13(4)\string:\penalty500\relax 387--399.
+
 \bibitem[Cho et Garcia-Molina, 1999]{cho_evolution_1999}
 \bgroup\fonteauteurs\bgroup Cho\egroup\egroup{}, J. et
   \bgroup\fonteauteurs\bgroup Garcia-Molina\egroup\egroup{}, H. (1999).
@@ -416,6 +434,12 @@
 \newblock Evaluating web archive search systems.
 \newblock \emph{In} {\em International {Conference} on {Web} {Information}
   {Systems} {Engineering}}, pages 440--454. Springer.
+
+\bibitem[Damian et Van~Ingen, 2014]{damian_social_2014}
+\bgroup\fonteauteurs\bgroup Damian\egroup\egroup{}, E. et
+  \bgroup\fonteauteurs\bgroup Van~Ingen\egroup\egroup{}, E. (2014).
+\newblock Social network site usage and personal relations of migrants.
+\newblock {\em Societies}, 4(4)\string:\penalty500\relax 640--653.
 
 \bibitem[De~Jong \emph{et~al.}, 2005]{de_jong_temporal_2005}
 \bgroup\fonteauteurs\bgroup De~Jong\egroup\egroup{}, F.,
@@ -472,11 +496,17 @@
 \newblock {\em Social Science Information}, 47(4)\string:\penalty500\relax
   565--579.
 
-\bibitem[Diminescu, 2012]{diminescu_e-diasporas_2012}
-\bgroup\fonteauteurs\bgroup Diminescu\egroup\egroup{}, D. (2012).
+\bibitem[Diminescu, 2012a]{diminescu_e-diasporas_2012}
+\bgroup\fonteauteurs\bgroup Diminescu\egroup\egroup{}, D. (2012a).
 \newblock {\em E-{Diasporas} {Atlas}: {Exploration} and {Cartography} of
   {Diasporas} on {Digital} {Networks}}.
 \newblock Ed. de la Maison des sciences de l'homme.
+
+\bibitem[Diminescu, 2012b]{diminescu_introduction:_2012}
+\bgroup\fonteauteurs\bgroup Diminescu\egroup\egroup{}, D. (2012b).
+\newblock {\em Introduction: {Digital} methods for the exploration, analysis
+  and mapping of e-diasporas}.
+\newblock Sage Publications Sage UK: London, England.
 
 \bibitem[Diminescu, 2016]{diminescu_traces_2016}
 \bgroup\fonteauteurs\bgroup Diminescu\egroup\egroup{}, D. (2016).
@@ -535,9 +565,8 @@
   re-use.
 \newblock \emph{In} {\em {ACM} {SIGIR} {Forum}}, volume~49, pages 28--35. ACM.
 
-\bibitem[Ellison et {others}, 2007]{ellison_social_2007}
-\bgroup\fonteauteurs\bgroup Ellison\egroup\egroup{}, N.~B. et
-  \bgroup\fonteauteurs\bgroup {others}\egroup\egroup{} (2007).
+\bibitem[Ellison, 2007]{ellison_social_2007}
+\bgroup\fonteauteurs\bgroup Ellison\egroup\egroup{}, N.~B. (2007).
 \newblock Social network sites: {Definition}, history, and scholarship.
 \newblock {\em Journal of computer-mediated Communication},
   13(1)\string:\penalty500\relax 210--230.
@@ -589,13 +618,13 @@
 
 \bibitem[Fry, 2000]{fry_organic_2000}
 \bgroup\fonteauteurs\bgroup Fry\egroup\egroup{}, B.~J. (2000).
-\newblock Organic information design.
-\newblock M\'emoire de D.E.A., Massachusetts Institute of Technology.
+\newblock {\em Organic information design}.
+\newblock Mémoire de master, Massachusetts Institute of Technology.
 
 \bibitem[Fry, 2004]{fry_computational_2004}
 \bgroup\fonteauteurs\bgroup Fry\egroup\egroup{}, B.~J. (2004).
 \newblock {\em Computational information design}.
-\newblock {PhD} {Thesis}, Massachusetts Institute of Technology.
+\newblock Thèse, Massachusetts Institute of Technology.
 
 \bibitem[Fung \emph{et~al.}, 2005]{fung_parameter_2005}
 \bgroup\fonteauteurs\bgroup Fung\egroup\egroup{}, G. P.~C.,
@@ -705,11 +734,6 @@
   in conjunction with the 7th {European} {Conference} on {Research} and
   {Advanced} {Technologies} for {Digital} {Libraries} ({ECDL} 2003)}, pages
   37--48.
-
-\bibitem[Hatcher et Gospodnetic, 2004]{hatcher_lucene_2004}
-\bgroup\fonteauteurs\bgroup Hatcher\egroup\egroup{}, E. et
-  \bgroup\fonteauteurs\bgroup Gospodnetic\egroup\egroup{}, O. (2004).
-\newblock Lucene in action.
 
 \bibitem[Heller et Pezzani, 2014]{heller__2014}
 \bgroup\fonteauteurs\bgroup Heller\egroup\egroup{}, C. et
@@ -939,6 +963,12 @@
 \newblock {\em Le geste et la parole}.
 \newblock Albin Michel.
 
+\bibitem[Leurs et Ponzanesi, 2018]{leurs_connected_2018}
+\bgroup\fonteauteurs\bgroup Leurs\egroup\egroup{}, K. et
+  \bgroup\fonteauteurs\bgroup Ponzanesi\egroup\egroup{}, S. (2018).
+\newblock Connected migrants: {Encapsulation} and cosmopolitanization.
+\newblock {\em Popular Communication}, 16(1)\string:\penalty500\relax 4--20.
+
 \bibitem[Licklider et Taylor, 1968]{licklider_computer_1968}
 \bgroup\fonteauteurs\bgroup Licklider\egroup\egroup{}, J.~C. et
   \bgroup\fonteauteurs\bgroup Taylor\egroup\egroup{}, R.~W. (1968).
@@ -979,6 +1009,12 @@
 \newblock {\em International journal of communication},
   5\string:\penalty500\relax 31.
 
+\bibitem[Loveluck, 2015]{loveluck_reseaux_2015}
+\bgroup\fonteauteurs\bgroup Loveluck\egroup\egroup{}, B. (2015).
+\newblock {\em Réseaux, libertés et contrôle: {Une} généalogie politique
+  d'internet}.
+\newblock Armand Colin.
+
 \bibitem[Marchandise, 2014]{marchandise_facebook_2014}
 \bgroup\fonteauteurs\bgroup Marchandise\egroup\egroup{}, S. (2014).
 \newblock Le {Facebook} des étudiants marocains. {Territoire} relationnel et
@@ -1001,6 +1037,13 @@
 \bgroup\fonteauteurs\bgroup Masanès\egroup\egroup{}, J. (2006b).
 \newblock Web archiving: issues and methods.
 \newblock \emph{In} {\em Web {Archiving}}, pages 1--53. Springer.
+
+\bibitem[McCandless \emph{et~al.}, 2010]{mccandless_lucene_2010}
+\bgroup\fonteauteurs\bgroup McCandless\egroup\egroup{}, M.,
+  \bgroup\fonteauteurs\bgroup Hatcher\egroup\egroup{}, E. et
+  \bgroup\fonteauteurs\bgroup Gospodnetic\egroup\egroup{}, O. (2010).
+\newblock {\em Lucene in action}.
+\newblock Manning Publications Co.
 
 \bibitem[McDonnell \emph{et~al.}, 1999]{mcdonnell_cataloging_1999}
 \bgroup\fonteauteurs\bgroup McDonnell\egroup\egroup{}, J.~P.,
@@ -1256,11 +1299,11 @@
 \newblock {\em Actes de la recherche en sciences sociales},
   59(1)\string:\penalty500\relax 61--72.
 
-\bibitem[Sayad, 1999]{sayad_double_1999}
-\bgroup\fonteauteurs\bgroup Sayad\egroup\egroup{}, A. (1999).
-\newblock La double absence.
-\newblock {\em Des illusions de l’émigré aux souffrances de l’immigré},
-  327.
+\bibitem[Sayad, 2000]{sayad_double_2000}
+\bgroup\fonteauteurs\bgroup Sayad\egroup\egroup{}, A. (2000).
+\newblock {\em La double absence: des illusions de l'émigré aux souffrances
+  de l'immigré}.
+\newblock Seuil.
 
 \bibitem[Schafer, 2015]{schafer_part_2015}
 \bgroup\fonteauteurs\bgroup Schafer\egroup\egroup{}, V. (2015).
@@ -1412,6 +1455,12 @@
 \newblock \emph{In} {\em Proceedings of the 15th international conference on
   {World} {Wide} {Web}}, pages 233--241. ACM.
 
+\bibitem[Tréguer, 2017]{treguer_pouvoir_2017}
+\bgroup\fonteauteurs\bgroup Tréguer\egroup\egroup{}, F. (2017).
+\newblock {\em Pouvoir et résistance dans l'espace public: une contre-histoire
+  d'{Internet} ({XVe}-{XXIe} siècle)}.
+\newblock Thèse, EHESS-Paris.
+
 \bibitem[Tukey, 1962]{tukey_future_1962}
 \bgroup\fonteauteurs\bgroup Tukey\egroup\egroup{}, J.~W. (1962).
 \newblock The future of data analysis.
@@ -1512,5 +1561,13 @@ Van~den \bgroup\fonteauteurs\bgroup Bos\egroup\egroup{}, M. et
   \bgroup\fonteauteurs\bgroup Gupta\egroup\egroup{}, J.~P. (2007).
 \newblock Change {Detection} in {Web} {Pages}.
 \newblock pages 265--270. IEEE.
+
+\bibitem[Zijlstra et Liempt, 2017]{zijlstra_smart_2017}
+\bgroup\fonteauteurs\bgroup Zijlstra\egroup\egroup{}, J. et
+  \bgroup\fonteauteurs\bgroup Liempt\egroup\egroup{}, I.~V. (2017).
+\newblock Smart (phone) travelling: {Understanding} the use and impact of
+  mobile technology on irregular migration journeys.
+\newblock {\em International Journal of Migration and Border Studies},
+  3(2-3)\string:\penalty500\relax 174--191.
 
 \end{thebibliography}

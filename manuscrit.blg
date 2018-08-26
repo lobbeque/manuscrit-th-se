@@ -3,16 +3,15 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscrit.aux
 The style file: apalike-fr.bst
 Database file #1: biblio.bib
+Warning--I didn't find a database entry for "cai_vips:_2003"
 Warning--empty institution in amar_les_2008
 Warning--empty journal in arvidson_kulturarw3_2000
 Warning--empty publisher in saint_augustin_confessions_421
 Warning--there's a number but no volume in bennafla_maroc_2011
 Warning--empty booktitle in berthomiere_french_2013
-Warning--empty journal in bertin_semiologie_1973
 Warning--there's a number but no volume in blanchard_crise_2016
 Warning--there's a number but no volume in bounie_analyse_2010
-Warning--empty journal in brusle_les_2012
-Warning--empty journal in cai_vips:_2003
+Warning--empty booktitle in brusle_les_2012
 Warning--empty note in cern_document_1993
 Warning--empty journal in chaney_who_2015
 Warning--there's a number but no volume in chen_cerner_2011
@@ -25,7 +24,6 @@ Warning--empty note in gaumont_methods_2017
 Warning--there's a number but no volume in gebeil_quand_2016
 Warning--there's a number but no volume in ginzburg_signes_1980
 Warning--there's a number but no volume in gossart_panorama_2018
-Warning--empty journal in hatcher_lucene_2004
 Warning--there's a number but no volume in ketelaar_de_2006
 Warning--empty note in khouzaimi_e-diasporas_2015
 Warning--there's a number but no volume in laflaquiere_archiver_2005
@@ -44,45 +42,45 @@ Warning--can't use both author and editor fields in tukey_exploratory_1977
 Warning--empty note in unesco_charter_2003
 Warning--empty institution in van_de_sompel_http_2013
 Warning--empty booktitle in yadav_change_2007
-You've used 214 entries,
+You've used 222 entries,
             2038 wiz_defined-function locations,
-            1543 strings with 38610 characters,
-and the built_in function-call counts, 97986 in all, are:
-= -- 11124
-> -- 2833
-< -- 211
-+ -- 1072
-- -- 962
-* -- 6602
-:= -- 19502
-add.period$ -- 677
-call.type$ -- 214
-change.case$ -- 1521
-chr.to.int$ -- 212
-cite$ -- 255
-duplicate$ -- 3623
-empty$ -- 6192
-format.name$ -- 1278
-if$ -- 19969
-int.to.chr$ -- 3
+            1579 strings with 39947 characters,
+and the built_in function-call counts, 101443 in all, are:
+= -- 11518
+> -- 2914
+< -- 218
++ -- 1103
+- -- 988
+* -- 6827
+:= -- 20197
+add.period$ -- 705
+call.type$ -- 222
+change.case$ -- 1569
+chr.to.int$ -- 219
+cite$ -- 260
+duplicate$ -- 3754
+empty$ -- 6430
+format.name$ -- 1314
+if$ -- 20679
+int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 234
-newline$ -- 1061
-num.names$ -- 642
-pop$ -- 1532
+missing$ -- 246
+newline$ -- 1104
+num.names$ -- 666
+pop$ -- 1590
 preamble$ -- 1
-purify$ -- 1551
+purify$ -- 1604
 quote$ -- 0
-skip$ -- 2732
+skip$ -- 2817
 stack$ -- 0
-substring$ -- 8487
-swap$ -- 686
-text.length$ -- 66
+substring$ -- 8806
+swap$ -- 707
+text.length$ -- 67
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1214
-warning$ -- 41
-while$ -- 738
+type$ -- 1252
+warning$ -- 38
+while$ -- 765
 width$ -- 0
-write$ -- 2751
-(There were 41 warnings)
+write$ -- 2859
+(There were 39 warnings)

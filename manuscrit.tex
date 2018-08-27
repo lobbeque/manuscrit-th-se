@@ -256,6 +256,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Résumé %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   
 \newpage
+
+~\vfill
+
 \begin{fullwidth}
 \thispagestyle{empty}
 \setlength{\parskip}{\baselineskip}
@@ -276,6 +279,8 @@
 
 
 \end{fullwidth}
+  
+\vfill  
   
 \thispagestyle{empty}%
 \clearpage%
@@ -336,7 +341,7 @@ Ceci étant exposé, nous voulons, dans cette thèse, redonner aux chercheurs le
 
 Le fragment Web a la particularité d'être associé à une date d'édition (c.-à-d., la date a laquelle il a été mis en ligne) plutôt qu'aux seules dates de téléchargement. Ce faisant, les archives Web quittent, enfin, le temps des robots collecteurs pour retrouver le temps du Web tel qu'il a été. Et dans un même mouvement, c'est l'humain que nous cherchons à replacer au cœur de l'analyse des archives en témoignant directement, grâce au fragment Web, du geste des personnes qui auront, par le passé, publié, partagé ou commenté un contenu en ligne.   
 
-Aussi, le fragment Web introduit une nouvelle grammaire analytique qui permet aux chercheurs d'explorer les archives Web de manière désagrégée et libérée de la pesanteur des formats existants. Les corpus collectés passent alors sur la table de montage, où ils sont découpés, déplacés et mis en relation avec d'autres éléments épars du Web passé. Cette souplesse méthodologique ouvre la voie à des explorations à grande échelle, susceptibles de retracer l'histoire en ligne et hors ligne d'un moment singulier. Et s'il semble ambitieux de vouloir traiter ici de l'ensemble des mutations du Web ou des transformations qu'il a induites dans nos sociétés, nous pensons néanmoins pouvoir nous focaliser sur un problème plus générique : comment rendre compte, au présent, d'un événement et de sa genèse en le restituant dans la double temporalité du Web et du réel ?
+Aussi, le fragment Web introduit une nouvelle grammaire analytique qui permet aux chercheurs d'explorer les archives Web de manière désagrégée et libérée de la pesanteur des formats existants. Les corpus collectés passent alors sur la table de montage, où ils sont découpés, déplacés et mis en relation avec d'autres éléments épars du Web passé. Cette souplesse méthodologique ouvre la voie à des explorations à grande échelle, susceptibles de retracer l'histoire en ligne et hors-ligne d'un moment singulier. Et s'il semble ambitieux de vouloir traiter ici de l'ensemble des mutations du Web ou des transformations qu'il a induites dans nos sociétés, nous pensons néanmoins pouvoir nous focaliser sur un problème plus générique : comment rendre compte, au présent, d'un événement et de sa genèse en le restituant dans la double temporalité du Web et du réel ?
 
 Cependant les enjeux soulevés par l'exploration des archives du Web dépassent bien souvent le cadre strict d'une seule et unique discipline. Aussi, pour interroger l'histoire du Web passé, il ne faudra pas hésiter à croiser les regards, les perspectives de recherches et à s'ouvrir aux controverses. Ainsi, bien que soutenue en informatique, la présente thèse se situera, par moment, aux frontières de l'histoire et de la sociologie.\\
 
@@ -728,7 +733,7 @@ Aussi, les e-Diasporas doivent être comprises et analysées vis-à-vis de trois
 
 Car les e-Diasporas ne sont, au final, que des images fixes, des captures instantanées d'une petite partie du Web. Or, les pages et les sites évoluent et se transforment en continu, rendant rapidement obsolètes les cartes réalisées pour l'Atlas. Ainsi, lorsqu'après dix années d'attente, nous revenons enfin visiter chacun des sites collectés, force est de constater qu'une grande majorité d'entre eux ont disparu, ont été effacés ou ne sont plus ce qu'ils étaient.
 
-Mais à la fin des années 2000, anticipant le caractère éphémère du Web, les chercheurs coordonnant les travaux de l'Atlas décident d'ajouter une dernière brique à leur chaîne méthodologique (Figure~\ref{fig:edia-2}) : l'\textbf{archivage}. Cette volonté de garder une trace des sites observés était même antérieure à la création de l'Atlas puisque la question de l'archivage fut posée dès 2004. Aussi et afin de préserver la tenue de recherches futures, portant sur l'histoire et l'évolution de chacune des e-Diasporas, une campagne d'archivage des sites cartographiés est lancée en 2010. Ce faisant, cette thèse et les chapitres à venir auront pour principal objet l'exploration au présent des archives Web de l'Atlas e-Diasporas.     
+Mais anticipant le caractère éphémère du Web, les chercheurs coordonnant les travaux de l'Atlas décident d'ajouter une dernière brique à leur chaîne méthodologique (Figure~\ref{fig:edia-2}) : l'\textbf{archivage}. Cette volonté de garder une trace des sites observés était même antérieure à la création de l'Atlas puisque la question de l'archivage fut posée dès 2004. Aussi et afin de préserver la tenue de recherches futures, portant sur l'histoire et l'évolution de chacune des e-Diasporas, une campagne d'archivage des sites cartographiés est lancée en 2010. Ce faisant, cette thèse et les chapitres à venir auront pour principal objet l'exploration au présent des archives Web de l'Atlas e-Diasporas.     
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapitre 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -954,7 +959,7 @@ La dernière famille, connue sous l'appellation d'\textbf{archivage côté clien
 
 Comme la collecte doit être menée page par page, programmée à l'avance et conduite à échelle large, les archivistes du Web se sont inspirés des crawlers développés pour les moteurs de recherche \citep{pant_crawling_2004} à la fin des années 1990. Un \textbf{crawler} est un robot programmé pour parcourir un site ou un ensemble de sites, une page à la fois, en capturant au passage l'ensemble de ses fichiers d'origine. Un crawler, pour bien fonctionner, doit respecter des règles de politesse~: éviter les dénis de services (DNS, Serveurs HTTP), les listes noires officielles (par exemple robots.txt) et officieuses (\textit{cloaking}, pièges à robot)\footnote{\RaggedOuter Ce manuscrit n'étant pas spécifiquement centré sur la question des crawlers, il est possible d'en apprendre d'avantage en se référant aux cours de C. Maussang (\url{https://frama.link/FrFrZ5EC}) ou en se tournant vers des ouvrages dédiés \citep{chakrabarti_mining_2002,mitchell_web_2015}.}. Dans le cadre spécifique des archives du Web, un crawler doit en plus intégrer les contraintes temporelles évoquées précédemment. Il a pour mission de capter l'ensemble des changements intervenant sur une page ou un site cible. Enfin, nous appelons \textbf{crawl} une campagne d'archivage menée par un crawler et (par abus de langage) le résultat même de cette campagne. 
 
-Les caractéristiques d'un corpus d'archives Web sont directement le fait du crawler qui a mené la collecte. Un crawl peut ainsi être conduit de plusieurs manières. Une première possibilité revient à entreprendre une collecte en profondeur d'abord (\textit{depth-first}, Figure~\ref{fig:crawl} (a)). Le crawler capturera en priorité les pages filles de la page sur laquelle il se trouve. Un autre approche consiste à travailler en largeur d'abord (\textit{breadth-first}, Figure~\ref{fig:crawl} (b)). Le crawler privilégiera cette fois les pages sœurs. Mais ces techniques sont lentes et il faudra prévoir un temps considérable pour parcourir l'entièreté d'un site, or l'archiviste cherchera au contraire à minimiser le temps de capture. Aussi, on peut envisager l'instauration d'une limite en profondeur pour ne pas archiver des pages trop éloignées de la racine du site (Figure~\ref{fig:crawl} (c)).
+Les caractéristiques d'un corpus d'archives Web sont directement le fait du crawler qui a mené la collecte. Un crawl peut ainsi être conduit de plusieurs manières. Une première possibilité revient à entreprendre une collecte en profondeur d'abord (\textit{depth-first}, Figure~\ref{fig:crawl}, a). Le crawler capturera en priorité les pages filles de la page sur laquelle il se trouve. Un autre approche consiste à travailler en largeur d'abord (\textit{breadth-first}, Figure~\ref{fig:crawl}, b). Le crawler privilégiera cette fois les pages sœurs. Mais ces techniques sont lentes et il faudra prévoir un temps considérable pour parcourir l'entièreté d'un site, or l'archiviste cherchera au contraire à minimiser le temps de capture. Aussi, on peut envisager l'instauration d'une limite en profondeur pour ne pas archiver des pages trop éloignées de la racine du site (Figure~\ref{fig:crawl}, c).
 
 \begin{figure*}%
   \includegraphics[width=\linewidth]{graphics/crawl}
@@ -1063,7 +1068,7 @@ Côté utilisateur, la recherche se traduit par une interface Web, dans laquelle
 
 Dans ce domaine, la recherche dite \textbf{plein texte} (\textit{full-text}) est ce vers quoi tendent toutes les initiatives d'archive du Web \citep{costa_characterizing_2011,costa_evaluating_2012}. En recherche d'information, le full-text revient à faire correspondre les mots d'un document ou d'un ensemble de documents avec les critères fournis par un utilisateur (des mots clés, une phrase, etc.). Popularisée sur le Web par AltaVista, c'est la recherche telle que nous l'expérimentons quotidiennement en interrogeant Google. Mais, encore aujourd'hui, son application aux moteurs d'exploration d'archives Web reste limitée. Si l'INA, les portugais d'Arquivo.pt ou encore The Web Archive of Catalonia\footnote{\RaggedOuter \url{https://www.padicat.cat/en}} proposent d'étendre cette fonctionnalité à l'ensemble de leurs corpus \citep{stack_full_2006}, à la BNF, au contraire, le full-text n'est applicable que sur les seules URL des pages archivées. c'est-à-dire qu'à une requête utilisateur donnée, le moteur de la BNF ne pourra faire correspondre qu'une recherche stricte par URL, sans regard pour le contenu même des pages. En 2016, Internet Archive ajoute à la Wayback Machine un système full-text basé sur le titre des pages Web collectées\footnote{\RaggedOuter Si et seulement si le titre est présent dans la balise \textit{title} du HTML de la page (\url{https://frama.link/K4CMmzHU}, \url{https://www.w3schools.com/html/html_head.asp}).}, avant cette date seule une recherche stricte par URL était proposée. Selon M. Costa \citep{costa_survey_2013}, $67\%$ des initiatives d'archivage du Web proposaient en 2013 une recherche full-text complète, limitée ou dégradée. 
 
-La taille importante des corpus ou la difficulté des archivistes à définir quelles doivent être les éléments d'une page Web à indexer peuvent expliquer que le full-text soit si compliqué à mettre en place. Mais des alternatives existent : on peut ainsi envisager une recherche par catégories \citep{holzmann_tempas:_2016}, par entités nommées \citep{spaniol_tracking_2012} ou en se basant sur des tendances issues des réseaux sociaux \citep{risse_arcomem_2014}. Une solution originale consiste à ne pas construire de moteur d'exploration mais à s'adosser à des systèmes existants. Le système Memento\footnote{\RaggedOuter \url{http://mementoweb.org/about/}}, par exemple, permet d'interroger les corpus d'Internet Archive directement depuis un navigateur Web, à la manière d'une extension. 
+La taille importante des corpus ou la difficulté des archivistes à définir quels doivent être les éléments d'une page Web à indexer peuvent expliquer que le full-text soit si compliqué à mettre en place. Mais des alternatives existent : on peut ainsi envisager une recherche par catégories \citep{holzmann_tempas:_2016}, par entités nommées \citep{spaniol_tracking_2012} ou en se basant sur des tendances issues des réseaux sociaux \citep{risse_arcomem_2014}. Une solution originale consiste à ne pas construire de moteur d'exploration mais à s'adosser à des systèmes existants. Le système Memento\footnote{\RaggedOuter \url{http://mementoweb.org/about/}}, par exemple, permet d'interroger les corpus d'Internet Archive directement depuis un navigateur Web, à la manière d'une extension. 
 
 Créée en 2001, la Wayback Machine est le plus emblématique des systèmes de consultation d'archives Web \citep{tofel_waybackfor_2007}. L'ensemble des res\-sources archivées y sont indexées page par page (bloc WARC par bloc WARC). Les index sont ensuite répartis sur les quelques 2500 serveurs de stockage du centre de stockage (\textit{data center}) principal d'Internet Archive. Un ordonnanceur central envoie les requêtes des utilisateurs à l'ensemble des serveurs avant d'agréger les résultats. Il existe un système de cache destiné à améliorer les temps de réponse de la Wayback Machine, ainsi l'attente variera en fonction de la popularité de chaque requête. Le moteur des Portuguese Web Archives propose, lui, d'indexer les archives d'abord par date de téléchargement puis page par page \citep{costa_survey_2013}. Si l'utilisateur associe à sa requête une année ou un intervalle de temps précis, le résultat de ses recherches lui sera plus rapidement retourné. Les moteurs d'exploration peuvent aussi être entièrement décentralisés. A. Anand décrit Everlast \citep{anand_everlast:_2009} comme un système de consultation pair-à-pair (\textit{peer-to-peer}) où chaque élément du réseau est à la fois serveur et client, plus scalable donc. 
 
@@ -1425,7 +1430,7 @@ Le schéma est un fichier décrivant dans le détail la façon dont tout documen
 
 \noindent Pour chaque champ, nous définissons un nom et un type : une date, un nombre (int), du texte (string et text)\ldots{} Tous les champs sont indexés (\texttt{indexed="true"}). Ceux destinés à une recherche par dimension sont associés à une docValue. Certain champs, comme les dates de téléchargement, sont multivalués (une page peut avoir été crawlée plusieurs fois à l'identique). Le champ de recherche plein text par défaut est le champ page\_text qui couvre l'ensemble du texte d'une page archivée\footnote{\RaggedOuter Ce champ subit un traitement particulier (un découpage en bi-gramme : page\_text\_shingle) dont nous reparlerons en Section~\ref{sec:retour_au_moteur}}. Dans Spark, lors de la transformation des DAFF en document Solr, nous extrayons les liens de citation hypertextes (\texttt{page\_link}) et les informations contenues dans l'en tête des pages\footnote{\RaggedOuter Tout ce qui est contenu dans les balises HTML \textit{<meta>} (\url{https://www.w3schools.com/Tags/tag_meta.asp})} (\texttt{page\_meta\_img}, \texttt{page\_meta\_date}, etc.). Les diverses dates associées à une page sont également présentes : allant de la date de lancement du crawl (\texttt{crawl\_\-date\_f}), à la date de téléchargement (\texttt{download\_date}) et en passant par la date de dernière modification (\texttt{download\_date\_f})\footnote{\RaggedOuter Nous avons, un temps, intégré à notre schéma les information de l'en-tête HTTP des pages archivées. Mais étant trop peu fiable, nous avons décidé de ne plus les prendre en compte.}.
 
-Mais les documents à indexer ne sont pas les seuls à devoir passer par le schéma. En effet, un moteur de recherche est un système à double entrée (Figure~\ref{fig:architecture}), conjuguant des documents et des requêtes utilisateurs grâce à une fonction de similarité. Pour ce faire, documents et requêtes doivent parler la \textit{même langue}, c'est-à-dire qu'une requête utilisateur devra être traitée de la même manière que les documents à indexer, subir les mêmes transformations et interroger les bons champs. Cette suite de transformations est appelée \textbf{analyzer}\footnote{\RaggedOuter Pour plus d'informations sur les analyzers et tokenizers dans Solr: \url{https://wiki.apache.org/solr/LanguageAnalysis}}. Sur ce point, documents et requêtes suivent les traitements suivants : tout d'abord, les majuscules deviennent minuscules (Figure~\ref{fig:tokenizer}, (a)), puis le texte est découpé en termes distincts (Figure~\ref{fig:tokenizer}, (b)) et les \textit{stopwords}\footnote{\RaggedOuter Mots qui ne sont généralement pas intéressants pour l'analyse : et, il, elle\ldots{} (voir \url{https://fr.wikipedia.org/wiki/Mot_vide})} sont écartés (Figure~\ref{fig:tokenizer}, (c)), s'en suit une phase appelée \textbf{stemming} dans laquelle on ne garde finalement que la racine des termes restants (Figure~\ref{fig:tokenizer}, (d)) avant indexation (Figure~\ref{fig:tokenizer}, (e)).
+Mais les documents à indexer ne sont pas les seuls à devoir passer par le schéma. En effet, un moteur de recherche est un système à double entrée (Figure~\ref{fig:architecture}), conjuguant des documents et des requêtes utilisateurs grâce à une fonction de similarité. Pour ce faire, documents et requêtes doivent parler la \textit{même langue}, c'est-à-dire qu'une requête utilisateur devra être traitée de la même manière que les documents à indexer, subir les mêmes transformations et interroger les bons champs. Cette suite de transformations est appelée \textbf{analyzer}\footnote{\RaggedOuter Pour plus d'informations sur les analyzers et tokenizers dans Solr: \url{https://wiki.apache.org/solr/LanguageAnalysis}}. Sur ce point, documents et requêtes suivent les traitements suivants : tout d'abord, les majuscules deviennent minuscules (Figure~\ref{fig:tokenizer}, a), puis le texte est découpé en termes distincts (Figure~\ref{fig:tokenizer}, b) et les \textit{stopwords}\footnote{\RaggedOuter Mots qui ne sont généralement pas intéressants pour l'analyse : et, il, elle\ldots{} (voir \url{https://fr.wikipedia.org/wiki/Mot_vide})} sont écartés (Figure~\ref{fig:tokenizer}, c), s'en suit une phase appelée \textbf{stemming} dans laquelle on ne garde finalement que la racine des termes restants (Figure~\ref{fig:tokenizer}, d) avant indexation (Figure~\ref{fig:tokenizer}, e).
 
 \begin{figure}%
   \includegraphics[width=\linewidth]{graphics/tokenizer}
@@ -1433,7 +1438,7 @@ Mais les documents à indexer ne sont pas les seuls à devoir passer par le sch�
   \label{fig:tokenizer}
 \end{figure}
 
-\noindent Dans le cas particulier des archives Web, l'exploration de pages collectées peut être focalisée autour d'un instant précis. Si l'utilisateur en fait la demande, notre moteur lui proposera différentes stratégies de recherche pour retrouver les pages les plus proches d'une date donnée: soit en amont (Figure~\ref{fig:date-picker}, (a)) , soit en aval (Figure~\ref{fig:date-picker}, (c)) ou soit autour de cette dernière (Figure~\ref{fig:date-picker}, (b)). Internet Archive par exemple utilise la première option dans la WayBack Machine.
+\noindent Dans le cas particulier des archives Web, l'exploration de pages collectées peut être focalisée autour d'un instant précis. Si l'utilisateur en fait la demande, notre moteur lui proposera différentes stratégies de recherche pour retrouver les pages les plus proches d'une date donnée: soit en amont (Figure~\ref{fig:date-picker}, a) , soit en aval (Figure~\ref{fig:date-picker}, c) ou soit autour de cette dernière (Figure~\ref{fig:date-picker}, b). Internet Archive par exemple utilise la première option dans la WayBack Machine.
 
 \begin{figure*}%
   \includegraphics[width=\linewidth]{graphics/date-picker}
@@ -1494,7 +1499,7 @@ Nous interprétons nos résultats de la mauvaise manière. Depuis le début de c
 \begin{figure*}
   \centering
   \includegraphics[width=\linewidth]{graphics/legacy-2}
-  \caption{"Boulevard du Temple", Louis Daguerre, 1838}
+  \caption{\textit{Boulevard du Temple}, Louis Daguerre, 1838}
   \label{fig:boulevard}
 \end{figure*}
 
@@ -1550,7 +1555,7 @@ En achevant \textit{Le Fond de l'Air est Rouge} en 1977, le cinéaste C. Marker 
   \label{fig:godard}
 \end{marginfigure}
 
-Dans son court métrage \textit{Je Vous Salue, Sarajevo}, réalisé en 1993 pendant la Guerre de Bosnie-Herzégovine, J-L. Godard déconstruit une photographie du reporteur de guerre R. Haviv. Il fragmente cette image pour faire se correspondre des inserts éclatés à la manière d'un collage-poème ou d'un cinétract\footnote{\RaggedOuter Mini-films non signés à caractère militant, réalisés en mai et juin 1968 (\url{https://fr.wikipedia.org/wiki/Cin\%C3\%A9tract}) et influencés notamment par C. Marker.}. Par le collage, les fondus et les découpes Godard rompt la continuité de l'archive qu'il utilise comme source première. Il peut ainsi rendre compte, image après image, de la cruauté qui frappe les rues Sarajevo. Le film finit par dévoiler entière, l'image dans toute son horreur, \textbf{décomposer} pour mieux \textbf{recomposer}.\\
+Dans son court métrage \textit{Je Vous Salue, Sarajevo}, réalisé en 1993 pendant la Guerre de Bosnie-Herzégovine, J-L. Godard déconstruit une photographie du reporteur de guerre R. Haviv. Il fragmente cette image pour faire se correspondre des inserts éclatés à la manière d'un collage-poème ou d'un cinétract\footnote{\RaggedOuter Mini-films non signés à caractère militant, réalisés en mai et juin 1968 (\url{https://fr.wikipedia.org/wiki/Cinétract}) et influencés notamment par C. Marker.}. Par le collage, les fondus et les découpes Godard rompt la continuité de l'archive qu'il utilise comme source première. Il peut ainsi rendre compte, image après image, de la cruauté qui frappe les rues Sarajevo. Le film finit par dévoiler entière, l'image dans toute son horreur, \textbf{décomposer} pour mieux \textbf{recomposer}.\\
 
 \noindent Il y a dans les travaux de Godard et de Marker une souplesse d'action vis-à-vis des archives que nous pourrions appliquer à nos propres corpus. Chercher à avoir en main des éléments fragmentés de pages Web éloignées, que nous pourrions associer, à souhait, afin de traiter plus largement d'un moment particulier de l'histoire du Web. Comment se donner la possibilité de rapprocher automatiquement deux contenus archivés hors du carcan de leurs pages Web respectives ? Peut-on ralentir ou accélérer le cours de nos archives ? 
 
@@ -1649,7 +1654,7 @@ Cette nouvelle perspective d'exploration nous mènera à considérer, depuis les
 
 \noindent Le Web est un flux grandissant d'information tout autant qu'un territoire en perpétuelle expansion. Par l'action des crawlers, les archives Web sont arrachées à la temporalité continue du Web vivant pour rejoindre celle figée et discrétisée des corpus collectés (Section~\ref{sec:4_derrida}). Les archives, malheureusement, ne peuvent revenir au temps du Web vivant, mais, grâce au fragment Web, nous pouvons les faire basculer dans la temporalité du Web tel qu'il a été. Temporalité que nous allons essayer de caractériser ci-dessous.  
 
-\noindent Commençons par une expérience. Au cours de la Section~\ref{sec:4_legacy}, nous avions visualisé, dans le temps, la répartition des pages archivées de la section forum du site \textit{yabiladi.com}, et ce, par rapport à leurs seules dates de téléchargement (Figure \ref{fig:yabiladi-download}). Maintenant, essayons plutôt de nous focaliser sur les dates d'édition des fragments Web de chacune de ces pages et tentons une comparaison. 
+Commençons par une expérience. Au cours de la Section~\ref{sec:4_legacy}, nous avions visualisé, dans le temps, la répartition des pages archivées de la section forum du site \textit{yabiladi.com}, et ce, par rapport à leurs seules dates de téléchargement (Figure \ref{fig:yabiladi-download}). Maintenant, essayons plutôt de nous focaliser sur les dates d'édition des fragments Web de chacune de ces pages et tentons une comparaison. 
 
 Faute de ne pas avoir encore définit clairement la nature d'un fragment Web, nous nous contenterons ici de l'approximation suivante : chaque \textit{post} (un message individuel) publié sur le forum de \textit{yabiladi.com} sera considéré comme fragment de la page dont il dépend. Un post est écrit par un unique auteur (identifié comme tel) et associé à une date d'édition (Figure~\ref{fig:yabi-date-com}). \\
 
@@ -1981,7 +1986,7 @@ Nous calculons alors la différence $\min\limits_{i} t_i(p_j) - \min\limits_{k} 
   \label{tab:quartiles_1}
   \begin{tabular}{ccl}
     \toprule
-    quartiles&différence en jours\\
+    Quartiles&Différence en jours\\
     \midrule
     Q1 & 256\\
     Q2 & 777\\
@@ -2003,7 +2008,7 @@ Aussi, concentrons-nous plutôt sur des moments singuliers de cette campagne de 
   \label{tab:quartiles_2}
   \begin{tabular}{ccc}
     \toprule
-    quartiles&différence cas n°1&différence cas n°2\\
+    Quartiles&Différence cas n°1&Différence cas n°2\\
     \midrule
     Q1 & 428 & 39\\
     Q2 & 875 & 49\\
@@ -2322,7 +2327,7 @@ Passé le tournant des années 2010, les blogs perdent peu à peu de leur influe
   \label{tab:blogs}
   \begin{tabular}{llll}
     \toprule
-    préfixe d'URL&catégorie&langue principale&pays du blog\\
+    Préfixe d'URL&Catégorie&Langue principale&Pays du blog\\
     \midrule
     7didane.org&intimiste&Français&USA\\
     9afia.blogspot.com&littérature&Français&USA\\
@@ -2661,7 +2666,7 @@ La fuite de Ben Ali, un mois plus tard le 14 janvier 2011, rapportée sur le Web
   \label{tab:printemps}
   \begin{tabular}{lcl}
     \toprule
-    pays&déclenchement des contestations&finalités\\
+    Pays&Déclenchement des contestations&Finalités\\
     \midrule
 Tunisie&17 décembre 2010&fuite du président et changement de régime\\
 Algérie&28 décembre 2010&promesses de réformes\\
@@ -3075,7 +3080,7 @@ Pour nous, ce rapport est le résultat naturel de notre chaine d'analyse socio-t
 
 \begin{figure*}[hbtp]%
   \includegraphics[width=\linewidth]{graphics/schema-full}
-  \caption{Résumé des diverses opérations mises en place lors des explorations \protect\ref{sec:6_blogs} et \protect\ref{sec:6_printemps}, avec distinction entre approches automatique et manuelle}
+  \caption{Résumé des diverses opérations mises en place lors des explorations \protect\ref{sec:6_blogs} et \protect\ref{sec:6_printemps}, avec distinction entre approches automatiques et manuelles}
   \label{fig:schema-full}
 \end{figure*}
 
@@ -3417,7 +3422,7 @@ Le contenu d'une archive n'est cependant pas la seule et unique source d'informa
 
 Cette réflexion déboucherait sur la mise en place d'une palette d'outils destinés à juger de la qualité générale ou relative des corpus étudiés. Des indicateurs dynamiques de cohérence (structurelle, temporelle, thématique\ldots{}) permettraient au chercheur de s'orienter tout au long de son exploration. Il pourrait aussi s'agir de généraliser l'usage des échelles de datation (Table \ref{tab:datation_2}) en calculant, à la volée, l'écart entre les diverses dates d'une page Web consultée et la période ciblée par une requête donnée.
 
-La méthode d'extraction des fragments Web (Section \ref{sec:5_scraping}) gagnerait, pour sa part, à être comparée à d'autres approches. Même si nous soutenons l'idée qu'une page archivée doit être segmentée relativement à chaque question de recherche, cela ne doit pas nous empêcher de faire l'inventaire des défauts et des qualités de notre stratégie. D'autres chercheurs pourraient alors s'en saisir et proposer des implémentations concurrentes ou complémentaires.  
+La méthode d'extraction des fragments Web (Section \ref{sec:5_scraping}) gagnerait, pour sa part, à être comparée à d'autres approches. Même si nous soutenons l'idée qu'une page archivée soit segmentée relativement à chaque question de recherche, cela ne doit pas nous empêcher de faire l'inventaire des défauts et des qualités de notre stratégie. D'autres chercheurs pourraient alors s'en saisir et proposer des implémentations concurrentes ou complémentaires.  
 
 Malgré nos efforts, la capacité du fragment Web à capturer les dispositifs d'écriture et de partage d'un contenu sur le Web (Section \ref{sec:5_fragment}, point n°5) n'a pas été exploitée. Cette dimension aurait pourtant pu enrichir notre analyse de la migration des blogs marocains vers les plateformes de réseaux sociaux (Section \ref{sec:6_blogs}), et ce, en questionnant les gains cognitifs et sémiologiques d'une telle mutation. C'est peut-être là que se niche la clé de compréhension du passage d'un territoire du Web à un autre.   
 
